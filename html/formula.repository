@@ -1,0 +1,176 @@
+\_form#0=0x14:\[ E(collisions) = n - k + k (1 - 1/k)^n \]
+\_form#1=0x10:$ k $
+\_form#2=0x101:\begin{eqnarray*} E(c) &=& \frac{1}{k} \binom{n}{2} - \frac{1}{{{k^2}}} \binom{n}{3} + \frac{1}{{{k^3}}} \binom{n}{4} - \ldots \\ &=& \frac{1}{k} \binom{n}{2} \left[ {1 - \frac{{n - 2}}{{3k}} + \frac{{\left( {n - 2} \right) \left( {n - 3} \right)}}{{12{k^2}}} - \ldots } \right] \\ &=& \frac{1}{k} \binom{n}{2} \left\{ {1 - \frac{{n - 2}}{{3k}} \left[ {1 + \frac{{n - 3}}{{4k}} - \ldots } \right]} \right\} \end{eqnarray*}
+\_form#3=0x14:$[min, max)$
+\_form#4=0x14:$[min, max]$
+\_form#5=0x6:$x$
+\_form#6=0x14:$[min,max)$
+\_form#7=0x9:$y = max - x$
+\_form#8=0x14:$x' = min + y = min + (max - x)$
+\_form#9=0x14:\[ P(x) dx = \alpha e^{-\alpha x} dx, \quad x \in [0, +\infty) \]
+\_form#10=0x14:$[0, +\infty)$
+\_form#11=0x16:$ \alpha = \frac{1}{Mean} $
+\_form#12=0x14:\[ x = - 1/\alpha \log(u) \]
+\_form#13=0x6:$u$
+\_form#14=0x14:$[0,1)$
+\_form#15=0x14:$[0,b]$
+\_form#16=0x14:\[ P(x; b) dx = \alpha e^{-\alpha x} dx \quad x \in [0,b] \]
+\_form#17=0x10:$b$
+\_form#18=0x16:\[ <X: P(x; b)> = 1/\alpha - b/(e^{\alpha \, b} -1) \]
+\_form#19=0x15:\[ x' = - mean * \log(1 - u), \]
+\_form#20=0x9:$x_m$
+\_form#21=0x10:$+\infty$
+\_form#22=0x20:$ k \frac{x_m^k}{x^{k+1}}$
+\_form#23=0x11:$x_m > 0$
+\_form#24=0x11:$ k > 0$
+\_form#25=0x9:$ x_m $
+\_form#26=0x18:$ x_m = mean \frac{k-1}{k}, k > 1$
+\_form#27=0x21:$ \frac{k}{\lambda}\left(\frac{x}{\lambda}\right)^{k-1}e^{-\left(\frac{x}{\lambda}\right)^k} $
+\_form#28=0x11:$ \lambda > 0$
+\_form#29=0x16:$ mean = \lambda\Gamma\left(1+\frac{1}{k}\right) $
+\_form#30=0x9:$ \Gamma $
+\_form#31=0x6:$-\infty$
+\_form#32=0x25:$ \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{s\sigma^2}}$
+\_form#33=0x9:$ mean = \mu $
+\_form#34=0x11:$ variance = \sigma^2 $
+\_form#35=0x10:$mean-bound$
+\_form#36=0x11:$mean+bound$
+\_form#37=0x25:$ \frac{1}{x\sigma\sqrt{2\pi}} e^{-\frac{(ln(x) - \mu)^2}{2\sigma^2}}$
+\_form#38=0x16:$ mean = e^{\mu+\frac{\sigma^2}{2}} $
+\_form#39=0x18:$ variance = (e^{\sigma^2}-1)e^{2\mu+\sigma^2}$
+\_form#40=0x9:$ \mu $
+\_form#41=0x6:$ \sigma $
+\_form#42=0x16:$ \mu = ln(mean) - \frac{1}{2}ln\left(1+\frac{variance}{mean^2}\right)$
+\_form#43=0x24:$ \sigma = \sqrt{ln\left(1+\frac{variance}{mean^2}\right)}$
+\_form#44=0x24:$ x^{\alpha-1} \frac{e^{-\frac{x}{\beta}}}{\beta^\alpha \Gamma(\alpha)}$
+\_form#45=0x13:$ mean = \alpha\beta $
+\_form#46=0x14:$ variance = \alpha \beta^2$
+\_form#47=0x23:$ \frac{x^{k-1} e^{-\frac{x}{\lambda}}}{\lambda^k (k-1)!}$
+\_form#48=0x10:$ mean = k \lambda $
+\_form#49=0x11:$ variance = k \lambda^2$
+\_form#50=0x10:$ \alpha > 0 $
+\_form#51=0x14:$ N \in \{1,2,3 \dots\}$
+\_form#52=0x14:$ f(k; \alpha, N) = k^{-\alpha}/ H_{N,\alpha} $
+\_form#53=0x18:$ H_{N,\alpha} = \sum_{m=1}^N m^{-\alpha} $
+\_form#54=0x10:$ \alpha > 1 $
+\_form#55=0x14:$ f(k; \alpha) = k^{-\alpha}/\zeta(\alpha) $
+\_form#56=0x14:$ \zeta(\alpha) $
+\_form#57=0x15:$ \sum_{n=1}^\infty n^{-\alpha} ) $
+\_form#58=0x30:\[ x = \frac{scale}{u^{\frac{1}{shape}}} \]
+\_form#59=0x10:$x'$
+\_form#60=0x34:\[ x' = \frac{scale}{{(1 - u)}^{\frac{1}{shape}}} , \]
+\_form#61=0x14:\[ scale = mean * (shape - 1.0) / shape . \]
+\_form#62=0x19:\[ x = scale * {(-\log(u))}^{\frac{1}{shape}} \]
+\_form#63=0x14:$(1 - u$
+\_form#64=0x9:$1$
+\_form#65=0x19:\[ x' = scale * {(-\log(1 - u))}^{\frac{1}{shape}} , \]
+\_form#66=0x9:$u1$
+\_form#67=0x9:$u2$
+\_form#68=0x9:$x1$
+\_form#69=0x9:$x2$
+\_form#70=0x121:\begin{eqnarray*} v1 & = & 2 * u1 - 1 \\ v2 & = & 2 * u2 - 1 \\ w & = & v1 * v1 + v2 * v2 \\ y & = & \sqrt{\frac{-2 * \log(w)}{w}} \\ x1 & = & mean + v1 * y * \sqrt{variance} \\ x2 & = & mean + v2 * y * \sqrt{variance} . \end{eqnarray*}
+\_form#71=0x14:$(1 - u1$
+\_form#72=0x14:$(1 - u2$
+\_form#73=0x10:$x1'$
+\_form#74=0x10:$x2'$
+\_form#75=0x124:\begin{eqnarray*} v1' & = & 2 * (1 - u1) - 1 \\ v2' & = & 2 * (1 - u2) - 1 \\ w' & = & v1' * v1' + v2' * v2' \\ y' & = & \sqrt{\frac{-2 * \log(w')}{w'}} \\ x1' & = & mean + v1' * y' * \sqrt{variance} \\ x2' & = & mean + v2' * y' * \sqrt{variance} , \end{eqnarray*}
+\_form#76=0x99:\begin{eqnarray*} v1 & = & -1 + 2 * u1 \\ v2 & = & -1 + 2 * u2 \\ r2 & = & v1 * v1 + v2 * v2 \\ normal & = & v1 * \sqrt{\frac{-2.0 * \log{r2}}{r2}} \\ x & = & \exp{sigma * normal + mu} . \end{eqnarray*}
+\_form#77=0x103:\begin{eqnarray*} v1' & = & -1 + 2 * (1 - u1) \\ v2' & = & -1 + 2 * (1 - u2) \\ r2' & = & v1' * v1' + v2' * v2' \\ normal' & = & v1' * \sqrt{\frac{-2.0 * \log{r2'}}{r2'}} \\ x' & = & \exp{sigma * normal' + mu} . \end{eqnarray*}
+\_form#78=0x14:\[ x = - mean * \log(u) \]
+\_form#79=0x33:\[ x = \left\{ \begin{array}{rl} min + \sqrt{u * (max - min) * (mode - min)} &\mbox{ if $u <= (mode - min)/(max - min)$} \\ max - \sqrt{ (1 - u) * (max - min) * (max - mode) } &\mbox{ otherwise} \end{array} \right. \]
+\_form#80=0x10:\[ mode = 3.0 * mean - min - max . \]
+\_form#81=0x33:\[ x' = \left\{ \begin{array}{rl} min + \sqrt{(1 - u) * (max - min) * (mode - min)} &\mbox{ if $(1 - u) <= (mode - min)/(max - min)$} \\ max - \sqrt{ u * (max - min) * (max - mode) } &\mbox{ otherwise} \end{array} \right. \]
+\_form#82=0x30:\[ ratio = \frac{elapsed}{target interval)} \]
+\_form#83=0x14:$Jitter\left\{P_N\right\} = \left|Delay\left\{P_N\right\} - Delay\left\{P_{N-1}\right\}\right|$
+\_form#84=0x14:$in_flight = sentSize - leftOut + retrans$
+\_form#85=0x13:$leftOut = sacked_out + lost_out$
+\_form#86=0x10:$ D $
+\_form#87=0x6:$ z$
+\_form#88=0x14:$ (x,y,z) $
+\_form#89=0x9:$ \rho $
+\_form#90=0x11:$ S \subset D $
+\_form#91=0x20:$ \frac{|S|}{|D|} $
+\_form#92=0x11:$ z=\overline{Z} $
+\_form#93=0x11:$ \overline{Z} $
+\_form#94=0x28:\[ \alpha_n = \frac{2\pi n - \pi + \theta}{4M}, n=1,2, \ldots,M\]
+\_form#95=0x14:\[ X(t)=X_c(t) + j X_s(t)\]
+\_form#96=0x38:\[ X_c(t) = \frac{2}{\sqrt{M}}\sum_{n=1}^{M}\cos(\psi_n)\cos(\omega_d t\cos(\alpha_n)+\phi_n)\]
+\_form#97=0x38:\[ X_s(t) = \frac{2}{\sqrt{M}}\sum_{n=1}^{M}\sin(\psi_n)\cos(\omega_d t\cos(\alpha_n)+\phi_n)\]
+\_form#98=0x10:$\theta$
+\_form#99=0x13:$\phi$
+\_form#100=0x13:$\psi_n$
+\_form#101=0x14:$[-\pi, \pi)$
+\_form#102=0x6:$n$
+\_form#103=0x14:$Re=\cos(\psi_n), Im = i\sin(\psi_n)]$
+\_form#104=0x13:$\phi_n$
+\_form#105=0x14:$\omega_d \cos(\alpha_n)$
+\_form#106=0x19:$ \frac{P_r}{P_t} = \frac{A_r A_t}{d^2\lambda^2} $
+\_form#107=0x19:$ A_{isotr.} = \frac{\lambda^2}{4\pi} $
+\_form#108=0x21:$ \frac{P_r}{P_t} = \frac{\lambda^2}{(4 \pi d)^2} $
+\_form#109=0x21:$ P_r = \frac{P_t G_t G_r \lambda^2}{(4 \pi d)^2 L}$
+\_form#110=0x13:$ P_r $
+\_form#111=0x13:$ P_t $
+\_form#112=0x13:$ G_t $
+\_form#113=0x13:$ G_r $
+\_form#114=0x10:$ \lambda $
+\_form#115=0x10:$ d $
+\_form#116=0x10:$ L $
+\_form#117=0x19:$ \frac{C}{f} $
+\_form#118=0x10:$ C = 299792458$
+\_form#119=0x13:$ f $
+\_form#120=0x11:$ d > 3 \lambda $
+\_form#121=0x11:$ d < 3 \lambda $
+\_form#122=0x10:$ d = 0 $
+\_form#123=0x13:$ P_r > P_t $
+\_form#124=0x14:$ d < \lambda / 2 \sqrt{\pi} $
+\_form#125=0x13:$\lim_{d \to 0 } P_r = +\infty $
+\_form#126=0x10:$ d \to 0 $
+\_form#127=0x13:$ P_r = P_t $
+\_form#128=0x14:$ d <= \lambda / 2 \sqrt{\pi} $
+\_form#129=0x20:$ Pr = \frac{P_t * G_t * G_r * (H_t^2 * H_r^2)}{d^4 * L} $
+\_form#130=0x19:$ dCross = \frac{(4 * \pi * H_t * H_r)}{\lambda} $
+\_form#131=0x19:$ L = L_0 + 10 n log_{10}(\frac{d}{d_0})$
+\_form#132=0x6:$ n $
+\_form#133=0x13:$ d_0 $
+\_form#134=0x13:$ L_0 $
+\_form#135=0x29:\[ L = L_0 + 10 \cdot n_0 log_{10}(\frac{d}{d_0})\]
+\_form#136=0x30:\[ \underbrace{0 \cdots\cdots}_{=0} \underbrace{d_0 \cdots\cdots}_{n_0} \underbrace{d_1 \cdots\cdots}_{n_1} \underbrace{d_2 \cdots\cdots}_{n_2} \infty \]
+\_form#137=0x71:\[\displaystyle L = \begin{cases} 0 & d < d_0 \\ L_0 + 10 \cdot n_0 \log_{10}(\frac{d}{d_0}) & d_0 \leq d < d_1 \\ L_0 + 10 \cdot n_0 \log_{10}(\frac{d_1}{d_0}) + 10 \cdot n_1 \log_{10}(\frac{d}{d_1}) & d_1 \leq d < d_2 \\ L_0 + 10 \cdot n_0 \log_{10}(\frac{d_1}{d_0}) + 10 \cdot n_1 \log_{10}(\frac{d_2}{d_1}) + 10 \cdot n_2 \log_{10}(\frac{d}{d_2})& d_2 \leq d \end{cases}\]
+\_form#138=0x13:$ d_0, d_1, d_2 $
+\_form#139=0x9:$ n_0, n_1, n_2 $
+\_form#140=0x30:\[ p(x; m, \omega) = \frac{2 m^m}{\Gamma(m) \omega^m} x^{2m - 1} e^{-\frac{m}{\omega} x^2} \]
+\_form#141=0x6:$ m $
+\_form#142=0x6:$ \omega $
+\_form#143=0x30:\[ \underbrace{0 \cdots\cdots}_{m_0} \underbrace{d_1 \cdots\cdots}_{m_1} \underbrace{d_2 \cdots\cdots}_{m_2} \infty \]
+\_form#144=0x18:$ L = \frac{4 \pi * d * f}{C^2}$
+\_form#145=0x15:$ g: F \in {\sf R\hspace*{-0.9ex}\rule{0.15ex}{1.5ex}\hspace*{0.9ex}}^N \rightarrow {\sf R\hspace*{-0.9ex}\rule{0.15ex}{1.5ex}\hspace*{0.9ex}} $
+\_form#146=0x14:$ g(F) $
+\_form#147=0x9:$ F $
+\_form#148=0x9:$ F$
+\_form#149=0x16:$\int_F g(f) df $
+\_form#150=0x14:$ (((x1 + x2) * (x1 + x2 + 1))/2) + x2; $
+\_form#151=0x29:\[{\rm{rate, bandwidth}} = {\rm{kass}}\frac{{{\rm{m\_totalRate}}}}{{{\rm{m\_numRates}} + 1}}\]
+\_form#152=0x28:\[{f_{center}} = {\rm{fc}} + \frac{{ \pm {\rm{m\_totalRate}} \mp {\rm{rate}}}}{2}\]
+\_form#153=0x14:\[{\rm{kPa}} = {10^{\frac{{{\rm{dB}}}}{{10}}}}\]
+\_form#154=0x14:\[{\rm{dB}} = 10{\log _{10}}{\rm{kPa}}\]
+\_form#155=0x13:$ P_{tx} = 1.14 $
+\_form#156=0x13:$ P_{rx} = 0.94 $
+\_form#157=0x13:$ P_{idle} = 0.82 $
+\_form#158=0x14:$ P_{sleep} = 0.10 $
+\_form#159=0x13:$ I_{tx} = 0.380 $
+\_form#160=0x13:$ I_{rx} = 0.313 $
+\_form#161=0x13:$ I_{idle} = 0.273 $
+\_form#162=0x14:$ I_{sleep} = 0.033 $
+\_form#163=0x13:$ W_{tx} $
+\_form#164=0x14:$ W_{pa} $
+\_form#165=0x13:$ W_{idle} $
+\_form#166=0x9:$ \eta $
+\_form#167=0x20:$ \eta = \frac{P_{tx}}{W_{pa}} $
+\_form#168=0x13:$ P_{tx} $
+\_form#169=0x19:$ W_{pa} = \frac{P_{tx}}{\eta} $
+\_form#170=0x19:$ W_{tx} = \frac{P_{tx}}{\eta} + W_{idle} $
+\_form#171=0x10:$ V $
+\_form#172=0x19:$ I_{tx} = \frac{P_{tx}}{V \cdot \eta} + I_{idle} $
+\_form#173=0x13:$ I_{tx} $
+\_form#174=0x13:$ I_{idle} $
+\_form#175=0x19:$ \eta = \frac{P_{tx}}{(I_{tx}-I_{idle})\cdot V} $
