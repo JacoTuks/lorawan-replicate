@@ -1,0 +1,1053 @@
+\babel@toc {english}{}
+\contentsline {chapter}{\numberline {1}Organization}{3}{chapter.1}% 
+\contentsline {chapter}{\numberline {2}Animation}{5}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}NetAnim}{5}{section.2.1}% 
+\contentsline {subsection}{\numberline {2.1.1}Methodology}{6}{subsection.2.1.1}% 
+\contentsline {subsection}{\numberline {2.1.2}Downloading NetAnim}{9}{subsection.2.1.2}% 
+\contentsline {subsection}{\numberline {2.1.3}Building NetAnim}{9}{subsection.2.1.3}% 
+\contentsline {subsubsection}{Prerequisites}{9}{subsubsection*.3}% 
+\contentsline {subsubsection}{Build steps}{10}{subsubsection*.4}% 
+\contentsline {subsection}{\numberline {2.1.4}Usage}{10}{subsection.2.1.4}% 
+\contentsline {subsubsection}{Step 1: Generate XML animation trace file}{10}{subsubsection*.5}% 
+\contentsline {paragraph}{Mandatory}{10}{paragraph*.6}% 
+\contentsline {paragraph}{Optional}{11}{paragraph*.7}% 
+\contentsline {subsubsection}{Step 2: Loading the XML in NetAnim}{12}{subsubsection*.8}% 
+\contentsline {subsection}{\numberline {2.1.5}Wiki}{12}{subsection.2.1.5}% 
+\contentsline {chapter}{\numberline {3}Antenna Module}{13}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Design documentation}{13}{section.3.1}% 
+\contentsline {subsection}{\numberline {3.1.1}Overview}{13}{subsection.3.1.1}% 
+\contentsline {subsection}{\numberline {3.1.2}AntennaModel}{13}{subsection.3.1.2}% 
+\contentsline {subsection}{\numberline {3.1.3}Single antenna models}{13}{subsection.3.1.3}% 
+\contentsline {subsubsection}{IsotropicAntennaModel}{13}{subsubsection*.9}% 
+\contentsline {subsubsection}{CosineAntennaModel}{14}{subsubsection*.10}% 
+\contentsline {subsubsection}{ParabolicAntennaModel}{14}{subsubsection*.11}% 
+\contentsline {subsection}{\numberline {3.1.4}ThreeGppAntennaArrayModel}{15}{subsection.3.1.4}% 
+\contentsline {section}{\numberline {3.2}User Documentation}{15}{section.3.2}% 
+\contentsline {section}{\numberline {3.3}Testing Documentation}{15}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}Angles}{15}{subsection.3.3.1}% 
+\contentsline {subsection}{\numberline {3.3.2}DegreesToRadians}{15}{subsection.3.3.2}% 
+\contentsline {subsection}{\numberline {3.3.3}IsotropicAntennaModel}{16}{subsection.3.3.3}% 
+\contentsline {subsection}{\numberline {3.3.4}CosineAntennaModel}{16}{subsection.3.3.4}% 
+\contentsline {subsection}{\numberline {3.3.5}ParabolicAntennaModel}{16}{subsection.3.3.5}% 
+\contentsline {chapter}{\numberline {4}Ad Hoc On\sphinxhyphen {}Demand Distance Vector (AODV)}{17}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Model Description}{17}{section.4.1}% 
+\contentsline {subsection}{\numberline {4.1.1}Design}{17}{subsection.4.1.1}% 
+\contentsline {subsection}{\numberline {4.1.2}Scope and Limitations}{18}{subsection.4.1.2}% 
+\contentsline {subsection}{\numberline {4.1.3}Future Work}{18}{subsection.4.1.3}% 
+\contentsline {chapter}{\numberline {5}3GPP HTTP applications}{19}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Model Description}{19}{section.5.1}% 
+\contentsline {subsection}{\numberline {5.1.1}Design}{19}{subsection.5.1.1}% 
+\contentsline {subsubsection}{3GPP HTTP server description}{19}{subsubsection*.12}% 
+\contentsline {subsubsection}{3GPP HTTP client description}{23}{subsubsection*.13}% 
+\contentsline {subsection}{\numberline {5.1.2}References}{23}{subsection.5.1.2}% 
+\contentsline {section}{\numberline {5.2}Usage}{26}{section.5.2}% 
+\contentsline {subsection}{\numberline {5.2.1}Building the 3GPP HTTP applications}{26}{subsection.5.2.1}% 
+\contentsline {subsection}{\numberline {5.2.2}Examples}{26}{subsection.5.2.2}% 
+\contentsline {subsection}{\numberline {5.2.3}Tests}{26}{subsection.5.2.3}% 
+\contentsline {chapter}{\numberline {6}Bridge NetDevice}{27}{chapter.6}% 
+\contentsline {chapter}{\numberline {7}BRITE Integration}{29}{chapter.7}% 
+\contentsline {section}{\numberline {7.1}Model Description}{29}{section.7.1}% 
+\contentsline {subsection}{\numberline {7.1.1}Design}{29}{subsection.7.1.1}% 
+\contentsline {subsection}{\numberline {7.1.2}References}{30}{subsection.7.1.2}% 
+\contentsline {section}{\numberline {7.2}Usage}{30}{section.7.2}% 
+\contentsline {subsection}{\numberline {7.2.1}Building BRITE Integration}{30}{subsection.7.2.1}% 
+\contentsline {subsection}{\numberline {7.2.2}Examples}{30}{subsection.7.2.2}% 
+\contentsline {chapter}{\numberline {8}Buildings Module}{33}{chapter.8}% 
+\contentsline {section}{\numberline {8.1}Design documentation}{33}{section.8.1}% 
+\contentsline {subsection}{\numberline {8.1.1}Overview}{33}{subsection.8.1.1}% 
+\contentsline {subsection}{\numberline {8.1.2}The Building class}{34}{subsection.8.1.2}% 
+\contentsline {subsection}{\numberline {8.1.3}The MobilityBuildingInfo class}{34}{subsection.8.1.3}% 
+\contentsline {subsection}{\numberline {8.1.4}ItuR1238PropagationLossModel}{35}{subsection.8.1.4}% 
+\contentsline {subsection}{\numberline {8.1.5}BuildingsPropagationLossModel}{35}{subsection.8.1.5}% 
+\contentsline {subsubsection}{External Wall Loss (EWL)}{35}{subsubsection*.18}% 
+\contentsline {subsubsection}{Internal Walls Loss (IWL)}{36}{subsubsection*.19}% 
+\contentsline {subsubsection}{Height Gain Model (HG)}{36}{subsubsection*.20}% 
+\contentsline {subsubsection}{Shadowing Model}{36}{subsubsection*.21}% 
+\contentsline {subsection}{\numberline {8.1.6}Pathloss logics}{36}{subsection.8.1.6}% 
+\contentsline {subsubsection}{HybridBuildingsPropagationLossModel}{37}{subsubsection*.22}% 
+\contentsline {subsubsection}{OhBuildingsPropagationLossModel}{38}{subsubsection*.23}% 
+\contentsline {section}{\numberline {8.2}User Documentation}{39}{section.8.2}% 
+\contentsline {subsection}{\numberline {8.2.1}How to use buildings in a simulation}{39}{subsection.8.2.1}% 
+\contentsline {subsubsection}{Include the headers}{39}{subsubsection*.24}% 
+\contentsline {subsubsection}{Create a building}{39}{subsubsection*.25}% 
+\contentsline {subsubsection}{Setup nodes and mobility models}{40}{subsubsection*.26}% 
+\contentsline {subsubsection}{Place some nodes}{40}{subsubsection*.27}% 
+\contentsline {paragraph}{Legacy positioning methods}{40}{paragraph*.28}% 
+\contentsline {paragraph}{Building\sphinxhyphen {}specific positioning methods}{41}{paragraph*.29}% 
+\contentsline {subsubsection}{Making the Mobility Model Consistent for a node}{41}{subsubsection*.30}% 
+\contentsline {subsubsection}{Building\sphinxhyphen {}aware pathloss model}{41}{subsubsection*.31}% 
+\contentsline {subsubsection}{Building\sphinxhyphen {}aware channel condition model}{41}{subsubsection*.32}% 
+\contentsline {subsection}{\numberline {8.2.2}Main configurable attributes}{41}{subsection.8.2.2}% 
+\contentsline {section}{\numberline {8.3}Testing Documentation}{42}{section.8.3}% 
+\contentsline {subsection}{\numberline {8.3.1}Overview}{42}{subsection.8.3.1}% 
+\contentsline {subsection}{\numberline {8.3.2}Description of the test suites}{43}{subsection.8.3.2}% 
+\contentsline {subsubsection}{BuildingsHelper test}{43}{subsubsection*.33}% 
+\contentsline {subsubsection}{BuildingPositionAllocator test}{43}{subsubsection*.34}% 
+\contentsline {subsubsection}{Buildings Pathloss tests}{43}{subsubsection*.35}% 
+\contentsline {paragraph}{Test \#1 Okumura Hata}{43}{paragraph*.36}% 
+\contentsline {paragraph}{Test \#2 COST231 Model}{44}{paragraph*.37}% 
+\contentsline {paragraph}{Test \#3 2.6 GHz model}{44}{paragraph*.38}% 
+\contentsline {paragraph}{Test \#4 ITU1411 LoS model}{44}{paragraph*.39}% 
+\contentsline {paragraph}{Test \#5 ITU1411 NLoS model}{44}{paragraph*.40}% 
+\contentsline {paragraph}{Test \#6 ITUP1238 model}{44}{paragraph*.41}% 
+\contentsline {paragraph}{Test \#7 Outdoor \sphinxhyphen {}\textgreater {} Indoor with Okumura Hata model}{44}{paragraph*.42}% 
+\contentsline {paragraph}{Test \#8 Outdoor \sphinxhyphen {}\textgreater {} Indoor with ITU1411 model}{44}{paragraph*.43}% 
+\contentsline {paragraph}{Test \#9 Indoor \sphinxhyphen {}\textgreater {} Outdoor with ITU1411 model}{45}{paragraph*.44}% 
+\contentsline {paragraph}{Test \#10 Indoor \sphinxhyphen {}\textgreater {} Outdoor with ITU1411 model}{45}{paragraph*.45}% 
+\contentsline {subsubsection}{Buildings Shadowing Test}{45}{subsubsection*.46}% 
+\contentsline {subsubsection}{Buildings Channel Condition Model Test}{45}{subsubsection*.47}% 
+\contentsline {section}{\numberline {8.4}References}{45}{section.8.4}% 
+\contentsline {chapter}{\numberline {9}Click Modular Router Integration}{47}{chapter.9}% 
+\contentsline {section}{\numberline {9.1}Model Description}{47}{section.9.1}% 
+\contentsline {subsection}{\numberline {9.1.1}Design}{47}{subsection.9.1.1}% 
+\contentsline {subsubsection}{Developing a Simulator API to allow ns\sphinxhyphen {}3 to interact with Click}{48}{subsubsection*.48}% 
+\contentsline {subsubsection}{Packet hand off between ns\sphinxhyphen {}3 and Click}{48}{subsubsection*.49}% 
+\contentsline {subsection}{\numberline {9.1.2}Scope and Limitations}{48}{subsection.9.1.2}% 
+\contentsline {subsection}{\numberline {9.1.3}References}{48}{subsection.9.1.3}% 
+\contentsline {section}{\numberline {9.2}Usage}{49}{section.9.2}% 
+\contentsline {subsection}{\numberline {9.2.1}Building Click}{49}{subsection.9.2.1}% 
+\contentsline {subsection}{\numberline {9.2.2}Click Graph Instructions}{49}{subsection.9.2.2}% 
+\contentsline {subsection}{\numberline {9.2.3}Debugging Packet Flows from Click}{50}{subsection.9.2.3}% 
+\contentsline {subsection}{\numberline {9.2.4}Helper}{50}{subsection.9.2.4}% 
+\contentsline {subsection}{\numberline {9.2.5}Examples}{50}{subsection.9.2.5}% 
+\contentsline {section}{\numberline {9.3}Validation}{51}{section.9.3}% 
+\contentsline {chapter}{\numberline {10}CSMA NetDevice}{53}{chapter.10}% 
+\contentsline {section}{\numberline {10.1}Overview of the CSMA model}{53}{section.10.1}% 
+\contentsline {subsection}{\numberline {10.1.1}CSMA Layer Model}{53}{subsection.10.1.1}% 
+\contentsline {section}{\numberline {10.2}CSMA Channel Model}{54}{section.10.2}% 
+\contentsline {section}{\numberline {10.3}CSMA Net Device Model}{55}{section.10.3}% 
+\contentsline {section}{\numberline {10.4}Using the CsmaNetDevice}{56}{section.10.4}% 
+\contentsline {section}{\numberline {10.5}CSMA Tracing}{57}{section.10.5}% 
+\contentsline {subsection}{\numberline {10.5.1}Upper\sphinxhyphen {}Level (MAC) Hooks}{57}{subsection.10.5.1}% 
+\contentsline {subsection}{\numberline {10.5.2}Lower\sphinxhyphen {}Level (PHY) Hooks}{58}{subsection.10.5.2}% 
+\contentsline {section}{\numberline {10.6}Summary}{58}{section.10.6}% 
+\contentsline {chapter}{\numberline {11}DSDV Routing}{59}{chapter.11}% 
+\contentsline {section}{\numberline {11.1}DSDV Routing Overview}{59}{section.11.1}% 
+\contentsline {section}{\numberline {11.2}References}{60}{section.11.2}% 
+\contentsline {chapter}{\numberline {12}DSR Routing}{61}{chapter.12}% 
+\contentsline {section}{\numberline {12.1}DSR Routing Overview}{61}{section.12.1}% 
+\contentsline {subsection}{\numberline {12.1.1}DSR update in ns\sphinxhyphen {}3.17}{62}{subsection.12.1.1}% 
+\contentsline {subsection}{\numberline {12.1.2}Useful parameters}{62}{subsection.12.1.2}% 
+\contentsline {subsection}{\numberline {12.1.3}Implementation modification}{63}{subsection.12.1.3}% 
+\contentsline {subsection}{\numberline {12.1.4}Current Route Cache implementation}{63}{subsection.12.1.4}% 
+\contentsline {section}{\numberline {12.2}DSR Instructions}{63}{section.12.2}% 
+\contentsline {section}{\numberline {12.3}Helper}{63}{section.12.3}% 
+\contentsline {section}{\numberline {12.4}Examples}{64}{section.12.4}% 
+\contentsline {section}{\numberline {12.5}Validation}{64}{section.12.5}% 
+\contentsline {section}{\numberline {12.6}Limitations}{64}{section.12.6}% 
+\contentsline {section}{\numberline {12.7}References}{64}{section.12.7}% 
+\contentsline {chapter}{\numberline {13}Emulation Overview}{65}{chapter.13}% 
+\contentsline {chapter}{\numberline {14}Energy Framework}{69}{chapter.14}% 
+\contentsline {section}{\numberline {14.1}Model Description}{69}{section.14.1}% 
+\contentsline {subsection}{\numberline {14.1.1}Design}{69}{subsection.14.1.1}% 
+\contentsline {subsubsection}{Energy Source}{69}{subsubsection*.50}% 
+\contentsline {subsubsection}{Device Energy Model}{70}{subsubsection*.51}% 
+\contentsline {subsubsection}{Energy Harvester}{70}{subsubsection*.52}% 
+\contentsline {subsubsection}{WiFi Radio Energy Model}{70}{subsubsection*.53}% 
+\contentsline {subsection}{\numberline {14.1.2}Future Work}{71}{subsection.14.1.2}% 
+\contentsline {subsection}{\numberline {14.1.3}References}{71}{subsection.14.1.3}% 
+\contentsline {section}{\numberline {14.2}Usage}{71}{section.14.2}% 
+\contentsline {subsection}{\numberline {14.2.1}Examples}{71}{subsection.14.2.1}% 
+\contentsline {subsection}{\numberline {14.2.2}Helpers}{71}{subsection.14.2.2}% 
+\contentsline {subsubsection}{Energy Source Helper}{71}{subsubsection*.54}% 
+\contentsline {subsubsection}{Device Energy Model Helper}{71}{subsubsection*.55}% 
+\contentsline {subsubsection}{Energy Harvesting Helper}{72}{subsubsection*.56}% 
+\contentsline {subsection}{\numberline {14.2.3}Attributes}{72}{subsection.14.2.3}% 
+\contentsline {subsubsection}{Basic Energy Source}{72}{subsubsection*.57}% 
+\contentsline {subsubsection}{RV Battery Model}{72}{subsubsection*.58}% 
+\contentsline {subsubsection}{WiFi Radio Energy Model}{72}{subsubsection*.59}% 
+\contentsline {subsubsection}{Basic Energy Harvester}{73}{subsubsection*.60}% 
+\contentsline {subsection}{\numberline {14.2.4}Tracing}{73}{subsection.14.2.4}% 
+\contentsline {subsubsection}{Basic Energy Source}{73}{subsubsection*.61}% 
+\contentsline {subsubsection}{RV Battery Model}{73}{subsubsection*.62}% 
+\contentsline {subsubsection}{WiFi Radio Energy Model}{73}{subsubsection*.63}% 
+\contentsline {subsubsection}{Basic Energy Harvester}{73}{subsubsection*.64}% 
+\contentsline {subsection}{\numberline {14.2.5}Validation}{73}{subsection.14.2.5}% 
+\contentsline {chapter}{\numberline {15}File Descriptor NetDevice}{75}{chapter.15}% 
+\contentsline {section}{\numberline {15.1}Model Description}{75}{section.15.1}% 
+\contentsline {subsection}{\numberline {15.1.1}Design}{76}{subsection.15.1.1}% 
+\contentsline {subsection}{\numberline {15.1.2}Scope and Limitations}{76}{subsection.15.1.2}% 
+\contentsline {section}{\numberline {15.2}Usage}{77}{section.15.2}% 
+\contentsline {subsection}{\numberline {15.2.1}Helpers}{78}{subsection.15.2.1}% 
+\contentsline {subsubsection}{EmuFdNetDeviceHelper}{78}{subsubsection*.65}% 
+\contentsline {subsubsection}{TapFdNetDeviceHelper}{79}{subsubsection*.66}% 
+\contentsline {subsubsection}{PlanetLabFdNetDeviceHelper}{80}{subsubsection*.67}% 
+\contentsline {subsection}{\numberline {15.2.2}Attributes}{81}{subsection.15.2.2}% 
+\contentsline {subsection}{\numberline {15.2.3}Output}{81}{subsection.15.2.3}% 
+\contentsline {subsection}{\numberline {15.2.4}Examples}{82}{subsection.15.2.4}% 
+\contentsline {chapter}{\numberline {16}Flow Monitor}{83}{chapter.16}% 
+\contentsline {section}{\numberline {16.1}Model Description}{83}{section.16.1}% 
+\contentsline {subsection}{\numberline {16.1.1}Design}{83}{subsection.16.1.1}% 
+\contentsline {subsection}{\numberline {16.1.2}Scope and Limitations}{83}{subsection.16.1.2}% 
+\contentsline {subsubsection}{The “lost” packets problem}{84}{subsubsection*.68}% 
+\contentsline {subsection}{\numberline {16.1.3}References}{85}{subsection.16.1.3}% 
+\contentsline {section}{\numberline {16.2}Usage}{85}{section.16.2}% 
+\contentsline {subsection}{\numberline {16.2.1}Helpers}{85}{subsection.16.2.1}% 
+\contentsline {subsection}{\numberline {16.2.2}Attributes}{85}{subsection.16.2.2}% 
+\contentsline {subsection}{\numberline {16.2.3}Output}{86}{subsection.16.2.3}% 
+\contentsline {subsection}{\numberline {16.2.4}Examples}{86}{subsection.16.2.4}% 
+\contentsline {subsection}{\numberline {16.2.5}Troubleshooting}{87}{subsection.16.2.5}% 
+\contentsline {section}{\numberline {16.3}Validation}{87}{section.16.3}% 
+\contentsline {chapter}{\numberline {17}Internet Models (IP, TCP, Routing, UDP, Internet Applications)}{89}{chapter.17}% 
+\contentsline {section}{\numberline {17.1}Internet Stack}{89}{section.17.1}% 
+\contentsline {subsection}{\numberline {17.1.1}Internet stack aggregation}{89}{subsection.17.1.1}% 
+\contentsline {subsubsection}{Internet Node structure}{91}{subsubsection*.69}% 
+\contentsline {paragraph}{Layer\sphinxhyphen {}3 protocols}{91}{paragraph*.70}% 
+\contentsline {paragraph}{Layer\sphinxhyphen {}4 protocols and sockets}{92}{paragraph*.71}% 
+\contentsline {subsubsection}{IP\sphinxhyphen {}capable node interfaces}{93}{subsubsection*.72}% 
+\contentsline {subsubsection}{Example path of a packet}{94}{subsubsection*.73}% 
+\contentsline {section}{\numberline {17.2}IPv4}{94}{section.17.2}% 
+\contentsline {subsection}{\numberline {17.2.1}IPv4 addresses assignment}{94}{subsection.17.2.1}% 
+\contentsline {subsubsection}{Manually assigned IPv4 addresses}{95}{subsubsection*.74}% 
+\contentsline {subsubsection}{DHCP assigned IPv4 addresses}{96}{subsubsection*.75}% 
+\contentsline {subsection}{\numberline {17.2.2}Tracing in the IPv4 Stack}{96}{subsection.17.2.2}% 
+\contentsline {subsubsection}{Tracing in ARP}{96}{subsubsection*.76}% 
+\contentsline {subsubsection}{Tracing in IPv4}{97}{subsubsection*.77}% 
+\contentsline {subsection}{\numberline {17.2.3}Explicit Congestion Notification (ECN) bits}{98}{subsection.17.2.3}% 
+\contentsline {subsection}{\numberline {17.2.4}Ipv4QueueDiscItem}{98}{subsection.17.2.4}% 
+\contentsline {subsection}{\numberline {17.2.5}RFC 6621 duplicate packet detection}{98}{subsection.17.2.5}% 
+\contentsline {section}{\numberline {17.3}IPv6}{98}{section.17.3}% 
+\contentsline {subsection}{\numberline {17.3.1}IPv6 model description}{98}{subsection.17.3.1}% 
+\contentsline {subsection}{\numberline {17.3.2}Usage}{99}{subsection.17.3.2}% 
+\contentsline {subsubsection}{IPv6 addresses assignment}{100}{subsubsection*.78}% 
+\contentsline {paragraph}{Manually assigned IPv6 addresses}{100}{paragraph*.79}% 
+\contentsline {subparagraph}{Auto\sphinxhyphen {}generated IPv6 addresses}{101}{subparagraph*.80}% 
+\contentsline {subparagraph}{Random\sphinxhyphen {}generated IPv6 addresses}{102}{subparagraph*.81}% 
+\contentsline {subparagraph}{Duplicate Address Detection (DAD)}{102}{subparagraph*.82}% 
+\contentsline {subsubsection}{Explicit Congestion Notification (ECN) bits in IPv6}{102}{subsubsection*.83}% 
+\contentsline {subsection}{\numberline {17.3.3}Ipv6QueueDiscItem}{102}{subsection.17.3.3}% 
+\contentsline {subsubsection}{Host and Router behaviour in IPv6 and \sphinxstyleemphasis {ns\sphinxhyphen {}3}}{102}{subsubsection*.84}% 
+\contentsline {subsubsection}{Helpers}{103}{subsubsection*.85}% 
+\contentsline {subsubsection}{Attributes}{104}{subsubsection*.86}% 
+\contentsline {subsubsection}{Output}{104}{subsubsection*.87}% 
+\contentsline {subsubsection}{Advanced Usage}{105}{subsubsection*.88}% 
+\contentsline {paragraph}{IPv6 maximum transmission unit (MTU) and fragmentation}{105}{paragraph*.89}% 
+\contentsline {subsubsection}{Examples}{105}{subsubsection*.90}% 
+\contentsline {subsubsection}{Troubleshooting}{105}{subsubsection*.91}% 
+\contentsline {paragraph}{Routing loops}{105}{paragraph*.92}% 
+\contentsline {paragraph}{Global address leakage}{106}{paragraph*.93}% 
+\contentsline {paragraph}{2001:DB8::/32 addresses}{106}{paragraph*.94}% 
+\contentsline {subsection}{\numberline {17.3.4}Validation}{106}{subsection.17.3.4}% 
+\contentsline {section}{\numberline {17.4}Routing overview}{106}{section.17.4}% 
+\contentsline {subsection}{\numberline {17.4.1}Routing architecture}{106}{subsection.17.4.1}% 
+\contentsline {subsection}{\numberline {17.4.2}Unicast routing}{108}{subsection.17.4.2}% 
+\contentsline {subsubsection}{Ipv{[}4,6{]}ListRouting}{108}{subsubsection*.95}% 
+\contentsline {paragraph}{Ipv{[}4,6{]}ListRouting::AddRoutingProtocol}{108}{paragraph*.96}% 
+\contentsline {subsubsection}{Global centralized routing}{109}{subsubsection*.97}% 
+\contentsline {paragraph}{Global Unicast Routing API}{109}{paragraph*.98}% 
+\contentsline {paragraph}{Global Routing Implementation}{110}{paragraph*.99}% 
+\contentsline {subsubsection}{RIP and RIPng}{111}{subsubsection*.100}% 
+\contentsline {paragraph}{Routing convergence}{111}{paragraph*.101}% 
+\contentsline {paragraph}{Split Horizoning}{111}{paragraph*.102}% 
+\contentsline {paragraph}{Default routes}{112}{paragraph*.103}% 
+\contentsline {paragraph}{Protocol parameters and options}{112}{paragraph*.104}% 
+\contentsline {paragraph}{Limitations}{112}{paragraph*.105}% 
+\contentsline {subsubsection}{Other routing protocols}{112}{subsubsection*.106}% 
+\contentsline {subsection}{\numberline {17.4.3}Multicast routing}{113}{subsection.17.4.3}% 
+\contentsline {section}{\numberline {17.5}TCP models in ns\sphinxhyphen {}3}{114}{section.17.5}% 
+\contentsline {subsection}{\numberline {17.5.1}Overview of support for TCP}{114}{subsection.17.5.1}% 
+\contentsline {subsection}{\numberline {17.5.2}ns\sphinxhyphen {}3 TCP}{114}{subsection.17.5.2}% 
+\contentsline {subsubsection}{Model history}{114}{subsubsection*.107}% 
+\contentsline {subsubsection}{Acknowledgments}{115}{subsubsection*.108}% 
+\contentsline {subsubsection}{Usage}{115}{subsubsection*.109}% 
+\contentsline {paragraph}{TCP Socket interaction and interface with Application layer}{116}{paragraph*.110}% 
+\contentsline {subsubsection}{Congestion Control Algorithms}{119}{subsubsection*.111}% 
+\contentsline {paragraph}{New Reno}{119}{paragraph*.112}% 
+\contentsline {paragraph}{High Speed}{120}{paragraph*.113}% 
+\contentsline {paragraph}{Hybla}{120}{paragraph*.114}% 
+\contentsline {paragraph}{Westwood}{120}{paragraph*.115}% 
+\contentsline {paragraph}{Vegas}{121}{paragraph*.116}% 
+\contentsline {paragraph}{Scalable}{121}{paragraph*.117}% 
+\contentsline {paragraph}{Veno}{121}{paragraph*.118}% 
+\contentsline {paragraph}{Bic}{122}{paragraph*.119}% 
+\contentsline {paragraph}{YeAH}{122}{paragraph*.120}% 
+\contentsline {paragraph}{Illinois}{123}{paragraph*.121}% 
+\contentsline {paragraph}{H\sphinxhyphen {}TCP}{124}{paragraph*.122}% 
+\contentsline {paragraph}{LEDBAT}{124}{paragraph*.123}% 
+\contentsline {paragraph}{TCP\sphinxhyphen {}LP}{125}{paragraph*.124}% 
+\contentsline {paragraph}{Data Center TCP (DCTCP)}{126}{paragraph*.125}% 
+\contentsline {subsubsection}{Support for Explicit Congestion Notification (ECN)}{127}{subsubsection*.126}% 
+\contentsline {paragraph}{Enabling ECN}{128}{paragraph*.127}% 
+\contentsline {paragraph}{ECN negotiation}{128}{paragraph*.128}% 
+\contentsline {paragraph}{ECN State Transitions}{129}{paragraph*.129}% 
+\contentsline {paragraph}{RFC 3168 compliance}{129}{paragraph*.130}% 
+\contentsline {paragraph}{Open issues}{130}{paragraph*.131}% 
+\contentsline {subsubsection}{Validation}{130}{subsubsection*.132}% 
+\contentsline {subsubsection}{Writing a new congestion control algorithm}{131}{subsubsection*.133}% 
+\contentsline {subsubsection}{TCP SACK and non\sphinxhyphen {}SACK}{132}{subsubsection*.134}% 
+\contentsline {subsubsection}{Loss Recovery Algorithms}{132}{subsubsection*.135}% 
+\contentsline {paragraph}{Classic Recovery}{132}{paragraph*.136}% 
+\contentsline {paragraph}{Proportional Rate Reduction}{132}{paragraph*.137}% 
+\contentsline {subsubsection}{Adding a new loss recovery algorithm in ns\sphinxhyphen {}3}{133}{subsubsection*.138}% 
+\contentsline {subsubsection}{Delivery Rate Estimation}{133}{subsubsection*.139}% 
+\contentsline {subsubsection}{Current limitations}{134}{subsubsection*.140}% 
+\contentsline {subsubsection}{Writing TCP tests}{134}{subsubsection*.141}% 
+\contentsline {subsection}{\numberline {17.5.3}Network Simulation Cradle}{140}{subsection.17.5.3}% 
+\contentsline {subsubsection}{Prerequisites}{141}{subsubsection*.142}% 
+\contentsline {subsubsection}{Configuring and Downloading}{141}{subsubsection*.143}% 
+\contentsline {subsubsection}{Building and validating}{141}{subsubsection*.144}% 
+\contentsline {subsubsection}{Usage}{142}{subsubsection*.145}% 
+\contentsline {subsubsection}{Stack configuration}{143}{subsubsection*.146}% 
+\contentsline {subsubsection}{NSC API}{143}{subsubsection*.147}% 
+\contentsline {subsubsection}{ns\sphinxhyphen {}3 implementation}{144}{subsubsection*.148}% 
+\contentsline {subsubsection}{Limitations}{144}{subsubsection*.149}% 
+\contentsline {section}{\numberline {17.6}UDP model in ns\sphinxhyphen {}3}{145}{section.17.6}% 
+\contentsline {subsection}{\numberline {17.6.1}Generic support for UDP}{145}{subsection.17.6.1}% 
+\contentsline {subsection}{\numberline {17.6.2}ns\sphinxhyphen {}3 UDP}{145}{subsection.17.6.2}% 
+\contentsline {subsubsection}{Usage}{145}{subsubsection*.150}% 
+\contentsline {paragraph}{UDP Socket interaction and interface with Application layer}{146}{paragraph*.151}% 
+\contentsline {subsubsection}{Validation}{147}{subsubsection*.152}% 
+\contentsline {subsubsection}{Limitations}{147}{subsubsection*.153}% 
+\contentsline {section}{\numberline {17.7}Internet Applications Module Documentation}{148}{section.17.7}% 
+\contentsline {subsection}{\numberline {17.7.1}V4Ping}{148}{subsection.17.7.1}% 
+\contentsline {subsection}{\numberline {17.7.2}Ping6}{148}{subsection.17.7.2}% 
+\contentsline {subsection}{\numberline {17.7.3}Radvd}{148}{subsection.17.7.3}% 
+\contentsline {subsection}{\numberline {17.7.4}DHCPv4}{149}{subsection.17.7.4}% 
+\contentsline {subsubsection}{Helpers}{149}{subsubsection*.154}% 
+\contentsline {subsubsection}{Tests}{149}{subsubsection*.155}% 
+\contentsline {subsubsection}{Examples}{149}{subsubsection*.156}% 
+\contentsline {subsubsection}{Scope and Limitations}{149}{subsubsection*.157}% 
+\contentsline {chapter}{\numberline {18}Low\sphinxhyphen {}Rate Wireless Personal Area Network (LR\sphinxhyphen {}WPAN)}{151}{chapter.18}% 
+\contentsline {section}{\numberline {18.1}Model Description}{151}{section.18.1}% 
+\contentsline {subsection}{\numberline {18.1.1}Design}{151}{subsection.18.1.1}% 
+\contentsline {subsubsection}{APIs}{152}{subsubsection*.158}% 
+\contentsline {subsubsection}{MAC}{153}{subsubsection*.159}% 
+\contentsline {subsubsection}{PHY}{153}{subsubsection*.160}% 
+\contentsline {subsubsection}{NetDevice}{153}{subsubsection*.161}% 
+\contentsline {subsection}{\numberline {18.1.2}Scope and Limitations}{154}{subsection.18.1.2}% 
+\contentsline {subsection}{\numberline {18.1.3}References}{154}{subsection.18.1.3}% 
+\contentsline {section}{\numberline {18.2}Usage}{154}{section.18.2}% 
+\contentsline {subsection}{\numberline {18.2.1}Enabling lr\sphinxhyphen {}wpan}{154}{subsection.18.2.1}% 
+\contentsline {subsection}{\numberline {18.2.2}Helper}{155}{subsection.18.2.2}% 
+\contentsline {subsection}{\numberline {18.2.3}Examples}{155}{subsection.18.2.3}% 
+\contentsline {subsection}{\numberline {18.2.4}Tests}{156}{subsection.18.2.4}% 
+\contentsline {section}{\numberline {18.3}Validation}{157}{section.18.3}% 
+\contentsline {chapter}{\numberline {19}LTE Module}{159}{chapter.19}% 
+\contentsline {section}{\numberline {19.1}Design Documentation}{159}{section.19.1}% 
+\contentsline {subsection}{\numberline {19.1.1}Overview}{159}{subsection.19.1.1}% 
+\contentsline {subsection}{\numberline {19.1.2}Design Criteria}{160}{subsection.19.1.2}% 
+\contentsline {subsubsection}{LTE Model}{160}{subsubsection*.162}% 
+\contentsline {subsubsection}{EPC Model}{161}{subsubsection*.163}% 
+\contentsline {subsection}{\numberline {19.1.3}Architecture}{161}{subsection.19.1.3}% 
+\contentsline {subsubsection}{LTE Model}{161}{subsubsection*.164}% 
+\contentsline {paragraph}{UE architecture}{161}{paragraph*.165}% 
+\contentsline {paragraph}{eNB architecture}{163}{paragraph*.166}% 
+\contentsline {subsubsection}{EPC Model}{165}{subsubsection*.167}% 
+\contentsline {paragraph}{EPC data plane}{165}{paragraph*.168}% 
+\contentsline {paragraph}{EPC control plane}{165}{paragraph*.169}% 
+\contentsline {subsection}{\numberline {19.1.4}Channel and Propagation}{167}{subsection.19.1.4}% 
+\contentsline {subsubsection}{Use of the Buildings model with LTE}{167}{subsubsection*.170}% 
+\contentsline {subsubsection}{Fading Model}{168}{subsubsection*.171}% 
+\contentsline {subsubsection}{Antennas}{169}{subsubsection*.172}% 
+\contentsline {subsection}{\numberline {19.1.5}PHY}{170}{subsection.19.1.5}% 
+\contentsline {subsubsection}{Overview}{170}{subsubsection*.173}% 
+\contentsline {subsubsection}{Subframe Structure}{170}{subsubsection*.174}% 
+\contentsline {subsubsection}{MAC to Channel delay}{171}{subsubsection*.175}% 
+\contentsline {subsubsection}{CQI feedback}{171}{subsubsection*.176}% 
+\contentsline {subsubsection}{Interference Model}{172}{subsubsection*.177}% 
+\contentsline {subsubsection}{LTE Spectrum Model}{172}{subsubsection*.178}% 
+\contentsline {subsubsection}{Data PHY Error Model}{172}{subsubsection*.179}% 
+\contentsline {paragraph}{MIESM}{172}{paragraph*.180}% 
+\contentsline {paragraph}{BLER Curves}{175}{paragraph*.181}% 
+\contentsline {paragraph}{Integration of the BLER curves in the ns\sphinxhyphen {}3 LTE module}{175}{paragraph*.182}% 
+\contentsline {subsubsection}{Control Channels PHY Error Model}{175}{subsubsection*.183}% 
+\contentsline {paragraph}{PCFICH + PDCCH Error Model}{175}{paragraph*.184}% 
+\contentsline {subsubsection}{MIMO Model}{184}{subsubsection*.185}% 
+\contentsline {subsubsection}{UE PHY Measurements Model}{184}{subsubsection*.186}% 
+\contentsline {subsection}{\numberline {19.1.6}HARQ}{186}{subsection.19.1.6}% 
+\contentsline {subsection}{\numberline {19.1.7}MAC}{187}{subsection.19.1.7}% 
+\contentsline {subsubsection}{Resource Allocation Model}{187}{subsubsection*.187}% 
+\contentsline {subsubsection}{Adaptive Modulation and Coding}{189}{subsubsection*.188}% 
+\contentsline {subsubsection}{Transport Block model}{189}{subsubsection*.189}% 
+\contentsline {subsubsection}{The FemtoForum MAC Scheduler Interface}{189}{subsubsection*.190}% 
+\contentsline {paragraph}{Round Robin (RR) Scheduler}{191}{paragraph*.191}% 
+\contentsline {paragraph}{Proportional Fair (PF) Scheduler}{191}{paragraph*.192}% 
+\contentsline {paragraph}{Maximum Throughput (MT) Scheduler}{192}{paragraph*.193}% 
+\contentsline {paragraph}{Throughput to Average (TTA) Scheduler}{193}{paragraph*.194}% 
+\contentsline {paragraph}{Blind Average Throughput Scheduler}{193}{paragraph*.195}% 
+\contentsline {paragraph}{Token Bank Fair Queue Scheduler}{193}{paragraph*.196}% 
+\contentsline {paragraph}{Priority Set Scheduler}{194}{paragraph*.197}% 
+\contentsline {paragraph}{Channel and QoS Aware Scheduler}{195}{paragraph*.198}% 
+\contentsline {subsubsection}{Random Access}{196}{subsubsection*.199}% 
+\contentsline {subsection}{\numberline {19.1.8}RLC}{199}{subsection.19.1.8}% 
+\contentsline {subsubsection}{Overview}{199}{subsubsection*.200}% 
+\contentsline {subsubsection}{Service Interfaces}{199}{subsubsection*.201}% 
+\contentsline {paragraph}{RLC Service Interface}{199}{paragraph*.202}% 
+\contentsline {subparagraph}{RLC Service Primitives}{200}{subparagraph*.203}% 
+\contentsline {paragraph}{MAC Service Interface}{200}{paragraph*.204}% 
+\contentsline {subparagraph}{MAC Service Primitives}{200}{subparagraph*.205}% 
+\contentsline {subsubsection}{AM RLC}{200}{subsubsection*.206}% 
+\contentsline {paragraph}{Buffers for the transmit operations}{200}{paragraph*.207}% 
+\contentsline {paragraph}{Transmit operations in downlink}{201}{paragraph*.208}% 
+\contentsline {paragraph}{Retransmission in downlink}{202}{paragraph*.209}% 
+\contentsline {paragraph}{Transmit operations in uplink}{203}{paragraph*.210}% 
+\contentsline {paragraph}{Retransmission in uplink}{203}{paragraph*.211}% 
+\contentsline {paragraph}{Calculation of the buffer size}{205}{paragraph*.212}% 
+\contentsline {paragraph}{Concatenation and Segmentation}{205}{paragraph*.213}% 
+\contentsline {paragraph}{Re\sphinxhyphen {}segmentation}{205}{paragraph*.214}% 
+\contentsline {paragraph}{Unsupported features}{205}{paragraph*.215}% 
+\contentsline {subsubsection}{UM RLC}{206}{subsubsection*.216}% 
+\contentsline {paragraph}{Transmit operations in downlink}{206}{paragraph*.217}% 
+\contentsline {paragraph}{Transmit operations in uplink}{206}{paragraph*.218}% 
+\contentsline {paragraph}{Calculation of the buffer size}{206}{paragraph*.219}% 
+\contentsline {subsubsection}{TM RLC}{206}{subsubsection*.220}% 
+\contentsline {paragraph}{Transmit operations in downlink}{206}{paragraph*.221}% 
+\contentsline {paragraph}{Transmit operations in uplink}{207}{paragraph*.222}% 
+\contentsline {paragraph}{Calculation of the buffer size}{207}{paragraph*.223}% 
+\contentsline {subsubsection}{SM RLC}{207}{subsubsection*.224}% 
+\contentsline {subsection}{\numberline {19.1.9}PDCP}{207}{subsection.19.1.9}% 
+\contentsline {subsubsection}{PDCP Model Overview}{207}{subsubsection*.225}% 
+\contentsline {subsubsection}{PDCP Service Interface}{208}{subsubsection*.226}% 
+\contentsline {paragraph}{PDCP Service Primitives}{208}{paragraph*.227}% 
+\contentsline {subsection}{\numberline {19.1.10}RRC}{209}{subsection.19.1.10}% 
+\contentsline {subsubsection}{Features}{209}{subsubsection*.228}% 
+\contentsline {subsubsection}{Architecture}{209}{subsubsection*.229}% 
+\contentsline {subsubsection}{UE RRC State Machine}{209}{subsubsection*.230}% 
+\contentsline {subsubsection}{ENB RRC State Machine}{209}{subsubsection*.231}% 
+\contentsline {subsubsection}{Initial Cell Selection}{212}{subsubsection*.232}% 
+\contentsline {paragraph}{Cell Search}{213}{paragraph*.233}% 
+\contentsline {paragraph}{Broadcast of System Information}{213}{paragraph*.234}% 
+\contentsline {paragraph}{Cell Selection Evaluation}{214}{paragraph*.235}% 
+\contentsline {subsubsection}{Radio Admission Control}{214}{subsubsection*.236}% 
+\contentsline {subsubsection}{Radio Bearer Configuration}{215}{subsubsection*.237}% 
+\contentsline {subsubsection}{Radio Link Failure}{215}{subsubsection*.238}% 
+\contentsline {paragraph}{RLF detection implementation}{215}{paragraph*.239}% 
+\contentsline {paragraph}{Actions upon RLF}{216}{paragraph*.240}% 
+\contentsline {subsubsection}{UE RRC Measurements Model}{219}{subsubsection*.241}% 
+\contentsline {paragraph}{UE RRC measurements support}{219}{paragraph*.242}% 
+\contentsline {paragraph}{Overall design}{219}{paragraph*.243}% 
+\contentsline {paragraph}{Measurement configuration}{219}{paragraph*.244}% 
+\contentsline {paragraph}{Performing measurements}{221}{paragraph*.245}% 
+\contentsline {paragraph}{Measurement reporting triggering}{221}{paragraph*.246}% 
+\contentsline {paragraph}{Measurement reporting}{222}{paragraph*.247}% 
+\contentsline {subsubsection}{Handover}{222}{subsubsection*.248}% 
+\contentsline {paragraph}{Handover algorithm}{222}{paragraph*.249}% 
+\contentsline {paragraph}{No\sphinxhyphen {}op handover algorithm}{223}{paragraph*.250}% 
+\contentsline {paragraph}{A2\sphinxhyphen {}A4\sphinxhyphen {}RSRQ handover algorithm}{223}{paragraph*.251}% 
+\contentsline {paragraph}{Strongest cell handover algorithm}{225}{paragraph*.252}% 
+\contentsline {subsubsection}{Neighbour Relation}{225}{subsubsection*.253}% 
+\contentsline {paragraph}{Neighbour Relation Table}{225}{paragraph*.254}% 
+\contentsline {paragraph}{Role of ANR in Simulation}{227}{paragraph*.255}% 
+\contentsline {subsubsection}{RRC sequence diagrams}{228}{subsubsection*.256}% 
+\contentsline {paragraph}{RRC connection establishment}{228}{paragraph*.257}% 
+\contentsline {paragraph}{RRC connection reconfiguration}{229}{paragraph*.258}% 
+\contentsline {subsubsection}{RRC protocol models}{232}{subsubsection*.259}% 
+\contentsline {paragraph}{Ideal RRC protocol model}{232}{paragraph*.260}% 
+\contentsline {paragraph}{Real RRC protocol model}{232}{paragraph*.261}% 
+\contentsline {subparagraph}{Signaling Radio Bearer model}{232}{subparagraph*.262}% 
+\contentsline {subparagraph}{ASN.1 encoding of RRC IE’s}{233}{subparagraph*.263}% 
+\contentsline {subparagraph}{Asn1Header class \sphinxhyphen {} Implementation of base ASN.1 types}{233}{subparagraph*.264}% 
+\contentsline {subparagraph}{RrcAsn1Header : Common IEs}{234}{subparagraph*.265}% 
+\contentsline {subparagraph}{Rrc specific messages/IEs classes}{234}{subparagraph*.266}% 
+\contentsline {subsection}{\numberline {19.1.11}NAS}{235}{subsection.19.1.11}% 
+\contentsline {subsection}{\numberline {19.1.12}S1, S5 and S11}{237}{subsection.19.1.12}% 
+\contentsline {subsubsection}{S1\sphinxhyphen {}U and S5 (user plane)}{237}{subsubsection*.267}% 
+\contentsline {subsubsection}{S1AP}{240}{subsubsection*.268}% 
+\contentsline {subsubsection}{S5 and S11}{240}{subsubsection*.269}% 
+\contentsline {subsection}{\numberline {19.1.13}X2}{241}{subsection.19.1.13}% 
+\contentsline {subsubsection}{X2 interfaces}{244}{subsubsection*.270}% 
+\contentsline {paragraph}{X2\sphinxhyphen {}C}{244}{paragraph*.271}% 
+\contentsline {paragraph}{X2\sphinxhyphen {}U}{245}{paragraph*.272}% 
+\contentsline {subsubsection}{X2 Service Interface}{245}{subsubsection*.273}% 
+\contentsline {paragraph}{X2\sphinxhyphen {}C primitives for handover execution}{245}{paragraph*.274}% 
+\contentsline {paragraph}{X2\sphinxhyphen {}C SON primitives}{245}{paragraph*.275}% 
+\contentsline {paragraph}{Unsupported primitives}{246}{paragraph*.276}% 
+\contentsline {subsection}{\numberline {19.1.14}S11}{247}{subsection.19.1.14}% 
+\contentsline {subsection}{\numberline {19.1.15}Power Control}{248}{subsection.19.1.15}% 
+\contentsline {subsubsection}{Downlink Power Control}{248}{subsubsection*.277}% 
+\contentsline {subsubsection}{Uplink Power Control}{248}{subsubsection*.278}% 
+\contentsline {paragraph}{Uplink Power Control for PUSCH}{249}{paragraph*.279}% 
+\contentsline {paragraph}{Uplink Power Control for PUCCH}{250}{paragraph*.280}% 
+\contentsline {paragraph}{Uplink Power Control for SRS}{251}{paragraph*.281}% 
+\contentsline {subsection}{\numberline {19.1.16}Fractional Frequency Reuse}{251}{subsection.19.1.16}% 
+\contentsline {subsubsection}{Overview}{251}{subsubsection*.282}% 
+\contentsline {subsubsection}{Supported FR algorithms}{252}{subsubsection*.283}% 
+\contentsline {paragraph}{No Frequency Reuse}{252}{paragraph*.284}% 
+\contentsline {paragraph}{Hard Frequency Reuse}{253}{paragraph*.285}% 
+\contentsline {paragraph}{Strict Frequency Reuse}{253}{paragraph*.286}% 
+\contentsline {paragraph}{Soft Frequency Reuse}{254}{paragraph*.287}% 
+\contentsline {paragraph}{Soft Fractional Frequency Reuse}{254}{paragraph*.288}% 
+\contentsline {paragraph}{Enhanced Fractional Frequency Reuse}{255}{paragraph*.289}% 
+\contentsline {paragraph}{Distributed Fractional Frequency Reuse}{256}{paragraph*.290}% 
+\contentsline {subsection}{\numberline {19.1.17}Carrier Aggregation}{257}{subsection.19.1.17}% 
+\contentsline {subsubsection}{Overview}{257}{subsubsection*.291}% 
+\contentsline {paragraph}{Impact on RRC layer}{257}{paragraph*.292}% 
+\contentsline {paragraph}{Impact on PCDCP layer}{260}{paragraph*.293}% 
+\contentsline {paragraph}{Impact on RLC layer}{260}{paragraph*.294}% 
+\contentsline {paragraph}{Impact on MAC layer}{260}{paragraph*.295}% 
+\contentsline {paragraph}{Impact on PHY layer}{261}{paragraph*.296}% 
+\contentsline {subsubsection}{Code Structure Design}{261}{subsubsection*.297}% 
+\contentsline {paragraph}{CA impact on data plane of eNodeB}{263}{paragraph*.298}% 
+\contentsline {paragraph}{CA impact on control plane of eNodeB}{263}{paragraph*.299}% 
+\contentsline {paragraph}{CA impact on data plane of UE}{263}{paragraph*.300}% 
+\contentsline {paragraph}{CA impact on control plane of UE}{266}{paragraph*.301}% 
+\contentsline {paragraph}{CCM RRC MAC interfaces}{266}{paragraph*.302}% 
+\contentsline {paragraph}{CCM RRC SAP interfaces}{270}{paragraph*.303}% 
+\contentsline {paragraph}{Component carrier managers}{270}{paragraph*.304}% 
+\contentsline {subsection}{\numberline {19.1.18}Helpers}{271}{subsection.19.1.18}% 
+\contentsline {section}{\numberline {19.2}User Documentation}{271}{section.19.2}% 
+\contentsline {subsection}{\numberline {19.2.1}Background}{271}{subsection.19.2.1}% 
+\contentsline {subsection}{\numberline {19.2.2}Usage Overview}{271}{subsection.19.2.2}% 
+\contentsline {subsection}{\numberline {19.2.3}Basic simulation program}{273}{subsection.19.2.3}% 
+\contentsline {subsection}{\numberline {19.2.4}Configuration of LTE model parameters}{274}{subsection.19.2.4}% 
+\contentsline {subsection}{\numberline {19.2.5}Configure LTE MAC Scheduler}{275}{subsection.19.2.5}% 
+\contentsline {subsection}{\numberline {19.2.6}Simulation Output}{276}{subsection.19.2.6}% 
+\contentsline {subsection}{\numberline {19.2.7}Fading Trace Usage}{280}{subsection.19.2.7}% 
+\contentsline {subsubsection}{Fading Traces Generation}{280}{subsubsection*.305}% 
+\contentsline {subsubsection}{Fading Traces Usage}{280}{subsubsection*.306}% 
+\contentsline {subsection}{\numberline {19.2.8}Mobility Model with Buildings}{284}{subsection.19.2.8}% 
+\contentsline {subsection}{\numberline {19.2.9}PHY Error Model}{285}{subsection.19.2.9}% 
+\contentsline {subsection}{\numberline {19.2.10}MIMO Model}{285}{subsection.19.2.10}% 
+\contentsline {subsection}{\numberline {19.2.11}Use of AntennaModel}{286}{subsection.19.2.11}% 
+\contentsline {subsection}{\numberline {19.2.12}Radio Environment Maps}{286}{subsection.19.2.12}% 
+\contentsline {subsection}{\numberline {19.2.13}AMC Model and CQI Calculation}{288}{subsection.19.2.13}% 
+\contentsline {subsection}{\numberline {19.2.14}Evolved Packet Core (EPC)}{289}{subsection.19.2.14}% 
+\contentsline {subsection}{\numberline {19.2.15}Using the EPC with emulation mode}{291}{subsection.19.2.15}% 
+\contentsline {subsection}{\numberline {19.2.16}Custom Backhaul}{292}{subsection.19.2.16}% 
+\contentsline {subsection}{\numberline {19.2.17}Network Attachment}{294}{subsection.19.2.17}% 
+\contentsline {subsubsection}{Manual attachment}{294}{subsubsection*.307}% 
+\contentsline {subsubsection}{Automatic attachment using Idle mode cell selection procedure}{295}{subsubsection*.308}% 
+\contentsline {subsubsection}{Closed Subscriber Group}{295}{subsubsection*.309}% 
+\contentsline {subsection}{\numberline {19.2.18}Configure UE measurements}{296}{subsection.19.2.18}% 
+\contentsline {subsection}{\numberline {19.2.19}X2\sphinxhyphen {}based handover}{297}{subsection.19.2.19}% 
+\contentsline {subsubsection}{Manual handover trigger}{298}{subsubsection*.310}% 
+\contentsline {subsubsection}{Automatic handover trigger}{298}{subsubsection*.311}% 
+\contentsline {subsubsection}{Tuning simulation with handover}{299}{subsubsection*.312}% 
+\contentsline {subsubsection}{Handover traces}{300}{subsubsection*.313}% 
+\contentsline {subsection}{\numberline {19.2.20}Frequency Reuse Algorithms}{301}{subsection.19.2.20}% 
+\contentsline {subsubsection}{Manual configuration}{301}{subsubsection*.314}% 
+\contentsline {paragraph}{Hard Frequency Reuse Algorithm}{302}{paragraph*.315}% 
+\contentsline {paragraph}{Strict Frequency Reuse Algorithm}{302}{paragraph*.316}% 
+\contentsline {paragraph}{Soft Frequency Reuse Algorithm}{303}{paragraph*.317}% 
+\contentsline {paragraph}{Soft Fractional Frequency Reuse Algorithm}{304}{paragraph*.318}% 
+\contentsline {paragraph}{Enhanced Fractional Frequency Reuse Algorithm}{305}{paragraph*.319}% 
+\contentsline {paragraph}{Distributed Fractional Frequency Reuse Algorithm}{306}{paragraph*.320}% 
+\contentsline {subsubsection}{Automatic configuration}{307}{subsubsection*.321}% 
+\contentsline {subsection}{\numberline {19.2.21}Uplink Power Control}{307}{subsection.19.2.21}% 
+\contentsline {subsection}{\numberline {19.2.22}Examples Programs}{308}{subsection.19.2.22}% 
+\contentsline {subsection}{\numberline {19.2.23}Reference scenarios}{308}{subsection.19.2.23}% 
+\contentsline {subsubsection}{Handover simulation campaign}{309}{subsubsection*.322}% 
+\contentsline {subsubsection}{Frequency Reuse examples}{313}{subsubsection*.323}% 
+\contentsline {subsection}{\numberline {19.2.24}Carrier aggregation examples}{315}{subsection.19.2.24}% 
+\contentsline {subsection}{\numberline {19.2.25}Radio link failure example}{319}{subsection.19.2.25}% 
+\contentsline {subsection}{\numberline {19.2.26}Troubleshooting and debugging tips}{321}{subsection.19.2.26}% 
+\contentsline {section}{\numberline {19.3}Testing Documentation}{323}{section.19.3}% 
+\contentsline {subsection}{\numberline {19.3.1}Overview}{323}{subsection.19.3.1}% 
+\contentsline {subsection}{\numberline {19.3.2}Description of the test suites}{323}{subsection.19.3.2}% 
+\contentsline {subsubsection}{Unit Tests}{323}{subsubsection*.324}% 
+\contentsline {paragraph}{SINR calculation in the Downlink}{323}{paragraph*.325}% 
+\contentsline {paragraph}{SINR calculation in the Uplink}{324}{paragraph*.326}% 
+\contentsline {paragraph}{E\sphinxhyphen {}UTRA Absolute Radio Frequency Channel Number (EARFCN)}{324}{paragraph*.327}% 
+\contentsline {subsubsection}{System Tests}{324}{subsubsection*.328}% 
+\contentsline {paragraph}{Dedicated Bearer Deactivation Tests}{324}{paragraph*.329}% 
+\contentsline {paragraph}{Adaptive Modulation and Coding Tests}{325}{paragraph*.330}% 
+\contentsline {paragraph}{Inter\sphinxhyphen {}cell Interference Tests}{325}{paragraph*.331}% 
+\contentsline {paragraph}{UE Measurements Tests}{326}{paragraph*.332}% 
+\contentsline {paragraph}{UE measurement configuration tests}{326}{paragraph*.333}% 
+\contentsline {subparagraph}{Piecewise configuration}{327}{subparagraph*.334}% 
+\contentsline {subparagraph}{Handover configuration}{330}{subparagraph*.335}% 
+\contentsline {paragraph}{Round Robin scheduler performance}{331}{paragraph*.336}% 
+\contentsline {paragraph}{Proportional Fair scheduler performance}{332}{paragraph*.337}% 
+\contentsline {paragraph}{Maximum Throughput scheduler performance}{333}{paragraph*.338}% 
+\contentsline {paragraph}{Throughput to Average scheduler performance}{334}{paragraph*.339}% 
+\contentsline {paragraph}{Blind Average Throughput scheduler performance}{334}{paragraph*.340}% 
+\contentsline {paragraph}{Token Band Fair Queue scheduler performance}{335}{paragraph*.341}% 
+\contentsline {paragraph}{Priority Set scheduler performance}{336}{paragraph*.342}% 
+\contentsline {paragraph}{Channel and QoS aware scheduler performance}{337}{paragraph*.343}% 
+\contentsline {paragraph}{Building Propagation Loss Model}{337}{paragraph*.344}% 
+\contentsline {paragraph}{Physical Error Model}{337}{paragraph*.345}% 
+\contentsline {paragraph}{HARQ Model}{341}{paragraph*.346}% 
+\contentsline {paragraph}{MIMO Model}{342}{paragraph*.347}% 
+\contentsline {paragraph}{Antenna Model integration}{342}{paragraph*.348}% 
+\contentsline {paragraph}{RLC}{342}{paragraph*.349}% 
+\contentsline {paragraph}{RRC}{343}{paragraph*.350}% 
+\contentsline {paragraph}{Initial cell selection}{344}{paragraph*.351}% 
+\contentsline {paragraph}{GTP\sphinxhyphen {}U protocol}{345}{paragraph*.352}% 
+\contentsline {paragraph}{S1\sphinxhyphen {}U interface}{345}{paragraph*.353}% 
+\contentsline {paragraph}{TFT classifier}{346}{paragraph*.354}% 
+\contentsline {paragraph}{End\sphinxhyphen {}to\sphinxhyphen {}end LTE\sphinxhyphen {}EPC data plane functionality}{346}{paragraph*.355}% 
+\contentsline {paragraph}{X2 handover}{346}{paragraph*.356}% 
+\contentsline {paragraph}{Automatic X2 handover}{347}{paragraph*.357}% 
+\contentsline {paragraph}{Handover delays}{348}{paragraph*.358}% 
+\contentsline {paragraph}{Selection of target cell in handover algorithm}{349}{paragraph*.359}% 
+\contentsline {paragraph}{Downlink Power Control}{350}{paragraph*.360}% 
+\contentsline {paragraph}{Uplink Power Control Tests}{350}{paragraph*.361}% 
+\contentsline {paragraph}{Frequency Reuse Algorithms}{351}{paragraph*.362}% 
+\contentsline {paragraph}{Inter\sphinxhyphen {}cell Interference with FR algorithms Tests}{351}{paragraph*.363}% 
+\contentsline {paragraph}{Carrier aggregation test}{352}{paragraph*.364}% 
+\contentsline {paragraph}{Carrier aggregation test for eNB and UE configuration}{352}{paragraph*.365}% 
+\contentsline {paragraph}{Radio link failure Test}{352}{paragraph*.366}% 
+\contentsline {subparagraph}{One eNB using Ideal and Real RRC}{353}{subparagraph*.367}% 
+\contentsline {subparagraph}{Two eNBs using Ideal and Real RRC}{353}{subparagraph*.368}% 
+\contentsline {section}{\numberline {19.4}Profiling Documentation}{354}{section.19.4}% 
+\contentsline {subsection}{\numberline {19.4.1}Overview and objectives}{354}{subsection.19.4.1}% 
+\contentsline {subsection}{\numberline {19.4.2}Framework description}{354}{subsection.19.4.2}% 
+\contentsline {subsubsection}{Simulation scripts}{354}{subsubsection*.369}% 
+\contentsline {paragraph}{Simulation input parameters}{355}{paragraph*.370}% 
+\contentsline {subsubsection}{Time measurement}{355}{subsubsection*.371}% 
+\contentsline {subsubsection}{Perl script}{356}{subsubsection*.372}% 
+\contentsline {paragraph}{Requirements}{356}{paragraph*.373}% 
+\contentsline {paragraph}{Plotting results}{356}{paragraph*.374}% 
+\contentsline {subsubsection}{Reference software and equipment}{356}{subsubsection*.375}% 
+\contentsline {subsection}{\numberline {19.4.3}Results}{356}{subsection.19.4.3}% 
+\contentsline {subsubsection}{E\sphinxhyphen {}UTRAN}{356}{subsubsection*.376}% 
+\contentsline {paragraph}{Running time}{357}{paragraph*.377}% 
+\contentsline {paragraph}{Propagation model}{357}{paragraph*.378}% 
+\contentsline {paragraph}{Simulation time}{358}{paragraph*.379}% 
+\contentsline {paragraph}{Memory usage}{358}{paragraph*.380}% 
+\contentsline {subsubsection}{EPC}{360}{subsubsection*.381}% 
+\contentsline {paragraph}{Running time}{360}{paragraph*.382}% 
+\contentsline {paragraph}{Simulation time}{361}{paragraph*.383}% 
+\contentsline {section}{\numberline {19.5}References}{361}{section.19.5}% 
+\contentsline {chapter}{\numberline {20}Wi\sphinxhyphen {}Fi Mesh Module Documentation}{363}{chapter.20}% 
+\contentsline {section}{\numberline {20.1}Design Documentation}{363}{section.20.1}% 
+\contentsline {subsection}{\numberline {20.1.1}Overview}{363}{subsection.20.1.1}% 
+\contentsline {subsubsection}{Overview of IEEE 802.11s}{364}{subsubsection*.384}% 
+\contentsline {paragraph}{Peer management protocol}{364}{paragraph*.385}% 
+\contentsline {paragraph}{Hybrid Wireless Mesh Protocol}{365}{paragraph*.386}% 
+\contentsline {subsection}{\numberline {20.1.2}Scope and Limitations}{365}{subsection.20.1.2}% 
+\contentsline {subsubsection}{Supported features}{365}{subsubsection*.387}% 
+\contentsline {subsubsection}{Verification}{365}{subsubsection*.388}% 
+\contentsline {subsubsection}{Unsupported features}{365}{subsubsection*.389}% 
+\contentsline {subsubsection}{Models yet to be created}{365}{subsubsection*.390}% 
+\contentsline {subsubsection}{Open issues}{366}{subsubsection*.391}% 
+\contentsline {section}{\numberline {20.2}User Documentation}{366}{section.20.2}% 
+\contentsline {subsection}{\numberline {20.2.1}Using the MeshNetDevice}{366}{subsection.20.2.1}% 
+\contentsline {section}{\numberline {20.3}Testing Documentation}{366}{section.20.3}% 
+\contentsline {section}{\numberline {20.4}References}{366}{section.20.4}% 
+\contentsline {chapter}{\numberline {21}MPI for Distributed Simulation}{367}{chapter.21}% 
+\contentsline {section}{\numberline {21.1}Current Implementation Details}{367}{section.21.1}% 
+\contentsline {subsection}{\numberline {21.1.1}Remote point\sphinxhyphen {}to\sphinxhyphen {}point links}{368}{subsection.21.1.1}% 
+\contentsline {subsection}{\numberline {21.1.2}Distributing the topology}{368}{subsection.21.1.2}% 
+\contentsline {section}{\numberline {21.2}Running Distributed Simulations}{368}{section.21.2}% 
+\contentsline {subsection}{\numberline {21.2.1}Prerequisites}{368}{subsection.21.2.1}% 
+\contentsline {subsection}{\numberline {21.2.2}Building and Running Examples}{369}{subsection.21.2.2}% 
+\contentsline {subsection}{\numberline {21.2.3}Setting synchronization algorithm to use}{370}{subsection.21.2.3}% 
+\contentsline {subsection}{\numberline {21.2.4}Creating custom topologies}{370}{subsection.21.2.4}% 
+\contentsline {section}{\numberline {21.3}Tracing During Distributed Simulations}{371}{section.21.3}% 
+\contentsline {chapter}{\numberline {22}Mobility}{373}{chapter.22}% 
+\contentsline {section}{\numberline {22.1}Model Description}{373}{section.22.1}% 
+\contentsline {subsection}{\numberline {22.1.1}Design}{373}{subsection.22.1.1}% 
+\contentsline {subsubsection}{Coordinate system}{374}{subsubsection*.392}% 
+\contentsline {subsubsection}{Coordinates}{374}{subsubsection*.393}% 
+\contentsline {subsubsection}{MobilityModel}{374}{subsubsection*.394}% 
+\contentsline {subsubsection}{MobilityModel Subclasses}{374}{subsubsection*.395}% 
+\contentsline {subsubsection}{PositionAllocator}{375}{subsubsection*.396}% 
+\contentsline {subsubsection}{Helper}{375}{subsubsection*.397}% 
+\contentsline {subsubsection}{ns\sphinxhyphen {}2 MobilityHelper}{375}{subsubsection*.398}% 
+\contentsline {subsection}{\numberline {22.1.2}Scope and Limitations}{376}{subsection.22.1.2}% 
+\contentsline {subsection}{\numberline {22.1.3}References}{376}{subsection.22.1.3}% 
+\contentsline {section}{\numberline {22.2}Usage}{376}{section.22.2}% 
+\contentsline {subsection}{\numberline {22.2.1}Helper}{376}{subsection.22.2.1}% 
+\contentsline {subsection}{\numberline {22.2.2}Ns2MobilityHelper}{377}{subsection.22.2.2}% 
+\contentsline {subsubsection}{ns2\sphinxhyphen {}mobility\sphinxhyphen {}trace}{377}{subsubsection*.399}% 
+\contentsline {subsubsection}{bonnmotion\sphinxhyphen {}ns2\sphinxhyphen {}example}{378}{subsubsection*.400}% 
+\contentsline {subsection}{\numberline {22.2.3}Use of Random Variables}{379}{subsection.22.2.3}% 
+\contentsline {subsection}{\numberline {22.2.4}Advanced Usage}{379}{subsection.22.2.4}% 
+\contentsline {subsubsection}{ns\sphinxhyphen {}2 scengen}{379}{subsubsection*.401}% 
+\contentsline {subsubsection}{BonnMotion}{379}{subsubsection*.402}% 
+\contentsline {subsubsection}{SUMO}{379}{subsubsection*.403}% 
+\contentsline {subsubsection}{TraNS}{380}{subsubsection*.404}% 
+\contentsline {subsection}{\numberline {22.2.5}Examples}{380}{subsection.22.2.5}% 
+\contentsline {section}{\numberline {22.3}Validation}{380}{section.22.3}% 
+\contentsline {chapter}{\numberline {23}Network Module}{381}{chapter.23}% 
+\contentsline {section}{\numberline {23.1}Packets}{381}{section.23.1}% 
+\contentsline {subsection}{\numberline {23.1.1}Packet design overview}{382}{subsection.23.1.1}% 
+\contentsline {subsection}{\numberline {23.1.2}Using the packet interface}{383}{subsection.23.1.2}% 
+\contentsline {subsubsection}{Creating a new packet}{383}{subsubsection*.405}% 
+\contentsline {subsubsection}{Adding and removing Buffer data}{384}{subsubsection*.406}% 
+\contentsline {subsubsection}{Adding and removing Tags}{386}{subsubsection*.407}% 
+\contentsline {subsubsection}{Fragmentation and concatenation}{388}{subsubsection*.408}% 
+\contentsline {subsubsection}{Enabling metadata}{389}{subsubsection*.409}% 
+\contentsline {subsection}{\numberline {23.1.3}Sample programs}{389}{subsection.23.1.3}% 
+\contentsline {subsection}{\numberline {23.1.4}Implementation details}{389}{subsection.23.1.4}% 
+\contentsline {subsubsection}{Private member variables}{389}{subsubsection*.410}% 
+\contentsline {subsubsection}{Buffer implementation}{390}{subsubsection*.411}% 
+\contentsline {subsubsection}{Tags implementation}{390}{subsubsection*.412}% 
+\contentsline {subsubsection}{Memory management}{392}{subsubsection*.413}% 
+\contentsline {subsubsection}{Copy\sphinxhyphen {}on\sphinxhyphen {}write semantics}{392}{subsubsection*.414}% 
+\contentsline {section}{\numberline {23.2}Error Model}{393}{section.23.2}% 
+\contentsline {subsection}{\numberline {23.2.1}Model Description}{393}{subsection.23.2.1}% 
+\contentsline {subsubsection}{Design}{394}{subsubsection*.415}% 
+\contentsline {subsubsection}{Scope and Limitations}{394}{subsubsection*.416}% 
+\contentsline {subsubsection}{References}{394}{subsubsection*.417}% 
+\contentsline {subsection}{\numberline {23.2.2}Usage}{394}{subsection.23.2.2}% 
+\contentsline {subsubsection}{Helpers}{395}{subsubsection*.418}% 
+\contentsline {subsubsection}{Attributes}{395}{subsubsection*.419}% 
+\contentsline {subsubsection}{Output}{395}{subsubsection*.420}% 
+\contentsline {subsubsection}{Examples}{395}{subsubsection*.421}% 
+\contentsline {subsubsection}{Troubleshooting}{395}{subsubsection*.422}% 
+\contentsline {subsection}{\numberline {23.2.3}Validation}{395}{subsection.23.2.3}% 
+\contentsline {subsection}{\numberline {23.2.4}Acknowledgements}{395}{subsection.23.2.4}% 
+\contentsline {section}{\numberline {23.3}Node and NetDevices Overview}{396}{section.23.3}% 
+\contentsline {section}{\numberline {23.4}Sockets APIs}{397}{section.23.4}% 
+\contentsline {subsection}{\numberline {23.4.1}ns\sphinxhyphen {}3 sockets API}{397}{subsection.23.4.1}% 
+\contentsline {subsubsection}{Basic operation and calls}{397}{subsubsection*.423}% 
+\contentsline {subsubsection}{Creating sockets}{397}{subsubsection*.424}% 
+\contentsline {subsubsection}{Using sockets}{398}{subsubsection*.425}% 
+\contentsline {subsection}{\numberline {23.4.2}Packet vs. buffer variants}{399}{subsection.23.4.2}% 
+\contentsline {subsection}{\numberline {23.4.3}Sending dummy data}{399}{subsection.23.4.3}% 
+\contentsline {subsection}{\numberline {23.4.4}Socket options}{400}{subsection.23.4.4}% 
+\contentsline {subsubsection}{ToS (Type of Service)}{400}{subsubsection*.426}% 
+\contentsline {paragraph}{Setting the ToS with UDP sockets}{400}{paragraph*.427}% 
+\contentsline {paragraph}{Setting the ToS with TCP sockets}{400}{paragraph*.428}% 
+\contentsline {subsubsection}{Priority}{400}{subsubsection*.429}% 
+\contentsline {paragraph}{Setting the priority with UDP sockets}{401}{paragraph*.430}% 
+\contentsline {paragraph}{Setting the priority with TCP sockets}{401}{paragraph*.431}% 
+\contentsline {paragraph}{Setting the priority with packet sockets}{401}{paragraph*.432}% 
+\contentsline {subsection}{\numberline {23.4.5}Socket errno}{401}{subsection.23.4.5}% 
+\contentsline {subsection}{\numberline {23.4.6}Example programs}{401}{subsection.23.4.6}% 
+\contentsline {subsection}{\numberline {23.4.7}POSIX\sphinxhyphen {}like sockets API}{402}{subsection.23.4.7}% 
+\contentsline {section}{\numberline {23.5}Simple NetDevice}{402}{section.23.5}% 
+\contentsline {section}{\numberline {23.6}Queues}{402}{section.23.6}% 
+\contentsline {subsection}{\numberline {23.6.1}Model Description}{402}{subsection.23.6.1}% 
+\contentsline {subsubsection}{Design}{402}{subsubsection*.433}% 
+\contentsline {paragraph}{DropTail}{403}{paragraph*.434}% 
+\contentsline {subsection}{\numberline {23.6.2}Usage}{403}{subsection.23.6.2}% 
+\contentsline {subsubsection}{Helpers}{403}{subsubsection*.435}% 
+\contentsline {subsubsection}{Output}{404}{subsubsection*.436}% 
+\contentsline {subsubsection}{Examples}{404}{subsubsection*.437}% 
+\contentsline {section}{\numberline {23.7}Queue limits}{404}{section.23.7}% 
+\contentsline {subsection}{\numberline {23.7.1}Model Description}{404}{subsection.23.7.1}% 
+\contentsline {subsubsection}{Design}{405}{subsubsection*.438}% 
+\contentsline {paragraph}{DynamicQueueLimits}{405}{paragraph*.439}% 
+\contentsline {subsection}{\numberline {23.7.2}Usage}{405}{subsection.23.7.2}% 
+\contentsline {subsubsection}{Helpers}{405}{subsubsection*.440}% 
+\contentsline {chapter}{\numberline {24}Nix\sphinxhyphen {}Vector Routing Documentation}{407}{chapter.24}% 
+\contentsline {section}{\numberline {24.1}Model Description}{407}{section.24.1}% 
+\contentsline {subsection}{\numberline {24.1.1}Scope and Limitations}{407}{subsection.24.1.1}% 
+\contentsline {section}{\numberline {24.2}Usage}{407}{section.24.2}% 
+\contentsline {subsection}{\numberline {24.2.1}Examples}{408}{subsection.24.2.1}% 
+\contentsline {chapter}{\numberline {25}Optimized Link State Routing (OLSR)}{409}{chapter.25}% 
+\contentsline {section}{\numberline {25.1}Model Description}{409}{section.25.1}% 
+\contentsline {subsection}{\numberline {25.1.1}Scope and Limitations}{409}{subsection.25.1.1}% 
+\contentsline {subsection}{\numberline {25.1.2}References}{409}{subsection.25.1.2}% 
+\contentsline {section}{\numberline {25.2}Usage}{409}{section.25.2}% 
+\contentsline {subsection}{\numberline {25.2.1}Examples}{410}{subsection.25.2.1}% 
+\contentsline {subsection}{\numberline {25.2.2}Helpers}{410}{subsection.25.2.2}% 
+\contentsline {subsection}{\numberline {25.2.3}Attributes}{410}{subsection.25.2.3}% 
+\contentsline {subsection}{\numberline {25.2.4}Tracing}{411}{subsection.25.2.4}% 
+\contentsline {subsection}{\numberline {25.2.5}Caveats}{411}{subsection.25.2.5}% 
+\contentsline {section}{\numberline {25.3}Validation}{411}{section.25.3}% 
+\contentsline {chapter}{\numberline {26}OpenFlow switch support}{413}{chapter.26}% 
+\contentsline {section}{\numberline {26.1}Model Description}{413}{section.26.1}% 
+\contentsline {subsection}{\numberline {26.1.1}Design}{413}{subsection.26.1.1}% 
+\contentsline {subsubsection}{OpenFlow switch Model}{414}{subsubsection*.441}% 
+\contentsline {subsection}{\numberline {26.1.2}Scope and Limitations}{414}{subsection.26.1.2}% 
+\contentsline {subsection}{\numberline {26.1.3}Future Work}{414}{subsection.26.1.3}% 
+\contentsline {subsection}{\numberline {26.1.4}References}{414}{subsection.26.1.4}% 
+\contentsline {section}{\numberline {26.2}Usage}{414}{section.26.2}% 
+\contentsline {subsection}{\numberline {26.2.1}Building OFSID}{415}{subsection.26.2.1}% 
+\contentsline {subsection}{\numberline {26.2.2}Examples}{415}{subsection.26.2.2}% 
+\contentsline {subsection}{\numberline {26.2.3}Helpers}{415}{subsection.26.2.3}% 
+\contentsline {subsection}{\numberline {26.2.4}Attributes}{415}{subsection.26.2.4}% 
+\contentsline {subsection}{\numberline {26.2.5}Tracing}{416}{subsection.26.2.5}% 
+\contentsline {subsection}{\numberline {26.2.6}Logging}{416}{subsection.26.2.6}% 
+\contentsline {subsection}{\numberline {26.2.7}Caveats}{416}{subsection.26.2.7}% 
+\contentsline {section}{\numberline {26.3}Validation}{416}{section.26.3}% 
+\contentsline {chapter}{\numberline {27}PointToPoint NetDevice}{417}{chapter.27}% 
+\contentsline {section}{\numberline {27.1}Overview of the PointToPoint model}{417}{section.27.1}% 
+\contentsline {section}{\numberline {27.2}Point\sphinxhyphen {}to\sphinxhyphen {}Point Channel Model}{418}{section.27.2}% 
+\contentsline {section}{\numberline {27.3}Using the PointToPointNetDevice}{418}{section.27.3}% 
+\contentsline {section}{\numberline {27.4}PointToPoint Tracing}{418}{section.27.4}% 
+\contentsline {subsection}{\numberline {27.4.1}Upper\sphinxhyphen {}Level (MAC) Hooks}{419}{subsection.27.4.1}% 
+\contentsline {subsection}{\numberline {27.4.2}Lower\sphinxhyphen {}Level (PHY) Hooks}{419}{subsection.27.4.2}% 
+\contentsline {chapter}{\numberline {28}Propagation}{421}{chapter.28}% 
+\contentsline {section}{\numberline {28.1}PropagationLossModel}{421}{section.28.1}% 
+\contentsline {subsection}{\numberline {28.1.1}FriisPropagationLossModel}{422}{subsection.28.1.1}% 
+\contentsline {subsection}{\numberline {28.1.2}TwoRayGroundPropagationLossModel}{423}{subsection.28.1.2}% 
+\contentsline {subsection}{\numberline {28.1.3}LogDistancePropagationLossModel}{423}{subsection.28.1.3}% 
+\contentsline {subsection}{\numberline {28.1.4}ThreeLogDistancePropagationLossModel}{424}{subsection.28.1.4}% 
+\contentsline {subsection}{\numberline {28.1.5}JakesPropagationLossModel}{424}{subsection.28.1.5}% 
+\contentsline {subsubsection}{ToDo}{424}{subsubsection*.442}% 
+\contentsline {subsection}{\numberline {28.1.6}RandomPropagationLossModel}{424}{subsection.28.1.6}% 
+\contentsline {subsection}{\numberline {28.1.7}NakagamiPropagationLossModel}{425}{subsection.28.1.7}% 
+\contentsline {subsection}{\numberline {28.1.8}FixedRssLossModel}{425}{subsection.28.1.8}% 
+\contentsline {subsection}{\numberline {28.1.9}MatrixPropagationLossModel}{425}{subsection.28.1.9}% 
+\contentsline {subsection}{\numberline {28.1.10}RangePropagationLossModel}{425}{subsection.28.1.10}% 
+\contentsline {subsection}{\numberline {28.1.11}OkumuraHataPropagationLossModel}{426}{subsection.28.1.11}% 
+\contentsline {subsection}{\numberline {28.1.12}Cost231PropagationLossModel}{427}{subsection.28.1.12}% 
+\contentsline {subsubsection}{ToDo}{427}{subsubsection*.443}% 
+\contentsline {subsection}{\numberline {28.1.13}ItuR1411LosPropagationLossModel}{427}{subsection.28.1.13}% 
+\contentsline {subsection}{\numberline {28.1.14}ItuR1411NlosOverRooftopPropagationLossModel}{427}{subsection.28.1.14}% 
+\contentsline {subsection}{\numberline {28.1.15}Kun2600MhzPropagationLossModel}{429}{subsection.28.1.15}% 
+\contentsline {subsection}{\numberline {28.1.16}ThreeGppPropagationLossModel}{429}{subsection.28.1.16}% 
+\contentsline {subsubsection}{ThreeGppRMaPropagationLossModel}{430}{subsubsection*.444}% 
+\contentsline {subsubsection}{ThreeGppUMaPropagationLossModel}{430}{subsubsection*.445}% 
+\contentsline {subsubsection}{ThreeGppUmiStreetCanyonPropagationLossModel}{430}{subsubsection*.446}% 
+\contentsline {subsubsection}{ThreeGppIndoorOfficePropagationLossModel}{431}{subsubsection*.447}% 
+\contentsline {subsubsection}{Testing}{431}{subsubsection*.448}% 
+\contentsline {section}{\numberline {28.2}ChannelConditionModel}{431}{section.28.2}% 
+\contentsline {subsection}{\numberline {28.2.1}ThreeGppChannelConditionModel}{431}{subsection.28.2.1}% 
+\contentsline {subsubsection}{ThreeGppRmaChannelConditionModel}{432}{subsubsection*.449}% 
+\contentsline {subsubsection}{ThreeGppUmaChannelConditionModel}{432}{subsubsection*.450}% 
+\contentsline {subsubsection}{ThreeGppUmiStreetCanyonChannelConditionModel}{432}{subsubsection*.451}% 
+\contentsline {subsubsection}{ThreeGppIndoorMixedOfficeChannelConditionModel}{432}{subsubsection*.452}% 
+\contentsline {subsubsection}{ThreeGppIndoorOpenOfficeChannelConditionModel}{432}{subsubsection*.453}% 
+\contentsline {subsection}{\numberline {28.2.2}Testing}{432}{subsection.28.2.2}% 
+\contentsline {section}{\numberline {28.3}PropagationDelayModel}{432}{section.28.3}% 
+\contentsline {subsection}{\numberline {28.3.1}ConstantSpeedPropagationDelayModel}{433}{subsection.28.3.1}% 
+\contentsline {subsection}{\numberline {28.3.2}RandomPropagationDelayModel}{433}{subsection.28.3.2}% 
+\contentsline {section}{\numberline {28.4}References}{433}{section.28.4}% 
+\contentsline {chapter}{\numberline {29}Spectrum Module}{435}{chapter.29}% 
+\contentsline {section}{\numberline {29.1}Model Description}{436}{section.29.1}% 
+\contentsline {subsection}{\numberline {29.1.1}Design}{436}{subsection.29.1.1}% 
+\contentsline {subsubsection}{Signal model}{436}{subsubsection*.454}% 
+\contentsline {subsubsection}{Channel/PHY interface}{436}{subsubsection*.455}% 
+\contentsline {subsubsection}{Spectrum Channel implementations}{438}{subsubsection*.456}% 
+\contentsline {subsubsection}{Example model implementations}{438}{subsubsection*.457}% 
+\contentsline {subsection}{\numberline {29.1.2}References}{438}{subsection.29.1.2}% 
+\contentsline {section}{\numberline {29.2}Usage}{438}{section.29.2}% 
+\contentsline {subsection}{\numberline {29.2.1}Helpers}{439}{subsection.29.2.1}% 
+\contentsline {subsection}{\numberline {29.2.2}Attributes}{439}{subsection.29.2.2}% 
+\contentsline {subsection}{\numberline {29.2.3}Output}{440}{subsection.29.2.3}% 
+\contentsline {subsection}{\numberline {29.2.4}Examples}{440}{subsection.29.2.4}% 
+\contentsline {subsection}{\numberline {29.2.5}Troubleshooting}{440}{subsection.29.2.5}% 
+\contentsline {section}{\numberline {29.3}Testing}{440}{section.29.3}% 
+\contentsline {subsection}{\numberline {29.3.1}SpectrumValue test}{441}{subsection.29.3.1}% 
+\contentsline {subsection}{\numberline {29.3.2}SpectrumConverter test}{441}{subsection.29.3.2}% 
+\contentsline {subsection}{\numberline {29.3.3}Interference test}{441}{subsection.29.3.3}% 
+\contentsline {subsection}{\numberline {29.3.4}IdealPhy test}{441}{subsection.29.3.4}% 
+\contentsline {section}{\numberline {29.4}Additional Models}{441}{section.29.4}% 
+\contentsline {subsection}{\numberline {29.4.1}TV Transmitter Model}{441}{subsection.29.4.1}% 
+\contentsline {subsubsection}{Main Model Class}{442}{subsubsection*.458}% 
+\contentsline {subsubsection}{Helper Class}{442}{subsubsection*.459}% 
+\contentsline {subsubsection}{Examples}{444}{subsubsection*.460}% 
+\contentsline {subsubsection}{Testing}{444}{subsubsection*.461}% 
+\contentsline {subsection}{\numberline {29.4.2}3GPP TR 38.901 fast fading model}{444}{subsection.29.4.2}% 
+\contentsline {subsubsection}{Implementation}{445}{subsubsection*.462}% 
+\contentsline {subsubsection}{ThreeGppSpectrumPropagationLossModel}{445}{subsubsection*.463}% 
+\contentsline {subsubsection}{ThreeGppChannelModel}{446}{subsubsection*.464}% 
+\contentsline {subsubsection}{Testing}{446}{subsubsection*.465}% 
+\contentsline {subsubsection}{References}{447}{subsubsection*.466}% 
+\contentsline {chapter}{\numberline {30}6LoWPAN: Transmission of IPv6 Packets over IEEE 802.15.4 Networks}{449}{chapter.30}% 
+\contentsline {section}{\numberline {30.1}Model Description}{449}{section.30.1}% 
+\contentsline {subsection}{\numberline {30.1.1}Design}{449}{subsection.30.1.1}% 
+\contentsline {subsubsection}{NetDevice}{449}{subsubsection*.467}% 
+\contentsline {subsubsection}{Mesh\sphinxhyphen {}Under routing}{450}{subsubsection*.468}% 
+\contentsline {subsection}{\numberline {30.1.2}Scope and Limitations}{451}{subsection.30.1.2}% 
+\contentsline {subsubsection}{Using 6LoWPAN with IPv4 (or other L3 protocols)}{451}{subsubsection*.469}% 
+\contentsline {subsection}{\numberline {30.1.3}References}{451}{subsection.30.1.3}% 
+\contentsline {section}{\numberline {30.2}Usage}{451}{section.30.2}% 
+\contentsline {subsection}{\numberline {30.2.1}Enabling sixlowpan}{451}{subsection.30.2.1}% 
+\contentsline {subsection}{\numberline {30.2.2}Helper}{451}{subsection.30.2.2}% 
+\contentsline {subsection}{\numberline {30.2.3}Examples}{451}{subsection.30.2.3}% 
+\contentsline {subsection}{\numberline {30.2.4}Tests}{452}{subsection.30.2.4}% 
+\contentsline {section}{\numberline {30.3}Validation}{452}{section.30.3}% 
+\contentsline {chapter}{\numberline {31}Tap NetDevice}{453}{chapter.31}% 
+\contentsline {section}{\numberline {31.1}TapBridge Model Overview}{453}{section.31.1}% 
+\contentsline {subsection}{\numberline {31.1.1}TapBridge ConfigureLocal Mode}{453}{subsection.31.1.1}% 
+\contentsline {subsection}{\numberline {31.1.2}TapBridge UseLocal Mode}{454}{subsection.31.1.2}% 
+\contentsline {subsection}{\numberline {31.1.3}TapBridge UseBridge Mode}{455}{subsection.31.1.3}% 
+\contentsline {subsection}{\numberline {31.1.4}TapBridge ConfigureLocal Operation}{456}{subsection.31.1.4}% 
+\contentsline {subsection}{\numberline {31.1.5}TapBridge UseLocal Mode Operation}{457}{subsection.31.1.5}% 
+\contentsline {subsection}{\numberline {31.1.6}TapBridge UseBridge Operation}{458}{subsection.31.1.6}% 
+\contentsline {section}{\numberline {31.2}Tap Bridge Channel Model}{458}{section.31.2}% 
+\contentsline {section}{\numberline {31.3}Tap Bridge Tracing Model}{458}{section.31.3}% 
+\contentsline {section}{\numberline {31.4}Using the TapBridge}{458}{section.31.4}% 
+\contentsline {chapter}{\numberline {32}Topology Input Readers}{459}{chapter.32}% 
+\contentsline {chapter}{\numberline {33}Traffic Control Layer}{461}{chapter.33}% 
+\contentsline {section}{\numberline {33.1}Traffic Control Layer}{461}{section.33.1}% 
+\contentsline {subsection}{\numberline {33.1.1}Introducing the Traffic Control Layer}{461}{subsection.33.1.1}% 
+\contentsline {subsubsection}{Transmitting packets}{461}{subsubsection*.470}% 
+\contentsline {subsubsection}{Receiving packets}{461}{subsubsection*.471}% 
+\contentsline {subsection}{\numberline {33.1.2}Brief description of old node/device/protocol interactions}{462}{subsection.33.1.2}% 
+\contentsline {subsubsection}{L2 Helper main operations}{462}{subsubsection*.472}% 
+\contentsline {subsubsection}{L3 Helper}{462}{subsubsection*.473}% 
+\contentsline {subsubsection}{IP interfaces}{463}{subsubsection*.474}% 
+\contentsline {section}{\numberline {33.2}Queue disciplines}{463}{section.33.2}% 
+\contentsline {subsection}{\numberline {33.2.1}Model Description}{463}{subsection.33.2.1}% 
+\contentsline {subsubsection}{Design}{464}{subsubsection*.475}% 
+\contentsline {subsection}{\numberline {33.2.2}Usage}{465}{subsection.33.2.2}% 
+\contentsline {subsubsection}{Helpers}{466}{subsubsection*.476}% 
+\contentsline {subsection}{\numberline {33.2.3}Implementation details}{466}{subsection.33.2.3}% 
+\contentsline {subsubsection}{Requeue}{469}{subsubsection*.477}% 
+\contentsline {section}{\numberline {33.3}Fifo queue disc}{469}{section.33.3}% 
+\contentsline {subsection}{\numberline {33.3.1}Model Description}{469}{subsection.33.3.1}% 
+\contentsline {subsubsection}{Attributes}{470}{subsubsection*.478}% 
+\contentsline {subsection}{\numberline {33.3.2}Validation}{470}{subsection.33.3.2}% 
+\contentsline {section}{\numberline {33.4}pfifo\_fast queue disc}{470}{section.33.4}% 
+\contentsline {subsection}{\numberline {33.4.1}Model Description}{470}{subsection.33.4.1}% 
+\contentsline {subsubsection}{Attributes}{471}{subsubsection*.479}% 
+\contentsline {subsubsection}{Examples}{471}{subsubsection*.480}% 
+\contentsline {subsection}{\numberline {33.4.2}Validation}{471}{subsection.33.4.2}% 
+\contentsline {section}{\numberline {33.5}Prio queue disc}{471}{section.33.5}% 
+\contentsline {subsection}{\numberline {33.5.1}Model Description}{471}{subsection.33.5.1}% 
+\contentsline {subsubsection}{Attributes}{471}{subsubsection*.481}% 
+\contentsline {subsubsection}{Examples}{472}{subsubsection*.482}% 
+\contentsline {subsection}{\numberline {33.5.2}Validation}{472}{subsection.33.5.2}% 
+\contentsline {section}{\numberline {33.6}TBF queue disc}{472}{section.33.6}% 
+\contentsline {subsection}{\numberline {33.6.1}Model Description}{473}{subsection.33.6.1}% 
+\contentsline {subsubsection}{References}{474}{subsubsection*.483}% 
+\contentsline {subsubsection}{Attributes}{474}{subsubsection*.484}% 
+\contentsline {subsubsection}{TraceSources}{474}{subsubsection*.485}% 
+\contentsline {subsubsection}{Examples}{474}{subsubsection*.486}% 
+\contentsline {subsection}{\numberline {33.6.2}Validation}{474}{subsection.33.6.2}% 
+\contentsline {section}{\numberline {33.7}RED queue disc}{475}{section.33.7}% 
+\contentsline {subsection}{\numberline {33.7.1}Model Description}{475}{subsection.33.7.1}% 
+\contentsline {subsubsection}{Adaptive Random Early Detection (ARED)}{475}{subsubsection*.487}% 
+\contentsline {subsubsection}{Feng’s Adaptive RED}{475}{subsubsection*.488}% 
+\contentsline {subsubsection}{Nonlinear Random Early Detection (NLRED)}{475}{subsubsection*.489}% 
+\contentsline {subsubsection}{Explicit Congestion Notification (ECN)}{475}{subsubsection*.490}% 
+\contentsline {subsubsection}{References}{476}{subsubsection*.491}% 
+\contentsline {subsubsection}{Attributes}{476}{subsubsection*.492}% 
+\contentsline {subsubsection}{Simulating ARED}{477}{subsubsection*.493}% 
+\contentsline {subsubsection}{Simulating Feng’s Adaptive RED}{477}{subsubsection*.494}% 
+\contentsline {subsubsection}{Simulating NLRED}{478}{subsubsection*.495}% 
+\contentsline {subsubsection}{Examples}{478}{subsubsection*.496}% 
+\contentsline {subsection}{\numberline {33.7.2}Validation}{478}{subsection.33.7.2}% 
+\contentsline {section}{\numberline {33.8}CoDel queue disc}{478}{section.33.8}% 
+\contentsline {subsection}{\numberline {33.8.1}Model Description}{478}{subsection.33.8.1}% 
+\contentsline {subsubsection}{References}{479}{subsubsection*.497}% 
+\contentsline {subsubsection}{Attributes}{479}{subsubsection*.498}% 
+\contentsline {subsubsection}{Examples}{479}{subsubsection*.499}% 
+\contentsline {subsection}{\numberline {33.8.2}Validation}{480}{subsection.33.8.2}% 
+\contentsline {section}{\numberline {33.9}FqCoDel queue disc}{481}{section.33.9}% 
+\contentsline {subsection}{\numberline {33.9.1}Model Description}{481}{subsection.33.9.1}% 
+\contentsline {subsubsection}{References}{482}{subsubsection*.500}% 
+\contentsline {subsubsection}{Attributes}{482}{subsubsection*.501}% 
+\contentsline {subsubsection}{Examples}{482}{subsubsection*.502}% 
+\contentsline {subsection}{\numberline {33.9.2}Validation}{483}{subsection.33.9.2}% 
+\contentsline {section}{\numberline {33.10}PIE queue disc}{483}{section.33.10}% 
+\contentsline {subsection}{\numberline {33.10.1}Model Description}{483}{subsection.33.10.1}% 
+\contentsline {subsubsection}{References}{484}{subsubsection*.503}% 
+\contentsline {subsubsection}{Attributes}{484}{subsubsection*.504}% 
+\contentsline {subsubsection}{Examples}{484}{subsubsection*.505}% 
+\contentsline {subsection}{\numberline {33.10.2}Validation}{484}{subsection.33.10.2}% 
+\contentsline {section}{\numberline {33.11}Mq queue disc}{485}{section.33.11}% 
+\contentsline {subsection}{\numberline {33.11.1}Model Description}{485}{subsection.33.11.1}% 
+\contentsline {subsubsection}{Examples}{485}{subsubsection*.506}% 
+\contentsline {subsection}{\numberline {33.11.2}Validation}{485}{subsection.33.11.2}% 
+\contentsline {chapter}{\numberline {34}UAN Framework}{487}{chapter.34}% 
+\contentsline {section}{\numberline {34.1}Model Description}{487}{section.34.1}% 
+\contentsline {subsection}{\numberline {34.1.1}Design}{488}{subsection.34.1.1}% 
+\contentsline {subsubsection}{UAN Propagation Models}{488}{subsubsection*.507}% 
+\contentsline {subsubsection}{UAN PHY Model Overview}{489}{subsubsection*.508}% 
+\contentsline {subsubsection}{UAN MAC Model Overview}{489}{subsubsection*.509}% 
+\contentsline {subsubsection}{AUV mobility models}{490}{subsubsection*.510}% 
+\contentsline {paragraph}{Use cases}{490}{paragraph*.511}% 
+\contentsline {paragraph}{AUV mobility models design}{490}{paragraph*.512}% 
+\contentsline {subsubsection}{Energy models}{491}{subsubsection*.513}% 
+\contentsline {paragraph}{Use cases}{491}{paragraph*.514}% 
+\contentsline {paragraph}{AUV energy models}{491}{paragraph*.515}% 
+\contentsline {paragraph}{AUV energy sources}{492}{paragraph*.516}% 
+\contentsline {paragraph}{Acoustic modem energy model}{492}{paragraph*.517}% 
+\contentsline {paragraph}{UAN module energy modifications}{492}{paragraph*.518}% 
+\contentsline {paragraph}{Li\sphinxhyphen {}Ion batteries model}{492}{paragraph*.519}% 
+\contentsline {subsection}{\numberline {34.1.2}Scope and Limitations}{493}{subsection.34.1.2}% 
+\contentsline {subsection}{\numberline {34.1.3}Future Work}{493}{subsection.34.1.3}% 
+\contentsline {subsection}{\numberline {34.1.4}References}{493}{subsection.34.1.4}% 
+\contentsline {section}{\numberline {34.2}Usage}{493}{section.34.2}% 
+\contentsline {subsection}{\numberline {34.2.1}Examples}{493}{subsection.34.2.1}% 
+\contentsline {subsubsection}{Mobility Model Examples}{494}{subsubsection*.520}% 
+\contentsline {subsubsection}{UAN Examples}{494}{subsubsection*.521}% 
+\contentsline {subsection}{\numberline {34.2.2}Helpers}{495}{subsection.34.2.2}% 
+\contentsline {subsubsection}{AcousticModemEnergyModelHelper}{495}{subsubsection*.522}% 
+\contentsline {subsubsection}{AuvGliderHelper}{495}{subsubsection*.523}% 
+\contentsline {subsubsection}{AuvRemusHelper}{495}{subsubsection*.524}% 
+\contentsline {subsection}{\numberline {34.2.3}Attributes}{496}{subsection.34.2.3}% 
+\contentsline {subsection}{\numberline {34.2.4}Tracing}{496}{subsection.34.2.4}% 
+\contentsline {subsection}{\numberline {34.2.5}Logging}{496}{subsection.34.2.5}% 
+\contentsline {subsection}{\numberline {34.2.6}Caveats}{496}{subsection.34.2.6}% 
+\contentsline {section}{\numberline {34.3}Validation}{496}{section.34.3}% 
+\contentsline {subsection}{\numberline {34.3.1}Auv Energy Model}{496}{subsection.34.3.1}% 
+\contentsline {subsection}{\numberline {34.3.2}Auv Mobility}{497}{subsection.34.3.2}% 
+\contentsline {subsection}{\numberline {34.3.3}Li\sphinxhyphen {}Ion Energy Source}{498}{subsection.34.3.3}% 
+\contentsline {chapter}{\numberline {35}WAVE models}{499}{chapter.35}% 
+\contentsline {section}{\numberline {35.1}Model Description}{499}{section.35.1}% 
+\contentsline {subsection}{\numberline {35.1.1}Design}{500}{subsection.35.1.1}% 
+\contentsline {subsubsection}{MAC layer}{500}{subsubsection*.525}% 
+\contentsline {subsubsection}{MAC extension layer}{501}{subsubsection*.526}% 
+\contentsline {subsubsection}{PHY layer}{503}{subsubsection*.527}% 
+\contentsline {subsection}{\numberline {35.1.2}Scope and Limitations}{503}{subsection.35.1.2}% 
+\contentsline {subsection}{\numberline {35.1.3}References}{504}{subsection.35.1.3}% 
+\contentsline {section}{\numberline {35.2}Usage}{504}{section.35.2}% 
+\contentsline {subsection}{\numberline {35.2.1}Helpers}{504}{subsection.35.2.1}% 
+\contentsline {subsection}{\numberline {35.2.2}APIs}{506}{subsection.35.2.2}% 
+\contentsline {subsubsection}{MAC layer}{506}{subsubsection*.528}% 
+\contentsline {subsubsection}{MAC extension layer}{507}{subsubsection*.529}% 
+\contentsline {subsection}{\numberline {35.2.3}Attributes}{509}{subsection.35.2.3}% 
+\contentsline {subsection}{\numberline {35.2.4}Output}{510}{subsection.35.2.4}% 
+\contentsline {subsection}{\numberline {35.2.5}Advanced Usage}{510}{subsection.35.2.5}% 
+\contentsline {subsubsection}{Advanced WaveHelper configuration}{510}{subsubsection*.530}% 
+\contentsline {subsection}{\numberline {35.2.6}Examples}{511}{subsection.35.2.6}% 
+\contentsline {subsection}{\numberline {35.2.7}Troubleshooting}{511}{subsection.35.2.7}% 
+\contentsline {section}{\numberline {35.3}Validation}{511}{section.35.3}% 
+\contentsline {chapter}{\numberline {36}Wi\sphinxhyphen {}Fi Module}{513}{chapter.36}% 
+\contentsline {section}{\numberline {36.1}Design Documentation}{513}{section.36.1}% 
+\contentsline {subsection}{\numberline {36.1.1}Overview of the model}{513}{subsection.36.1.1}% 
+\contentsline {subsubsection}{MAC high models}{514}{subsubsection*.531}% 
+\contentsline {subsubsection}{MAC low layer}{515}{subsubsection*.532}% 
+\contentsline {subsubsection}{PHY layer models}{515}{subsubsection*.533}% 
+\contentsline {subsection}{\numberline {36.1.2}Scope and Limitations}{515}{subsection.36.1.2}% 
+\contentsline {subsection}{\numberline {36.1.3}Design Details}{516}{subsection.36.1.3}% 
+\contentsline {subsubsection}{WifiPhy and related models}{517}{subsubsection*.534}% 
+\contentsline {paragraph}{YansWifiPhy and WifiPhyStateHelper}{517}{paragraph*.535}% 
+\contentsline {paragraph}{InterferenceHelper}{519}{paragraph*.536}% 
+\contentsline {paragraph}{ErrorModel}{519}{paragraph*.537}% 
+\contentsline {paragraph}{SpectrumWifiPhy}{520}{paragraph*.538}% 
+\contentsline {subsubsection}{The MAC model}{521}{subsubsection*.539}% 
+\contentsline {paragraph}{Infrastructure association}{521}{paragraph*.540}% 
+\contentsline {paragraph}{Roaming}{521}{paragraph*.541}% 
+\contentsline {paragraph}{Channel access}{521}{paragraph*.542}% 
+\contentsline {paragraph}{Rate control algorithms}{523}{paragraph*.543}% 
+\contentsline {paragraph}{ConstantRateWifiManager}{523}{paragraph*.544}% 
+\contentsline {paragraph}{IdealWifiManager}{524}{paragraph*.545}% 
+\contentsline {paragraph}{MinstrelWifiManager}{524}{paragraph*.546}% 
+\contentsline {paragraph}{Ack policy selection}{524}{paragraph*.547}% 
+\contentsline {paragraph}{ConstantWifiAckPolicySelector}{525}{paragraph*.548}% 
+\contentsline {paragraph}{802.11ax OBSS PD spatial reuse}{525}{paragraph*.549}% 
+\contentsline {paragraph}{OBSS PD Algorithm}{525}{paragraph*.550}% 
+\contentsline {paragraph}{Constant OBSS PD Algorithm}{525}{paragraph*.551}% 
+\contentsline {paragraph}{Modifying Wifi model}{526}{paragraph*.552}% 
+\contentsline {section}{\numberline {36.2}User Documentation}{526}{section.36.2}% 
+\contentsline {subsection}{\numberline {36.2.1}Using the WifiNetDevice}{526}{subsection.36.2.1}% 
+\contentsline {subsubsection}{YansWifiChannelHelper}{527}{subsubsection*.553}% 
+\contentsline {subsubsection}{YansWifiPhyHelper}{528}{subsubsection*.554}% 
+\contentsline {subsubsection}{Channel, frequency, and channel width configuration}{529}{subsubsection*.555}% 
+\contentsline {paragraph}{WifiHelper::SetStandard()}{530}{paragraph*.556}% 
+\contentsline {paragraph}{WifiPhy attribute interactions}{531}{paragraph*.557}% 
+\contentsline {paragraph}{WifiPhy::Frequency}{531}{paragraph*.558}% 
+\contentsline {paragraph}{WifiPhy::ChannelWidth}{531}{paragraph*.559}% 
+\contentsline {paragraph}{WifiPhy::ChannelNumber}{531}{paragraph*.560}% 
+\contentsline {paragraph}{Defining a new channel number}{532}{paragraph*.561}% 
+\contentsline {paragraph}{Order of operation issues}{533}{paragraph*.562}% 
+\contentsline {subsubsection}{SpectrumWifiPhyHelper}{534}{subsubsection*.563}% 
+\contentsline {subsubsection}{WifiMacHelper}{534}{subsubsection*.564}% 
+\contentsline {paragraph}{Selection of the Access Category (AC)}{536}{paragraph*.565}% 
+\contentsline {subsubsection}{WifiHelper}{537}{subsubsection*.566}% 
+\contentsline {subsubsection}{HT configuration}{538}{subsubsection*.567}% 
+\contentsline {subsubsection}{VHT configuration}{539}{subsubsection*.568}% 
+\contentsline {subsubsection}{HE configuration}{539}{subsubsection*.569}% 
+\contentsline {subsubsection}{Mobility configuration}{539}{subsubsection*.570}% 
+\contentsline {subsubsection}{Example configuration}{540}{subsubsection*.571}% 
+\contentsline {paragraph}{AdHoc WifiNetDevice configuration}{540}{paragraph*.572}% 
+\contentsline {paragraph}{Infrastructure (access point and clients) WifiNetDevice configuration}{541}{paragraph*.573}% 
+\contentsline {section}{\numberline {36.3}Testing Documentation}{542}{section.36.3}% 
+\contentsline {subsection}{\numberline {36.3.1}Error model}{542}{subsection.36.3.1}% 
+\contentsline {subsection}{\numberline {36.3.2}MAC validation}{543}{subsection.36.3.2}% 
+\contentsline {subsection}{\numberline {36.3.3}SpectrumWiFiPhy}{543}{subsection.36.3.3}% 
+\contentsline {subsubsection}{Saturation performance}{545}{subsubsection*.574}% 
+\contentsline {subsubsection}{Packet error rate performance}{546}{subsubsection*.575}% 
+\contentsline {subsubsection}{Interference performance}{546}{subsubsection*.576}% 
+\contentsline {section}{\numberline {36.4}References}{547}{section.36.4}% 
+\contentsline {chapter}{\numberline {37}Wimax NetDevice}{549}{chapter.37}% 
+\contentsline {section}{\numberline {37.1}Scope of the model}{549}{section.37.1}% 
+\contentsline {section}{\numberline {37.2}Using the Wimax models}{550}{section.37.2}% 
+\contentsline {section}{\numberline {37.3}Wimax Attributes}{551}{section.37.3}% 
+\contentsline {section}{\numberline {37.4}Wimax Tracing}{552}{section.37.4}% 
+\contentsline {section}{\numberline {37.5}Wimax MAC model}{552}{section.37.5}% 
+\contentsline {subsection}{\numberline {37.5.1}Convergence Sublayer}{552}{subsection.37.5.1}% 
+\contentsline {subsection}{\numberline {37.5.2}IP Packet Classifier}{554}{subsection.37.5.2}% 
+\contentsline {subsection}{\numberline {37.5.3}MAC Common Part Sublayer}{554}{subsection.37.5.3}% 
+\contentsline {subsection}{\numberline {37.5.4}Framing and Management Messages}{554}{subsection.37.5.4}% 
+\contentsline {subsection}{\numberline {37.5.5}Network Entry and Initialization}{554}{subsection.37.5.5}% 
+\contentsline {subsection}{\numberline {37.5.6}Connections and Addressing}{555}{subsection.37.5.6}% 
+\contentsline {subsection}{\numberline {37.5.7}Scheduling Services}{555}{subsection.37.5.7}% 
+\contentsline {subsection}{\numberline {37.5.8}WiMAX Uplink Scheduler Model}{555}{subsection.37.5.8}% 
+\contentsline {subsection}{\numberline {37.5.9}WiMAX Outbound Schedulers Model}{556}{subsection.37.5.9}% 
+\contentsline {section}{\numberline {37.6}WimaxChannel and WimaxPhy models}{556}{section.37.6}% 
+\contentsline {section}{\numberline {37.7}Channel model}{556}{section.37.7}% 
+\contentsline {section}{\numberline {37.8}Physical model}{557}{section.37.8}% 
+\contentsline {chapter}{Bibliography}{559}{chapter*.577}% 
+\contentsline {chapter}{Index}{565}{section*.578}% 
