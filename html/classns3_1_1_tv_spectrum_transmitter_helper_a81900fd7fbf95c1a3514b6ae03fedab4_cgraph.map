@@ -1,0 +1,4 @@
+<map id="ns3::TvSpectrumTransmitterHelper::GetRandomNumTransmitters" name="ns3::TvSpectrumTransmitterHelper::GetRandomNumTransmitters">
+<area shape="rect" id="node1" title="Randomly generates the number of TV transmitters to be created based on given density and number of p..." alt="" coords="5,5,268,47"/>
+<area shape="rect" id="node2" href="$classns3_1_1_random_variable_stream.html#a66cd94e6305ce7f000f1a9ff0fcb9aef" title="Get the next random value as an integer drawn from the distribution." alt="" coords="316,5,524,47"/>
+</map>

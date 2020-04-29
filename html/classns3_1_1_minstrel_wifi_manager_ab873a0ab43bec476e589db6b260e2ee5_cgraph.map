@@ -1,0 +1,4 @@
+<map id="ns3::MinstrelWifiManager::InitSampleTable" name="ns3::MinstrelWifiManager::InitSampleTable">
+<area shape="rect" id="node1" title="Initialize Sample Table." alt="" coords="5,5,195,47"/>
+<area shape="rect" id="node2" href="$classns3_1_1_random_variable_stream.html#a66cd94e6305ce7f000f1a9ff0fcb9aef" title="Get the next random value as an integer drawn from the distribution." alt="" coords="243,5,451,47"/>
+</map>

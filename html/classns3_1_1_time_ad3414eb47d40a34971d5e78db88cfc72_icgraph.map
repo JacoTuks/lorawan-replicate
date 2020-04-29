@@ -1,0 +1,22 @@
+<map id="ns3::Time::Max" name="ns3::Time::Max">
+<area shape="rect" id="node1" title="Maximum representable Time." alt="" coords="756,258,877,285"/>
+<area shape="rect" id="node2" href="$classns3_1_1_tcp_vegas.html#a9598876615fdef3542af10ff541e1d40" title="Enable Vegas algorithm to start taking Vegas samples." alt="" coords="501,71,708,98"/>
+<area shape="rect" id="node5" href="$classns3_1_1_tcp_veno.html#a7ece86eb87a0b29cb1d13be11a963873" title="Enable Veno algorithm to start Veno sampling." alt="" coords="509,182,701,209"/>
+<area shape="rect" id="node8" href="$classns3_1_1_tcp_yeah.html#ad2f91d04a90f689b9cfd05a26de6472e" title="Enable YeAH algorithm to start taking YeAH samples." alt="" coords="511,283,698,310"/>
+<area shape="rect" id="node12" href="$classns3_1_1_tcp_htcp.html#add36278610893b4eba23cf688f7779d8" title="Get the slow start threshold after a loss event." alt="" coords="507,334,702,361"/>
+<area shape="rect" id="node13" href="$classns3_1_1_arp_cache_1_1_entry.html#a45db2d4cfc508a9d099e26c56d7c9953" title="Returns the entry timeout." alt="" coords="526,385,683,427"/>
+<area shape="rect" id="node14" href="$classns3_1_1_tcp_vegas.html#ae80e9ac677116dada43dacda0f98a8b6" title="Adjust cwnd following Vegas linear increase/decrease algorithm." alt="" coords="224,9,453,35"/>
+<area shape="rect" id="node15" href="$classns3_1_1_tcp_veno.html#a5865787a20ea7c2c8beee2df5cefcdaa" title="Adjust cwnd following Veno additive increase algorithm." alt="" coords="227,126,450,153"/>
+<area shape="rect" id="node16" href="$classns3_1_1_tcp_yeah.html#aa1efa60adbcb1dfad8d188deef7ed2ea" title="Adjust cwnd following YeAH dual&#45;mode algorithm." alt="" coords="229,243,448,270"/>
+<area shape="rect" id="node17" href="$group__time.html#ga07f8cce9b9e4f52d0f0b16da276b55c2" title="Helper to make an unbounded Time checker." alt="" coords="519,451,691,478"/>
+<area shape="rect" id="node18" href="$classns3_1_1_tcp_rate_linux.html#a2ec421fa97c9e10fa38dd824b3f8efd7" title="Update the Rate information after an item is received." alt="" coords="531,503,678,544"/>
+<area shape="rect" id="node3" href="$classns3_1_1_tcp_vegas.html#a0e82c50f7d326449fca838e46cbb9821" title="Enable/disable Vegas algorithm depending on the congestion state." alt="" coords="241,60,436,101"/>
+<area shape="rect" id="node4" href="$class_tcp_vegas_test.html#a00eaa735d1666ec15d51ad98cf584087" title="Implementation to actually run this TestCase." alt="" coords="11,38,171,65"/>
+<area shape="rect" id="node6" href="$classns3_1_1_tcp_veno.html#a39f34ca48e88063934c9c4f893d9c1dc" title="Enable/disable Veno depending on the congestion state." alt="" coords="245,177,433,219"/>
+<area shape="rect" id="node7" href="$class_tcp_veno_test.html#ac9a8c938515295419b597b999c724100" title="Implementation to actually run this TestCase." alt="" coords="14,153,167,179"/>
+<area shape="rect" id="node9" href="$classns3_1_1_tcp_yeah.html#ad3d8b9d44b3a29ab9f30aabc4af9c08a" title="Enable/disable YeAH algorithm depending on the congestion state." alt="" coords="246,295,431,336"/>
+<area shape="rect" id="node10" href="$class_tcp_yeah_increment_test.html#a8100d996b7210a1476e34eed2781800a" title="Implementation to actually run this TestCase." alt="" coords="8,297,173,339"/>
+<area shape="rect" id="node11" href="$class_tcp_yeah_decrement_test.html#a699fd95f30a62b6570bce1a2d60780b3" title="Implementation to actually run this TestCase." alt="" coords="5,232,176,273"/>
+<area shape="rect" id="node19" href="$class_tcp_rate_linux_basic_test.html#a040a3e59c958e9ab411224f3ef358d40" title=" " alt="" coords="254,503,423,544"/>
+<area shape="rect" id="node20" href="$class_tcp_rate_linux_basic_test.html#a9db35df53d79296340221c71f0db80c2" title="Implementation to actually run this TestCase." alt="" coords="6,503,175,544"/>
+</map>

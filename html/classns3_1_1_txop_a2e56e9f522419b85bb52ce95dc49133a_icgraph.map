@@ -1,0 +1,7 @@
+<map id="ns3::Txop::NotifyChannelSwitching" name="ns3::Txop::NotifyChannelSwitching">
+<area shape="rect" id="node1" title="When a channel switching occurs, enqueued packets are removed." alt="" coords="487,27,673,69"/>
+<area shape="rect" id="node2" href="$classns3_1_1_ocb_wifi_mac.html#a3a58e02b96aef98dbbb7a9b9d9861e7b" title=" " alt="" coords="235,5,434,32"/>
+<area shape="rect" id="node3" href="$classns3_1_1_channel_access_manager.html#ab075331ee1b0e10fd685f8edd158afb6" title=" " alt="" coords="231,57,439,98"/>
+<area shape="rect" id="node4" href="$classns3_1_1_phy_listener.html#a03faeaeb984cba7a659184f653d61cf7" title=" " alt="" coords="5,27,183,69"/>
+<area shape="rect" id="node5" href="$classns3_1_1_ocb_wifi_mac.html#af735dfafc5820e797233b8ce21bcf21b" title="To support MAC extension for multiple channel operation, Reset current MAC entity and flush its inter..." alt="" coords="6,93,182,120"/>
+</map>

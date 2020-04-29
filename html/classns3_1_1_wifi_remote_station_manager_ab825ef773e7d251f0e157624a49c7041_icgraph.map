@@ -1,0 +1,9 @@
+<map id="ns3::WifiRemoteStationManager::DoReportRtsFailed" name="ns3::WifiRemoteStationManager::DoReportRtsFailed">
+<area shape="rect" id="node1" title="This method is a pure virtual method that must be implemented by the sub&#45;class." alt="" coords="1416,27,1649,69"/>
+<area shape="rect" id="node2" href="$classns3_1_1_wifi_remote_station_manager.html#ad3844da681fd76f907293f5ff45187ec" title="Should be invoked whenever the RtsTimeout associated to a transmission attempt expires." alt="" coords="1135,27,1368,69"/>
+<area shape="rect" id="node3" href="$classns3_1_1_mac_low.html#a35adb9b4c7f1035da2cb080289ba9cf7" title="Event handler when CTS timeout occurs." alt="" coords="889,5,1077,32"/>
+<area shape="rect" id="node7" href="$classns3_1_1_qos_txop.html#a89bd16f2271d51bb1ddafb339b07f54a" title="Notify the Txop that internal collision has occurred." alt="" coords="879,57,1087,98"/>
+<area shape="rect" id="node4" href="$classns3_1_1_mac_low.html#ac472702b866a51ea2dfb7637381897aa" title="Send RTS to begin RTS&#45;CTS&#45;Data&#45;Ack transaction." alt="" coords="600,5,831,32"/>
+<area shape="rect" id="node5" href="$classns3_1_1_mac_low.html#aa477261c5209c13c66af9e2ae78b07e5" title=" " alt="" coords="321,5,552,32"/>
+<area shape="rect" id="node6" href="$classns3_1_1_wave_mac_low.html#abf4a90e9984a73b24197706fb79118b1" title=" " alt="" coords="5,5,273,32"/>
+</map>

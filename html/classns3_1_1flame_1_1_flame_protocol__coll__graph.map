@@ -1,0 +1,52 @@
+<map id="ns3::flame::FlameProtocol" name="ns3::flame::FlameProtocol">
+<area shape="rect" id="node1" title="FLAME routing protocol." alt="" coords="2786,813,2979,840"/>
+<area shape="rect" id="node44" href="$classns3_1_1_ptr.html" title=" " alt="" coords="3246,159,3401,201"/>
+<area shape="rect" id="node2" href="$classns3_1_1_mesh_l2_routing_protocol.html" title="Interface for L2 mesh routing protocol and mesh point communication." alt="" coords="1825,595,2032,621"/>
+<area shape="rect" id="node14" href="$classns3_1_1_ptr.html" title=" " alt="" coords="2285,535,2503,577"/>
+<area shape="rect" id="node3" href="$classns3_1_1_object.html" title="A base class which provides memory management and object aggregation." alt="" coords="1393,700,1488,727"/>
+<area shape="rect" id="node9" href="$structns3_1_1_object_1_1_aggregates.html" title="The list of Objects aggregated to this one." alt="" coords="1840,648,2017,675"/>
+<area shape="rect" id="node12" href="$classns3_1_1_net_device.html" title="Network layer to device interface." alt="" coords="1868,709,1989,736"/>
+<area shape="rect" id="node25" href="$classns3_1_1_node.html" title="A network Node." alt="" coords="3280,1124,3367,1151"/>
+<area shape="rect" id="node47" href="$classns3_1_1flame_1_1_flame_rtable.html" title="Routing table for FLAME." alt="" coords="1837,992,2020,1019"/>
+<area shape="rect" id="node4" href="$classns3_1_1_simple_ref_count.html" title=" " alt="" coords="890,599,1055,655"/>
+<area shape="rect" id="node5" href="$classns3_1_1_object_base.html" title="Anchor the ns&#45;3 type and attribute system." alt="" coords="427,613,554,640"/>
+<area shape="rect" id="node6" href="$classns3_1_1_simple_ref_count.html" title="A template&#45;based reference counting class." alt="" coords="397,271,584,313"/>
+<area shape="rect" id="node37" href="$classns3_1_1_simple_ref_count.html" title=" " alt="" coords="853,213,1092,254"/>
+<area shape="rect" id="node7" href="$classns3_1_1empty.html" title="make Callback use a separate empty type" alt="" coords="134,237,229,264"/>
+<area shape="rect" id="node8" href="$classns3_1_1_type_id.html" title="a unique identifier for an interface." alt="" coords="925,773,1020,800"/>
+<area shape="rect" id="node10" href="$classns3_1_1_ptr.html" title=" " alt="" coords="1348,541,1533,582"/>
+<area shape="rect" id="node11" href="$classns3_1_1_mesh_point_device.html" title="Virtual net device modeling mesh point." alt="" coords="3995,645,4161,672"/>
+<area shape="rect" id="node21" href="$classns3_1_1_ptr.html" title=" " alt="" coords="2294,1051,2494,1077"/>
+<area shape="rect" id="node13" href="$classns3_1_1_mac48_address.html" title="an EUI&#45;48 address" alt="" coords="417,1087,565,1113"/>
+<area shape="rect" id="node39" href="$classns3_1_1_mesh_wifi_interface_mac.html" title="Basic MAC of mesh point Wi&#45;Fi interface. Its function is extendable through plugins mechanism." alt="" coords="873,304,1072,331"/>
+<area shape="rect" id="node48" title=" " alt="" coords="1329,1021,1553,1077"/>
+<area shape="rect" id="node49" href="$structns3_1_1flame_1_1_flame_rtable_1_1_route.html" title="Routing table entry." alt="" coords="881,1017,1064,1058"/>
+<area shape="rect" id="node15" href="$classns3_1_1_ptr.html" title="Smart pointer class similar to boost::intrusive_ptr." alt="" coords="918,467,1027,493"/>
+<area shape="rect" id="node18" href="$classns3_1_1_ptr.html" title=" " alt="" coords="1339,421,1542,462"/>
+<area shape="rect" id="node24" href="$classns3_1_1_ptr.html" title=" " alt="" coords="3644,999,3811,1025"/>
+<area shape="rect" id="node30" href="$classns3_1_1_ptr.html" title=" " alt="" coords="1327,355,1554,381"/>
+<area shape="rect" id="node34" href="$classns3_1_1_ptr.html" title=" " alt="" coords="3967,129,4189,156"/>
+<area shape="rect" id="node38" href="$classns3_1_1_ptr.html" title=" " alt="" coords="1323,225,1559,266"/>
+<area shape="rect" id="node46" href="$classns3_1_1_ptr.html" title=" " alt="" coords="2317,922,2471,963"/>
+<area shape="rect" id="node16" href="$classns3_1_1_callback.html" title=" " alt="" coords="2768,344,2997,429"/>
+<area shape="rect" id="node17" href="$classns3_1_1_callback_base.html" title=" " alt="" coords="1858,421,1999,448"/>
+<area shape="rect" id="node19" href="$classns3_1_1_callback.html" title="Callback template class." alt="" coords="2313,404,2475,460"/>
+<area shape="rect" id="node29" href="$classns3_1_1_callback.html" title=" " alt="" coords="2791,454,2974,525"/>
+<area shape="rect" id="node28" title=" " alt="" coords="2780,1106,2985,1147"/>
+<area shape="rect" id="node20" title=" " alt="" coords="2799,1171,2966,1213"/>
+<area shape="rect" id="node22" title="STL class." alt="" coords="2329,1259,2459,1285"/>
+<area shape="rect" id="node26" title=" " alt="" coords="2797,1237,2968,1278"/>
+<area shape="rect" id="node27" title=" " alt="" coords="2772,1302,2993,1343"/>
+<area shape="rect" id="node23" title=" " alt="" coords="471,1307,510,1333"/>
+<area shape="rect" id="node45" title="STL class." alt="" coords="905,1265,1040,1292"/>
+<area shape="rect" id="node31" href="$classns3_1_1_bridge_channel.html" title="Virtual channel implementation for bridges (BridgeNetDevice)." alt="" coords="899,355,1047,381"/>
+<area shape="rect" id="node32" href="$structns3_1_1_mesh_point_device_1_1_statistics.html" title="statistics counters" alt="" coords="3644,737,3811,778"/>
+<area shape="rect" id="node33" title=" " alt="" coords="4303,930,4513,971"/>
+<area shape="rect" id="node35" href="$classns3_1_1flame_1_1_flame_protocol_mac.html" title="Interface MAC plugin for FLAME routing protocol." alt="" coords="3617,129,3837,156"/>
+<area shape="rect" id="node36" href="$classns3_1_1_mesh_wifi_interface_mac_plugin.html" title="Common interface for mesh point interface MAC plugins." alt="" coords="1593,35,1791,77"/>
+<area shape="rect" id="node40" href="$classns3_1_1_time.html" title="Simulation virtual time values and global simulation resolution." alt="" coords="448,963,533,989"/>
+<area shape="rect" id="node41" title="STL class." alt="" coords="127,1051,236,1077"/>
+<area shape="rect" id="node42" title=" " alt="" coords="5,1221,44,1248"/>
+<area shape="rect" id="node43" href="$structns3_1_1flame_1_1_flame_protocol_mac_1_1_statistics.html" title="Statistics structure." alt="" coords="3227,94,3420,135"/>
+<area shape="rect" id="node50" href="$structns3_1_1flame_1_1_flame_protocol_1_1_statistics.html" title="Statistics structure." alt="" coords="2297,805,2491,846"/>
+</map>

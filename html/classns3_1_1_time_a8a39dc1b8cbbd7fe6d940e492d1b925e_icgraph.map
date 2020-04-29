@@ -1,0 +1,52 @@
+<map id="ns3::Time::Time" name="ns3::Time::Time">
+<area shape="rect" id="node1" title="Default constructor, with value 0." alt="" coords="932,934,1057,961"/>
+<area shape="rect" id="node2" href="$classns3_1_1_time.html#a34e4acc13d0e08cc8cb9cd3b838b9baf" title="Create a Time in the current unit." alt="" coords="757,301,884,328"/>
+<area shape="rect" id="node27" href="$classns3_1_1_time.html#a3e742c67b2764e75ff95f9b754d43fe9" title="Create a Time equal to value in unit unit." alt="" coords="508,757,680,784"/>
+<area shape="rect" id="node35" href="$classns3_1_1_time.html#ad3414eb47d40a34971d5e78db88cfc72" title="Maximum representable Time." alt="" coords="760,1137,881,1164"/>
+<area shape="rect" id="node45" href="$classns3_1_1_time.html#a75169ee37c557c616eb79e1a15ed09b7" title="Minimum representable Time." alt="" coords="762,1482,879,1509"/>
+<area shape="rect" id="node3" href="$group__timecivil.html#ga403cbc20d7d2533f6ced509e5ebaf981" title=" " alt="" coords="551,402,637,429"/>
+<area shape="rect" id="node4" href="$group__timecivil.html#gac5e0f0ac4f64b42a73364a839379ead9" title=" " alt="" coords="520,453,668,480"/>
+<area shape="rect" id="node5" href="$classns3_1_1_time.html#a60e845f4a74e62495b86356afe604cb4" title="Create a Time equal to value in unit unit." alt="" coords="508,504,680,530"/>
+<area shape="rect" id="node18" href="$group__timecivil.html#ga29967d3f5a5308049182163b6531538f" title=" " alt="" coords="549,554,639,581"/>
+<area shape="rect" id="node19" href="$classns3_1_1_rtt_mean_deviation.html#af64f76fb0e39c735425f56add7e6bdd0" title="Method to update the rtt and variation estimates using integer arithmetic, used when the values of Al..." alt="" coords="260,72,431,114"/>
+<area shape="rect" id="node20" href="$group__timecivil.html#gaefa3fed7390aaefecbd786061349422f" title=" " alt="" coords="523,48,665,74"/>
+<area shape="rect" id="node21" href="$group__timecivil.html#ga2bf74bc619c2bd0c88126e60a278bc2a" title=" " alt="" coords="527,98,661,125"/>
+<area shape="rect" id="node22" href="$group__timecivil.html#gad1d65647c9da93fd8679b9d87e04c7f4" title=" " alt="" coords="541,149,647,176"/>
+<area shape="rect" id="node23" href="$group__timecivil.html#gac97e03612b1423b981d8675a2eba95f8" title=" " alt="" coords="523,200,665,226"/>
+<area shape="rect" id="node24" href="$group__timecivil.html#ga5187d3b8cb7ceccc0d492fe93a206aa8" title=" " alt="" coords="527,250,661,277"/>
+<area shape="rect" id="node25" href="$group__timecivil.html#ga8f78ae67044d734a45fa1a979d7ea1b3" title=" " alt="" coords="541,301,647,328"/>
+<area shape="rect" id="node26" href="$group__timecivil.html#ga6908a3ce36aeef5fee0ea41ff6e7a1fb" title=" " alt="" coords="551,352,637,378"/>
+<area shape="rect" id="node6" href="$classns3_1_1_time.html#addbf69c7aec0f3fd8c0595426d88622e" title="Construct Time object from common time expressions like &quot;1ms&quot;." alt="" coords="283,377,408,404"/>
+<area shape="rect" id="node7" href="$group__timecivil.html#ga58292fd2de67cc4ccd619ca83d28574b" title=" " alt="" coords="302,428,389,454"/>
+<area shape="rect" id="node9" href="$classns3_1_1_rtt_mean_deviation.html#a6d3dc77a91e8c9aa23d912f2574111db" title="Method to update the rtt and variation estimates using floating point arithmetic, used when the value..." alt="" coords="260,311,431,352"/>
+<area shape="rect" id="node11" href="$group__timecivil.html#ga6059b5d67fe1e174729c063be4fa2bf7" title=" " alt="" coords="300,478,391,505"/>
+<area shape="rect" id="node12" href="$group__timecivil.html#gaaab039c044ad40238a9d5b556349d0d5" title=" " alt="" coords="293,529,398,556"/>
+<area shape="rect" id="node13" href="$classns3_1_1_tcp_socket_base.html#a60bb6a7cfb5855bba206606174d50c5e" title="An RTO event happened." alt="" coords="271,246,420,287"/>
+<area shape="rect" id="node14" href="$group__timecivil.html#ga33c34b816f8ff6628e33d5c8e9713b9e" title=" " alt="" coords="292,833,399,860"/>
+<area shape="rect" id="node17" href="$group__timecivil.html#gacba71dd5cfeb7aa46f08a20260247975" title=" " alt="" coords="302,580,389,606"/>
+<area shape="rect" id="node8" href="$class_time_simple_test_case.html#a4420daddc0f37503638626397ec83f41" title="Implementation to actually run this TestCase." alt="" coords="30,648,187,690"/>
+<area shape="rect" id="node10" href="$classns3_1_1_rtt_mean_deviation.html#a3e727dacebe30903b9c7ea084564c4e8" title="Add a new measurement to the estimator." alt="" coords="23,192,194,234"/>
+<area shape="rect" id="node15" href="$classns3_1_1_wifi_phy.html#a0854b8251b610b505fec7790bfce07ac" title=" " alt="" coords="16,767,201,808"/>
+<area shape="rect" id="node16" href="$classns3_1_1_arp_cache_1_1_entry.html#a45db2d4cfc508a9d099e26c56d7c9953" title="Returns the entry timeout." alt="" coords="30,832,187,874"/>
+<area shape="rect" id="node28" href="$group__timecivil.html#ga7df0af9e3ea0a71baeba0fbde1c54943" title=" " alt="" coords="271,732,419,758"/>
+<area shape="rect" id="node29" href="$group__timecivil.html#ga17465a639c8d1464e76538afdd78a9f0" title=" " alt="" coords="274,884,417,910"/>
+<area shape="rect" id="node32" href="$group__timecivil.html#gaf26127cf4571146b83a92ee18679c7a9" title=" " alt="" coords="278,630,413,657"/>
+<area shape="rect" id="node33" href="$group__timecivil.html#ga281d64bcb4dad96267d83c7688ec433f" title=" " alt="" coords="275,782,416,809"/>
+<area shape="rect" id="node34" href="$group__timecivil.html#ga76fd2414c43c694447c6e290954c9f3a" title=" " alt="" coords="278,681,413,708"/>
+<area shape="rect" id="node30" href="$classns3_1_1_backoff.html#af39e9ddd21741927e45ff346b2fdb464" title=" " alt="" coords="29,898,188,925"/>
+<area shape="rect" id="node31" href="$class_ipv4_deduplication_test_suite.html#a6aa8666abcbc004f08009b7e9fc9963a" title=" " alt="" coords="5,950,212,991"/>
+<area shape="rect" id="node36" href="$classns3_1_1_tcp_vegas.html#a9598876615fdef3542af10ff541e1d40" title="Enable Vegas algorithm to start taking Vegas samples." alt="" coords="491,985,697,1012"/>
+<area shape="rect" id="node37" href="$classns3_1_1_tcp_veno.html#a7ece86eb87a0b29cb1d13be11a963873" title="Enable Veno algorithm to start Veno sampling." alt="" coords="498,1036,690,1062"/>
+<area shape="rect" id="node38" href="$classns3_1_1_tcp_yeah.html#ad2f91d04a90f689b9cfd05a26de6472e" title="Enable YeAH algorithm to start taking YeAH samples." alt="" coords="501,1086,687,1113"/>
+<area shape="rect" id="node39" href="$classns3_1_1_tcp_htcp.html#add36278610893b4eba23cf688f7779d8" title="Get the slow start threshold after a loss event." alt="" coords="497,1356,691,1382"/>
+<area shape="rect" id="node40" href="$classns3_1_1_tcp_vegas.html#ae80e9ac677116dada43dacda0f98a8b6" title="Adjust cwnd following Vegas linear increase/decrease algorithm." alt="" coords="479,1137,709,1164"/>
+<area shape="rect" id="node41" href="$classns3_1_1_tcp_veno.html#a5865787a20ea7c2c8beee2df5cefcdaa" title="Adjust cwnd following Veno additive increase algorithm." alt="" coords="483,1188,705,1214"/>
+<area shape="rect" id="node42" href="$classns3_1_1_tcp_yeah.html#aa1efa60adbcb1dfad8d188deef7ed2ea" title="Adjust cwnd following YeAH dual&#45;mode algorithm." alt="" coords="485,1238,703,1265"/>
+<area shape="rect" id="node43" href="$group__time.html#ga07f8cce9b9e4f52d0f0b16da276b55c2" title="Helper to make an unbounded Time checker." alt="" coords="508,1406,680,1433"/>
+<area shape="rect" id="node44" href="$classns3_1_1_tcp_rate_linux.html#a2ec421fa97c9e10fa38dd824b3f8efd7" title="Update the Rate information after an item is received." alt="" coords="521,1290,667,1331"/>
+<area shape="rect" id="node46" href="$classns3_1_1_tcp_bic.html#aaec211ef4f1624860911aaf544ac9650" title="Get the slow start threshold after a loss event." alt="" coords="502,1508,686,1534"/>
+<area shape="rect" id="node47" href="$classns3_1_1_mac_low.html#a2dc2b39866b901f5baad7f45ec8484a9" title="Check whether an MPDU of the given size, destined to the given receiver and belonging to the given TI..." alt="" coords="497,1559,691,1600"/>
+<area shape="rect" id="node48" href="$classns3_1_1_qos_txop.html#a0d5a35b715d1c8415d5d95a5f0b2814c" title="Notify the Txop that access has been granted." alt="" coords="493,1624,695,1666"/>
+<area shape="rect" id="node49" href="$classns3_1_1_mac_low.html#aa477261c5209c13c66af9e2ae78b07e5" title=" " alt="" coords="479,1690,709,1717"/>
+<area shape="rect" id="node50" href="$classns3_1_1_tcp_bic.html#a900818048f6876e8b38f9d9b8257f631" title="Bic window update after a new ack received." alt="" coords="519,1457,669,1484"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="ns3::ChannelListPriv::DoDispose" name="ns3::ChannelListPriv::DoDispose">
+<area shape="rect" id="node1" title="Dispose the channels in the list." alt="" coords="5,23,160,65"/>
+<area shape="rect" id="node2" href="$classns3_1_1_object.html#ab259948b9de68d47d1bcd7d2b9841b1d" title="Dispose of this Object." alt="" coords="208,5,363,32"/>
+<area shape="rect" id="node3" href="$classns3_1_1_object.html#a537e6637d7aef924bb45576260ff1fc1" title="Destructor implementation." alt="" coords="411,31,584,57"/>
+</map>

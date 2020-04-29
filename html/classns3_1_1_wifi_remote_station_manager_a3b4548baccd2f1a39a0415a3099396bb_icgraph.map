@@ -1,0 +1,52 @@
+<map id="ns3::WifiRemoteStationManager::GetGreenfieldSupported" name="ns3::WifiRemoteStationManager::GetGreenfieldSupported">
+<area shape="rect" id="node1" title="Return whether the device has HT Greenfield support enabled." alt="" coords="1108,1089,1341,1130"/>
+<area shape="rect" id="node2" href="$classns3_1_1_ap_wifi_mac.html#a3df0ccf5ed9e1232bcb2d6847d8aae15" title="Determine whether non&#45;Greenfield HT stations are present or not." alt="" coords="844,553,1043,594"/>
+<area shape="rect" id="node7" href="$classns3_1_1_wifi_remote_station_manager.html#ad0838e2b79a382cf65f68b7cde8ec608" title=" " alt="" coords="827,1121,1060,1162"/>
+<area shape="rect" id="node3" href="$classns3_1_1_ap_wifi_mac.html#a4fefa01556b990b9995ff1a5577060d3" title="Return the HT operation of the current AP." alt="" coords="545,56,779,83"/>
+<area shape="rect" id="node4" href="$classns3_1_1_ap_wifi_mac.html#ad7fef463a6076916fa1f5a989e56f13d" title="Forward an association or a reassociation response packet to the DCF." alt="" coords="262,5,495,32"/>
+<area shape="rect" id="node5" href="$classns3_1_1_ap_wifi_mac.html#a6c8cbc0fc95f3eaf4840d4ffcf78fac5" title="Forward a beacon packet to the beacon special DCF." alt="" coords="260,56,497,83"/>
+<area shape="rect" id="node6" href="$classns3_1_1_ap_wifi_mac.html#a0a9fcbd87326c5c56644deb3504038df" title="Forward a probe response packet to the DCF." alt="" coords="263,107,495,133"/>
+<area shape="rect" id="node8" href="$classns3_1_1_aarf_wifi_manager.html#a408d8be07102ba41125c839b01e8a7ee" title=" " alt="" coords="581,107,743,149"/>
+<area shape="rect" id="node9" href="$classns3_1_1_aarfcd_wifi_manager.html#ab9bfc915e2a36ee071995eb0247b1599" title=" " alt="" coords="573,173,751,214"/>
+<area shape="rect" id="node10" href="$classns3_1_1_amrr_wifi_manager.html#ad18cc0aa1f6f6472e9e5ac2563b85e4c" title=" " alt="" coords="578,238,746,279"/>
+<area shape="rect" id="node11" href="$classns3_1_1_aparf_wifi_manager.html#a9be0935377c6c6052cc12407d17dafbd" title=" " alt="" coords="577,303,747,345"/>
+<area shape="rect" id="node12" href="$classns3_1_1_arf_wifi_manager.html#a6bd79d80cbb7f743aa1bece1e5c24584" title=" " alt="" coords="582,369,742,410"/>
+<area shape="rect" id="node13" href="$classns3_1_1_cara_wifi_manager.html#a948e474fbc8dd16211dc6f6fcb6ef496" title=" " alt="" coords="579,434,745,475"/>
+<area shape="rect" id="node14" href="$classns3_1_1_constant_rate_wifi_manager.html#a1e14573f51c878a2fa5511a2c43a2024" title=" " alt="" coords="550,499,774,541"/>
+<area shape="rect" id="node15" href="$classns3_1_1_ideal_wifi_manager.html#a2e7570eb1f5cbef1067cfb714e94218e" title=" " alt="" coords="578,565,746,606"/>
+<area shape="rect" id="node16" href="$classns3_1_1_minstrel_ht_wifi_manager.html#abc2436c9c8dabb7c78907f478e1bb8c7" title=" " alt="" coords="560,630,764,671"/>
+<area shape="rect" id="node17" href="$classns3_1_1_onoe_wifi_manager.html#a58c4d341696639d4b0ea618275461da4" title=" " alt="" coords="577,695,747,737"/>
+<area shape="rect" id="node18" href="$classns3_1_1_parf_wifi_manager.html#a5a7cc006d12987077a3afc4edd76da86" title=" " alt="" coords="581,761,743,802"/>
+<area shape="rect" id="node19" href="$classns3_1_1_rraa_wifi_manager.html#acc7f56a51e22431479e1d534ad7ece84" title=" " alt="" coords="579,826,745,867"/>
+<area shape="rect" id="node20" href="$classns3_1_1_rrpaa_wifi_manager.html#add26dac79b43d5c0114ba30e8cb29a9e" title=" " alt="" coords="575,891,749,933"/>
+<area shape="rect" id="node21" href="$classns3_1_1_aarf_wifi_manager.html#a4c2d4fbb34d152c3c4fe4530681da512" title=" " alt="" coords="581,957,743,998"/>
+<area shape="rect" id="node22" href="$classns3_1_1_aarfcd_wifi_manager.html#a4c4e397e54ae8ff36a90a1e044825586" title=" " alt="" coords="573,1022,751,1063"/>
+<area shape="rect" id="node23" href="$classns3_1_1_amrr_wifi_manager.html#a036c453d18e33475b8ad75922682d214" title=" " alt="" coords="578,1087,746,1129"/>
+<area shape="rect" id="node24" href="$classns3_1_1_aparf_wifi_manager.html#a091b6da1ff7d3d0ae61ca96dc4ee256b" title=" " alt="" coords="577,1153,747,1194"/>
+<area shape="rect" id="node25" href="$classns3_1_1_arf_wifi_manager.html#a56217b6af0b44febda8b48266562e284" title=" " alt="" coords="585,1218,739,1259"/>
+<area shape="rect" id="node26" href="$classns3_1_1_cara_wifi_manager.html#a2361885b5679a859cb55c0b29da0c1ad" title=" " alt="" coords="579,1283,745,1325"/>
+<area shape="rect" id="node27" href="$classns3_1_1_constant_rate_wifi_manager.html#aceb6e32d01d5c3279e96bafde5568719" title=" " alt="" coords="550,1349,774,1390"/>
+<area shape="rect" id="node28" href="$classns3_1_1_ideal_wifi_manager.html#ab263f9a1c04747b2c2b55774bf97854a" title=" " alt="" coords="578,1414,746,1455"/>
+<area shape="rect" id="node29" href="$classns3_1_1_minstrel_ht_wifi_manager.html#a8628d42b27a3bf5cbbd4ea0ec2a79307" title=" " alt="" coords="560,1479,764,1521"/>
+<area shape="rect" id="node30" href="$classns3_1_1_onoe_wifi_manager.html#a235403aacb2b69d019b23a86263623d7" title=" " alt="" coords="577,1545,747,1586"/>
+<area shape="rect" id="node31" href="$classns3_1_1_parf_wifi_manager.html#a693981d57d5f1bdce6a80acf2b0f36a2" title=" " alt="" coords="581,1610,743,1651"/>
+<area shape="rect" id="node32" href="$classns3_1_1_rraa_wifi_manager.html#a68148d81b6e49676837ec93f43f6f005" title=" " alt="" coords="579,1675,745,1717"/>
+<area shape="rect" id="node33" href="$classns3_1_1_rrpaa_wifi_manager.html#ae174e676f819aa2337f06d21408d007c" title=" " alt="" coords="575,1741,749,1782"/>
+<area shape="rect" id="node34" href="$classns3_1_1_mac_low.html#aae813ebc059b7e6aa1c88607e2969936" title="Return a TXVECTOR for the Ack frame given the destination and the mode of the Data used by the sender..." alt="" coords="553,1807,771,1833"/>
+<area shape="rect" id="node37" href="$classns3_1_1_mac_low.html#a227f7cf96af4e059f660cd6668869e69" title="Return a TXVECTOR for the BlockAck frame given the destination and the mode of the Data used by the s..." alt="" coords="563,1858,761,1899"/>
+<area shape="rect" id="node41" href="$classns3_1_1_mac_low.html#abe2810a59020adbcf64abbef2bcf319f" title="Return a TXVECTOR for the CTS frame given the destination and the mode of the RTS used by the sender." alt="" coords="554,1927,770,1953"/>
+<area shape="rect" id="node44" href="$classns3_1_1_wifi_remote_station_manager.html#ad81efbe48611977c8cea482721fd823b" title=" " alt="" coords="545,1978,779,2019"/>
+<area shape="rect" id="node48" href="$classns3_1_1_minstrel_wifi_manager.html#afc42d002709fb4334ae5b164bfa07aa8" title="Get data transmit vector." alt="" coords="567,2043,757,2085"/>
+<area shape="rect" id="node49" href="$classns3_1_1_wifi_remote_station_manager.html#a0f4f6984f11037508c46a1af90508a34" title=" " alt="" coords="545,2109,779,2150"/>
+<area shape="rect" id="node50" href="$classns3_1_1_minstrel_wifi_manager.html#a8643a7d64b0cebcdba66207e36c2b1c6" title="Get RTS transmit vector." alt="" coords="567,2174,757,2215"/>
+<area shape="rect" id="node35" href="$classns3_1_1_mac_low.html#aaa82a9f5d9971541a7135f39c4287104" title="Return a TXVECTOR for the BlockAck frame given the destination and the mode of the Data used by the s..." alt="" coords="269,1622,488,1663"/>
+<area shape="rect" id="node36" href="$classns3_1_1_mac_low.html#a8db1635644b89072dfcb5fbc2330031b" title="Send Ack after receiving Data." alt="" coords="263,1688,495,1715"/>
+<area shape="rect" id="node38" href="$classns3_1_1_mac_low.html#ae23ccb3c313c640daf5bd4c857eb0d7a" title="Return the time required to transmit the response frames (Ack or BAR+BA following the policy configur..." alt="" coords="279,1739,479,1781"/>
+<area shape="rect" id="node39" href="$classns3_1_1_mac_low.html#af6e2acc771d188c0959871f142912296" title="Invoked after an A&#45;MPDU has been received." alt="" coords="5,1827,212,1869"/>
+<area shape="rect" id="node40" href="$classns3_1_1_mac_low.html#a85c374be43ba3bd52fd1ad6efdfef6c6" title="This method creates BlockAck frame with header equals to blockAck and start its transmission." alt="" coords="275,1857,482,1898"/>
+<area shape="rect" id="node42" href="$classns3_1_1_mac_low.html#a10a0e90050844fe4273e1259fb23530f" title="Return a TXVECTOR for the CTS frame given the destination and the mode of the RTS used by the sender." alt="" coords="271,1922,487,1963"/>
+<area shape="rect" id="node43" href="$classns3_1_1_mac_low.html#aebcd4c3e8d64fb53af1f8a862c766e33" title="Send CTS after receiving RTS." alt="" coords="269,1988,488,2015"/>
+<area shape="rect" id="node45" href="$classns3_1_1_mac_low.html#aeb3a8ccdb7a068b7ee69d507a66a1b60" title="Return a TXVECTOR for the Data frame given the destination." alt="" coords="265,2039,492,2065"/>
+<area shape="rect" id="node46" href="$classns3_1_1_txop.html#ad00c94d57c2d4df4ff1f0a8064805b65" title="Notify the Txop that access has been granted." alt="" coords="263,2089,494,2116"/>
+<area shape="rect" id="node47" href="$class_power_rate_adaptation_test.html#a3c3954526cb787125fea4c50cfe76174" title="Test aparf function." alt="" coords="284,2141,473,2182"/>
+</map>

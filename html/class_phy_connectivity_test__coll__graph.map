@@ -1,0 +1,52 @@
+<map id="PhyConnectivityTest" name="PhyConnectivityTest">
+<area shape="rect" id="node1" title=" " alt="" coords="3239,901,3393,928"/>
+<area shape="rect" id="node2" href="$classns3_1_1_test_case.html" title="encapsulates test code" alt="" coords="1862,1593,1973,1620"/>
+<area shape="rect" id="node4" title=" " alt="" coords="2276,1565,2497,1592"/>
+<area shape="rect" id="node13" href="$classns3_1_1_test_suite.html" title="A suite of tests to run." alt="" coords="2331,1464,2443,1491"/>
+<area shape="rect" id="node3" href="$classns3_1_1_non_copyable.html" title=" " alt="" coords="1393,1347,1533,1373"/>
+<area shape="rect" id="node10" href="$classns3_1_1_singleton.html" title=" " alt="" coords="2286,1347,2487,1389"/>
+<area shape="rect" id="node11" href="$classns3_1_1_singleton.html" title="A template singleton." alt="" coords="1841,1347,1993,1373"/>
+<area shape="rect" id="node5" title="STL class." alt="" coords="445,1273,574,1300"/>
+<area shape="rect" id="node12" title=" " alt="" coords="2612,1363,2803,1389"/>
+<area shape="rect" id="node15" title=" " alt="" coords="895,1515,1090,1557"/>
+<area shape="rect" id="node32" title=" " alt="" coords="915,809,1070,850"/>
+<area shape="rect" id="node50" href="$classns3_1_1_buffer.html" title="automatically resized byte buffer" alt="" coords="946,1245,1039,1272"/>
+<area shape="rect" id="node6" title=" " alt="" coords="217,328,256,355"/>
+<area shape="rect" id="node41" href="$classns3_1_1_traced_value.html" title="Trace classes with value semantics." alt="" coords="675,5,845,32"/>
+<area shape="rect" id="node7" title="STL class." alt="" coords="193,1553,280,1580"/>
+<area shape="rect" id="node9" href="$classns3_1_1_test_runner_impl.html" title=" " alt="" coords="2949,1389,3103,1416"/>
+<area shape="rect" id="node16" href="$structns3_1_1_test_case_failure.html" title=" " alt="" coords="432,1535,587,1561"/>
+<area shape="rect" id="node8" title="STL class." alt="" coords="5,1546,144,1587"/>
+<area shape="rect" id="node14" href="$structns3_1_1_test_case_1_1_result.html" title=" " alt="" coords="1383,1648,1543,1675"/>
+<area shape="rect" id="node17" href="$classns3_1_1_system_wall_clock_ms.html" title="Measure elapsed wall clock time in milliseconds." alt="" coords="899,1677,1086,1704"/>
+<area shape="rect" id="node18" href="$classns3_1_1_system_wall_clock_ms_private.html" title="System&#45;dependent implementation for SystemWallClockMs." alt="" coords="393,1677,625,1704"/>
+<area shape="rect" id="node19" href="$classns3_1_1_ptr.html" title=" " alt="" coords="2915,875,3137,901"/>
+<area shape="rect" id="node20" href="$classns3_1_1_end_device_lora_phy.html" title="Class representing a LoRa transceiver." alt="" coords="2620,316,2795,343"/>
+<area shape="rect" id="node21" href="$classns3_1_1_lora_phy.html" title=" " alt="" coords="2334,384,2439,411"/>
+<area shape="rect" id="node22" href="$classns3_1_1_object.html" title="A base class which provides memory management and object aggregation." alt="" coords="462,441,557,468"/>
+<area shape="rect" id="node31" href="$classns3_1_1_channel.html" title="Abstract Channel Base Class." alt="" coords="939,524,1046,551"/>
+<area shape="rect" id="node23" href="$classns3_1_1_traced_callback.html" title=" " alt="" coords="911,127,1074,183"/>
+<area shape="rect" id="node30" href="$classns3_1_1_lora_channel.html" title="The class that delivers packets among PHY layers." alt="" coords="1396,541,1531,568"/>
+<area shape="rect" id="node24" title=" " alt="" coords="398,73,621,159"/>
+<area shape="rect" id="node25" href="$classns3_1_1_traced_callback.html" title="Forward calls to a chain of Callback." alt="" coords="433,183,586,239"/>
+<area shape="rect" id="node36" href="$classns3_1_1_traced_callback.html" title=" " alt="" coords="1835,224,1999,280"/>
+<area shape="rect" id="node40" href="$classns3_1_1_traced_callback.html" title=" " alt="" coords="917,61,1069,102"/>
+<area shape="rect" id="node26" href="$classns3_1_1_ptr.html" title=" " alt="" coords="1115,699,1340,725"/>
+<area shape="rect" id="node27" href="$classns3_1_1_ptr.html" title="Smart pointer class similar to boost::intrusive_ptr." alt="" coords="455,707,564,733"/>
+<area shape="rect" id="node28" href="$classns3_1_1_ptr.html" title=" " alt="" coords="1587,489,1787,516"/>
+<area shape="rect" id="node29" href="$classns3_1_1_ptr.html" title=" " alt="" coords="1811,709,2024,736"/>
+<area shape="rect" id="node33" href="$classns3_1_1_ptr.html" title=" " alt="" coords="895,575,1090,617"/>
+<area shape="rect" id="node34" href="$classns3_1_1_ptr.html" title=" " alt="" coords="895,641,1090,682"/>
+<area shape="rect" id="node42" href="$classns3_1_1_ptr.html" title=" " alt="" coords="1826,435,2009,461"/>
+<area shape="rect" id="node43" href="$classns3_1_1_ptr.html" title=" " alt="" coords="1845,936,1989,963"/>
+<area shape="rect" id="node46" href="$classns3_1_1_ptr.html" title=" " alt="" coords="895,976,1091,1003"/>
+<area shape="rect" id="node35" href="$classns3_1_1_callback.html" title=" " alt="" coords="1832,643,2003,685"/>
+<area shape="rect" id="node37" title=" " alt="" coords="1364,251,1563,336"/>
+<area shape="rect" id="node38" href="$classns3_1_1_lora_interference_helper.html" title="Helper for LoraPhy that manages interference calculations." alt="" coords="1816,333,2019,360"/>
+<area shape="rect" id="node39" href="$classns3_1_1_traced_value.html" title=" " alt="" coords="1365,68,1562,95"/>
+<area shape="rect" id="node44" href="$classns3_1_1_packet.html" title="network packets" alt="" coords="1415,1077,1511,1104"/>
+<area shape="rect" id="node45" href="$classns3_1_1_simple_ref_count.html" title=" " alt="" coords="913,1179,1072,1221"/>
+<area shape="rect" id="node47" href="$classns3_1_1_packet_metadata.html" title="Handle packet metadata about packet headers and trailers." alt="" coords="913,1027,1072,1053"/>
+<area shape="rect" id="node48" href="$classns3_1_1_byte_tag_list.html" title="keep track of the byte tags stored in a packet." alt="" coords="929,1077,1057,1104"/>
+<area shape="rect" id="node49" href="$classns3_1_1_packet_tag_list.html" title="List of the packet tags stored in a packet." alt="" coords="922,1128,1063,1155"/>
+</map>

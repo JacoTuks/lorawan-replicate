@@ -1,0 +1,52 @@
+<map id="ns3::WifiTxVector::SetPreambleType" name="ns3::WifiTxVector::SetPreambleType">
+<area shape="rect" id="node1" title="Sets the preamble type." alt="" coords="828,1080,973,1121"/>
+<area shape="rect" id="node2" href="$classns3_1_1dot11s_1_1_airtime_link_metric_calculator.html#a72c6cb74bc18c3d3faf86a1da79c9afd" title="Airtime link metric is defined in Section 13.9 of IEEE 802.11&#45;2012 as:" alt="" coords="541,5,779,47"/>
+<area shape="rect" id="node4" href="$classns3_1_1_minstrel_ht_wifi_manager.html#a84b4c0a22ed2444b640efca30a5e293a" title="Estimates the TxTime of a frame with a given mode and group (stream, guard interval and channel width..." alt="" coords="558,71,762,112"/>
+<area shape="rect" id="node6" href="$class_tx_duration_test.html#a8666c54033e392b15feb1d2aa78bd1c7" title="Check if the payload tx duration returned by InterferenceHelper corresponds to a known value of the p..." alt="" coords="550,136,770,177"/>
+<area shape="rect" id="node8" href="$class_tx_duration_test.html#a86485ba9721aa086d5a487588b856b8a" title="Check if the overall tx duration returned by InterferenceHelper corresponds to a known value of the p..." alt="" coords="540,202,780,229"/>
+<area shape="rect" id="node9" href="$classns3_1_1_vsa_manager.html#a3d56f68f3b98bd45ccc6c56c9a6244db" title=" " alt="" coords="552,253,768,279"/>
+<area shape="rect" id="node12" href="$classns3_1_1_mac_low.html#aae813ebc059b7e6aa1c88607e2969936" title="Return a TXVECTOR for the Ack frame given the destination and the mode of the Data used by the sender..." alt="" coords="551,355,769,382"/>
+<area shape="rect" id="node15" href="$classns3_1_1_mac_low.html#a227f7cf96af4e059f660cd6668869e69" title="Return a TXVECTOR for the BlockAck frame given the destination and the mode of the Data used by the s..." alt="" coords="561,495,759,536"/>
+<area shape="rect" id="node19" href="$classns3_1_1_mac_low.html#abe2810a59020adbcf64abbef2bcf319f" title="Return a TXVECTOR for the CTS frame given the destination and the mode of the RTS used by the sender." alt="" coords="552,655,768,682"/>
+<area shape="rect" id="node22" href="$classns3_1_1_wifi_remote_station_manager.html#ad81efbe48611977c8cea482721fd823b" title=" " alt="" coords="543,840,777,881"/>
+<area shape="rect" id="node24" href="$classns3_1_1_wave_mac_low.html#a1bb1f43357a8c9513961eca42e104de4" title="Return a TXVECTOR for the DATA frame given the destination." alt="" coords="6,848,211,889"/>
+<area shape="rect" id="node29" href="$classns3_1_1_wifi_remote_station_manager.html#a0f4f6984f11037508c46a1af90508a34" title=" " alt="" coords="543,1021,777,1063"/>
+<area shape="rect" id="node31" href="$classns3_1_1_wifi_ppdu.html#a43e190b01f0cd0d287416df16bb1de3a" title="Get the TXVECTOR used to send the PPDU." alt="" coords="560,1087,760,1114"/>
+<area shape="rect" id="node34" href="$classns3_1_1_wave_net_device.html#a21f1928cbc917375a79cb6ed48f4db3e" title=" " alt="" coords="581,1139,739,1180"/>
+<area shape="rect" id="node37" href="$class_psr_experiment.html#a82f6354f2941e255275bd638fc5f94a6" title="Send function." alt="" coords="581,1205,739,1231"/>
+<area shape="rect" id="node38" href="$class_collision_experiment.html#a4595804681cdcfa7af8d39477a758f87" title="Send A function." alt="" coords="583,1256,737,1297"/>
+<area shape="rect" id="node39" href="$class_interference_experiment.html#a5b9bd711100dba8791513421a9641251" title="Send A function." alt="" coords="572,1321,748,1363"/>
+<area shape="rect" id="node41" href="$class_collision_experiment.html#a680a0adf3549ec11050007236e314a04" title="Send B function." alt="" coords="583,1387,737,1428"/>
+<area shape="rect" id="node42" href="$class_interference_experiment.html#afec7522f14a562b758f969ffdf02a6a1" title="Send B function." alt="" coords="572,1452,748,1493"/>
+<area shape="rect" id="node43" href="$classns3_1_1_wave_net_device.html#a99ec2b781006c6011a9667e064843b38" title=" " alt="" coords="581,1517,739,1559"/>
+<area shape="rect" id="node47" href="$classns3_1_1_minstrel_wifi_manager.html#a5aec084c45e3c7d62820a05ff49bc045" title="Set up PHY associated with this device since it is the object that knows the full set of transmit rat..." alt="" coords="565,1583,755,1624"/>
+<area shape="rect" id="node48" href="$classns3_1_1_rraa_wifi_manager.html#abd833ddb188c23c3281501401f3c8cd3" title="Set up PHY associated with this device since it is the object that knows the full set of transmit rat..." alt="" coords="577,1648,743,1689"/>
+<area shape="rect" id="node49" href="$classns3_1_1_rrpaa_wifi_manager.html#ac2ec3ffb5e5b1910a38f4358964a08fb" title="Set up PHY associated with this device since it is the object that knows the full set of transmit rat..." alt="" coords="573,1713,747,1755"/>
+<area shape="rect" id="node50" href="$class_node_statistics.html#a891b5ec279da73f698268df5fb520652" title=" " alt="" coords="567,1779,753,1806"/>
+<area shape="rect" id="node3" href="$classns3_1_1dot11s_1_1_hwmp_protocol.html#ab8041a5b50c6ca47ffbcc751032856c3" title="Install HWMP on given mesh point." alt="" coords="276,5,476,47"/>
+<area shape="rect" id="node5" href="$classns3_1_1_minstrel_ht_wifi_manager.html#a3c5c32d2a58fb45a922e435192b0cf43" title="Initialize() implementation." alt="" coords="274,71,478,112"/>
+<area shape="rect" id="node7" href="$class_tx_duration_test.html#a92181289166e9577bebdbdb352169597" title="Implementation to actually run this TestCase." alt="" coords="291,137,461,163"/>
+<area shape="rect" id="node10" href="$classns3_1_1_vsa_manager.html#a5731f78c47436e8cb495052b1fe42f65" title=" " alt="" coords="273,187,479,214"/>
+<area shape="rect" id="node11" href="$classns3_1_1_vsa_manager.html#af896634c89ed0725215aa5da43445295" title=" " alt="" coords="9,213,208,239"/>
+<area shape="rect" id="node13" href="$classns3_1_1_mac_low.html#aaa82a9f5d9971541a7135f39c4287104" title="Return a TXVECTOR for the BlockAck frame given the destination and the mode of the Data used by the s..." alt="" coords="267,289,485,331"/>
+<area shape="rect" id="node14" href="$classns3_1_1_mac_low.html#a8db1635644b89072dfcb5fbc2330031b" title="Send Ack after receiving Data." alt="" coords="260,355,492,382"/>
+<area shape="rect" id="node16" href="$classns3_1_1_mac_low.html#ae23ccb3c313c640daf5bd4c857eb0d7a" title="Return the time required to transmit the response frames (Ack or BAR+BA following the policy configur..." alt="" coords="276,407,476,448"/>
+<area shape="rect" id="node17" href="$classns3_1_1_mac_low.html#af6e2acc771d188c0959871f142912296" title="Invoked after an A&#45;MPDU has been received." alt="" coords="5,495,212,536"/>
+<area shape="rect" id="node18" href="$classns3_1_1_mac_low.html#a85c374be43ba3bd52fd1ad6efdfef6c6" title="This method creates BlockAck frame with header equals to blockAck and start its transmission." alt="" coords="273,524,479,565"/>
+<area shape="rect" id="node20" href="$classns3_1_1_mac_low.html#a10a0e90050844fe4273e1259fb23530f" title="Return a TXVECTOR for the CTS frame given the destination and the mode of the RTS used by the sender." alt="" coords="268,589,484,631"/>
+<area shape="rect" id="node21" href="$classns3_1_1_mac_low.html#aebcd4c3e8d64fb53af1f8a862c766e33" title="Send CTS after receiving RTS." alt="" coords="267,655,485,682"/>
+<area shape="rect" id="node23" href="$classns3_1_1_mac_low.html#aeb3a8ccdb7a068b7ee69d507a66a1b60" title="Return a TXVECTOR for the Data frame given the destination." alt="" coords="263,706,489,733"/>
+<area shape="rect" id="node25" href="$classns3_1_1_txop.html#ad00c94d57c2d4df4ff1f0a8064805b65" title="Notify the Txop that access has been granted." alt="" coords="261,757,491,783"/>
+<area shape="rect" id="node26" href="$class_power_rate_adaptation_test.html#a3c3954526cb787125fea4c50cfe76174" title="Test aparf function." alt="" coords="281,808,471,849"/>
+<area shape="rect" id="node27" href="$class_power_rate_adaptation_test.html#a06db52c180644f3b961de054c41f2115" title="Test parf function." alt="" coords="281,873,471,915"/>
+<area shape="rect" id="node28" href="$class_power_rate_adaptation_test.html#af0e5f044ed9bdf20dc203926ff8677b4" title="Test rrpaa function." alt="" coords="281,939,471,980"/>
+<area shape="rect" id="node30" href="$classns3_1_1_mac_low.html#a89fbeddfe91a47f0dcc1f3d7fd5108a0" title="Return a TXVECTOR for the RTS frame given the destination." alt="" coords="268,1055,484,1082"/>
+<area shape="rect" id="node32" href="$classns3_1_1_wifi_ppdu.html#a0a0af942d5c7af3f92666fcdef1d0460" title="Get the total transmission duration of the PPDU." alt="" coords="269,1106,483,1133"/>
+<area shape="rect" id="node33" href="$class_bug2843_test_case.html#a0c30bf88abcc8aa6caec59bb3c5b0200" title="Stores the distinct {starting frequency, channelWidth, Number of subbands in SpectrumModel,..." alt="" coords="261,1157,491,1199"/>
+<area shape="rect" id="node35" href="$class_channel_routing_test_case.html#a2d9149c5bd4732d6d7d8d768bf3a0da1" title="Send IP&#45;based packets." alt="" coords="285,1223,467,1264"/>
+<area shape="rect" id="node36" href="$class_wave_net_device_example.html#a555b10fdbbaa27f47dc1f3487e1dcf0d" title="Send IP packet function." alt="" coords="284,1288,468,1329"/>
+<area shape="rect" id="node40" href="$class_interference_experiment.html#ae31524d224c311c36d8b1dd5fcc9f269" title="Run function." alt="" coords="271,1371,481,1398"/>
+<area shape="rect" id="node44" href="$class_wave_net_device_example.html#a2dc13b30baad7f9e0a3f23d3dc60557c" title="Send one WSMP packet function." alt="" coords="284,1459,468,1500"/>
+<area shape="rect" id="node45" href="$class_annex_c___test_case.html#a6ad361d48194ad49b3856a12db4d4ea7" title="Send packet function." alt="" coords="266,1525,486,1551"/>
+<area shape="rect" id="node46" href="$class_channel_routing_test_case.html#a229a780a8f247ce4c37e164f204fbefe" title="Send WSMP or other packets." alt="" coords="285,1576,467,1617"/>
+</map>

@@ -1,0 +1,52 @@
+<map id="ns3::Simulator::Cancel" name="ns3::Simulator::Cancel">
+<area shape="rect" id="node1" title="Set the cancel bit on this event: the event&#39;s associated function will not be invoked when it expires..." alt="" coords="577,1418,745,1445"/>
+<area shape="rect" id="node2" href="$classns3_1_1_event_garbage_collector.html#ad77d417d7db0bf411456bc8f94bd2b90" title=" " alt="" coords="301,41,503,83"/>
+<area shape="rect" id="node3" href="$classns3_1_1_event_id.html#a993ae94e48e014e1afd47edb16db7a11" title="This method is syntactic sugar for the ns3::Simulator::Cancel method." alt="" coords="325,107,479,134"/>
+<area shape="rect" id="node8" href="$classns3_1_1_timer.html#ac8261489cfc3361ab869ea2387cfc841" title="Cancel the currently&#45;running event if there is one." alt="" coords="331,158,473,185"/>
+<area shape="rect" id="node9" href="$classns3_1_1_three_gpp_http_client.html#a86b8bdd3934110f7e15bb3f2fdcedcc4" title="Cancels m_eventRequestMainObject, m_eventRequestEmbeddedObject, and m_eventParseMainObject." alt="" coords="309,209,495,251"/>
+<area shape="rect" id="node10" href="$classns3_1_1_lte_ue_rrc.html#a9221d85411de5dd375b71b44e3331c5c" title="Clear all the waiting triggers in m_enteringTriggerQueue which are associated with the given measurem..." alt="" coords="293,275,511,316"/>
+<area shape="rect" id="node11" href="$classns3_1_1_on_off_application.html#afb253c6f54b73e7ca4599ad5541bce5c" title="Cancel all pending events." alt="" coords="320,340,484,381"/>
+<area shape="rect" id="node12" href="$classns3_1_1_lte_ue_rrc.html#a3e35c475cfb5361222f1556bfbd3111d" title="Clear all the waiting triggers in m_leavingTriggerQueue which are associated with the given measureme..." alt="" coords="295,405,509,447"/>
+<area shape="rect" id="node13" href="$classns3_1_1_three_gpp_http_server_tx_buffer.html#a430ce0162f6c3b72dd7f7b54115815f3" title="Close and remove all stored sockets, hence clearing the buffer." alt="" coords="301,471,503,512"/>
+<area shape="rect" id="node14" href="$classns3_1_1_three_gpp_http_server_tx_buffer.html#a97f0d9305b9477a34880f2e953a2593b" title="Close and remove a socket and its associated transmission buffer, and then unset the socket&#39;s callbac..." alt="" coords="301,536,503,577"/>
+<area shape="rect" id="node15" href="$classns3_1_1_flow_monitor.html#ace3e74ed05b18253c25e7c6db115cdec" title="Destructor implementation." alt="" coords="296,602,508,629"/>
+<area shape="rect" id="node16" href="$classns3_1_1_data_calculator.html#ab131de1ac0b2259992b1aeaca778c75b" title="Destructor implementation." alt="" coords="327,653,477,695"/>
+<area shape="rect" id="node17" href="$classns3_1_1_base_station_net_device.html#a0a6bf3deb17ab1adde07a1ed62875067" title="Receive packet." alt="" coords="303,719,501,760"/>
+<area shape="rect" id="node18" href="$classns3_1_1_subscriber_station_net_device.html#a2cdd421837891adea005eb7cde668a1f" title="Receive a packet." alt="" coords="307,784,497,825"/>
+<area shape="rect" id="node19" href="$classns3_1_1_uan_phy_gen.html#a9fc9ae8608f76b03504e72f555e72aa8" title="Handle the energy depletion event." alt="" coords="279,849,525,891"/>
+<area shape="rect" id="node20" href="$classns3_1_1dsdv_1_1_routing_table.html#a39f4b7725caafbc6cd9f7c5821470d51" title="Force delete an update waiting for settling time to complete as a better update to same destination w..." alt="" coords="314,915,490,956"/>
+<area shape="rect" id="node21" href="$classns3_1_1_uan_mac_cw.html#a1b2946271fb366ede005bd76d8a841ec" title="Called when transmission starts from Phy object." alt="" coords="5,1137,227,1163"/>
+<area shape="rect" id="node22" href="$classns3_1_1_s_s_link_manager.html#acd42fe66d1a247c52410fb6082e994d1" title="Perform ranging." alt="" coords="325,1032,479,1073"/>
+<area shape="rect" id="node23" href="$classns3_1_1_end_device_lora_mac.html#ae8e237258abb91a2d1610d91c7910bec" title="Receive a packet." alt="" coords="313,1097,491,1139"/>
+<area shape="rect" id="node24" href="$classns3_1_1_three_gpp_http_server_tx_buffer.html#afdeeacae085b41b4fe3d1f700d0499d2" title="Remove a socket and its associated transmission buffer, and then unset the socket&#39;s callbacks to prev..." alt="" coords="301,1163,503,1204"/>
+<area shape="rect" id="node25" href="$classns3_1_1_null_message_simulator_impl.html#addc65b52a532801e4f2dc1fdffce2a66" title=" " alt="" coords="275,1228,529,1269"/>
+<area shape="rect" id="node26" href="$classns3_1_1_uan_mac_cw.html#adf36d5205c9faa7ed420ba1dce1114b2" title="Cancel SendEvent and save remaining delay." alt="" coords="301,1294,503,1321"/>
+<area shape="rect" id="node27" href="$classns3_1_1_ss_service_flow_manager.html#a052a9d96dea7f79a7408d19a9a20b875" title="Schedule DSA response." alt="" coords="300,1345,504,1387"/>
+<area shape="rect" id="node28" href="$classns3_1_1_bs_service_flow_manager.html#a70acd126e153faa38588075406ec1d5b" title="Create DSA response function." alt="" coords="299,1411,505,1452"/>
+<area shape="rect" id="node29" href="$classns3_1_1_show_progress.html#ad654c9631d39ccc4f914ef32f98c626b" title="Set the target update interval, in wallclock time." alt="" coords="326,1476,478,1517"/>
+<area shape="rect" id="node30" href="$classns3_1_1_subscriber_station_net_device.html#a6eecf760ab983e9d6d44c76d356fce9b" title="Set timer." alt="" coords="307,1541,497,1583"/>
+<area shape="rect" id="node31" href="$classns3_1_1_mesh_wifi_interface_mac.html#a3390bb70ec47d738f6ffb37c476bbcfc" title="Shift TBTT." alt="" coords="303,1607,501,1648"/>
+<area shape="rect" id="node32" href="$classns3_1_1_flow_monitor.html#a32cb7ddc6d0956518a59f7ed91de7f6d" title="Set the time, counting from the current time, from which to start monitoring flows." alt="" coords="315,1673,489,1699"/>
+<area shape="rect" id="node33" href="$classns3_1_1_fd_net_device.html#a32bda505142d81a4092048bf200ee6fc" title="Set a start time for the device." alt="" coords="314,1723,490,1750"/>
+<area shape="rect" id="node34" href="$classns3_1_1_tap_bridge.html#a729662b8454d1c8202add94ebf389bb9" title="Set a start time for the device." alt="" coords="324,1774,480,1801"/>
+<area shape="rect" id="node35" href="$class_sender.html#a6ddb1e43ae44d714a30f5184ad427b5f" title="Application specific startup code." alt="" coords="313,1825,491,1851"/>
+<area shape="rect" id="node36" href="$classns3_1_1_one_shot_sender.html#a88fd6fb45f6c40db59890bbd0b7dcdcc" title="Start the application by scheduling the first SendPacket event." alt="" coords="325,1876,479,1917"/>
+<area shape="rect" id="node37" href="$classns3_1_1_periodic_sender.html#a401990c13d7979aa4531e0c8929bf64d" title="Start the application by scheduling the first SendPacket event." alt="" coords="327,1941,477,1983"/>
+<area shape="rect" id="node38" href="$classns3_1_1_simple_ofdm_wimax_phy.html#afd0ada1680b119d166fb3cf65d804f13" title="start the reception of a fec block" alt="" coords="300,2007,504,2048"/>
+<area shape="rect" id="node39" href="$classns3_1_1_flow_monitor.html#a8b6fba3b1978adf6747189d7b2a3d2cc" title="Set the time, counting from the current time, from which to stop monitoring flows." alt="" coords="317,2073,487,2099"/>
+<area shape="rect" id="node40" href="$classns3_1_1_fd_net_device.html#a6849d18a8f1ed78077207057dce6c7ca" title="Set a stop time for the device." alt="" coords="315,2123,489,2150"/>
+<area shape="rect" id="node41" href="$classns3_1_1_tap_bridge.html#ab94057d00c75768838fe783eaff278e3" title="Set a stop time for the device." alt="" coords="325,2174,479,2201"/>
+<area shape="rect" id="node42" href="$classns3_1_1_ping6.html#a825748c9021a08f526de4373a920861d" title="Stop the application." alt="" coords="303,2225,501,2251"/>
+<area shape="rect" id="node43" href="$classns3_1_1_radvd.html#a8aaf0b7f7329e72a67f1293b01e60341" title="Stop the application." alt="" coords="300,2275,504,2302"/>
+<area shape="rect" id="node44" href="$class_sender.html#afa908d9d4defee077723f2928c0b3bd5" title="Application specific shutdown code." alt="" coords="313,2326,491,2353"/>
+<area shape="rect" id="node45" href="$classns3_1_1_udp_client.html#affb385b7a19c3dc83359787d55226712" title="Application specific shutdown code." alt="" coords="289,2377,515,2403"/>
+<area shape="rect" id="node46" href="$classns3_1_1_udp_echo_client.html#ae7aba9059fa05430d62583804f1504c6" title="Application specific shutdown code." alt="" coords="328,2428,476,2469"/>
+<area shape="rect" id="node47" href="$structns3_1_1_udp_trace_client.html#a29693203c27eb211932a0955934bfe7f" title=" " alt="" coords="326,2493,478,2535"/>
+<area shape="rect" id="node48" href="$classns3_1_1_one_shot_sender.html#a39e079932cc2f1f5f7af731a4301d04d" title="Stop the application." alt="" coords="325,2559,479,2600"/>
+<area shape="rect" id="node49" href="$classns3_1_1_periodic_sender.html#a0822b3770e04517285cd5ce05bd59f44" title="Stop the application." alt="" coords="327,2624,477,2665"/>
+<area shape="rect" id="node50" href="$classns3_1_1_packet_socket_client.html#ac5a664a8c6265dafd8e45b5897d27545" title="Application specific shutdown code." alt="" coords="313,2689,491,2731"/>
+<area shape="rect" id="node4" href="$classns3_1_1_end_device_lora_mac.html#a48caf82fddb1695caad59b9887619671" title=" " alt="" coords="27,5,205,47"/>
+<area shape="rect" id="node5" href="$classns3_1_1_block_ack_agreement.html#a38979a75573aae12cd732d1b7ac3b4ec" title=" " alt="" coords="23,71,209,112"/>
+<area shape="rect" id="node6" href="$classns3_1_1_timer.html#a28be7e74382598fc10b3f4424c62bb41" title=" " alt="" coords="43,137,189,163"/>
+<area shape="rect" id="node7" href="$classns3_1_1_watchdog.html#a94829291b00ebc60f24a76be261995a3" title="Destructor." alt="" coords="15,187,217,214"/>
+</map>

@@ -1,0 +1,52 @@
+<map id="ns3::WifiRemoteStationManager::GetDefaultMode" name="ns3::WifiRemoteStationManager::GetDefaultMode">
+<area shape="rect" id="node1" title="Return the default transmission mode." alt="" coords="1172,697,1405,739"/>
+<area shape="rect" id="node2" href="$classns3_1_1_ideal_wifi_manager.html#a8ddf0080f72afc507fbe7ffdb382116d" title=" " alt="" coords="906,5,1074,47"/>
+<area shape="rect" id="node3" href="$classns3_1_1_wifi_remote_station_manager.html#aa8b7470c26610407756a92a5fcb4bf4b" title="Since CTS&#45;to&#45;self parameters are not dependent on the station, it is implemented in wifi remote stati..." alt="" coords="873,71,1107,112"/>
+<area shape="rect" id="node6" href="$classns3_1_1_ideal_wifi_manager.html#a2e7570eb1f5cbef1067cfb714e94218e" title=" " alt="" coords="317,2107,485,2148"/>
+<area shape="rect" id="node7" href="$classns3_1_1_ideal_wifi_manager.html#ab263f9a1c04747b2c2b55774bf97854a" title=" " alt="" coords="906,2224,1074,2265"/>
+<area shape="rect" id="node8" href="$classns3_1_1_mac_low.html#aebd46ed9f77a2e2cc6a10d5832046f11" title="Get control answer mode function." alt="" coords="856,2290,1124,2317"/>
+<area shape="rect" id="node12" href="$classns3_1_1_wifi_remote_station_manager.html#ad81efbe48611977c8cea482721fd823b" title=" " alt="" coords="284,188,517,229"/>
+<area shape="rect" id="node18" href="$classns3_1_1_wifi_remote_station_manager.html#a67493a6f09cd90a438fceead287a72c0" title="Return a mode for non&#45;unicast packets." alt="" coords="570,253,803,295"/>
+<area shape="rect" id="node20" href="$classns3_1_1_wifi_remote_station_manager.html#a6a5c20f231324799e383594b546ca733" title="Return the state of the station associated with the given address." alt="" coords="873,1140,1107,1181"/>
+<area shape="rect" id="node4" href="$classns3_1_1_wifi_remote_station_manager.html#a927bcc3d3c01646eed7a5e9d741c243b" title=" " alt="" coords="570,20,803,61"/>
+<area shape="rect" id="node5" href="$classns3_1_1_wifi_remote_station_manager.html#a4812b9abae368de05cbd1393b7053f90" title=" " alt="" coords="284,101,517,143"/>
+<area shape="rect" id="node9" href="$classns3_1_1_mac_low.html#aae813ebc059b7e6aa1c88607e2969936" title="Return a TXVECTOR for the Ack frame given the destination and the mode of the Data used by the sender..." alt="" coords="577,2231,796,2258"/>
+<area shape="rect" id="node10" href="$classns3_1_1_mac_low.html#a227f7cf96af4e059f660cd6668869e69" title="Return a TXVECTOR for the BlockAck frame given the destination and the mode of the Data used by the s..." alt="" coords="588,2283,785,2324"/>
+<area shape="rect" id="node11" href="$classns3_1_1_mac_low.html#abe2810a59020adbcf64abbef2bcf319f" title="Return a TXVECTOR for the CTS frame given the destination and the mode of the RTS used by the sender." alt="" coords="579,2349,795,2375"/>
+<area shape="rect" id="node13" href="$classns3_1_1_mac_low.html#aeb3a8ccdb7a068b7ee69d507a66a1b60" title="Return a TXVECTOR for the Data frame given the destination." alt="" coords="7,86,234,113"/>
+<area shape="rect" id="node14" href="$classns3_1_1_txop.html#ad00c94d57c2d4df4ff1f0a8064805b65" title="Notify the Txop that access has been granted." alt="" coords="5,137,236,163"/>
+<area shape="rect" id="node15" href="$class_power_rate_adaptation_test.html#a3c3954526cb787125fea4c50cfe76174" title="Test aparf function." alt="" coords="26,188,215,229"/>
+<area shape="rect" id="node16" href="$class_power_rate_adaptation_test.html#a06db52c180644f3b961de054c41f2115" title="Test parf function." alt="" coords="26,253,215,295"/>
+<area shape="rect" id="node17" href="$class_power_rate_adaptation_test.html#af0e5f044ed9bdf20dc203926ff8677b4" title="Test rrpaa function." alt="" coords="26,319,215,360"/>
+<area shape="rect" id="node19" href="$classns3_1_1_wifi_remote_station_manager.html#a0f4f6984f11037508c46a1af90508a34" title=" " alt="" coords="284,253,517,295"/>
+<area shape="rect" id="node21" href="$classns3_1_1_wifi_remote_station_manager.html#a284f2ff0fb0cde5c8b08a3671712de58" title="Invoked in a STA or AP to store all of the MCS supported by a destination which is also supported loc..." alt="" coords="570,1793,803,1835"/>
+<area shape="rect" id="node22" href="$classns3_1_1_wifi_remote_station_manager.html#a4820bca619f254af7ff3ea2990563dbe" title="Invoked in a STA or AP to store all of the modes supported by a destination which is also supported l..." alt="" coords="570,1859,803,1900"/>
+<area shape="rect" id="node23" href="$classns3_1_1_wifi_remote_station_manager.html#a8ece8d0f0cb39a10d37cd704937a793e" title="Records HE capabilities of the remote station." alt="" coords="284,1595,517,1636"/>
+<area shape="rect" id="node24" href="$classns3_1_1_wifi_remote_station_manager.html#adeb2ecc44bc7986e1a65835c8f631af0" title="Records HT capabilities of the remote station." alt="" coords="284,921,517,963"/>
+<area shape="rect" id="node25" href="$classns3_1_1_wifi_remote_station_manager.html#a642d8dc6fde5183e9da367ff8e532220" title="Records VHT capabilities of the remote station." alt="" coords="284,1096,517,1137"/>
+<area shape="rect" id="node26" href="$classns3_1_1_wifi_remote_station_manager.html#ad6f363b975424a99e6190d04078408e5" title="Record whether the short ERP slot time is supported by the station." alt="" coords="570,2041,803,2083"/>
+<area shape="rect" id="node27" href="$classns3_1_1_wifi_remote_station_manager.html#a4fd51c027afacdfa7225346d6d88c6b3" title="Record the MCS index supported by the station." alt="" coords="570,1205,803,1247"/>
+<area shape="rect" id="node28" href="$classns3_1_1_wifi_remote_station_manager.html#a90f4d6b042c2692493446d36a3de799f" title="Invoked in a STA or AP to store the set of modes supported by a destination which is also supported l..." alt="" coords="570,319,803,360"/>
+<area shape="rect" id="node29" href="$classns3_1_1_wifi_remote_station_manager.html#ab2fb8b4ebf0f8a3bb32855360764042e" title="Record whether the short PHY preamble is supported by the station." alt="" coords="570,384,803,425"/>
+<area shape="rect" id="node30" href="$classns3_1_1_wifi_remote_station_manager.html#ac30b11b1013f6e679e4e6d69a22c2ecc" title="Return the channel width supported by the station." alt="" coords="570,449,803,491"/>
+<area shape="rect" id="node31" href="$classns3_1_1_wifi_remote_station_manager.html#a6ae97984382fa82ca97b9e07e742b4e0" title="Return whether the station supports Greenfield or not." alt="" coords="570,515,803,556"/>
+<area shape="rect" id="node32" href="$classns3_1_1_wifi_remote_station_manager.html#ac72a639bc585c27eca88f2ba21963b34" title="Return whether the station supports HE or not." alt="" coords="570,580,803,621"/>
+<area shape="rect" id="node33" href="$classns3_1_1_wifi_remote_station_manager.html#a91ff9cfa36ccd0f84d4760b97dc2e356" title="Return whether the station supports HT or not." alt="" coords="570,645,803,687"/>
+<area shape="rect" id="node34" href="$classns3_1_1_wifi_remote_station_manager.html#a82c4d3a97fc01fd7ffdd828f6292062d" title=" " alt="" coords="570,813,803,855"/>
+<area shape="rect" id="node35" href="$classns3_1_1_wifi_remote_station_manager.html#aae31cddb0568964f6e11e61dbfcf2542" title="Return the number of MCS supported by the station." alt="" coords="570,1976,803,2017"/>
+<area shape="rect" id="node36" href="$classns3_1_1_wifi_remote_station_manager.html#a0b892949ceb7de13dd489049563f203c" title="Return the number of spatial streams supported by the station." alt="" coords="567,2107,807,2148"/>
+<area shape="rect" id="node37" href="$classns3_1_1_wifi_remote_station_manager.html#a04b73c6a796884de658b9557da4f4a89" title="Return whether the given station is QoS capable." alt="" coords="570,879,803,920"/>
+<area shape="rect" id="node38" href="$classns3_1_1_wifi_remote_station_manager.html#a9080f35f4e25776b63a6afacc62a5a88" title="Return whether the station supports HT/VHT short guard interval." alt="" coords="565,944,808,985"/>
+<area shape="rect" id="node39" href="$classns3_1_1_wifi_remote_station_manager.html#a424c8e53ce51d46a143eac39196d2038" title="Return whether the station supports short PHY preamble or not." alt="" coords="570,1009,803,1051"/>
+<area shape="rect" id="node40" href="$classns3_1_1_wifi_remote_station_manager.html#a64c726d729b0ce87911ad7e422520b67" title="Return whether the station supports short ERP slot time or not." alt="" coords="570,1075,803,1116"/>
+<area shape="rect" id="node41" href="$classns3_1_1_wifi_remote_station_manager.html#aa8a07acd517ba9c523343b5b5045f993" title="Return the HE capabilities sent by the remote station." alt="" coords="570,1140,803,1181"/>
+<area shape="rect" id="node42" href="$classns3_1_1_wifi_remote_station_manager.html#a7827844036c356396e22d5c7a743fcba" title="Return the HT capabilities sent by the remote station." alt="" coords="570,1271,803,1312"/>
+<area shape="rect" id="node43" href="$classns3_1_1_wifi_remote_station_manager.html#ac824c8a26d1f205c3ecf347c14c68267" title="Return the VHT capabilities sent by the remote station." alt="" coords="570,1336,803,1377"/>
+<area shape="rect" id="node44" href="$classns3_1_1_wifi_remote_station_manager.html#aa9c4ffc735aa45005a674dec0f3d5f9a" title="Return whether the station supports VHT or not." alt="" coords="570,1401,803,1443"/>
+<area shape="rect" id="node45" href="$classns3_1_1_wifi_remote_station_manager.html#a77a584441267f8d0ecc1d048606bcab1" title="Return whether the station associated." alt="" coords="570,1467,803,1508"/>
+<area shape="rect" id="node46" href="$classns3_1_1_wifi_remote_station_manager.html#a30badbd2880707a2f4a25ee45f464045" title="Return whether the station state is brand new." alt="" coords="570,1532,803,1573"/>
+<area shape="rect" id="node47" href="$classns3_1_1_wifi_remote_station_manager.html#af9131818f8f0cbb26fdce64cf7a0972b" title="Return whether we are waiting for an ACK for the association response we sent." alt="" coords="570,1597,803,1639"/>
+<area shape="rect" id="node48" href="$classns3_1_1_wifi_remote_station_manager.html#a144c73228215aec46edcb2db2b545abf" title="Return the station associated with the given address and TID." alt="" coords="570,188,803,229"/>
+<area shape="rect" id="node49" href="$classns3_1_1_wifi_remote_station_manager.html#abcb92c63342aed2603c1dfb131e0fe8a" title="Records that the STA was disassociated." alt="" coords="570,1663,803,1704"/>
+<area shape="rect" id="node50" href="$classns3_1_1_wifi_remote_station_manager.html#ae84c9b8961758783f13640e2300aab83" title="Records that we missed an ACK for the association response we sent." alt="" coords="570,1728,803,1769"/>
+</map>

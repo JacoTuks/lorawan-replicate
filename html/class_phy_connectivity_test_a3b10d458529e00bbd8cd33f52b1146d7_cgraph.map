@@ -1,0 +1,52 @@
+<map id="PhyConnectivityTest::DoRun" name="PhyConnectivityTest::DoRun">
+<area shape="rect" id="node1" title="Implementation to actually run this TestCase." alt="" coords="5,388,160,429"/>
+<area shape="rect" id="node2" href="$classns3_1_1_lora_phy.html#a2fcff826c9126a65446dffb83a3fbd8d" title="Get the mobility model associated to this PHY." alt="" coords="215,141,403,167"/>
+<area shape="rect" id="node3" href="$classns3_1_1_object.html#a817117ab236e4ff7f80f0239d4e28731" title="Get a pointer to the requested aggregated Object." alt="" coords="494,147,662,174"/>
+<area shape="rect" id="node13" href="$classns3_1_1_end_device_lora_phy.html#af9954dc951e1f2667489f21cd8545afa" title="Return the state this End Device is currently in." alt="" coords="222,293,397,335"/>
+<area shape="rect" id="node14" href="$class_phy_connectivity_test.html#a45544a628354f2c2fe596473123fc611" title=" " alt="" coords="208,359,411,400"/>
+<area shape="rect" id="node23" href="$group__timecivil.html#ga6059b5d67fe1e174729c063be4fa2bf7" title=" " alt="" coords="264,425,355,451"/>
+<area shape="rect" id="node26" href="$class_phy_connectivity_test.html#a10a5c0c19c265e99fb771b09d53b3086" title=" " alt="" coords="232,893,387,935"/>
+<area shape="rect" id="node40" href="$classns3_1_1_end_device_lora_phy.html#a83416dc3c6fbeb3869b03bbf02d19188" title="Set the Spreading Factor this EndDevice will listen for." alt="" coords="491,1468,665,1509"/>
+<area shape="rect" id="node48" href="$group__timecivil.html#ga33c34b816f8ff6628e33d5c8e9713b9e" title=" " alt="" coords="256,475,363,502"/>
+<area shape="rect" id="node49" href="$wifi-ap_8cc.html#aac02abe91b3e5592e31bc0f7d844bf4d" title=" " alt="" coords="262,242,357,269"/>
+<area shape="rect" id="node50" href="$classns3_1_1_end_device_lora_phy.html#a65e07da46cc4858a16dc3c856e188401" title="Switch to the SLEEP state." alt="" coords="222,1011,397,1052"/>
+<area shape="rect" id="node4" href="$classns3_1_1_object.html#a34f8410d0f3aae5612b56eb65d044857" title="Find an Object of TypeId tid in the aggregates of this Object." alt="" coords="771,130,958,157"/>
+<area shape="rect" id="node12" href="$namespacens3.html#af2a7557fe9afdd98d8f6f8f6e412cf5a" title=" " alt="" coords="799,79,930,106"/>
+<area shape="rect" id="node5" href="$classns3_1_1_object.html#a4000e647d44103477c0c31825fc288b6" title="Check if any aggregated Objects have non&#45;zero reference counts." alt="" coords="1037,13,1219,39"/>
+<area shape="rect" id="node7" href="$classns3_1_1_object.html#a12101af51922401affe289e1081c43c5" title="Get the most derived TypeId for this Object." alt="" coords="1037,64,1219,105"/>
+<area shape="rect" id="node8" href="$classns3_1_1_type_id.html#ab84f81aee52154af39a8668b59c89d63" title="Get the parent of this TypeId." alt="" coords="1044,130,1212,157"/>
+<area shape="rect" id="node10" href="$classns3_1_1_object.html#a4615cee24c40b0377501f44ef85f9e53" title="Register this type." alt="" coords="1044,181,1212,207"/>
+<area shape="rect" id="node11" href="$classns3_1_1_object.html#a502c04993a228307d9eded5ba028af7c" title="Keep the list of aggregates in most&#45;recently&#45;used order." alt="" coords="1032,232,1224,273"/>
+<area shape="rect" id="node6" href="$classns3_1_1_simple_ref_count.html#a9cb85ae452ce0e1c74f11b3e4d357171" title="Get the reference count of the object." alt="" coords="1272,5,1431,47"/>
+<area shape="rect" id="node9" href="$classns3_1_1_type_id.html#ab76e26690f1af4f1cffa6a72245e8928" title="Default constructor." alt="" coords="1279,130,1424,157"/>
+<area shape="rect" id="node15" href="$classns3_1_1_packet.html#aeaf626dfa2ae8c26ddde52e75d9d0c3d" title="Returns number of bytes required for packet serialization." alt="" coords="469,374,687,401"/>
+<area shape="rect" id="node19" href="$classns3_1_1_packet.html#a9cd43075e83f695f6d64cf78407d6eb0" title="Serialize a packet, tags, and metadata into a byte buffer." alt="" coords="498,323,658,350"/>
+<area shape="rect" id="node16" href="$classns3_1_1_buffer.html#a98d4dcbbdc162f3e28979c7225b9f48f" title="Return the number of bytes required for serialization." alt="" coords="757,349,972,375"/>
+<area shape="rect" id="node17" href="$classns3_1_1_nix_vector.html#a801e98deaceba1ebe8da49ffc0f98791" title=" " alt="" coords="745,399,984,426"/>
+<area shape="rect" id="node18" href="$classns3_1_1_packet_metadata.html#af93a86641616bee2ef0edd64736e7292" title="Get the metadata serialized size." alt="" coords="785,451,944,492"/>
+<area shape="rect" id="node20" href="$classns3_1_1_nix_vector.html#a80373b0f43e5e646bb0586f00787aded" title=" " alt="" coords="774,181,955,207"/>
+<area shape="rect" id="node21" href="$classns3_1_1_buffer.html#aeac0f83d07efbf0b4307ca154d79cc7d" title=" " alt="" coords="786,231,943,258"/>
+<area shape="rect" id="node22" href="$classns3_1_1_packet_metadata.html#ac93f6f29974be2f6f27521e92461d128" title="Serialization to raw uint8_t*." alt="" coords="785,283,944,324"/>
+<area shape="rect" id="node24" href="$classns3_1_1_time.html#a60e845f4a74e62495b86356afe604cb4" title="Create a Time equal to value in unit unit." alt="" coords="492,425,664,451"/>
+<area shape="rect" id="node25" href="$classns3_1_1_time.html#a34e4acc13d0e08cc8cb9cd3b838b9baf" title="Create a Time in the current unit." alt="" coords="801,517,928,543"/>
+<area shape="rect" id="node27" href="$classns3_1_1_lora_channel.html#ad36aea0fa4cc98d7348e8de0868f8116" title="Connect a LoraPhy object to the LoraChannel." alt="" coords="495,1417,661,1443"/>
+<area shape="rect" id="node28" href="$class_phy_connectivity_test.html#ad3bf4d4e2d2f4573a8fde11cbcb1097d" title=" " alt="" coords="501,476,655,517"/>
+<area shape="rect" id="node29" href="$group__makecallbackmemptr.html#ga9376283685aa99d204048d6a4b7610a4" title=" " alt="" coords="506,542,650,569"/>
+<area shape="rect" id="node30" href="$class_phy_connectivity_test.html#a72dc8ba3af600c10d9ef2597a80ffb04" title=" " alt="" coords="491,593,665,635"/>
+<area shape="rect" id="node31" href="$class_phy_connectivity_test.html#add7f0e9ebb1b0273fdf0329db70960b4" title=" " alt="" coords="501,659,655,700"/>
+<area shape="rect" id="node33" href="$classns3_1_1_lora_phy.html#ab717f23e7ba31cd9fccca278ef6db092" title="Set the LoraChannel instance PHY transmits on." alt="" coords="485,725,671,751"/>
+<area shape="rect" id="node34" href="$classns3_1_1_end_device_lora_phy.html#ac98ecaafd3f0de2e91752caa5527b012" title="Set the frequency this EndDevice will listen on." alt="" coords="491,776,665,817"/>
+<area shape="rect" id="node35" href="$classns3_1_1_lora_phy.html#a75c7b529157d7f6e48d4bb9225c9b34c" title="Set the mobility model associated to this PHY." alt="" coords="485,842,671,869"/>
+<area shape="rect" id="node36" href="$classns3_1_1_log_distance_propagation_loss_model.html#af8d2797bafdf56b2e656d7183fb37169" title=" " alt="" coords="459,893,697,935"/>
+<area shape="rect" id="node37" href="$classns3_1_1_mobility_model.html#ac584b3d5a309709d2f13ed6ada1e7640" title=" " alt="" coords="505,959,651,1000"/>
+<area shape="rect" id="node39" href="$classns3_1_1_log_distance_propagation_loss_model.html#a4a5676c5b8a1a56b954ba7f50931acad" title="Set the reference path loss at a given distance." alt="" coords="473,1024,683,1065"/>
+<area shape="rect" id="node41" href="$classns3_1_1_end_device_lora_phy.html#a5daa71361931a8bc62f98c39479d47ca" title="Switch to the STANDBY state." alt="" coords="491,1089,665,1131"/>
+<area shape="rect" id="node42" href="$classns3_1_1_object_base.html#a1be45f6fd561e75dcac9dfa81b2b81e4" title="Connect a TraceSource to a Callback without a context." alt="" coords="467,1155,689,1196"/>
+<area shape="rect" id="node45" href="$class_phy_connectivity_test.html#a35daf46ddcd0a302631baf1124b4bb15" title=" " alt="" coords="501,1220,655,1261"/>
+<area shape="rect" id="node46" href="$class_phy_connectivity_test.html#a17a1511bc242e719b75ef9c5ef42a6b4" title=" " alt="" coords="501,1285,655,1327"/>
+<area shape="rect" id="node47" href="$class_phy_connectivity_test.html#acba2b99c088d817db63c23439d3f1f39" title=" " alt="" coords="501,1351,655,1392"/>
+<area shape="rect" id="node32" href="$classns3_1_1_packet.html#afb38be706cfc761bc1c0591f595fc1b7" title="performs a COW copy of the packet." alt="" coords="796,666,933,693"/>
+<area shape="rect" id="node38" href="$classns3_1_1_mobility_model.html#aa2f52cd86754da71ac649413c049785e" title=" " alt="" coords="791,959,938,1000"/>
+<area shape="rect" id="node43" href="$classns3_1_1_object_base.html#abe5b43a6f5b99a92a4c3122db31f06fb" title="Get the most derived TypeId for this Object." alt="" coords="758,1188,971,1229"/>
+<area shape="rect" id="node44" href="$classns3_1_1_type_id.html#a9a07e9b925ebf9257c9f4f0732901502" title="Find a TraceSource by name." alt="" coords="772,1123,957,1164"/>
+</map>

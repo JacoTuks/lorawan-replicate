@@ -1,0 +1,7 @@
+<map id="ns3::int64x64_t::Umul" name="ns3::int64x64_t::Umul">
+<area shape="rect" id="node1" title="Unsigned multiplication of Q64.64 values." alt="" coords="5,81,171,108"/>
+<area shape="rect" id="node2" href="$cairo-wideint-private_8h.html#a0f85dd4a6e416e048cadd2049c48a390" title=" " alt="" coords="243,5,391,32"/>
+<area shape="rect" id="node3" href="$cairo-wideint-private_8h.html#ae2fac87d83a26fd661046e0704c0f122" title=" " alt="" coords="247,56,386,83"/>
+<area shape="rect" id="node4" href="$cairo-wideint-private_8h.html#acae234e92a3589be194bec667e5e0565" title=" " alt="" coords="224,107,409,133"/>
+<area shape="rect" id="node5" href="$cairo-wideint-private_8h.html#a4bfd4f2f16f4adc9ce0f75347712054f" title=" " alt="" coords="219,157,415,184"/>
+</map>

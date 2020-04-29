@@ -1,0 +1,10 @@
+<map id="AddressTest::DoRun" name="AddressTest::DoRun">
+<area shape="rect" id="node1" title="Implementation to actually run this TestCase." alt="" coords="5,71,156,98"/>
+<area shape="rect" id="node2" href="$classns3_1_1_lora_device_address_generator.html#a830f48bf5b6ea6cb25abb22500f8a8ee" title="Get the LoraDeviceAddress that will be allocated upon a call to NextAddress." alt="" coords="495,5,737,47"/>
+<area shape="rect" id="node5" href="$classns3_1_1_lora_device_address_generator.html#ade10907d8258b52cc33f6f43dc3d45c5" title="Allocate the next LoraDeviceAddress." alt="" coords="204,129,447,171"/>
+<area shape="rect" id="node7" href="$classns3_1_1_lora_device_address.html#a4c87d2888b57e2f9645636f48fe8f961" title="Convert this address to a buffer." alt="" coords="236,64,415,105"/>
+<area shape="rect" id="node3" href="$classns3_1_1_nwk_i_d.html#aa8adfe338281d48aec823757eb10cb89" title="Get an uint8_t representation of the 7&#45;bit network ID." alt="" coords="793,17,920,43"/>
+<area shape="rect" id="node4" href="$classns3_1_1_nwk_addr.html#a34e8178c042853ddbe267cfa649cbafa" title="Get an uint32_t representation of the 25&#45;bit network address." alt="" coords="785,71,928,98"/>
+<area shape="rect" id="node6" href="$classns3_1_1_nwk_addr.html#a23729a455af9bda2db563dce3ef2f042" title="Set the NwkAddr, starting from a 32&#45;bit representation of a 25&#45;bit integer." alt="" coords="545,173,687,199"/>
+<area shape="rect" id="node8" href="$classns3_1_1_lora_device_address.html#a9ab81b5741ce3c580a32aaddfb6f7552" title="Get the address in 32&#45;bit integer form." alt="" coords="511,71,721,98"/>
+</map>

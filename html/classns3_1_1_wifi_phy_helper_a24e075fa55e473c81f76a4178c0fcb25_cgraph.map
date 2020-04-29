@@ -1,0 +1,52 @@
+<map id="ns3::WifiPhyHelper::PcapSniffTxEvent" name="ns3::WifiPhyHelper::PcapSniffTxEvent">
+<area shape="rect" id="node1" title=" " alt="" coords="5,1106,152,1147"/>
+<area shape="rect" id="node2" href="$classns3_1_1_packet.html#a465108c595a0bc592095cbcab1832ed8" title="Add header to this packet." alt="" coords="434,315,610,341"/>
+<area shape="rect" id="node23" href="$classns3_1_1_packet.html#afb38be706cfc761bc1c0591f595fc1b7" title="performs a COW copy of the packet." alt="" coords="211,1193,348,1220"/>
+<area shape="rect" id="node24" href="$classns3_1_1_wifi_phy_helper.html#af1baefd0a50daeff72c8075f2eef7eda" title="Get the radiotap header." alt="" coords="200,1077,359,1118"/>
+<area shape="rect" id="node39" href="$classns3_1_1_simulator.html#ac3178fa975b419f7875e7105be122800" title="Return the current simulation virtual time." alt="" coords="445,1815,599,1841"/>
+<area shape="rect" id="node3" href="$classns3_1_1_byte_tag_list.html#acb4563fbe4299c55af41ba7a166b71d5" title="Make sure that all offsets are bigger than prependOffset which represents the location where new byte..." alt="" coords="693,115,900,141"/>
+<area shape="rect" id="node8" href="$classns3_1_1_buffer.html#a8abd8164c3671d3dadc98fc66fade7b1" title=" " alt="" coords="711,289,882,316"/>
+<area shape="rect" id="node14" href="$classns3_1_1_packet_metadata.html#abdce736c4c5f647242f0808c0d2f9249" title="Add an header." alt="" coords="717,495,876,537"/>
+<area shape="rect" id="node16" href="$classns3_1_1_object_base.html#abe5b43a6f5b99a92a4c3122db31f06fb" title="Get the most derived TypeId for this Object." alt="" coords="956,574,1169,615"/>
+<area shape="rect" id="node18" href="$classns3_1_1_byte_tag_list.html#a1fec06d7e6daaf8039cf2a148e4090f2" title="Adjust the offsets stored internally by the adjustment delta." alt="" coords="708,708,885,735"/>
+<area shape="rect" id="node19" href="$classns3_1_1_buffer.html#acb977a0179de9abe4e295ce22023b4ca" title=" " alt="" coords="727,441,866,468"/>
+<area shape="rect" id="node20" href="$classns3_1_1_type_id.html#abc4965475a579c2afdc668d7a7d58374" title="Get the name." alt="" coords="714,628,879,655"/>
+<area shape="rect" id="node21" href="$classns3_1_1_header.html#a6ef0497eabc1b1fb0ad42738eb73f934" title=" " alt="" coords="685,391,908,417"/>
+<area shape="rect" id="node22" href="$classns3_1_1_header.html#afb61f1aac69ff8349a6bfe521fab5404" title=" " alt="" coords="715,340,879,367"/>
+<area shape="rect" id="node4" href="$classns3_1_1_byte_tag_list.html#ab1d2c5671ea01900fa9ef58e33d1e739" title="Returns an iterator pointing to the very first tag in this list." alt="" coords="967,5,1158,32"/>
+<area shape="rect" id="node5" href="$classns3_1_1_tag_buffer.html#afe07a9e117449ff5b5d5857291671349" title="Copy the nternal structure of another TagBuffer." alt="" coords="968,56,1157,83"/>
+<area shape="rect" id="node6" href="$classns3_1_1_byte_tag_list_1_1_iterator.html#a44e33e812e3eba4fdc168e36380853af" title="Used to determine if the iterator is at the end of the byteTagList." alt="" coords="971,107,1155,149"/>
+<area shape="rect" id="node7" href="$classns3_1_1_byte_tag_list_1_1_iterator.html#af521864d800baab1d9c5262f59ce4433" title="Returns the next Item from the ByteTagList." alt="" coords="971,173,1155,214"/>
+<area shape="rect" id="node9" href="$classns3_1_1_buffer.html#a200897ee202518b0d2bf91ead4e82be9" title="Checks the internal buffer structures consistency." alt="" coords="967,391,1158,433"/>
+<area shape="rect" id="node10" href="$classns3_1_1_buffer.html#a340c9888e35cf55d024808adfbd75913" title="Create a buffer data storage." alt="" coords="991,239,1135,265"/>
+<area shape="rect" id="node11" href="$classns3_1_1_buffer.html#a1042168f1f6f3b24ad08a668662ab373" title="Get the buffer real size." alt="" coords="962,289,1163,316"/>
+<area shape="rect" id="node12" href="$classns3_1_1_buffer.html#aa14d4354b6de0c9d6044805f6503ecd2" title="Recycle the buffer memory." alt="" coords="987,340,1139,367"/>
+<area shape="rect" id="node13" href="$namespacevisualizer_1_1core.html#a2a35e5d8a34af358b508dac8635754e0" title=" " alt="" coords="987,712,1138,739"/>
+<area shape="rect" id="node15" href="$classns3_1_1_packet_metadata.html#ae5ad09674e28733405c49b2655c51a5a" title="Add an header." alt="" coords="983,509,1142,550"/>
+<area shape="rect" id="node17" href="$classns3_1_1_type_id.html#a429535085325d6f926724771446d9047" title="Get the internal id of this TypeId." alt="" coords="989,457,1137,484"/>
+<area shape="rect" id="node25" href="$classns3_1_1_packet.html#acdb23fec2c1dbebd9e6917895e9bcc65" title="Create a new packet which contains a fragment of the original packet." alt="" coords="417,809,627,836"/>
+<area shape="rect" id="node26" href="$classns3_1_1_wifi_tx_vector.html#ac56a35b49d9d77e09357adc171570d51" title=" " alt="" coords="449,861,595,902"/>
+<area shape="rect" id="node27" href="$classns3_1_1_wifi_mode.html#ad90f36e733ceaf8c5771cfbda437e14f" title=" " alt="" coords="419,927,625,953"/>
+<area shape="rect" id="node28" href="$classns3_1_1_ampdu_subframe_header.html#ac903518a999682b5d4da011d7b03b445" title="Return the EOF field." alt="" coords="417,978,627,1019"/>
+<area shape="rect" id="node29" href="$classns3_1_1_wifi_tx_vector.html#aeffd754ff39a3df905eb6a9be3567010" title=" " alt="" coords="449,1043,595,1085"/>
+<area shape="rect" id="node30" href="$classns3_1_1_ampdu_subframe_header.html#acb131533076842db8959fc5c7408673e" title="Return the length field." alt="" coords="417,1109,627,1150"/>
+<area shape="rect" id="node31" href="$classns3_1_1_wifi_mode.html#a4ba00941b5dbc4903ffecc1a0c841c6c" title=" " alt="" coords="417,1175,627,1201"/>
+<area shape="rect" id="node32" href="$classns3_1_1_wifi_tx_vector.html#aadd3ccf9d68dd8f06d4cfedc352498fb" title=" " alt="" coords="449,1226,595,1267"/>
+<area shape="rect" id="node33" href="$classns3_1_1_wifi_mode.html#a67e1664cac501221b63a2be307184cc9" title=" " alt="" coords="413,1291,631,1333"/>
+<area shape="rect" id="node34" href="$classns3_1_1_wifi_tx_vector.html#a5e6931e51698a7fc6137d7e55fb66213" title=" " alt="" coords="449,1357,595,1398"/>
+<area shape="rect" id="node35" href="$classns3_1_1_wifi_tx_vector.html#ae3180e05aa71a628cab66eae3667d31b" title=" " alt="" coords="449,1422,595,1463"/>
+<area shape="rect" id="node36" href="$classns3_1_1_wifi_tx_vector.html#a7125591f923091b79fe4a607dfad22e4" title=" " alt="" coords="449,1487,595,1529"/>
+<area shape="rect" id="node37" href="$classns3_1_1_wifi_tx_vector.html#aae65c13f3633fbf99f95084a49d4b39e" title="Checks whether the PSDU contains A&#45;MPDU." alt="" coords="449,1553,595,1594"/>
+<area shape="rect" id="node38" href="$classns3_1_1_wifi_tx_vector.html#ae7531bb5085a2e63d0be0222ff52e7c1" title="Check if STBC is used or not." alt="" coords="449,1618,595,1659"/>
+<area shape="rect" id="node42" href="$classns3_1_1_packet.html#a0961eccf975d75f902d40956c93ba63e" title="Deserialize and remove the header from the internal buffer." alt="" coords="419,759,625,785"/>
+<area shape="rect" id="node43" href="$classns3_1_1_radiotap_header.html#a8fae7a24dbeba412fdb9b7fc79f74f41" title="Set the A&#45;MPDU status fields." alt="" coords="443,1683,601,1725"/>
+<area shape="rect" id="node44" href="$classns3_1_1_radiotap_header.html#a429f94fc9a90307134b62cd1d6ed58b9" title="Set the transmit/receive channel frequency and flags." alt="" coords="407,1749,637,1790"/>
+<area shape="rect" id="node45" href="$classns3_1_1_radiotap_header.html#af8c523ad1498c9105da3f88a0897d9b0" title="Set the frame flags of the transmitted or received frame." alt="" coords="443,366,601,407"/>
+<area shape="rect" id="node46" href="$classns3_1_1_radiotap_header.html#a164c71e45efbc5ae60566d26d42c80a4" title="Set the HE fields." alt="" coords="443,431,601,473"/>
+<area shape="rect" id="node47" href="$classns3_1_1_radiotap_header.html#a23f8dd27246529ba4c3d1fefa09a95f7" title="Set the MCS fields." alt="" coords="443,497,601,538"/>
+<area shape="rect" id="node48" href="$classns3_1_1_radiotap_header.html#a51ebd0157939e926630a940dcc4431aa" title="Set the transmit/receive channel frequency in units of megahertz." alt="" coords="443,562,601,603"/>
+<area shape="rect" id="node49" href="$classns3_1_1_radiotap_header.html#a63ddcf8e8113dc90d072c194612436f8" title="Set the Time Synchronization Function Timer (TSFT) value." alt="" coords="443,627,601,669"/>
+<area shape="rect" id="node50" href="$classns3_1_1_radiotap_header.html#a548ef08ad90c0b7c2e20a149d4e8942c" title="Set the VHT fields." alt="" coords="443,693,601,734"/>
+<area shape="rect" id="node40" href="$group__simulator.html#ga42eb4eddad41528d4d99794a3dae3fd0" title="Get the SimulatorImpl singleton." alt="" coords="744,1840,849,1867"/>
+<area shape="rect" id="node41" href="$classns3_1_1_simulator_impl.html#aa516c50060846adc6fd316e83ef0797c" title="Return the current simulation virtual time." alt="" coords="705,1789,888,1816"/>
+</map>
