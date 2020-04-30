@@ -8,6 +8,7 @@ to perform simulations of a [LoRaWAN](http://www.lora-alliance.org/technology
 "LoRa Alliance") network.
 
 [API Documentation](https://signetlabdei.github.io/lorawan/html/index.html).
+
 [Module Documentation](https://signetlabdei.github.io/lorawan/models/build/html/lorawan.html).
 
 ## Getting started ##
