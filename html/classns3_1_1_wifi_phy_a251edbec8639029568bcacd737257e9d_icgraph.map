@@ -1,6 +1,6 @@
 <map id="ns3::WifiPhy::NotifyRxBegin" name="ns3::WifiPhy::NotifyRxBegin">
 <area shape="rect" id="node1" title="Public method used to fire a PhyRxBegin trace." alt="" coords="1489,242,1693,269"/>
-<area shape="rect" id="node2" href="$classns3_1_1_wifi_phy.html#ad67948715df0fbb05a2c3fa1d2ecd21d" title="Start receiving the PHY header of a PPDU (i.e." alt="" coords="1248,235,1441,276"/>
+<area shape="rect" id="node2" href="$classns3_1_1_wifi_phy.html#aa7bcb29f6ad8b8280792fc83a25f8eac" title="Start receiving the PHY header of a PPDU (i.e." alt="" coords="1248,235,1441,276"/>
 <area shape="rect" id="node3" href="$classns3_1_1_wifi_phy.html#a5f3a1ad2baa44bd044d7855b0de83fa7" title="Starting receiving the PPDU after having detected the medium is idle or after a reception switch." alt="" coords="1041,242,1200,269"/>
 <area shape="rect" id="node4" href="$classns3_1_1_wifi_phy.html#abf2f88a74d34bd4a92ab8e19e8ef4b1e" title="Start receiving the PHY preamble of a PPDU (i.e." alt="" coords="800,235,993,276"/>
 <area shape="rect" id="node5" href="$classns3_1_1_spectrum_wifi_phy.html#aead1ebdbaf59361928cd6ffa7abc3161" title="Input method for delivering a signal from the spectrum channel and low&#45;level PHY interface to this Sp..." alt="" coords="587,235,752,276"/>

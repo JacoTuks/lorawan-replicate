@@ -1,5 +1,5 @@
 <map id="ns3::YansWifiPhyHelper::Default" name="ns3::YansWifiPhyHelper::Default">
-<area shape="rect" id="node1" title="Create a phy helper in a default working state." alt="" coords="5,165,180,207"/>
+<area shape="rect" id="node1" title="Create a PHY helper in a default working state." alt="" coords="5,165,180,207"/>
 <area shape="rect" id="node2" href="$classns3_1_1_wifi_phy_helper.html#a219d3ae5881842aa42ea341b985ce114" title=" " alt="" coords="228,165,380,207"/>
 <area shape="rect" id="node3" href="$classns3_1_1_object_factory.html#aef5c0d5019c96bdf01cefd1ff83f4a68" title="Set an attribute to be set during construction." alt="" coords="428,143,599,170"/>
 <area shape="rect" id="node16" href="$classns3_1_1_object_factory.html#a77dcd099064038a1eb7a6b8251229ec3" title="Set the TypeId of the Objects to be created by this factory." alt="" coords="442,195,585,236"/>

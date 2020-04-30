@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -520,7 +517,7 @@ $(document).ready(function(){initNavTree('hash-example_8cc_source.html',''); ini
 <div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;  <span class="keywordtype">bool</span> timing = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;  <a class="code" href="classns3_1_1_hash_1_1_example_1_1_dict_files.html">DictFiles</a> files;</div>
 <div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160; </div>
-<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;  <a class="code" href="classns3_1_1_command_line.html">CommandLine</a> <a class="code" href="namespacesecond.html#ae84c87468c0e4398eab4dbb6cadc17d9">cmd</a>;</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;  <a class="code" href="group__commandline.html#ga6520780a7fe4f370c303f7a8a39fd077">COMMANDLINE</a> (<a class="code" href="namespacesecond.html#ae84c87468c0e4398eab4dbb6cadc17d9">cmd</a>);</div>
 <div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;  <a class="code" href="namespacesecond.html#ae84c87468c0e4398eab4dbb6cadc17d9">cmd</a>.Usage (<span class="stringliteral">&quot;Find hash collisions in the dictionary.&quot;</span>);</div>
 <div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;  <a class="code" href="namespacesecond.html#ae84c87468c0e4398eab4dbb6cadc17d9">cmd</a>.AddValue (<span class="stringliteral">&quot;dict&quot;</span>, <span class="stringliteral">&quot;Dictionary file to hash&quot;</span>,</div>
 <div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;                <a class="code" href="group__makecallbackmemptr.html#ga9376283685aa99d204048d6a4b7610a4">MakeCallback</a> (&amp;<a class="code" href="classns3_1_1_hash_1_1_example_1_1_dict_files.html#a2c1ef714c9da605160b3e2d661985bc9">DictFiles::Add</a>,</div>
@@ -558,7 +555,6 @@ $(document).ready(function(){initNavTree('hash-example_8cc_source.html',''); ini
 </div><!-- doc-content -->
 <div class="ttc" id="agroup__logging_html_ga225a95395fa117b7309aa3c43518d02e"><div class="ttname"><a href="group__logging.html#ga225a95395fa117b7309aa3c43518d02e">NS_LOG_COMPONENT_DEFINE</a></div><div class="ttdeci">#define NS_LOG_COMPONENT_DEFINE(name)</div><div class="ttdoc">Define a Log component with a specific name.</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00206">log.h:205</a></div></div>
 <div class="ttc" id="aclassns3_1_1_hash_1_1_example_1_1_dict_files_html_a0f2c70e08b9eb66a95eb08637ddf6f92"><div class="ttname"><a href="classns3_1_1_hash_1_1_example_1_1_dict_files.html#a0f2c70e08b9eb66a95eb08637ddf6f92">ns3::Hash::Example::DictFiles::m_files</a></div><div class="ttdeci">std::vector&lt; std::string &gt; m_files</div><div class="ttdoc">List of word files to use.</div><div class="ttdef"><b>Definition:</b> <a href="hash-example_8cc_source.html#l00528">hash-example.cc:528</a></div></div>
-<div class="ttc" id="aclassns3_1_1_command_line_html"><div class="ttname"><a href="classns3_1_1_command_line.html">ns3::CommandLine</a></div><div class="ttdoc">Parse command-line arguments.</div><div class="ttdef"><b>Definition:</b> <a href="command-line_8h_source.html#l00212">command-line.h:213</a></div></div>
 <div class="ttc" id="aclassns3_1_1_hash_1_1_example_1_1_dictionary_html_ae4e86103ddc1a6b9ec5322f711f99aa5"><div class="ttname"><a href="classns3_1_1_hash_1_1_example_1_1_dictionary.html#ae4e86103ddc1a6b9ec5322f711f99aa5">ns3::Hash::Example::Dictionary::Add</a></div><div class="ttdeci">void Add(const std::string phrase)</div><div class="ttdoc">Add a string to the dictionary.</div><div class="ttdef"><b>Definition:</b> <a href="hash-example_8cc_source.html#l00298">hash-example.cc:298</a></div></div>
 <div class="ttc" id="aclassns3_1_1_hash_1_1_example_1_1_dict_files_html"><div class="ttname"><a href="classns3_1_1_hash_1_1_example_1_1_dict_files.html">ns3::Hash::Example::DictFiles</a></div><div class="ttdoc">Source word list files.</div><div class="ttdef"><b>Definition:</b> <a href="hash-example_8cc_source.html#l00457">hash-example.cc:458</a></div></div>
 <div class="ttc" id="anamespacens3_html"><div class="ttname"><a href="namespacens3.html">ns3</a></div><div class="ttdoc">Every class exported by the ns3 library is enclosed in the ns3 namespace.</div></div>
@@ -577,6 +573,7 @@ $(document).ready(function(){initNavTree('hash-example_8cc_source.html',''); ini
 <div class="ttc" id="aclassns3_1_1_hasher_html"><div class="ttname"><a href="classns3_1_1_hasher.html">ns3::Hasher</a></div><div class="ttdoc">Generic Hash function interface.</div><div class="ttdef"><b>Definition:</b> <a href="hash_8h_source.html#l00087">hash.h:88</a></div></div>
 <div class="ttc" id="aclassns3_1_1_hash_1_1_example_1_1_dictionary_html_a75ad3e7f643b8182bc4bc35ea7de8d18"><div class="ttname"><a href="classns3_1_1_hash_1_1_example_1_1_dictionary.html#a75ad3e7f643b8182bc4bc35ea7de8d18">ns3::Hash::Example::Dictionary::Report</a></div><div class="ttdeci">void Report() const</div><div class="ttdoc">Print the collisions for each Collider.</div><div class="ttdef"><b>Definition:</b> <a href="hash-example_8cc_source.html#l00380">hash-example.cc:380</a></div></div>
 <div class="ttc" id="aclassns3_1_1_hash_1_1_example_1_1_dictionary_html_a6764e9df469c280e952bef5ccf4378ae"><div class="ttname"><a href="classns3_1_1_hash_1_1_example_1_1_dictionary.html#a6764e9df469c280e952bef5ccf4378ae">ns3::Hash::Example::Dictionary::Dictionary</a></div><div class="ttdeci">Dictionary()</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition:</b> <a href="hash-example_8cc_source.html#l00277">hash-example.cc:277</a></div></div>
+<div class="ttc" id="agroup__commandline_html_ga6520780a7fe4f370c303f7a8a39fd077"><div class="ttname"><a href="group__commandline.html#ga6520780a7fe4f370c303f7a8a39fd077">COMMANDLINE</a></div><div class="ttdeci">#define COMMANDLINE(var)</div><div class="ttdoc">Declare a CommandLine instance.</div><div class="ttdef"><b>Definition:</b> <a href="command-line_8h_source.html#l00057">command-line.h:56</a></div></div>
 <div class="ttc" id="aclassns3_1_1_hash_1_1_example_1_1_dictionary_html_a5e564c355e42a6db27cb8a8d756dfecd"><div class="ttname"><a href="classns3_1_1_hash_1_1_example_1_1_dictionary.html#a5e564c355e42a6db27cb8a8d756dfecd">ns3::Hash::Example::Dictionary::m_hashes</a></div><div class="ttdeci">std::vector&lt; Collider &gt; m_hashes</div><div class="ttdoc">List of hash Colliders.</div><div class="ttdef"><b>Definition:</b> <a href="hash-example_8cc_source.html#l00448">hash-example.cc:448</a></div></div>
 <div class="ttc" id="aclassns3_1_1_hash_1_1_example_1_1_collider_html"><div class="ttname"><a href="classns3_1_1_hash_1_1_example_1_1_collider.html">ns3::Hash::Example::Collider</a></div><div class="ttdoc">Keep track of collisions.</div><div class="ttdef"><b>Definition:</b> <a href="hash-example_8cc_source.html#l00120">hash-example.cc:121</a></div></div>
 <div class="ttc" id="aclassns3_1_1_hash_1_1_example_1_1_dictionary_html_a9b178dadc9f65ac92d4be0e0cee4eea8"><div class="ttname"><a href="classns3_1_1_hash_1_1_example_1_1_dictionary.html#a9b178dadc9f65ac92d4be0e0cee4eea8">ns3::Hash::Example::Dictionary::m_nphrases</a></div><div class="ttdeci">unsigned long m_nphrases</div><div class="ttdoc">Number of strings hashed.</div><div class="ttdef"><b>Definition:</b> <a href="hash-example_8cc_source.html#l00447">hash-example.cc:447</a></div></div>
@@ -608,7 +605,7 @@ $(document).ready(function(){initNavTree('hash-example_8cc_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li><li class="navelem"><a class="el" href="dir_885eb8bfa2a2428b32ca0bb7bd8db8ab.html">examples</a></li><li class="navelem"><a class="el" href="hash-example_8cc.html">hash-example.cc</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:34:52 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:00 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

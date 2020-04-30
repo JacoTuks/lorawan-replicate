@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -259,7 +256,7 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:ae5b3299c80154aa10c3775bfc4f8c0ab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel_access_test_case.html#ae5b3299c80154aa10c3775bfc4f8c0ab">Receive</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_net_device.html">NetDevice</a> &gt; dev, <a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; const <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; pkt, uint16_t mode, const <a class="el" href="classns3_1_1_address.html">Address</a> &amp;sender)</td></tr>
 <tr class="memdesc:ae5b3299c80154aa10c3775bfc4f8c0ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive function.  <a href="class_channel_access_test_case.html#ae5b3299c80154aa10c3775bfc4f8c0ab">More...</a><br /></td></tr>
 <tr class="separator:ae5b3299c80154aa10c3775bfc4f8c0ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a372d321c372c644c86ff355e94704eaf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel_access_test_case.html#a372d321c372c644c86ff355e94704eaf">SendX</a> (uint32_t <a class="el" href="phy-communication-test_8cc.html#ac764e37b6204cf317ba7d54ae65a04d0">channel</a>, uint32_t receiverId)</td></tr>
+<tr class="memitem:a372d321c372c644c86ff355e94704eaf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel_access_test_case.html#a372d321c372c644c86ff355e94704eaf">SendX</a> (uint32_t channel, uint32_t receiverId)</td></tr>
 <tr class="memdesc:a372d321c372c644c86ff355e94704eaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send X function.  <a href="class_channel_access_test_case.html#a372d321c372c644c86ff355e94704eaf">More...</a><br /></td></tr>
 <tr class="separator:a372d321c372c644c86ff355e94704eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a581ae6f9c8e9f1317bdcf7e0e95936"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel_access_test_case.html#a0a581ae6f9c8e9f1317bdcf7e0e95936">TestAlternating</a> (<a class="el" href="structns3_1_1_sch_info.html">SchInfo</a> &amp;info, bool shouldSucceed)</td></tr>
@@ -423,7 +420,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="mac-extension-test-suite_8cc_source.html#l00718">718</a> of file <a class="el" href="mac-extension-test-suite_8cc_source.html">mac-extension-test-suite.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="channel-manager_8h_source.html#l00052">CCH</a>, <a class="el" href="phy-communication-test_8cc_source.html#l00010">channel</a>, <a class="el" href="mac-extension-test-suite_8cc_source.html#l00279">TestCaseHelper::CreatWaveDevice()</a>, <a class="el" href="channel-scheduler_8h_source.html#l00049">EXTENDED_ALTERNATING</a>, <a class="el" href="channel-scheduler_8h_source.html#l00050">EXTENDED_CONTINUOUS</a>, <a class="el" href="net-device-container_8cc_source.html#l00062">ns3::NetDeviceContainer::Get()</a>, <a class="el" href="mac-extension-test-suite_8cc_source.html#l00595">m_devices</a>, <a class="el" href="mac-extension-test-suite_8cc_source.html#l00597">m_received</a>, <a class="el" href="mac-extension-test-suite_8cc_source.html#l00596">m_sender</a>, <a class="el" href="callback_8h_source.html#l01610">ns3::MakeCallback()</a>, <a class="el" href="test_8h_source.html#l00283">NS_TEST_EXPECT_MSG_EQ</a>, <a class="el" href="mac-extension-test-suite_8cc_source.html#l00677">Receive()</a>, <a class="el" href="channel-manager_8h_source.html#l00049">SCH1</a>, <a class="el" href="channel-manager_8h_source.html#l00050">SCH2</a>, <a class="el" href="channel-manager_8h_source.html#l00051">SCH3</a>, <a class="el" href="channel-manager_8h_source.html#l00053">SCH4</a>, <a class="el" href="channel-manager_8h_source.html#l00054">SCH5</a>, <a class="el" href="channel-manager_8h_source.html#l00055">SCH6</a>, <a class="el" href="nstime_8h_source.html#l01064">ns3::Seconds()</a>, <a class="el" href="mac-extension-test-suite_8cc_source.html#l00647">SendX()</a>, <a class="el" href="wave-net-device_8cc_source.html#l00657">ns3::WaveNetDevice::SetReceiveCallback()</a>, <a class="el" href="mac-extension-test-suite_8cc_source.html#l00634">TestAlternating()</a>, <a class="el" href="mac-extension-test-suite_8cc_source.html#l00640">TestAlternatingAfter()</a>, <a class="el" href="mac-extension-test-suite_8cc_source.html#l00609">TestContinuous()</a>, <a class="el" href="mac-extension-test-suite_8cc_source.html#l00615">TestContinuousAfter()</a>, <a class="el" href="mac-extension-test-suite_8cc_source.html#l00621">TestExtended()</a>, and <a class="el" href="mac-extension-test-suite_8cc_source.html#l00627">TestExtendedAfter()</a>.</p>
+<p class="reference">References <a class="el" href="channel-manager_8h_source.html#l00052">CCH</a>, <a class="el" href="third_8py_source.html#l00092">third::channel</a>, <a class="el" href="mac-extension-test-suite_8cc_source.html#l00279">TestCaseHelper::CreatWaveDevice()</a>, <a class="el" href="channel-scheduler_8h_source.html#l00049">EXTENDED_ALTERNATING</a>, <a class="el" href="channel-scheduler_8h_source.html#l00050">EXTENDED_CONTINUOUS</a>, <a class="el" href="net-device-container_8cc_source.html#l00062">ns3::NetDeviceContainer::Get()</a>, <a class="el" href="mac-extension-test-suite_8cc_source.html#l00595">m_devices</a>, <a class="el" href="mac-extension-test-suite_8cc_source.html#l00597">m_received</a>, <a class="el" href="mac-extension-test-suite_8cc_source.html#l00596">m_sender</a>, <a class="el" href="callback_8h_source.html#l01610">ns3::MakeCallback()</a>, <a class="el" href="test_8h_source.html#l00283">NS_TEST_EXPECT_MSG_EQ</a>, <a class="el" href="mac-extension-test-suite_8cc_source.html#l00677">Receive()</a>, <a class="el" href="channel-manager_8h_source.html#l00049">SCH1</a>, <a class="el" href="channel-manager_8h_source.html#l00050">SCH2</a>, <a class="el" href="channel-manager_8h_source.html#l00051">SCH3</a>, <a class="el" href="channel-manager_8h_source.html#l00053">SCH4</a>, <a class="el" href="channel-manager_8h_source.html#l00054">SCH5</a>, <a class="el" href="channel-manager_8h_source.html#l00055">SCH6</a>, <a class="el" href="nstime_8h_source.html#l01070">ns3::Seconds()</a>, <a class="el" href="mac-extension-test-suite_8cc_source.html#l00647">SendX()</a>, <a class="el" href="wave-net-device_8cc_source.html#l00657">ns3::WaveNetDevice::SetReceiveCallback()</a>, <a class="el" href="mac-extension-test-suite_8cc_source.html#l00634">TestAlternating()</a>, <a class="el" href="mac-extension-test-suite_8cc_source.html#l00640">TestAlternatingAfter()</a>, <a class="el" href="mac-extension-test-suite_8cc_source.html#l00609">TestContinuous()</a>, <a class="el" href="mac-extension-test-suite_8cc_source.html#l00615">TestContinuousAfter()</a>, <a class="el" href="mac-extension-test-suite_8cc_source.html#l00621">TestExtended()</a>, and <a class="el" href="mac-extension-test-suite_8cc_source.html#l00627">TestExtendedAfter()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -546,7 +543,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="mac-extension-test-suite_8cc_source.html#l00677">677</a> of file <a class="el" href="mac-extension-test-suite_8cc_source.html">mac-extension-test-suite.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="packet_8cc_source.html#l00378">ns3::Packet::CopyData()</a>, <a class="el" href="socket-bound-tcp-static-routing_8cc_source.html#l00053">data</a>, <a class="el" href="node_8cc_source.html#l00107">ns3::Node::GetId()</a>, <a class="el" href="classns3_1_1_net_device.html#a098b6cc4339ac00c62e75cfa48c8aeac">ns3::NetDevice::GetNode()</a>, <a class="el" href="packet_8h_source.html#l00854">ns3::Packet::GetSize()</a>, <a class="el" href="mac-extension-test-suite_8cc_source.html#l00597">m_received</a>, <a class="el" href="test_8h_source.html#l00283">NS_TEST_EXPECT_MSG_EQ</a>, and <a class="el" href="nstime_8h_source.html#l01121">ns3::TimeStep()</a>.</p>
+<p class="reference">References <a class="el" href="packet_8cc_source.html#l00378">ns3::Packet::CopyData()</a>, <a class="el" href="socket-bound-tcp-static-routing_8cc_source.html#l00053">data</a>, <a class="el" href="node_8cc_source.html#l00109">ns3::Node::GetId()</a>, <a class="el" href="classns3_1_1_net_device.html#a098b6cc4339ac00c62e75cfa48c8aeac">ns3::NetDevice::GetNode()</a>, <a class="el" href="packet_8h_source.html#l00854">ns3::Packet::GetSize()</a>, <a class="el" href="mac-extension-test-suite_8cc_source.html#l00597">m_received</a>, <a class="el" href="test_8h_source.html#l00283">NS_TEST_EXPECT_MSG_EQ</a>, and <a class="el" href="nstime_8h_source.html#l01127">ns3::TimeStep()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mac-extension-test-suite_8cc_source.html#l00718">DoRun()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -624,7 +621,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="mac-extension-test-suite_8cc_source.html#l00647">647</a> of file <a class="el" href="mac-extension-test-suite_8cc_source.html">mac-extension-test-suite.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="phy-communication-test_8cc_source.html#l00010">channel</a>, <a class="el" href="socket-bound-tcp-static-routing_8cc_source.html#l00053">data</a>, <a class="el" href="nstime_8h_source.html#l00391">ns3::Time::GetTimeStep()</a>, <a class="el" href="mac-extension-test-suite_8cc_source.html#l00596">m_sender</a>, <a class="el" href="simulator_8cc_source.html#l00309">ns3::Now()</a>, and <a class="el" href="wave-net-device_8cc_source.html#l00371">ns3::WaveNetDevice::SendX()</a>.</p>
+<p class="reference">References <a class="el" href="third_8py_source.html#l00092">third::channel</a>, <a class="el" href="socket-bound-tcp-static-routing_8cc_source.html#l00053">data</a>, <a class="el" href="nstime_8h_source.html#l00397">ns3::Time::GetTimeStep()</a>, <a class="el" href="mac-extension-test-suite_8cc_source.html#l00596">m_sender</a>, <a class="el" href="simulator_8cc_source.html#l00311">ns3::Now()</a>, and <a class="el" href="wave-net-device_8cc_source.html#l00371">ns3::WaveNetDevice::SendX()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mac-extension-test-suite_8cc_source.html#l00718">DoRun()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -745,7 +742,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="mac-extension-test-suite_8cc_source.html#l00634">634</a> of file <a class="el" href="mac-extension-test-suite_8cc_source.html">mac-extension-test-suite.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="mac-extension-test-suite_8cc_source.html#l00596">m_sender</a>, <a class="el" href="simulator_8cc_source.html#l00309">ns3::Now()</a>, <a class="el" href="test_8h_source.html#l00283">NS_TEST_EXPECT_MSG_EQ</a>, and <a class="el" href="wave-net-device_8cc_source.html#l00282">ns3::WaveNetDevice::StartSch()</a>.</p>
+<p class="reference">References <a class="el" href="mac-extension-test-suite_8cc_source.html#l00596">m_sender</a>, <a class="el" href="simulator_8cc_source.html#l00311">ns3::Now()</a>, <a class="el" href="test_8h_source.html#l00283">NS_TEST_EXPECT_MSG_EQ</a>, and <a class="el" href="wave-net-device_8cc_source.html#l00282">ns3::WaveNetDevice::StartSch()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mac-extension-test-suite_8cc_source.html#l00718">DoRun()</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -866,7 +863,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="mac-extension-test-suite_8cc_source.html#l00640">640</a> of file <a class="el" href="mac-extension-test-suite_8cc_source.html">mac-extension-test-suite.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="wave-net-device_8cc_source.html#l00480">ns3::WaveNetDevice::GetChannelScheduler()</a>, <a class="el" href="mac-extension-test-suite_8cc_source.html#l00596">m_sender</a>, <a class="el" href="simulator_8cc_source.html#l00309">ns3::Now()</a>, and <a class="el" href="test_8h_source.html#l00283">NS_TEST_EXPECT_MSG_EQ</a>.</p>
+<p class="reference">References <a class="el" href="wave-net-device_8cc_source.html#l00480">ns3::WaveNetDevice::GetChannelScheduler()</a>, <a class="el" href="mac-extension-test-suite_8cc_source.html#l00596">m_sender</a>, <a class="el" href="simulator_8cc_source.html#l00311">ns3::Now()</a>, and <a class="el" href="test_8h_source.html#l00283">NS_TEST_EXPECT_MSG_EQ</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mac-extension-test-suite_8cc_source.html#l00718">DoRun()</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -987,7 +984,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="mac-extension-test-suite_8cc_source.html#l00609">609</a> of file <a class="el" href="mac-extension-test-suite_8cc_source.html">mac-extension-test-suite.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="mac-extension-test-suite_8cc_source.html#l00596">m_sender</a>, <a class="el" href="simulator_8cc_source.html#l00309">ns3::Now()</a>, <a class="el" href="test_8h_source.html#l00283">NS_TEST_EXPECT_MSG_EQ</a>, and <a class="el" href="wave-net-device_8cc_source.html#l00282">ns3::WaveNetDevice::StartSch()</a>.</p>
+<p class="reference">References <a class="el" href="mac-extension-test-suite_8cc_source.html#l00596">m_sender</a>, <a class="el" href="simulator_8cc_source.html#l00311">ns3::Now()</a>, <a class="el" href="test_8h_source.html#l00283">NS_TEST_EXPECT_MSG_EQ</a>, and <a class="el" href="wave-net-device_8cc_source.html#l00282">ns3::WaveNetDevice::StartSch()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mac-extension-test-suite_8cc_source.html#l00718">DoRun()</a>.</p>
 <div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1108,7 +1105,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="mac-extension-test-suite_8cc_source.html#l00615">615</a> of file <a class="el" href="mac-extension-test-suite_8cc_source.html">mac-extension-test-suite.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="wave-net-device_8cc_source.html#l00480">ns3::WaveNetDevice::GetChannelScheduler()</a>, <a class="el" href="mac-extension-test-suite_8cc_source.html#l00596">m_sender</a>, <a class="el" href="simulator_8cc_source.html#l00309">ns3::Now()</a>, and <a class="el" href="test_8h_source.html#l00283">NS_TEST_EXPECT_MSG_EQ</a>.</p>
+<p class="reference">References <a class="el" href="wave-net-device_8cc_source.html#l00480">ns3::WaveNetDevice::GetChannelScheduler()</a>, <a class="el" href="mac-extension-test-suite_8cc_source.html#l00596">m_sender</a>, <a class="el" href="simulator_8cc_source.html#l00311">ns3::Now()</a>, and <a class="el" href="test_8h_source.html#l00283">NS_TEST_EXPECT_MSG_EQ</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mac-extension-test-suite_8cc_source.html#l00718">DoRun()</a>.</p>
 <div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1229,7 +1226,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="mac-extension-test-suite_8cc_source.html#l00621">621</a> of file <a class="el" href="mac-extension-test-suite_8cc_source.html">mac-extension-test-suite.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="mac-extension-test-suite_8cc_source.html#l00596">m_sender</a>, <a class="el" href="simulator_8cc_source.html#l00309">ns3::Now()</a>, <a class="el" href="test_8h_source.html#l00283">NS_TEST_EXPECT_MSG_EQ</a>, and <a class="el" href="wave-net-device_8cc_source.html#l00282">ns3::WaveNetDevice::StartSch()</a>.</p>
+<p class="reference">References <a class="el" href="mac-extension-test-suite_8cc_source.html#l00596">m_sender</a>, <a class="el" href="simulator_8cc_source.html#l00311">ns3::Now()</a>, <a class="el" href="test_8h_source.html#l00283">NS_TEST_EXPECT_MSG_EQ</a>, and <a class="el" href="wave-net-device_8cc_source.html#l00282">ns3::WaveNetDevice::StartSch()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mac-extension-test-suite_8cc_source.html#l00718">DoRun()</a>.</p>
 <div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1350,7 +1347,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="mac-extension-test-suite_8cc_source.html#l00627">627</a> of file <a class="el" href="mac-extension-test-suite_8cc_source.html">mac-extension-test-suite.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="wave-net-device_8cc_source.html#l00480">ns3::WaveNetDevice::GetChannelScheduler()</a>, <a class="el" href="mac-extension-test-suite_8cc_source.html#l00596">m_sender</a>, <a class="el" href="simulator_8cc_source.html#l00309">ns3::Now()</a>, and <a class="el" href="test_8h_source.html#l00283">NS_TEST_EXPECT_MSG_EQ</a>.</p>
+<p class="reference">References <a class="el" href="wave-net-device_8cc_source.html#l00480">ns3::WaveNetDevice::GetChannelScheduler()</a>, <a class="el" href="mac-extension-test-suite_8cc_source.html#l00596">m_sender</a>, <a class="el" href="simulator_8cc_source.html#l00311">ns3::Now()</a>, and <a class="el" href="test_8h_source.html#l00283">NS_TEST_EXPECT_MSG_EQ</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mac-extension-test-suite_8cc_source.html#l00718">DoRun()</a>.</p>
 <div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1524,7 +1521,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_channel_access_test_case.html">ChannelAccessTestCase</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:13 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:20 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

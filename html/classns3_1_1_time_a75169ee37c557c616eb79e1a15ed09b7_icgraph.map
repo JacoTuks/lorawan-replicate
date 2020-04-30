@@ -3,7 +3,7 @@
 <area shape="rect" id="node2" href="$classns3_1_1_tcp_bic.html#aaec211ef4f1624860911aaf544ac9650" title="Get the slow start threshold after a loss event." alt="" coords="959,13,1143,39"/>
 <area shape="rect" id="node5" href="$classns3_1_1_tcp_htcp.html#add36278610893b4eba23cf688f7779d8" title="Get the slow start threshold after a loss event." alt="" coords="954,63,1149,90"/>
 <area shape="rect" id="node6" href="$classns3_1_1_mac_low.html#a2dc2b39866b901f5baad7f45ec8484a9" title="Check whether an MPDU of the given size, destined to the given receiver and belonging to the given TI..." alt="" coords="954,115,1149,156"/>
-<area shape="rect" id="node7" href="$group__time.html#ga07f8cce9b9e4f52d0f0b16da276b55c2" title="Helper to make an unbounded Time checker." alt="" coords="965,181,1137,207"/>
+<area shape="rect" id="node7" href="$namespacens3.html#a07f8cce9b9e4f52d0f0b16da276b55c2" title="Helper to make an unbounded Time checker." alt="" coords="965,181,1137,207"/>
 <area shape="rect" id="node8" href="$classns3_1_1_qos_txop.html#a0d5a35b715d1c8415d5d95a5f0b2814c" title="Notify the Txop that access has been granted." alt="" coords="950,232,1153,273"/>
 <area shape="rect" id="node9" href="$classns3_1_1_mac_low.html#aa477261c5209c13c66af9e2ae78b07e5" title=" " alt="" coords="936,298,1167,325"/>
 <area shape="rect" id="node11" href="$classns3_1_1_tcp_bic.html#a900818048f6876e8b38f9d9b8257f631" title="Bic window update after a new ack received." alt="" coords="977,349,1126,375"/>

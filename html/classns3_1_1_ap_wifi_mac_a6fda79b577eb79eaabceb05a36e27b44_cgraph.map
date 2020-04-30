@@ -26,7 +26,7 @@
 <area shape="rect" id="node15" href="$classns3_1_1_wifi_mac_queue_item.html#a01d29092eafa110090998f339bfabd97" title="Get the packet stored in this item." alt="" coords="1125,66,1304,107"/>
 <area shape="rect" id="node16" href="$classns3_1_1_txop.html#a71069daa23948ecf392c3bcc4a1f1bea" title="Check if Data should be re&#45;transmitted if Ack was missed." alt="" coords="1085,901,1344,928"/>
 <area shape="rect" id="node17" href="$classns3_1_1_wifi_remote_station_manager.html#a621a2da15b2214508d25112bac59e746" title="Should be invoked after calling ReportDataFailed if NeedRetransmission returns false." alt="" coords="1098,131,1331,172"/>
-<area shape="rect" id="node18" href="$classns3_1_1_channel_access_manager.html#af5da1581cec5dbf79c2780c0821391a8" title=" " alt="" coords="1111,719,1319,760"/>
+<area shape="rect" id="node18" href="$classns3_1_1_channel_access_manager.html#abb772d23a9ee81e9b6ce46b3aefc67a8" title=" " alt="" coords="1111,719,1319,760"/>
 <area shape="rect" id="node19" href="$classns3_1_1_wifi_mac_header.html#a6478a02b80d5c01657714c5c7a0ae1cb" title="Fill the Address 1 field with the given address." alt="" coords="1138,196,1291,238"/>
 <area shape="rect" id="node20" href="$classns3_1_1_wifi_mac_header.html#ab6a0efdc43d39b5da5d17eae9665271d" title="Fill the Address 2 field with the given address." alt="" coords="1138,262,1291,303"/>
 <area shape="rect" id="node21" href="$classns3_1_1_wifi_mac_header.html#ace2fd1624db247bd42cbe9182996bb0e" title="Fill the Address 3 field with the given address." alt="" coords="1138,327,1291,368"/>
@@ -36,7 +36,7 @@
 <area shape="rect" id="node25" href="$classns3_1_1_wifi_mac_header.html#a577e95535beca95ba7f4a61a61e8b17d" title="Set the To DS bit in the Frame Control field." alt="" coords="1138,588,1291,630"/>
 <area shape="rect" id="node26" href="$classns3_1_1_wifi_mac_header.html#ad11306bd3a2edf81346a14a9c4fe7388" title="Set the fragment number of the header." alt="" coords="1132,654,1297,695"/>
 <area shape="rect" id="node27" href="$classns3_1_1_wifi_mac_header.html#a3898df5358df4247926b74175f2789c3" title="Un&#45;set the More Fragment bit in the Frame Control Field." alt="" coords="1129,784,1300,826"/>
-<area shape="rect" id="node31" href="$classns3_1_1_channel_access_manager.html#a2f5f2e542c57be950d6c37e022d9caca" title=" " alt="" coords="515,1145,756,1172"/>
+<area shape="rect" id="node31" href="$classns3_1_1_channel_access_manager.html#addd3a289bd0d81aa412dbdbbf11b017e" title=" " alt="" coords="515,1145,756,1172"/>
 <area shape="rect" id="node34" href="$classns3_1_1_txop.html#a3b733c5a31045a10b5074f4ff8026a81" title=" " alt="" coords="567,1246,703,1273"/>
 <area shape="rect" id="node35" href="$classns3_1_1_txop.html#ab9b1e87f2012e04279b960eb209a94af" title="Update the value of the CW variable to take into account a transmission success or a transmission abo..." alt="" coords="560,1196,711,1222"/>
 <area shape="rect" id="node41" href="$classns3_1_1_ap_wifi_mac.html#ad23b9bb39096415a43d21857c4716576" title="Increment the PCF polling list iterator to indicate that the next polling station can be polled." alt="" coords="537,571,734,612"/>

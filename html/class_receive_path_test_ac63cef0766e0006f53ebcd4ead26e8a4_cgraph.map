@@ -1,6 +1,6 @@
 <map id="ReceivePathTest::Reset" name="ReceivePathTest::Reset">
 <area shape="rect" id="node1" title=" " alt="" coords="5,173,180,199"/>
-<area shape="rect" id="node2" href="$classns3_1_1_gateway_lora_phy.html#a956f775fb8c0eb6bb06e18c2a883bf34" title="Add a reception path, locked on a specific frequency." alt="" coords="287,5,449,47"/>
+<area shape="rect" id="node2" href="$classns3_1_1lorawan_1_1_gateway_lora_phy.html#a5587bc3145215aad3faa2b522db5595b" title="Add a reception path, locked on a specific frequency." alt="" coords="269,5,467,47"/>
 <area shape="rect" id="node3" href="$class_receive_path_test.html#aacfc9adb02f3ee4810227aa7e6fd4202" title=" " alt="" coords="260,71,476,98"/>
 <area shape="rect" id="node4" href="$group__makecallbackmemptr.html#ga9376283685aa99d204048d6a4b7610a4" title=" " alt="" coords="296,122,440,149"/>
 <area shape="rect" id="node5" href="$class_receive_path_test.html#ac3495d7dbf7f511caa5d366c06e32138" title=" " alt="" coords="228,173,508,199"/>

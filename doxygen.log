@@ -1,9 +1,7 @@
+warning: source doc/introspected-command-line.h is not a readable file or directory... skipping.
 /home/davide/Work/ns-3-dev-lorawan/src/aodv/model/aodv-routing-protocol.h:370: warning: unbalanced grouping commands
 /home/davide/Work/ns-3-dev-lorawan/src/core/examples/test-string-value-formatting.cc:21: warning: missing title after \defgroup string-value-formatting
-/home/davide/Work/ns-3-dev-lorawan/src/core/model/random-variable-stream.h:2552: warning: Reached end of file while still inside a (nested) comment. Nesting level 1 (probable line reference: 272)
-/home/davide/Work/ns-3-dev-lorawan/src/core/model/random-variable-stream.h:305: warning: reached end of file while inside a 'f$' block!
-The command that should end the block seems to be missing!
-
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/command-line.cc:335: warning: include file unistd.h not found, perhaps you forgot to add its directory to INCLUDE_PATH?
 /home/davide/Work/ns-3-dev-lorawan/src/traffic-control/model/traffic-control-layer.h:36: warning: missing title after \defgroup traffic-control
 /home/davide/Work/ns-3-dev-lorawan/src/dsdv/test/dsdv-testcase.cc:50: warning: Refusing to add group dsdv-test to itself
 /home/davide/Work/ns-3-dev-lorawan/src/traffic-control/model/traffic-control-layer.h:36: warning: Refusing to add group Traffic-control to itself
@@ -40,19 +38,13 @@ The command that should end the block seems to be missing!
 /home/davide/Work/ns-3-dev-lorawan/src/config-store/model/model-node-creator.h:37: warning: Documentation for undefined enum 'node' found.
 /home/davide/Work/ns-3-dev-lorawan/src/config-store/model/model-typeid-creator.h:37: warning: Documentation for undefined enum 'node' found.
 /home/davide/Work/ns-3-dev-lorawan/src/aodv/test/aodv-regression.cc:73: warning: Member ChainRegressionTest found in multiple @ingroup groups! The member will be put in group tests, and not in group aodv-test
-/home/davide/Work/ns-3-dev-lorawan/src/core/model/log.cc:677: warning: documented symbol 'ParameterLogger & ns3::ParameterLogger::operator<<< const char * >' was not declared or defined.
-/home/davide/Work/ns-3-dev-lorawan/src/core/model/log.cc:685: warning: documented symbol 'ParameterLogger & ns3::ParameterLogger::operator<<< int8_t >' was not declared or defined.
-/home/davide/Work/ns-3-dev-lorawan/src/core/model/log.cc:701: warning: documented symbol 'ParameterLogger & ns3::ParameterLogger::operator<<< uint8_t >' was not declared or defined.
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/log.cc:666: warning: documented symbol 'ParameterLogger & ns3::ParameterLogger::operator<<< const char * >' was not declared or defined.
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/log.cc:674: warning: documented symbol 'ParameterLogger & ns3::ParameterLogger::operator<<< int8_t >' was not declared or defined.
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/log.cc:690: warning: documented symbol 'ParameterLogger & ns3::ParameterLogger::operator<<< uint8_t >' was not declared or defined.
 /home/davide/Work/ns-3-dev-lorawan/src/core/model/log.h:515: warning: documented symbol 'ParameterLogger & ns3::ParameterLogger::operator<<< std::string >' was not declared or defined.
 /home/davide/Work/ns-3-dev-lorawan/src/core/model/log.h:524: warning: documented symbol 'ParameterLogger & ns3::ParameterLogger::operator<<< const char * >' was not declared or defined.
 /home/davide/Work/ns-3-dev-lorawan/src/core/model/log.h:533: warning: documented symbol 'ParameterLogger & ns3::ParameterLogger::operator<<< int8_t >' was not declared or defined.
 /home/davide/Work/ns-3-dev-lorawan/src/core/model/log.h:542: warning: documented symbol 'ParameterLogger & ns3::ParameterLogger::operator<<< uint8_t >' was not declared or defined.
-/home/davide/Work/ns-3-dev-lorawan/src/core/model/random-variable-stream.cc:192: warning: no uniquely matching class member found for 
-  uint32_t ns3::UniformRandomVariable::GetInteger(uint32_t min, uint32_t max)
-
-/home/davide/Work/ns-3-dev-lorawan/src/core/model/random-variable-stream.cc:206: warning: no uniquely matching class member found for 
-  uint32_t ns3::UniformRandomVariable::GetInteger(void)
-
 /home/davide/Work/ns-3-dev-lorawan/src/flow-monitor/examples/flowmon-parse-results.py:40: warning: documented symbol 'flowmon-parse-results.FiveTuple::strong' was not declared or defined.
 /home/davide/Work/ns-3-dev-lorawan/src/flow-monitor/examples/flowmon-parse-results.py:55: warning: documented symbol 'flowmon-parse-results.Histogram::nbins' was not declared or defined.
 /home/davide/Work/ns-3-dev-lorawan/src/flow-monitor/examples/flowmon-parse-results.py:57: warning: documented symbol 'flowmon-parse-results.Histogram::number_of_flows' was not declared or defined.
@@ -134,33 +126,42 @@ Possible candidates:
   'Ptr< WifiMacQueueItem > ns3::WifiMacQueue::Dequeue(void)' at line 121 of file /home/davide/Work/ns-3-dev-lorawan/src/wifi/model/wifi-mac-queue.h
   'Ptr< WifiMacQueueItem > ns3::WifiMacQueue::Dequeue(WifiMacQueue::ConstIterator pos)' at line 177 of file /home/davide/Work/ns-3-dev-lorawan/src/wifi/model/wifi-mac-queue.h
 
-/home/davide/Work/ns-3-dev-lorawan/src/core/model/hash-murmur3.cc:129: warning: @copybrief or @copydoc target 'getblock(const uint32_t*,int)' not found
 warning: Included by graph for 'log.h' not generated, too many nodes (62), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 warning: Caller graph for 'NS_LOG_LOGIC' not generated, too many nodes (703), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Caller graph for 'NS_ASSERT_MSG' not generated, too many nodes (629), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'NS_ASSERT_MSG' not generated, too many nodes (632), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 warning: Caller graph for 'f' not generated, too many nodes (57), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-/home/davide/Work/ns-3-dev-lorawan/utils/print-introspected-doxygen.cc:561: warning: argument 'info' of command @param is not found in the argument list of GetNameMap(void)
-/home/davide/Work/ns-3-dev-lorawan/utils/print-introspected-doxygen.cc:618: warning: argument 'info' of command @param is not found in the argument list of PrintConfigPaths(std::ostream &os, const TypeId tid)
 todo:263: warning: unexpected token TK_COMMAND_BS as the argument of _internalref
-warning: Caller graph for 'ns3::MakeCallback' not generated, too many nodes (357), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::MakeCallback' not generated, too many nodes (364), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 warning: Caller graph for 'ns3::MakeBoundCallback' not generated, too many nodes (73), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Caller graph for 'ns3::Config::Connect' not generated, too many nodes (79), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::Config::Connect' not generated, too many nodes (81), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 warning: Caller graph for 'ns3::Config::SetDefault' not generated, too many nodes (104), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-/home/davide/Work/ns-3-dev-lorawan/src/core/model/hash-murmur3.cc:129: warning: @copybrief or @copydoc target 'getblock(const uint32_t*,int)' not found
-/home/davide/Work/ns-3-dev-lorawan/src/core/model/hash-murmur3.cc:129: warning: @copybrief or @copydoc target 'getblock(const uint32_t*,int)' not found
-/home/davide/Work/ns-3-dev-lorawan/src/core/model/hash-murmur3.cc:129: warning: @copydetails or @copydoc target 'getblock(const uint32_t*,int)' not found
-/home/davide/Work/ns-3-dev-lorawan/src/core/model/hash-murmur3.cc:129: warning: @copybrief or @copydoc target 'getblock(const uint32_t*,int)' not found
-/home/davide/Work/ns-3-dev-lorawan/src/core/model/hash-murmur3.cc:129: warning: @copybrief or @copydoc target 'getblock(const uint32_t*,int)' not found
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-128.h:480: warning: argument 'lhs' from the argument list of ns3::operator! has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-128.h:436: warning: argument 'lhs' from the argument list of ns3::operator*= has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-128.h:436: warning: argument 'rhs' from the argument list of ns3::operator*= has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-128.h:460: warning: argument 'lhs' from the argument list of ns3::operator+ has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-128.h:412: warning: argument 'lhs' from the argument list of ns3::operator+= has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-128.h:412: warning: argument 'rhs' from the argument list of ns3::operator+= has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-128.h:470: warning: argument 'lhs' from the argument list of ns3::operator- has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-128.h:424: warning: argument 'lhs' from the argument list of ns3::operator-= has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-128.h:424: warning: argument 'rhs' from the argument list of ns3::operator-= has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-128.h:448: warning: argument 'lhs' from the argument list of ns3::operator/= has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-128.h:448: warning: argument 'rhs' from the argument list of ns3::operator/= has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-128.h:389: warning: argument 'lhs' from the argument list of ns3::operator< has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-128.h:389: warning: argument 'rhs' from the argument list of ns3::operator< has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-128.h:400: warning: argument 'lhs' from the argument list of ns3::operator> has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-128.h:400: warning: argument 'rhs' from the argument list of ns3::operator> has multiple @param documentation sections
 /home/davide/Work/ns-3-dev-lorawan/src/core/model/node-printer.cc:44: warning: argument 'os' from the argument list of ns3::DefaultNodePrinter has multiple @param documentation sections
-warning: Caller graph for 'ns3::MakeTimeChecker' not generated, too many nodes (100), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 warning: Caller graph for 'ns3::MicroSeconds' not generated, too many nodes (129), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 warning: Caller graph for 'ns3::MilliSeconds' not generated, too many nodes (187), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Caller graph for 'ns3::Seconds' not generated, too many nodes (692), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::Seconds' not generated, too many nodes (706), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 warning: Caller graph for 'ns3::Now' not generated, too many nodes (200), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Caller graph for 'ns3::MakeTraceSourceAccessor' not generated, too many nodes (139), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::MakeTraceSourceAccessor' not generated, too many nodes (142), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 /home/davide/Work/ns-3-dev-lorawan/src/wifi/model/qos-utils.cc:99: warning: argument 'packet' from the argument list of ns3::GetTid has multiple @param documentation sections
 /home/davide/Work/ns-3-dev-lorawan/src/wifi/model/qos-utils.cc:99: warning: argument 'hdr' from the argument list of ns3::GetTid has multiple @param documentation sections
 /home/davide/Work/ns-3-dev-lorawan/src/netanim/test/netanim-test.cc:65: warning: documented empty return type of AbstractAnimationInterfaceTestCase::DoRun
+/home/davide/Work/ns-3-dev-lorawan/src/wifi/test/wifi-test.cc:1222: warning: argument 'adr' of command @param is not found in the argument list of Bug2222TestCase::TxDataFailedTrace(std::string context, Mac48Address adress)
+/home/davide/Work/ns-3-dev-lorawan/src/wifi/test/wifi-test.cc:1227: warning: The following parameter of Bug2222TestCase::TxDataFailedTrace(std::string context, Mac48Address adress) is not documented:
+  parameter 'adress'
 /home/davide/Work/ns-3-dev-lorawan/src/traffic-control/test/cobalt-queue-disc-test-suite.cc:52: warning: The following parameter of CobaltQueueDiscTestItem::CobaltQueueDiscTestItem(Ptr< Packet > p, const Address &addr, uint16_t protocol, bool ecnCapable) is not documented:
   parameter 'ecnCapable'
 /home/davide/Work/ns-3-dev-lorawan/src/traffic-control/test/codel-queue-disc-test-suite.cc:364: warning: argument 'queue' of command @param is not found in the argument list of CoDelQueueDiscControlLawTest::_codel_control_law(uint32_t t, uint32_t interval, uint32_t recInvSqrt)
@@ -170,17 +171,15 @@ warning: Caller graph for 'ns3::MakeTraceSourceAccessor' not generated, too many
 /home/davide/Work/ns-3-dev-lorawan/src/wave/examples/vanet-routing-compare.cc:1025: warning: documented empty return type of ConfigStoreHelper::ConfigStoreHelper
 /home/davide/Work/ns-3-dev-lorawan/src/wave/examples/vanet-routing-compare.cc:1032: warning: documented empty return type of ConfigStoreHelper::LoadConfig
 /home/davide/Work/ns-3-dev-lorawan/src/wave/examples/vanet-routing-compare.cc:1039: warning: documented empty return type of ConfigStoreHelper::SaveConfig
+/home/davide/Work/ns-3-dev-lorawan/src/wifi/test/wifi-test.cc:2366: warning: Found unknown command '\issueid'
+/home/davide/Work/ns-3-dev-lorawan/src/wifi/test/wifi-test.cc:2179: warning: Found unknown command '\issueid'
+/home/davide/Work/ns-3-dev-lorawan/src/wifi/test/wifi-test.cc:2210: warning: argument 'adr' of command @param is not found in the argument list of Issue40TestCase::TxFinalDataFailedCallback(std::string context, Mac48Address address)
+/home/davide/Work/ns-3-dev-lorawan/src/wifi/test/wifi-test.cc:2215: warning: The following parameter of Issue40TestCase::TxFinalDataFailedCallback(std::string context, Mac48Address address) is not documented:
+  parameter 'address'
 warning: Call graph for 'LteDistributedFfrAreaTestCase::DoRun' not generated, too many nodes (54), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 warning: Call graph for 'LteRadioLinkFailureTestCase::DoRun' not generated, too many nodes (54), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 warning: Call graph for 'LteX2HandoverMeasuresTestCase::DoRun' not generated, too many nodes (54), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 warning: Call graph for 'LteX2HandoverTestCase::DoRun' not generated, too many nodes (50), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-/home/davide/Work/ns-3-dev-lorawan/src/internet/test/tcp-prr-recovery-test.cc:48: warning: Found unknown command '\para'
-/home/davide/Work/ns-3-dev-lorawan/src/internet/test/tcp-prr-recovery-test.cc:49: warning: Found unknown command '\para'
-/home/davide/Work/ns-3-dev-lorawan/src/internet/test/tcp-prr-recovery-test.cc:50: warning: Found unknown command '\para'
-/home/davide/Work/ns-3-dev-lorawan/src/internet/test/tcp-prr-recovery-test.cc:54: warning: The following parameters of PrrRecoveryTest::PrrRecoveryTest(uint32_t cWnd, uint32_t segmentSize, uint32_t ssThresh, uint32_t unAckDataCount, uint32_t bytesInFlight, uint32_t m_deliveredBytes, uint32_t bytesSent, const std::string &reductionBound, const std::string &name) are not documented:
-  parameter 'm_deliveredBytes'
-  parameter 'bytesSent'
-  parameter 'reductionBound'
 /home/davide/Work/ns-3-dev-lorawan/src/wave/examples/vanet-routing-compare.cc:393: warning: documented empty return type of RoutingHelper::RoutingHelper
 /home/davide/Work/ns-3-dev-lorawan/src/wave/examples/vanet-routing-compare.cc:399: warning: documented empty return type of RoutingHelper::~RoutingHelper
 /home/davide/Work/ns-3-dev-lorawan/src/wave/examples/vanet-routing-compare.cc:457: warning: documented empty return type of RoutingHelper::AssignIpAddresses
@@ -251,9 +250,9 @@ warning: Call graph for 'LteX2HandoverTestCase::DoRun' not generated, too many n
 /home/davide/Work/ns-3-dev-lorawan/src/wave/examples/vanet-routing-compare.cc:767: warning: documented empty return type of WifiPhyStats::PhyTxDrop
 /home/davide/Work/ns-3-dev-lorawan/src/wave/examples/vanet-routing-compare.cc:759: warning: documented empty return type of WifiPhyStats::PhyTxTrace
 warning: Call graph for 'anonymous_namespace{wifi-phy.cc}::Constructor::Constructor' not generated, too many nodes (90), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-/home/davide/Work/ns-3-dev-lorawan/utils/check-style.py:318: warning: documented empty return type of check-style.Patch.__init__
-/home/davide/Work/ns-3-dev-lorawan/utils/check-style.py:244: warning: documented empty return type of check-style.PatchChunk.__init__
-/home/davide/Work/ns-3-dev-lorawan/utils/check-style.py:161: warning: documented empty return type of check-style.PatchChunkLine.__init__
+/home/davide/Work/ns-3-dev-lorawan/utils/check-style.py:319: warning: documented empty return type of check-style.Patch.__init__
+/home/davide/Work/ns-3-dev-lorawan/utils/check-style.py:245: warning: documented empty return type of check-style.PatchChunk.__init__
+/home/davide/Work/ns-3-dev-lorawan/utils/check-style.py:162: warning: documented empty return type of check-style.PatchChunkLine.__init__
 /home/davide/Work/ns-3-dev-lorawan/utils/grid.py:444: warning: documented empty return type of grid.Color.__init__
 /home/davide/Work/ns-3-dev-lorawan/utils/grid.py:475: warning: documented empty return type of grid.Colors.__init__
 /home/davide/Work/ns-3-dev-lorawan/utils/grid.py:18: warning: documented empty return type of grid.DataRange.__init__
@@ -270,11 +269,14 @@ warning: Call graph for 'anonymous_namespace{wifi-phy.cc}::Constructor::Construc
 /home/davide/Work/ns-3-dev-lorawan/utils/grid.py:627: warning: documented empty return type of grid.TimelinesRenderer.__init__
 /home/davide/Work/ns-3-dev-lorawan/utils/grid.py:511: warning: documented empty return type of grid.TopLegendRenderer.__init__
 /home/davide/Work/ns-3-dev-lorawan/src/buildings/model/building-list.cc:164: warning: Found unknown command '\filez'
-warning: Caller graph for 'ns3::MakeBooleanAccessor' not generated, too many nodes (81), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Caller graph for 'ns3::MakeBooleanChecker' not generated, too many nodes (81), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Caller graph for 'ns3::MakeDoubleAccessor' not generated, too many nodes (102), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+error: md5 hash does not match for two different runs of /home/davide/Work/ns-3-dev-lorawan/doc/html/namespacens3_ae217606eb9244d9c833b9dddbe1a964a_cgraph.dot !
+error: md5 hash does not match for two different runs of /home/davide/Work/ns-3-dev-lorawan/doc/html/namespacens3_af1e94937b00eeb80a08c06ca300bfea5_cgraph.dot !
+warning: Caller graph for 'ns3::MakeBooleanAccessor' not generated, too many nodes (83), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::MakeBooleanChecker' not generated, too many nodes (83), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::MakeDoubleAccessor' not generated, too many nodes (107), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 warning: Caller graph for 'ns3::MakePointerAccessor' not generated, too many nodes (75), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 warning: Caller graph for 'ns3::MakeTimeAccessor' not generated, too many nodes (99), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::MakeTimeChecker' not generated, too many nodes (100), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 warning: Caller graph for 'ns3::MakeUintegerAccessor' not generated, too many nodes (153), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 /home/davide/Work/ns-3-dev-lorawan/src/lr-wpan/model/lr-wpan-fields.cc:475: warning: argument 'PendingAddrField' of command @param is not found in the argument list of ns3::operator<<(std::ostream &os, const PendingAddrFields &pendingAddrFields)
 /home/davide/Work/ns-3-dev-lorawan/src/lr-wpan/model/lr-wpan-fields.cc:483: warning: The following parameter of ns3::operator<<(std::ostream &os, const PendingAddrFields &pendingAddrFields) is not documented:
@@ -306,7 +308,7 @@ warning: Caller graph for 'ns3::PeekPointer' not generated, too many nodes (54),
 /home/davide/Work/ns-3-dev-lorawan/src/netanim/model/animation-interface.h:268: warning: documented empty return type of ns3::AnimationInterface::UpdateNodeDescription
 /home/davide/Work/ns-3-dev-lorawan/src/netanim/model/animation-interface.h:277: warning: documented empty return type of ns3::AnimationInterface::UpdateNodeImage
 /home/davide/Work/ns-3-dev-lorawan/src/netanim/model/animation-interface.h:287: warning: documented empty return type of ns3::AnimationInterface::UpdateNodeSize
-warning: Call graph for 'ns3::ApWifiMac::Receive' not generated, too many nodes (81), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Call graph for 'ns3::ApWifiMac::Receive' not generated, too many nodes (78), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 warning: Call graph for 'ns3::ApWifiMac::SendOneBeacon' not generated, too many nodes (54), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 /home/davide/Work/ns-3-dev-lorawan/src/lte/model/lte-asn1-header.h:339: warning: argument 'optionalOrDefaultMask' from the argument list of ns3::Asn1Header::DeserializeSequence has multiple @param documentation sections
 /home/davide/Work/ns-3-dev-lorawan/src/lte/model/lte-asn1-header.h:339: warning: argument 'isExtensionMarkerPresent' from the argument list of ns3::Asn1Header::DeserializeSequence has multiple @param documentation sections
@@ -336,9 +338,9 @@ warning: Caller graph for 'ns3::Buffer::Iterator::ReadU8' not generated, too man
 warning: Caller graph for 'ns3::Buffer::Iterator::WriteHtonU16' not generated, too many nodes (54), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 warning: Caller graph for 'ns3::Buffer::Iterator::WriteU8' not generated, too many nodes (149), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 /home/davide/Work/ns-3-dev-lorawan/src/network/model/byte-tag-list.h:158: warning: documented empty return type of ns3::ByteTagList::ByteTagList
-warning: Inheritance graph for 'ns3::Callback' not generated, too many nodes (185), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Caller graph for 'ns3::Callback::IsNull' not generated, too many nodes (134), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Inheritance graph for 'ns3::CallbackBase' not generated, too many nodes (185), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Inheritance graph for 'ns3::Callback' not generated, too many nodes (188), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::Callback::IsNull' not generated, too many nodes (145), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Inheritance graph for 'ns3::CallbackBase' not generated, too many nodes (188), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 /home/davide/Work/ns-3-dev-lorawan/src/propagation/model/channel-condition-model.h:79: warning: argument 'the' of command @param is not found in the argument list of ns3::ChannelCondition::SetLosCondition(LosConditionValue losCondition)
 /home/davide/Work/ns-3-dev-lorawan/src/propagation/model/channel-condition-model.h:85: warning: The following parameter of ns3::ChannelCondition::SetLosCondition(LosConditionValue losCondition) is not documented:
   parameter 'losCondition'
@@ -348,15 +350,8 @@ warning: Inheritance graph for 'ns3::CallbackBase' not generated, too many nodes
   parameter 'extends'
 /home/davide/Work/ns-3-dev-lorawan/src/core/model/default-simulator-impl.h:67: warning: documented empty return type of ns3::DefaultSimulatorImpl::ScheduleWithContext
 /home/davide/Work/ns-3-dev-lorawan/src/mpi/model/distributed-simulator-impl.h:115: warning: documented empty return type of ns3::DistributedSimulatorImpl::ScheduleWithContext
-/home/davide/Work/ns-3-dev-lorawan/src/wifi/model/dsss-parameter-set.h:66: warning: documented empty return type of ns3::DsssParameterSet::SerializeInformationField
-warning: Inheritance graph for 'ns3::empty' not generated, too many nodes (65), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Inheritance graph for 'ns3::empty' not generated, too many nodes (66), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 /home/davide/Work/ns-3-dev-lorawan/src/lte/model/lte-enb-phy.cc:85: warning: documented empty return type of ns3::EnbMemberLteEnbPhySapProvider::SendMacPdu
-/home/davide/Work/ns-3-dev-lorawan/src/lorawan/model/end-device-lora-mac.h:289: warning: argument 'frequency' of command @param is not found in the argument list of ns3::EndDeviceLoraMac::AddLogicalChannel(Ptr< LogicalLoraChannel > logicalChannel)
-/home/davide/Work/ns-3-dev-lorawan/src/lorawan/model/end-device-lora-mac.h:292: warning: The following parameter of ns3::EndDeviceLoraMac::AddLogicalChannel(Ptr< LogicalLoraChannel > logicalChannel) is not documented:
-  parameter 'logicalChannel'
-/home/davide/Work/ns-3-dev-lorawan/src/lorawan/model/end-device-lora-phy.h:117: warning: argument 'The' of command @param is not found in the argument list of ns3::EndDeviceLoraPhy::SetFrequency(double frequencyMHz)
-/home/davide/Work/ns-3-dev-lorawan/src/lorawan/model/end-device-lora-phy.h:123: warning: The following parameter of ns3::EndDeviceLoraPhy::SetFrequency(double frequencyMHz) is not documented:
-  parameter 'frequencyMHz'
 /home/davide/Work/ns-3-dev-lorawan/src/energy/helper/energy-harvester-helper.h:83: warning: argument 'node' of command @param is not found in the argument list of ns3::EnergyHarvesterHelper::DoInstall(Ptr< EnergySource > source) const=0
 /home/davide/Work/ns-3-dev-lorawan/src/energy/helper/energy-harvester-helper.h:92: warning: The following parameter of ns3::EnergyHarvesterHelper::DoInstall(Ptr< EnergySource > source) const=0 is not documented:
   parameter 'source'
@@ -369,11 +364,62 @@ warning: Inheritance graph for 'ns3::empty' not generated, too many nodes (65), 
   parameter 'enbAddress'
   parameter 'sgwAddress'
 /home/davide/Work/ns-3-dev-lorawan/src/lte/model/epc-s1ap-sap.h:77: warning: argument 'List' of command @param is not found in the argument list of ns3::EpcS1apSapMme::ErabReleaseIndication(uint64_t mmeUeS1Id, uint16_t enbUeS1Id, std::list< ErabToBeReleasedIndication > erabToBeReleaseIndication)=0
-warning: Caller graph for 'ns3::EventId::Cancel' not generated, too many nodes (132), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::EventId::Cancel' not generated, too many nodes (133), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 warning: Caller graph for 'ns3::EventId::IsRunning' not generated, too many nodes (86), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 /home/davide/Work/ns-3-dev-lorawan/src/core/model/global-value.h:113: warning: documented empty return type of ns3::GlobalValue::GetValue
 warning: Inheritance graph for 'ns3::Header' not generated, too many nodes (122), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+/home/davide/Work/ns-3-dev-lorawan/src/lorawan/model/hex-grid-position-allocator.h:46: warning: argument 'position' of command @param is not found in the argument list of ns3::HexGridPositionAllocator::AddRing(std::vector< Vector > positions)
+/home/davide/Work/ns-3-dev-lorawan/src/lorawan/model/hex-grid-position-allocator.h:50: warning: The following parameter of ns3::HexGridPositionAllocator::AddRing(std::vector< Vector > positions) is not documented:
+  parameter 'positions'
 /home/davide/Work/ns-3-dev-lorawan/src/core/model/type-id.cc:251: warning: documented empty return type of ns3::IidManager::AddTraceSource
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-128.h:298: warning: argument 'lhs' from the argument list of ns3::int64x64_t::operator! has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-cairo.h:289: warning: argument 'lhs' from the argument list of ns3::int64x64_t::operator! has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-double.h:290: warning: argument 'lhs' from the argument list of ns3::int64x64_t::operator! has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-128.h:283: warning: argument 'lhs' from the argument list of ns3::int64x64_t::operator*= has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-128.h:283: warning: argument 'rhs' from the argument list of ns3::int64x64_t::operator*= has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-cairo.h:274: warning: argument 'lhs' from the argument list of ns3::int64x64_t::operator*= has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-cairo.h:274: warning: argument 'rhs' from the argument list of ns3::int64x64_t::operator*= has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-double.h:275: warning: argument 'lhs' from the argument list of ns3::int64x64_t::operator*= has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-double.h:275: warning: argument 'rhs' from the argument list of ns3::int64x64_t::operator*= has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-128.h:281: warning: argument 'lhs' from the argument list of ns3::int64x64_t::operator+= has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-128.h:281: warning: argument 'rhs' from the argument list of ns3::int64x64_t::operator+= has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-cairo.h:272: warning: argument 'lhs' from the argument list of ns3::int64x64_t::operator+= has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-cairo.h:272: warning: argument 'rhs' from the argument list of ns3::int64x64_t::operator+= has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-double.h:273: warning: argument 'lhs' from the argument list of ns3::int64x64_t::operator+= has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-double.h:273: warning: argument 'rhs' from the argument list of ns3::int64x64_t::operator+= has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-128.h:297: warning: argument 'lhs' from the argument list of ns3::int64x64_t::operator- has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-cairo.h:288: warning: argument 'lhs' from the argument list of ns3::int64x64_t::operator- has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-double.h:289: warning: argument 'lhs' from the argument list of ns3::int64x64_t::operator- has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-128.h:282: warning: argument 'lhs' from the argument list of ns3::int64x64_t::operator-= has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-128.h:282: warning: argument 'rhs' from the argument list of ns3::int64x64_t::operator-= has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-cairo.h:273: warning: argument 'lhs' from the argument list of ns3::int64x64_t::operator-= has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-cairo.h:273: warning: argument 'rhs' from the argument list of ns3::int64x64_t::operator-= has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-double.h:274: warning: argument 'lhs' from the argument list of ns3::int64x64_t::operator-= has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-double.h:274: warning: argument 'rhs' from the argument list of ns3::int64x64_t::operator-= has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-128.h:284: warning: argument 'lhs' from the argument list of ns3::int64x64_t::operator/= has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-128.h:284: warning: argument 'rhs' from the argument list of ns3::int64x64_t::operator/= has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-cairo.h:275: warning: argument 'lhs' from the argument list of ns3::int64x64_t::operator/= has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-cairo.h:275: warning: argument 'rhs' from the argument list of ns3::int64x64_t::operator/= has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-double.h:276: warning: argument 'lhs' from the argument list of ns3::int64x64_t::operator/= has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-double.h:276: warning: argument 'rhs' from the argument list of ns3::int64x64_t::operator/= has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-128.h:278: warning: argument 'lhs' from the argument list of ns3::int64x64_t::operator< has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-128.h:278: warning: argument 'rhs' from the argument list of ns3::int64x64_t::operator< has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-cairo.h:269: warning: argument 'lhs' from the argument list of ns3::int64x64_t::operator< has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-cairo.h:269: warning: argument 'rhs' from the argument list of ns3::int64x64_t::operator< has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-double.h:270: warning: argument 'lhs' from the argument list of ns3::int64x64_t::operator< has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-double.h:270: warning: argument 'rhs' from the argument list of ns3::int64x64_t::operator< has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-128.h:276: warning: argument 'lhs' from the argument list of ns3::int64x64_t::operator== has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-128.h:276: warning: argument 'rhs' from the argument list of ns3::int64x64_t::operator== has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-cairo.h:267: warning: argument 'lhs' from the argument list of ns3::int64x64_t::operator== has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-cairo.h:267: warning: argument 'rhs' from the argument list of ns3::int64x64_t::operator== has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-double.h:268: warning: argument 'lhs' from the argument list of ns3::int64x64_t::operator== has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-double.h:268: warning: argument 'rhs' from the argument list of ns3::int64x64_t::operator== has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-128.h:279: warning: argument 'lhs' from the argument list of ns3::int64x64_t::operator> has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-128.h:279: warning: argument 'rhs' from the argument list of ns3::int64x64_t::operator> has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-cairo.h:270: warning: argument 'lhs' from the argument list of ns3::int64x64_t::operator> has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-cairo.h:270: warning: argument 'rhs' from the argument list of ns3::int64x64_t::operator> has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-double.h:271: warning: argument 'lhs' from the argument list of ns3::int64x64_t::operator> has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/int64x64-double.h:271: warning: argument 'rhs' from the argument list of ns3::int64x64_t::operator> has multiple @param documentation sections
 /home/davide/Work/ns-3-dev-lorawan/src/wifi/model/interference-helper.h:183: warning: The following parameter of ns3::InterferenceHelper::Add(Ptr< const WifiPpdu > ppdu, WifiTxVector txVector, Time duration, double rxPower) is not documented:
   parameter 'duration'
 /home/davide/Work/ns-3-dev-lorawan/src/wifi/model/interference-helper.h:398: warning: argument 'moment' from the argument list of ns3::InterferenceHelper::GetPreviousPosition has multiple @param documentation sections
@@ -410,22 +456,6 @@ warning: Caller graph for 'ns3::Ipv4InterfaceContainer::GetAddress' not generate
 /home/davide/Work/ns-3-dev-lorawan/src/internet/model/ipv6-option-header.h:186: warning: documented empty return type of ns3::Ipv6OptionPad1Header::Print
 /home/davide/Work/ns-3-dev-lorawan/src/internet/model/ipv6-option-header.h:244: warning: documented empty return type of ns3::Ipv6OptionPadnHeader::Print
 /home/davide/Work/ns-3-dev-lorawan/src/internet/model/ipv6-option-header.h:394: warning: documented empty return type of ns3::Ipv6OptionRouterAlertHeader::Print
-/home/davide/Work/ns-3-dev-lorawan/src/lorawan/model/lora-frame-header.h:131: warning: argument 'Adr' of command @param is not found in the argument list of ns3::LoraFrameHeader::SetAdr(bool adr)
-/home/davide/Work/ns-3-dev-lorawan/src/lorawan/model/lora-frame-header.h:134: warning: The following parameter of ns3::LoraFrameHeader::SetAdr(bool adr) is not documented:
-  parameter 'adr'
-/home/davide/Work/ns-3-dev-lorawan/src/lorawan/model/lora-frame-header.h:195: warning: argument 'FCnt' of command @param is not found in the argument list of ns3::LoraFrameHeader::SetFCnt(uint16_t fCnt)
-/home/davide/Work/ns-3-dev-lorawan/src/lorawan/model/lora-frame-header.h:200: warning: The following parameter of ns3::LoraFrameHeader::SetFCnt(uint16_t fCnt) is not documented:
-  parameter 'fCnt'
-/home/davide/Work/ns-3-dev-lorawan/src/lorawan/helper/lora-helper.h:46: warning: argument 'phy' of command @param is not found in the argument list of ns3::LoraHelper::Install(const LoraPhyHelper &phyHelper, const LoraMacHelper &macHelper, NodeContainer c) const
-/home/davide/Work/ns-3-dev-lorawan/src/lorawan/helper/lora-helper.h:46: warning: argument 'mac' of command @param is not found in the argument list of ns3::LoraHelper::Install(const LoraPhyHelper &phyHelper, const LoraMacHelper &macHelper, NodeContainer c) const
-/home/davide/Work/ns-3-dev-lorawan/src/lorawan/helper/lora-helper.h:55: warning: The following parameters of ns3::LoraHelper::Install(const LoraPhyHelper &phyHelper, const LoraMacHelper &macHelper, NodeContainer c) const are not documented:
-  parameter 'phyHelper'
-  parameter 'macHelper'
-/home/davide/Work/ns-3-dev-lorawan/src/lorawan/helper/lora-helper.h:59: warning: argument 'phy' of command @param is not found in the argument list of ns3::LoraHelper::Install(const LoraPhyHelper &phyHelper, const LoraMacHelper &macHelper, Ptr< Node > node) const
-/home/davide/Work/ns-3-dev-lorawan/src/lorawan/helper/lora-helper.h:59: warning: argument 'mac' of command @param is not found in the argument list of ns3::LoraHelper::Install(const LoraPhyHelper &phyHelper, const LoraMacHelper &macHelper, Ptr< Node > node) const
-/home/davide/Work/ns-3-dev-lorawan/src/lorawan/helper/lora-helper.h:68: warning: The following parameters of ns3::LoraHelper::Install(const LoraPhyHelper &phyHelper, const LoraMacHelper &macHelper, Ptr< Node > node) const are not documented:
-  parameter 'phyHelper'
-  parameter 'macHelper'
 /home/davide/Work/ns-3-dev-lorawan/src/lr-wpan/helper/lr-wpan-helper.h:117: warning: argument 'panID' of command @param is not found in the argument list of ns3::LrWpanHelper::AssociateToBeaconPan(NetDeviceContainer c, uint16_t panId, Mac16Address coor, uint8_t bcnOrd, uint8_t sfrmOrd)
 /home/davide/Work/ns-3-dev-lorawan/src/lr-wpan/helper/lr-wpan-helper.h:126: warning: The following parameter of ns3::LrWpanHelper::AssociateToBeaconPan(NetDeviceContainer c, uint16_t panId, Mac16Address coor, uint8_t bcnOrd, uint8_t sfrmOrd) is not documented:
   parameter 'panId'
@@ -440,32 +470,32 @@ warning: Caller graph for 'ns3::LteHelper::SetSchedulerType' not generated, too 
 /home/davide/Work/ns-3-dev-lorawan/src/lte/model/lte-ue-phy-sap.h:49: warning: documented empty return type of ns3::LteUePhySapProvider::SendMacPdu
 warning: Call graph for 'ns3::MacLow::ReceiveOk' not generated, too many nodes (75), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 /home/davide/Work/ns-3-dev-lorawan/src/wifi/model/minstrel-ht-wifi-manager.h:504: warning: argument 'index' from the argument list of ns3::MinstrelHtWifiManager::GetRateId has multiple @param documentation sections
-warning: Caller graph for 'ns3::MobilityModel::SetPosition' not generated, too many nodes (95), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::MobilityModel::SetPosition' not generated, too many nodes (94), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 /home/davide/Work/ns-3-dev-lorawan/src/config-store/model/model-node-creator.h:80: warning: The following parameter of ns3::ModelCreator::DoStartVisitArrayAttribute(Ptr< Object > object, std::string name, const ObjectPtrContainerValue &vector) is not documented:
   parameter 'object'
 warning: Caller graph for 'ns3::NetDeviceContainer::Add' not generated, too many nodes (53), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Caller graph for 'ns3::NetDeviceContainer::Get' not generated, too many nodes (123), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Caller graph for 'ns3::Node::AddDevice' not generated, too many nodes (60), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Caller graph for 'ns3::Node::GetDevice' not generated, too many nodes (57), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Caller graph for 'ns3::Node::GetId' not generated, too many nodes (148), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Caller graph for 'ns3::NodeContainer::Begin' not generated, too many nodes (60), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Caller graph for 'ns3::NodeContainer::Create' not generated, too many nodes (140), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Caller graph for 'ns3::NodeContainer::End' not generated, too many nodes (60), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Caller graph for 'ns3::NodeContainer::Get' not generated, too many nodes (135), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::NetDeviceContainer::Get' not generated, too many nodes (125), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::Node::AddDevice' not generated, too many nodes (61), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::Node::GetDevice' not generated, too many nodes (60), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::Node::GetId' not generated, too many nodes (150), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::NodeContainer::Begin' not generated, too many nodes (63), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::NodeContainer::Create' not generated, too many nodes (144), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::NodeContainer::End' not generated, too many nodes (63), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::NodeContainer::Get' not generated, too many nodes (140), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 /home/davide/Work/ns-3-dev-lorawan/src/internet/model/nsc-tcp-socket-impl.h:108: warning: documented empty return type of ns3::NscTcpSocketImpl::BindToNetDevice
 /home/davide/Work/ns-3-dev-lorawan/src/mpi/model/null-message-mpi-interface.h:144: warning: Found unknown command '\bundle'
 /home/davide/Work/ns-3-dev-lorawan/src/mpi/model/null-message-mpi-interface.h:167: warning: The following parameter of ns3::NullMessageMpiInterface::SendNullMessage(const Time &guaranteeUpdate, Ptr< RemoteChannelBundle > bundle) is not documented:
   parameter 'bundle'
 /home/davide/Work/ns-3-dev-lorawan/src/mpi/model/null-message-simulator-impl.h:60: warning: documented empty return type of ns3::NullMessageSimulatorImpl::ScheduleWithContext
-warning: Inheritance graph for 'ns3::Object' not generated, too many nodes (211), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Inheritance graph for 'ns3::Object' not generated, too many nodes (218), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 warning: Caller graph for 'ns3::Object::AggregateObject' not generated, too many nodes (51), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 warning: Caller graph for 'ns3::Object::DoDispose' not generated, too many nodes (105), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Caller graph for 'ns3::Object::GetObject' not generated, too many nodes (391), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Caller graph for 'ns3::ObjectBase::SetAttribute' not generated, too many nodes (174), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Caller graph for 'ns3::ObjectBase::TraceConnectWithoutContext' not generated, too many nodes (52), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Caller graph for 'ns3::ObjectFactory::Create' not generated, too many nodes (119), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Caller graph for 'ns3::ObjectFactory::Set' not generated, too many nodes (137), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Caller graph for 'ns3::ObjectFactory::SetTypeId' not generated, too many nodes (151), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::Object::GetObject' not generated, too many nodes (399), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::ObjectBase::SetAttribute' not generated, too many nodes (172), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::ObjectBase::TraceConnectWithoutContext' not generated, too many nodes (53), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::ObjectFactory::Create' not generated, too many nodes (121), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::ObjectFactory::Set' not generated, too many nodes (138), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::ObjectFactory::SetTypeId' not generated, too many nodes (154), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 /home/davide/Work/ns-3-dev-lorawan/src/openflow/model/openflow-switch-net-device.h:280: warning: explicit link request to 'ENOMEM' could not be resolved
 /home/davide/Work/ns-3-dev-lorawan/src/openflow/model/openflow-switch-net-device.h:280: warning: explicit link request to 'ENOBUFS' could not be resolved
 /home/davide/Work/ns-3-dev-lorawan/src/openflow/model/openflow-switch-net-device.h:280: warning: explicit link request to 'ESRCH' could not be resolved
@@ -486,26 +516,23 @@ warning: Caller graph for 'ns3::ObjectFactory::SetTypeId' not generated, too man
 /home/davide/Work/ns-3-dev-lorawan/src/openflow/model/openflow-switch-net-device.h:480: warning: The following parameter of ns3::OpenFlowSwitchNetDevice::ReceiveStatsRequest(const void *oh) is not documented:
   parameter 'oh'
 warning: Caller graph for 'ns3::OutputStreamWrapper::GetStream' not generated, too many nodes (74), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Caller graph for 'ns3::Packet::AddHeader' not generated, too many nodes (273), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Caller graph for 'ns3::Packet::AddPacketTag' not generated, too many nodes (75), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Caller graph for 'ns3::Packet::Copy' not generated, too many nodes (160), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Caller graph for 'ns3::Packet::CopyData' not generated, too many nodes (70), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Caller graph for 'ns3::Packet::GetSize' not generated, too many nodes (439), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Caller graph for 'ns3::Packet::GetUid' not generated, too many nodes (54), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Caller graph for 'ns3::Packet::PeekHeader' not generated, too many nodes (63), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Caller graph for 'ns3::Packet::RemoveHeader' not generated, too many nodes (207), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::Packet::AddHeader' not generated, too many nodes (277), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::Packet::AddPacketTag' not generated, too many nodes (71), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::Packet::Copy' not generated, too many nodes (134), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::Packet::CopyData' not generated, too many nodes (71), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::Packet::GetSize' not generated, too many nodes (415), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::Packet::PeekHeader' not generated, too many nodes (54), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::Packet::RemoveHeader' not generated, too many nodes (218), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 warning: Caller graph for 'ns3::Packet::RemovePacketTag' not generated, too many nodes (54), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 /home/davide/Work/ns-3-dev-lorawan/src/network/utils/pcap-file.h:119: warning: documented empty return type of ns3::PcapFile::Init
 /home/davide/Work/ns-3-dev-lorawan/src/lr-wpan/model/lr-wpan-fields.h:292: warning: argument 'start' of command @param is not found in the argument list of ns3::PendingAddrFields::Deserialize(Buffer::Iterator i)
 /home/davide/Work/ns-3-dev-lorawan/src/lr-wpan/model/lr-wpan-fields.h:296: warning: The following parameter of ns3::PendingAddrFields::Deserialize(Buffer::Iterator i) is not documented:
   parameter 'i'
-warning: Inheritance graph for 'ns3::Ptr' not generated, too many nodes (400), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Inheritance graph for 'ns3::Ptr' not generated, too many nodes (409), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 /home/davide/Work/ns-3-dev-lorawan/src/wifi/model/qos-txop.h:187: warning: argument 'address' of command @param is not found in the argument list of ns3::QosTxop::PrepareBlockAckRequest(Mac48Address recipient, uint8_t tid) const
 /home/davide/Work/ns-3-dev-lorawan/src/wifi/model/qos-txop.h:196: warning: The following parameter of ns3::QosTxop::PrepareBlockAckRequest(Mac48Address recipient, uint8_t tid) const is not documented:
   parameter 'recipient'
-/home/davide/Work/ns-3-dev-lorawan/src/core/model/random-variable-stream.h:86: warning: unable to resolve reference to 'GlobalValueRngSeed' for \ref command
-/home/davide/Work/ns-3-dev-lorawan/src/core/model/random-variable-stream.h:86: warning: unable to resolve reference to 'GlobalValueRngRun' for \ref command
-warning: Caller graph for 'ns3::RandomVariableStream::SetStream' not generated, too many nodes (71), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::RandomVariableStream::SetStream' not generated, too many nodes (72), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 /home/davide/Work/ns-3-dev-lorawan/src/core/model/realtime-simulator-impl.h:116: warning: documented empty return type of ns3::RealtimeSimulatorImpl::ScheduleRealtime
 /home/davide/Work/ns-3-dev-lorawan/src/core/model/realtime-simulator-impl.h:125: warning: documented empty return type of ns3::RealtimeSimulatorImpl::ScheduleRealtimeNow
 /home/davide/Work/ns-3-dev-lorawan/src/core/model/realtime-simulator-impl.h:114: warning: documented empty return type of ns3::RealtimeSimulatorImpl::ScheduleRealtimeWithContext
@@ -513,13 +540,9 @@ warning: Caller graph for 'ns3::RandomVariableStream::SetStream' not generated, 
 /home/davide/Work/ns-3-dev-lorawan/src/mpi/model/remote-channel-bundle.h:74: warning: argument 'guarantee' of command @param is not found in the argument list of ns3::RemoteChannelBundle::SetGuaranteeTime(Time time)
 /home/davide/Work/ns-3-dev-lorawan/src/mpi/model/remote-channel-bundle.h:80: warning: The following parameter of ns3::RemoteChannelBundle::SetGuaranteeTime(Time time) is not documented:
   parameter 'time'
-/home/davide/Work/ns-3-dev-lorawan/src/lorawan/model/simple-network-server.h:87: warning: The following parameters of ns3::SimpleNetworkServer::Receive(Ptr< NetDevice > device, Ptr< const Packet > packet, uint16_t protocol, const Address &address) are not documented:
-  parameter 'device'
-  parameter 'protocol'
-  parameter 'address'
-warning: Inheritance graph for 'ns3::SimpleRefCount' not generated, too many nodes (67), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Caller graph for 'ns3::Simulator::Now' not generated, too many nodes (634), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Caller graph for 'ns3::Simulator::Schedule' not generated, too many nodes (417), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Inheritance graph for 'ns3::SimpleRefCount' not generated, too many nodes (68), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::Simulator::Now' not generated, too many nodes (649), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::Simulator::Schedule' not generated, too many nodes (424), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 warning: Caller graph for 'ns3::Simulator::ScheduleNow' not generated, too many nodes (65), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 /home/davide/Work/ns-3-dev-lorawan/src/core/model/simulator.h:1305: warning: documented empty return type of ns3::Simulator::ScheduleWithContext
 /home/davide/Work/ns-3-dev-lorawan/src/core/model/simulator-impl.h:69: warning: documented empty return type of ns3::SimulatorImpl::ScheduleWithContext
@@ -538,7 +561,7 @@ warning: Caller graph for 'ns3::Socket::SetRecvCallback' not generated, too many
 /home/davide/Work/ns-3-dev-lorawan/src/stats/model/sqlite-data-output.h:69: warning: The following parameter of ns3::SqliteDataOutput::SqliteOutputCallback::SqliteOutputCallback(const Ptr< SQLiteOutput > &db, std::string run) is not documented:
   parameter 'db'
 /home/davide/Work/ns-3-dev-lorawan/src/wimax/model/ss-service-flow-manager.h:61: warning: argument 'device' from the argument list of ns3::SsServiceFlowManager::SsServiceFlowManager has multiple @param documentation sections
-warning: Call graph for 'ns3::StaWifiMac::Receive' not generated, too many nodes (65), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Call graph for 'ns3::StaWifiMac::Receive' not generated, too many nodes (63), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 warning: Call graph for 'ns3::StaWifiMac::UpdateApInfoFromAssocResp' not generated, too many nodes (74), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 warning: Call graph for 'ns3::StaWifiMac::UpdateApInfoFromBeacon' not generated, too many nodes (71), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 /home/davide/Work/ns-3-dev-lorawan/src/internet/model/tcp-recovery-ops.h:191: warning: argument 'isSackEnabled' of command @param is not found in the argument list of ns3::TcpClassicRecovery::ExitRecovery(Ptr< TcpSocketState > tcb) inherited from member ExitRecovery at line 117 in file /home/davide/Work/ns-3-dev-lorawan/src/internet/model/tcp-recovery-ops.h
@@ -562,10 +585,10 @@ warning: Call graph for 'ns3::TcpGeneralTest::DoRun' not generated, too many nod
 /home/davide/Work/ns-3-dev-lorawan/src/internet/model/tcp-socket-base.h:973: warning: documented empty return type of ns3::TcpSocketBase::ProcessAck
 /home/davide/Work/ns-3-dev-lorawan/src/internet/model/tcp-tx-buffer.h:280: warning: argument 'dupThresh' of command @param is not found in the argument list of ns3::TcpTxBuffer::IsLost(const SequenceNumber32 &seq) const
 /home/davide/Work/ns-3-dev-lorawan/src/internet/model/tcp-tx-buffer.h:280: warning: argument 'segmentSize' of command @param is not found in the argument list of ns3::TcpTxBuffer::IsLost(const SequenceNumber32 &seq) const
-warning: Inheritance graph for 'ns3::TestCase' not generated, too many nodes (528), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Caller graph for 'ns3::TestCase::AddTestCase' not generated, too many nodes (269), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Inheritance graph for 'ns3::TestCase' not generated, too many nodes (537), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::TestCase::AddTestCase' not generated, too many nodes (273), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 warning: Caller graph for 'ns3::TestCase::GetName' not generated, too many nodes (67), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Inheritance graph for 'ns3::TestSuite' not generated, too many nodes (280), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Inheritance graph for 'ns3::TestSuite' not generated, too many nodes (284), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 /home/davide/Work/ns-3-dev-lorawan/src/spectrum/model/three-gpp-channel-model.h:117: warning: argument 'a' of command @param is not found in the argument list of ns3::ThreeGppChannelModel::SetChannelConditionModel(Ptr< ChannelConditionModel > model)
 /home/davide/Work/ns-3-dev-lorawan/src/spectrum/model/three-gpp-channel-model.h:121: warning: The following parameter of ns3::ThreeGppChannelModel::SetChannelConditionModel(Ptr< ChannelConditionModel > model) is not documented:
   parameter 'model'
@@ -577,18 +600,18 @@ warning: Inheritance graph for 'ns3::TestSuite' not generated, too many nodes (2
 /home/davide/Work/ns-3-dev-lorawan/src/spectrum/model/three-gpp-spectrum-propagation-loss-model.h:85: warning: argument 'where' of command @param is not found in the argument list of ns3::ThreeGppSpectrumPropagationLossModel::GetChannelModelAttribute(const std::string &name, AttributeValue &value) const
 /home/davide/Work/ns-3-dev-lorawan/src/spectrum/model/three-gpp-spectrum-propagation-loss-model.h:91: warning: The following parameter of ns3::ThreeGppSpectrumPropagationLossModel::GetChannelModelAttribute(const std::string &name, AttributeValue &value) const is not documented:
   parameter 'value'
-warning: Caller graph for 'ns3::Time::GetSeconds' not generated, too many nodes (294), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-/home/davide/Work/ns-3-dev-lorawan/src/core/model/nstime.h:693: warning: argument 'lhs' from the argument list of ns3::Time::operator== has multiple @param documentation sections
-/home/davide/Work/ns-3-dev-lorawan/src/core/model/nstime.h:693: warning: argument 'rhs' from the argument list of ns3::Time::operator== has multiple @param documentation sections
-warning: Inheritance graph for 'ns3::TracedCallback' not generated, too many nodes (127), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::Time::GetSeconds' not generated, too many nodes (283), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/nstime.h:699: warning: argument 'lhs' from the argument list of ns3::Time::operator== has multiple @param documentation sections
+/home/davide/Work/ns-3-dev-lorawan/src/core/model/nstime.h:699: warning: argument 'rhs' from the argument list of ns3::Time::operator== has multiple @param documentation sections
+warning: Inheritance graph for 'ns3::TracedCallback' not generated, too many nodes (130), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 warning: Caller graph for 'ns3::TracedValue::Get' not generated, too many nodes (65), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 /home/davide/Work/ns-3-dev-lorawan/src/spectrum/model/tv-spectrum-transmitter.h:110: warning: documented empty return type of ns3::TvSpectrumTransmitter::CreateTvPsd
 warning: Caller graph for 'ns3::TypeId::GetName' not generated, too many nodes (55), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Caller graph for 'ns3::TypeId::SetParent' not generated, too many nodes (831), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::TypeId::SetParent' not generated, too many nodes (846), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 /home/davide/Work/ns-3-dev-lorawan/src/internet/model/udp-socket-impl.h:116: warning: documented empty return type of ns3::UdpSocketImpl::BindToNetDevice
 /home/davide/Work/ns-3-dev-lorawan/src/lte/model/lte-enb-rrc.h:114: warning: documented empty return type of ns3::UeManager::UeManager
 /home/davide/Work/ns-3-dev-lorawan/src/lte/model/lte-ue-phy.cc:88: warning: documented empty return type of ns3::UeMemberLteUePhySapProvider::SendMacPdu
-warning: Caller graph for 'ns3::UniformRandomVariable::GetValue' not generated, too many nodes (73), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::UniformRandomVariable::GetValue' not generated, too many nodes (80), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 /home/davide/Work/ns-3-dev-lorawan/src/visualizer/model/visual-simulator-impl.h:61: warning: documented empty return type of ns3::VisualSimulatorImpl::ScheduleWithContext
 /home/davide/Work/ns-3-dev-lorawan/src/wave/helper/wave-bsm-helper.h:51: warning: documented empty return type of ns3::WaveBsmHelper::WaveBsmHelper
 /home/davide/Work/ns-3-dev-lorawan/src/wave/helper/wave-bsm-helper.h:97: warning: documented empty return type of ns3::WaveBsmHelper::Install
@@ -604,9 +627,9 @@ warning: Caller graph for 'ns3::UniformRandomVariable::GetValue' not generated, 
 /home/davide/Work/ns-3-dev-lorawan/src/wave/helper/wave-bsm-stats.h:188: warning: documented empty return type of ns3::WaveBsmStats::SetRxPktCount
 /home/davide/Work/ns-3-dev-lorawan/src/wave/helper/wave-bsm-stats.h:166: warning: documented empty return type of ns3::WaveBsmStats::SetRxPktInRangeCount
 /home/davide/Work/ns-3-dev-lorawan/src/wave/helper/wave-bsm-stats.h:181: warning: documented empty return type of ns3::WaveBsmStats::SetTxPktCount
-warning: Caller graph for 'ns3::WifiMacHeader::GetAddr1' not generated, too many nodes (69), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::WifiMacHeader::GetAddr1' not generated, too many nodes (68), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 warning: Caller graph for 'ns3::WifiMacHeader::SetType' not generated, too many nodes (53), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Caller graph for 'ns3::WifiMode::GetModulationClass' not generated, too many nodes (81), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Caller graph for 'ns3::WifiMode::GetModulationClass' not generated, too many nodes (82), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 warning: Caller graph for 'ns3::WifiModeFactory::CreateWifiMcs' not generated, too many nodes (54), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 warning: Call graph for 'ns3::WifiPpdu::GetTxVector' not generated, too many nodes (114), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 /home/davide/Work/ns-3-dev-lorawan/src/spectrum/model/wifi-spectrum-value-helper.h:190: warning: documented empty return type of ns3::WifiSpectrumValueHelper::CreateSpectrumMaskForOfdm
@@ -630,7 +653,54 @@ warning: Call graph for 'ns3::WifiPpdu::GetTxVector' not generated, too many nod
 warning: Call graph for 'ns3::dsr::DsrRouting::CheckSendBuffer' not generated, too many nodes (53), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 warning: Call graph for 'ns3::dsr::DsrRouting::SendPacketFromBuffer' not generated, too many nodes (56), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 /home/davide/Work/ns-3-dev-lorawan/src/dsr/model/dsr-fs-header.h:304: warning: documented empty return type of ns3::dsr::DsrRoutingHeader::Print
-/home/davide/Work/ns-3-dev-lorawan/src/core/model/hash-murmur3.cc:129: warning: @copybrief or @copydoc target 'getblock(const uint32_t*,int)' not found
+/home/davide/Work/ns-3-dev-lorawan/src/lorawan/model/adr-component.h:54: warning: The following parameter of ns3::lorawan::AdrComponent::OnReceivedPacket(Ptr< const Packet > packet, Ptr< EndDeviceStatus > status, Ptr< NetworkStatus > networkStatus) is not documented:
+  parameter 'status'
+/home/davide/Work/ns-3-dev-lorawan/src/lorawan/model/network-controller-components.h:99: warning: The following parameter of ns3::lorawan::ConfirmedMessagesComponent::OnReceivedPacket(Ptr< const Packet > packet, Ptr< EndDeviceStatus > status, Ptr< NetworkStatus > networkStatus) is not documented:
+  parameter 'status'
+/home/davide/Work/ns-3-dev-lorawan/src/lorawan/model/end-device-lora-phy.h:169: warning: argument 'The' of command @param is not found in the argument list of ns3::lorawan::EndDeviceLoraPhy::SetFrequency(double frequencyMHz)
+/home/davide/Work/ns-3-dev-lorawan/src/lorawan/model/end-device-lora-phy.h:175: warning: The following parameter of ns3::lorawan::EndDeviceLoraPhy::SetFrequency(double frequencyMHz) is not documented:
+  parameter 'frequencyMHz'
+/home/davide/Work/ns-3-dev-lorawan/src/lorawan/model/end-device-lora-phy.h:62: warning: argument 'duration' of command @param is not found in the argument list of ns3::lorawan::EndDeviceLoraPhyListener::NotifyTxStart(double txPowerDbm)=0
+/home/davide/Work/ns-3-dev-lorawan/src/lorawan/model/end-device-lorawan-mac.h:312: warning: argument 'frequency' of command @param is not found in the argument list of ns3::lorawan::EndDeviceLorawanMac::AddLogicalChannel(Ptr< LogicalLoraChannel > logicalChannel)
+/home/davide/Work/ns-3-dev-lorawan/src/lorawan/model/end-device-lorawan-mac.h:315: warning: The following parameter of ns3::lorawan::EndDeviceLorawanMac::AddLogicalChannel(Ptr< LogicalLoraChannel > logicalChannel) is not documented:
+  parameter 'logicalChannel'
+/home/davide/Work/ns-3-dev-lorawan/src/lorawan/model/end-device-lorawan-mac.h:194: warning: argument 'rx1DrOffset' of command @param is not found in the argument list of ns3::lorawan::EndDeviceLorawanMac::GetAggregatedDutyCycle(void)
+/home/davide/Work/ns-3-dev-lorawan/src/lorawan/model/end-device-lorawan-mac.h:80: warning: The following parameter of ns3::lorawan::EndDeviceLorawanMac::postponeTransmission(Time nextTxDelay, Ptr< Packet > packet) is not documented:
+  parameter 'packet'
+/home/davide/Work/ns-3-dev-lorawan/src/lorawan/model/network-controller-components.h:130: warning: The following parameter of ns3::lorawan::LinkCheckComponent::OnReceivedPacket(Ptr< const Packet > packet, Ptr< EndDeviceStatus > status, Ptr< NetworkStatus > networkStatus) is not documented:
+  parameter 'status'
+/home/davide/Work/ns-3-dev-lorawan/src/lorawan/model/logical-lora-channel.h:75: warning: argument 'frequencyMHz' of command @param is not found in the argument list of ns3::lorawan::LogicalLoraChannel::SetMinimumDataRate(uint8_t minDataRate)
+/home/davide/Work/ns-3-dev-lorawan/src/lorawan/model/logical-lora-channel.h:78: warning: The following parameter of ns3::lorawan::LogicalLoraChannel::SetMinimumDataRate(uint8_t minDataRate) is not documented:
+  parameter 'minDataRate'
+/home/davide/Work/ns-3-dev-lorawan/src/lorawan/model/lora-frame-header.h:131: warning: argument 'Adr' of command @param is not found in the argument list of ns3::lorawan::LoraFrameHeader::SetAdr(bool adr)
+/home/davide/Work/ns-3-dev-lorawan/src/lorawan/model/lora-frame-header.h:134: warning: The following parameter of ns3::lorawan::LoraFrameHeader::SetAdr(bool adr) is not documented:
+  parameter 'adr'
+/home/davide/Work/ns-3-dev-lorawan/src/lorawan/model/lora-frame-header.h:195: warning: argument 'FCnt' of command @param is not found in the argument list of ns3::lorawan::LoraFrameHeader::SetFCnt(uint16_t fCnt)
+/home/davide/Work/ns-3-dev-lorawan/src/lorawan/model/lora-frame-header.h:200: warning: The following parameter of ns3::lorawan::LoraFrameHeader::SetFCnt(uint16_t fCnt) is not documented:
+  parameter 'fCnt'
+/home/davide/Work/ns-3-dev-lorawan/src/lorawan/helper/lora-helper.h:50: warning: argument 'phy' of command @param is not found in the argument list of ns3::lorawan::LoraHelper::Install(const LoraPhyHelper &phyHelper, const LorawanMacHelper &macHelper, NodeContainer c) const
+/home/davide/Work/ns-3-dev-lorawan/src/lorawan/helper/lora-helper.h:50: warning: argument 'mac' of command @param is not found in the argument list of ns3::lorawan::LoraHelper::Install(const LoraPhyHelper &phyHelper, const LorawanMacHelper &macHelper, NodeContainer c) const
+/home/davide/Work/ns-3-dev-lorawan/src/lorawan/helper/lora-helper.h:59: warning: The following parameters of ns3::lorawan::LoraHelper::Install(const LoraPhyHelper &phyHelper, const LorawanMacHelper &macHelper, NodeContainer c) const are not documented:
+  parameter 'phyHelper'
+  parameter 'macHelper'
+/home/davide/Work/ns-3-dev-lorawan/src/lorawan/helper/lora-helper.h:63: warning: argument 'phy' of command @param is not found in the argument list of ns3::lorawan::LoraHelper::Install(const LoraPhyHelper &phyHelper, const LorawanMacHelper &macHelper, Ptr< Node > node) const
+/home/davide/Work/ns-3-dev-lorawan/src/lorawan/helper/lora-helper.h:63: warning: argument 'mac' of command @param is not found in the argument list of ns3::lorawan::LoraHelper::Install(const LoraPhyHelper &phyHelper, const LorawanMacHelper &macHelper, Ptr< Node > node) const
+/home/davide/Work/ns-3-dev-lorawan/src/lorawan/helper/lora-helper.h:72: warning: The following parameters of ns3::lorawan::LoraHelper::Install(const LoraPhyHelper &phyHelper, const LorawanMacHelper &macHelper, Ptr< Node > node) const are not documented:
+  parameter 'phyHelper'
+  parameter 'macHelper'
+/home/davide/Work/ns-3-dev-lorawan/src/lorawan/model/lora-radio-energy-model.h:58: warning: argument 'duration' of command @param is not found in the argument list of ns3::lorawan::LoraRadioEnergyModelPhyListener::NotifyRxStart(void)
+/home/davide/Work/ns-3-dev-lorawan/src/lorawan/model/lora-radio-energy-model.h:67: warning: argument 'duration' of command @param is not found in the argument list of ns3::lorawan::LoraRadioEnergyModelPhyListener::NotifyTxStart(double txPowerDbm)
+/home/davide/Work/ns-3-dev-lorawan/src/lorawan/model/network-controller-components.h:61: warning: The following parameter of ns3::lorawan::NetworkControllerComponent::OnReceivedPacket(Ptr< const Packet > packet, Ptr< EndDeviceStatus > status, Ptr< NetworkStatus > networkStatus)=0 is not documented:
+  parameter 'status'
+/home/davide/Work/ns-3-dev-lorawan/src/lorawan/model/network-server.h:97: warning: The following parameters of ns3::lorawan::NetworkServer::Receive(Ptr< NetDevice > device, Ptr< const Packet > packet, uint16_t protocol, const Address &address) are not documented:
+  parameter 'device'
+  parameter 'protocol'
+  parameter 'address'
+/home/davide/Work/ns-3-dev-lorawan/src/lorawan/model/network-status.h:86: warning: The following parameter of ns3::lorawan::NetworkStatus::GetBestGatewayForDevice(LoraDeviceAddress deviceAddress, int window) is not documented:
+  parameter 'window'
+/home/davide/Work/ns-3-dev-lorawan/src/lorawan/model/network-status.h:67: warning: argument 'address' of command @param is not found in the argument list of ns3::lorawan::NetworkStatus::OnReceivedPacket(Ptr< const Packet > packet, const Address &gwaddress)
+/home/davide/Work/ns-3-dev-lorawan/src/lorawan/model/network-status.h:71: warning: The following parameter of ns3::lorawan::NetworkStatus::OnReceivedPacket(Ptr< const Packet > packet, const Address &gwaddress) is not documented:
+  parameter 'gwaddress'
 /home/davide/Work/ns-3-dev-lorawan/src/olsr/model/olsr-header.cc:86: warning: argument 'olsr_format' of command @param is not found in the argument list of ns3::olsr::EmfToSeconds(uint8_t olsrFormat)
 /home/davide/Work/ns-3-dev-lorawan/src/olsr/model/olsr-header.cc:91: warning: The following parameter of ns3::olsr::EmfToSeconds(uint8_t olsrFormat) is not documented:
   parameter 'olsrFormat'

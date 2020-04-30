@@ -23,7 +23,7 @@
 <area shape="rect" id="node21" href="$classns3_1_1_time.html#a60e845f4a74e62495b86356afe604cb4" title="Create a Time equal to value in unit unit." alt="" coords="570,406,742,433"/>
 <area shape="rect" id="node22" href="$classns3_1_1_time.html#a34e4acc13d0e08cc8cb9cd3b838b9baf" title="Create a Time in the current unit." alt="" coords="1352,443,1479,470"/>
 <area shape="rect" id="node24" href="$classns3_1_1_wifi_phy.html#aee98c7241bb4f0bb8e6d90f5771dacc7" title=" " alt="" coords="563,1528,749,1569"/>
-<area shape="rect" id="node31" href="$namespacens3.html#a5004264c5648328a038debee4aaddf0e" title="Convert from dBm to Watts." alt="" coords="601,1477,711,1503"/>
+<area shape="rect" id="node31" href="$namespacens3_1_1lorawan.html#a6d14252aaccaf79e2535bfa2284ba529" title="Convert from dBm to Watts." alt="" coords="571,1477,741,1503"/>
 <area shape="rect" id="node32" href="$classns3_1_1_wifi_phy.html#afca470e272ec5c3126da63c0a6102f4c" title=" " alt="" coords="819,1375,1019,1402"/>
 <area shape="rect" id="node33" href="$classns3_1_1_wifi_psdu.html#a0fbb2977085daf82b50f106ae41088b2" title="Return the size of the PSDU in bytes." alt="" coords="572,1594,740,1621"/>
 <area shape="rect" id="node34" href="$classns3_1_1_wifi_mac_header.html#a84a98932f5b66cca86bdfaa9cb1bcf7b" title="Set the TID for the QoS header." alt="" coords="579,1645,733,1687"/>

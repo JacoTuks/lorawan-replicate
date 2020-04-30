@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -185,74 +182,74 @@ $(document).ready(function(){initNavTree('global-value_8cc_source.html',''); ini
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="log_8h.html">log.h</a>&quot;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;ns3/core-config.h&quot;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#ifdef HAVE_STDLIB_H</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;cstdlib&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;cstdlib&gt;</span>  <span class="comment">// getenv</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;cstring&gt;</span>  <span class="comment">// strlen</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacens3.html">ns3</a> {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<a class="code" href="group__logging.html#ga225a95395fa117b7309aa3c43518d02e">NS_LOG_COMPONENT_DEFINE</a> (<span class="stringliteral">&quot;GlobalValue&quot;</span>);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classns3_1_1_global_value.html#ae47d892d6a279694b0c591f960e34538">   42</a></span>&#160;<a class="code" href="classns3_1_1_global_value.html#ae47d892d6a279694b0c591f960e34538">GlobalValue::GlobalValue</a> (std::string name, std::string help,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                          <span class="keyword">const</span> <a class="code" href="classns3_1_1_attribute_value.html">AttributeValue</a> &amp;initialValue,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                          <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;const AttributeChecker&gt;</a> checker)</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  : m_name (name),</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    m_help (help),</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    m_initialValue (0),</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    m_currentValue (0),</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    m_checker (checker)</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="group__logging.html#ga90b90d5bad1f39cb1b64923ea94c0761">NS_LOG_FUNCTION</a> (name &lt;&lt; help &lt;&lt; &amp;initialValue &lt;&lt; checker);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classns3_1_1_global_value.html#aa39ac6dc36430f492a9d25b1d1a7776a">m_checker</a> == 0)</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <a class="code" href="group__fatal.html#ga5131d5e3f75d7d4cbfd706ac456fdc85">NS_FATAL_ERROR</a> (<span class="stringliteral">&quot;Checker should not be zero on &quot;</span> &lt;&lt; name );</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="classns3_1_1_global_value.html#ad7963fb567f993a0a14bd8ff87553d11">m_initialValue</a> = <a class="code" href="classns3_1_1_global_value.html#aa39ac6dc36430f492a9d25b1d1a7776a">m_checker</a>-&gt;CreateValidValue (initialValue);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="classns3_1_1_global_value.html#ac1b6a8c1ae676b1733a5d0c23415e293">m_currentValue</a> = <a class="code" href="classns3_1_1_global_value.html#ad7963fb567f993a0a14bd8ff87553d11">m_initialValue</a>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classns3_1_1_global_value.html#ad7963fb567f993a0a14bd8ff87553d11">m_initialValue</a> == 0)</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <a class="code" href="group__fatal.html#ga5131d5e3f75d7d4cbfd706ac456fdc85">NS_FATAL_ERROR</a> (<span class="stringliteral">&quot;Value set by user on &quot;</span> &lt;&lt; name &lt;&lt; <span class="stringliteral">&quot; is invalid.&quot;</span>);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="classns3_1_1_global_value.html#a69fde3a69c812df719c42b4e2ebde77e">GetVector</a> ()-&gt;push_back (<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="classns3_1_1_global_value.html#a3331178fe3b1bec1f8109583045dcdab">InitializeFromEnv</a> ();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classns3_1_1_global_value.html#a3331178fe3b1bec1f8109583045dcdab">   67</a></span>&#160;<a class="code" href="classns3_1_1_global_value.html#a3331178fe3b1bec1f8109583045dcdab">GlobalValue::InitializeFromEnv</a> (<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="group__logging.html#ga90b90d5bad1f39cb1b64923ea94c0761">NS_LOG_FUNCTION</a> (<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#ifdef HAVE_GETENV</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">char</span> *envVar = getenv (<span class="stringliteral">&quot;NS_GLOBAL_VALUE&quot;</span>);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordflow">if</span> (envVar == 0)</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  std::string env = std::string (envVar);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  std::string::size_type cur = 0;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  std::string::size_type next = 0;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordflow">while</span> (next != std::string::npos)</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      next = env.find (<span class="stringliteral">&quot;;&quot;</span>, cur);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      std::string tmp = std::string (env, cur, next - cur);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      std::string::size_type equal = tmp.find (<span class="stringliteral">&quot;=&quot;</span>);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <span class="keywordflow">if</span> (equal != std::string::npos)</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;          std::string name = tmp.substr (0, equal);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;          std::string value = tmp.substr (equal + 1, tmp.size () - equal - 1);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;          <span class="keywordflow">if</span> (name == <a class="code" href="classns3_1_1_global_value.html#aee127b09561e9714565260194dbec3ad">m_name</a>)</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;              <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;AttributeValue&gt;</a> v = <a class="code" href="classns3_1_1_global_value.html#aa39ac6dc36430f492a9d25b1d1a7776a">m_checker</a>-&gt;CreateValidValue (<a class="code" href="classns3_1_1_string_value.html">StringValue</a> (value));</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;              <span class="keywordflow">if</span> (v != 0)</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                  <a class="code" href="classns3_1_1_global_value.html#ad7963fb567f993a0a14bd8ff87553d11">m_initialValue</a> = v;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                  <a class="code" href="classns3_1_1_global_value.html#ac1b6a8c1ae676b1733a5d0c23415e293">m_currentValue</a> = v;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                }</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;              <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        }</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      cur = next + 1;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* HAVE_GETENV */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacens3.html">ns3</a> {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<a class="code" href="group__logging.html#ga225a95395fa117b7309aa3c43518d02e">NS_LOG_COMPONENT_DEFINE</a> (<span class="stringliteral">&quot;GlobalValue&quot;</span>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classns3_1_1_global_value.html#ae47d892d6a279694b0c591f960e34538">   43</a></span>&#160;<a class="code" href="classns3_1_1_global_value.html#ae47d892d6a279694b0c591f960e34538">GlobalValue::GlobalValue</a> (std::string name, std::string help,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                          <span class="keyword">const</span> <a class="code" href="classns3_1_1_attribute_value.html">AttributeValue</a> &amp;initialValue,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                          <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;const AttributeChecker&gt;</a> checker)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  : m_name (name),</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    m_help (help),</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    m_initialValue (0),</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    m_currentValue (0),</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    m_checker (checker)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="group__logging.html#ga90b90d5bad1f39cb1b64923ea94c0761">NS_LOG_FUNCTION</a> (name &lt;&lt; help &lt;&lt; &amp;initialValue &lt;&lt; checker);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classns3_1_1_global_value.html#aa39ac6dc36430f492a9d25b1d1a7776a">m_checker</a> == 0)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <a class="code" href="group__fatal.html#ga5131d5e3f75d7d4cbfd706ac456fdc85">NS_FATAL_ERROR</a> (<span class="stringliteral">&quot;Checker should not be zero on &quot;</span> &lt;&lt; name );</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="classns3_1_1_global_value.html#ad7963fb567f993a0a14bd8ff87553d11">m_initialValue</a> = <a class="code" href="classns3_1_1_global_value.html#aa39ac6dc36430f492a9d25b1d1a7776a">m_checker</a>-&gt;CreateValidValue (initialValue);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="classns3_1_1_global_value.html#ac1b6a8c1ae676b1733a5d0c23415e293">m_currentValue</a> = <a class="code" href="classns3_1_1_global_value.html#ad7963fb567f993a0a14bd8ff87553d11">m_initialValue</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classns3_1_1_global_value.html#ad7963fb567f993a0a14bd8ff87553d11">m_initialValue</a> == 0)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <a class="code" href="group__fatal.html#ga5131d5e3f75d7d4cbfd706ac456fdc85">NS_FATAL_ERROR</a> (<span class="stringliteral">&quot;Value set by user on &quot;</span> &lt;&lt; name &lt;&lt; <span class="stringliteral">&quot; is invalid.&quot;</span>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="classns3_1_1_global_value.html#a69fde3a69c812df719c42b4e2ebde77e">GetVector</a> ()-&gt;push_back (<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <a class="code" href="classns3_1_1_global_value.html#a3331178fe3b1bec1f8109583045dcdab">InitializeFromEnv</a> ();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classns3_1_1_global_value.html#a3331178fe3b1bec1f8109583045dcdab">   68</a></span>&#160;<a class="code" href="classns3_1_1_global_value.html#a3331178fe3b1bec1f8109583045dcdab">GlobalValue::InitializeFromEnv</a> (<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="group__logging.html#ga90b90d5bad1f39cb1b64923ea94c0761">NS_LOG_FUNCTION</a> (<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span> *envVar = getenv (<span class="stringliteral">&quot;NS_GLOBAL_VALUE&quot;</span>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordflow">if</span> (envVar == 0 || std::strlen (envVar) == 0)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  std::string env = envVar;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  std::string::size_type cur = 0;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  std::string::size_type next = 0;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordflow">while</span> (next != std::string::npos)</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      next = env.find (<span class="stringliteral">&quot;;&quot;</span>, cur);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      std::string tmp = std::string (env, cur, next - cur);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      std::string::size_type equal = tmp.find (<span class="stringliteral">&quot;=&quot;</span>);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <span class="keywordflow">if</span> (equal != std::string::npos)</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;          std::string name = tmp.substr (0, equal);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;          std::string value = tmp.substr (equal + 1, tmp.size () - equal - 1);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;          <span class="keywordflow">if</span> (name == <a class="code" href="classns3_1_1_global_value.html#aee127b09561e9714565260194dbec3ad">m_name</a>)</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;              <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;AttributeValue&gt;</a> v = <a class="code" href="classns3_1_1_global_value.html#aa39ac6dc36430f492a9d25b1d1a7776a">m_checker</a>-&gt;CreateValidValue (<a class="code" href="classns3_1_1_string_value.html">StringValue</a> (value));</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;              <span class="keywordflow">if</span> (v != 0)</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                  <a class="code" href="classns3_1_1_global_value.html#ad7963fb567f993a0a14bd8ff87553d11">m_initialValue</a> = v;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                  <a class="code" href="classns3_1_1_global_value.html#ac1b6a8c1ae676b1733a5d0c23415e293">m_currentValue</a> = v;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;              <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      cur = next + 1;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;std::string</div>
@@ -400,7 +397,7 @@ $(document).ready(function(){initNavTree('global-value_8cc_source.html',''); ini
 <div class="ttc" id="aclassns3_1_1_global_value_html_ac55a67f683b49ff1c470f54f702a1254"><div class="ttname"><a href="classns3_1_1_global_value.html#ac55a67f683b49ff1c470f54f702a1254">ns3::GlobalValue::GetName</a></div><div class="ttdeci">std::string GetName(void) const</div><div class="ttdoc">Get the name.</div><div class="ttdef"><b>Definition:</b> <a href="global-value_8cc_source.html#l00105">global-value.cc:105</a></div></div>
 <div class="ttc" id="afatal-error_8h_html"><div class="ttname"><a href="fatal-error_8h.html">fatal-error.h</a></div><div class="ttdoc">NS_FATAL_x macro definitions.</div></div>
 <div class="ttc" id="anamespacens3_html"><div class="ttname"><a href="namespacens3.html">ns3</a></div><div class="ttdoc">Every class exported by the ns3 library is enclosed in the ns3 namespace.</div></div>
-<div class="ttc" id="aclassns3_1_1_global_value_html_a3331178fe3b1bec1f8109583045dcdab"><div class="ttname"><a href="classns3_1_1_global_value.html#a3331178fe3b1bec1f8109583045dcdab">ns3::GlobalValue::InitializeFromEnv</a></div><div class="ttdeci">void InitializeFromEnv(void)</div><div class="ttdoc">Initialize from the NS_GLOBAL_VALUE environment variable.</div><div class="ttdef"><b>Definition:</b> <a href="global-value_8cc_source.html#l00067">global-value.cc:67</a></div></div>
+<div class="ttc" id="aclassns3_1_1_global_value_html_a3331178fe3b1bec1f8109583045dcdab"><div class="ttname"><a href="classns3_1_1_global_value.html#a3331178fe3b1bec1f8109583045dcdab">ns3::GlobalValue::InitializeFromEnv</a></div><div class="ttdeci">void InitializeFromEnv(void)</div><div class="ttdoc">Initialize from the NS_GLOBAL_VALUE environment variable.</div><div class="ttdef"><b>Definition:</b> <a href="global-value_8cc_source.html#l00068">global-value.cc:68</a></div></div>
 <div class="ttc" id="astring_8h_html"><div class="ttname"><a href="string_8h.html">string.h</a></div></div>
 <div class="ttc" id="aclassns3_1_1_global_value_html_a674b6c1d387dc3b62e416c7fff43a4e9"><div class="ttname"><a href="classns3_1_1_global_value.html#a674b6c1d387dc3b62e416c7fff43a4e9">ns3::GlobalValue::Vector</a></div><div class="ttdeci">std::vector&lt; GlobalValue * &gt; Vector</div><div class="ttdoc">Container type for holding all the GlobalValues.</div><div class="ttdef"><b>Definition:</b> <a href="global-value_8h_source.html#l00076">global-value.h:76</a></div></div>
 <div class="ttc" id="aclassns3_1_1_attribute_value_html"><div class="ttname"><a href="classns3_1_1_attribute_value.html">ns3::AttributeValue</a></div><div class="ttdoc">Hold a value for an Attribute.</div><div class="ttdef"><b>Definition:</b> <a href="attribute_8h_source.html#l00068">attribute.h:69</a></div></div>
@@ -426,7 +423,7 @@ $(document).ready(function(){initNavTree('global-value_8cc_source.html',''); ini
 <div class="ttc" id="agroup__logging_html_ga8f7e4afc291c9d29a65c18ac1f79197b"><div class="ttname"><a href="group__logging.html#ga8f7e4afc291c9d29a65c18ac1f79197b">NS_LOG_FUNCTION_NOARGS</a></div><div class="ttdeci">#define NS_LOG_FUNCTION_NOARGS()</div><div class="ttdef"><b>Definition:</b> <a href="log-macros-enabled_8h_source.html#l00175">log-macros-enabled.h:174</a></div></div>
 <div class="ttc" id="alog_8h_html"><div class="ttname"><a href="log_8h.html">log.h</a></div></div>
 <div class="ttc" id="aclassns3_1_1_global_value_html_ac9c1b564b0b06dc07765194c9bc4bd29"><div class="ttname"><a href="classns3_1_1_global_value.html#ac9c1b564b0b06dc07765194c9bc4bd29">ns3::GlobalValue::GetValueByName</a></div><div class="ttdeci">static void GetValueByName(std::string name, AttributeValue &amp;value)</div><div class="ttdoc">Finds the GlobalValue with the given name and returns its value.</div><div class="ttdef"><b>Definition:</b> <a href="global-value_8cc_source.html#l00223">global-value.cc:223</a></div></div>
-<div class="ttc" id="aclassns3_1_1_global_value_html_ae47d892d6a279694b0c591f960e34538"><div class="ttname"><a href="classns3_1_1_global_value.html#ae47d892d6a279694b0c591f960e34538">ns3::GlobalValue::GlobalValue</a></div><div class="ttdeci">GlobalValue(std::string name, std::string help, const AttributeValue &amp;initialValue, Ptr&lt; const AttributeChecker &gt; checker)</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition:</b> <a href="global-value_8cc_source.html#l00042">global-value.cc:42</a></div></div>
+<div class="ttc" id="aclassns3_1_1_global_value_html_ae47d892d6a279694b0c591f960e34538"><div class="ttname"><a href="classns3_1_1_global_value.html#ae47d892d6a279694b0c591f960e34538">ns3::GlobalValue::GlobalValue</a></div><div class="ttdeci">GlobalValue(std::string name, std::string help, const AttributeValue &amp;initialValue, Ptr&lt; const AttributeChecker &gt; checker)</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition:</b> <a href="global-value_8cc_source.html#l00043">global-value.cc:43</a></div></div>
 <div class="ttc" id="agroup__logging_html_ga90b90d5bad1f39cb1b64923ea94c0761"><div class="ttname"><a href="group__logging.html#ga90b90d5bad1f39cb1b64923ea94c0761">NS_LOG_FUNCTION</a></div><div class="ttdeci">#define NS_LOG_FUNCTION(parameters)</div><div class="ttdef"><b>Definition:</b> <a href="log-macros-enabled_8h_source.html#l00210">log-macros-enabled.h:209</a></div></div>
 <div class="ttc" id="aclassns3_1_1_global_value_html_ac719e4b4614ccb8199e5ee97d9a5d303"><div class="ttname"><a href="classns3_1_1_global_value.html#ac719e4b4614ccb8199e5ee97d9a5d303">ns3::GlobalValue::SetValue</a></div><div class="ttdeci">bool SetValue(const AttributeValue &amp;value)</div><div class="ttdoc">Set the value of this GlobalValue.</div><div class="ttdef"><b>Definition:</b> <a href="global-value_8cc_source.html#l00141">global-value.cc:141</a></div></div>
 <div class="ttc" id="aclassns3_1_1_global_value_html_acda63956e7f662d674b8e3be79783e64"><div class="ttname"><a href="classns3_1_1_global_value.html#acda63956e7f662d674b8e3be79783e64">ns3::GlobalValue::BindFailSafe</a></div><div class="ttdeci">static bool BindFailSafe(std::string name, const AttributeValue &amp;value)</div><div class="ttdoc">Iterate over the set of GlobalValues until a matching name is found and then set its value with Globa...</div><div class="ttdef"><b>Definition:</b> <a href="global-value_8cc_source.html#l00173">global-value.cc:173</a></div></div>
@@ -440,7 +437,7 @@ $(document).ready(function(){initNavTree('global-value_8cc_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li><li class="navelem"><a class="el" href="dir_db6209eff64d15a114e6ff7aefbf1abd.html">model</a></li><li class="navelem"><a class="el" href="global-value_8cc.html">global-value.cc</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:34:52 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:00 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -164,6 +161,9 @@ $(document).ready(function(){initNavTree('classns3_1_1_ampdu_subframe_header.htm
 </div><!--header-->
 <div class="contents">
 
+<p>Headers for A-MPDU subframes.  
+ <a href="classns3_1_1_ampdu_subframe_header.html#details">More...</a></p>
+
 <p><code>#include &quot;<a class="el" href="ampdu-subframe-header_8h_source.html">ampdu-subframe-header.h</a>&quot;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for ns3::AmpduSubframeHeader:</div>
@@ -172,7 +172,7 @@ $(document).ready(function(){initNavTree('classns3_1_1_ampdu_subframe_header.htm
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_ampdu_subframe_header__inherit__graph.png" border="0" usemap="#ns3_1_1_ampdu_subframe_header_inherit__map" alt="Inheritance graph"/></div>
 <map name="ns3_1_1_ampdu_subframe_header_inherit__map" id="ns3_1_1_ampdu_subframe_header_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,229,215,256"/>
+<area shape="rect" title="Headers for A&#45;MPDU subframes." alt="" coords="5,229,215,256"/>
 <area shape="rect" href="classns3_1_1_header.html" title="Protocol header serialization and deserialization." alt="" coords="60,155,160,181"/>
 <area shape="rect" href="classns3_1_1_chunk.html" title="abstract base class for ns3::Header and ns3::Trailer" alt="" coords="63,80,157,107"/>
 <area shape="rect" href="classns3_1_1_object_base.html" title="Anchor the ns&#45;3 type and attribute system." alt="" coords="47,5,173,32"/>
@@ -185,7 +185,7 @@ $(document).ready(function(){initNavTree('classns3_1_1_ampdu_subframe_header.htm
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_ampdu_subframe_header__coll__graph.png" border="0" usemap="#ns3_1_1_ampdu_subframe_header_coll__map" alt="Collaboration graph"/></div>
 <map name="ns3_1_1_ampdu_subframe_header_coll__map" id="ns3_1_1_ampdu_subframe_header_coll__map">
-<area shape="rect" title=" " alt="" coords="5,229,215,256"/>
+<area shape="rect" title="Headers for A&#45;MPDU subframes." alt="" coords="5,229,215,256"/>
 <area shape="rect" href="classns3_1_1_header.html" title="Protocol header serialization and deserialization." alt="" coords="60,155,160,181"/>
 <area shape="rect" href="classns3_1_1_chunk.html" title="abstract base class for ns3::Header and ns3::Trailer" alt="" coords="63,80,157,107"/>
 <area shape="rect" href="classns3_1_1_object_base.html" title="Anchor the ns&#45;3 type and attribute system." alt="" coords="47,5,173,32"/>
@@ -290,7 +290,7 @@ Private Attributes</h2></td></tr>
 <tr class="memdesc:a6f1a3cb3b7f5f703862c4a1f4b7250c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">EOF field.  <a href="classns3_1_1_ampdu_subframe_header.html#a6f1a3cb3b7f5f703862c4a1f4b7250c0">More...</a><br /></td></tr>
 <tr class="separator:a6f1a3cb3b7f5f703862c4a1f4b7250c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d4b7c0bd30ccbb940cfa58361474776"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_ampdu_subframe_header.html#a0d4b7c0bd30ccbb940cfa58361474776">m_length</a></td></tr>
-<tr class="memdesc:a0d4b7c0bd30ccbb940cfa58361474776"><td class="mdescLeft">&#160;</td><td class="mdescRight">length field  <a href="classns3_1_1_ampdu_subframe_header.html#a0d4b7c0bd30ccbb940cfa58361474776">More...</a><br /></td></tr>
+<tr class="memdesc:a0d4b7c0bd30ccbb940cfa58361474776"><td class="mdescLeft">&#160;</td><td class="mdescRight">length field in bytes  <a href="classns3_1_1_ampdu_subframe_header.html#a0d4b7c0bd30ccbb940cfa58361474776">More...</a><br /></td></tr>
 <tr class="separator:a0d4b7c0bd30ccbb940cfa58361474776"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92e4f29e8240618e1bb929f60dee4452"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_ampdu_subframe_header.html#a92e4f29e8240618e1bb929f60dee4452">m_signature</a></td></tr>
 <tr class="memdesc:a92e4f29e8240618e1bb929f60dee4452"><td class="mdescLeft">&#160;</td><td class="mdescRight">delimiter signature (should correspond to pattern 0x4E in order to be assumed valid)  <a href="classns3_1_1_ampdu_subframe_header.html#a92e4f29e8240618e1bb929f60dee4452">More...</a><br /></td></tr>
@@ -311,8 +311,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a4fcfd18844c60f163c5dce52456d111b inherit related_classns3_1_1_object_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="ampdu-subframe-header_8h_source.html#l00031">31</a> of file <a class="el" href="ampdu-subframe-header_8h_source.html">ampdu-subframe-header.h</a>.</p>
+<div class="textblock"><p>Headers for A-MPDU subframes. </p>
+
+<p class="definition">Definition at line <a class="el" href="ampdu-subframe-header_8h_source.html#l00032">32</a> of file <a class="el" href="ampdu-subframe-header_8h_source.html">ampdu-subframe-header.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab9088f425a84efcedb50df57a044c403"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab9088f425a84efcedb50df57a044c403">&#9670;&nbsp;</a></span>AmpduSubframeHeader()</h2>
@@ -398,7 +399,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ampdu-subframe-header_8cc_source.html#l00071">71</a> of file <a class="el" href="ampdu-subframe-header_8cc_source.html">ampdu-subframe-header.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="buffer_8cc_source.html#l00783">ns3::Buffer::Iterator::GetDistanceFrom()</a>, <a class="el" href="ampdu-subframe-header_8h_source.html#l00084">m_eof</a>, <a class="el" href="ampdu-subframe-header_8h_source.html#l00083">m_length</a>, <a class="el" href="ampdu-subframe-header_8h_source.html#l00085">m_signature</a>, <a class="el" href="buffer_8cc_source.html#l01065">ns3::Buffer::Iterator::ReadLsbtohU16()</a>, <a class="el" href="buffer_8h_source.html#l01021">ns3::Buffer::Iterator::ReadU8()</a>, and <a class="el" href="core_8py_source.html#l01855">visualizer.core::start()</a>.</p>
+<p class="reference">References <a class="el" href="buffer_8cc_source.html#l00783">ns3::Buffer::Iterator::GetDistanceFrom()</a>, <a class="el" href="ampdu-subframe-header_8h_source.html#l00085">m_eof</a>, <a class="el" href="ampdu-subframe-header_8h_source.html#l00084">m_length</a>, <a class="el" href="ampdu-subframe-header_8h_source.html#l00086">m_signature</a>, <a class="el" href="buffer_8cc_source.html#l01065">ns3::Buffer::Iterator::ReadLsbtohU16()</a>, <a class="el" href="buffer_8h_source.html#l01021">ns3::Buffer::Iterator::ReadU8()</a>, and <a class="el" href="core_8py_source.html#l01855">visualizer.core::start()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -439,7 +440,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ampdu-subframe-header_8cc_source.html#l00108">108</a> of file <a class="el" href="ampdu-subframe-header_8cc_source.html">ampdu-subframe-header.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="ampdu-subframe-header_8h_source.html#l00084">m_eof</a>.</p>
+<p class="reference">References <a class="el" href="ampdu-subframe-header_8h_source.html#l00085">m_eof</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="wifi-helper_8cc_source.html#l00291">ns3::WifiPhyHelper::GetRadiotapHeader()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -450,7 +451,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="center"><img src="classns3_1_1_ampdu_subframe_header_ac903518a999682b5d4da011d7b03b445_icgraph.png" border="0" usemap="#classns3_1_1_ampdu_subframe_header_ac903518a999682b5d4da011d7b03b445_icgraph" alt=""/></div>
 <map name="classns3_1_1_ampdu_subframe_header_ac903518a999682b5d4da011d7b03b445_icgraph" id="classns3_1_1_ampdu_subframe_header_ac903518a999682b5d4da011d7b03b445_icgraph">
 <area shape="rect" title="Return the EOF field." alt="" coords="641,39,851,80"/>
-<area shape="rect" href="classns3_1_1_wifi_phy_helper.html#af1baefd0a50daeff72c8075f2eef7eda" title="Get the radiotap header." alt="" coords="435,39,593,80"/>
+<area shape="rect" href="classns3_1_1_wifi_phy_helper.html#af1baefd0a50daeff72c8075f2eef7eda" title="Get the Radiotap header." alt="" coords="435,39,593,80"/>
 <area shape="rect" href="classns3_1_1_wifi_phy_helper.html#ac5da2b1210868b0ae050e3adc54a9d2f" title=" " alt="" coords="240,5,387,47"/>
 <area shape="rect" href="classns3_1_1_wifi_phy_helper.html#a24e075fa55e473c81f76a4178c0fcb25" title=" " alt="" coords="240,71,387,112"/>
 <area shape="rect" href="classns3_1_1_yans_wave_phy_helper.html#a6bcc70f08dc2e44676089f334c4345b0" title="Enable pcap output the indicated net device." alt="" coords="5,5,192,47"/>
@@ -528,11 +529,11 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return the length field. </p>
-<dl class="section return"><dt>Returns</dt><dd>the length field </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the length field in bytes </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="ampdu-subframe-header_8cc_source.html#l00102">102</a> of file <a class="el" href="ampdu-subframe-header_8cc_source.html">ampdu-subframe-header.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="ampdu-subframe-header_8h_source.html#l00083">m_length</a>.</p>
+<p class="reference">References <a class="el" href="ampdu-subframe-header_8h_source.html#l00084">m_length</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="wifi-helper_8cc_source.html#l00291">ns3::WifiPhyHelper::GetRadiotapHeader()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -543,7 +544,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="center"><img src="classns3_1_1_ampdu_subframe_header_acb131533076842db8959fc5c7408673e_icgraph.png" border="0" usemap="#classns3_1_1_ampdu_subframe_header_acb131533076842db8959fc5c7408673e_icgraph" alt=""/></div>
 <map name="classns3_1_1_ampdu_subframe_header_acb131533076842db8959fc5c7408673e_icgraph" id="classns3_1_1_ampdu_subframe_header_acb131533076842db8959fc5c7408673e_icgraph">
 <area shape="rect" title="Return the length field." alt="" coords="641,39,851,80"/>
-<area shape="rect" href="classns3_1_1_wifi_phy_helper.html#af1baefd0a50daeff72c8075f2eef7eda" title="Get the radiotap header." alt="" coords="435,39,593,80"/>
+<area shape="rect" href="classns3_1_1_wifi_phy_helper.html#af1baefd0a50daeff72c8075f2eef7eda" title="Get the Radiotap header." alt="" coords="435,39,593,80"/>
 <area shape="rect" href="classns3_1_1_wifi_phy_helper.html#ac5da2b1210868b0ae050e3adc54a9d2f" title=" " alt="" coords="240,5,387,47"/>
 <area shape="rect" href="classns3_1_1_wifi_phy_helper.html#a24e075fa55e473c81f76a4178c0fcb25" title=" " alt="" coords="240,71,387,112"/>
 <area shape="rect" href="classns3_1_1_yans_wave_phy_helper.html#a6bcc70f08dc2e44676089f334c4345b0" title="Enable pcap output the indicated net device." alt="" coords="5,5,192,47"/>
@@ -614,7 +615,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ampdu-subframe-header_8cc_source.html#l00029">29</a> of file <a class="el" href="ampdu-subframe-header_8cc_source.html">ampdu-subframe-header.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="type-id_8cc_source.html#l00922">ns3::TypeId::SetParent()</a>.</p>
+<p class="reference">References <a class="el" href="type-id_8cc_source.html#l00923">ns3::TypeId::SetParent()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ampdu-subframe-header_8cc_source.html#l00040">GetInstanceTypeId()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -667,7 +668,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ampdu-subframe-header_8cc_source.html#l00114">114</a> of file <a class="el" href="ampdu-subframe-header_8cc_source.html">ampdu-subframe-header.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="ampdu-subframe-header_8h_source.html#l00085">m_signature</a>.</p>
+<p class="reference">References <a class="el" href="ampdu-subframe-header_8h_source.html#l00086">m_signature</a>.</p>
 
 </div>
 </div>
@@ -705,7 +706,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ampdu-subframe-header_8cc_source.html#l00083">83</a> of file <a class="el" href="ampdu-subframe-header_8cc_source.html">ampdu-subframe-header.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="ampdu-subframe-header_8h_source.html#l00084">m_eof</a>, <a class="el" href="ampdu-subframe-header_8h_source.html#l00083">m_length</a>, and <a class="el" href="ampdu-subframe-header_8h_source.html#l00085">m_signature</a>.</p>
+<p class="reference">References <a class="el" href="ampdu-subframe-header_8h_source.html#l00085">m_eof</a>, <a class="el" href="ampdu-subframe-header_8h_source.html#l00084">m_length</a>, and <a class="el" href="ampdu-subframe-header_8h_source.html#l00086">m_signature</a>.</p>
 
 </div>
 </div>
@@ -744,7 +745,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ampdu-subframe-header_8cc_source.html#l00063">63</a> of file <a class="el" href="ampdu-subframe-header_8cc_source.html">ampdu-subframe-header.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="ampdu-subframe-header_8h_source.html#l00084">m_eof</a>, <a class="el" href="ampdu-subframe-header_8h_source.html#l00083">m_length</a>, <a class="el" href="ampdu-subframe-header_8h_source.html#l00085">m_signature</a>, <a class="el" href="buffer_8cc_source.html#l00910">ns3::Buffer::Iterator::WriteHtolsbU16()</a>, and <a class="el" href="buffer_8h_source.html#l00869">ns3::Buffer::Iterator::WriteU8()</a>.</p>
+<p class="reference">References <a class="el" href="ampdu-subframe-header_8h_source.html#l00085">m_eof</a>, <a class="el" href="ampdu-subframe-header_8h_source.html#l00084">m_length</a>, <a class="el" href="ampdu-subframe-header_8h_source.html#l00086">m_signature</a>, <a class="el" href="buffer_8cc_source.html#l00910">ns3::Buffer::Iterator::WriteHtolsbU16()</a>, and <a class="el" href="buffer_8h_source.html#l00869">ns3::Buffer::Iterator::WriteU8()</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -780,14 +781,14 @@ Additional Inherited Members</h2></td></tr>
 <p>Set the EOF field. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">eof</td><td></td></tr>
+    <tr><td class="paramname">eof</td><td>set EOF field if true </td></tr>
   </table>
   </dd>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="ampdu-subframe-header_8cc_source.html#l00096">96</a> of file <a class="el" href="ampdu-subframe-header_8cc_source.html">ampdu-subframe-header.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="ampdu-subframe-header_8h_source.html#l00084">m_eof</a>.</p>
+<p class="reference">References <a class="el" href="ampdu-subframe-header_8h_source.html#l00085">m_eof</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mpdu-aggregator_8cc_source.html#l00197">ns3::MpduAggregator::GetAmpduSubframeHeader()</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -826,14 +827,14 @@ Additional Inherited Members</h2></td></tr>
 <p>Set the length field. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">length</td><td></td></tr>
+    <tr><td class="paramname">length</td><td>in bytes </td></tr>
   </table>
   </dd>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="ampdu-subframe-header_8cc_source.html#l00090">90</a> of file <a class="el" href="ampdu-subframe-header_8cc_source.html">ampdu-subframe-header.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="ampdu-subframe-header_8h_source.html#l00083">m_length</a>.</p>
+<p class="reference">References <a class="el" href="ampdu-subframe-header_8h_source.html#l00084">m_length</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mpdu-aggregator_8cc_source.html#l00197">ns3::MpduAggregator::GetAmpduSubframeHeader()</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -876,7 +877,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>EOF field. </p>
 
-<p class="definition">Definition at line <a class="el" href="ampdu-subframe-header_8h_source.html#l00084">84</a> of file <a class="el" href="ampdu-subframe-header_8h_source.html">ampdu-subframe-header.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ampdu-subframe-header_8h_source.html#l00085">85</a> of file <a class="el" href="ampdu-subframe-header_8h_source.html">ampdu-subframe-header.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ampdu-subframe-header_8cc_source.html#l00071">Deserialize()</a>, <a class="el" href="ampdu-subframe-header_8cc_source.html#l00108">GetEof()</a>, <a class="el" href="ampdu-subframe-header_8cc_source.html#l00083">Print()</a>, <a class="el" href="ampdu-subframe-header_8cc_source.html#l00063">Serialize()</a>, and <a class="el" href="ampdu-subframe-header_8cc_source.html#l00096">SetEof()</a>.</p>
 
@@ -902,9 +903,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>length field </p>
+<p>length field in bytes </p>
 
-<p class="definition">Definition at line <a class="el" href="ampdu-subframe-header_8h_source.html#l00083">83</a> of file <a class="el" href="ampdu-subframe-header_8h_source.html">ampdu-subframe-header.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ampdu-subframe-header_8h_source.html#l00084">84</a> of file <a class="el" href="ampdu-subframe-header_8h_source.html">ampdu-subframe-header.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ampdu-subframe-header_8cc_source.html#l00071">Deserialize()</a>, <a class="el" href="ampdu-subframe-header_8cc_source.html#l00102">GetLength()</a>, <a class="el" href="ampdu-subframe-header_8cc_source.html#l00083">Print()</a>, <a class="el" href="ampdu-subframe-header_8cc_source.html#l00063">Serialize()</a>, and <a class="el" href="ampdu-subframe-header_8cc_source.html#l00090">SetLength()</a>.</p>
 
@@ -932,7 +933,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>delimiter signature (should correspond to pattern 0x4E in order to be assumed valid) </p>
 
-<p class="definition">Definition at line <a class="el" href="ampdu-subframe-header_8h_source.html#l00085">85</a> of file <a class="el" href="ampdu-subframe-header_8h_source.html">ampdu-subframe-header.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ampdu-subframe-header_8h_source.html#l00086">86</a> of file <a class="el" href="ampdu-subframe-header_8h_source.html">ampdu-subframe-header.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ampdu-subframe-header_8cc_source.html#l00071">Deserialize()</a>, <a class="el" href="ampdu-subframe-header_8cc_source.html#l00114">IsSignatureValid()</a>, <a class="el" href="ampdu-subframe-header_8cc_source.html#l00083">Print()</a>, and <a class="el" href="ampdu-subframe-header_8cc_source.html#l00063">Serialize()</a>.</p>
 
@@ -952,7 +953,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_ampdu_subframe_header.html">AmpduSubframeHeader</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:20 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:26 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

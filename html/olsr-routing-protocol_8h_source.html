@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -333,7 +330,7 @@ $(document).ready(function(){initNavTree('olsr-routing-protocol_8h_source.html',
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160; </div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classns3_1_1olsr_1_1_routing_protocol.html#a4f4847a879139dc41e184b8233573143">DoDispose</a> ();</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160; </div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classns3_1_1olsr_1_1_routing_protocol.html#a31a103b24f235d7a7719258993363fc9">SendPacket</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Packet&gt;</a> <a class="code" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>, <span class="keyword">const</span> <a class="code" href="namespacens3_1_1olsr.html#af17c710718a5637d01f37804a0a53e78">MessageList</a> &amp;containedMessages);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classns3_1_1olsr_1_1_routing_protocol.html#a31a103b24f235d7a7719258993363fc9">SendPacket</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Packet&gt;</a> packet, <span class="keyword">const</span> <a class="code" href="namespacens3_1_1olsr.html#af17c710718a5637d01f37804a0a53e78">MessageList</a> &amp;containedMessages);</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160; </div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  <span class="keyword">inline</span> uint16_t <a class="code" href="classns3_1_1olsr_1_1_routing_protocol.html#ab7cac75ba09d451d4cc12acb2030fbee">GetPacketSequenceNumber</a> ();</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160; </div>
@@ -527,7 +524,6 @@ $(document).ready(function(){initNavTree('olsr-routing-protocol_8h_source.html',
 <div class="ttc" id="aclassns3_1_1olsr_1_1_routing_protocol_html_a8c75d345a2a52bc56919f469d3e09849"><div class="ttname"><a href="classns3_1_1olsr_1_1_routing_protocol.html#a8c75d345a2a52bc56919f469d3e09849">ns3::olsr::RoutingProtocol::GetTypeId</a></div><div class="ttdeci">static TypeId GetTypeId(void)</div><div class="ttdoc">Get the type ID.</div><div class="ttdef"><b>Definition:</b> <a href="olsr-routing-protocol_8cc_source.html#l00153">olsr-routing-protocol.cc:153</a></div></div>
 <div class="ttc" id="aclassns3_1_1olsr_1_1_routing_protocol_html_a861b1d2ce370ab0137e67c5a1102a937"><div class="ttname"><a href="classns3_1_1olsr_1_1_routing_protocol.html#a861b1d2ce370ab0137e67c5a1102a937">ns3::olsr::RoutingProtocol::m_rxPacketTrace</a></div><div class="ttdeci">TracedCallback&lt; const PacketHeader &amp;, const MessageList &amp; &gt; m_rxPacketTrace</div><div class="ttdoc">Rx packet trace.</div><div class="ttdef"><b>Definition:</b> <a href="olsr-routing-protocol_8h_source.html#l00772">olsr-routing-protocol.h:772</a></div></div>
 <div class="ttc" id="aclassns3_1_1olsr_1_1_routing_protocol_html_a69fcd3b690fbf6e2b46735145cecfe3e"><div class="ttname"><a href="classns3_1_1olsr_1_1_routing_protocol.html#a69fcd3b690fbf6e2b46735145cecfe3e">ns3::olsr::RoutingProtocol::RoutingTableComputation</a></div><div class="ttdeci">void RoutingTableComputation()</div><div class="ttdoc">Creates the routing table of the node following RFC 3626 hints.</div><div class="ttdef"><b>Definition:</b> <a href="olsr-routing-protocol_8cc_source.html#l00955">olsr-routing-protocol.cc:955</a></div></div>
-<div class="ttc" id="alora-mac-test_8cc_html_a084e879e2a4e6b1e078575d3693a0c3a"><div class="ttname"><a href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a></div><div class="ttdeci">Ptr&lt; Packet &gt; packet</div><div class="ttdef"><b>Definition:</b> <a href="lora-mac-test_8cc_source.html#l00021">lora-mac-test.cc:21</a></div></div>
 <div class="ttc" id="aclassns3_1_1olsr_1_1_routing_protocol_html_a2a23a0fd6fa714fef6613afd3f5bc1d2"><div class="ttname"><a href="classns3_1_1olsr_1_1_routing_protocol.html#a2a23a0fd6fa714fef6613afd3f5bc1d2">ns3::olsr::RoutingProtocol::LinkSensing</a></div><div class="ttdeci">void LinkSensing(const olsr::MessageHeader &amp;msg, const olsr::MessageHeader::Hello &amp;hello, const Ipv4Address &amp;receiverIface, const Ipv4Address &amp;senderIface)</div><div class="ttdoc">Updates Link Set according to a new received HELLO message (following RFC 3626 specification).</div><div class="ttdef"><b>Definition:</b> <a href="olsr-routing-protocol_8cc_source.html#l01977">olsr-routing-protocol.cc:1977</a></div></div>
 <div class="ttc" id="aclassns3_1_1olsr_1_1_routing_protocol_html_afede79b25ec57e797ff900ae01bca1df"><div class="ttname"><a href="classns3_1_1olsr_1_1_routing_protocol.html#afede79b25ec57e797ff900ae01bca1df">ns3::olsr::RoutingProtocol::m_ipv4</a></div><div class="ttdeci">Ptr&lt; Ipv4 &gt; m_ipv4</div><div class="ttdoc">IPv4 object the routing is linked to.</div><div class="ttdef"><b>Definition:</b> <a href="olsr-routing-protocol_8h_source.html#l00220">olsr-routing-protocol.h:220</a></div></div>
 <div class="ttc" id="aclassns3_1_1_ipv4_address_html"><div class="ttname"><a href="classns3_1_1_ipv4_address.html">ns3::Ipv4Address</a></div><div class="ttdoc">Ipv4 addresses are stored in host order in this class.</div><div class="ttdef"><b>Definition:</b> <a href="ipv4-address_8h_source.html#l00041">ipv4-address.h:41</a></div></div>
@@ -666,7 +662,7 @@ $(document).ready(function(){initNavTree('olsr-routing-protocol_8h_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_6a2e26ab34579891f9e434174953f08b.html">olsr</a></li><li class="navelem"><a class="el" href="dir_22a52ec582da95352aaea09a15cdadf3.html">model</a></li><li class="navelem"><a class="el" href="olsr-routing-protocol_8h.html">olsr-routing-protocol.h</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:03 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:11 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

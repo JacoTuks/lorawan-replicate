@@ -1,5 +1,5 @@
 <map id="ns3::BlockAckWindow::GetWinStart" name="ns3::BlockAckWindow::GetWinStart">
-<area shape="rect" id="node1" title="Get the current winstart value." alt="" coords="1148,140,1313,182"/>
+<area shape="rect" id="node1" title="Get the current winStart value." alt="" coords="1148,140,1313,182"/>
 <area shape="rect" id="node2" href="$class_originator_block_ack_window_test.html#afa79ee872643cc855c1003121f9c564e" title="Implementation to actually run this TestCase." alt="" coords="5,140,204,182"/>
 <area shape="rect" id="node3" href="$classns3_1_1_originator_block_ack_agreement.html#a71138fdae2b41a8a99f62195d9167975" title="Return the starting sequence number of the transmit window, if a transmit window has been initialized..." alt="" coords="849,82,1100,123"/>
 <area shape="rect" id="node5" href="$classns3_1_1_originator_block_ack_agreement.html#a40efbd2ca6815ab1c3924b83a8f3d197" title="Record that the given MPDU has been acknowledged and advance the transmit window if possible." alt="" coords="252,140,503,182"/>

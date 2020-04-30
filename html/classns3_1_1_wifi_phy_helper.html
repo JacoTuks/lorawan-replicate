@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -181,7 +178,7 @@ $(document).ready(function(){initNavTree('classns3_1_1_wifi_phy_helper.html','')
 <map name="ns3_1_1_wifi_phy_helper_inherit__map" id="ns3_1_1_wifi_phy_helper_inherit__map">
 <area shape="rect" title="create PHY objects" alt="" coords="144,95,291,121"/>
 <area shape="rect" href="classns3_1_1_spectrum_wifi_phy_helper.html" title="Make it easy to create and manage PHY objects for the spectrum model." alt="" coords="5,169,213,196"/>
-<area shape="rect" href="classns3_1_1_yans_wifi_phy_helper.html" title="Make it easy to create and manage PHY objects for the yans model." alt="" coords="238,169,413,196"/>
+<area shape="rect" href="classns3_1_1_yans_wifi_phy_helper.html" title="Make it easy to create and manage PHY objects for the YANS model." alt="" coords="238,169,413,196"/>
 <area shape="rect" href="classns3_1_1_pcap_helper_for_device.html" title="Base class providing common user&#45;level pcap operations for helpers representing net devices." alt="" coords="16,13,208,39"/>
 <area shape="rect" href="classns3_1_1_ascii_trace_helper_for_device.html" title="Base class providing common user&#45;level ascii trace operations for helpers representing net devices." alt="" coords="233,5,415,47"/>
 <area shape="rect" href="classns3_1_1_yans_wave_phy_helper.html" title=" " alt="" coords="232,244,419,271"/>
@@ -323,9 +320,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:ac5da2b1210868b0ae050e3adc54a9d2f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_wifi_phy_helper.html#ac5da2b1210868b0ae050e3adc54a9d2f">PcapSniffRxEvent</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_pcap_file_wrapper.html">PcapFileWrapper</a> &gt; file, <a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; const <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; <a class="el" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>, uint16_t channelFreqMhz, <a class="el" href="classns3_1_1_wifi_tx_vector.html">WifiTxVector</a> txVector, <a class="el" href="structns3_1_1_mpdu_info.html">MpduInfo</a> aMpdu, <a class="el" href="structns3_1_1_signal_noise_dbm.html">SignalNoiseDbm</a> signalNoise)</td></tr>
+<tr class="memitem:ac5da2b1210868b0ae050e3adc54a9d2f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_wifi_phy_helper.html#ac5da2b1210868b0ae050e3adc54a9d2f">PcapSniffRxEvent</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_pcap_file_wrapper.html">PcapFileWrapper</a> &gt; file, <a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; const <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; packet, uint16_t channelFreqMhz, <a class="el" href="classns3_1_1_wifi_tx_vector.html">WifiTxVector</a> txVector, <a class="el" href="structns3_1_1_mpdu_info.html">MpduInfo</a> aMpdu, <a class="el" href="structns3_1_1_signal_noise_dbm.html">SignalNoiseDbm</a> signalNoise)</td></tr>
 <tr class="separator:ac5da2b1210868b0ae050e3adc54a9d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24e075fa55e473c81f76a4178c0fcb25"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_wifi_phy_helper.html#a24e075fa55e473c81f76a4178c0fcb25">PcapSniffTxEvent</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_pcap_file_wrapper.html">PcapFileWrapper</a> &gt; file, <a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; const <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; <a class="el" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>, uint16_t channelFreqMhz, <a class="el" href="classns3_1_1_wifi_tx_vector.html">WifiTxVector</a> txVector, <a class="el" href="structns3_1_1_mpdu_info.html">MpduInfo</a> aMpdu)</td></tr>
+<tr class="memitem:a24e075fa55e473c81f76a4178c0fcb25"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_wifi_phy_helper.html#a24e075fa55e473c81f76a4178c0fcb25">PcapSniffTxEvent</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_pcap_file_wrapper.html">PcapFileWrapper</a> &gt; file, <a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; const <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; packet, uint16_t channelFreqMhz, <a class="el" href="classns3_1_1_wifi_tx_vector.html">WifiTxVector</a> txVector, <a class="el" href="structns3_1_1_mpdu_info.html">MpduInfo</a> aMpdu)</td></tr>
 <tr class="separator:a24e075fa55e473c81f76a4178c0fcb25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
@@ -346,7 +343,7 @@ Protected Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a930fe270c6c08af23d5333b87ed5997b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_wifi_phy_helper.html#a930fe270c6c08af23d5333b87ed5997b">EnableAsciiInternal</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_output_stream_wrapper.html">OutputStreamWrapper</a> &gt; stream, std::string prefix, <a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_net_device.html">NetDevice</a> &gt; nd, bool explicitFilename)</td></tr>
-<tr class="memdesc:a930fe270c6c08af23d5333b87ed5997b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable ascii trace output on the indicated net device.  <a href="classns3_1_1_wifi_phy_helper.html#a930fe270c6c08af23d5333b87ed5997b">More...</a><br /></td></tr>
+<tr class="memdesc:a930fe270c6c08af23d5333b87ed5997b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable ASCII trace output on the indicated net device.  <a href="classns3_1_1_wifi_phy_helper.html#a930fe270c6c08af23d5333b87ed5997b">More...</a><br /></td></tr>
 <tr class="separator:a930fe270c6c08af23d5333b87ed5997b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d0dc819ef2e257409b6b84924d07085"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_wifi_phy_helper.html#a1d0dc819ef2e257409b6b84924d07085">EnablePcapInternal</a> (std::string prefix, <a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_net_device.html">NetDevice</a> &gt; nd, bool promiscuous, bool explicitFilename)</td></tr>
 <tr class="memdesc:a1d0dc819ef2e257409b6b84924d07085"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable pcap output the indicated net device.  <a href="classns3_1_1_wifi_phy_helper.html#a1d0dc819ef2e257409b6b84924d07085">More...</a><br /></td></tr>
@@ -354,8 +351,8 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
-<tr class="memitem:af1baefd0a50daeff72c8075f2eef7eda"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classns3_1_1_radiotap_header.html">RadiotapHeader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_wifi_phy_helper.html#af1baefd0a50daeff72c8075f2eef7eda">GetRadiotapHeader</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; <a class="el" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>, uint16_t channelFreqMhz, <a class="el" href="classns3_1_1_wifi_tx_vector.html">WifiTxVector</a> txVector, <a class="el" href="structns3_1_1_mpdu_info.html">MpduInfo</a> aMpdu)</td></tr>
-<tr class="memdesc:af1baefd0a50daeff72c8075f2eef7eda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the radiotap header.  <a href="classns3_1_1_wifi_phy_helper.html#af1baefd0a50daeff72c8075f2eef7eda">More...</a><br /></td></tr>
+<tr class="memitem:af1baefd0a50daeff72c8075f2eef7eda"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classns3_1_1_radiotap_header.html">RadiotapHeader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_wifi_phy_helper.html#af1baefd0a50daeff72c8075f2eef7eda">GetRadiotapHeader</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; packet, uint16_t channelFreqMhz, <a class="el" href="classns3_1_1_wifi_tx_vector.html">WifiTxVector</a> txVector, <a class="el" href="structns3_1_1_mpdu_info.html">MpduInfo</a> aMpdu)</td></tr>
+<tr class="memdesc:af1baefd0a50daeff72c8075f2eef7eda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Radiotap header.  <a href="classns3_1_1_wifi_phy_helper.html#af1baefd0a50daeff72c8075f2eef7eda">More...</a><br /></td></tr>
 <tr class="separator:af1baefd0a50daeff72c8075f2eef7eda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -659,12 +656,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Enable ascii trace output on the indicated net device. </p>
+<p>Enable ASCII trace output on the indicated net device. </p>
 <p>NetDevice-specific implementation mechanism for hooking the trace and writing to the trace file.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">stream</td><td>The output stream object to use when logging ascii traces. </td></tr>
-    <tr><td class="paramname">prefix</td><td>Filename prefix to use for ascii trace files. </td></tr>
+    <tr><td class="paramname">stream</td><td>The output stream object to use when logging ASCII traces. </td></tr>
+    <tr><td class="paramname">prefix</td><td>Filename prefix to use for ASCII trace files. </td></tr>
     <tr><td class="paramname">nd</td><td>Net device for which you want to enable tracing. </td></tr>
     <tr><td class="paramname">explicitFilename</td><td>Treat the prefix as an explicit filename if true </td></tr>
   </table>
@@ -685,7 +682,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_wifi_phy_helper_a930fe270c6c08af23d5333b87ed5997b_cgraph.png" border="0" usemap="#classns3_1_1_wifi_phy_helper_a930fe270c6c08af23d5333b87ed5997b_cgraph" alt=""/></div>
 <map name="classns3_1_1_wifi_phy_helper_a930fe270c6c08af23d5333b87ed5997b_cgraph" id="classns3_1_1_wifi_phy_helper_a930fe270c6c08af23d5333b87ed5997b_cgraph">
-<area shape="rect" title="Enable ascii trace output on the indicated net device." alt="" coords="5,658,160,699"/>
+<area shape="rect" title="Enable ASCII trace output on the indicated net device." alt="" coords="5,658,160,699"/>
 <area shape="rect" href="namespacens3.html#a040ca8ac0d1c0a56f4e431307cb3058c" title="ASCII Phy receive sink with context." alt="" coords="217,569,405,610"/>
 <area shape="rect" href="namespacens3.html#a7ca07e06f80459c9c62e3b4e9eb6ff40" title="ASCII Phy receive sink without context." alt="" coords="217,373,405,414"/>
 <area shape="rect" href="namespacens3.html#ae217606eb9244d9c833b9dddbe1a964a" title="ASCII Phy transmit sink with context." alt="" coords="215,438,408,479"/>
@@ -812,56 +809,56 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_wifi_phy_helper_a1d0dc819ef2e257409b6b84924d07085_cgraph.png" border="0" usemap="#classns3_1_1_wifi_phy_helper_a1d0dc819ef2e257409b6b84924d07085_cgraph" alt=""/></div>
 <map name="classns3_1_1_wifi_phy_helper_a1d0dc819ef2e257409b6b84924d07085_cgraph" id="classns3_1_1_wifi_phy_helper_a1d0dc819ef2e257409b6b84924d07085_cgraph">
-<area shape="rect" title="Enable pcap output the indicated net device." alt="" coords="5,691,160,733"/>
-<area shape="rect" href="classns3_1_1_pcap_helper.html#a216e4a2ee6d533fd71aacab300c1d786" title="Create and initialize a pcap file." alt="" coords="217,404,417,431"/>
-<area shape="rect" href="classns3_1_1_pcap_helper.html#a0da71e0938f0074cf08b4167d2e36702" title="Let the pcap helper figure out a reasonable filename to use for a pcap file associated with a device." alt="" coords="208,455,425,497"/>
-<area shape="rect" href="classns3_1_1_wifi_net_device.html#a83bdbb0d6e02f83bcabf9770fa651019" title=" " alt="" coords="243,789,390,830"/>
-<area shape="rect" href="group__makeboundcallback.html#ga1725d6362e6065faa0709f7c93f8d770" title=" " alt="" coords="224,1095,409,1121"/>
-<area shape="rect" href="classns3_1_1_wifi_phy_helper.html#ac5da2b1210868b0ae050e3adc54a9d2f" title=" " alt="" coords="243,723,390,765"/>
-<area shape="rect" href="classns3_1_1_wifi_phy_helper.html#a24e075fa55e473c81f76a4178c0fcb25" title=" " alt="" coords="243,658,390,699"/>
-<area shape="rect" href="classns3_1_1_names.html#ab9664faf23569aaae64a2d1f65265045" title="Given a pointer to an object, look to see if that object has a name associated with it and,..." alt="" coords="480,191,652,217"/>
-<area shape="rect" href="classns3_1_1_node.html#a2ed8663077afcb8db519296b0ada6355" title=" " alt="" coords="501,140,631,167"/>
-<area shape="rect" href="classns3_1_1_names_priv.html#a7fbc3ac7b8924c08d86ddc79d96385fa" title="Internal implementation for Names::FindName()" alt="" coords="723,5,921,32"/>
-<area shape="rect" href="classns3_1_1_singleton.html#a80a2cd3c25a27ea72add7a9f7a141ffa" title="Get a pointer to the singleton instance." alt="" coords="1247,74,1447,115"/>
-<area shape="rect" href="group__ptr.html#ga0406dd2d929ceac05ce39d4579fa3e4b" title=" " alt="" coords="518,1335,614,1361"/>
-<area shape="rect" href="classns3_1_1_packet.html#a465108c595a0bc592095cbcab1832ed8" title="Add header to this packet." alt="" coords="478,376,654,403"/>
-<area shape="rect" href="classns3_1_1_packet.html#afb38be706cfc761bc1c0591f595fc1b7" title="performs a COW copy of the packet." alt="" coords="497,680,635,707"/>
-<area shape="rect" href="classns3_1_1_wifi_phy_helper.html#af1baefd0a50daeff72c8075f2eef7eda" title="Get the radiotap header." alt="" coords="487,1138,645,1179"/>
-<area shape="rect" href="classns3_1_1_simulator.html#ac3178fa975b419f7875e7105be122800" title="Return the current simulation virtual time." alt="" coords="745,629,899,656"/>
-<area shape="rect" href="classns3_1_1_radiotap_header.html#ab9536b3c7395d020899601690ff2cb26" title="Set the RF noise power at the antenna as a decibel difference from an arbitrary, fixed reference." alt="" coords="475,1269,657,1310"/>
-<area shape="rect" href="classns3_1_1_radiotap_header.html#a57c25791d9c71357a48ed130dce24066" title="Set the RF signal power at the antenna as a decibel difference from an arbitrary, fixed reference." alt="" coords="473,1203,659,1245"/>
-<area shape="rect" href="classns3_1_1_byte_tag_list.html#acb4563fbe4299c55af41ba7a166b71d5" title="Make sure that all offsets are bigger than prependOffset which represents the location where new byte..." alt="" coords="719,157,925,184"/>
-<area shape="rect" href="classns3_1_1_buffer.html#a8abd8164c3671d3dadc98fc66fade7b1" title=" " alt="" coords="737,208,907,235"/>
-<area shape="rect" href="classns3_1_1_packet_metadata.html#abdce736c4c5f647242f0808c0d2f9249" title="Add an header." alt="" coords="743,310,901,351"/>
-<area shape="rect" href="classns3_1_1_object_base.html#abe5b43a6f5b99a92a4c3122db31f06fb" title="Get the most derived TypeId for this Object." alt="" coords="985,310,1199,351"/>
-<area shape="rect" href="classns3_1_1_byte_tag_list.html#a1fec06d7e6daaf8039cf2a148e4090f2" title="Adjust the offsets stored internally by the adjustment delta." alt="" coords="1003,579,1181,605"/>
-<area shape="rect" href="classns3_1_1_buffer.html#acb977a0179de9abe4e295ce22023b4ca" title=" " alt="" coords="1023,503,1161,529"/>
-<area shape="rect" href="classns3_1_1_type_id.html#abc4965475a579c2afdc668d7a7d58374" title="Get the name." alt="" coords="1009,107,1175,133"/>
-<area shape="rect" href="classns3_1_1_header.html#a6ef0497eabc1b1fb0ad42738eb73f934" title=" " alt="" coords="711,376,933,403"/>
-<area shape="rect" href="classns3_1_1_header.html#afb61f1aac69ff8349a6bfe521fab5404" title=" " alt="" coords="740,427,904,453"/>
-<area shape="rect" href="classns3_1_1_packet.html#acdb23fec2c1dbebd9e6917895e9bcc65" title="Create a new packet which contains a fragment of the original packet." alt="" coords="717,1204,927,1231"/>
-<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#ac56a35b49d9d77e09357adc171570d51" title=" " alt="" coords="749,1386,895,1427"/>
-<area shape="rect" href="classns3_1_1_wifi_mode.html#ad90f36e733ceaf8c5771cfbda437e14f" title=" " alt="" coords="719,1452,925,1479"/>
-<area shape="rect" href="classns3_1_1_ampdu_subframe_header.html#ac903518a999682b5d4da011d7b03b445" title="Return the EOF field." alt="" coords="717,1503,927,1545"/>
-<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#aeffd754ff39a3df905eb6a9be3567010" title=" " alt="" coords="749,1569,895,1610"/>
-<area shape="rect" href="classns3_1_1_ampdu_subframe_header.html#acb131533076842db8959fc5c7408673e" title="Return the length field." alt="" coords="717,1634,927,1675"/>
-<area shape="rect" href="classns3_1_1_wifi_mode.html#a4ba00941b5dbc4903ffecc1a0c841c6c" title=" " alt="" coords="717,1700,927,1727"/>
-<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#aadd3ccf9d68dd8f06d4cfedc352498fb" title=" " alt="" coords="749,1751,895,1793"/>
-<area shape="rect" href="classns3_1_1_wifi_mode.html#a67e1664cac501221b63a2be307184cc9" title=" " alt="" coords="713,1817,931,1858"/>
-<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#a5e6931e51698a7fc6137d7e55fb66213" title=" " alt="" coords="749,1882,895,1923"/>
-<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#ae3180e05aa71a628cab66eae3667d31b" title=" " alt="" coords="749,1947,895,1989"/>
-<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#a7125591f923091b79fe4a607dfad22e4" title=" " alt="" coords="749,2013,895,2054"/>
-<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#aae65c13f3633fbf99f95084a49d4b39e" title="Checks whether the PSDU contains A&#45;MPDU." alt="" coords="749,681,895,722"/>
-<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#ae7531bb5085a2e63d0be0222ff52e7c1" title="Check if STBC is used or not." alt="" coords="749,746,895,787"/>
-<area shape="rect" href="classns3_1_1_packet.html#a0961eccf975d75f902d40956c93ba63e" title="Deserialize and remove the header from the internal buffer." alt="" coords="719,477,925,504"/>
-<area shape="rect" href="classns3_1_1_radiotap_header.html#a8fae7a24dbeba412fdb9b7fc79f74f41" title="Set the A&#45;MPDU status fields." alt="" coords="743,811,901,853"/>
-<area shape="rect" href="classns3_1_1_radiotap_header.html#a429f94fc9a90307134b62cd1d6ed58b9" title="Set the transmit/receive channel frequency and flags." alt="" coords="707,877,937,918"/>
-<area shape="rect" href="classns3_1_1_radiotap_header.html#af8c523ad1498c9105da3f88a0897d9b0" title="Set the frame flags of the transmitted or received frame." alt="" coords="743,942,901,983"/>
-<area shape="rect" href="classns3_1_1_radiotap_header.html#a164c71e45efbc5ae60566d26d42c80a4" title="Set the HE fields." alt="" coords="743,1007,901,1049"/>
-<area shape="rect" href="classns3_1_1_radiotap_header.html#a23f8dd27246529ba4c3d1fefa09a95f7" title="Set the MCS fields." alt="" coords="743,1073,901,1114"/>
-<area shape="rect" href="classns3_1_1_radiotap_header.html#a51ebd0157939e926630a940dcc4431aa" title="Set the transmit/receive channel frequency in units of megahertz." alt="" coords="743,1138,901,1179"/>
-<area shape="rect" href="classns3_1_1_radiotap_header.html#a63ddcf8e8113dc90d072c194612436f8" title="Set the Time Synchronization Function Timer (TSFT) value." alt="" coords="743,1255,901,1297"/>
-<area shape="rect" href="classns3_1_1_radiotap_header.html#a548ef08ad90c0b7c2e20a149d4e8942c" title="Set the VHT fields." alt="" coords="743,1321,901,1362"/>
+<area shape="rect" title="Enable pcap output the indicated net device." alt="" coords="5,1274,160,1315"/>
+<area shape="rect" href="classns3_1_1_pcap_helper.html#a216e4a2ee6d533fd71aacab300c1d786" title="Create and initialize a pcap file." alt="" coords="217,677,417,704"/>
+<area shape="rect" href="classns3_1_1_pcap_helper.html#a0da71e0938f0074cf08b4167d2e36702" title="Let the pcap helper figure out a reasonable filename to use for a pcap file associated with a device." alt="" coords="208,728,425,770"/>
+<area shape="rect" href="classns3_1_1_wifi_net_device.html#a83bdbb0d6e02f83bcabf9770fa651019" title=" " alt="" coords="243,1371,390,1412"/>
+<area shape="rect" href="group__makeboundcallback.html#ga1725d6362e6065faa0709f7c93f8d770" title=" " alt="" coords="224,1488,409,1514"/>
+<area shape="rect" href="classns3_1_1_wifi_phy_helper.html#ac5da2b1210868b0ae050e3adc54a9d2f" title=" " alt="" coords="243,1306,390,1347"/>
+<area shape="rect" href="classns3_1_1_wifi_phy_helper.html#a24e075fa55e473c81f76a4178c0fcb25" title=" " alt="" coords="243,1240,390,1282"/>
+<area shape="rect" href="classns3_1_1_names.html#ab9664faf23569aaae64a2d1f65265045" title="Given a pointer to an object, look to see if that object has a name associated with it and,..." alt="" coords="480,184,652,210"/>
+<area shape="rect" href="classns3_1_1_node.html#a2ed8663077afcb8db519296b0ada6355" title=" " alt="" coords="501,133,631,160"/>
+<area shape="rect" href="classns3_1_1_names_priv.html#a7fbc3ac7b8924c08d86ddc79d96385fa" title="Internal implementation for Names::FindName()" alt="" coords="723,49,921,76"/>
+<area shape="rect" href="classns3_1_1_singleton.html#a80a2cd3c25a27ea72add7a9f7a141ffa" title="Get a pointer to the singleton instance." alt="" coords="1247,227,1447,268"/>
+<area shape="rect" href="group__ptr.html#ga0406dd2d929ceac05ce39d4579fa3e4b" title=" " alt="" coords="518,1540,614,1566"/>
+<area shape="rect" href="classns3_1_1_packet.html#a465108c595a0bc592095cbcab1832ed8" title="Add header to this packet." alt="" coords="478,369,654,396"/>
+<area shape="rect" href="classns3_1_1_wifi_phy_helper.html#af1baefd0a50daeff72c8075f2eef7eda" title="Get the Radiotap header." alt="" coords="487,1240,645,1282"/>
+<area shape="rect" href="classns3_1_1_simulator.html#ac3178fa975b419f7875e7105be122800" title="Return the current simulation virtual time." alt="" coords="745,2020,899,2046"/>
+<area shape="rect" href="classns3_1_1_radiotap_header.html#ab9536b3c7395d020899601690ff2cb26" title="Set the RF noise power at the antenna as a decibel difference from an arbitrary, fixed reference." alt="" coords="475,1408,657,1450"/>
+<area shape="rect" href="classns3_1_1_radiotap_header.html#a57c25791d9c71357a48ed130dce24066" title="Set the RF signal power at the antenna as a decibel difference from an arbitrary, fixed reference." alt="" coords="473,1474,659,1515"/>
+<area shape="rect" href="classns3_1_1_byte_tag_list.html#acb4563fbe4299c55af41ba7a166b71d5" title="Make sure that all offsets are bigger than prependOffset which represents the location where new byte..." alt="" coords="719,369,925,396"/>
+<area shape="rect" href="classns3_1_1_buffer.html#a8abd8164c3671d3dadc98fc66fade7b1" title=" " alt="" coords="737,420,907,446"/>
+<area shape="rect" href="classns3_1_1_packet_metadata.html#abdce736c4c5f647242f0808c0d2f9249" title="Add an header." alt="" coords="743,100,901,142"/>
+<area shape="rect" href="classns3_1_1_object_base.html#abe5b43a6f5b99a92a4c3122db31f06fb" title="Get the most derived TypeId for this Object." alt="" coords="985,159,1199,200"/>
+<area shape="rect" href="classns3_1_1_byte_tag_list.html#a1fec06d7e6daaf8039cf2a148e4090f2" title="Adjust the offsets stored internally by the adjustment delta." alt="" coords="1003,572,1181,598"/>
+<area shape="rect" href="classns3_1_1_buffer.html#acb977a0179de9abe4e295ce22023b4ca" title=" " alt="" coords="1023,322,1161,349"/>
+<area shape="rect" href="classns3_1_1_type_id.html#abc4965475a579c2afdc668d7a7d58374" title="Get the name." alt="" coords="1009,470,1175,497"/>
+<area shape="rect" href="classns3_1_1_header.html#a6ef0497eabc1b1fb0ad42738eb73f934" title=" " alt="" coords="711,268,933,294"/>
+<area shape="rect" href="classns3_1_1_header.html#afb61f1aac69ff8349a6bfe521fab5404" title=" " alt="" coords="740,318,904,345"/>
+<area shape="rect" href="classns3_1_1_packet.html#acdb23fec2c1dbebd9e6917895e9bcc65" title="Create a new packet which contains a fragment of the original packet." alt="" coords="717,1277,927,1304"/>
+<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#ac56a35b49d9d77e09357adc171570d51" title=" " alt="" coords="749,1211,895,1252"/>
+<area shape="rect" href="classns3_1_1_wifi_mode.html#ad90f36e733ceaf8c5771cfbda437e14f" title=" " alt="" coords="719,1328,925,1354"/>
+<area shape="rect" href="classns3_1_1_ampdu_subframe_header.html#ac903518a999682b5d4da011d7b03b445" title="Return the EOF field." alt="" coords="717,1379,927,1420"/>
+<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#aeffd754ff39a3df905eb6a9be3567010" title=" " alt="" coords="749,1444,895,1486"/>
+<area shape="rect" href="classns3_1_1_ampdu_subframe_header.html#acb131533076842db8959fc5c7408673e" title="Return the length field." alt="" coords="717,1510,927,1551"/>
+<area shape="rect" href="classns3_1_1_wifi_mode.html#a4ba00941b5dbc4903ffecc1a0c841c6c" title=" " alt="" coords="717,1576,927,1602"/>
+<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#aadd3ccf9d68dd8f06d4cfedc352498fb" title=" " alt="" coords="749,1627,895,1668"/>
+<area shape="rect" href="classns3_1_1_wifi_mode.html#a67e1664cac501221b63a2be307184cc9" title=" " alt="" coords="713,1692,931,1734"/>
+<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#a5e6931e51698a7fc6137d7e55fb66213" title=" " alt="" coords="749,1758,895,1799"/>
+<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#ae3180e05aa71a628cab66eae3667d31b" title=" " alt="" coords="749,1823,895,1864"/>
+<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#a7125591f923091b79fe4a607dfad22e4" title=" " alt="" coords="749,1888,895,1930"/>
+<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#aae65c13f3633fbf99f95084a49d4b39e" title="Checks whether the PSDU contains A&#45;MPDU." alt="" coords="749,1954,895,1995"/>
+<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#ae7531bb5085a2e63d0be0222ff52e7c1" title="Check if STBC is used or not." alt="" coords="749,623,895,664"/>
+<area shape="rect" href="classns3_1_1_packet.html#a0961eccf975d75f902d40956c93ba63e" title="Deserialize and remove the header from the internal buffer." alt="" coords="719,521,925,548"/>
+<area shape="rect" href="classns3_1_1_radiotap_header.html#a8fae7a24dbeba412fdb9b7fc79f74f41" title="Set the A&#45;MPDU status fields." alt="" coords="743,688,901,730"/>
+<area shape="rect" href="classns3_1_1_radiotap_header.html#a429f94fc9a90307134b62cd1d6ed58b9" title="Set the transmit/receive channel frequency and flags." alt="" coords="707,754,937,795"/>
+<area shape="rect" href="classns3_1_1_radiotap_header.html#af8c523ad1498c9105da3f88a0897d9b0" title="Set the frame flags of the transmitted or received frame." alt="" coords="743,819,901,860"/>
+<area shape="rect" href="classns3_1_1_radiotap_header.html#a164c71e45efbc5ae60566d26d42c80a4" title="Set the HE fields." alt="" coords="743,884,901,926"/>
+<area shape="rect" href="classns3_1_1_radiotap_header.html#a23f8dd27246529ba4c3d1fefa09a95f7" title="Set the MCS fields." alt="" coords="743,950,901,991"/>
+<area shape="rect" href="classns3_1_1_radiotap_header.html#a51ebd0157939e926630a940dcc4431aa" title="Set the transmit/receive channel frequency in units of megahertz." alt="" coords="743,1015,901,1056"/>
+<area shape="rect" href="classns3_1_1_radiotap_header.html#a63ddcf8e8113dc90d072c194612436f8" title="Set the Time Synchronization Function Timer (TSFT) value." alt="" coords="743,1080,901,1122"/>
+<area shape="rect" href="classns3_1_1_radiotap_header.html#a548ef08ad90c0b7c2e20a149d4e8942c" title="Set the VHT fields." alt="" coords="743,1146,901,1187"/>
+<area shape="rect" href="group__simulator.html#ga42eb4eddad41528d4d99794a3dae3fd0" title="Get the SimulatorImpl singleton." alt="" coords="1039,2020,1145,2046"/>
 </map>
 </div>
 
@@ -952,7 +949,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the radiotap header. </p>
+<p>Get the Radiotap header. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">packet</td><td>the packet </td></tr>
@@ -962,11 +959,11 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the radiotap header </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the Radiotap header </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="wifi-helper_8cc_source.html#l00291">291</a> of file <a class="el" href="wifi-helper_8cc_source.html">wifi-helper.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="radiotap-header_8h_source.html#l00224">ns3::RadiotapHeader::A_MPDU_STATUS_LAST</a>, <a class="el" href="radiotap-header_8h_source.html#l00223">ns3::RadiotapHeader::A_MPDU_STATUS_LAST_KNOWN</a>, <a class="el" href="radiotap-header_8h_source.html#l00220">ns3::RadiotapHeader::A_MPDU_STATUS_NONE</a>, <a class="el" href="radiotap-header_8h_source.html#l00139">ns3::RadiotapHeader::CHANNEL_FLAG_CCK</a>, <a class="el" href="radiotap-header_8h_source.html#l00140">ns3::RadiotapHeader::CHANNEL_FLAG_OFDM</a>, <a class="el" href="radiotap-header_8h_source.html#l00141">ns3::RadiotapHeader::CHANNEL_FLAG_SPECTRUM_2GHZ</a>, <a class="el" href="radiotap-header_8h_source.html#l00142">ns3::RadiotapHeader::CHANNEL_FLAG_SPECTRUM_5GHZ</a>, <a class="el" href="packet_8cc_source.html#l00227">ns3::Packet::CreateFragment()</a>, <a class="el" href="radiotap-header_8h_source.html#l00114">ns3::RadiotapHeader::FRAME_FLAG_FCS_INCLUDED</a>, <a class="el" href="radiotap-header_8h_source.html#l00109">ns3::RadiotapHeader::FRAME_FLAG_NONE</a>, <a class="el" href="radiotap-header_8h_source.html#l00117">ns3::RadiotapHeader::FRAME_FLAG_SHORT_GUARD</a>, <a class="el" href="radiotap-header_8h_source.html#l00111">ns3::RadiotapHeader::FRAME_FLAG_SHORT_PREAMBLE</a>, <a class="el" href="wifi-tx-vector_8cc_source.html#l00095">ns3::WifiTxVector::GetChannelWidth()</a>, <a class="el" href="wifi-mode_8cc_source.html#l00119">ns3::WifiMode::GetDataRate()</a>, <a class="el" href="ampdu-subframe-header_8cc_source.html#l00108">ns3::AmpduSubframeHeader::GetEof()</a>, <a class="el" href="wifi-tx-vector_8cc_source.html#l00101">ns3::WifiTxVector::GetGuardInterval()</a>, <a class="el" href="ampdu-subframe-header_8cc_source.html#l00102">ns3::AmpduSubframeHeader::GetLength()</a>, <a class="el" href="wifi-mode_8cc_source.html#l00441">ns3::WifiMode::GetMcsValue()</a>, <a class="el" href="wifi-tx-vector_8cc_source.html#l00073">ns3::WifiTxVector::GetMode()</a>, <a class="el" href="wifi-mode_8cc_source.html#l00463">ns3::WifiMode::GetModulationClass()</a>, <a class="el" href="wifi-tx-vector_8cc_source.html#l00119">ns3::WifiTxVector::GetNess()</a>, <a class="el" href="wifi-tx-vector_8cc_source.html#l00113">ns3::WifiTxVector::GetNss()</a>, <a class="el" href="wifi-tx-vector_8cc_source.html#l00089">ns3::WifiTxVector::GetPreambleType()</a>, <a class="el" href="radiotap-header_8h_source.html#l00296">ns3::RadiotapHeader::HE_DATA1_DATA_MCS_KNOWN</a>, <a class="el" href="radiotap-header_8h_source.html#l00290">ns3::RadiotapHeader::HE_DATA1_FORMAT_EXT_SU</a>, <a class="el" href="radiotap-header_8h_source.html#l00291">ns3::RadiotapHeader::HE_DATA1_FORMAT_MU</a>, <a class="el" href="radiotap-header_8h_source.html#l00292">ns3::RadiotapHeader::HE_DATA1_FORMAT_TRIG</a>, <a class="el" href="radiotap-header_8h_source.html#l00300">ns3::RadiotapHeader::HE_DATA1_STBC_KNOWN</a>, <a class="el" href="radiotap-header_8h_source.html#l00315">ns3::RadiotapHeader::HE_DATA2_GI_KNOWN</a>, <a class="el" href="radiotap-header_8h_source.html#l00316">ns3::RadiotapHeader::HE_DATA2_NUM_LTF_SYMS_KNOWN</a>, <a class="el" href="radiotap-header_8h_source.html#l00339">ns3::RadiotapHeader::HE_DATA3_STBC</a>, <a class="el" href="radiotap-header_8h_source.html#l00349">ns3::RadiotapHeader::HE_DATA5_DATA_BW_RU_ALLOC_160MHZ</a>, <a class="el" href="radiotap-header_8h_source.html#l00347">ns3::RadiotapHeader::HE_DATA5_DATA_BW_RU_ALLOC_40MHZ</a>, <a class="el" href="radiotap-header_8h_source.html#l00348">ns3::RadiotapHeader::HE_DATA5_DATA_BW_RU_ALLOC_80MHZ</a>, <a class="el" href="radiotap-header_8h_source.html#l00357">ns3::RadiotapHeader::HE_DATA5_GI_1_6</a>, <a class="el" href="radiotap-header_8h_source.html#l00358">ns3::RadiotapHeader::HE_DATA5_GI_3_2</a>, <a class="el" href="wifi-tx-vector_8cc_source.html#l00125">ns3::WifiTxVector::IsAggregation()</a>, <a class="el" href="wifi-tx-vector_8cc_source.html#l00131">ns3::WifiTxVector::IsStbc()</a>, <a class="el" href="wifi-mpdu-type_8h_source.html#l00041">ns3::LAST_MPDU_IN_AGGREGATE</a>, <a class="el" href="radiotap-header_8h_source.html#l00196">ns3::RadiotapHeader::MCS_FLAGS_BANDWIDTH_40</a>, <a class="el" href="radiotap-header_8h_source.html#l00199">ns3::RadiotapHeader::MCS_FLAGS_GUARD_INTERVAL</a>, <a class="el" href="radiotap-header_8h_source.html#l00200">ns3::RadiotapHeader::MCS_FLAGS_HT_GREENFIELD</a>, <a class="el" href="radiotap-header_8h_source.html#l00203">ns3::RadiotapHeader::MCS_FLAGS_NESS_BIT_0</a>, <a class="el" href="radiotap-header_8h_source.html#l00195">ns3::RadiotapHeader::MCS_FLAGS_NONE</a>, <a class="el" href="radiotap-header_8h_source.html#l00202">ns3::RadiotapHeader::MCS_FLAGS_STBC_STREAMS</a>, <a class="el" href="radiotap-header_8h_source.html#l00180">ns3::RadiotapHeader::MCS_KNOWN_BANDWIDTH</a>, <a class="el" href="radiotap-header_8h_source.html#l00184">ns3::RadiotapHeader::MCS_KNOWN_FEC_TYPE</a>, <a class="el" href="radiotap-header_8h_source.html#l00182">ns3::RadiotapHeader::MCS_KNOWN_GUARD_INTERVAL</a>, <a class="el" href="radiotap-header_8h_source.html#l00183">ns3::RadiotapHeader::MCS_KNOWN_HT_FORMAT</a>, <a class="el" href="radiotap-header_8h_source.html#l00181">ns3::RadiotapHeader::MCS_KNOWN_INDEX</a>, <a class="el" href="radiotap-header_8h_source.html#l00186">ns3::RadiotapHeader::MCS_KNOWN_NESS</a>, <a class="el" href="radiotap-header_8h_source.html#l00187">ns3::RadiotapHeader::MCS_KNOWN_NESS_BIT_1</a>, <a class="el" href="radiotap-header_8h_source.html#l00179">ns3::RadiotapHeader::MCS_KNOWN_NONE</a>, <a class="el" href="radiotap-header_8h_source.html#l00185">ns3::RadiotapHeader::MCS_KNOWN_STBC</a>, <a class="el" href="wifi-phy_8h_source.html#l00079">ns3::MpduInfo::mpduRefNumber</a>, <a class="el" href="simulator_8cc_source.html#l00193">ns3::Simulator::Now()</a>, <a class="el" href="lora-mac-test_8cc_source.html#l00021">packet</a>, <a class="el" href="packet_8cc_source.html#l00280">ns3::Packet::RemoveHeader()</a>, <a class="el" href="radiotap-header_8cc_source.html#l00676">ns3::RadiotapHeader::SetAmpduStatus()</a>, <a class="el" href="radiotap-header_8cc_source.html#l00591">ns3::RadiotapHeader::SetChannelFrequencyAndFlags()</a>, <a class="el" href="radiotap-header_8cc_source.html#l00561">ns3::RadiotapHeader::SetFrameFlags()</a>, <a class="el" href="radiotap-header_8cc_source.html#l00717">ns3::RadiotapHeader::SetHeFields()</a>, <a class="el" href="radiotap-header_8cc_source.html#l00660">ns3::RadiotapHeader::SetMcsFields()</a>, <a class="el" href="radiotap-header_8cc_source.html#l00576">ns3::RadiotapHeader::SetRate()</a>, <a class="el" href="radiotap-header_8cc_source.html#l00546">ns3::RadiotapHeader::SetTsft()</a>, <a class="el" href="radiotap-header_8cc_source.html#l00693">ns3::RadiotapHeader::SetVhtFields()</a>, <a class="el" href="wifi-phy_8h_source.html#l00078">ns3::MpduInfo::type</a>, <a class="el" href="radiotap-header_8h_source.html#l00263">ns3::RadiotapHeader::VHT_FLAGS_GUARD_INTERVAL</a>, <a class="el" href="radiotap-header_8h_source.html#l00260">ns3::RadiotapHeader::VHT_FLAGS_NONE</a>, <a class="el" href="radiotap-header_8h_source.html#l00261">ns3::RadiotapHeader::VHT_FLAGS_STBC</a>, <a class="el" href="radiotap-header_8h_source.html#l00250">ns3::RadiotapHeader::VHT_KNOWN_BANDWIDTH</a>, <a class="el" href="radiotap-header_8h_source.html#l00249">ns3::RadiotapHeader::VHT_KNOWN_BEAMFORMED</a>, <a class="el" href="radiotap-header_8h_source.html#l00246">ns3::RadiotapHeader::VHT_KNOWN_GUARD_INTERVAL</a>, <a class="el" href="radiotap-header_8h_source.html#l00243">ns3::RadiotapHeader::VHT_KNOWN_NONE</a>, <a class="el" href="radiotap-header_8h_source.html#l00244">ns3::RadiotapHeader::VHT_KNOWN_STBC</a>, <a class="el" href="wifi-mode_8h_source.html#l00062">ns3::WIFI_MOD_CLASS_HE</a>, <a class="el" href="wifi-mode_8h_source.html#l00058">ns3::WIFI_MOD_CLASS_HT</a>, <a class="el" href="wifi-mode_8h_source.html#l00060">ns3::WIFI_MOD_CLASS_VHT</a>, <a class="el" href="wifi-preamble_8h_source.html#l00041">ns3::WIFI_PREAMBLE_HE_ER_SU</a>, <a class="el" href="wifi-preamble_8h_source.html#l00042">ns3::WIFI_PREAMBLE_HE_MU</a>, <a class="el" href="wifi-preamble_8h_source.html#l00043">ns3::WIFI_PREAMBLE_HE_TB</a>, <a class="el" href="wifi-preamble_8h_source.html#l00037">ns3::WIFI_PREAMBLE_HT_GF</a>, and <a class="el" href="wifi-preamble_8h_source.html#l00035">ns3::WIFI_PREAMBLE_SHORT</a>.</p>
+<p class="reference">References <a class="el" href="radiotap-header_8h_source.html#l00224">ns3::RadiotapHeader::A_MPDU_STATUS_LAST</a>, <a class="el" href="radiotap-header_8h_source.html#l00223">ns3::RadiotapHeader::A_MPDU_STATUS_LAST_KNOWN</a>, <a class="el" href="radiotap-header_8h_source.html#l00220">ns3::RadiotapHeader::A_MPDU_STATUS_NONE</a>, <a class="el" href="radiotap-header_8h_source.html#l00139">ns3::RadiotapHeader::CHANNEL_FLAG_CCK</a>, <a class="el" href="radiotap-header_8h_source.html#l00140">ns3::RadiotapHeader::CHANNEL_FLAG_OFDM</a>, <a class="el" href="radiotap-header_8h_source.html#l00141">ns3::RadiotapHeader::CHANNEL_FLAG_SPECTRUM_2GHZ</a>, <a class="el" href="radiotap-header_8h_source.html#l00142">ns3::RadiotapHeader::CHANNEL_FLAG_SPECTRUM_5GHZ</a>, <a class="el" href="packet_8cc_source.html#l00227">ns3::Packet::CreateFragment()</a>, <a class="el" href="radiotap-header_8h_source.html#l00114">ns3::RadiotapHeader::FRAME_FLAG_FCS_INCLUDED</a>, <a class="el" href="radiotap-header_8h_source.html#l00109">ns3::RadiotapHeader::FRAME_FLAG_NONE</a>, <a class="el" href="radiotap-header_8h_source.html#l00117">ns3::RadiotapHeader::FRAME_FLAG_SHORT_GUARD</a>, <a class="el" href="radiotap-header_8h_source.html#l00111">ns3::RadiotapHeader::FRAME_FLAG_SHORT_PREAMBLE</a>, <a class="el" href="wifi-tx-vector_8cc_source.html#l00095">ns3::WifiTxVector::GetChannelWidth()</a>, <a class="el" href="wifi-mode_8cc_source.html#l00119">ns3::WifiMode::GetDataRate()</a>, <a class="el" href="ampdu-subframe-header_8cc_source.html#l00108">ns3::AmpduSubframeHeader::GetEof()</a>, <a class="el" href="wifi-tx-vector_8cc_source.html#l00101">ns3::WifiTxVector::GetGuardInterval()</a>, <a class="el" href="ampdu-subframe-header_8cc_source.html#l00102">ns3::AmpduSubframeHeader::GetLength()</a>, <a class="el" href="wifi-mode_8cc_source.html#l00441">ns3::WifiMode::GetMcsValue()</a>, <a class="el" href="wifi-tx-vector_8cc_source.html#l00073">ns3::WifiTxVector::GetMode()</a>, <a class="el" href="wifi-mode_8cc_source.html#l00463">ns3::WifiMode::GetModulationClass()</a>, <a class="el" href="wifi-tx-vector_8cc_source.html#l00119">ns3::WifiTxVector::GetNess()</a>, <a class="el" href="wifi-tx-vector_8cc_source.html#l00113">ns3::WifiTxVector::GetNss()</a>, <a class="el" href="wifi-tx-vector_8cc_source.html#l00089">ns3::WifiTxVector::GetPreambleType()</a>, <a class="el" href="radiotap-header_8h_source.html#l00296">ns3::RadiotapHeader::HE_DATA1_DATA_MCS_KNOWN</a>, <a class="el" href="radiotap-header_8h_source.html#l00290">ns3::RadiotapHeader::HE_DATA1_FORMAT_EXT_SU</a>, <a class="el" href="radiotap-header_8h_source.html#l00291">ns3::RadiotapHeader::HE_DATA1_FORMAT_MU</a>, <a class="el" href="radiotap-header_8h_source.html#l00292">ns3::RadiotapHeader::HE_DATA1_FORMAT_TRIG</a>, <a class="el" href="radiotap-header_8h_source.html#l00300">ns3::RadiotapHeader::HE_DATA1_STBC_KNOWN</a>, <a class="el" href="radiotap-header_8h_source.html#l00315">ns3::RadiotapHeader::HE_DATA2_GI_KNOWN</a>, <a class="el" href="radiotap-header_8h_source.html#l00316">ns3::RadiotapHeader::HE_DATA2_NUM_LTF_SYMS_KNOWN</a>, <a class="el" href="radiotap-header_8h_source.html#l00339">ns3::RadiotapHeader::HE_DATA3_STBC</a>, <a class="el" href="radiotap-header_8h_source.html#l00349">ns3::RadiotapHeader::HE_DATA5_DATA_BW_RU_ALLOC_160MHZ</a>, <a class="el" href="radiotap-header_8h_source.html#l00347">ns3::RadiotapHeader::HE_DATA5_DATA_BW_RU_ALLOC_40MHZ</a>, <a class="el" href="radiotap-header_8h_source.html#l00348">ns3::RadiotapHeader::HE_DATA5_DATA_BW_RU_ALLOC_80MHZ</a>, <a class="el" href="radiotap-header_8h_source.html#l00357">ns3::RadiotapHeader::HE_DATA5_GI_1_6</a>, <a class="el" href="radiotap-header_8h_source.html#l00358">ns3::RadiotapHeader::HE_DATA5_GI_3_2</a>, <a class="el" href="wifi-tx-vector_8cc_source.html#l00125">ns3::WifiTxVector::IsAggregation()</a>, <a class="el" href="wifi-tx-vector_8cc_source.html#l00131">ns3::WifiTxVector::IsStbc()</a>, <a class="el" href="wifi-mpdu-type_8h_source.html#l00041">ns3::LAST_MPDU_IN_AGGREGATE</a>, <a class="el" href="radiotap-header_8h_source.html#l00196">ns3::RadiotapHeader::MCS_FLAGS_BANDWIDTH_40</a>, <a class="el" href="radiotap-header_8h_source.html#l00199">ns3::RadiotapHeader::MCS_FLAGS_GUARD_INTERVAL</a>, <a class="el" href="radiotap-header_8h_source.html#l00200">ns3::RadiotapHeader::MCS_FLAGS_HT_GREENFIELD</a>, <a class="el" href="radiotap-header_8h_source.html#l00203">ns3::RadiotapHeader::MCS_FLAGS_NESS_BIT_0</a>, <a class="el" href="radiotap-header_8h_source.html#l00195">ns3::RadiotapHeader::MCS_FLAGS_NONE</a>, <a class="el" href="radiotap-header_8h_source.html#l00202">ns3::RadiotapHeader::MCS_FLAGS_STBC_STREAMS</a>, <a class="el" href="radiotap-header_8h_source.html#l00180">ns3::RadiotapHeader::MCS_KNOWN_BANDWIDTH</a>, <a class="el" href="radiotap-header_8h_source.html#l00184">ns3::RadiotapHeader::MCS_KNOWN_FEC_TYPE</a>, <a class="el" href="radiotap-header_8h_source.html#l00182">ns3::RadiotapHeader::MCS_KNOWN_GUARD_INTERVAL</a>, <a class="el" href="radiotap-header_8h_source.html#l00183">ns3::RadiotapHeader::MCS_KNOWN_HT_FORMAT</a>, <a class="el" href="radiotap-header_8h_source.html#l00181">ns3::RadiotapHeader::MCS_KNOWN_INDEX</a>, <a class="el" href="radiotap-header_8h_source.html#l00186">ns3::RadiotapHeader::MCS_KNOWN_NESS</a>, <a class="el" href="radiotap-header_8h_source.html#l00187">ns3::RadiotapHeader::MCS_KNOWN_NESS_BIT_1</a>, <a class="el" href="radiotap-header_8h_source.html#l00179">ns3::RadiotapHeader::MCS_KNOWN_NONE</a>, <a class="el" href="radiotap-header_8h_source.html#l00185">ns3::RadiotapHeader::MCS_KNOWN_STBC</a>, <a class="el" href="wifi-phy_8h_source.html#l00127">ns3::MpduInfo::mpduRefNumber</a>, <a class="el" href="simulator_8cc_source.html#l00195">ns3::Simulator::Now()</a>, <a class="el" href="packet_8cc_source.html#l00280">ns3::Packet::RemoveHeader()</a>, <a class="el" href="radiotap-header_8cc_source.html#l00676">ns3::RadiotapHeader::SetAmpduStatus()</a>, <a class="el" href="radiotap-header_8cc_source.html#l00591">ns3::RadiotapHeader::SetChannelFrequencyAndFlags()</a>, <a class="el" href="radiotap-header_8cc_source.html#l00561">ns3::RadiotapHeader::SetFrameFlags()</a>, <a class="el" href="radiotap-header_8cc_source.html#l00717">ns3::RadiotapHeader::SetHeFields()</a>, <a class="el" href="radiotap-header_8cc_source.html#l00660">ns3::RadiotapHeader::SetMcsFields()</a>, <a class="el" href="radiotap-header_8cc_source.html#l00576">ns3::RadiotapHeader::SetRate()</a>, <a class="el" href="radiotap-header_8cc_source.html#l00546">ns3::RadiotapHeader::SetTsft()</a>, <a class="el" href="radiotap-header_8cc_source.html#l00693">ns3::RadiotapHeader::SetVhtFields()</a>, <a class="el" href="wifi-phy_8h_source.html#l00126">ns3::MpduInfo::type</a>, <a class="el" href="radiotap-header_8h_source.html#l00263">ns3::RadiotapHeader::VHT_FLAGS_GUARD_INTERVAL</a>, <a class="el" href="radiotap-header_8h_source.html#l00260">ns3::RadiotapHeader::VHT_FLAGS_NONE</a>, <a class="el" href="radiotap-header_8h_source.html#l00261">ns3::RadiotapHeader::VHT_FLAGS_STBC</a>, <a class="el" href="radiotap-header_8h_source.html#l00250">ns3::RadiotapHeader::VHT_KNOWN_BANDWIDTH</a>, <a class="el" href="radiotap-header_8h_source.html#l00249">ns3::RadiotapHeader::VHT_KNOWN_BEAMFORMED</a>, <a class="el" href="radiotap-header_8h_source.html#l00246">ns3::RadiotapHeader::VHT_KNOWN_GUARD_INTERVAL</a>, <a class="el" href="radiotap-header_8h_source.html#l00243">ns3::RadiotapHeader::VHT_KNOWN_NONE</a>, <a class="el" href="radiotap-header_8h_source.html#l00244">ns3::RadiotapHeader::VHT_KNOWN_STBC</a>, <a class="el" href="wifi-mode_8h_source.html#l00062">ns3::WIFI_MOD_CLASS_HE</a>, <a class="el" href="wifi-mode_8h_source.html#l00058">ns3::WIFI_MOD_CLASS_HT</a>, <a class="el" href="wifi-mode_8h_source.html#l00060">ns3::WIFI_MOD_CLASS_VHT</a>, <a class="el" href="wifi-preamble_8h_source.html#l00041">ns3::WIFI_PREAMBLE_HE_ER_SU</a>, <a class="el" href="wifi-preamble_8h_source.html#l00042">ns3::WIFI_PREAMBLE_HE_MU</a>, <a class="el" href="wifi-preamble_8h_source.html#l00043">ns3::WIFI_PREAMBLE_HE_TB</a>, <a class="el" href="wifi-preamble_8h_source.html#l00037">ns3::WIFI_PREAMBLE_HT_GF</a>, and <a class="el" href="wifi-preamble_8h_source.html#l00035">ns3::WIFI_PREAMBLE_SHORT</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="wifi-helper_8cc_source.html#l00256">PcapSniffRxEvent()</a>, and <a class="el" href="wifi-helper_8cc_source.html#l00224">PcapSniffTxEvent()</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -976,7 +973,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_wifi_phy_helper_af1baefd0a50daeff72c8075f2eef7eda_cgraph.png" border="0" usemap="#classns3_1_1_wifi_phy_helper_af1baefd0a50daeff72c8075f2eef7eda_cgraph" alt=""/></div>
 <map name="classns3_1_1_wifi_phy_helper_af1baefd0a50daeff72c8075f2eef7eda_cgraph" id="classns3_1_1_wifi_phy_helper_af1baefd0a50daeff72c8075f2eef7eda_cgraph">
-<area shape="rect" title="Get the radiotap header." alt="" coords="5,1328,164,1370"/>
+<area shape="rect" title="Get the Radiotap header." alt="" coords="5,1328,164,1370"/>
 <area shape="rect" href="classns3_1_1_packet.html#acdb23fec2c1dbebd9e6917895e9bcc65" title="Create a new packet which contains a fragment of the original packet." alt="" coords="223,242,432,269"/>
 <area shape="rect" href="classns3_1_1_wifi_tx_vector.html#ac56a35b49d9d77e09357adc171570d51" title=" " alt="" coords="255,750,400,791"/>
 <area shape="rect" href="classns3_1_1_wifi_mode.html#ad90f36e733ceaf8c5771cfbda437e14f" title=" " alt="" coords="224,866,431,893"/>
@@ -1035,7 +1032,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_wifi_phy_helper_af1baefd0a50daeff72c8075f2eef7eda_icgraph.png" border="0" usemap="#classns3_1_1_wifi_phy_helper_af1baefd0a50daeff72c8075f2eef7eda_icgraph" alt=""/></div>
 <map name="classns3_1_1_wifi_phy_helper_af1baefd0a50daeff72c8075f2eef7eda_icgraph" id="classns3_1_1_wifi_phy_helper_af1baefd0a50daeff72c8075f2eef7eda_icgraph">
-<area shape="rect" title="Get the radiotap header." alt="" coords="435,39,593,80"/>
+<area shape="rect" title="Get the Radiotap header." alt="" coords="435,39,593,80"/>
 <area shape="rect" href="classns3_1_1_wifi_phy_helper.html#ac5da2b1210868b0ae050e3adc54a9d2f" title=" " alt="" coords="240,5,387,47"/>
 <area shape="rect" href="classns3_1_1_wifi_phy_helper.html#a24e075fa55e473c81f76a4178c0fcb25" title=" " alt="" coords="240,71,387,112"/>
 <area shape="rect" href="classns3_1_1_yans_wave_phy_helper.html#a6bcc70f08dc2e44676089f334c4345b0" title="Enable pcap output the indicated net device." alt="" coords="5,5,192,47"/>
@@ -1109,15 +1106,15 @@ Private Attributes</h2></td></tr>
     <tr><td class="paramname">channelFreqMhz</td><td>the channel frequency </td></tr>
     <tr><td class="paramname">txVector</td><td>the TXVECTOR </td></tr>
     <tr><td class="paramname">aMpdu</td><td>the A-MPDU information </td></tr>
-    <tr><td class="paramname">signalNoise</td><td>the rx signal and noise information</td></tr>
+    <tr><td class="paramname">signalNoise</td><td>the RX signal and noise information</td></tr>
   </table>
   </dd>
 </dl>
-<p>Handle rx pcap. </p>
+<p>Handle RX pcap. </p>
 
 <p class="definition">Definition at line <a class="el" href="wifi-helper_8cc_source.html#l00256">256</a> of file <a class="el" href="wifi-helper_8cc_source.html">wifi-helper.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="packet_8cc_source.html#l00256">ns3::Packet::AddHeader()</a>, <a class="el" href="packet_8cc_source.html#l00121">ns3::Packet::Copy()</a>, <a class="el" href="trace-helper_8h_source.html#l00055">ns3::PcapHelper::DLT_IEEE802_11</a>, <a class="el" href="trace-helper_8h_source.html#l00058">ns3::PcapHelper::DLT_IEEE802_11_RADIO</a>, <a class="el" href="trace-helper_8h_source.html#l00057">ns3::PcapHelper::DLT_PRISM_HEADER</a>, <a class="el" href="print-introspected-doxygen_8cc_source.html#l00069">anonymous_namespace{print-introspected-doxygen.cc}::file</a>, <a class="el" href="wifi-helper_8cc_source.html#l00291">GetRadiotapHeader()</a>, <a class="el" href="wifi-phy_8h_source.html#l00072">ns3::SignalNoiseDbm::noise</a>, <a class="el" href="simulator_8cc_source.html#l00193">ns3::Simulator::Now()</a>, <a class="el" href="abort_8h_source.html#l00050">NS_ABORT_MSG</a>, <a class="el" href="fatal-error_8h_source.html#l00162">NS_FATAL_ERROR</a>, <a class="el" href="lora-mac-test_8cc_source.html#l00021">packet</a>, <a class="el" href="radiotap-header_8cc_source.html#l00634">ns3::RadiotapHeader::SetAntennaNoisePower()</a>, <a class="el" href="radiotap-header_8cc_source.html#l00608">ns3::RadiotapHeader::SetAntennaSignalPower()</a>, and <a class="el" href="wifi-phy_8h_source.html#l00071">ns3::SignalNoiseDbm::signal</a>.</p>
+<p class="reference">References <a class="el" href="packet_8cc_source.html#l00256">ns3::Packet::AddHeader()</a>, <a class="el" href="trace-helper_8h_source.html#l00055">ns3::PcapHelper::DLT_IEEE802_11</a>, <a class="el" href="trace-helper_8h_source.html#l00058">ns3::PcapHelper::DLT_IEEE802_11_RADIO</a>, <a class="el" href="trace-helper_8h_source.html#l00057">ns3::PcapHelper::DLT_PRISM_HEADER</a>, <a class="el" href="print-introspected-doxygen_8cc_source.html#l00069">anonymous_namespace{print-introspected-doxygen.cc}::file</a>, <a class="el" href="wifi-helper_8cc_source.html#l00291">GetRadiotapHeader()</a>, <a class="el" href="wifi-phy_8h_source.html#l00120">ns3::SignalNoiseDbm::noise</a>, <a class="el" href="simulator_8cc_source.html#l00195">ns3::Simulator::Now()</a>, <a class="el" href="abort_8h_source.html#l00050">NS_ABORT_MSG</a>, <a class="el" href="fatal-error_8h_source.html#l00162">NS_FATAL_ERROR</a>, <a class="el" href="radiotap-header_8cc_source.html#l00634">ns3::RadiotapHeader::SetAntennaNoisePower()</a>, <a class="el" href="radiotap-header_8cc_source.html#l00608">ns3::RadiotapHeader::SetAntennaSignalPower()</a>, and <a class="el" href="wifi-phy_8h_source.html#l00119">ns3::SignalNoiseDbm::signal</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="wave-helper_8cc_source.html#l00132">ns3::YansWavePhyHelper::EnablePcapInternal()</a>, and <a class="el" href="wifi-helper_8cc_source.html#l00539">EnablePcapInternal()</a>.</p>
 <div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1127,56 +1124,56 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_wifi_phy_helper_ac5da2b1210868b0ae050e3adc54a9d2f_cgraph.png" border="0" usemap="#classns3_1_1_wifi_phy_helper_ac5da2b1210868b0ae050e3adc54a9d2f_cgraph" alt=""/></div>
 <map name="classns3_1_1_wifi_phy_helper_ac5da2b1210868b0ae050e3adc54a9d2f_cgraph" id="classns3_1_1_wifi_phy_helper_ac5da2b1210868b0ae050e3adc54a9d2f_cgraph">
-<area shape="rect" title=" " alt="" coords="5,1996,152,2037"/>
-<area shape="rect" href="classns3_1_1_packet.html#a465108c595a0bc592095cbcab1832ed8" title="Add header to this packet." alt="" coords="461,377,637,403"/>
-<area shape="rect" href="classns3_1_1_packet.html#afb38be706cfc761bc1c0591f595fc1b7" title="performs a COW copy of the packet." alt="" coords="224,2145,361,2171"/>
-<area shape="rect" href="classns3_1_1_wifi_phy_helper.html#af1baefd0a50daeff72c8075f2eef7eda" title="Get the radiotap header." alt="" coords="213,1273,372,1315"/>
-<area shape="rect" href="classns3_1_1_simulator.html#ac3178fa975b419f7875e7105be122800" title="Return the current simulation virtual time." alt="" coords="472,2094,625,2121"/>
-<area shape="rect" href="classns3_1_1_radiotap_header.html#ab9536b3c7395d020899601690ff2cb26" title="Set the RF noise power at the antenna as a decibel difference from an arbitrary, fixed reference." alt="" coords="201,1963,384,2004"/>
-<area shape="rect" href="classns3_1_1_radiotap_header.html#a57c25791d9c71357a48ed130dce24066" title="Set the RF signal power at the antenna as a decibel difference from an arbitrary, fixed reference." alt="" coords="200,2028,385,2069"/>
-<area shape="rect" href="classns3_1_1_byte_tag_list.html#acb4563fbe4299c55af41ba7a166b71d5" title="Make sure that all offsets are bigger than prependOffset which represents the location where new byte..." alt="" coords="720,151,927,178"/>
-<area shape="rect" href="classns3_1_1_buffer.html#a8abd8164c3671d3dadc98fc66fade7b1" title=" " alt="" coords="738,250,909,277"/>
-<area shape="rect" href="classns3_1_1_packet_metadata.html#abdce736c4c5f647242f0808c0d2f9249" title="Add an header." alt="" coords="744,453,903,495"/>
-<area shape="rect" href="classns3_1_1_object_base.html#abe5b43a6f5b99a92a4c3122db31f06fb" title="Get the most derived TypeId for this Object." alt="" coords="983,457,1196,499"/>
-<area shape="rect" href="classns3_1_1_byte_tag_list.html#a1fec06d7e6daaf8039cf2a148e4090f2" title="Adjust the offsets stored internally by the adjustment delta." alt="" coords="735,621,912,647"/>
-<area shape="rect" href="classns3_1_1_buffer.html#acb977a0179de9abe4e295ce22023b4ca" title=" " alt="" coords="754,402,893,429"/>
-<area shape="rect" href="classns3_1_1_type_id.html#abc4965475a579c2afdc668d7a7d58374" title="Get the name." alt="" coords="741,519,906,546"/>
-<area shape="rect" href="classns3_1_1_header.html#a6ef0497eabc1b1fb0ad42738eb73f934" title=" " alt="" coords="712,301,935,327"/>
-<area shape="rect" href="classns3_1_1_header.html#afb61f1aac69ff8349a6bfe521fab5404" title=" " alt="" coords="741,101,905,127"/>
-<area shape="rect" href="classns3_1_1_byte_tag_list.html#ab1d2c5671ea01900fa9ef58e33d1e739" title="Returns an iterator pointing to the very first tag in this list." alt="" coords="994,71,1185,98"/>
-<area shape="rect" href="classns3_1_1_tag_buffer.html#afe07a9e117449ff5b5d5857291671349" title="Copy the nternal structure of another TagBuffer." alt="" coords="995,122,1184,149"/>
-<area shape="rect" href="classns3_1_1_byte_tag_list_1_1_iterator.html#a44e33e812e3eba4fdc168e36380853af" title="Used to determine if the iterator is at the end of the byteTagList." alt="" coords="997,173,1181,215"/>
-<area shape="rect" href="classns3_1_1_byte_tag_list_1_1_iterator.html#af521864d800baab1d9c5262f59ce4433" title="Returns the next Item from the ByteTagList." alt="" coords="997,5,1181,47"/>
-<area shape="rect" href="classns3_1_1_buffer.html#a200897ee202518b0d2bf91ead4e82be9" title="Checks the internal buffer structures consistency." alt="" coords="994,392,1185,433"/>
-<area shape="rect" href="classns3_1_1_buffer.html#a340c9888e35cf55d024808adfbd75913" title="Create a buffer data storage." alt="" coords="1017,239,1161,266"/>
-<area shape="rect" href="classns3_1_1_buffer.html#a1042168f1f6f3b24ad08a668662ab373" title="Get the buffer real size." alt="" coords="989,290,1190,317"/>
-<area shape="rect" href="classns3_1_1_buffer.html#aa14d4354b6de0c9d6044805f6503ecd2" title="Recycle the buffer memory." alt="" coords="1013,341,1165,367"/>
-<area shape="rect" href="classns3_1_1_packet.html#acdb23fec2c1dbebd9e6917895e9bcc65" title="Create a new packet which contains a fragment of the original packet." alt="" coords="444,595,653,622"/>
-<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#ac56a35b49d9d77e09357adc171570d51" title=" " alt="" coords="476,908,621,949"/>
-<area shape="rect" href="classns3_1_1_wifi_mode.html#ad90f36e733ceaf8c5771cfbda437e14f" title=" " alt="" coords="445,974,652,1001"/>
-<area shape="rect" href="classns3_1_1_ampdu_subframe_header.html#ac903518a999682b5d4da011d7b03b445" title="Return the EOF field." alt="" coords="444,1025,653,1067"/>
-<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#aeffd754ff39a3df905eb6a9be3567010" title=" " alt="" coords="476,1091,621,1132"/>
-<area shape="rect" href="classns3_1_1_ampdu_subframe_header.html#acb131533076842db8959fc5c7408673e" title="Return the length field." alt="" coords="444,1156,653,1197"/>
-<area shape="rect" href="classns3_1_1_wifi_mode.html#a4ba00941b5dbc4903ffecc1a0c841c6c" title=" " alt="" coords="444,1222,653,1249"/>
-<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#aadd3ccf9d68dd8f06d4cfedc352498fb" title=" " alt="" coords="476,1273,621,1315"/>
-<area shape="rect" href="classns3_1_1_wifi_mode.html#a67e1664cac501221b63a2be307184cc9" title=" " alt="" coords="439,1339,658,1380"/>
-<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#a5e6931e51698a7fc6137d7e55fb66213" title=" " alt="" coords="476,1404,621,1445"/>
-<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#ae3180e05aa71a628cab66eae3667d31b" title=" " alt="" coords="476,1469,621,1511"/>
-<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#a7125591f923091b79fe4a607dfad22e4" title=" " alt="" coords="476,1535,621,1576"/>
-<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#aae65c13f3633fbf99f95084a49d4b39e" title="Checks whether the PSDU contains A&#45;MPDU." alt="" coords="476,1600,621,1641"/>
-<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#ae7531bb5085a2e63d0be0222ff52e7c1" title="Check if STBC is used or not." alt="" coords="476,1665,621,1707"/>
-<area shape="rect" href="classns3_1_1_packet.html#a0961eccf975d75f902d40956c93ba63e" title="Deserialize and remove the header from the internal buffer." alt="" coords="446,545,651,571"/>
-<area shape="rect" href="classns3_1_1_radiotap_header.html#a8fae7a24dbeba412fdb9b7fc79f74f41" title="Set the A&#45;MPDU status fields." alt="" coords="469,712,628,753"/>
-<area shape="rect" href="classns3_1_1_radiotap_header.html#a429f94fc9a90307134b62cd1d6ed58b9" title="Set the transmit/receive channel frequency and flags." alt="" coords="433,777,664,819"/>
-<area shape="rect" href="classns3_1_1_radiotap_header.html#af8c523ad1498c9105da3f88a0897d9b0" title="Set the frame flags of the transmitted or received frame." alt="" coords="469,843,628,884"/>
-<area shape="rect" href="classns3_1_1_radiotap_header.html#a164c71e45efbc5ae60566d26d42c80a4" title="Set the HE fields." alt="" coords="469,1731,628,1772"/>
-<area shape="rect" href="classns3_1_1_radiotap_header.html#a23f8dd27246529ba4c3d1fefa09a95f7" title="Set the MCS fields." alt="" coords="469,1796,628,1837"/>
-<area shape="rect" href="classns3_1_1_radiotap_header.html#a51ebd0157939e926630a940dcc4431aa" title="Set the transmit/receive channel frequency in units of megahertz." alt="" coords="469,1861,628,1903"/>
-<area shape="rect" href="classns3_1_1_radiotap_header.html#a63ddcf8e8113dc90d072c194612436f8" title="Set the Time Synchronization Function Timer (TSFT) value." alt="" coords="469,1927,628,1968"/>
-<area shape="rect" href="classns3_1_1_radiotap_header.html#a548ef08ad90c0b7c2e20a149d4e8942c" title="Set the VHT fields." alt="" coords="469,647,628,688"/>
-<area shape="rect" href="group__simulator.html#ga42eb4eddad41528d4d99794a3dae3fd0" title="Get the SimulatorImpl singleton." alt="" coords="771,2069,876,2095"/>
-<area shape="rect" href="classns3_1_1_simulator_impl.html#aa516c50060846adc6fd316e83ef0797c" title="Return the current simulation virtual time." alt="" coords="732,2119,915,2146"/>
-<area shape="rect" href="global-router-interface_8cc.html#af2f17e24d29f39f6804d0d10d8cedc71" title=" " alt="" coords="763,1771,884,1798"/>
+<area shape="rect" title=" " alt="" coords="5,1925,152,1967"/>
+<area shape="rect" href="classns3_1_1_packet.html#a465108c595a0bc592095cbcab1832ed8" title="Add header to this packet." alt="" coords="461,365,637,391"/>
+<area shape="rect" href="classns3_1_1_wifi_phy_helper.html#af1baefd0a50daeff72c8075f2eef7eda" title="Get the Radiotap header." alt="" coords="213,1236,372,1277"/>
+<area shape="rect" href="classns3_1_1_simulator.html#ac3178fa975b419f7875e7105be122800" title="Return the current simulation virtual time." alt="" coords="472,2057,625,2083"/>
+<area shape="rect" href="classns3_1_1_radiotap_header.html#ab9536b3c7395d020899601690ff2cb26" title="Set the RF noise power at the antenna as a decibel difference from an arbitrary, fixed reference." alt="" coords="201,1925,384,1967"/>
+<area shape="rect" href="classns3_1_1_radiotap_header.html#a57c25791d9c71357a48ed130dce24066" title="Set the RF signal power at the antenna as a decibel difference from an arbitrary, fixed reference." alt="" coords="200,1991,385,2032"/>
+<area shape="rect" href="classns3_1_1_byte_tag_list.html#acb4563fbe4299c55af41ba7a166b71d5" title="Make sure that all offsets are bigger than prependOffset which represents the location where new byte..." alt="" coords="720,187,927,214"/>
+<area shape="rect" href="classns3_1_1_buffer.html#a8abd8164c3671d3dadc98fc66fade7b1" title=" " alt="" coords="738,289,909,315"/>
+<area shape="rect" href="classns3_1_1_packet_metadata.html#abdce736c4c5f647242f0808c0d2f9249" title="Add an header." alt="" coords="744,441,903,483"/>
+<area shape="rect" href="classns3_1_1_object_base.html#abe5b43a6f5b99a92a4c3122db31f06fb" title="Get the most derived TypeId for this Object." alt="" coords="983,508,1196,549"/>
+<area shape="rect" href="classns3_1_1_byte_tag_list.html#a1fec06d7e6daaf8039cf2a148e4090f2" title="Adjust the offsets stored internally by the adjustment delta." alt="" coords="735,558,912,585"/>
+<area shape="rect" href="classns3_1_1_buffer.html#acb977a0179de9abe4e295ce22023b4ca" title=" " alt="" coords="754,390,893,417"/>
+<area shape="rect" href="classns3_1_1_type_id.html#abc4965475a579c2afdc668d7a7d58374" title="Get the name." alt="" coords="741,507,906,534"/>
+<area shape="rect" href="classns3_1_1_header.html#a6ef0497eabc1b1fb0ad42738eb73f934" title=" " alt="" coords="712,86,935,113"/>
+<area shape="rect" href="classns3_1_1_header.html#afb61f1aac69ff8349a6bfe521fab5404" title=" " alt="" coords="741,137,905,163"/>
+<area shape="rect" href="classns3_1_1_byte_tag_list.html#ab1d2c5671ea01900fa9ef58e33d1e739" title="Returns an iterator pointing to the very first tag in this list." alt="" coords="994,137,1185,163"/>
+<area shape="rect" href="classns3_1_1_tag_buffer.html#afe07a9e117449ff5b5d5857291671349" title="Copy the nternal structure of another TagBuffer." alt="" coords="995,187,1184,214"/>
+<area shape="rect" href="classns3_1_1_byte_tag_list_1_1_iterator.html#a44e33e812e3eba4fdc168e36380853af" title="Used to determine if the iterator is at the end of the byteTagList." alt="" coords="997,5,1181,47"/>
+<area shape="rect" href="classns3_1_1_byte_tag_list_1_1_iterator.html#af521864d800baab1d9c5262f59ce4433" title="Returns the next Item from the ByteTagList." alt="" coords="997,71,1181,112"/>
+<area shape="rect" href="classns3_1_1_buffer.html#a200897ee202518b0d2bf91ead4e82be9" title="Checks the internal buffer structures consistency." alt="" coords="994,391,1185,432"/>
+<area shape="rect" href="classns3_1_1_buffer.html#a340c9888e35cf55d024808adfbd75913" title="Create a buffer data storage." alt="" coords="1017,289,1161,315"/>
+<area shape="rect" href="classns3_1_1_buffer.html#a1042168f1f6f3b24ad08a668662ab373" title="Get the buffer real size." alt="" coords="989,339,1190,366"/>
+<area shape="rect" href="classns3_1_1_buffer.html#aa14d4354b6de0c9d6044805f6503ecd2" title="Recycle the buffer memory." alt="" coords="1013,238,1165,265"/>
+<area shape="rect" href="namespacevisualizer_1_1core.html#a2a35e5d8a34af358b508dac8635754e0" title=" " alt="" coords="1014,457,1165,483"/>
+<area shape="rect" href="classns3_1_1_packet.html#acdb23fec2c1dbebd9e6917895e9bcc65" title="Create a new packet which contains a fragment of the original packet." alt="" coords="444,558,653,585"/>
+<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#ac56a35b49d9d77e09357adc171570d51" title=" " alt="" coords="476,871,621,912"/>
+<area shape="rect" href="classns3_1_1_wifi_mode.html#ad90f36e733ceaf8c5771cfbda437e14f" title=" " alt="" coords="445,937,652,963"/>
+<area shape="rect" href="classns3_1_1_ampdu_subframe_header.html#ac903518a999682b5d4da011d7b03b445" title="Return the EOF field." alt="" coords="444,988,653,1029"/>
+<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#aeffd754ff39a3df905eb6a9be3567010" title=" " alt="" coords="476,1053,621,1095"/>
+<area shape="rect" href="classns3_1_1_ampdu_subframe_header.html#acb131533076842db8959fc5c7408673e" title="Return the length field." alt="" coords="444,1119,653,1160"/>
+<area shape="rect" href="classns3_1_1_wifi_mode.html#a4ba00941b5dbc4903ffecc1a0c841c6c" title=" " alt="" coords="444,1185,653,1211"/>
+<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#aadd3ccf9d68dd8f06d4cfedc352498fb" title=" " alt="" coords="476,1236,621,1277"/>
+<area shape="rect" href="classns3_1_1_wifi_mode.html#a67e1664cac501221b63a2be307184cc9" title=" " alt="" coords="439,1301,658,1343"/>
+<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#a5e6931e51698a7fc6137d7e55fb66213" title=" " alt="" coords="476,1367,621,1408"/>
+<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#ae3180e05aa71a628cab66eae3667d31b" title=" " alt="" coords="476,1432,621,1473"/>
+<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#a7125591f923091b79fe4a607dfad22e4" title=" " alt="" coords="476,1497,621,1539"/>
+<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#aae65c13f3633fbf99f95084a49d4b39e" title="Checks whether the PSDU contains A&#45;MPDU." alt="" coords="476,1563,621,1604"/>
+<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#ae7531bb5085a2e63d0be0222ff52e7c1" title="Check if STBC is used or not." alt="" coords="476,1628,621,1669"/>
+<area shape="rect" href="classns3_1_1_packet.html#a0961eccf975d75f902d40956c93ba63e" title="Deserialize and remove the header from the internal buffer." alt="" coords="446,507,651,534"/>
+<area shape="rect" href="classns3_1_1_radiotap_header.html#a8fae7a24dbeba412fdb9b7fc79f74f41" title="Set the A&#45;MPDU status fields." alt="" coords="469,675,628,716"/>
+<area shape="rect" href="classns3_1_1_radiotap_header.html#a429f94fc9a90307134b62cd1d6ed58b9" title="Set the transmit/receive channel frequency and flags." alt="" coords="433,740,664,781"/>
+<area shape="rect" href="classns3_1_1_radiotap_header.html#af8c523ad1498c9105da3f88a0897d9b0" title="Set the frame flags of the transmitted or received frame." alt="" coords="469,805,628,847"/>
+<area shape="rect" href="classns3_1_1_radiotap_header.html#a164c71e45efbc5ae60566d26d42c80a4" title="Set the HE fields." alt="" coords="469,1693,628,1735"/>
+<area shape="rect" href="classns3_1_1_radiotap_header.html#a23f8dd27246529ba4c3d1fefa09a95f7" title="Set the MCS fields." alt="" coords="469,1759,628,1800"/>
+<area shape="rect" href="classns3_1_1_radiotap_header.html#a51ebd0157939e926630a940dcc4431aa" title="Set the transmit/receive channel frequency in units of megahertz." alt="" coords="469,1824,628,1865"/>
+<area shape="rect" href="classns3_1_1_radiotap_header.html#a63ddcf8e8113dc90d072c194612436f8" title="Set the Time Synchronization Function Timer (TSFT) value." alt="" coords="469,1889,628,1931"/>
+<area shape="rect" href="classns3_1_1_radiotap_header.html#a548ef08ad90c0b7c2e20a149d4e8942c" title="Set the VHT fields." alt="" coords="469,609,628,651"/>
+<area shape="rect" href="group__simulator.html#ga42eb4eddad41528d4d99794a3dae3fd0" title="Get the SimulatorImpl singleton." alt="" coords="771,2082,876,2109"/>
+<area shape="rect" href="classns3_1_1_simulator_impl.html#aa516c50060846adc6fd316e83ef0797c" title="Return the current simulation virtual time." alt="" coords="732,2031,915,2058"/>
+<area shape="rect" href="global-router-interface_8cc.html#af2f17e24d29f39f6804d0d10d8cedc71" title=" " alt="" coords="763,1734,884,1761"/>
 </map>
 </div>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1255,11 +1252,11 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>Handle tx pcap. </p>
+<p>Handle TX pcap. </p>
 
 <p class="definition">Definition at line <a class="el" href="wifi-helper_8cc_source.html#l00224">224</a> of file <a class="el" href="wifi-helper_8cc_source.html">wifi-helper.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="packet_8cc_source.html#l00256">ns3::Packet::AddHeader()</a>, <a class="el" href="packet_8cc_source.html#l00121">ns3::Packet::Copy()</a>, <a class="el" href="trace-helper_8h_source.html#l00055">ns3::PcapHelper::DLT_IEEE802_11</a>, <a class="el" href="trace-helper_8h_source.html#l00058">ns3::PcapHelper::DLT_IEEE802_11_RADIO</a>, <a class="el" href="trace-helper_8h_source.html#l00057">ns3::PcapHelper::DLT_PRISM_HEADER</a>, <a class="el" href="print-introspected-doxygen_8cc_source.html#l00069">anonymous_namespace{print-introspected-doxygen.cc}::file</a>, <a class="el" href="wifi-helper_8cc_source.html#l00291">GetRadiotapHeader()</a>, <a class="el" href="simulator_8cc_source.html#l00193">ns3::Simulator::Now()</a>, <a class="el" href="abort_8h_source.html#l00050">NS_ABORT_MSG</a>, <a class="el" href="fatal-error_8h_source.html#l00162">NS_FATAL_ERROR</a>, and <a class="el" href="lora-mac-test_8cc_source.html#l00021">packet</a>.</p>
+<p class="reference">References <a class="el" href="packet_8cc_source.html#l00256">ns3::Packet::AddHeader()</a>, <a class="el" href="trace-helper_8h_source.html#l00055">ns3::PcapHelper::DLT_IEEE802_11</a>, <a class="el" href="trace-helper_8h_source.html#l00058">ns3::PcapHelper::DLT_IEEE802_11_RADIO</a>, <a class="el" href="trace-helper_8h_source.html#l00057">ns3::PcapHelper::DLT_PRISM_HEADER</a>, <a class="el" href="print-introspected-doxygen_8cc_source.html#l00069">anonymous_namespace{print-introspected-doxygen.cc}::file</a>, <a class="el" href="wifi-helper_8cc_source.html#l00291">GetRadiotapHeader()</a>, <a class="el" href="simulator_8cc_source.html#l00195">ns3::Simulator::Now()</a>, <a class="el" href="abort_8h_source.html#l00050">NS_ABORT_MSG</a>, and <a class="el" href="fatal-error_8h_source.html#l00162">NS_FATAL_ERROR</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="wave-helper_8cc_source.html#l00132">ns3::YansWavePhyHelper::EnablePcapInternal()</a>, and <a class="el" href="wifi-helper_8cc_source.html#l00539">EnablePcapInternal()</a>.</p>
 <div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1269,56 +1266,56 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_wifi_phy_helper_a24e075fa55e473c81f76a4178c0fcb25_cgraph.png" border="0" usemap="#classns3_1_1_wifi_phy_helper_a24e075fa55e473c81f76a4178c0fcb25_cgraph" alt=""/></div>
 <map name="classns3_1_1_wifi_phy_helper_a24e075fa55e473c81f76a4178c0fcb25_cgraph" id="classns3_1_1_wifi_phy_helper_a24e075fa55e473c81f76a4178c0fcb25_cgraph">
-<area shape="rect" title=" " alt="" coords="5,1106,152,1147"/>
-<area shape="rect" href="classns3_1_1_packet.html#a465108c595a0bc592095cbcab1832ed8" title="Add header to this packet." alt="" coords="434,315,610,341"/>
-<area shape="rect" href="classns3_1_1_packet.html#afb38be706cfc761bc1c0591f595fc1b7" title="performs a COW copy of the packet." alt="" coords="211,1193,348,1220"/>
-<area shape="rect" href="classns3_1_1_wifi_phy_helper.html#af1baefd0a50daeff72c8075f2eef7eda" title="Get the radiotap header." alt="" coords="200,1077,359,1118"/>
-<area shape="rect" href="classns3_1_1_simulator.html#ac3178fa975b419f7875e7105be122800" title="Return the current simulation virtual time." alt="" coords="445,1815,599,1841"/>
-<area shape="rect" href="classns3_1_1_byte_tag_list.html#acb4563fbe4299c55af41ba7a166b71d5" title="Make sure that all offsets are bigger than prependOffset which represents the location where new byte..." alt="" coords="693,115,900,141"/>
-<area shape="rect" href="classns3_1_1_buffer.html#a8abd8164c3671d3dadc98fc66fade7b1" title=" " alt="" coords="711,289,882,316"/>
-<area shape="rect" href="classns3_1_1_packet_metadata.html#abdce736c4c5f647242f0808c0d2f9249" title="Add an header." alt="" coords="717,495,876,537"/>
-<area shape="rect" href="classns3_1_1_object_base.html#abe5b43a6f5b99a92a4c3122db31f06fb" title="Get the most derived TypeId for this Object." alt="" coords="956,574,1169,615"/>
-<area shape="rect" href="classns3_1_1_byte_tag_list.html#a1fec06d7e6daaf8039cf2a148e4090f2" title="Adjust the offsets stored internally by the adjustment delta." alt="" coords="708,708,885,735"/>
-<area shape="rect" href="classns3_1_1_buffer.html#acb977a0179de9abe4e295ce22023b4ca" title=" " alt="" coords="727,441,866,468"/>
-<area shape="rect" href="classns3_1_1_type_id.html#abc4965475a579c2afdc668d7a7d58374" title="Get the name." alt="" coords="714,628,879,655"/>
-<area shape="rect" href="classns3_1_1_header.html#a6ef0497eabc1b1fb0ad42738eb73f934" title=" " alt="" coords="685,391,908,417"/>
-<area shape="rect" href="classns3_1_1_header.html#afb61f1aac69ff8349a6bfe521fab5404" title=" " alt="" coords="715,340,879,367"/>
-<area shape="rect" href="classns3_1_1_byte_tag_list.html#ab1d2c5671ea01900fa9ef58e33d1e739" title="Returns an iterator pointing to the very first tag in this list." alt="" coords="967,5,1158,32"/>
-<area shape="rect" href="classns3_1_1_tag_buffer.html#afe07a9e117449ff5b5d5857291671349" title="Copy the nternal structure of another TagBuffer." alt="" coords="968,56,1157,83"/>
-<area shape="rect" href="classns3_1_1_byte_tag_list_1_1_iterator.html#a44e33e812e3eba4fdc168e36380853af" title="Used to determine if the iterator is at the end of the byteTagList." alt="" coords="971,107,1155,149"/>
-<area shape="rect" href="classns3_1_1_byte_tag_list_1_1_iterator.html#af521864d800baab1d9c5262f59ce4433" title="Returns the next Item from the ByteTagList." alt="" coords="971,173,1155,214"/>
-<area shape="rect" href="classns3_1_1_buffer.html#a200897ee202518b0d2bf91ead4e82be9" title="Checks the internal buffer structures consistency." alt="" coords="967,391,1158,433"/>
-<area shape="rect" href="classns3_1_1_buffer.html#a340c9888e35cf55d024808adfbd75913" title="Create a buffer data storage." alt="" coords="991,239,1135,265"/>
-<area shape="rect" href="classns3_1_1_buffer.html#a1042168f1f6f3b24ad08a668662ab373" title="Get the buffer real size." alt="" coords="962,289,1163,316"/>
-<area shape="rect" href="classns3_1_1_buffer.html#aa14d4354b6de0c9d6044805f6503ecd2" title="Recycle the buffer memory." alt="" coords="987,340,1139,367"/>
-<area shape="rect" href="namespacevisualizer_1_1core.html#a2a35e5d8a34af358b508dac8635754e0" title=" " alt="" coords="987,712,1138,739"/>
-<area shape="rect" href="classns3_1_1_packet_metadata.html#ae5ad09674e28733405c49b2655c51a5a" title="Add an header." alt="" coords="983,509,1142,550"/>
-<area shape="rect" href="classns3_1_1_type_id.html#a429535085325d6f926724771446d9047" title="Get the internal id of this TypeId." alt="" coords="989,457,1137,484"/>
-<area shape="rect" href="classns3_1_1_packet.html#acdb23fec2c1dbebd9e6917895e9bcc65" title="Create a new packet which contains a fragment of the original packet." alt="" coords="417,809,627,836"/>
-<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#ac56a35b49d9d77e09357adc171570d51" title=" " alt="" coords="449,861,595,902"/>
-<area shape="rect" href="classns3_1_1_wifi_mode.html#ad90f36e733ceaf8c5771cfbda437e14f" title=" " alt="" coords="419,927,625,953"/>
-<area shape="rect" href="classns3_1_1_ampdu_subframe_header.html#ac903518a999682b5d4da011d7b03b445" title="Return the EOF field." alt="" coords="417,978,627,1019"/>
-<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#aeffd754ff39a3df905eb6a9be3567010" title=" " alt="" coords="449,1043,595,1085"/>
-<area shape="rect" href="classns3_1_1_ampdu_subframe_header.html#acb131533076842db8959fc5c7408673e" title="Return the length field." alt="" coords="417,1109,627,1150"/>
-<area shape="rect" href="classns3_1_1_wifi_mode.html#a4ba00941b5dbc4903ffecc1a0c841c6c" title=" " alt="" coords="417,1175,627,1201"/>
-<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#aadd3ccf9d68dd8f06d4cfedc352498fb" title=" " alt="" coords="449,1226,595,1267"/>
-<area shape="rect" href="classns3_1_1_wifi_mode.html#a67e1664cac501221b63a2be307184cc9" title=" " alt="" coords="413,1291,631,1333"/>
-<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#a5e6931e51698a7fc6137d7e55fb66213" title=" " alt="" coords="449,1357,595,1398"/>
-<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#ae3180e05aa71a628cab66eae3667d31b" title=" " alt="" coords="449,1422,595,1463"/>
-<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#a7125591f923091b79fe4a607dfad22e4" title=" " alt="" coords="449,1487,595,1529"/>
-<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#aae65c13f3633fbf99f95084a49d4b39e" title="Checks whether the PSDU contains A&#45;MPDU." alt="" coords="449,1553,595,1594"/>
-<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#ae7531bb5085a2e63d0be0222ff52e7c1" title="Check if STBC is used or not." alt="" coords="449,1618,595,1659"/>
-<area shape="rect" href="classns3_1_1_packet.html#a0961eccf975d75f902d40956c93ba63e" title="Deserialize and remove the header from the internal buffer." alt="" coords="419,759,625,785"/>
-<area shape="rect" href="classns3_1_1_radiotap_header.html#a8fae7a24dbeba412fdb9b7fc79f74f41" title="Set the A&#45;MPDU status fields." alt="" coords="443,1683,601,1725"/>
-<area shape="rect" href="classns3_1_1_radiotap_header.html#a429f94fc9a90307134b62cd1d6ed58b9" title="Set the transmit/receive channel frequency and flags." alt="" coords="407,1749,637,1790"/>
-<area shape="rect" href="classns3_1_1_radiotap_header.html#af8c523ad1498c9105da3f88a0897d9b0" title="Set the frame flags of the transmitted or received frame." alt="" coords="443,366,601,407"/>
-<area shape="rect" href="classns3_1_1_radiotap_header.html#a164c71e45efbc5ae60566d26d42c80a4" title="Set the HE fields." alt="" coords="443,431,601,473"/>
-<area shape="rect" href="classns3_1_1_radiotap_header.html#a23f8dd27246529ba4c3d1fefa09a95f7" title="Set the MCS fields." alt="" coords="443,497,601,538"/>
-<area shape="rect" href="classns3_1_1_radiotap_header.html#a51ebd0157939e926630a940dcc4431aa" title="Set the transmit/receive channel frequency in units of megahertz." alt="" coords="443,562,601,603"/>
-<area shape="rect" href="classns3_1_1_radiotap_header.html#a63ddcf8e8113dc90d072c194612436f8" title="Set the Time Synchronization Function Timer (TSFT) value." alt="" coords="443,627,601,669"/>
-<area shape="rect" href="classns3_1_1_radiotap_header.html#a548ef08ad90c0b7c2e20a149d4e8942c" title="Set the VHT fields." alt="" coords="443,693,601,734"/>
-<area shape="rect" href="group__simulator.html#ga42eb4eddad41528d4d99794a3dae3fd0" title="Get the SimulatorImpl singleton." alt="" coords="744,1840,849,1867"/>
-<area shape="rect" href="classns3_1_1_simulator_impl.html#aa516c50060846adc6fd316e83ef0797c" title="Return the current simulation virtual time." alt="" coords="705,1789,888,1816"/>
+<area shape="rect" title=" " alt="" coords="5,1227,152,1268"/>
+<area shape="rect" href="classns3_1_1_packet.html#a465108c595a0bc592095cbcab1832ed8" title="Add header to this packet." alt="" coords="434,459,610,486"/>
+<area shape="rect" href="classns3_1_1_wifi_phy_helper.html#af1baefd0a50daeff72c8075f2eef7eda" title="Get the Radiotap header." alt="" coords="200,1227,359,1268"/>
+<area shape="rect" href="classns3_1_1_simulator.html#ac3178fa975b419f7875e7105be122800" title="Return the current simulation virtual time." alt="" coords="445,1978,599,2005"/>
+<area shape="rect" href="classns3_1_1_byte_tag_list.html#acb4563fbe4299c55af41ba7a166b71d5" title="Make sure that all offsets are bigger than prependOffset which represents the location where new byte..." alt="" coords="693,151,900,178"/>
+<area shape="rect" href="classns3_1_1_buffer.html#a8abd8164c3671d3dadc98fc66fade7b1" title=" " alt="" coords="711,341,882,367"/>
+<area shape="rect" href="classns3_1_1_packet_metadata.html#abdce736c4c5f647242f0808c0d2f9249" title="Add an header." alt="" coords="717,493,876,535"/>
+<area shape="rect" href="classns3_1_1_object_base.html#abe5b43a6f5b99a92a4c3122db31f06fb" title="Get the most derived TypeId for this Object." alt="" coords="956,691,1169,732"/>
+<area shape="rect" href="classns3_1_1_byte_tag_list.html#a1fec06d7e6daaf8039cf2a148e4090f2" title="Adjust the offsets stored internally by the adjustment delta." alt="" coords="708,711,885,738"/>
+<area shape="rect" href="classns3_1_1_buffer.html#acb977a0179de9abe4e295ce22023b4ca" title=" " alt="" coords="727,442,866,469"/>
+<area shape="rect" href="classns3_1_1_type_id.html#abc4965475a579c2afdc668d7a7d58374" title="Get the name." alt="" coords="714,610,879,637"/>
+<area shape="rect" href="classns3_1_1_header.html#a6ef0497eabc1b1fb0ad42738eb73f934" title=" " alt="" coords="685,391,908,418"/>
+<area shape="rect" href="classns3_1_1_header.html#afb61f1aac69ff8349a6bfe521fab5404" title=" " alt="" coords="715,101,879,127"/>
+<area shape="rect" href="classns3_1_1_byte_tag_list.html#ab1d2c5671ea01900fa9ef58e33d1e739" title="Returns an iterator pointing to the very first tag in this list." alt="" coords="967,71,1158,98"/>
+<area shape="rect" href="classns3_1_1_tag_buffer.html#afe07a9e117449ff5b5d5857291671349" title="Copy the nternal structure of another TagBuffer." alt="" coords="968,122,1157,149"/>
+<area shape="rect" href="classns3_1_1_byte_tag_list_1_1_iterator.html#a44e33e812e3eba4fdc168e36380853af" title="Used to determine if the iterator is at the end of the byteTagList." alt="" coords="971,173,1155,215"/>
+<area shape="rect" href="classns3_1_1_byte_tag_list_1_1_iterator.html#af521864d800baab1d9c5262f59ce4433" title="Returns the next Item from the ByteTagList." alt="" coords="971,5,1155,47"/>
+<area shape="rect" href="classns3_1_1_buffer.html#a200897ee202518b0d2bf91ead4e82be9" title="Checks the internal buffer structures consistency." alt="" coords="967,392,1158,433"/>
+<area shape="rect" href="classns3_1_1_buffer.html#a340c9888e35cf55d024808adfbd75913" title="Create a buffer data storage." alt="" coords="991,290,1135,317"/>
+<area shape="rect" href="classns3_1_1_buffer.html#a1042168f1f6f3b24ad08a668662ab373" title="Get the buffer real size." alt="" coords="962,341,1163,367"/>
+<area shape="rect" href="classns3_1_1_buffer.html#aa14d4354b6de0c9d6044805f6503ecd2" title="Recycle the buffer memory." alt="" coords="987,239,1139,266"/>
+<area shape="rect" href="namespacevisualizer_1_1core.html#a2a35e5d8a34af358b508dac8635754e0" title=" " alt="" coords="987,574,1138,601"/>
+<area shape="rect" href="classns3_1_1_packet_metadata.html#ae5ad09674e28733405c49b2655c51a5a" title="Add an header." alt="" coords="983,457,1142,499"/>
+<area shape="rect" href="classns3_1_1_type_id.html#a429535085325d6f926724771446d9047" title="Get the internal id of this TypeId." alt="" coords="989,523,1137,550"/>
+<area shape="rect" href="classns3_1_1_packet_metadata.html#a547dc7d09f1b2d41a28445a91c2fcf37" title="Check if the metadata state is ok." alt="" coords="983,625,1142,667"/>
+<area shape="rect" href="classns3_1_1_packet.html#acdb23fec2c1dbebd9e6917895e9bcc65" title="Create a new packet which contains a fragment of the original packet." alt="" coords="417,711,627,738"/>
+<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#ac56a35b49d9d77e09357adc171570d51" title=" " alt="" coords="449,763,595,804"/>
+<area shape="rect" href="classns3_1_1_wifi_mode.html#ad90f36e733ceaf8c5771cfbda437e14f" title=" " alt="" coords="419,829,625,855"/>
+<area shape="rect" href="classns3_1_1_ampdu_subframe_header.html#ac903518a999682b5d4da011d7b03b445" title="Return the EOF field." alt="" coords="417,880,627,921"/>
+<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#aeffd754ff39a3df905eb6a9be3567010" title=" " alt="" coords="449,945,595,987"/>
+<area shape="rect" href="classns3_1_1_ampdu_subframe_header.html#acb131533076842db8959fc5c7408673e" title="Return the length field." alt="" coords="417,1011,627,1052"/>
+<area shape="rect" href="classns3_1_1_wifi_mode.html#a4ba00941b5dbc4903ffecc1a0c841c6c" title=" " alt="" coords="417,1077,627,1103"/>
+<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#aadd3ccf9d68dd8f06d4cfedc352498fb" title=" " alt="" coords="449,1128,595,1169"/>
+<area shape="rect" href="classns3_1_1_wifi_mode.html#a67e1664cac501221b63a2be307184cc9" title=" " alt="" coords="413,1193,631,1235"/>
+<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#a5e6931e51698a7fc6137d7e55fb66213" title=" " alt="" coords="449,1259,595,1300"/>
+<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#ae3180e05aa71a628cab66eae3667d31b" title=" " alt="" coords="449,1324,595,1365"/>
+<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#a7125591f923091b79fe4a607dfad22e4" title=" " alt="" coords="449,1389,595,1431"/>
+<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#aae65c13f3633fbf99f95084a49d4b39e" title="Checks whether the PSDU contains A&#45;MPDU." alt="" coords="449,1455,595,1496"/>
+<area shape="rect" href="classns3_1_1_wifi_tx_vector.html#ae7531bb5085a2e63d0be0222ff52e7c1" title="Check if STBC is used or not." alt="" coords="449,1520,595,1561"/>
+<area shape="rect" href="classns3_1_1_packet.html#a0961eccf975d75f902d40956c93ba63e" title="Deserialize and remove the header from the internal buffer." alt="" coords="419,661,625,687"/>
+<area shape="rect" href="classns3_1_1_radiotap_header.html#a8fae7a24dbeba412fdb9b7fc79f74f41" title="Set the A&#45;MPDU status fields." alt="" coords="443,1585,601,1627"/>
+<area shape="rect" href="classns3_1_1_radiotap_header.html#a429f94fc9a90307134b62cd1d6ed58b9" title="Set the transmit/receive channel frequency and flags." alt="" coords="407,1651,637,1692"/>
+<area shape="rect" href="classns3_1_1_radiotap_header.html#af8c523ad1498c9105da3f88a0897d9b0" title="Set the frame flags of the transmitted or received frame." alt="" coords="443,1716,601,1757"/>
+<area shape="rect" href="classns3_1_1_radiotap_header.html#a164c71e45efbc5ae60566d26d42c80a4" title="Set the HE fields." alt="" coords="443,1781,601,1823"/>
+<area shape="rect" href="classns3_1_1_radiotap_header.html#a23f8dd27246529ba4c3d1fefa09a95f7" title="Set the MCS fields." alt="" coords="443,1847,601,1888"/>
+<area shape="rect" href="classns3_1_1_radiotap_header.html#a51ebd0157939e926630a940dcc4431aa" title="Set the transmit/receive channel frequency in units of megahertz." alt="" coords="443,1912,601,1953"/>
+<area shape="rect" href="classns3_1_1_radiotap_header.html#a63ddcf8e8113dc90d072c194612436f8" title="Set the Time Synchronization Function Timer (TSFT) value." alt="" coords="443,529,601,571"/>
+<area shape="rect" href="classns3_1_1_radiotap_header.html#a548ef08ad90c0b7c2e20a149d4e8942c" title="Set the VHT fields." alt="" coords="443,595,601,636"/>
+<area shape="rect" href="group__simulator.html#ga42eb4eddad41528d4d99794a3dae3fd0" title="Get the SimulatorImpl singleton." alt="" coords="744,2003,849,2030"/>
+<area shape="rect" href="classns3_1_1_simulator_impl.html#aa516c50060846adc6fd316e83ef0797c" title="Return the current simulation virtual time." alt="" coords="705,1953,888,1979"/>
 </map>
 </div>
 <div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1374,7 +1371,7 @@ Private Attributes</h2></td></tr>
 
 <p class="reference">References <a class="el" href="wifi-helper_8h_source.html#l00235">m_phy</a>, and <a class="el" href="object-factory_8cc_source.html#l00073">ns3::ObjectFactory::Set()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rv-battery-model-test_8cc_source.html#l00715">BatteryLifetimeTest::ConstantLoadTest()</a>, <a class="el" href="bug-772_8cc_source.html#l00123">Bug772ChainTest::CreateDevices()</a>, <a class="el" href="basic-energy-model-test_8cc_source.html#l00337">BasicEnergyDepletionTest::DepletionTestCase()</a>, <a class="el" href="wifi-test_8cc_source.html#l01431">Bug2843TestCase::DoRun()</a>, <a class="el" href="manet-routing-compare_8cc_source.html#l00222">RoutingExperiment::Run()</a>, <a class="el" href="vanet-routing-compare_8cc_source.html#l02179">VanetRoutingExperiment::SetupAdhocDevices()</a>, <a class="el" href="rv-battery-model-test_8cc_source.html#l00798">BatteryLifetimeTest::VariableLoadTest()</a>, and <a class="el" href="wifi-interference-test-suite_8cc_source.html#l00106">WifiInterferenceTestCase::WifiSimpleInterference()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rv-battery-model-test_8cc_source.html#l00715">BatteryLifetimeTest::ConstantLoadTest()</a>, <a class="el" href="bug-772_8cc_source.html#l00123">Bug772ChainTest::CreateDevices()</a>, <a class="el" href="basic-energy-model-test_8cc_source.html#l00337">BasicEnergyDepletionTest::DepletionTestCase()</a>, <a class="el" href="wifi-test_8cc_source.html#l01433">Bug2843TestCase::DoRun()</a>, <a class="el" href="manet-routing-compare_8cc_source.html#l00222">RoutingExperiment::Run()</a>, <a class="el" href="vanet-routing-compare_8cc_source.html#l02179">VanetRoutingExperiment::SetupAdhocDevices()</a>, <a class="el" href="rv-battery-model-test_8cc_source.html#l00798">BatteryLifetimeTest::VariableLoadTest()</a>, and <a class="el" href="wifi-interference-test-suite_8cc_source.html#l00106">WifiInterferenceTestCase::WifiSimpleInterference()</a>.</p>
 <div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-15-summary" class="dynsummary" style="display:block;">
@@ -1565,7 +1562,7 @@ Private Attributes</h2></td></tr>
 
 <p class="reference">References <a class="el" href="wifi-helper_8h_source.html#l00236">m_errorRateModel</a>, <a class="el" href="object-factory_8cc_source.html#l00073">ns3::ObjectFactory::Set()</a>, and <a class="el" href="object-factory_8cc_source.html#l00046">ns3::ObjectFactory::SetTypeId()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="aodv-regression_8cc_source.html#l00161">ChainRegressionTest::CreateDevices()</a>, <a class="el" href="bug-772_8cc_source.html#l00123">Bug772ChainTest::CreateDevices()</a>, <a class="el" href="hwmp-proactive-regression_8cc_source.html#l00106">HwmpProactiveRegressionTest::CreateDevices()</a>, <a class="el" href="hwmp-reactive-regression_8cc_source.html#l00107">HwmpReactiveRegressionTest::CreateDevices()</a>, <a class="el" href="hwmp-target-flags-regression_8cc_source.html#l00133">HwmpDoRfRegressionTest::CreateDevices()</a>, <a class="el" href="flame-regression_8cc_source.html#l00092">FlameRegressionTest::CreateDevices()</a>, <a class="el" href="wave-helper_8cc_source.html#l00124">ns3::YansWavePhyHelper::Default()</a>, <a class="el" href="spectrum-wifi-helper_8cc_source.html#l00042">ns3::SpectrumWifiPhyHelper::Default()</a>, <a class="el" href="yans-wifi-helper_8cc_source.html#l00133">ns3::YansWifiPhyHelper::Default()</a>, and <a class="el" href="wifi-test_8cc_source.html#l01431">Bug2843TestCase::DoRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="aodv-regression_8cc_source.html#l00161">ChainRegressionTest::CreateDevices()</a>, <a class="el" href="bug-772_8cc_source.html#l00123">Bug772ChainTest::CreateDevices()</a>, <a class="el" href="hwmp-proactive-regression_8cc_source.html#l00106">HwmpProactiveRegressionTest::CreateDevices()</a>, <a class="el" href="hwmp-reactive-regression_8cc_source.html#l00107">HwmpReactiveRegressionTest::CreateDevices()</a>, <a class="el" href="hwmp-target-flags-regression_8cc_source.html#l00133">HwmpDoRfRegressionTest::CreateDevices()</a>, <a class="el" href="flame-regression_8cc_source.html#l00092">FlameRegressionTest::CreateDevices()</a>, <a class="el" href="wave-helper_8cc_source.html#l00124">ns3::YansWavePhyHelper::Default()</a>, <a class="el" href="spectrum-wifi-helper_8cc_source.html#l00042">ns3::SpectrumWifiPhyHelper::Default()</a>, <a class="el" href="yans-wifi-helper_8cc_source.html#l00133">ns3::YansWifiPhyHelper::Default()</a>, and <a class="el" href="wifi-test_8cc_source.html#l01433">Bug2843TestCase::DoRun()</a>.</p>
 <div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-17-summary" class="dynsummary" style="display:block;">
@@ -1605,8 +1602,8 @@ Private Attributes</h2></td></tr>
 <area shape="rect" href="class_hwmp_do_rf_regression_test.html#a55abac18467e059d3c39fa0de53bc436" title="Create devices function." alt="" coords="297,253,492,295"/>
 <area shape="rect" href="class_flame_regression_test.html#aeee4af77af2814f7339f204135cc2733" title="Create devices function." alt="" coords="314,319,475,360"/>
 <area shape="rect" href="classns3_1_1_yans_wave_phy_helper.html#a485a05f89d1f42783b96e99072b3aec3" title="Create a phy helper in a default working state." alt="" coords="301,384,488,425"/>
-<area shape="rect" href="classns3_1_1_spectrum_wifi_phy_helper.html#a0a79c81b5d5d9ac8bbb56c718ef14be9" title="Create a phy helper in a default working state." alt="" coords="291,449,499,491"/>
-<area shape="rect" href="classns3_1_1_yans_wifi_phy_helper.html#a75b0af43b173308e2f130605ddf34a7f" title="Create a phy helper in a default working state." alt="" coords="307,548,482,589"/>
+<area shape="rect" href="classns3_1_1_spectrum_wifi_phy_helper.html#a0a79c81b5d5d9ac8bbb56c718ef14be9" title="Create a PHY helper in a default working state." alt="" coords="291,449,499,491"/>
+<area shape="rect" href="classns3_1_1_yans_wifi_phy_helper.html#a75b0af43b173308e2f130605ddf34a7f" title="Create a PHY helper in a default working state." alt="" coords="307,548,482,589"/>
 <area shape="rect" href="class_bug2843_test_case.html#a6ceb2a22b576668147d2f363c0ad378e" title="Implementation to actually run this TestCase." alt="" coords="301,614,489,641"/>
 <area shape="rect" href="class_chain_regression_test.html#a51aa3cae551407ee6a6f346c30e3cc43" title="Go." alt="" coords="38,5,195,47"/>
 <area shape="rect" href="class_bug772_chain_test.html#a28c0cb91d146d6b3fdfb86dc8dc1f5b6" title="Go." alt="" coords="24,71,209,98"/>
@@ -2184,7 +2181,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_wifi_phy_helper.html">WifiPhyHelper</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:46 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:47 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

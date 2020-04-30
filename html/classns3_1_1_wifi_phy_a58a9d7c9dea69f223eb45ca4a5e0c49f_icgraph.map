@@ -36,7 +36,7 @@
 <area shape="rect" id="node32" href="$classns3_1_1_sta_wifi_mac.html#a973a8b9cda122dd3b22cda3c4073bcd1" title="This method is called after we have not received a beacon from the AP." alt="" coords="536,399,772,426"/>
 <area shape="rect" id="node33" href="$classns3_1_1_sta_wifi_mac.html#a873848ee518a0190f8feb3551f3d5969" title="Restarts the beacon timer." alt="" coords="273,349,455,391"/>
 <area shape="rect" id="node37" href="$classns3_1_1_wifi_phy.html#ac5c2d333cf5e8c1f33604ef1584486fe" title="Continue receiving the PHY header of a PPDU (i.e." alt="" coords="1650,612,1870,653"/>
-<area shape="rect" id="node38" href="$classns3_1_1_wifi_phy.html#ad67948715df0fbb05a2c3fa1d2ecd21d" title="Start receiving the PHY header of a PPDU (i.e." alt="" coords="1376,612,1569,653"/>
+<area shape="rect" id="node38" href="$classns3_1_1_wifi_phy.html#aa7bcb29f6ad8b8280792fc83a25f8eac" title="Start receiving the PHY header of a PPDU (i.e." alt="" coords="1376,612,1569,653"/>
 <area shape="rect" id="node39" href="$classns3_1_1_wifi_phy.html#a5f3a1ad2baa44bd044d7855b0de83fa7" title="Starting receiving the PPDU after having detected the medium is idle or after a reception switch." alt="" coords="1115,619,1273,646"/>
 <area shape="rect" id="node40" href="$classns3_1_1_wifi_phy.html#abf2f88a74d34bd4a92ab8e19e8ef4b1e" title="Start receiving the PHY preamble of a PPDU (i.e." alt="" coords="830,612,1023,653"/>
 <area shape="rect" id="node41" href="$classns3_1_1_spectrum_wifi_phy.html#aead1ebdbaf59361928cd6ffa7abc3161" title="Input method for delivering a signal from the spectrum channel and low&#45;level PHY interface to this Sp..." alt="" coords="571,612,737,653"/>

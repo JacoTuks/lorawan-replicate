@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -201,10 +198,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aad6e45108e2bec01f05038b1410a48de"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_edca_parameter_set.html#aad6e45108e2bec01f05038b1410a48de">EdcaParameterSet</a> ()</td></tr>
 <tr class="separator:aad6e45108e2bec01f05038b1410a48de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac223153808caa0e52fd12ba13b9e104a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_edca_parameter_set.html#ac223153808caa0e52fd12ba13b9e104a">DeserializeInformationField</a> (<a class="el" href="classns3_1_1_buffer_1_1_iterator.html">Buffer::Iterator</a> start, uint8_t length)</td></tr>
-<tr class="memdesc:ac223153808caa0e52fd12ba13b9e104a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserialize information field function.  <a href="classns3_1_1_edca_parameter_set.html#ac223153808caa0e52fd12ba13b9e104a">More...</a><br /></td></tr>
+<tr class="memdesc:ac223153808caa0e52fd12ba13b9e104a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserialize information (i.e., the body of the IE, not including the Element ID and length octets)  <a href="classns3_1_1_edca_parameter_set.html#ac223153808caa0e52fd12ba13b9e104a">More...</a><br /></td></tr>
 <tr class="separator:ac223153808caa0e52fd12ba13b9e104a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aded46a82adae92455d56b73b3947d81d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacens3.html#aeb185e0c8a60816016bca079f1420478">WifiInformationElementId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_edca_parameter_set.html#aded46a82adae92455d56b73b3947d81d">ElementId</a> () const</td></tr>
-<tr class="memdesc:aded46a82adae92455d56b73b3947d81d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Element ID function.  <a href="classns3_1_1_edca_parameter_set.html#aded46a82adae92455d56b73b3947d81d">More...</a><br /></td></tr>
 <tr class="separator:aded46a82adae92455d56b73b3947d81d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79af8350b9029f06f2be26f4da2aff98"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_edca_parameter_set.html#a79af8350b9029f06f2be26f4da2aff98">GetBeAifsn</a> (void) const</td></tr>
 <tr class="memdesc:a79af8350b9029f06f2be26f4da2aff98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the AC_BE AIFSN field in the <a class="el" href="classns3_1_1_edca_parameter_set.html" title="The EDCA Parameter Set.">EdcaParameterSet</a> information element.  <a href="classns3_1_1_edca_parameter_set.html#a79af8350b9029f06f2be26f4da2aff98">More...</a><br /></td></tr>
@@ -231,13 +227,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:af905cf216f5fdf2f521d9380f7ad5321"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the AC_BK TXOP Limit field in the <a class="el" href="classns3_1_1_edca_parameter_set.html" title="The EDCA Parameter Set.">EdcaParameterSet</a> information element.  <a href="classns3_1_1_edca_parameter_set.html#af905cf216f5fdf2f521d9380f7ad5321">More...</a><br /></td></tr>
 <tr class="separator:af905cf216f5fdf2f521d9380f7ad5321"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85173deb3019f590d133cce498d6419e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_edca_parameter_set.html#a85173deb3019f590d133cce498d6419e">GetInformationFieldSize</a> () const</td></tr>
-<tr class="memdesc:a85173deb3019f590d133cce498d6419e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get information field size function.  <a href="classns3_1_1_edca_parameter_set.html#a85173deb3019f590d133cce498d6419e">More...</a><br /></td></tr>
+<tr class="memdesc:a85173deb3019f590d133cce498d6419e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of serialized information (i.e., the length of the body of the IE, not including the Element ID and length octets.  <a href="classns3_1_1_edca_parameter_set.html#a85173deb3019f590d133cce498d6419e">More...</a><br /></td></tr>
 <tr class="separator:a85173deb3019f590d133cce498d6419e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3387d8b8812bacf0ac0d76e4159467c6"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_edca_parameter_set.html#a3387d8b8812bacf0ac0d76e4159467c6">GetQosInfo</a> (void) const</td></tr>
 <tr class="memdesc:a3387d8b8812bacf0ac0d76e4159467c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the QoS Info field in the <a class="el" href="classns3_1_1_edca_parameter_set.html" title="The EDCA Parameter Set.">EdcaParameterSet</a> information element.  <a href="classns3_1_1_edca_parameter_set.html#a3387d8b8812bacf0ac0d76e4159467c6">More...</a><br /></td></tr>
 <tr class="separator:a3387d8b8812bacf0ac0d76e4159467c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f8bcc0fa87ea089beb34453d66278f3"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_edca_parameter_set.html#a4f8bcc0fa87ea089beb34453d66278f3">GetSerializedSize</a> () const</td></tr>
-<tr class="memdesc:a4f8bcc0fa87ea089beb34453d66278f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the serialized size of this EDCA Parameter Set.  <a href="classns3_1_1_edca_parameter_set.html#a4f8bcc0fa87ea089beb34453d66278f3">More...</a><br /></td></tr>
 <tr class="separator:a4f8bcc0fa87ea089beb34453d66278f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb88e89222fe1fcdfdb5f108c6e21d65"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_edca_parameter_set.html#abb88e89222fe1fcdfdb5f108c6e21d65">GetViAifsn</a> (void) const</td></tr>
 <tr class="memdesc:abb88e89222fe1fcdfdb5f108c6e21d65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the AC_VI AIFSN field in the <a class="el" href="classns3_1_1_edca_parameter_set.html" title="The EDCA Parameter Set.">EdcaParameterSet</a> information element.  <a href="classns3_1_1_edca_parameter_set.html#abb88e89222fe1fcdfdb5f108c6e21d65">More...</a><br /></td></tr>
@@ -267,10 +262,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a9ef7e0438a3c77753605070d68d115fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is QOS supported function.  <a href="classns3_1_1_edca_parameter_set.html#a9ef7e0438a3c77753605070d68d115fe">More...</a><br /></td></tr>
 <tr class="separator:a9ef7e0438a3c77753605070d68d115fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e9211bf5bb8f74857ed61e8003a51bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classns3_1_1_buffer_1_1_iterator.html">Buffer::Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_edca_parameter_set.html#a1e9211bf5bb8f74857ed61e8003a51bf">Serialize</a> (<a class="el" href="classns3_1_1_buffer_1_1_iterator.html">Buffer::Iterator</a> start) const</td></tr>
-<tr class="memdesc:a1e9211bf5bb8f74857ed61e8003a51bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">This information element is a bit special in that it is only included if the STA is a QoS STA.  <a href="classns3_1_1_edca_parameter_set.html#a1e9211bf5bb8f74857ed61e8003a51bf">More...</a><br /></td></tr>
 <tr class="separator:a1e9211bf5bb8f74857ed61e8003a51bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae5ca39197e89704884cf2b187aa939f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_edca_parameter_set.html#aae5ca39197e89704884cf2b187aa939f">SerializeInformationField</a> (<a class="el" href="classns3_1_1_buffer_1_1_iterator.html">Buffer::Iterator</a> start) const</td></tr>
-<tr class="memdesc:aae5ca39197e89704884cf2b187aa939f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize information field function.  <a href="classns3_1_1_edca_parameter_set.html#aae5ca39197e89704884cf2b187aa939f">More...</a><br /></td></tr>
+<tr class="memdesc:aae5ca39197e89704884cf2b187aa939f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize information (i.e., the body of the IE, not including the Element ID and length octets)  <a href="classns3_1_1_edca_parameter_set.html#aae5ca39197e89704884cf2b187aa939f">More...</a><br /></td></tr>
 <tr class="separator:aae5ca39197e89704884cf2b187aa939f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaccf6b8f599ac926f6e7d4f3d51f2349"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_edca_parameter_set.html#aaccf6b8f599ac926f6e7d4f3d51f2349">SetBeAci</a> (uint8_t aci)</td></tr>
 <tr class="memdesc:aaccf6b8f599ac926f6e7d4f3d51f2349"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the AC_BE ACI field in the <a class="el" href="classns3_1_1_edca_parameter_set.html" title="The EDCA Parameter Set.">EdcaParameterSet</a> information element.  <a href="classns3_1_1_edca_parameter_set.html#aaccf6b8f599ac926f6e7d4f3d51f2349">More...</a><br /></td></tr>
@@ -465,21 +459,21 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Deserialize information field function. </p>
+<p>Deserialize information (i.e., the body of the IE, not including the Element ID and length octets) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">start</td><td>the iterator </td></tr>
-    <tr><td class="paramname">length</td><td>the length </td></tr>
+    <tr><td class="paramname">start</td><td>an iterator which points to where the information should be written. </td></tr>
+    <tr><td class="paramname">length</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the size </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of bytes read </dd></dl>
 
 <p>Implements <a class="el" href="classns3_1_1_wifi_information_element.html#a92135cae0f188d7d8f6c30d9f4becd82">ns3::WifiInformationElement</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00341">341</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00324">m_acBE</a>, <a class="el" href="edca-parameter-set_8h_source.html#l00325">m_acBK</a>, <a class="el" href="edca-parameter-set_8h_source.html#l00326">m_acVI</a>, <a class="el" href="edca-parameter-set_8h_source.html#l00327">m_acVO</a>, <a class="el" href="edca-parameter-set_8h_source.html#l00322">m_qosInfo</a>, <a class="el" href="edca-parameter-set_8h_source.html#l00323">m_reserved</a>, <a class="el" href="buffer_8cc_source.html#l00972">ns3::Buffer::Iterator::ReadU32()</a>, <a class="el" href="buffer_8h_source.html#l01021">ns3::Buffer::Iterator::ReadU8()</a>, and <a class="el" href="core_8py_source.html#l01855">visualizer.core::start()</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00296">m_acBE</a>, <a class="el" href="edca-parameter-set_8h_source.html#l00297">m_acBK</a>, <a class="el" href="edca-parameter-set_8h_source.html#l00298">m_acVI</a>, <a class="el" href="edca-parameter-set_8h_source.html#l00299">m_acVO</a>, <a class="el" href="edca-parameter-set_8h_source.html#l00294">m_qosInfo</a>, <a class="el" href="edca-parameter-set_8h_source.html#l00295">m_reserved</a>, <a class="el" href="buffer_8cc_source.html#l00972">ns3::Buffer::Iterator::ReadU32()</a>, <a class="el" href="buffer_8h_source.html#l01021">ns3::Buffer::Iterator::ReadU8()</a>, and <a class="el" href="core_8py_source.html#l01855">visualizer.core::start()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -487,7 +481,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_edca_parameter_set_ac223153808caa0e52fd12ba13b9e104a_cgraph.png" border="0" usemap="#classns3_1_1_edca_parameter_set_ac223153808caa0e52fd12ba13b9e104a_cgraph" alt=""/></div>
 <map name="classns3_1_1_edca_parameter_set_ac223153808caa0e52fd12ba13b9e104a_cgraph" id="classns3_1_1_edca_parameter_set_ac223153808caa0e52fd12ba13b9e104a_cgraph">
-<area shape="rect" title="Deserialize information field function." alt="" coords="5,71,215,112"/>
+<area shape="rect" title="Deserialize information (i.e., the body of the IE, not including the Element ID and length octets)" alt="" coords="5,71,215,112"/>
 <area shape="rect" href="classns3_1_1_buffer_1_1_iterator.html#adceeb0fd38c2f5634492b64a8e344ff2" title=" " alt="" coords="263,5,413,47"/>
 <area shape="rect" href="classns3_1_1_buffer_1_1_iterator.html#a7d7d5299e27ecf41aef37e315984ad5a" title=" " alt="" coords="263,71,413,112"/>
 <area shape="rect" href="namespacevisualizer_1_1core.html#a2a35e5d8a34af358b508dac8635754e0" title=" " alt="" coords="263,137,413,163"/>
@@ -520,9 +514,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Element ID function. </p>
-<dl class="section return"><dt>Returns</dt><dd>the wifi information element ID </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Own unique Element ID </dd></dl>
 
 <p>Implements <a class="el" href="classns3_1_1_wifi_information_element.html#a0c16b85dc0c63baf7fc437ddbc13ada6">ns3::WifiInformationElement</a>.</p>
 
@@ -553,7 +545,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00196">196</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00324">m_acBE</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00296">m_acBE</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="sta-wifi-mac_8cc_source.html#l00945">ns3::StaWifiMac::UpdateApInfoFromAssocResp()</a>, and <a class="el" href="sta-wifi-mac_8cc_source.html#l00749">ns3::StaWifiMac::UpdateApInfoFromBeacon()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -602,7 +594,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00209">209</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00324">m_acBE</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00296">m_acBE</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="sta-wifi-mac_8cc_source.html#l00945">ns3::StaWifiMac::UpdateApInfoFromAssocResp()</a>, and <a class="el" href="sta-wifi-mac_8cc_source.html#l00749">ns3::StaWifiMac::UpdateApInfoFromBeacon()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -651,7 +643,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00202">202</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00324">m_acBE</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00296">m_acBE</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="sta-wifi-mac_8cc_source.html#l00945">ns3::StaWifiMac::UpdateApInfoFromAssocResp()</a>, and <a class="el" href="sta-wifi-mac_8cc_source.html#l00749">ns3::StaWifiMac::UpdateApInfoFromBeacon()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -700,7 +692,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00216">216</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00324">m_acBE</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00296">m_acBE</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="sta-wifi-mac_8cc_source.html#l00945">ns3::StaWifiMac::UpdateApInfoFromAssocResp()</a>, and <a class="el" href="sta-wifi-mac_8cc_source.html#l00749">ns3::StaWifiMac::UpdateApInfoFromBeacon()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -749,7 +741,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00222">222</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00325">m_acBK</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00297">m_acBK</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="sta-wifi-mac_8cc_source.html#l00945">ns3::StaWifiMac::UpdateApInfoFromAssocResp()</a>, and <a class="el" href="sta-wifi-mac_8cc_source.html#l00749">ns3::StaWifiMac::UpdateApInfoFromBeacon()</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -798,7 +790,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00235">235</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00325">m_acBK</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00297">m_acBK</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="sta-wifi-mac_8cc_source.html#l00945">ns3::StaWifiMac::UpdateApInfoFromAssocResp()</a>, and <a class="el" href="sta-wifi-mac_8cc_source.html#l00749">ns3::StaWifiMac::UpdateApInfoFromBeacon()</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -847,7 +839,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00228">228</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00325">m_acBK</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00297">m_acBK</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="sta-wifi-mac_8cc_source.html#l00945">ns3::StaWifiMac::UpdateApInfoFromAssocResp()</a>, and <a class="el" href="sta-wifi-mac_8cc_source.html#l00749">ns3::StaWifiMac::UpdateApInfoFromBeacon()</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -896,7 +888,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00242">242</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00325">m_acBK</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00297">m_acBK</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="sta-wifi-mac_8cc_source.html#l00945">ns3::StaWifiMac::UpdateApInfoFromAssocResp()</a>, and <a class="el" href="sta-wifi-mac_8cc_source.html#l00749">ns3::StaWifiMac::UpdateApInfoFromBeacon()</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -947,14 +939,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get information field size function. </p>
-<dl class="section return"><dt>Returns</dt><dd>the information field size </dd></dl>
+<p>Length of serialized information (i.e., the length of the body of the IE, not including the Element ID and length octets. </p>
+<p>This is the value that will appear in the second octet of the entire IE - the length field)</p>
+<dl class="section return"><dt>Returns</dt><dd>the length of serialized information </dd></dl>
 
 <p>Implements <a class="el" href="classns3_1_1_wifi_information_element.html#a04af58633c58364e6b8d0ae2a7d777b2">ns3::WifiInformationElement</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00300">300</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00330">m_qosSupported</a>, and <a class="el" href="assert_8h_source.html#l00067">NS_ASSERT</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00302">m_qosSupported</a>, and <a class="el" href="assert_8h_source.html#l00067">NS_ASSERT</a>.</p>
 
 </div>
 </div>
@@ -979,7 +972,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00190">190</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00322">m_qosInfo</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00294">m_qosInfo</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="edca-parameter-set_8cc_source.html#l00327">SerializeInformationField()</a>.</p>
 <div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -990,7 +983,7 @@ Private Attributes</h2></td></tr>
 <div class="center"><img src="classns3_1_1_edca_parameter_set_a3387d8b8812bacf0ac0d76e4159467c6_icgraph.png" border="0" usemap="#classns3_1_1_edca_parameter_set_a3387d8b8812bacf0ac0d76e4159467c6_icgraph" alt=""/></div>
 <map name="classns3_1_1_edca_parameter_set_a3387d8b8812bacf0ac0d76e4159467c6_icgraph" id="classns3_1_1_edca_parameter_set_a3387d8b8812bacf0ac0d76e4159467c6_icgraph">
 <area shape="rect" title="Return the QoS Info field in the EdcaParameterSet information element." alt="" coords="245,5,419,47"/>
-<area shape="rect" href="classns3_1_1_edca_parameter_set.html#aae5ca39197e89704884cf2b187aa939f" title="Serialize information field function." alt="" coords="5,5,197,47"/>
+<area shape="rect" href="classns3_1_1_edca_parameter_set.html#aae5ca39197e89704884cf2b187aa939f" title="Serialize information (i.e., the body of the IE, not including the Element ID and length octets)" alt="" coords="5,5,197,47"/>
 </map>
 </div>
 
@@ -1011,12 +1004,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Return the serialized size of this EDCA Parameter Set. </p>
-<dl class="section return"><dt>Returns</dt><dd>the serialized size of this EDCA Parameter Set </dd></dl>
-
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00317">317</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="wifi-information-element_8cc_source.html#l00035">ns3::WifiInformationElement::GetSerializedSize()</a>, and <a class="el" href="edca-parameter-set_8h_source.html#l00330">m_qosSupported</a>.</p>
+<p class="reference">References <a class="el" href="wifi-information-element_8cc_source.html#l00035">ns3::WifiInformationElement::GetSerializedSize()</a>, and <a class="el" href="edca-parameter-set_8h_source.html#l00302">m_qosSupported</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mgt-headers_8cc_source.html#l01087">ns3::MgtAssocResponseHeader::GetSerializedSize()</a>, and <a class="el" href="mgt-headers_8cc_source.html#l00399">ns3::MgtProbeResponseHeader::GetSerializedSize()</a>.</p>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1026,7 +1016,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_edca_parameter_set_a4f8bcc0fa87ea089beb34453d66278f3_cgraph.png" border="0" usemap="#classns3_1_1_edca_parameter_set_a4f8bcc0fa87ea089beb34453d66278f3_cgraph" alt=""/></div>
 <map name="classns3_1_1_edca_parameter_set_a4f8bcc0fa87ea089beb34453d66278f3_cgraph" id="classns3_1_1_edca_parameter_set_a4f8bcc0fa87ea089beb34453d66278f3_cgraph">
-<area shape="rect" title="Return the serialized size of this EDCA Parameter Set." alt="" coords="5,5,179,47"/>
+<area shape="rect" title=" " alt="" coords="5,5,179,47"/>
 <area shape="rect" href="classns3_1_1_wifi_information_element.html#a1e40d7d7a90f9c6d383223c26a977dc3" title="Get the size of the serialized IE including Element ID and length fields." alt="" coords="227,5,436,47"/>
 <area shape="rect" href="classns3_1_1_wifi_information_element.html#a04af58633c58364e6b8d0ae2a7d777b2" title="Length of serialized information (i.e., the length of the body of the IE, not including the Element I..." alt="" coords="484,5,693,47"/>
 </map>
@@ -1038,7 +1028,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_edca_parameter_set_a4f8bcc0fa87ea089beb34453d66278f3_icgraph.png" border="0" usemap="#classns3_1_1_edca_parameter_set_a4f8bcc0fa87ea089beb34453d66278f3_icgraph" alt=""/></div>
 <map name="classns3_1_1_edca_parameter_set_a4f8bcc0fa87ea089beb34453d66278f3_icgraph" id="classns3_1_1_edca_parameter_set_a4f8bcc0fa87ea089beb34453d66278f3_icgraph">
-<area shape="rect" title="Return the serialized size of this EDCA Parameter Set." alt="" coords="280,39,453,80"/>
+<area shape="rect" title=" " alt="" coords="280,39,453,80"/>
 <area shape="rect" href="classns3_1_1_mgt_assoc_response_header.html#a5e89f2a2f4de5bf66291e26e882d5400" title=" " alt="" coords="5,5,232,47"/>
 <area shape="rect" href="classns3_1_1_mgt_probe_response_header.html#ab5e4c638c35be8e8d0670cfa03cd20ec" title=" " alt="" coords="6,71,231,112"/>
 </map>
@@ -1067,7 +1057,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00248">248</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00326">m_acVI</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00298">m_acVI</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="sta-wifi-mac_8cc_source.html#l00945">ns3::StaWifiMac::UpdateApInfoFromAssocResp()</a>, and <a class="el" href="sta-wifi-mac_8cc_source.html#l00749">ns3::StaWifiMac::UpdateApInfoFromBeacon()</a>.</p>
 <div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1116,7 +1106,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00261">261</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00326">m_acVI</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00298">m_acVI</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="sta-wifi-mac_8cc_source.html#l00945">ns3::StaWifiMac::UpdateApInfoFromAssocResp()</a>, and <a class="el" href="sta-wifi-mac_8cc_source.html#l00749">ns3::StaWifiMac::UpdateApInfoFromBeacon()</a>.</p>
 <div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1165,7 +1155,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00254">254</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00326">m_acVI</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00298">m_acVI</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="sta-wifi-mac_8cc_source.html#l00945">ns3::StaWifiMac::UpdateApInfoFromAssocResp()</a>, and <a class="el" href="sta-wifi-mac_8cc_source.html#l00749">ns3::StaWifiMac::UpdateApInfoFromBeacon()</a>.</p>
 <div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1214,7 +1204,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00268">268</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00326">m_acVI</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00298">m_acVI</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="sta-wifi-mac_8cc_source.html#l00945">ns3::StaWifiMac::UpdateApInfoFromAssocResp()</a>, and <a class="el" href="sta-wifi-mac_8cc_source.html#l00749">ns3::StaWifiMac::UpdateApInfoFromBeacon()</a>.</p>
 <div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1263,7 +1253,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00274">274</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00327">m_acVO</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00299">m_acVO</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="sta-wifi-mac_8cc_source.html#l00945">ns3::StaWifiMac::UpdateApInfoFromAssocResp()</a>, and <a class="el" href="sta-wifi-mac_8cc_source.html#l00749">ns3::StaWifiMac::UpdateApInfoFromBeacon()</a>.</p>
 <div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1312,7 +1302,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00287">287</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00327">m_acVO</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00299">m_acVO</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="sta-wifi-mac_8cc_source.html#l00945">ns3::StaWifiMac::UpdateApInfoFromAssocResp()</a>, and <a class="el" href="sta-wifi-mac_8cc_source.html#l00749">ns3::StaWifiMac::UpdateApInfoFromBeacon()</a>.</p>
 <div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1361,7 +1351,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00280">280</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00327">m_acVO</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00299">m_acVO</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="sta-wifi-mac_8cc_source.html#l00945">ns3::StaWifiMac::UpdateApInfoFromAssocResp()</a>, and <a class="el" href="sta-wifi-mac_8cc_source.html#l00749">ns3::StaWifiMac::UpdateApInfoFromBeacon()</a>.</p>
 <div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1410,7 +1400,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00294">294</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00327">m_acVO</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00299">m_acVO</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="sta-wifi-mac_8cc_source.html#l00945">ns3::StaWifiMac::UpdateApInfoFromAssocResp()</a>, and <a class="el" href="sta-wifi-mac_8cc_source.html#l00749">ns3::StaWifiMac::UpdateApInfoFromBeacon()</a>.</p>
 <div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1459,7 +1449,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00050">50</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00324">m_acBE</a>, <a class="el" href="edca-parameter-set_8h_source.html#l00325">m_acBK</a>, <a class="el" href="edca-parameter-set_8h_source.html#l00326">m_acVI</a>, and <a class="el" href="edca-parameter-set_8h_source.html#l00327">m_acVO</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00296">m_acBE</a>, <a class="el" href="edca-parameter-set_8h_source.html#l00297">m_acBK</a>, <a class="el" href="edca-parameter-set_8h_source.html#l00298">m_acVI</a>, and <a class="el" href="edca-parameter-set_8h_source.html#l00299">m_acVO</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="sta-wifi-mac_8cc_source.html#l00945">ns3::StaWifiMac::UpdateApInfoFromAssocResp()</a>, and <a class="el" href="sta-wifi-mac_8cc_source.html#l00749">ns3::StaWifiMac::UpdateApInfoFromBeacon()</a>.</p>
 <div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1503,19 +1493,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>This information element is a bit special in that it is only included if the STA is a QoS STA. </p>
-<p>To support this we override the Serialize and GetSerializedSize methods of <a class="el" href="classns3_1_1_wifi_information_element.html" title="Information element, as defined in 802.11-2007 standard.">WifiInformationElement</a>.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">start</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>an iterator </dd></dl>
-
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00307">307</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00330">m_qosSupported</a>, and <a class="el" href="wifi-information-element_8cc_source.html#l00047">ns3::WifiInformationElement::Serialize()</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00302">m_qosSupported</a>, and <a class="el" href="wifi-information-element_8cc_source.html#l00047">ns3::WifiInformationElement::Serialize()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mgt-headers_8cc_source.html#l01124">ns3::MgtAssocResponseHeader::Serialize()</a>, and <a class="el" href="mgt-headers_8cc_source.html#l00438">ns3::MgtProbeResponseHeader::Serialize()</a>.</p>
 <div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1525,7 +1505,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-23-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_edca_parameter_set_a1e9211bf5bb8f74857ed61e8003a51bf_cgraph.png" border="0" usemap="#classns3_1_1_edca_parameter_set_a1e9211bf5bb8f74857ed61e8003a51bf_cgraph" alt=""/></div>
 <map name="classns3_1_1_edca_parameter_set_a1e9211bf5bb8f74857ed61e8003a51bf_cgraph" id="classns3_1_1_edca_parameter_set_a1e9211bf5bb8f74857ed61e8003a51bf_cgraph">
-<area shape="rect" title="This information element is a bit special in that it is only included if the STA is a QoS STA." alt="" coords="5,169,179,211"/>
+<area shape="rect" title=" " alt="" coords="5,169,179,211"/>
 <area shape="rect" href="classns3_1_1_wifi_information_element.html#a8662b6056d624747d927e9c041e24ab0" title="Serialize entire IE including Element ID and length fields." alt="" coords="227,169,436,211"/>
 <area shape="rect" href="classns3_1_1_wifi_information_element.html#a0c16b85dc0c63baf7fc437ddbc13ada6" title=" " alt="" coords="484,5,693,47"/>
 <area shape="rect" href="classns3_1_1_wifi_information_element.html#ae24bfd29837cfb426a44dadd56d72f4b" title=" " alt="" coords="484,71,693,112"/>
@@ -1543,7 +1523,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-24-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_edca_parameter_set_a1e9211bf5bb8f74857ed61e8003a51bf_icgraph.png" border="0" usemap="#classns3_1_1_edca_parameter_set_a1e9211bf5bb8f74857ed61e8003a51bf_icgraph" alt=""/></div>
 <map name="classns3_1_1_edca_parameter_set_a1e9211bf5bb8f74857ed61e8003a51bf_icgraph" id="classns3_1_1_edca_parameter_set_a1e9211bf5bb8f74857ed61e8003a51bf_icgraph">
-<area shape="rect" title="This information element is a bit special in that it is only included if the STA is a QoS STA." alt="" coords="280,39,453,80"/>
+<area shape="rect" title=" " alt="" coords="280,39,453,80"/>
 <area shape="rect" href="classns3_1_1_mgt_assoc_response_header.html#ac7eb0a62c467eb513d37dc095c896985" title=" " alt="" coords="5,5,232,47"/>
 <area shape="rect" href="classns3_1_1_mgt_probe_response_header.html#a1f83599e2f55616f48c23e5115749d93" title=" " alt="" coords="6,71,231,112"/>
 </map>
@@ -1575,10 +1555,10 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Serialize information field function. </p>
+<p>Serialize information (i.e., the body of the IE, not including the Element ID and length octets) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">start</td><td>the iterator </td></tr>
+    <tr><td class="paramname">start</td><td>an iterator which points to where the information should be written. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1587,7 +1567,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00327">327</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8cc_source.html#l00190">GetQosInfo()</a>, <a class="el" href="edca-parameter-set_8h_source.html#l00324">m_acBE</a>, <a class="el" href="edca-parameter-set_8h_source.html#l00325">m_acBK</a>, <a class="el" href="edca-parameter-set_8h_source.html#l00326">m_acVI</a>, <a class="el" href="edca-parameter-set_8h_source.html#l00327">m_acVO</a>, <a class="el" href="edca-parameter-set_8h_source.html#l00330">m_qosSupported</a>, <a class="el" href="edca-parameter-set_8h_source.html#l00323">m_reserved</a>, and <a class="el" href="core_8py_source.html#l01855">visualizer.core::start()</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8cc_source.html#l00190">GetQosInfo()</a>, <a class="el" href="edca-parameter-set_8h_source.html#l00296">m_acBE</a>, <a class="el" href="edca-parameter-set_8h_source.html#l00297">m_acBK</a>, <a class="el" href="edca-parameter-set_8h_source.html#l00298">m_acVI</a>, <a class="el" href="edca-parameter-set_8h_source.html#l00299">m_acVO</a>, <a class="el" href="edca-parameter-set_8h_source.html#l00302">m_qosSupported</a>, <a class="el" href="edca-parameter-set_8h_source.html#l00295">m_reserved</a>, and <a class="el" href="core_8py_source.html#l01855">visualizer.core::start()</a>.</p>
 <div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-25-summary" class="dynsummary" style="display:block;">
@@ -1595,7 +1575,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-25-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_edca_parameter_set_aae5ca39197e89704884cf2b187aa939f_cgraph.png" border="0" usemap="#classns3_1_1_edca_parameter_set_aae5ca39197e89704884cf2b187aa939f_cgraph" alt=""/></div>
 <map name="classns3_1_1_edca_parameter_set_aae5ca39197e89704884cf2b187aa939f_cgraph" id="classns3_1_1_edca_parameter_set_aae5ca39197e89704884cf2b187aa939f_cgraph">
-<area shape="rect" title="Serialize information field function." alt="" coords="5,35,197,76"/>
+<area shape="rect" title="Serialize information (i.e., the body of the IE, not including the Element ID and length octets)" alt="" coords="5,35,197,76"/>
 <area shape="rect" href="classns3_1_1_edca_parameter_set.html#a3387d8b8812bacf0ac0d76e4159467c6" title="Return the QoS Info field in the EdcaParameterSet information element." alt="" coords="245,5,419,47"/>
 <area shape="rect" href="namespacevisualizer_1_1core.html#a2a35e5d8a34af358b508dac8635754e0" title=" " alt="" coords="257,71,407,98"/>
 <area shape="rect" href="namespacevisualizer_1_1base.html#ad171497a5ff1afe0a73bedaebf35448f" title=" " alt="" coords="467,64,619,105"/>
@@ -1631,7 +1611,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00068">68</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00324">m_acBE</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00296">m_acBE</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ap-wifi-mac_8cc_source.html#l00503">ns3::ApWifiMac::GetEdcaParameterSet()</a>.</p>
 <div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1681,7 +1661,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00062">62</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00324">m_acBE</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00296">m_acBE</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ap-wifi-mac_8cc_source.html#l00503">ns3::ApWifiMac::GetEdcaParameterSet()</a>.</p>
 <div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1731,7 +1711,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00081">81</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00324">m_acBE</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00296">m_acBE</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ap-wifi-mac_8cc_source.html#l00503">ns3::ApWifiMac::GetEdcaParameterSet()</a>.</p>
 <div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1781,7 +1761,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00074">74</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00324">m_acBE</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00296">m_acBE</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ap-wifi-mac_8cc_source.html#l00503">ns3::ApWifiMac::GetEdcaParameterSet()</a>.</p>
 <div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1831,7 +1811,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00088">88</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00324">m_acBE</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00296">m_acBE</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ap-wifi-mac_8cc_source.html#l00503">ns3::ApWifiMac::GetEdcaParameterSet()</a>.</p>
 <div id="dynsection-30" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1881,7 +1861,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00100">100</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00325">m_acBK</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00297">m_acBK</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ap-wifi-mac_8cc_source.html#l00503">ns3::ApWifiMac::GetEdcaParameterSet()</a>.</p>
 <div id="dynsection-31" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1931,7 +1911,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00094">94</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00325">m_acBK</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00297">m_acBK</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ap-wifi-mac_8cc_source.html#l00503">ns3::ApWifiMac::GetEdcaParameterSet()</a>.</p>
 <div id="dynsection-32" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1981,7 +1961,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00113">113</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00325">m_acBK</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00297">m_acBK</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ap-wifi-mac_8cc_source.html#l00503">ns3::ApWifiMac::GetEdcaParameterSet()</a>.</p>
 <div id="dynsection-33" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -2031,7 +2011,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00106">106</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00325">m_acBK</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00297">m_acBK</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ap-wifi-mac_8cc_source.html#l00503">ns3::ApWifiMac::GetEdcaParameterSet()</a>.</p>
 <div id="dynsection-34" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -2081,7 +2061,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00120">120</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00325">m_acBK</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00297">m_acBK</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ap-wifi-mac_8cc_source.html#l00503">ns3::ApWifiMac::GetEdcaParameterSet()</a>.</p>
 <div id="dynsection-35" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -2131,7 +2111,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00056">56</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00322">m_qosInfo</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00294">m_qosInfo</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ap-wifi-mac_8cc_source.html#l00503">ns3::ApWifiMac::GetEdcaParameterSet()</a>.</p>
 <div id="dynsection-36" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -2181,7 +2161,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00044">44</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00330">m_qosSupported</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00302">m_qosSupported</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ap-wifi-mac_8cc_source.html#l00503">ns3::ApWifiMac::GetEdcaParameterSet()</a>.</p>
 <div id="dynsection-37" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -2231,7 +2211,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00132">132</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00326">m_acVI</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00298">m_acVI</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ap-wifi-mac_8cc_source.html#l00503">ns3::ApWifiMac::GetEdcaParameterSet()</a>.</p>
 <div id="dynsection-38" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -2281,7 +2261,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00126">126</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00326">m_acVI</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00298">m_acVI</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ap-wifi-mac_8cc_source.html#l00503">ns3::ApWifiMac::GetEdcaParameterSet()</a>.</p>
 <div id="dynsection-39" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -2331,7 +2311,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00145">145</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00326">m_acVI</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00298">m_acVI</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ap-wifi-mac_8cc_source.html#l00503">ns3::ApWifiMac::GetEdcaParameterSet()</a>.</p>
 <div id="dynsection-40" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -2381,7 +2361,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00138">138</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00326">m_acVI</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00298">m_acVI</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ap-wifi-mac_8cc_source.html#l00503">ns3::ApWifiMac::GetEdcaParameterSet()</a>.</p>
 <div id="dynsection-41" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -2431,7 +2411,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00152">152</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00326">m_acVI</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00298">m_acVI</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ap-wifi-mac_8cc_source.html#l00503">ns3::ApWifiMac::GetEdcaParameterSet()</a>.</p>
 <div id="dynsection-42" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -2481,7 +2461,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00164">164</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00327">m_acVO</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00299">m_acVO</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ap-wifi-mac_8cc_source.html#l00503">ns3::ApWifiMac::GetEdcaParameterSet()</a>.</p>
 <div id="dynsection-43" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -2531,7 +2511,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00158">158</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00327">m_acVO</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00299">m_acVO</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ap-wifi-mac_8cc_source.html#l00503">ns3::ApWifiMac::GetEdcaParameterSet()</a>.</p>
 <div id="dynsection-44" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -2581,7 +2561,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00177">177</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00327">m_acVO</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00299">m_acVO</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ap-wifi-mac_8cc_source.html#l00503">ns3::ApWifiMac::GetEdcaParameterSet()</a>.</p>
 <div id="dynsection-45" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -2631,7 +2611,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00170">170</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00327">m_acVO</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00299">m_acVO</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ap-wifi-mac_8cc_source.html#l00503">ns3::ApWifiMac::GetEdcaParameterSet()</a>.</p>
 <div id="dynsection-46" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -2681,7 +2661,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="edca-parameter-set_8cc_source.html#l00184">184</a> of file <a class="el" href="edca-parameter-set_8cc_source.html">edca-parameter-set.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00327">m_acVO</a>.</p>
+<p class="reference">References <a class="el" href="edca-parameter-set_8h_source.html#l00299">m_acVO</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ap-wifi-mac_8cc_source.html#l00503">ns3::ApWifiMac::GetEdcaParameterSet()</a>.</p>
 <div id="dynsection-47" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -2728,7 +2708,7 @@ Private Attributes</h2></td></tr>
 
 <p>AC_BE. </p>
 
-<p class="definition">Definition at line <a class="el" href="edca-parameter-set_8h_source.html#l00324">324</a> of file <a class="el" href="edca-parameter-set_8h_source.html">edca-parameter-set.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="edca-parameter-set_8h_source.html#l00296">296</a> of file <a class="el" href="edca-parameter-set_8h_source.html">edca-parameter-set.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="edca-parameter-set_8cc_source.html#l00341">DeserializeInformationField()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00196">GetBeAifsn()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00209">GetBeCWmax()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00202">GetBeCWmin()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00216">GetBeTxopLimit()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00050">IsQosSupported()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00327">SerializeInformationField()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00068">SetBeAci()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00062">SetBeAifsn()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00081">SetBeCWmax()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00074">SetBeCWmin()</a>, and <a class="el" href="edca-parameter-set_8cc_source.html#l00088">SetBeTxopLimit()</a>.</p>
 
@@ -2756,7 +2736,7 @@ Private Attributes</h2></td></tr>
 
 <p>AC_BK. </p>
 
-<p class="definition">Definition at line <a class="el" href="edca-parameter-set_8h_source.html#l00325">325</a> of file <a class="el" href="edca-parameter-set_8h_source.html">edca-parameter-set.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="edca-parameter-set_8h_source.html#l00297">297</a> of file <a class="el" href="edca-parameter-set_8h_source.html">edca-parameter-set.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="edca-parameter-set_8cc_source.html#l00341">DeserializeInformationField()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00222">GetBkAifsn()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00235">GetBkCWmax()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00228">GetBkCWmin()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00242">GetBkTxopLimit()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00050">IsQosSupported()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00327">SerializeInformationField()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00100">SetBkAci()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00094">SetBkAifsn()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00113">SetBkCWmax()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00106">SetBkCWmin()</a>, and <a class="el" href="edca-parameter-set_8cc_source.html#l00120">SetBkTxopLimit()</a>.</p>
 
@@ -2784,7 +2764,7 @@ Private Attributes</h2></td></tr>
 
 <p>AC_VI. </p>
 
-<p class="definition">Definition at line <a class="el" href="edca-parameter-set_8h_source.html#l00326">326</a> of file <a class="el" href="edca-parameter-set_8h_source.html">edca-parameter-set.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="edca-parameter-set_8h_source.html#l00298">298</a> of file <a class="el" href="edca-parameter-set_8h_source.html">edca-parameter-set.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="edca-parameter-set_8cc_source.html#l00341">DeserializeInformationField()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00248">GetViAifsn()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00261">GetViCWmax()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00254">GetViCWmin()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00268">GetViTxopLimit()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00050">IsQosSupported()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00327">SerializeInformationField()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00132">SetViAci()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00126">SetViAifsn()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00145">SetViCWmax()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00138">SetViCWmin()</a>, and <a class="el" href="edca-parameter-set_8cc_source.html#l00152">SetViTxopLimit()</a>.</p>
 
@@ -2812,7 +2792,7 @@ Private Attributes</h2></td></tr>
 
 <p>AC_VO. </p>
 
-<p class="definition">Definition at line <a class="el" href="edca-parameter-set_8h_source.html#l00327">327</a> of file <a class="el" href="edca-parameter-set_8h_source.html">edca-parameter-set.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="edca-parameter-set_8h_source.html#l00299">299</a> of file <a class="el" href="edca-parameter-set_8h_source.html">edca-parameter-set.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="edca-parameter-set_8cc_source.html#l00341">DeserializeInformationField()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00274">GetVoAifsn()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00287">GetVoCWmax()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00280">GetVoCWmin()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00294">GetVoTxopLimit()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00050">IsQosSupported()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00327">SerializeInformationField()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00164">SetVoAci()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00158">SetVoAifsn()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00177">SetVoCWmax()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00170">SetVoCWmin()</a>, and <a class="el" href="edca-parameter-set_8cc_source.html#l00184">SetVoTxopLimit()</a>.</p>
 
@@ -2840,7 +2820,7 @@ Private Attributes</h2></td></tr>
 
 <p>QOS info. </p>
 
-<p class="definition">Definition at line <a class="el" href="edca-parameter-set_8h_source.html#l00322">322</a> of file <a class="el" href="edca-parameter-set_8h_source.html">edca-parameter-set.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="edca-parameter-set_8h_source.html#l00294">294</a> of file <a class="el" href="edca-parameter-set_8h_source.html">edca-parameter-set.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="edca-parameter-set_8cc_source.html#l00341">DeserializeInformationField()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00190">GetQosInfo()</a>, and <a class="el" href="edca-parameter-set_8cc_source.html#l00056">SetQosInfo()</a>.</p>
 
@@ -2868,7 +2848,7 @@ Private Attributes</h2></td></tr>
 
 <p>This is used to decide whether this element should be added to the frame or not. </p>
 
-<p class="definition">Definition at line <a class="el" href="edca-parameter-set_8h_source.html#l00330">330</a> of file <a class="el" href="edca-parameter-set_8h_source.html">edca-parameter-set.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="edca-parameter-set_8h_source.html#l00302">302</a> of file <a class="el" href="edca-parameter-set_8h_source.html">edca-parameter-set.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="edca-parameter-set_8cc_source.html#l00300">GetInformationFieldSize()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00317">GetSerializedSize()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00307">Serialize()</a>, <a class="el" href="edca-parameter-set_8cc_source.html#l00327">SerializeInformationField()</a>, and <a class="el" href="edca-parameter-set_8cc_source.html#l00044">SetQosSupported()</a>.</p>
 
@@ -2896,7 +2876,7 @@ Private Attributes</h2></td></tr>
 
 <p>reserved </p>
 
-<p class="definition">Definition at line <a class="el" href="edca-parameter-set_8h_source.html#l00323">323</a> of file <a class="el" href="edca-parameter-set_8h_source.html">edca-parameter-set.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="edca-parameter-set_8h_source.html#l00295">295</a> of file <a class="el" href="edca-parameter-set_8h_source.html">edca-parameter-set.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="edca-parameter-set_8cc_source.html#l00341">DeserializeInformationField()</a>, and <a class="el" href="edca-parameter-set_8cc_source.html#l00327">SerializeInformationField()</a>.</p>
 
@@ -2916,7 +2896,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_edca_parameter_set.html">EdcaParameterSet</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:23 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:29 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -201,7 +198,7 @@ $(document).ready(function(){initNavTree('spectrum-error-model_8h_source.html','
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classns3_1_1_spectrum_error_model.html#a49aad41fa0c38b66c6ca094bcce5dee7">   54</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_spectrum_error_model.html#a49aad41fa0c38b66c6ca094bcce5dee7">StartRx</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;const Packet&gt;</a> p) = 0;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classns3_1_1_spectrum_error_model.html#ae067d4343114dadc13bc4570f1aeb588">   61</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_spectrum_error_model.html#ae067d4343114dadc13bc4570f1aeb588">EvaluateChunk</a> (<span class="keyword">const</span> <a class="code" href="classns3_1_1_spectrum_value.html">SpectrumValue</a>&amp; sinr, <a class="code" href="classns3_1_1_time.html">Time</a> duration) = 0;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classns3_1_1_spectrum_error_model.html#ae067d4343114dadc13bc4570f1aeb588">   61</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_spectrum_error_model.html#ae067d4343114dadc13bc4570f1aeb588">EvaluateChunk</a> (<span class="keyword">const</span> <a class="code" href="classns3_1_1_spectrum_value.html">SpectrumValue</a>&amp; sinr, <a class="code" href="classns3_1_1_time.html">Time</a> <a class="code" href="namespacealoha.html#a2e783efd48c6e7010b99887a6daa8ac3">duration</a>) = 0;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classns3_1_1_spectrum_error_model.html#a8a553ca7b47fc83507c8d56423473329">   67</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classns3_1_1_spectrum_error_model.html#a8a553ca7b47fc83507c8d56423473329">IsRxCorrect</a> () = 0;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
@@ -216,7 +213,7 @@ $(document).ready(function(){initNavTree('spectrum-error-model_8h_source.html','
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keyword">static</span> <a class="code" href="classns3_1_1_type_id.html">TypeId</a> <a class="code" href="classns3_1_1_shannon_spectrum_error_model.html#aaa594b0d5aafb93d9af86f6f0cf60875">GetTypeId</a> (<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="comment">// inherited from SpectrumErrorModel</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_shannon_spectrum_error_model.html#a5c54736ef0634549ef07ac050736f81f">StartRx</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;const Packet&gt;</a> p);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_shannon_spectrum_error_model.html#aef33d9188f5a6b43f908bf72401fe549">EvaluateChunk</a> (<span class="keyword">const</span> <a class="code" href="classns3_1_1_spectrum_value.html">SpectrumValue</a>&amp; sinr, <a class="code" href="classns3_1_1_time.html">Time</a> duration);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_shannon_spectrum_error_model.html#aef33d9188f5a6b43f908bf72401fe549">EvaluateChunk</a> (<span class="keyword">const</span> <a class="code" href="classns3_1_1_spectrum_value.html">SpectrumValue</a>&amp; sinr, <a class="code" href="classns3_1_1_time.html">Time</a> <a class="code" href="namespacealoha.html#a2e783efd48c6e7010b99887a6daa8ac3">duration</a>);</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classns3_1_1_shannon_spectrum_error_model.html#ad609e2ec5ba586332acd810c2d86fd2f">IsRxCorrect</a> ();</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">private</span>:</div>
@@ -235,6 +232,7 @@ $(document).ready(function(){initNavTree('spectrum-error-model_8h_source.html','
 </div><!-- doc-content -->
 <div class="ttc" id="aclassns3_1_1_type_id_html"><div class="ttname"><a href="classns3_1_1_type_id.html">ns3::TypeId</a></div><div class="ttdoc">a unique identifier for an interface.</div><div class="ttdef"><b>Definition:</b> <a href="type-id_8h_source.html#l00058">type-id.h:59</a></div></div>
 <div class="ttc" id="aclassns3_1_1_shannon_spectrum_error_model_html_ad609e2ec5ba586332acd810c2d86fd2f"><div class="ttname"><a href="classns3_1_1_shannon_spectrum_error_model.html#ad609e2ec5ba586332acd810c2d86fd2f">ns3::ShannonSpectrumErrorModel::IsRxCorrect</a></div><div class="ttdeci">bool IsRxCorrect()</div><div class="ttdoc">Checks if the packet being received is correct.</div><div class="ttdef"><b>Definition:</b> <a href="spectrum-error-model_8cc_source.html#l00103">spectrum-error-model.cc:103</a></div></div>
+<div class="ttc" id="anamespacealoha_html_a2e783efd48c6e7010b99887a6daa8ac3"><div class="ttname"><a href="namespacealoha.html#a2e783efd48c6e7010b99887a6daa8ac3">aloha.duration</a></div><div class="ttdeci">float duration</div><div class="ttdef"><b>Definition:</b> <a href="aloha_8py_source.html#l00037">aloha.py:37</a></div></div>
 <div class="ttc" id="anamespacens3_html"><div class="ttname"><a href="namespacens3.html">ns3</a></div><div class="ttdoc">Every class exported by the ns3 library is enclosed in the ns3 namespace.</div></div>
 <div class="ttc" id="aclassns3_1_1_shannon_spectrum_error_model_html_aaa594b0d5aafb93d9af86f6f0cf60875"><div class="ttname"><a href="classns3_1_1_shannon_spectrum_error_model.html#aaa594b0d5aafb93d9af86f6f0cf60875">ns3::ShannonSpectrumErrorModel::GetTypeId</a></div><div class="ttdeci">static TypeId GetTypeId(void)</div><div class="ttdoc">Register this type.</div><div class="ttdef"><b>Definition:</b> <a href="spectrum-error-model_8cc_source.html#l00052">spectrum-error-model.cc:52</a></div></div>
 <div class="ttc" id="aclassns3_1_1_ptr_html"><div class="ttname"><a href="classns3_1_1_ptr.html">ns3::Ptr</a></div><div class="ttdoc">Smart pointer class similar to boost::intrusive_ptr.</div><div class="ttdef"><b>Definition:</b> <a href="ptr_8h_source.html#l00073">ptr.h:74</a></div></div>
@@ -261,7 +259,7 @@ $(document).ready(function(){initNavTree('spectrum-error-model_8h_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_10d0328e2266480c720033fb91de3081.html">spectrum</a></li><li class="navelem"><a class="el" href="dir_f25b46aff9dd2800f353f0cc2534eabd.html">model</a></li><li class="navelem"><a class="el" href="spectrum-error-model_8h.html">spectrum-error-model.h</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:04 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:12 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

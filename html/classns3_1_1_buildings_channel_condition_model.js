@@ -5,5 +5,5 @@ var classns3_1_1_buildings_channel_condition_model =
     [ "AssignStreams", "classns3_1_1_buildings_channel_condition_model.html#a0254ddea672b9f199ba0e8919f89664d", null ],
     [ "GetChannelCondition", "classns3_1_1_buildings_channel_condition_model.html#a33a93a848acc2fb6ba1c09648c12bc50", null ],
     [ "GetTypeId", "classns3_1_1_buildings_channel_condition_model.html#abc90724f42f2d3bb77cfde99db241d6a", null ],
-    [ "IsWithinLineOfSight", "classns3_1_1_buildings_channel_condition_model.html#a4fd08585f74c4712c3865c0f48f2ab8c", null ]
+    [ "IsLineOfSightBlocked", "classns3_1_1_buildings_channel_condition_model.html#a3b97a7666596f013e8e59e42ca93d756", null ]
 ];

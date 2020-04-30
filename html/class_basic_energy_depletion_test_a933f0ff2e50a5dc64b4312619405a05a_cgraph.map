@@ -2,7 +2,7 @@
 <area shape="rect" id="node1" title=" " alt="" coords="5,587,196,629"/>
 <area shape="rect" id="node2" href="$classns3_1_1_node_container.html#a787f059e2813e8b951cc6914d11dfe69" title="Create n nodes and append pointers to them to the end of this NodeContainer." alt="" coords="282,81,433,122"/>
 <area shape="rect" id="node3" href="$classns3_1_1_yans_wifi_channel_helper.html#a6bb01082fd42806a6b95e6684a4344d4" title=" " alt="" coords="255,146,459,187"/>
-<area shape="rect" id="node9" href="$classns3_1_1_yans_wifi_phy_helper.html#a75b0af43b173308e2f130605ddf34a7f" title="Create a phy helper in a default working state." alt="" coords="270,211,445,253"/>
+<area shape="rect" id="node9" href="$classns3_1_1_yans_wifi_phy_helper.html#a75b0af43b173308e2f130605ddf34a7f" title="Create a PHY helper in a default working state." alt="" coords="270,211,445,253"/>
 <area shape="rect" id="node16" href="$class_basic_energy_depletion_test.html#af949ebacd8c4fbfbb48d982d15350d23" title="Callback invoked when energy is drained from source." alt="" coords="262,646,453,687"/>
 <area shape="rect" id="node17" href="$classns3_1_1_simulator.html#a2a056e59a6623225df0957eda0ee8252" title="Execute the events scheduled with ScheduleDestroy()." alt="" coords="556,561,731,588"/>
 <area shape="rect" id="node22" href="$classns3_1_1_device_energy_model_helper.html#a860992551568bae5a766ee23d93c6775" title=" " alt="" coords="244,711,471,753"/>

@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -192,44 +189,46 @@ $(document).ready(function(){initNavTree('forwarder-helper_8h_source.html',''); 
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacens3.html">ns3</a> {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classns3_1_1_forwarder_helper.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="classns3_1_1_forwarder_helper.html">ForwarderHelper</a></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="classns3_1_1_forwarder_helper.html#a5394408bc8040bcb64ca3edefeadcdf5">ForwarderHelper</a> ();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="classns3_1_1_forwarder_helper.html#a47449464a0017b72a8749f65464bfc3e">~ForwarderHelper</a> ();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_forwarder_helper.html#a25a9f365c49348658e678be9c8dd6780">SetAttribute</a> (std::string name, <span class="keyword">const</span> <a class="code" href="classns3_1_1_attribute_value.html">AttributeValue</a> &amp;value);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="classns3_1_1_application_container.html">ApplicationContainer</a> <a class="code" href="classns3_1_1_forwarder_helper.html#af18b2d999c8fb3d259dd1d49b62fab79">Install</a> (<a class="code" href="classns3_1_1_node_container.html">NodeContainer</a> c) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="classns3_1_1_application_container.html">ApplicationContainer</a> <a class="code" href="classns3_1_1_forwarder_helper.html#af18b2d999c8fb3d259dd1d49b62fab79">Install</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Node&gt;</a> node) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Application&gt;</a> <a class="code" href="classns3_1_1_forwarder_helper.html#a9d420de0f4be4d252a1df120abe4db27">InstallPriv</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Node&gt;</a> node) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classns3_1_1_forwarder_helper.html#ad034fced24992be4afbfeee4c7a74dd9">   56</a></span>&#160;  <a class="code" href="classns3_1_1_object_factory.html">ObjectFactory</a> <a class="code" href="classns3_1_1_forwarder_helper.html#ad034fced24992be4afbfeee4c7a74dd9">m_factory</a>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;} <span class="comment">// namespace ns3</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* FORWARDER_HELPER_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span>lorawan {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classns3_1_1lorawan_1_1_forwarder_helper.html">   41</a></span>&#160;<span class="keyword">class </span><a class="code" href="classns3_1_1lorawan_1_1_forwarder_helper.html">ForwarderHelper</a></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="classns3_1_1lorawan_1_1_forwarder_helper.html#a72c9c9df5eaed3f459b085bbe660af89">ForwarderHelper</a> ();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="classns3_1_1lorawan_1_1_forwarder_helper.html#a8982d5f47fc15a10ad4feb7db9f3ee1c">~ForwarderHelper</a> ();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classns3_1_1lorawan_1_1_forwarder_helper.html#a0810e85d1a2cb8c8d9a5b7df47806b1a">SetAttribute</a> (std::string name, <span class="keyword">const</span> <a class="code" href="classns3_1_1_attribute_value.html">AttributeValue</a> &amp;value);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="classns3_1_1_application_container.html">ApplicationContainer</a> <a class="code" href="classns3_1_1lorawan_1_1_forwarder_helper.html#a3023933d0eea2c15d7b42e18a7b1766e">Install</a> (<a class="code" href="classns3_1_1_node_container.html">NodeContainer</a> c) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="classns3_1_1_application_container.html">ApplicationContainer</a> <a class="code" href="classns3_1_1lorawan_1_1_forwarder_helper.html#a3023933d0eea2c15d7b42e18a7b1766e">Install</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Node&gt;</a> node) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Application&gt;</a> <a class="code" href="classns3_1_1lorawan_1_1_forwarder_helper.html#ad62c2a4a15e40e1dff0cbf2144fde1c5">InstallPriv</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Node&gt;</a> node) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classns3_1_1lorawan_1_1_forwarder_helper.html#a2b7e385d50da31784057499cfec2120c">   57</a></span>&#160;  <a class="code" href="classns3_1_1_object_factory.html">ObjectFactory</a> <a class="code" href="classns3_1_1lorawan_1_1_forwarder_helper.html#a2b7e385d50da31784057499cfec2120c">m_factory</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;} <span class="comment">// namespace ns3</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* FORWARDER_HELPER_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassns3_1_1_forwarder_helper_html_a9d420de0f4be4d252a1df120abe4db27"><div class="ttname"><a href="classns3_1_1_forwarder_helper.html#a9d420de0f4be4d252a1df120abe4db27">ns3::ForwarderHelper::InstallPriv</a></div><div class="ttdeci">Ptr&lt; Application &gt; InstallPriv(Ptr&lt; Node &gt; node) const</div><div class="ttdef"><b>Definition:</b> <a href="forwarder-helper_8cc_source.html#l00068">forwarder-helper.cc:68</a></div></div>
-<div class="ttc" id="aclassns3_1_1_forwarder_helper_html_ad034fced24992be4afbfeee4c7a74dd9"><div class="ttname"><a href="classns3_1_1_forwarder_helper.html#ad034fced24992be4afbfeee4c7a74dd9">ns3::ForwarderHelper::m_factory</a></div><div class="ttdeci">ObjectFactory m_factory</div><div class="ttdef"><b>Definition:</b> <a href="forwarder-helper_8h_source.html#l00056">forwarder-helper.h:56</a></div></div>
 <div class="ttc" id="anamespacens3_html"><div class="ttname"><a href="namespacens3.html">ns3</a></div><div class="ttdoc">Every class exported by the ns3 library is enclosed in the ns3 namespace.</div></div>
 <div class="ttc" id="aclassns3_1_1_attribute_value_html"><div class="ttname"><a href="classns3_1_1_attribute_value.html">ns3::AttributeValue</a></div><div class="ttdoc">Hold a value for an Attribute.</div><div class="ttdef"><b>Definition:</b> <a href="attribute_8h_source.html#l00068">attribute.h:69</a></div></div>
-<div class="ttc" id="aclassns3_1_1_forwarder_helper_html"><div class="ttname"><a href="classns3_1_1_forwarder_helper.html">ns3::ForwarderHelper</a></div><div class="ttdoc">This class can be used to install Forwarder applications on a set of gateways.</div><div class="ttdef"><b>Definition:</b> <a href="forwarder-helper_8h_source.html#l00040">forwarder-helper.h:41</a></div></div>
+<div class="ttc" id="aclassns3_1_1lorawan_1_1_forwarder_helper_html_a2b7e385d50da31784057499cfec2120c"><div class="ttname"><a href="classns3_1_1lorawan_1_1_forwarder_helper.html#a2b7e385d50da31784057499cfec2120c">ns3::lorawan::ForwarderHelper::m_factory</a></div><div class="ttdeci">ObjectFactory m_factory</div><div class="ttdef"><b>Definition:</b> <a href="forwarder-helper_8h_source.html#l00057">forwarder-helper.h:57</a></div></div>
 <div class="ttc" id="aclassns3_1_1_ptr_html"><div class="ttname"><a href="classns3_1_1_ptr.html">ns3::Ptr&lt; Node &gt;</a></div></div>
+<div class="ttc" id="aclassns3_1_1lorawan_1_1_forwarder_helper_html_a72c9c9df5eaed3f459b085bbe660af89"><div class="ttname"><a href="classns3_1_1lorawan_1_1_forwarder_helper.html#a72c9c9df5eaed3f459b085bbe660af89">ns3::lorawan::ForwarderHelper::ForwarderHelper</a></div><div class="ttdeci">ForwarderHelper()</div><div class="ttdef"><b>Definition:</b> <a href="forwarder-helper_8cc_source.html#l00035">forwarder-helper.cc:35</a></div></div>
+<div class="ttc" id="aclassns3_1_1lorawan_1_1_forwarder_helper_html_a3023933d0eea2c15d7b42e18a7b1766e"><div class="ttname"><a href="classns3_1_1lorawan_1_1_forwarder_helper.html#a3023933d0eea2c15d7b42e18a7b1766e">ns3::lorawan::ForwarderHelper::Install</a></div><div class="ttdeci">ApplicationContainer Install(NodeContainer c) const</div><div class="ttdef"><b>Definition:</b> <a href="forwarder-helper_8cc_source.html#l00057">forwarder-helper.cc:57</a></div></div>
+<div class="ttc" id="aclassns3_1_1lorawan_1_1_forwarder_helper_html"><div class="ttname"><a href="classns3_1_1lorawan_1_1_forwarder_helper.html">ns3::lorawan::ForwarderHelper</a></div><div class="ttdoc">This class can be used to install Forwarder applications on a set of gateways.</div><div class="ttdef"><b>Definition:</b> <a href="forwarder-helper_8h_source.html#l00041">forwarder-helper.h:42</a></div></div>
 <div class="ttc" id="aclassns3_1_1_object_factory_html"><div class="ttname"><a href="classns3_1_1_object_factory.html">ns3::ObjectFactory</a></div><div class="ttdoc">Instantiate subclasses of ns3::Object.</div><div class="ttdef"><b>Definition:</b> <a href="object-factory_8h_source.html#l00047">object-factory.h:48</a></div></div>
-<div class="ttc" id="aclassns3_1_1_forwarder_helper_html_a5394408bc8040bcb64ca3edefeadcdf5"><div class="ttname"><a href="classns3_1_1_forwarder_helper.html#a5394408bc8040bcb64ca3edefeadcdf5">ns3::ForwarderHelper::ForwarderHelper</a></div><div class="ttdeci">ForwarderHelper()</div><div class="ttdef"><b>Definition:</b> <a href="forwarder-helper_8cc_source.html#l00034">forwarder-helper.cc:34</a></div></div>
-<div class="ttc" id="aclassns3_1_1_forwarder_helper_html_a25a9f365c49348658e678be9c8dd6780"><div class="ttname"><a href="classns3_1_1_forwarder_helper.html#a25a9f365c49348658e678be9c8dd6780">ns3::ForwarderHelper::SetAttribute</a></div><div class="ttdeci">void SetAttribute(std::string name, const AttributeValue &amp;value)</div><div class="ttdef"><b>Definition:</b> <a href="forwarder-helper_8cc_source.html#l00044">forwarder-helper.cc:44</a></div></div>
 <div class="ttc" id="aclassns3_1_1_application_container_html"><div class="ttname"><a href="classns3_1_1_application_container.html">ns3::ApplicationContainer</a></div><div class="ttdoc">holds a vector of ns3::Application pointers.</div><div class="ttdef"><b>Definition:</b> <a href="application-container_8h_source.html#l00042">application-container.h:43</a></div></div>
 <div class="ttc" id="aclassns3_1_1_node_container_html"><div class="ttname"><a href="classns3_1_1_node_container.html">ns3::NodeContainer</a></div><div class="ttdoc">keep track of a set of node pointers.</div><div class="ttdef"><b>Definition:</b> <a href="node-container_8h_source.html#l00038">node-container.h:39</a></div></div>
-<div class="ttc" id="aclassns3_1_1_forwarder_helper_html_a47449464a0017b72a8749f65464bfc3e"><div class="ttname"><a href="classns3_1_1_forwarder_helper.html#a47449464a0017b72a8749f65464bfc3e">ns3::ForwarderHelper::~ForwarderHelper</a></div><div class="ttdeci">~ForwarderHelper()</div><div class="ttdef"><b>Definition:</b> <a href="forwarder-helper_8cc_source.html#l00039">forwarder-helper.cc:39</a></div></div>
-<div class="ttc" id="aclassns3_1_1_forwarder_helper_html_af18b2d999c8fb3d259dd1d49b62fab79"><div class="ttname"><a href="classns3_1_1_forwarder_helper.html#af18b2d999c8fb3d259dd1d49b62fab79">ns3::ForwarderHelper::Install</a></div><div class="ttdeci">ApplicationContainer Install(NodeContainer c) const</div><div class="ttdef"><b>Definition:</b> <a href="forwarder-helper_8cc_source.html#l00056">forwarder-helper.cc:56</a></div></div>
+<div class="ttc" id="aclassns3_1_1lorawan_1_1_forwarder_helper_html_a8982d5f47fc15a10ad4feb7db9f3ee1c"><div class="ttname"><a href="classns3_1_1lorawan_1_1_forwarder_helper.html#a8982d5f47fc15a10ad4feb7db9f3ee1c">ns3::lorawan::ForwarderHelper::~ForwarderHelper</a></div><div class="ttdeci">~ForwarderHelper()</div><div class="ttdef"><b>Definition:</b> <a href="forwarder-helper_8cc_source.html#l00040">forwarder-helper.cc:40</a></div></div>
+<div class="ttc" id="aclassns3_1_1lorawan_1_1_forwarder_helper_html_ad62c2a4a15e40e1dff0cbf2144fde1c5"><div class="ttname"><a href="classns3_1_1lorawan_1_1_forwarder_helper.html#ad62c2a4a15e40e1dff0cbf2144fde1c5">ns3::lorawan::ForwarderHelper::InstallPriv</a></div><div class="ttdeci">Ptr&lt; Application &gt; InstallPriv(Ptr&lt; Node &gt; node) const</div><div class="ttdef"><b>Definition:</b> <a href="forwarder-helper_8cc_source.html#l00069">forwarder-helper.cc:69</a></div></div>
+<div class="ttc" id="aclassns3_1_1lorawan_1_1_forwarder_helper_html_a0810e85d1a2cb8c8d9a5b7df47806b1a"><div class="ttname"><a href="classns3_1_1lorawan_1_1_forwarder_helper.html#a0810e85d1a2cb8c8d9a5b7df47806b1a">ns3::lorawan::ForwarderHelper::SetAttribute</a></div><div class="ttdeci">void SetAttribute(std::string name, const AttributeValue &amp;value)</div><div class="ttdef"><b>Definition:</b> <a href="forwarder-helper_8cc_source.html#l00045">forwarder-helper.cc:45</a></div></div>
 <!-- ns-3 doxygen header, based on
      HTML header for doxygen 1.8.3.1
      Verified compatible with 1.8.6
@@ -238,7 +237,7 @@ $(document).ready(function(){initNavTree('forwarder-helper_8h_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_1fa77e9b4d98a3b702d3db2d326dbbf0.html">lorawan</a></li><li class="navelem"><a class="el" href="dir_1e85c98163cd740ed9c0cf6649947499.html">helper</a></li><li class="navelem"><a class="el" href="forwarder-helper_8h.html">forwarder-helper.h</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:34:57 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:05 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

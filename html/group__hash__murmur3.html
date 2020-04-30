@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -191,6 +188,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga365b02d48a7c2aaff4a43431ba3b01b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block read.  <a href="group__hash__murmur3.html#ga365b02d48a7c2aaff4a43431ba3b01b7">More...</a><br /></td></tr>
 <tr class="separator:ga365b02d48a7c2aaff4a43431ba3b01b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga36a80957fbda55b6ae1419d376f7e0dd"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hash__murmur3.html#ga36a80957fbda55b6ae1419d376f7e0dd">ns3::Hash::Function::Murmur3Implementation::getblock</a> (const uint64_t *p, std::size_t i)</td></tr>
+<tr class="memdesc:ga36a80957fbda55b6ae1419d376f7e0dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block read.  <a href="group__hash__murmur3.html#ga36a80957fbda55b6ae1419d376f7e0dd">More...</a><br /></td></tr>
 <tr class="separator:ga36a80957fbda55b6ae1419d376f7e0dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6ac693e30c8a56b7bb4dc6d12bc6dfde"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hash__murmur3.html#ga6ac693e30c8a56b7bb4dc6d12bc6dfde">ns3::Hash::Function::Murmur3Implementation::MurmurHash3_x64_128</a> (const void *key, const std::size_t len, const uint32_t seed, void *out)</td></tr>
 <tr class="memdesc:ga6ac693e30c8a56b7bb4dc6d12bc6dfde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initial and incremental hash.  <a href="group__hash__murmur3.html#ga6ac693e30c8a56b7bb4dc6d12bc6dfde">More...</a><br /></td></tr>
@@ -442,7 +440,16 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p></p>
+<p>Block read. </p>
+<p>If your platform needs to do endian-swapping or can only handle aligned reads, do the conversion here.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>Block base address. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">i</td><td>Index into the block. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <code>i'th</code> word from the block. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="hash-murmur3_8cc_source.html#l00130">130</a> of file <a class="el" href="hash-murmur3_8cc_source.html">hash-murmur3.cc</a>.</p>
 
@@ -1104,7 +1111,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:12 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:19 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

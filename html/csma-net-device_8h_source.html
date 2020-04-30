@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -265,10 +262,10 @@ $(document).ready(function(){initNavTree('csma-net-device_8h_source.html',''); i
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classns3_1_1_csma_net_device.html#ad5c5196c236c4c6f034690c136e4216d">IsBridge</a> (<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classns3_1_1_csma_net_device.html#a6d3d0c60f8a2d60fbe006248bb6b119d">Send</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Packet&gt;</a> <a class="code" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>, <span class="keyword">const</span> <a class="code" href="classns3_1_1_address.html">Address</a>&amp; dest, </div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classns3_1_1_csma_net_device.html#a6d3d0c60f8a2d60fbe006248bb6b119d">Send</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Packet&gt;</a> packet, <span class="keyword">const</span> <a class="code" href="classns3_1_1_address.html">Address</a>&amp; dest, </div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                     uint16_t protocolNumber);</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160; </div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classns3_1_1_csma_net_device.html#ad7cb5da0e3fb59bd1670c8fa0af4b775">SendFrom</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Packet&gt;</a> <a class="code" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>, <span class="keyword">const</span> <a class="code" href="classns3_1_1_address.html">Address</a>&amp; source, <span class="keyword">const</span> <a class="code" href="classns3_1_1_address.html">Address</a>&amp; dest, </div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classns3_1_1_csma_net_device.html#ad7cb5da0e3fb59bd1670c8fa0af4b775">SendFrom</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Packet&gt;</a> packet, <span class="keyword">const</span> <a class="code" href="classns3_1_1_address.html">Address</a>&amp; source, <span class="keyword">const</span> <a class="code" href="classns3_1_1_address.html">Address</a>&amp; dest, </div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                         uint16_t protocolNumber);</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160; </div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Node&gt;</a> <a class="code" href="classns3_1_1_csma_net_device.html#a63ad216627948e09498ed47378ac21f8">GetNode</a> (<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
@@ -419,7 +416,6 @@ $(document).ready(function(){initNavTree('csma-net-device_8h_source.html',''); i
 <div class="ttc" id="aclassns3_1_1_csma_net_device_html_a2cb5f9baf0a19a7ea6527002b0299403"><div class="ttname"><a href="classns3_1_1_csma_net_device.html#a2cb5f9baf0a19a7ea6527002b0299403">ns3::CsmaNetDevice::m_backoff</a></div><div class="ttdeci">Backoff m_backoff</div><div class="ttdoc">Holds the backoff parameters and is used to calculate the next backoff time to use when the channel i...</div><div class="ttdef"><b>Definition:</b> <a href="csma-net-device_8h_source.html#l00510">csma-net-device.h:510</a></div></div>
 <div class="ttc" id="aclassns3_1_1_csma_net_device_html_af07031cad3f8bd8c4b33ba77fa706e99"><div class="ttname"><a href="classns3_1_1_csma_net_device.html#af07031cad3f8bd8c4b33ba77fa706e99">ns3::CsmaNetDevice::m_txMachineState</a></div><div class="ttdeci">TxMachineState m_txMachineState</div><div class="ttdoc">The state of the Net Device transmit state machine.</div><div class="ttdef"><b>Definition:</b> <a href="csma-net-device_8h_source.html#l00482">csma-net-device.h:482</a></div></div>
 <div class="ttc" id="aclassns3_1_1_csma_net_device_html_a2bb51b44d9ef6aa86350c83f059d3f8f"><div class="ttname"><a href="classns3_1_1_csma_net_device.html#a2bb51b44d9ef6aa86350c83f059d3f8f">ns3::CsmaNetDevice::SetReceiveEnable</a></div><div class="ttdeci">void SetReceiveEnable(bool enable)</div><div class="ttdoc">Enable or disable the receive side of the network device.</div><div class="ttdef"><b>Definition:</b> <a href="csma-net-device_8cc_source.html#l00270">csma-net-device.cc:270</a></div></div>
-<div class="ttc" id="alora-mac-test_8cc_html_a084e879e2a4e6b1e078575d3693a0c3a"><div class="ttname"><a href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a></div><div class="ttdeci">Ptr&lt; Packet &gt; packet</div><div class="ttdef"><b>Definition:</b> <a href="lora-mac-test_8cc_source.html#l00021">lora-mac-test.cc:21</a></div></div>
 <div class="ttc" id="aclassns3_1_1_ipv4_address_html"><div class="ttname"><a href="classns3_1_1_ipv4_address.html">ns3::Ipv4Address</a></div><div class="ttdoc">Ipv4 addresses are stored in host order in this class.</div><div class="ttdef"><b>Definition:</b> <a href="ipv4-address_8h_source.html#l00041">ipv4-address.h:41</a></div></div>
 <div class="ttc" id="aclassns3_1_1_csma_net_device_html_a6fe6c073498c02fa0b01c64746f6166b"><div class="ttname"><a href="classns3_1_1_csma_net_device.html#a6fe6c073498c02fa0b01c64746f6166b">ns3::CsmaNetDevice::SetMtu</a></div><div class="ttdeci">virtual bool SetMtu(const uint16_t mtu)</div><div class="ttdef"><b>Definition:</b> <a href="csma-net-device_8cc_source.html#l00243">csma-net-device.cc:243</a></div></div>
 <div class="ttc" id="aclassns3_1_1_ipv6_address_html"><div class="ttname"><a href="classns3_1_1_ipv6_address.html">ns3::Ipv6Address</a></div><div class="ttdoc">Describes an IPv6 address.</div><div class="ttdef"><b>Definition:</b> <a href="ipv6-address_8h_source.html#l00049">ipv6-address.h:50</a></div></div>
@@ -514,7 +510,7 @@ $(document).ready(function(){initNavTree('csma-net-device_8h_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_7968e548e4d332797e7baaf2b54be553.html">csma</a></li><li class="navelem"><a class="el" href="dir_14c5de56b7cb316b93ceaa53fa6594dc.html">model</a></li><li class="navelem"><a class="el" href="csma-net-device_8h.html">csma-net-device.h</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:34:53 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:01 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

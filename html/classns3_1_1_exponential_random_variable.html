@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -389,23 +386,23 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>The exponential distribution Random Number Generator (RNG). </p>
 <p>This class supports the creation of objects that return random numbers from a fixed exponential distribution. It also supports the generation of single random numbers from various exponential distributions.</p>
 <p>The probability density function of an exponential variable is defined as: </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ P(x) dx = \alpha e^{-\alpha x} dx, \quad x \in [0, +\infty) \]" src="form_9.png" width="0" height="14"/>
+<img class="formulaDsp" alt="\[ P(x) dx = \alpha e^{-\alpha x} dx, \quad x \in [0, +\infty) \]" src="form_9.png" width="186" height="14"/>
 </p>
-<p> over the interval <img class="formulaInl" alt="$[0, +\infty)$" src="form_10.png" width="0" height="14"/>, where <img class="formulaInl" alt="$ \alpha = \frac{1}{Mean} $" src="form_11.png" width="0" height="16"/> and <code>Mean</code> is a configurable attribute.</p>
-<p>The normal RNG value <img class="formulaInl" alt="$x$" src="form_5.png" width="0" height="6"/> is calculated by</p>
+<p> over the interval <img class="formulaInl" alt="$[0, +\infty)$" src="form_10.png" width="41" height="14"/>, where <img class="formulaInl" alt="$ \alpha = \frac{1}{Mean} $" src="form_11.png" width="54" height="16"/> and <code>Mean</code> is a configurable attribute.</p>
+<p>The normal RNG value <img class="formulaInl" alt="$x$" src="form_5.png" width="8" height="6"/> is calculated by</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ x = - 1/\alpha \log(u) \]" src="form_12.png" width="0" height="14"/>
+<img class="formulaDsp" alt="\[ x = - 1/\alpha \log(u) \]" src="form_12.png" width="89" height="14"/>
 </p>
-<p>where <img class="formulaInl" alt="$u$" src="form_13.png" width="0" height="6"/> is a uniform random variable on <img class="formulaInl" alt="$[0,1)$" src="form_14.png" width="0" height="14"/>.</p>
+<p>where <img class="formulaInl" alt="$u$" src="form_13.png" width="9" height="6"/> is a uniform random variable on <img class="formulaInl" alt="$[0,1)$" src="form_14.png" width="25" height="14"/>.</p>
 <dl class="section user"><dt>Bounded Distribution</dt><dd></dd></dl>
-<p>Since exponential distributions can theoretically return unbounded values, it is sometimes useful to specify a fixed upper limit. The bounded version is defined over the interval <img class="formulaInl" alt="$[0,b]$" src="form_15.png" width="0" height="14"/> as:</p>
+<p>Since exponential distributions can theoretically return unbounded values, it is sometimes useful to specify a fixed upper limit. The bounded version is defined over the interval <img class="formulaInl" alt="$[0,b]$" src="form_15.png" width="23" height="14"/> as:</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ P(x; b) dx = \alpha e^{-\alpha x} dx \quad x \in [0,b] \]" src="form_16.png" width="0" height="14"/>
+<img class="formulaDsp" alt="\[ P(x; b) dx = \alpha e^{-\alpha x} dx \quad x \in [0,b] \]" src="form_16.png" width="174" height="14"/>
 </p>
-<p>where the <code>Bound</code> <img class="formulaInl" alt="$b$" src="form_17.png" width="0" height="10"/> is a configurable attribute.</p>
+<p>where the <code>Bound</code> <img class="formulaInl" alt="$b$" src="form_17.png" width="5" height="10"/> is a configurable attribute.</p>
 <p>Note that in this case the true mean of the distribution is smaller than the nominal mean value:</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ &lt;X: P(x; b)&gt; = 1/\alpha - b/(e^{\alpha \, b} -1) \]" src="form_18.png" width="0" height="16"/>
+<img class="formulaDsp" alt="\[ &lt;X: P(x; b)&gt; = 1/\alpha - b/(e^{\alpha \, b} -1) \]" src="form_18.png" width="195" height="16"/>
 </p>
 <dl class="section user"><dt>Example</dt><dd></dd></dl>
 <p>Here is an example of how to use this class: </p><div class="fragment"><div class="line"><span class="keywordtype">double</span> mean = 3.14;</div>
@@ -421,9 +418,9 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- fragment --><dl class="section user"><dt>Antithetic Values.</dt><dd></dd></dl>
 <p>The antithetic value is calculated from</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ x' = - mean * \log(1 - u), \]" src="form_19.png" width="0" height="15"/>
+<img class="formulaDsp" alt="\[ x' = - mean * \log(1 - u), \]" src="form_19.png" width="138" height="15"/>
 </p>
-<p>where again <img class="formulaInl" alt="$u$" src="form_13.png" width="0" height="6"/> is a uniform random variable on <img class="formulaInl" alt="$[0,1)$" src="form_14.png" width="0" height="14"/>. </p>
+<p>where again <img class="formulaInl" alt="$u$" src="form_13.png" width="9" height="6"/> is a uniform random variable on <img class="formulaInl" alt="$[0,1)$" src="form_14.png" width="25" height="14"/>. </p>
 
 <p class="definition">Definition at line <a class="el" href="random-variable-stream_8h_source.html#l00538">538</a> of file <a class="el" href="random-variable-stream_8h_source.html">random-variable-stream.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -630,7 +627,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="random-variable-stream_8cc_source.html#l00369">369</a> of file <a class="el" href="random-variable-stream_8cc_source.html">random-variable-stream.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="random-variable-stream_8h_source.html#l00595">m_bound</a>, <a class="el" href="random-variable-stream_8h_source.html#l00592">m_mean</a>, <a class="el" href="double_8h_source.html#l00042">ns3::MakeDoubleAccessor()</a>, and <a class="el" href="type-id_8cc_source.html#l00922">ns3::TypeId::SetParent()</a>.</p>
+<p class="reference">References <a class="el" href="random-variable-stream_8h_source.html#l00595">m_bound</a>, <a class="el" href="random-variable-stream_8h_source.html#l00592">m_mean</a>, <a class="el" href="double_8h_source.html#l00042">ns3::MakeDoubleAccessor()</a>, and <a class="el" href="type-id_8cc_source.html#l00923">ns3::TypeId::SetParent()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -854,7 +851,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_exponential_random_variable.html">ExponentialRandomVariable</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:24 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:29 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

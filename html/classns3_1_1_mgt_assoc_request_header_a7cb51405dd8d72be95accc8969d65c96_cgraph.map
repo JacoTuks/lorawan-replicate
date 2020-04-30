@@ -3,9 +3,9 @@
 <area shape="rect" id="node2" href="$classns3_1_1_wifi_information_element.html#a8662b6056d624747d927e9c041e24ab0" title="Serialize entire IE including Element ID and length fields." alt="" coords="535,169,744,211"/>
 <area shape="rect" id="node10" href="$classns3_1_1_capability_information.html#a7acbca7c6c6ad27f600cba33cce06b7d" title="Serialize capability information to the given buffer." alt="" coords="281,397,475,439"/>
 <area shape="rect" id="node11" href="$namespacevisualizer_1_1core.html#a2a35e5d8a34af358b508dac8635754e0" title=" " alt="" coords="564,405,715,431"/>
-<area shape="rect" id="node14" href="$classns3_1_1_extended_capabilities.html#a6bfc9e52ad54ecee9f11bc6a7e9dea7d" title="This information element is a bit special in that it is only included if the STA is a HT STA." alt="" coords="283,71,473,112"/>
-<area shape="rect" id="node15" href="$classns3_1_1_he_capabilities.html#a2539a6048077d3f1c333a060943fcce3" title="Serialize function." alt="" coords="304,136,452,177"/>
-<area shape="rect" id="node16" href="$classns3_1_1_ht_capabilities.html#a8c602ed95290cd1aa75cafaa1744f6ba" title="This information element is a bit special in that it is only included if the STA is an HT STA." alt="" coords="305,201,451,243"/>
+<area shape="rect" id="node14" href="$classns3_1_1_extended_capabilities.html#a6bfc9e52ad54ecee9f11bc6a7e9dea7d" title=" " alt="" coords="283,71,473,112"/>
+<area shape="rect" id="node15" href="$classns3_1_1_he_capabilities.html#a2539a6048077d3f1c333a060943fcce3" title=" " alt="" coords="304,136,452,177"/>
+<area shape="rect" id="node16" href="$classns3_1_1_ht_capabilities.html#a8c602ed95290cd1aa75cafaa1744f6ba" title=" " alt="" coords="305,201,451,243"/>
 <area shape="rect" id="node17" href="$classns3_1_1_extended_supported_rates_i_e.html#aa9c2e690fce4f090645460828d041e3a" title=" " alt="" coords="269,332,487,373"/>
 <area shape="rect" id="node18" href="$classns3_1_1_vht_capabilities.html#a13178aba277c65e0bb1734e542726952" title=" " alt="" coords="302,267,454,308"/>
 <area shape="rect" id="node19" href="$classns3_1_1_buffer_1_1_iterator.html#a2e89a2939c01994a490d6f0be22770a1" title=" " alt="" coords="303,515,453,556"/>

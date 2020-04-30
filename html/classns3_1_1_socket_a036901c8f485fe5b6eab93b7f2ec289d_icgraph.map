@@ -1,7 +1,7 @@
 <map id="ns3::Socket::Send" name="ns3::Socket::Send">
 <area shape="rect" id="node1" title="Send data (or dummy data) to the remote host." alt="" coords="525,1301,661,1327"/>
 <area shape="rect" id="node2" href="$class_udp_socket_impl_test.html#abb4bfa5a84b8b642f22fd0f8981bf515" title="Send data." alt="" coords="285,5,439,47"/>
-<area shape="rect" id="node4" href="$energy-model-example_8cc.html#ae146b24c4b8cd80f2f8c1cf12b62d395" title=" " alt="" coords="301,71,423,98"/>
+<area shape="rect" id="node4" href="$examples_2energy_2energy-model-example_8cc.html#ae146b24c4b8cd80f2f8c1cf12b62d395" title=" " alt="" coords="301,71,423,98"/>
 <area shape="rect" id="node5" href="$class_experiment.html#a442331ee7aff9d4ae2bee2c761323e3e" title=" " alt="" coords="259,122,465,149"/>
 <area shape="rect" id="node6" href="$class_wifi_interference_test_case.html#a5ad509bd0112e0cf6de835cd4cabbb2b" title=" " alt="" coords="269,173,455,215"/>
 <area shape="rect" id="node8" href="$classns3_1_1_bsm_application.html#a22a009e7512e5df69dd9b81f96d15f51" title="Creates and transmits a WAVE BSM packet." alt="" coords="278,239,446,280"/>

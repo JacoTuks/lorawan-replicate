@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -745,16 +742,19 @@ $(document).ready(function(){initNavTree('functions_u.html',''); initResizable()
 : <a class="el" href="classns3_1_1_fq_co_del_queue_disc.html#a25106d90aa315558d97fc192a4c29ebe">ns3::FqCoDelQueueDisc</a>
 </li>
 <li>UNCONFIRMED_DATA_DOWN
-: <a class="el" href="classns3_1_1_lora_mac_header.html#aca0ebfd0429f9218e24615f086483c05ae7e899de40eb62400b236338ead97ae8">ns3::LoraMacHeader</a>
+: <a class="el" href="classns3_1_1lorawan_1_1_lorawan_mac_header.html#afc762e663144efab926d4c9c5515b5ceab6637fe070e3897c53336557f4bf0553">ns3::lorawan::LorawanMacHeader</a>
 </li>
 <li>UNCONFIRMED_DATA_UP
-: <a class="el" href="classns3_1_1_lora_mac_header.html#aca0ebfd0429f9218e24615f086483c05aed57a96051f609f9b15a2e1f87f381e8">ns3::LoraMacHeader</a>
+: <a class="el" href="classns3_1_1lorawan_1_1_lorawan_mac_header.html#afc762e663144efab926d4c9c5515b5ceaf6de509084b0e3d0d24078f8f8c94f0c">ns3::lorawan::LorawanMacHeader</a>
 </li>
 <li>UnderRootNamespaceConfigTestCase()
 : <a class="el" href="classns3_1_1tests_1_1_under_root_namespace_config_test_case.html#a6d9cc5570b28d27676afee61f5e0d77e">ns3::tests::UnderRootNamespaceConfigTestCase</a>
 </li>
 <li>UnderSensitivity()
 : <a class="el" href="class_phy_connectivity_test.html#a35daf46ddcd0a302631baf1124b4bb15">PhyConnectivityTest</a>
+</li>
+<li>UnderSensitivityCallback()
+: <a class="el" href="classns3_1_1lorawan_1_1_lora_packet_tracker.html#afe2e9779f2e1cb037c4aff7e15591274">ns3::lorawan::LoraPacketTracker</a>
 </li>
 <li>UNFORCED_DROP
 : <a class="el" href="classns3_1_1_pie_queue_disc.html#a3b86e14e6d414223e41987495c1e1ae9">ns3::PieQueueDisc</a>
@@ -837,6 +837,7 @@ $(document).ready(function(){initNavTree('functions_u.html',''); initResizable()
 </li>
 <li>UnregisterListener()
 : <a class="el" href="classns3_1_1_channel_coordinator.html#abf99afc9b9c64d1210f55c170eef1f5d">ns3::ChannelCoordinator</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_end_device_lora_phy.html#ad1291d05e67b2a00e792f171e7621f75">ns3::lorawan::EndDeviceLoraPhy</a>
 , <a class="el" href="classns3_1_1_wifi_phy.html#ab46c39e0c4b9f27dea418d6a34ce6606">ns3::WifiPhy</a>
 , <a class="el" href="classns3_1_1_wifi_phy_state_helper.html#aec50bcf45cf8341855bf2f68e92df565">ns3::WifiPhyStateHelper</a>
 </li>
@@ -1008,7 +1009,7 @@ $(document).ready(function(){initNavTree('functions_u.html',''); initResizable()
 : <a class="el" href="classns3_1_1_wifi_remote_station_manager.html#a7418b5958ff90c62a88539443dfc90dc">ns3::WifiRemoteStationManager</a>
 </li>
 <li>UpdateGatewayData()
-: <a class="el" href="classns3_1_1_device_status.html#a86cd118ac247492a37f8b78eb8750ec5">ns3::DeviceStatus</a>
+: <a class="el" href="classns3_1_1lorawan_1_1_end_device_status.html#a1cd60fc88eb88c1990f28e8aee71e05f">ns3::lorawan::EndDeviceStatus</a>
 </li>
 <li>UpdateGrantedBandwidth()
 : <a class="el" href="classns3_1_1_service_flow_record.html#abf6fe590f6bfe9321a41e1659cd65267">ns3::ServiceFlowRecord</a>
@@ -1038,8 +1039,11 @@ $(document).ready(function(){initNavTree('functions_u.html',''); initResizable()
 <li>UpdateHighTxMark()
 : <a class="el" href="classns3_1_1_tcp_socket_base.html#a4a2122af95f0f40965e4b8a894fd4814">ns3::TcpSocketBase</a>
 </li>
+<li>UpdateLinkCheckAns()
+: <a class="el" href="classns3_1_1lorawan_1_1_link_check_component.html#a6a48abb7d7348e2acf9d7278843cbebb">ns3::lorawan::LinkCheckComponent</a>
+</li>
 <li>UpdateLinkDescription()
-: <a class="el" href="classns3_1_1_animation_interface.html#afe10a4b435b250ff1738f05f806005a5">ns3::AnimationInterface</a>
+: <a class="el" href="classns3_1_1_animation_interface.html#a6e85be8d6af4296c0ea3c914c06d5944">ns3::AnimationInterface</a>
 </li>
 <li>UpdateLostCount()
 : <a class="el" href="classns3_1_1_tcp_tx_buffer.html#aa1bc23384777b1aa310a40a33f9c26df">ns3::TcpTxBuffer</a>
@@ -1074,7 +1078,7 @@ $(document).ready(function(){initNavTree('functions_u.html',''); initResizable()
 : <a class="el" href="classns3_1_1_tcp_socket_base.html#ad97775a4eaa42d5fea38ea20674889c4">ns3::TcpSocketBase</a>
 </li>
 <li>UpdateNodeColor()
-: <a class="el" href="classns3_1_1_animation_interface.html#a75ea0f6144a851e84dc698456ffbc945">ns3::AnimationInterface</a>
+: <a class="el" href="classns3_1_1_animation_interface.html#adba07ccf6613113799782712287720cb">ns3::AnimationInterface</a>
 </li>
 <li>UpdateNodeCounter()
 : <a class="el" href="classns3_1_1_animation_interface.html#a3a4739fd963384b6e3ded75124c03e15">ns3::AnimationInterface</a>
@@ -1187,7 +1191,8 @@ $(document).ready(function(){initNavTree('functions_u.html',''); initResizable()
 : <a class="el" href="classns3_1_1_packet_metadata.html#ad975bb9c1c0a6875ccc2309f071c5b55">ns3::PacketMetadata</a>
 </li>
 <li>UpdateTxCurrentCallback
-: <a class="el" href="classns3_1_1_wifi_radio_energy_model_phy_listener.html#a0263a4adc144a5406f9b4b504e7a7a16">ns3::WifiRadioEnergyModelPhyListener</a>
+: <a class="el" href="classns3_1_1lorawan_1_1_lora_radio_energy_model_phy_listener.html#a6e0dbc535ae92d41bf4699ca6d97d229">ns3::lorawan::LoraRadioEnergyModelPhyListener</a>
+, <a class="el" href="classns3_1_1_wifi_radio_energy_model_phy_listener.html#a0263a4adc144a5406f9b4b504e7a7a16">ns3::WifiRadioEnergyModelPhyListener</a>
 </li>
 <li>UpdateTxParams()
 : <a class="el" href="classns3_1_1_constant_wifi_ack_policy_selector.html#aa574b54fd2b55f2f0934c0153c18c422">ns3::ConstantWifiAckPolicySelector</a>
@@ -1219,7 +1224,7 @@ $(document).ready(function(){initNavTree('functions_u.html',''); initResizable()
 : <a class="el" href="classns3_1_1_block_ack_cache.html#a269acd2840aa5d8eda4ae61ad6e9f441">ns3::BlockAckCache</a>
 </li>
 <li>UpdateWithBounds()
-: <a class="el" href="classns3_1_1_constant_velocity_helper.html#a57d538a6fc2ccd198d55222054259bb7">ns3::ConstantVelocityHelper</a>
+: <a class="el" href="classns3_1_1_constant_velocity_helper.html#ae839dce17c4f38e19cbfa299fbdafcd7">ns3::ConstantVelocityHelper</a>
 </li>
 <li>UpdateWithMpdu()
 : <a class="el" href="classns3_1_1_block_ack_cache.html#ad53e955bbd3e58e1833a90894e67e6eb">ns3::BlockAckCache</a>
@@ -1236,17 +1241,20 @@ $(document).ready(function(){initNavTree('functions_u.html',''); initResizable()
 <li>UplinkAllocationStart()
 : <a class="el" href="classns3_1_1_base_station_net_device.html#ae00cd52b976f0d636afb5e9dfd999379">ns3::BaseStationNetDevice</a>
 </li>
+<li>UplinkPacketTest()
+: <a class="el" href="class_uplink_packet_test.html#a5fb785bbf41cf0ccda651af6b47bdd72">UplinkPacketTest</a>
+</li>
 <li>UplinkScheduler()
-: <a class="el" href="classns3_1_1_uplink_scheduler.html#a84e3e3530de4345a104dfd67137af90e">ns3::UplinkScheduler</a>
+: <a class="el" href="classns3_1_1_uplink_scheduler.html#a49c38d7e63903d62bb825c38ba3be0fa">ns3::UplinkScheduler</a>
 </li>
 <li>UplinkSchedulerMBQoS()
-: <a class="el" href="classns3_1_1_uplink_scheduler_m_b_qo_s.html#aa8db7610198e6bbc698b42b5f580624a">ns3::UplinkSchedulerMBQoS</a>
+: <a class="el" href="classns3_1_1_uplink_scheduler_m_b_qo_s.html#addafca8b699155f0160e45c8f4f5d807">ns3::UplinkSchedulerMBQoS</a>
 </li>
 <li>UplinkSchedulerRtps()
-: <a class="el" href="classns3_1_1_uplink_scheduler_rtps.html#a96163ef1bec8e9cfaa7e467d71758e36">ns3::UplinkSchedulerRtps</a>
+: <a class="el" href="classns3_1_1_uplink_scheduler_rtps.html#abb7bd631422652d8bbf06dc3b5b74f72">ns3::UplinkSchedulerRtps</a>
 </li>
 <li>UplinkSchedulerSimple()
-: <a class="el" href="classns3_1_1_uplink_scheduler_simple.html#a25b347f80fb5729b6e439f017dee9031">ns3::UplinkSchedulerSimple</a>
+: <a class="el" href="classns3_1_1_uplink_scheduler_simple.html#a54305a726288dde444d3d21c215c5515">ns3::UplinkSchedulerSimple</a>
 </li>
 <li>UplinkSchedWindowTimer()
 : <a class="el" href="classns3_1_1_uplink_scheduler_m_b_qo_s.html#a80733614c419c105ae666e830f1d5c1e">ns3::UplinkSchedulerMBQoS</a>
@@ -1255,7 +1263,7 @@ $(document).ready(function(){initNavTree('functions_u.html',''); initResizable()
 : <a class="el" href="classns3_1_1_tcp_header.html#a5f3d432941327854b5ad621e467479c6a03d58c80bf87169baf9f2f4896b7cf65">ns3::TcpHeader</a>
 </li>
 <li>US
-: <a class="el" href="classns3_1_1_lora_mac_helper.html#aec85fe99c3b720e02602accd0cd8a0efa1ccb31c66343d2c5157aa55b946998af">ns3::LoraMacHelper</a>
+: <a class="el" href="classns3_1_1lorawan_1_1_lorawan_mac_helper.html#a95652f849a70d7bebd5049fb37e78c94a36862e01704a43164593a126aad77586">ns3::lorawan::LorawanMacHelper</a>
 , <a class="el" href="classns3_1_1_time.html#a87a7f4d29c68b047a72d291ad660295aa58d3fcfd769acff64cf67f227d55fdd0">ns3::Time</a>
 </li>
 <li>US_PER_NS
@@ -1299,7 +1307,7 @@ $(document).ready(function(){initNavTree('functions_u.html',''); initResizable()
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:51 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:53 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

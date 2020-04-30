@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -176,6 +173,7 @@ $(document).ready(function(){initNavTree('wifi-test_8cc.html',''); initResizable
 <code>#include &quot;ns3/rng-seed-manager.h&quot;</code><br />
 <code>#include &quot;ns3/config.h&quot;</code><br />
 <code>#include &quot;ns3/error-model.h&quot;</code><br />
+<code>#include &quot;ns3/socket.h&quot;</code><br />
 <code>#include &quot;ns3/packet-socket-server.h&quot;</code><br />
 <code>#include &quot;ns3/packet-socket-client.h&quot;</code><br />
 <code>#include &quot;ns3/packet-socket-helper.h&quot;</code><br />
@@ -187,6 +185,7 @@ $(document).ready(function(){initNavTree('wifi-test_8cc.html',''); initResizable
 <code>#include &quot;ns3/ht-configuration.h&quot;</code><br />
 <code>#include &quot;ns3/wifi-ppdu.h&quot;</code><br />
 <code>#include &quot;ns3/wifi-psdu.h&quot;</code><br />
+<code>#include &quot;ns3/waypoint-mobility-model.h&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for wifi-test.cc:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -194,7 +193,7 @@ $(document).ready(function(){initNavTree('wifi-test_8cc.html',''); initResizable
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="wifi-test_8cc__incl.png" border="0" usemap="#src_2wifi_2test_2wifi-test_8cc" alt=""/></div>
 <map name="src_2wifi_2test_2wifi-test_8cc" id="src_2wifi_2test_2wifi-test_8cc">
-<area shape="rect" title=" " alt="" coords="2014,5,2141,47"/>
+<area shape="rect" title=" " alt="" coords="2158,5,2285,47"/>
 <area shape="rect" title=" " alt="" coords="5,102,104,129"/>
 <area shape="rect" title=" " alt="" coords="129,102,295,129"/>
 <area shape="rect" title=" " alt="" coords="319,102,481,129"/>
@@ -209,17 +208,19 @@ $(document).ready(function(){initNavTree('wifi-test_8cc.html',''); initResizable
 <area shape="rect" title=" " alt="" coords="1821,102,2003,129"/>
 <area shape="rect" title=" " alt="" coords="2027,102,2128,129"/>
 <area shape="rect" title=" " alt="" coords="2153,102,2290,129"/>
-<area shape="rect" title=" " alt="" coords="2315,102,2512,129"/>
-<area shape="rect" title=" " alt="" coords="2536,102,2728,129"/>
-<area shape="rect" title=" " alt="" coords="2752,102,2949,129"/>
-<area shape="rect" title=" " alt="" coords="2973,102,3171,129"/>
-<area shape="rect" title=" " alt="" coords="3195,95,3389,136"/>
-<area shape="rect" title=" " alt="" coords="3414,95,3597,136"/>
-<area shape="rect" title=" " alt="" coords="3621,102,3769,129"/>
-<area shape="rect" title=" " alt="" coords="3793,102,3937,129"/>
-<area shape="rect" title=" " alt="" coords="3961,102,4127,129"/>
-<area shape="rect" title=" " alt="" coords="4151,102,4273,129"/>
-<area shape="rect" title=" " alt="" coords="4298,102,4419,129"/>
+<area shape="rect" title=" " alt="" coords="2314,102,2417,129"/>
+<area shape="rect" title=" " alt="" coords="2441,102,2639,129"/>
+<area shape="rect" title=" " alt="" coords="2663,102,2855,129"/>
+<area shape="rect" title=" " alt="" coords="2879,102,3076,129"/>
+<area shape="rect" title=" " alt="" coords="3100,102,3297,129"/>
+<area shape="rect" title=" " alt="" coords="3321,95,3516,136"/>
+<area shape="rect" title=" " alt="" coords="3541,95,3723,136"/>
+<area shape="rect" title=" " alt="" coords="3747,102,3895,129"/>
+<area shape="rect" title=" " alt="" coords="3920,102,4064,129"/>
+<area shape="rect" title=" " alt="" coords="4088,102,4253,129"/>
+<area shape="rect" title=" " alt="" coords="4277,102,4400,129"/>
+<area shape="rect" title=" " alt="" coords="4425,102,4546,129"/>
+<area shape="rect" title=" " alt="" coords="4571,95,4739,136"/>
 </map>
 </div>
 </div>
@@ -247,6 +248,12 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interference_helper_sequence_test.html">InterferenceHelperSequenceTest</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a href="http://www.nsnam.org/bugzilla/show_bug.cgi?id=991">Bug 991</a>  <a href="class_interference_helper_sequence_test.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_issue169_test_case.html">Issue169TestCase</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make sure that Ideal rate manager is able to handle non best-effort traffic.  <a href="class_issue169_test_case.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_issue40_test_case.html">Issue40TestCase</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make sure that Ideal rate manager recovers when the station is moving away from the access point.  <a href="class_issue40_test_case.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qos_fragmentation_test_case.html">QosFragmentationTestCase</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make sure that fragmentation works with QoS stations.  <a href="class_qos_fragmentation_test_case.html#details">More...</a><br /></td></tr>
@@ -313,11 +320,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l00055">55</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l00057">57</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="txop_8cc_source.html#l00332">ns3::Txop::AssignStreams()</a>, <a class="el" href="pointer_8h_source.html#l00203">ns3::PointerValue::Get()</a>, <a class="el" href="object-base_8cc_source.html#l00225">ns3::ObjectBase::GetAttribute()</a>, and <a class="el" href="third_8py_source.html#l00099">third::mac</a>.</p>
+<p class="reference">References <a class="el" href="txop_8cc_source.html#l00332">ns3::Txop::AssignStreams()</a>, <a class="el" href="pointer_8h_source.html#l00203">ns3::PointerValue::Get()</a>, <a class="el" href="object-base_8cc_source.html#l00223">ns3::ObjectBase::GetAttribute()</a>, and <a class="el" href="third_8py_source.html#l00099">third::mac</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l00480">DcfImmediateAccessBroadcastTestCase::DoRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l00482">DcfImmediateAccessBroadcastTestCase::DoRun()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -377,7 +384,7 @@ Variables</h2></td></tr>
 
 <p>the test suite </p>
 
-<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l02194">2194</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l02517">2517</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
 
 </div>
 </div>
@@ -391,7 +398,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_9bb89822448514d94fe3e213d3ac83be.html">wifi</a></li><li class="navelem"><a class="el" href="dir_914bbd979aaa0b0008ccaac608a28d3b.html">test</a></li><li class="navelem"><a class="el" href="wifi-test_8cc.html">wifi-test.cc</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:11 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:19 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

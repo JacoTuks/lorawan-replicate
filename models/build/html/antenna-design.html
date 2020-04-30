@@ -62,9 +62,6 @@
 		      <a id="ns3_tut"
 			 href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-		      <a id="ns3_ptbr"
-			 href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 	        </li>
 	        <li><span
 		      onmouseover="mopen('mDocs')" 
@@ -216,9 +213,9 @@ antenna. Note that this radiation pattern is independent of the inclination angl
 <p>The class ThreeGppAntennaArrayModel implements the antenna model described in
 3GPP TR 38.901 <a class="footnote-reference brackets" href="#id9" id="id7">38901</a>, which is used by the classes ThreeGppSpectrumPropagationLossModel
 and ThreeGppChannelModel.
-Each instance of this class models an isotropic rectangular antenna array with
-NxM elements, where N is the number of rows and M is the number of columns,
-configurable through the attributes “NumRows” and “NumColumns”.
+Each instance of this class models an isotropic rectangular antenna array composed
+of a single panel with NxM elements, where N is the number of rows and M is the
+number of columns, configurable through the attributes “NumRows” and “NumColumns”.
 The radiation pattern of the antenna elements follows the model specified in
 Sec. 7.3 of 3GPP TR 38.901; only vertical polarization is considered (i.e.,
 <img class="math" src="_images/math/e238fd00bfa44e95b7306a72de2204aa51e4c271.png" alt="{\zeta = 0}"/>).
@@ -229,6 +226,15 @@ direction, but the orientation can be changed through the attributes “BearingA
 which adjusts the azimuth angle, and “DowntiltAngle”, which adjusts the elevation angle.
 The spacing between the horizontal and vertical elements can be configured through
 the attributes “AntennaHorizontalSpacing” and “AntennaVerticalSpacing”.</p>
+<p><strong>Note:</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Currently, the model does not support multi-panel antennas, i.e.,
+<img class="math" src="_images/math/4ed359faa5c3c9fba1d1bfc6ef1925e6f5ea21af.png" alt="N_{g} = M_{g} = 1"/>.</p></li>
+<li><p>Currently, the model supports only single polarized (i.e., P = 1) antenna
+panels with vertical polarization (i.e., <img class="math" src="_images/math/e238fd00bfa44e95b7306a72de2204aa51e4c271.png" alt="{\zeta = 0}"/>)</p></li>
+</ul>
+</div></blockquote>
 <dl class="citation">
 <dt class="label" id="balanis"><span class="brackets"><a class="fn-backref" href="#id1">Balanis</a></span></dt>
 <dd><p>C.A. Balanis, “Antenna Theory - Analysis and Design”,  Wiley, 2nd Ed.</p>
@@ -331,7 +337,7 @@ assumptions and parameters for FDD HeNB RF requirements.</p>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2006-2019.
-      Last updated on Apr 23, 2020 07:52.
+      Last updated on Apr 29, 2020 17:37.
       Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.2.
     </div>
   </body>

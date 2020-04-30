@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -253,6 +250,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6d2b15db27dff44a5b0b2ffa3b72ac19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9b09336c28f796974a77abd201ae12f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_building.html#ad9b09336c28f796974a77abd201ae12f">IsInside</a> (Vector position) const</td></tr>
 <tr class="separator:ad9b09336c28f796974a77abd201ae12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a3cda6ae72c0792c3f3820d7adea687"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_building.html#a6a3cda6ae72c0792c3f3820d7adea687">IsIntersect</a> (const Vector &amp;l1, const Vector &amp;l2) const</td></tr>
+<tr class="memdesc:a6a3cda6ae72c0792c3f3820d7adea687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a line-segment between position l1 and position l2 intersects a building.  <a href="classns3_1_1_building.html#a6a3cda6ae72c0792c3f3820d7adea687">More...</a><br /></td></tr>
+<tr class="separator:a6a3cda6ae72c0792c3f3820d7adea687"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b69659f05a983f06e33e7db62415915"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_building.html#a4b69659f05a983f06e33e7db62415915">SetBoundaries</a> (<a class="el" href="classns3_1_1_box.html">Box</a> box)</td></tr>
 <tr class="memdesc:a4b69659f05a983f06e33e7db62415915"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the boundaries of the building.  <a href="classns3_1_1_building.html#a4b69659f05a983f06e33e7db62415915">More...</a><br /></td></tr>
 <tr class="separator:a4b69659f05a983f06e33e7db62415915"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -539,7 +539,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="building_8cc_source.html#l00114">114</a> of file <a class="el" href="building_8cc_source.html">building.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="building-list_8cc_source.html#l00168">ns3::BuildingList::Add()</a>, <a class="el" href="building_8h_source.html#l00219">m_buildingId</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
+<p class="reference">References <a class="el" href="building-list_8cc_source.html#l00168">ns3::BuildingList::Add()</a>, <a class="el" href="building_8h_source.html#l00228">m_buildingId</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -649,7 +649,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="building_8cc_source.html#l00181">181</a> of file <a class="el" href="building_8cc_source.html">building.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="building_8h_source.html#l00209">m_buildingBounds</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
+<p class="reference">References <a class="el" href="building_8h_source.html#l00218">m_buildingBounds</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="building_8cc_source.html#l00039">GetTypeId()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -684,7 +684,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="building_8cc_source.html#l00188">188</a> of file <a class="el" href="building_8cc_source.html">building.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="building_8h_source.html#l00220">m_buildingType</a>.</p>
+<p class="reference">References <a class="el" href="building_8h_source.html#l00229">m_buildingType</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="building_8cc_source.html#l00039">GetTypeId()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -719,7 +719,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="building_8cc_source.html#l00194">194</a> of file <a class="el" href="building_8cc_source.html">building.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="building_8h_source.html#l00221">m_externalWalls</a>.</p>
+<p class="reference">References <a class="el" href="building_8h_source.html#l00230">m_externalWalls</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="building_8cc_source.html#l00039">GetTypeId()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -761,7 +761,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="building_8cc_source.html#l00267">267</a> of file <a class="el" href="building_8cc_source.html">building.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="building_8cc_source.html#l00218">IsInside()</a>, <a class="el" href="building_8h_source.html#l00209">m_buildingBounds</a>, <a class="el" href="building_8h_source.html#l00215">m_floors</a>, <a class="el" href="sample-rng-plot_8py_source.html#l00037">sample-rng-plot::n</a>, <a class="el" href="assert_8h_source.html#l00067">NS_ASSERT</a>, <a class="el" href="global-router-interface_8cc.html#af2f17e24d29f39f6804d0d10d8cedc71">NS_LOG_LOGIC()</a>, <a class="el" href="box_8h_source.html#l00103">ns3::Box::zMax</a>, and <a class="el" href="box_8h_source.html#l00101">ns3::Box::zMin</a>.</p>
+<p class="reference">References <a class="el" href="building_8cc_source.html#l00218">IsInside()</a>, <a class="el" href="building_8h_source.html#l00218">m_buildingBounds</a>, <a class="el" href="building_8h_source.html#l00224">m_floors</a>, <a class="el" href="sample-rng-plot_8py_source.html#l00037">sample-rng-plot::n</a>, <a class="el" href="assert_8h_source.html#l00067">NS_ASSERT</a>, <a class="el" href="global-router-interface_8cc.html#af2f17e24d29f39f6804d0d10d8cedc71">NS_LOG_LOGIC()</a>, <a class="el" href="box_8h_source.html#l00120">ns3::Box::zMax</a>, and <a class="el" href="box_8h_source.html#l00118">ns3::Box::zMin</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -797,7 +797,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="building_8cc_source.html#l00132">132</a> of file <a class="el" href="building_8cc_source.html">building.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="building_8h_source.html#l00219">m_buildingId</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
+<p class="reference">References <a class="el" href="building_8h_source.html#l00228">m_buildingId</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="building_8cc_source.html#l00039">GetTypeId()</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -832,7 +832,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="building_8cc_source.html#l00200">200</a> of file <a class="el" href="building_8cc_source.html">building.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="building_8h_source.html#l00215">m_floors</a>.</p>
+<p class="reference">References <a class="el" href="building_8h_source.html#l00224">m_floors</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="building_8cc_source.html#l00039">GetTypeId()</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -867,7 +867,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="building_8cc_source.html#l00206">206</a> of file <a class="el" href="building_8cc_source.html">building.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="building_8h_source.html#l00216">m_roomsX</a>.</p>
+<p class="reference">References <a class="el" href="building_8h_source.html#l00225">m_roomsX</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="building_8cc_source.html#l00039">GetTypeId()</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -902,7 +902,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="building_8cc_source.html#l00212">212</a> of file <a class="el" href="building_8cc_source.html">building.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="building_8h_source.html#l00217">m_roomsY</a>.</p>
+<p class="reference">References <a class="el" href="building_8h_source.html#l00226">m_roomsY</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="building_8cc_source.html#l00039">GetTypeId()</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -944,7 +944,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="building_8cc_source.html#l00225">225</a> of file <a class="el" href="building_8cc_source.html">building.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="building_8cc_source.html#l00218">IsInside()</a>, <a class="el" href="building_8h_source.html#l00209">m_buildingBounds</a>, <a class="el" href="building_8h_source.html#l00216">m_roomsX</a>, <a class="el" href="sample-rng-plot_8py_source.html#l00037">sample-rng-plot::n</a>, <a class="el" href="assert_8h_source.html#l00067">NS_ASSERT</a>, <a class="el" href="global-router-interface_8cc.html#af2f17e24d29f39f6804d0d10d8cedc71">NS_LOG_LOGIC()</a>, <a class="el" href="sample-rng-plot_8py_source.html#l00034">sample-rng-plot::x</a>, <a class="el" href="box_8h_source.html#l00095">ns3::Box::xMax</a>, and <a class="el" href="box_8h_source.html#l00093">ns3::Box::xMin</a>.</p>
+<p class="reference">References <a class="el" href="building_8cc_source.html#l00218">IsInside()</a>, <a class="el" href="building_8h_source.html#l00218">m_buildingBounds</a>, <a class="el" href="building_8h_source.html#l00225">m_roomsX</a>, <a class="el" href="sample-rng-plot_8py_source.html#l00037">sample-rng-plot::n</a>, <a class="el" href="assert_8h_source.html#l00067">NS_ASSERT</a>, <a class="el" href="global-router-interface_8cc.html#af2f17e24d29f39f6804d0d10d8cedc71">NS_LOG_LOGIC()</a>, <a class="el" href="sample-rng-plot_8py_source.html#l00034">sample-rng-plot::x</a>, <a class="el" href="box_8h_source.html#l00112">ns3::Box::xMax</a>, and <a class="el" href="box_8h_source.html#l00110">ns3::Box::xMin</a>.</p>
 <div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-11-summary" class="dynsummary" style="display:block;">
@@ -986,7 +986,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="building_8cc_source.html#l00246">246</a> of file <a class="el" href="building_8cc_source.html">building.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="building_8cc_source.html#l00218">IsInside()</a>, <a class="el" href="building_8h_source.html#l00209">m_buildingBounds</a>, <a class="el" href="building_8h_source.html#l00217">m_roomsY</a>, <a class="el" href="sample-rng-plot_8py_source.html#l00037">sample-rng-plot::n</a>, <a class="el" href="assert_8h_source.html#l00067">NS_ASSERT</a>, <a class="el" href="global-router-interface_8cc.html#af2f17e24d29f39f6804d0d10d8cedc71">NS_LOG_LOGIC()</a>, <a class="el" href="box_8h_source.html#l00099">ns3::Box::yMax</a>, and <a class="el" href="box_8h_source.html#l00097">ns3::Box::yMin</a>.</p>
+<p class="reference">References <a class="el" href="building_8cc_source.html#l00218">IsInside()</a>, <a class="el" href="building_8h_source.html#l00218">m_buildingBounds</a>, <a class="el" href="building_8h_source.html#l00226">m_roomsY</a>, <a class="el" href="sample-rng-plot_8py_source.html#l00037">sample-rng-plot::n</a>, <a class="el" href="assert_8h_source.html#l00067">NS_ASSERT</a>, <a class="el" href="global-router-interface_8cc.html#af2f17e24d29f39f6804d0d10d8cedc71">NS_LOG_LOGIC()</a>, <a class="el" href="box_8h_source.html#l00116">ns3::Box::yMax</a>, and <a class="el" href="box_8h_source.html#l00114">ns3::Box::yMin</a>.</p>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
@@ -1029,7 +1029,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="building_8cc_source.html#l00039">39</a> of file <a class="el" href="building_8cc_source.html">building.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="building_8h_source.html#l00048">Commercial</a>, <a class="el" href="building_8h_source.html#l00052">ConcreteWithoutWindows</a>, <a class="el" href="building_8h_source.html#l00052">ConcreteWithWindows</a>, <a class="el" href="building_8cc_source.html#l00181">GetBoundaries()</a>, <a class="el" href="building_8cc_source.html#l00188">GetBuildingType()</a>, <a class="el" href="building_8cc_source.html#l00194">GetExtWallsType()</a>, <a class="el" href="building_8cc_source.html#l00132">GetId()</a>, <a class="el" href="building_8cc_source.html#l00200">GetNFloors()</a>, <a class="el" href="building_8cc_source.html#l00206">GetNRoomsX()</a>, <a class="el" href="building_8cc_source.html#l00212">GetNRoomsY()</a>, <a class="el" href="box_8h_source.html#l00109">ns3::MakeBoxAccessor()</a>, <a class="el" href="box_8cc_source.html#l00146">ns3::MakeBoxChecker()</a>, <a class="el" href="enum_8h_source.html#l00209">ns3::MakeEnumAccessor()</a>, <a class="el" href="enum_8cc_source.html#l00184">ns3::MakeEnumChecker()</a>, <a class="el" href="uinteger_8h_source.html#l00045">ns3::MakeUintegerAccessor()</a>, <a class="el" href="building_8h_source.html#l00048">Office</a>, <a class="el" href="building_8h_source.html#l00048">Residential</a>, <a class="el" href="building_8cc_source.html#l00139">SetBoundaries()</a>, <a class="el" href="building_8cc_source.html#l00146">SetBuildingType()</a>, <a class="el" href="building_8cc_source.html#l00153">SetExtWallsType()</a>, <a class="el" href="building_8cc_source.html#l00160">SetNFloors()</a>, <a class="el" href="building_8cc_source.html#l00167">SetNRoomsX()</a>, <a class="el" href="building_8cc_source.html#l00174">SetNRoomsY()</a>, <a class="el" href="type-id_8cc_source.html#l00922">ns3::TypeId::SetParent()</a>, <a class="el" href="building_8h_source.html#l00052">StoneBlocks</a>, and <a class="el" href="building_8h_source.html#l00052">Wood</a>.</p>
+<p class="reference">References <a class="el" href="building_8h_source.html#l00048">Commercial</a>, <a class="el" href="building_8h_source.html#l00052">ConcreteWithoutWindows</a>, <a class="el" href="building_8h_source.html#l00052">ConcreteWithWindows</a>, <a class="el" href="building_8cc_source.html#l00181">GetBoundaries()</a>, <a class="el" href="building_8cc_source.html#l00188">GetBuildingType()</a>, <a class="el" href="building_8cc_source.html#l00194">GetExtWallsType()</a>, <a class="el" href="building_8cc_source.html#l00132">GetId()</a>, <a class="el" href="building_8cc_source.html#l00200">GetNFloors()</a>, <a class="el" href="building_8cc_source.html#l00206">GetNRoomsX()</a>, <a class="el" href="building_8cc_source.html#l00212">GetNRoomsY()</a>, <a class="el" href="box_8h_source.html#l00126">ns3::MakeBoxAccessor()</a>, <a class="el" href="box_8cc_source.html#l00207">ns3::MakeBoxChecker()</a>, <a class="el" href="enum_8h_source.html#l00225">ns3::MakeEnumAccessor()</a>, <a class="el" href="enum_8cc_source.html#l00180">ns3::MakeEnumChecker()</a>, <a class="el" href="uinteger_8h_source.html#l00045">ns3::MakeUintegerAccessor()</a>, <a class="el" href="building_8h_source.html#l00048">Office</a>, <a class="el" href="building_8h_source.html#l00048">Residential</a>, <a class="el" href="building_8cc_source.html#l00139">SetBoundaries()</a>, <a class="el" href="building_8cc_source.html#l00146">SetBuildingType()</a>, <a class="el" href="building_8cc_source.html#l00153">SetExtWallsType()</a>, <a class="el" href="building_8cc_source.html#l00160">SetNFloors()</a>, <a class="el" href="building_8cc_source.html#l00167">SetNRoomsX()</a>, <a class="el" href="building_8cc_source.html#l00174">SetNRoomsY()</a>, <a class="el" href="type-id_8cc_source.html#l00923">ns3::TypeId::SetParent()</a>, <a class="el" href="building_8h_source.html#l00052">StoneBlocks</a>, and <a class="el" href="building_8h_source.html#l00052">Wood</a>.</p>
 <div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-13-summary" class="dynsummary" style="display:block;">
@@ -1092,7 +1092,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="building_8cc_source.html#l00218">218</a> of file <a class="el" href="building_8cc_source.html">building.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="box_8cc_source.html#l00054">ns3::Box::IsInside()</a>, and <a class="el" href="building_8h_source.html#l00209">m_buildingBounds</a>.</p>
+<p class="reference">References <a class="el" href="box_8cc_source.html#l00054">ns3::Box::IsInside()</a>, and <a class="el" href="building_8h_source.html#l00218">m_buildingBounds</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="building_8cc_source.html#l00267">GetFloor()</a>, <a class="el" href="building_8cc_source.html#l00225">GetRoomX()</a>, and <a class="el" href="building_8cc_source.html#l00246">GetRoomY()</a>.</p>
 <div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1117,6 +1117,60 @@ Additional Inherited Members</h2></td></tr>
 <area shape="rect" href="classns3_1_1_building.html#abd0d6b0c3f9cdc4b11f679a90a0f0577" title=" " alt="" coords="12,5,183,32"/>
 <area shape="rect" href="classns3_1_1_building.html#af14aa37f4bdf3d1c409a92477df29826" title=" " alt="" coords="5,56,189,83"/>
 <area shape="rect" href="classns3_1_1_building.html#a6d2b15db27dff44a5b0b2ffa3b72ac19" title=" " alt="" coords="6,107,189,133"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6a3cda6ae72c0792c3f3820d7adea687"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a3cda6ae72c0792c3f3820d7adea687">&#9670;&nbsp;</a></span>IsIntersect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ns3::Building::IsIntersect </td>
+          <td>(</td>
+          <td class="paramtype">const Vector &amp;&#160;</td>
+          <td class="paramname"><em>l1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Vector &amp;&#160;</td>
+          <td class="paramname"><em>l2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if a line-segment between position l1 and position l2 intersects a building. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">l1</td><td>position </td></tr>
+    <tr><td class="paramname">l2</td><td>position </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if there is a intersection, false otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="building_8cc_source.html#l00288">288</a> of file <a class="el" href="building_8cc_source.html">building.cc</a>.</p>
+
+<p class="reference">References <a class="el" href="box_8cc_source.html#l00147">ns3::Box::IsIntersect()</a>, and <a class="el" href="building_8h_source.html#l00218">m_buildingBounds</a>.</p>
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classns3_1_1_building_a6a3cda6ae72c0792c3f3820d7adea687_cgraph.png" border="0" usemap="#classns3_1_1_building_a6a3cda6ae72c0792c3f3820d7adea687_cgraph" alt=""/></div>
+<map name="classns3_1_1_building_a6a3cda6ae72c0792c3f3820d7adea687_cgraph" id="classns3_1_1_building_a6a3cda6ae72c0792c3f3820d7adea687_cgraph">
+<area shape="rect" title="Checks if a line&#45;segment between position l1 and position l2 intersects a building." alt="" coords="5,5,188,32"/>
+<area shape="rect" href="classns3_1_1_box.html#a9f1d0fb7e03da61916c46ec2c6bc2aa8" title="Checks if a line&#45;segment between position l1 and position l2 intersects a box." alt="" coords="236,5,391,32"/>
+<area shape="rect" href="classns3_1_1_box.html#a1a67446b6da5eaba91652d1387461564" title=" " alt="" coords="439,5,575,32"/>
 </map>
 </div>
 
@@ -1148,14 +1202,14 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="building_8cc_source.html#l00139">139</a> of file <a class="el" href="building_8cc_source.html">building.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="building_8h_source.html#l00209">m_buildingBounds</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
+<p class="reference">References <a class="el" href="building_8h_source.html#l00218">m_buildingBounds</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="building-position-allocator-test_8cc_source.html#l00081">RandomRoomPositionAllocatorTestCase::DoRun()</a>, <a class="el" href="building-position-allocator-test_8cc_source.html#l00161">SameRoomPositionAllocatorTestCase::DoRun()</a>, <a class="el" href="buildings-channel-condition-model-test_8cc_source.html#l00080">BuildingsChannelConditionModelTestCase::DoRun()</a>, <a class="el" href="buildings-helper-test_8cc_source.html#l00132">BuildingsHelperOneTestCase::DoRun()</a>, <a class="el" href="buildings-pathloss-test_8cc_source.html#l00154">BuildingsPathlossTestCase::DoRun()</a>, <a class="el" href="buildings-shadowing-test_8cc_source.html#l00089">BuildingsShadowingTestCase::DoRun()</a>, and <a class="el" href="building_8cc_source.html#l00039">GetTypeId()</a>.</p>
-<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_building_a4b69659f05a983f06e33e7db62415915_icgraph.png" border="0" usemap="#classns3_1_1_building_a4b69659f05a983f06e33e7db62415915_icgraph" alt=""/></div>
 <map name="classns3_1_1_building_a4b69659f05a983f06e33e7db62415915_icgraph" id="classns3_1_1_building_a4b69659f05a983f06e33e7db62415915_icgraph">
 <area shape="rect" title="Set the boundaries of the building." alt="" coords="277,209,485,235"/>
@@ -1196,14 +1250,14 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="building_8cc_source.html#l00146">146</a> of file <a class="el" href="building_8cc_source.html">building.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="building_8h_source.html#l00220">m_buildingType</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
+<p class="reference">References <a class="el" href="building_8h_source.html#l00229">m_buildingType</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="buildings-pathloss-test_8cc_source.html#l00154">BuildingsPathlossTestCase::DoRun()</a>, <a class="el" href="buildings-shadowing-test_8cc_source.html#l00089">BuildingsShadowingTestCase::DoRun()</a>, and <a class="el" href="building_8cc_source.html#l00039">GetTypeId()</a>.</p>
-<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_building_a2f193ed27d25ed8bf29962d3c7d77204_icgraph.png" border="0" usemap="#classns3_1_1_building_a2f193ed27d25ed8bf29962d3c7d77204_icgraph" alt=""/></div>
 <map name="classns3_1_1_building_a2f193ed27d25ed8bf29962d3c7d77204_icgraph" id="classns3_1_1_building_a2f193ed27d25ed8bf29962d3c7d77204_icgraph">
 <area shape="rect" title=" " alt="" coords="264,78,483,105"/>
@@ -1240,14 +1294,14 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="building_8cc_source.html#l00153">153</a> of file <a class="el" href="building_8cc_source.html">building.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="building_8h_source.html#l00221">m_externalWalls</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
+<p class="reference">References <a class="el" href="building_8h_source.html#l00230">m_externalWalls</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="buildings-pathloss-test_8cc_source.html#l00154">BuildingsPathlossTestCase::DoRun()</a>, <a class="el" href="buildings-shadowing-test_8cc_source.html#l00089">BuildingsShadowingTestCase::DoRun()</a>, and <a class="el" href="building_8cc_source.html#l00039">GetTypeId()</a>.</p>
-<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_building_a8084b2aafb9ca8bcb775fad0319d42e8_icgraph.png" border="0" usemap="#classns3_1_1_building_a8084b2aafb9ca8bcb775fad0319d42e8_icgraph" alt=""/></div>
 <map name="classns3_1_1_building_a8084b2aafb9ca8bcb775fad0319d42e8_icgraph" id="classns3_1_1_building_a8084b2aafb9ca8bcb775fad0319d42e8_icgraph">
 <area shape="rect" title=" " alt="" coords="264,78,487,105"/>
@@ -1284,14 +1338,14 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="building_8cc_source.html#l00160">160</a> of file <a class="el" href="building_8cc_source.html">building.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="building_8h_source.html#l00215">m_floors</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
+<p class="reference">References <a class="el" href="building_8h_source.html#l00224">m_floors</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="building-position-allocator-test_8cc_source.html#l00081">RandomRoomPositionAllocatorTestCase::DoRun()</a>, <a class="el" href="building-position-allocator-test_8cc_source.html#l00161">SameRoomPositionAllocatorTestCase::DoRun()</a>, <a class="el" href="buildings-channel-condition-model-test_8cc_source.html#l00080">BuildingsChannelConditionModelTestCase::DoRun()</a>, <a class="el" href="buildings-helper-test_8cc_source.html#l00132">BuildingsHelperOneTestCase::DoRun()</a>, <a class="el" href="buildings-pathloss-test_8cc_source.html#l00154">BuildingsPathlossTestCase::DoRun()</a>, <a class="el" href="buildings-shadowing-test_8cc_source.html#l00089">BuildingsShadowingTestCase::DoRun()</a>, and <a class="el" href="building_8cc_source.html#l00039">GetTypeId()</a>.</p>
-<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_building_ae9f97075b5c8bf4685703e30ed049791_icgraph.png" border="0" usemap="#classns3_1_1_building_ae9f97075b5c8bf4685703e30ed049791_icgraph" alt=""/></div>
 <map name="classns3_1_1_building_ae9f97075b5c8bf4685703e30ed049791_icgraph" id="classns3_1_1_building_ae9f97075b5c8bf4685703e30ed049791_icgraph">
 <area shape="rect" title=" " alt="" coords="277,209,463,235"/>
@@ -1332,14 +1386,14 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="building_8cc_source.html#l00167">167</a> of file <a class="el" href="building_8cc_source.html">building.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="building_8h_source.html#l00216">m_roomsX</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
+<p class="reference">References <a class="el" href="building_8h_source.html#l00225">m_roomsX</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="building-position-allocator-test_8cc_source.html#l00081">RandomRoomPositionAllocatorTestCase::DoRun()</a>, <a class="el" href="building-position-allocator-test_8cc_source.html#l00161">SameRoomPositionAllocatorTestCase::DoRun()</a>, <a class="el" href="buildings-channel-condition-model-test_8cc_source.html#l00080">BuildingsChannelConditionModelTestCase::DoRun()</a>, <a class="el" href="buildings-helper-test_8cc_source.html#l00132">BuildingsHelperOneTestCase::DoRun()</a>, and <a class="el" href="building_8cc_source.html#l00039">GetTypeId()</a>.</p>
-<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_building_a60eac680f1059fb9d883a659607e2fae_icgraph.png" border="0" usemap="#classns3_1_1_building_a60eac680f1059fb9d883a659607e2fae_icgraph" alt=""/></div>
 <map name="classns3_1_1_building_a60eac680f1059fb9d883a659607e2fae_icgraph" id="classns3_1_1_building_a60eac680f1059fb9d883a659607e2fae_icgraph">
 <area shape="rect" title=" " alt="" coords="277,143,476,170"/>
@@ -1378,14 +1432,14 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="building_8cc_source.html#l00174">174</a> of file <a class="el" href="building_8cc_source.html">building.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="building_8h_source.html#l00217">m_roomsY</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
+<p class="reference">References <a class="el" href="building_8h_source.html#l00226">m_roomsY</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="building-position-allocator-test_8cc_source.html#l00081">RandomRoomPositionAllocatorTestCase::DoRun()</a>, <a class="el" href="building-position-allocator-test_8cc_source.html#l00161">SameRoomPositionAllocatorTestCase::DoRun()</a>, <a class="el" href="buildings-channel-condition-model-test_8cc_source.html#l00080">BuildingsChannelConditionModelTestCase::DoRun()</a>, <a class="el" href="buildings-helper-test_8cc_source.html#l00132">BuildingsHelperOneTestCase::DoRun()</a>, and <a class="el" href="building_8cc_source.html#l00039">GetTypeId()</a>.</p>
-<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-21-content" class="dyncontent" style="display:none;">
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_building_a9103ee5b5edf013624d7e18422c4ba06_icgraph.png" border="0" usemap="#classns3_1_1_building_a9103ee5b5edf013624d7e18422c4ba06_icgraph" alt=""/></div>
 <map name="classns3_1_1_building_a9103ee5b5edf013624d7e18422c4ba06_icgraph" id="classns3_1_1_building_a9103ee5b5edf013624d7e18422c4ba06_icgraph">
 <area shape="rect" title=" " alt="" coords="277,143,476,170"/>
@@ -1420,9 +1474,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="building_8h_source.html#l00209">209</a> of file <a class="el" href="building_8h_source.html">building.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="building_8h_source.html#l00218">218</a> of file <a class="el" href="building_8h_source.html">building.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="building_8cc_source.html#l00181">GetBoundaries()</a>, <a class="el" href="building_8cc_source.html#l00267">GetFloor()</a>, <a class="el" href="building_8cc_source.html#l00225">GetRoomX()</a>, <a class="el" href="building_8cc_source.html#l00246">GetRoomY()</a>, <a class="el" href="building_8cc_source.html#l00218">IsInside()</a>, and <a class="el" href="building_8cc_source.html#l00139">SetBoundaries()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="building_8cc_source.html#l00181">GetBoundaries()</a>, <a class="el" href="building_8cc_source.html#l00267">GetFloor()</a>, <a class="el" href="building_8cc_source.html#l00225">GetRoomX()</a>, <a class="el" href="building_8cc_source.html#l00246">GetRoomY()</a>, <a class="el" href="building_8cc_source.html#l00218">IsInside()</a>, <a class="el" href="building_8cc_source.html#l00288">IsIntersect()</a>, and <a class="el" href="building_8cc_source.html#l00139">SetBoundaries()</a>.</p>
 
 </div>
 </div>
@@ -1446,7 +1500,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="building_8h_source.html#l00219">219</a> of file <a class="el" href="building_8h_source.html">building.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="building_8h_source.html#l00228">228</a> of file <a class="el" href="building_8h_source.html">building.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="building_8cc_source.html#l00114">Building()</a>, and <a class="el" href="building_8cc_source.html#l00132">GetId()</a>.</p>
 
@@ -1472,7 +1526,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="building_8h_source.html#l00220">220</a> of file <a class="el" href="building_8h_source.html">building.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="building_8h_source.html#l00229">229</a> of file <a class="el" href="building_8h_source.html">building.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="building_8cc_source.html#l00188">GetBuildingType()</a>, and <a class="el" href="building_8cc_source.html#l00146">SetBuildingType()</a>.</p>
 
@@ -1498,7 +1552,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="building_8h_source.html#l00221">221</a> of file <a class="el" href="building_8h_source.html">building.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="building_8h_source.html#l00230">230</a> of file <a class="el" href="building_8h_source.html">building.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="building_8cc_source.html#l00194">GetExtWallsType()</a>, and <a class="el" href="building_8cc_source.html#l00153">SetExtWallsType()</a>.</p>
 
@@ -1526,7 +1580,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>number of floors, must be greater than 0, and 1 means only one floor (i.e., groundfloor) </p>
 
-<p class="definition">Definition at line <a class="el" href="building_8h_source.html#l00215">215</a> of file <a class="el" href="building_8h_source.html">building.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="building_8h_source.html#l00224">224</a> of file <a class="el" href="building_8h_source.html">building.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="building_8cc_source.html#l00267">GetFloor()</a>, <a class="el" href="building_8cc_source.html#l00200">GetNFloors()</a>, and <a class="el" href="building_8cc_source.html#l00160">SetNFloors()</a>.</p>
 
@@ -1552,7 +1606,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="building_8h_source.html#l00216">216</a> of file <a class="el" href="building_8h_source.html">building.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="building_8h_source.html#l00225">225</a> of file <a class="el" href="building_8h_source.html">building.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="building_8cc_source.html#l00206">GetNRoomsX()</a>, <a class="el" href="building_8cc_source.html#l00225">GetRoomX()</a>, and <a class="el" href="building_8cc_source.html#l00167">SetNRoomsX()</a>.</p>
 
@@ -1578,7 +1632,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="building_8h_source.html#l00217">217</a> of file <a class="el" href="building_8h_source.html">building.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="building_8h_source.html#l00226">226</a> of file <a class="el" href="building_8h_source.html">building.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="building_8cc_source.html#l00212">GetNRoomsY()</a>, <a class="el" href="building_8cc_source.html#l00246">GetRoomY()</a>, and <a class="el" href="building_8cc_source.html#l00174">SetNRoomsY()</a>.</p>
 
@@ -1598,7 +1652,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_building.html">Building</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:21 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:27 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

@@ -3,7 +3,7 @@
 <area shape="rect" id="node2" href="$classns3_1_1_application_container.html#ad09ab1a1ad5849d518d5f4c262e38152" title="Append the contents of another ApplicationContainer to the end of this container." alt="" coords="425,35,647,61"/>
 <area shape="rect" id="node5" href="$classns3_1_1_ipv4_address_helper.html#af8e7f4a1a7e74c00014a1eac445a27af" title="Assign IP addresses to the net devices specified in the container based on the current network prefix..." alt="" coords="173,525,349,566"/>
 <area shape="rect" id="node15" href="$classns3_1_1_flow_monitor.html#a278237eb8464a95047b23144b90eb264" title="Check right now for packets that appear to be lost." alt="" coords="159,1122,362,1163"/>
-<area shape="rect" id="node16" href="$classns3_1_1_yans_wifi_phy_helper.html#a75b0af43b173308e2f130605ddf34a7f" title="Create a phy helper in a default working state." alt="" coords="173,1187,348,1229"/>
+<area shape="rect" id="node16" href="$classns3_1_1_yans_wifi_phy_helper.html#a75b0af43b173308e2f130605ddf34a7f" title="Create a PHY helper in a default working state." alt="" coords="173,1187,348,1229"/>
 <area shape="rect" id="node18" href="$classns3_1_1_simulator.html#a2a056e59a6623225df0957eda0ee8252" title="Execute the events scheduled with ScheduleDestroy()." alt="" coords="173,1253,348,1280"/>
 <area shape="rect" id="node22" href="$classns3_1_1_ipv4_flow_classifier.html#a7777410536cf55f6093a011236a46164" title="Searches for the FiveTuple corresponding to the given flowId." alt="" coords="174,1305,347,1346"/>
 <area shape="rect" id="node24" href="$classns3_1_1_flow_monitor_helper.html#a60084e694545354136fed3ce93de00ae" title="Retrieve the FlowClassifier object for IPv4 created by the Install* methods." alt="" coords="172,1370,349,1411"/>

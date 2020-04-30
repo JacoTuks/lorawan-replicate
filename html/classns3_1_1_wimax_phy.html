@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -280,7 +277,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a19ec8497da4a3bea4b9cd4d0827c6763"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_wimax_phy.html#a19ec8497da4a3bea4b9cd4d0827c6763">AssignStreams</a> (int64_t stream)=0</td></tr>
 <tr class="memdesc:a19ec8497da4a3bea4b9cd4d0827c6763"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign a fixed random variable stream number to the random variables used by this model.  <a href="classns3_1_1_wimax_phy.html#a19ec8497da4a3bea4b9cd4d0827c6763">More...</a><br /></td></tr>
 <tr class="separator:a19ec8497da4a3bea4b9cd4d0827c6763"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3adfde80658dbb7dce265343f9232803"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_wimax_phy.html#a3adfde80658dbb7dce265343f9232803">Attach</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_wimax_channel.html">WimaxChannel</a> &gt; <a class="el" href="phy-communication-test_8cc.html#ac764e37b6204cf317ba7d54ae65a04d0">channel</a>)</td></tr>
+<tr class="memitem:a3adfde80658dbb7dce265343f9232803"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_wimax_phy.html#a3adfde80658dbb7dce265343f9232803">Attach</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_wimax_channel.html">WimaxChannel</a> &gt; channel)</td></tr>
 <tr class="memdesc:a3adfde80658dbb7dce265343f9232803"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attach the physical layer to a channel.  <a href="classns3_1_1_wimax_phy.html#a3adfde80658dbb7dce265343f9232803">More...</a><br /></td></tr>
 <tr class="separator:a3adfde80658dbb7dce265343f9232803"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a4c4b98b43bd3398ab8caef881b5c5c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_wimax_phy.html#a6a4c4b98b43bd3398ab8caef881b5c5c">DoDispose</a> (void)</td></tr>
@@ -539,7 +536,7 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a64d2c138575e256169ff1ee737e46310"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_wimax_phy.html#a64d2c138575e256169ff1ee737e46310">DoAttach</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_wimax_channel.html">WimaxChannel</a> &gt; <a class="el" href="phy-communication-test_8cc.html#ac764e37b6204cf317ba7d54ae65a04d0">channel</a>)=0</td></tr>
+<tr class="memitem:a64d2c138575e256169ff1ee737e46310"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_wimax_phy.html#a64d2c138575e256169ff1ee737e46310">DoAttach</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_wimax_channel.html">WimaxChannel</a> &gt; channel)=0</td></tr>
 <tr class="memdesc:a64d2c138575e256169ff1ee737e46310"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attach channel.  <a href="classns3_1_1_wimax_phy.html#a64d2c138575e256169ff1ee737e46310">More...</a><br /></td></tr>
 <tr class="separator:a64d2c138575e256169ff1ee737e46310"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3364fc82dab53b6161f2955cbfc0900"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_wimax_phy.html#ac3364fc82dab53b6161f2955cbfc0900">DoGetDataRate</a> (<a class="el" href="classns3_1_1_wimax_phy.html#a044c5d8a48ca992c39c2a946f6e755fa">ModulationType</a> modulationType) const =0</td></tr>
@@ -871,7 +868,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="wimax-phy_8cc_source.html#l00106">106</a> of file <a class="el" href="wimax-phy_8cc_source.html">wimax-phy.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="phy-communication-test_8cc_source.html#l00010">channel</a>, <a class="el" href="classns3_1_1_wimax_phy.html#a64d2c138575e256169ff1ee737e46310">DoAttach()</a>, and <a class="el" href="wimax-phy_8h_source.html#l00466">m_channel</a>.</p>
+<p class="reference">References <a class="el" href="third_8py_source.html#l00092">third::channel</a>, <a class="el" href="classns3_1_1_wimax_phy.html#a64d2c138575e256169ff1ee737e46310">DoAttach()</a>, and <a class="el" href="wimax-phy_8h_source.html#l00466">m_channel</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="wimax-phy_8cc_source.html#l00039">GetTypeId()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -3028,7 +3025,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="wimax-phy_8cc_source.html#l00039">39</a> of file <a class="el" href="wimax-phy_8cc_source.html">wimax-phy.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="wimax-phy_8cc_source.html#l00106">Attach()</a>, <a class="el" href="wimax-phy_8cc_source.html#l00113">GetChannel()</a>, <a class="el" href="wimax-phy_8cc_source.html#l00332">GetChannelBandwidth()</a>, <a class="el" href="wimax-phy_8cc_source.html#l00308">GetFrameDurationSec()</a>, <a class="el" href="wimax-phy_8cc_source.html#l00320">GetFrequency()</a>, <a class="el" href="pointer_8h_source.html#l00229">ns3::MakePointerAccessor()</a>, <a class="el" href="nstime_8h_source.html#l01127">ns3::MakeTimeAccessor()</a>, <a class="el" href="time_8cc_source.html#l00449">ns3::MakeTimeChecker()</a>, <a class="el" href="uinteger_8h_source.html#l00045">ns3::MakeUintegerAccessor()</a>, <a class="el" href="nstime_8h_source.html#l01064">ns3::Seconds()</a>, <a class="el" href="wimax-phy_8cc_source.html#l00326">SetChannelBandwidth()</a>, <a class="el" href="wimax-phy_8cc_source.html#l00296">SetFrameDuration()</a>, <a class="el" href="wimax-phy_8cc_source.html#l00314">SetFrequency()</a>, and <a class="el" href="type-id_8cc_source.html#l00922">ns3::TypeId::SetParent()</a>.</p>
+<p class="reference">References <a class="el" href="wimax-phy_8cc_source.html#l00106">Attach()</a>, <a class="el" href="wimax-phy_8cc_source.html#l00113">GetChannel()</a>, <a class="el" href="wimax-phy_8cc_source.html#l00332">GetChannelBandwidth()</a>, <a class="el" href="wimax-phy_8cc_source.html#l00308">GetFrameDurationSec()</a>, <a class="el" href="wimax-phy_8cc_source.html#l00320">GetFrequency()</a>, <a class="el" href="pointer_8h_source.html#l00229">ns3::MakePointerAccessor()</a>, <a class="el" href="nstime_8h_source.html#l01133">ns3::MakeTimeAccessor()</a>, <a class="el" href="time_8cc_source.html#l00449">ns3::MakeTimeChecker()</a>, <a class="el" href="uinteger_8h_source.html#l00045">ns3::MakeUintegerAccessor()</a>, <a class="el" href="nstime_8h_source.html#l01070">ns3::Seconds()</a>, <a class="el" href="wimax-phy_8cc_source.html#l00326">SetChannelBandwidth()</a>, <a class="el" href="wimax-phy_8cc_source.html#l00296">SetFrameDuration()</a>, <a class="el" href="wimax-phy_8cc_source.html#l00314">SetFrequency()</a>, and <a class="el" href="type-id_8cc_source.html#l00923">ns3::TypeId::SetParent()</a>.</p>
 <div id="dynsection-48" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-48-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-48-summary" class="dynsummary" style="display:block;">
@@ -3044,7 +3041,7 @@ Additional Inherited Members</h2></td></tr>
 <area shape="rect" href="classns3_1_1_wimax_phy.html#a5225ee0cc0c537e0b5792b17859875cc" title="Get the frequency on which the device is locked." alt="" coords="275,224,495,251"/>
 <area shape="rect" href="namespacens3.html#a395865a96718adfbd81ec47aa442931d" title=" " alt="" coords="289,275,481,301"/>
 <area shape="rect" href="namespacens3.html#a14613e89827b8d95bcfcbe23a763d4b6" title=" " alt="" coords="295,325,474,352"/>
-<area shape="rect" href="group__time.html#ga7032965bd4afa578691d88c09e4481c1" title="Helper to make a Time checker with bounded range. Both limits are inclusive." alt="" coords="299,376,471,403"/>
+<area shape="rect" href="namespacens3.html#a7032965bd4afa578691d88c09e4481c1" title="Helper to make a Time checker with bounded range. Both limits are inclusive." alt="" coords="299,376,471,403"/>
 <area shape="rect" href="namespacens3.html#aa91214d5303e6c4e877f49f05a28c983" title=" " alt="" coords="283,427,486,453"/>
 <area shape="rect" href="group__timecivil.html#ga33c34b816f8ff6628e33d5c8e9713b9e" title=" " alt="" coords="331,477,438,504"/>
 <area shape="rect" href="classns3_1_1_wimax_phy.html#a1410ed7a966d0d066a1dd8f016edd444" title="Set the channel bandwidth." alt="" coords="283,529,487,570"/>
@@ -4522,7 +4519,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_wimax_phy.html">WimaxPhy</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:47 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:48 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

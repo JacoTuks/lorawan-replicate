@@ -1,7 +1,7 @@
 <map id="ns3::LteFfrDistributedAlgorithm::GetTypeId" name="ns3::LteFfrDistributedAlgorithm::GetTypeId">
 <area shape="rect" id="node1" title="Get the type ID." alt="" coords="5,201,232,242"/>
 <area shape="rect" id="node2" href="$namespacens3.html#a14613e89827b8d95bcfcbe23a763d4b6" title=" " alt="" coords="292,107,471,133"/>
-<area shape="rect" id="node3" href="$group__time.html#ga7032965bd4afa578691d88c09e4481c1" title="Helper to make a Time checker with bounded range. Both limits are inclusive." alt="" coords="295,157,467,184"/>
+<area shape="rect" id="node3" href="$namespacens3.html#a7032965bd4afa578691d88c09e4481c1" title="Helper to make a Time checker with bounded range. Both limits are inclusive." alt="" coords="295,157,467,184"/>
 <area shape="rect" id="node10" href="$namespacens3.html#aa91214d5303e6c4e877f49f05a28c983" title=" " alt="" coords="280,208,483,235"/>
 <area shape="rect" id="node11" href="$group__timecivil.html#ga33c34b816f8ff6628e33d5c8e9713b9e" title=" " alt="" coords="328,259,435,285"/>
 <area shape="rect" id="node18" href="$classns3_1_1_type_id.html#abaaca67ab7d2471067e7c275df0f7309" title="Set the parent TypeId." alt="" coords="298,347,465,373"/>

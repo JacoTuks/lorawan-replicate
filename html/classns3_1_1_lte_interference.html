@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -157,8 +154,8 @@ $(document).ready(function(){initNavTree('classns3_1_1_lte_interference.html',''
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classns3_1_1_lte_interference-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ns3::LteInterference Class Reference</div>  </div>
@@ -235,28 +232,28 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af0e69d3ae048802b5936815590be1a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ae87ae62fed89823398b056e28b862c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#a2ae87ae62fed89823398b056e28b862c">~LteInterference</a> ()</td></tr>
 <tr class="separator:a2ae87ae62fed89823398b056e28b862c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ef052764d2767c0e2e6524ff889d29d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#a5ef052764d2767c0e2e6524ff889d29d">AddInterferenceChunkProcessor</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_lte_chunk_processor.html">LteChunkProcessor</a> &gt; p)</td></tr>
+<tr class="memitem:a5ef052764d2767c0e2e6524ff889d29d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#a5ef052764d2767c0e2e6524ff889d29d">AddInterferenceChunkProcessor</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_lte_chunk_processor.html">LteChunkProcessor</a> &gt; p)</td></tr>
 <tr class="memdesc:a5ef052764d2767c0e2e6524ff889d29d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a <a class="el" href="classns3_1_1_lte_chunk_processor.html" title="This abstract class is used to process the time-vs-frequency SINR/interference/power chunk of a recei...">LteChunkProcessor</a> that will use the time-vs-frequency interference calculated by this <a class="el" href="classns3_1_1_lte_interference.html" title="This class implements a gaussian interference model, i.e., all incoming signals are added to the tota...">LteInterference</a> instance.  <a href="classns3_1_1_lte_interference.html#a5ef052764d2767c0e2e6524ff889d29d">More...</a><br /></td></tr>
 <tr class="separator:a5ef052764d2767c0e2e6524ff889d29d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5723bb3bd52a577aceaecd019e8ba1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#ab5723bb3bd52a577aceaecd019e8ba1c">AddRsPowerChunkProcessor</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_lte_chunk_processor.html">LteChunkProcessor</a> &gt; p)</td></tr>
+<tr class="memitem:ab5723bb3bd52a577aceaecd019e8ba1c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#ab5723bb3bd52a577aceaecd019e8ba1c">AddRsPowerChunkProcessor</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_lte_chunk_processor.html">LteChunkProcessor</a> &gt; p)</td></tr>
 <tr class="memdesc:ab5723bb3bd52a577aceaecd019e8ba1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a <a class="el" href="classns3_1_1_lte_chunk_processor.html" title="This abstract class is used to process the time-vs-frequency SINR/interference/power chunk of a recei...">LteChunkProcessor</a> that will use the time-vs-frequency power calculated by this <a class="el" href="classns3_1_1_lte_interference.html" title="This class implements a gaussian interference model, i.e., all incoming signals are added to the tota...">LteInterference</a> instance.  <a href="classns3_1_1_lte_interference.html#ab5723bb3bd52a577aceaecd019e8ba1c">More...</a><br /></td></tr>
 <tr class="separator:ab5723bb3bd52a577aceaecd019e8ba1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50f2548797e7c92c4afd06710e0f8a8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#a50f2548797e7c92c4afd06710e0f8a8a">AddSignal</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; const <a class="el" href="classns3_1_1_spectrum_value.html">SpectrumValue</a> &gt; spd, const <a class="el" href="classns3_1_1_time.html">Time</a> duration)</td></tr>
+<tr class="memitem:a50f2548797e7c92c4afd06710e0f8a8a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#a50f2548797e7c92c4afd06710e0f8a8a">AddSignal</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; const <a class="el" href="classns3_1_1_spectrum_value.html">SpectrumValue</a> &gt; spd, const <a class="el" href="classns3_1_1_time.html">Time</a> duration)</td></tr>
 <tr class="memdesc:a50f2548797e7c92c4afd06710e0f8a8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">notify that a new signal is being perceived in the medium.  <a href="classns3_1_1_lte_interference.html#a50f2548797e7c92c4afd06710e0f8a8a">More...</a><br /></td></tr>
 <tr class="separator:a50f2548797e7c92c4afd06710e0f8a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a129dde19892e0f1bf051cffef703b680"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#a129dde19892e0f1bf051cffef703b680">AddSinrChunkProcessor</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_lte_chunk_processor.html">LteChunkProcessor</a> &gt; p)</td></tr>
+<tr class="memitem:a129dde19892e0f1bf051cffef703b680"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#a129dde19892e0f1bf051cffef703b680">AddSinrChunkProcessor</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_lte_chunk_processor.html">LteChunkProcessor</a> &gt; p)</td></tr>
 <tr class="memdesc:a129dde19892e0f1bf051cffef703b680"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a <a class="el" href="classns3_1_1_lte_chunk_processor.html" title="This abstract class is used to process the time-vs-frequency SINR/interference/power chunk of a recei...">LteChunkProcessor</a> that will use the time-vs-frequency SINR calculated by this <a class="el" href="classns3_1_1_lte_interference.html" title="This class implements a gaussian interference model, i.e., all incoming signals are added to the tota...">LteInterference</a> instance.  <a href="classns3_1_1_lte_interference.html#a129dde19892e0f1bf051cffef703b680">More...</a><br /></td></tr>
 <tr class="separator:a129dde19892e0f1bf051cffef703b680"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4fca869d5b5257da9e6b3539e302861"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#ab4fca869d5b5257da9e6b3539e302861">DoDispose</a> ()</td></tr>
 <tr class="memdesc:ab4fca869d5b5257da9e6b3539e302861"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor implementation.  <a href="classns3_1_1_lte_interference.html#ab4fca869d5b5257da9e6b3539e302861">More...</a><br /></td></tr>
 <tr class="separator:ab4fca869d5b5257da9e6b3539e302861"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41504a02d0e6e9a5a4b181e144ee7aaa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#a41504a02d0e6e9a5a4b181e144ee7aaa">EndRx</a> ()</td></tr>
+<tr class="memitem:a41504a02d0e6e9a5a4b181e144ee7aaa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#a41504a02d0e6e9a5a4b181e144ee7aaa">EndRx</a> ()</td></tr>
 <tr class="memdesc:a41504a02d0e6e9a5a4b181e144ee7aaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">notify that the RX attempt has ended.  <a href="classns3_1_1_lte_interference.html#a41504a02d0e6e9a5a4b181e144ee7aaa">More...</a><br /></td></tr>
 <tr class="separator:a41504a02d0e6e9a5a4b181e144ee7aaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a372c2dd174d5b5339f1aa8ed0d96b1e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#a372c2dd174d5b5339f1aa8ed0d96b1e9">SetNoisePowerSpectralDensity</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; const <a class="el" href="classns3_1_1_spectrum_value.html">SpectrumValue</a> &gt; noisePsd)</td></tr>
+<tr class="memitem:a372c2dd174d5b5339f1aa8ed0d96b1e9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#a372c2dd174d5b5339f1aa8ed0d96b1e9">SetNoisePowerSpectralDensity</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; const <a class="el" href="classns3_1_1_spectrum_value.html">SpectrumValue</a> &gt; noisePsd)</td></tr>
 <tr class="separator:a372c2dd174d5b5339f1aa8ed0d96b1e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac22640d17df2793412cf169fb4768e90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#ac22640d17df2793412cf169fb4768e90">StartRx</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; const <a class="el" href="classns3_1_1_spectrum_value.html">SpectrumValue</a> &gt; rxPsd)</td></tr>
-<tr class="memdesc:ac22640d17df2793412cf169fb4768e90"><td class="mdescLeft">&#160;</td><td class="mdescRight">notify that the PHY is starting a RX attempt  <a href="classns3_1_1_lte_interference.html#ac22640d17df2793412cf169fb4768e90">More...</a><br /></td></tr>
+<tr class="memitem:ac22640d17df2793412cf169fb4768e90"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#ac22640d17df2793412cf169fb4768e90">StartRx</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; const <a class="el" href="classns3_1_1_spectrum_value.html">SpectrumValue</a> &gt; rxPsd)</td></tr>
+<tr class="memdesc:ac22640d17df2793412cf169fb4768e90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify that the PHY is starting a RX attempt.  <a href="classns3_1_1_lte_interference.html#ac22640d17df2793412cf169fb4768e90">More...</a><br /></td></tr>
 <tr class="separator:ac22640d17df2793412cf169fb4768e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classns3_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classns3_1_1_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classns3_1_1_object.html">ns3::Object</a></td></tr>
 <tr class="memitem:abdd546c9a4240cd299a6b7eff92231c4 inherit pub_methods_classns3_1_1_object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_object.html#abdd546c9a4240cd299a6b7eff92231c4">Object</a> ()</td></tr>
@@ -353,53 +350,17 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a2b870298ebceaaeffc9d65e15c022eac inherit pub_static_methods_classns3_1_1_object_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the type ID.  <a href="classns3_1_1_object_base.html#a2b870298ebceaaeffc9d65e15c022eac">More...</a><br /></td></tr>
 <tr class="separator:a2b870298ebceaaeffc9d65e15c022eac inherit pub_static_methods_classns3_1_1_object_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a18d105beca4a94a1f2b502139540ab12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#a18d105beca4a94a1f2b502139540ab12">ConditionallyEvaluateChunk</a> ()</td></tr>
-<tr class="memdesc:a18d105beca4a94a1f2b502139540ab12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Considitionally evaluate chunk.  <a href="classns3_1_1_lte_interference.html#a18d105beca4a94a1f2b502139540ab12">More...</a><br /></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a18d105beca4a94a1f2b502139540ab12"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#a18d105beca4a94a1f2b502139540ab12">ConditionallyEvaluateChunk</a> ()</td></tr>
+<tr class="memdesc:a18d105beca4a94a1f2b502139540ab12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conditionally evaluate chunk.  <a href="classns3_1_1_lte_interference.html#a18d105beca4a94a1f2b502139540ab12">More...</a><br /></td></tr>
 <tr class="separator:a18d105beca4a94a1f2b502139540ab12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae69e96d42e7d8eef67db46d19b86fc2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#ae69e96d42e7d8eef67db46d19b86fc2a">DoAddSignal</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; const <a class="el" href="classns3_1_1_spectrum_value.html">SpectrumValue</a> &gt; spd)</td></tr>
+<tr class="memitem:ae69e96d42e7d8eef67db46d19b86fc2a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#ae69e96d42e7d8eef67db46d19b86fc2a">DoAddSignal</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; const <a class="el" href="classns3_1_1_spectrum_value.html">SpectrumValue</a> &gt; spd)</td></tr>
 <tr class="memdesc:ae69e96d42e7d8eef67db46d19b86fc2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add signal function.  <a href="classns3_1_1_lte_interference.html#ae69e96d42e7d8eef67db46d19b86fc2a">More...</a><br /></td></tr>
 <tr class="separator:ae69e96d42e7d8eef67db46d19b86fc2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cf881018f086b6d34625336d754daa1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#a0cf881018f086b6d34625336d754daa1">DoSubtractSignal</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; const <a class="el" href="classns3_1_1_spectrum_value.html">SpectrumValue</a> &gt; spd, uint32_t signalId)</td></tr>
+<tr class="memitem:a0cf881018f086b6d34625336d754daa1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#a0cf881018f086b6d34625336d754daa1">DoSubtractSignal</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; const <a class="el" href="classns3_1_1_spectrum_value.html">SpectrumValue</a> &gt; spd, uint32_t signalId)</td></tr>
 <tr class="memdesc:a0cf881018f086b6d34625336d754daa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtract signal.  <a href="classns3_1_1_lte_interference.html#a0cf881018f086b6d34625336d754daa1">More...</a><br /></td></tr>
 <tr class="separator:a0cf881018f086b6d34625336d754daa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a40f11c0e16be1fe4ee232f5c4620c24e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_spectrum_value.html">SpectrumValue</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#a40f11c0e16be1fe4ee232f5c4620c24e">m_allSignals</a></td></tr>
-<tr class="memdesc:a40f11c0e16be1fe4ee232f5c4620c24e"><td class="mdescLeft">&#160;</td><td class="mdescRight">stores the spectral power density of the sum of incoming signals; does not include noise, includes the SPD of the signal being RX  <a href="classns3_1_1_lte_interference.html#a40f11c0e16be1fe4ee232f5c4620c24e">More...</a><br /></td></tr>
-<tr class="separator:a40f11c0e16be1fe4ee232f5c4620c24e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd2337c56d85ec7775f6ae1e7c2036cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openflow-interface_8h.html#afd9bcfa176617760671b67580f536fa7">std::list</a>&lt; <a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_lte_chunk_processor.html">LteChunkProcessor</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#abd2337c56d85ec7775f6ae1e7c2036cc">m_interfChunkProcessorList</a></td></tr>
-<tr class="memdesc:abd2337c56d85ec7775f6ae1e7c2036cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">all the processor instances that need to be notified whenever a new interference chunk is calculated  <a href="classns3_1_1_lte_interference.html#abd2337c56d85ec7775f6ae1e7c2036cc">More...</a><br /></td></tr>
-<tr class="separator:abd2337c56d85ec7775f6ae1e7c2036cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab694cd3b025f150e39b071e0f3d294a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classns3_1_1_time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#ab694cd3b025f150e39b071e0f3d294a7">m_lastChangeTime</a></td></tr>
-<tr class="memdesc:ab694cd3b025f150e39b071e0f3d294a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">the time of the last change in m_TotalPower  <a href="classns3_1_1_lte_interference.html#ab694cd3b025f150e39b071e0f3d294a7">More...</a><br /></td></tr>
-<tr class="separator:ab694cd3b025f150e39b071e0f3d294a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc72a7fdc9bf2fa8389eae7286aa5362"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#acc72a7fdc9bf2fa8389eae7286aa5362">m_lastSignalId</a></td></tr>
-<tr class="memdesc:acc72a7fdc9bf2fa8389eae7286aa5362"><td class="mdescLeft">&#160;</td><td class="mdescRight">the last signal ID  <a href="classns3_1_1_lte_interference.html#acc72a7fdc9bf2fa8389eae7286aa5362">More...</a><br /></td></tr>
-<tr class="separator:acc72a7fdc9bf2fa8389eae7286aa5362"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a462e2bdb7a6db3f5e1718ac216fe45c1"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#a462e2bdb7a6db3f5e1718ac216fe45c1">m_lastSignalIdBeforeReset</a></td></tr>
-<tr class="memdesc:a462e2bdb7a6db3f5e1718ac216fe45c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">the last signal ID before reset  <a href="classns3_1_1_lte_interference.html#a462e2bdb7a6db3f5e1718ac216fe45c1">More...</a><br /></td></tr>
-<tr class="separator:a462e2bdb7a6db3f5e1718ac216fe45c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d4450468cc82d258490f44f487d2fb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; const <a class="el" href="classns3_1_1_spectrum_value.html">SpectrumValue</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#a9d4450468cc82d258490f44f487d2fb4">m_noise</a></td></tr>
-<tr class="memdesc:a9d4450468cc82d258490f44f487d2fb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">the noise value  <a href="classns3_1_1_lte_interference.html#a9d4450468cc82d258490f44f487d2fb4">More...</a><br /></td></tr>
-<tr class="separator:a9d4450468cc82d258490f44f487d2fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12580fdb6df9e6afa3fc4f3c68648bf3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#a12580fdb6df9e6afa3fc4f3c68648bf3">m_receiving</a></td></tr>
-<tr class="memdesc:a12580fdb6df9e6afa3fc4f3c68648bf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">are we receiving?  <a href="classns3_1_1_lte_interference.html#a12580fdb6df9e6afa3fc4f3c68648bf3">More...</a><br /></td></tr>
-<tr class="separator:a12580fdb6df9e6afa3fc4f3c68648bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b261932ab7620cf1303dfbf4cdba6b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openflow-interface_8h.html#afd9bcfa176617760671b67580f536fa7">std::list</a>&lt; <a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_lte_chunk_processor.html">LteChunkProcessor</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#a4b261932ab7620cf1303dfbf4cdba6b5">m_rsPowerChunkProcessorList</a></td></tr>
-<tr class="memdesc:a4b261932ab7620cf1303dfbf4cdba6b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">all the processor instances that need to be notified whenever a new interference chunk is calculated  <a href="classns3_1_1_lte_interference.html#a4b261932ab7620cf1303dfbf4cdba6b5">More...</a><br /></td></tr>
-<tr class="separator:a4b261932ab7620cf1303dfbf4cdba6b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a110c40dd295d66897ca93e4bcc947dfa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_spectrum_value.html">SpectrumValue</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#a110c40dd295d66897ca93e4bcc947dfa">m_rxSignal</a></td></tr>
-<tr class="memdesc:a110c40dd295d66897ca93e4bcc947dfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">stores the power spectral density of the signal whose RX is being attempted  <a href="classns3_1_1_lte_interference.html#a110c40dd295d66897ca93e4bcc947dfa">More...</a><br /></td></tr>
-<tr class="separator:a110c40dd295d66897ca93e4bcc947dfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2b739da02cfdfd8cb49fd34a5d95b7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openflow-interface_8h.html#afd9bcfa176617760671b67580f536fa7">std::list</a>&lt; <a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_lte_chunk_processor.html">LteChunkProcessor</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#ad2b739da02cfdfd8cb49fd34a5d95b7d">m_sinrChunkProcessorList</a></td></tr>
-<tr class="memdesc:ad2b739da02cfdfd8cb49fd34a5d95b7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">all the processor instances that need to be notified whenever a new SINR chunk is calculated  <a href="classns3_1_1_lte_interference.html#ad2b739da02cfdfd8cb49fd34a5d95b7d">More...</a><br /></td></tr>
-<tr class="separator:ad2b739da02cfdfd8cb49fd34a5d95b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classns3_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classns3_1_1_object')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classns3_1_1_object.html">ns3::Object</a></td></tr>
 <tr class="memitem:abb91edf1e88b8ad93d77ddcc79d80e04 inherit pro_methods_classns3_1_1_object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_object.html#abb91edf1e88b8ad93d77ddcc79d80e04">Object</a> (const <a class="el" href="classns3_1_1_object.html">Object</a> &amp;o)</td></tr>
 <tr class="memdesc:abb91edf1e88b8ad93d77ddcc79d80e04 inherit pro_methods_classns3_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy an <a class="el" href="classns3_1_1_object.html" title="A base class which provides memory management and object aggregation.">Object</a>.  <a href="classns3_1_1_object.html#abb91edf1e88b8ad93d77ddcc79d80e04">More...</a><br /></td></tr>
@@ -417,6 +378,42 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:aa349348317dbdb62a7ee1df89db1eb8b inherit pro_methods_classns3_1_1_object_base"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_object_base.html#aa349348317dbdb62a7ee1df89db1eb8b">NotifyConstructionCompleted</a> (void)</td></tr>
 <tr class="memdesc:aa349348317dbdb62a7ee1df89db1eb8b inherit pro_methods_classns3_1_1_object_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifier called once the <a class="el" href="classns3_1_1_object_base.html" title="Anchor the ns-3 type and attribute system.">ObjectBase</a> is fully constructed.  <a href="classns3_1_1_object_base.html#aa349348317dbdb62a7ee1df89db1eb8b">More...</a><br /></td></tr>
 <tr class="separator:aa349348317dbdb62a7ee1df89db1eb8b inherit pro_methods_classns3_1_1_object_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a40f11c0e16be1fe4ee232f5c4620c24e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_spectrum_value.html">SpectrumValue</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#a40f11c0e16be1fe4ee232f5c4620c24e">m_allSignals</a> {nullptr}</td></tr>
+<tr class="memdesc:a40f11c0e16be1fe4ee232f5c4620c24e"><td class="mdescLeft">&#160;</td><td class="mdescRight">stores the spectral power density of the sum of incoming signals; does not include noise, includes the SPD of the signal being RX  <a href="classns3_1_1_lte_interference.html#a40f11c0e16be1fe4ee232f5c4620c24e">More...</a><br /></td></tr>
+<tr class="separator:a40f11c0e16be1fe4ee232f5c4620c24e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd2337c56d85ec7775f6ae1e7c2036cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openflow-interface_8h.html#afd9bcfa176617760671b67580f536fa7">std::list</a>&lt; <a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_lte_chunk_processor.html">LteChunkProcessor</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#abd2337c56d85ec7775f6ae1e7c2036cc">m_interfChunkProcessorList</a></td></tr>
+<tr class="memdesc:abd2337c56d85ec7775f6ae1e7c2036cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">all the processor instances that need to be notified whenever a new interference chunk is calculated  <a href="classns3_1_1_lte_interference.html#abd2337c56d85ec7775f6ae1e7c2036cc">More...</a><br /></td></tr>
+<tr class="separator:abd2337c56d85ec7775f6ae1e7c2036cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab694cd3b025f150e39b071e0f3d294a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classns3_1_1_time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#ab694cd3b025f150e39b071e0f3d294a7">m_lastChangeTime</a> {<a class="el" href="group__timecivil.html#ga33c34b816f8ff6628e33d5c8e9713b9e">Seconds</a>(0)}</td></tr>
+<tr class="memdesc:ab694cd3b025f150e39b071e0f3d294a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">the time of the last change in m_TotalPower  <a href="classns3_1_1_lte_interference.html#ab694cd3b025f150e39b071e0f3d294a7">More...</a><br /></td></tr>
+<tr class="separator:ab694cd3b025f150e39b071e0f3d294a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc72a7fdc9bf2fa8389eae7286aa5362"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#acc72a7fdc9bf2fa8389eae7286aa5362">m_lastSignalId</a> {0}</td></tr>
+<tr class="memdesc:acc72a7fdc9bf2fa8389eae7286aa5362"><td class="mdescLeft">&#160;</td><td class="mdescRight">the last signal ID  <a href="classns3_1_1_lte_interference.html#acc72a7fdc9bf2fa8389eae7286aa5362">More...</a><br /></td></tr>
+<tr class="separator:acc72a7fdc9bf2fa8389eae7286aa5362"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a462e2bdb7a6db3f5e1718ac216fe45c1"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#a462e2bdb7a6db3f5e1718ac216fe45c1">m_lastSignalIdBeforeReset</a> {0}</td></tr>
+<tr class="memdesc:a462e2bdb7a6db3f5e1718ac216fe45c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">the last signal ID before reset  <a href="classns3_1_1_lte_interference.html#a462e2bdb7a6db3f5e1718ac216fe45c1">More...</a><br /></td></tr>
+<tr class="separator:a462e2bdb7a6db3f5e1718ac216fe45c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d4450468cc82d258490f44f487d2fb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; const <a class="el" href="classns3_1_1_spectrum_value.html">SpectrumValue</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#a9d4450468cc82d258490f44f487d2fb4">m_noise</a> {nullptr}</td></tr>
+<tr class="memdesc:a9d4450468cc82d258490f44f487d2fb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">the noise value  <a href="classns3_1_1_lte_interference.html#a9d4450468cc82d258490f44f487d2fb4">More...</a><br /></td></tr>
+<tr class="separator:a9d4450468cc82d258490f44f487d2fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12580fdb6df9e6afa3fc4f3c68648bf3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#a12580fdb6df9e6afa3fc4f3c68648bf3">m_receiving</a> {false}</td></tr>
+<tr class="memdesc:a12580fdb6df9e6afa3fc4f3c68648bf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">are we receiving?  <a href="classns3_1_1_lte_interference.html#a12580fdb6df9e6afa3fc4f3c68648bf3">More...</a><br /></td></tr>
+<tr class="separator:a12580fdb6df9e6afa3fc4f3c68648bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b261932ab7620cf1303dfbf4cdba6b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openflow-interface_8h.html#afd9bcfa176617760671b67580f536fa7">std::list</a>&lt; <a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_lte_chunk_processor.html">LteChunkProcessor</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#a4b261932ab7620cf1303dfbf4cdba6b5">m_rsPowerChunkProcessorList</a></td></tr>
+<tr class="memdesc:a4b261932ab7620cf1303dfbf4cdba6b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">all the processor instances that need to be notified whenever a new interference chunk is calculated  <a href="classns3_1_1_lte_interference.html#a4b261932ab7620cf1303dfbf4cdba6b5">More...</a><br /></td></tr>
+<tr class="separator:a4b261932ab7620cf1303dfbf4cdba6b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a110c40dd295d66897ca93e4bcc947dfa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_spectrum_value.html">SpectrumValue</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#a110c40dd295d66897ca93e4bcc947dfa">m_rxSignal</a> {nullptr}</td></tr>
+<tr class="memdesc:a110c40dd295d66897ca93e4bcc947dfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">stores the power spectral density of the signal whose RX is being attempted  <a href="classns3_1_1_lte_interference.html#a110c40dd295d66897ca93e4bcc947dfa">More...</a><br /></td></tr>
+<tr class="separator:a110c40dd295d66897ca93e4bcc947dfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2b739da02cfdfd8cb49fd34a5d95b7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="openflow-interface_8h.html#afd9bcfa176617760671b67580f536fa7">std::list</a>&lt; <a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_lte_chunk_processor.html">LteChunkProcessor</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_interference.html#ad2b739da02cfdfd8cb49fd34a5d95b7d">m_sinrChunkProcessorList</a></td></tr>
+<tr class="memdesc:ad2b739da02cfdfd8cb49fd34a5d95b7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">all the processor instances that need to be notified whenever a new SINR chunk is calculated  <a href="classns3_1_1_lte_interference.html#ad2b739da02cfdfd8cb49fd34a5d95b7d">More...</a><br /></td></tr>
+<tr class="separator:ad2b739da02cfdfd8cb49fd34a5d95b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header related_classns3_1_1_object_base"><td colspan="2" onclick="javascript:toggleInherit('related_classns3_1_1_object_base')"><img src="closed.png" alt="-"/>&#160;Related Functions inherited from <a class="el" href="classns3_1_1_object_base.html">ns3::ObjectBase</a></td></tr>
 <tr class="memitem:a4fcfd18844c60f163c5dce52456d111b inherit related_classns3_1_1_object_base"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classns3_1_1_type_id.html">TypeId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_object_base.html#a4fcfd18844c60f163c5dce52456d111b">GetObjectIid</a> (void)</td></tr>
 <tr class="memdesc:a4fcfd18844c60f163c5dce52456d111b inherit related_classns3_1_1_object_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensure the <a class="el" href="classns3_1_1_type_id.html" title="a unique identifier for an interface.">TypeId</a> for <a class="el" href="classns3_1_1_object_base.html" title="Anchor the ns-3 type and attribute system.">ObjectBase</a> gets fully configured to anchor the inheritance tree properly.  <a href="classns3_1_1_object_base.html#a4fcfd18844c60f163c5dce52456d111b">More...</a><br /></td></tr>
@@ -425,7 +422,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class implements a gaussian interference model, i.e., all incoming signals are added to the total interference. </p>
 
-<p class="definition">Definition at line <a class="el" href="lte-interference_8h_source.html#l00046">46</a> of file <a class="el" href="lte-interference_8h_source.html">lte-interference.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lte-interference_8h_source.html#l00042">42</a> of file <a class="el" href="lte-interference_8h_source.html">lte-interference.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af0e69d3ae048802b5936815590be1a7c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af0e69d3ae048802b5936815590be1a7c">&#9670;&nbsp;</a></span>LteInterference()</h2>
@@ -483,6 +480,9 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void ns3::LteInterference::AddInterferenceChunkProcessor </td>
@@ -492,6 +492,11 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Add a <a class="el" href="classns3_1_1_lte_chunk_processor.html" title="This abstract class is used to process the time-vs-frequency SINR/interference/power chunk of a recei...">LteChunkProcessor</a> that will use the time-vs-frequency interference calculated by this <a class="el" href="classns3_1_1_lte_interference.html" title="This class implements a gaussian interference model, i.e., all incoming signals are added to the tota...">LteInterference</a> instance. </p>
@@ -505,7 +510,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="lte-interference_8cc_source.html#l00245">245</a> of file <a class="el" href="lte-interference_8cc_source.html">lte-interference.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="lte-interference_8h_source.html#l00171">m_interfChunkProcessorList</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
+<p class="reference">References <a class="el" href="lte-interference_8h_source.html#l00163">m_interfChunkProcessorList</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
 
 </div>
 </div>
@@ -514,6 +519,9 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void ns3::LteInterference::AddRsPowerChunkProcessor </td>
@@ -523,6 +531,11 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Add a <a class="el" href="classns3_1_1_lte_chunk_processor.html" title="This abstract class is used to process the time-vs-frequency SINR/interference/power chunk of a recei...">LteChunkProcessor</a> that will use the time-vs-frequency power calculated by this <a class="el" href="classns3_1_1_lte_interference.html" title="This class implements a gaussian interference model, i.e., all incoming signals are added to the tota...">LteInterference</a> instance. </p>
@@ -536,7 +549,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="lte-interference_8cc_source.html#l00231">231</a> of file <a class="el" href="lte-interference_8cc_source.html">lte-interference.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="lte-interference_8h_source.html#l00163">m_rsPowerChunkProcessorList</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
+<p class="reference">References <a class="el" href="lte-interference_8h_source.html#l00155">m_rsPowerChunkProcessorList</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
 
 </div>
 </div>
@@ -545,6 +558,9 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void ns3::LteInterference::AddSignal </td>
@@ -564,6 +580,11 @@ Additional Inherited Members</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>notify that a new signal is being perceived in the medium. </p>
@@ -578,7 +599,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="lte-interference_8cc_source.html#l00135">135</a> of file <a class="el" href="lte-interference_8cc_source.html">lte-interference.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="lte-interference_8cc_source.html#l00154">DoAddSignal()</a>, <a class="el" href="lte-interference_8cc_source.html#l00162">DoSubtractSignal()</a>, <a class="el" href="lte-interference_8h_source.html#l00158">m_lastSignalId</a>, <a class="el" href="lte-interference_8h_source.html#l00159">m_lastSignalIdBeforeReset</a>, <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>, and <a class="el" href="simulator_8h_source.html#l01392">ns3::Simulator::Schedule()</a>.</p>
+<p class="reference">References <a class="el" href="lte-interference_8cc_source.html#l00154">DoAddSignal()</a>, <a class="el" href="lte-interference_8cc_source.html#l00162">DoSubtractSignal()</a>, <a class="el" href="aloha_8py_source.html#l00037">aloha::duration</a>, <a class="el" href="lte-interference_8h_source.html#l00150">m_lastSignalId</a>, <a class="el" href="lte-interference_8h_source.html#l00151">m_lastSignalIdBeforeReset</a>, <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>, and <a class="el" href="simulator_8h_source.html#l01392">ns3::Simulator::Schedule()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -590,7 +611,7 @@ Additional Inherited Members</h2></td></tr>
 <area shape="rect" href="classns3_1_1_lte_interference.html#ae69e96d42e7d8eef67db46d19b86fc2a" title="Add signal function." alt="" coords="221,869,373,911"/>
 <area shape="rect" href="classns3_1_1_lte_interference.html#a0cf881018f086b6d34625336d754daa1" title="Subtract signal." alt="" coords="221,935,373,976"/>
 <area shape="rect" href="classns3_1_1_simulator.html#a671882c894a08af4a5e91181bf1eec13" title="Schedule an event to expire after delay." alt="" coords="205,1001,388,1027"/>
-<area shape="rect" href="classns3_1_1_lte_interference.html#a18d105beca4a94a1f2b502139540ab12" title="Considitionally evaluate chunk." alt="" coords="436,903,651,944"/>
+<area shape="rect" href="classns3_1_1_lte_interference.html#a18d105beca4a94a1f2b502139540ab12" title="Conditionally evaluate chunk." alt="" coords="436,903,651,944"/>
 <area shape="rect" href="group__simulator.html#gac3635e2e87f7ce316c89290ee1b01d0d" title="create an ns3::Time instance which contains the current simulation time." alt="" coords="699,845,781,871"/>
 <area shape="rect" href="global-router-interface_8cc.html#af2f17e24d29f39f6804d0d10d8cedc71" title=" " alt="" coords="1850,959,1971,986"/>
 <area shape="rect" href="classns3_1_1_simulator.html#ac3178fa975b419f7875e7105be122800" title="Return the current simulation virtual time." alt="" coords="829,803,983,830"/>
@@ -646,6 +667,9 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void ns3::LteInterference::AddSinrChunkProcessor </td>
@@ -655,6 +679,11 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Add a <a class="el" href="classns3_1_1_lte_chunk_processor.html" title="This abstract class is used to process the time-vs-frequency SINR/interference/power chunk of a recei...">LteChunkProcessor</a> that will use the time-vs-frequency SINR calculated by this <a class="el" href="classns3_1_1_lte_interference.html" title="This class implements a gaussian interference model, i.e., all incoming signals are added to the tota...">LteInterference</a> instance. </p>
@@ -668,7 +697,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="lte-interference_8cc_source.html#l00238">238</a> of file <a class="el" href="lte-interference_8cc_source.html">lte-interference.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="lte-interference_8h_source.html#l00167">m_sinrChunkProcessorList</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
+<p class="reference">References <a class="el" href="lte-interference_8h_source.html#l00159">m_sinrChunkProcessorList</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
 
 </div>
 </div>
@@ -690,16 +719,16 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Considitionally evaluate chunk. </p>
+<p>Conditionally evaluate chunk. </p>
 
 <p class="definition">Definition at line <a class="el" href="lte-interference_8cc_source.html#l00179">179</a> of file <a class="el" href="lte-interference_8cc_source.html">lte-interference.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="openflow-interface_8h_source.html#l00047">list</a>, <a class="el" href="lte-interference_8h_source.html#l00148">m_allSignals</a>, <a class="el" href="lte-interference_8h_source.html#l00171">m_interfChunkProcessorList</a>, <a class="el" href="lte-interference_8h_source.html#l00155">m_lastChangeTime</a>, <a class="el" href="lte-interference_8h_source.html#l00153">m_noise</a>, <a class="el" href="lte-interference_8h_source.html#l00141">m_receiving</a>, <a class="el" href="lte-interference_8h_source.html#l00163">m_rsPowerChunkProcessorList</a>, <a class="el" href="lte-interference_8h_source.html#l00143">m_rxSignal</a>, <a class="el" href="lte-interference_8h_source.html#l00167">m_sinrChunkProcessorList</a>, <a class="el" href="simulator_8cc_source.html#l00309">ns3::Now()</a>, <a class="el" href="log_8h_source.html#l00273">NS_LOG_DEBUG</a>, <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>, and <a class="el" href="global-router-interface_8cc.html#af2f17e24d29f39f6804d0d10d8cedc71">NS_LOG_LOGIC()</a>.</p>
+<p class="reference">References <a class="el" href="aloha_8py_source.html#l00037">aloha::duration</a>, <a class="el" href="openflow-interface_8h_source.html#l00047">list</a>, <a class="el" href="lte-interference_8h_source.html#l00139">m_allSignals</a>, <a class="el" href="lte-interference_8h_source.html#l00163">m_interfChunkProcessorList</a>, <a class="el" href="lte-interference_8h_source.html#l00146">m_lastChangeTime</a>, <a class="el" href="lte-interference_8h_source.html#l00144">m_noise</a>, <a class="el" href="lte-interference_8h_source.html#l00132">m_receiving</a>, <a class="el" href="lte-interference_8h_source.html#l00155">m_rsPowerChunkProcessorList</a>, <a class="el" href="lte-interference_8h_source.html#l00134">m_rxSignal</a>, <a class="el" href="lte-interference_8h_source.html#l00159">m_sinrChunkProcessorList</a>, <a class="el" href="simulator_8cc_source.html#l00311">ns3::Now()</a>, <a class="el" href="log_8h_source.html#l00273">NS_LOG_DEBUG</a>, <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>, and <a class="el" href="global-router-interface_8cc.html#af2f17e24d29f39f6804d0d10d8cedc71">NS_LOG_LOGIC()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lte-interference_8cc_source.html#l00154">DoAddSignal()</a>, <a class="el" href="lte-interference_8cc_source.html#l00162">DoSubtractSignal()</a>, <a class="el" href="lte-interference_8cc_source.html#l00107">EndRx()</a>, and <a class="el" href="lte-interference_8cc_source.html#l00212">SetNoisePowerSpectralDensity()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -709,7 +738,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_lte_interference_a18d105beca4a94a1f2b502139540ab12_cgraph.png" border="0" usemap="#classns3_1_1_lte_interference_a18d105beca4a94a1f2b502139540ab12_cgraph" alt=""/></div>
 <map name="classns3_1_1_lte_interference_a18d105beca4a94a1f2b502139540ab12_cgraph" id="classns3_1_1_lte_interference_a18d105beca4a94a1f2b502139540ab12_cgraph">
-<area shape="rect" title="Considitionally evaluate chunk." alt="" coords="5,194,220,235"/>
+<area shape="rect" title="Conditionally evaluate chunk." alt="" coords="5,194,220,235"/>
 <area shape="rect" href="group__simulator.html#gac3635e2e87f7ce316c89290ee1b01d0d" title="create an ns3::Time instance which contains the current simulation time." alt="" coords="268,227,351,253"/>
 <area shape="rect" href="global-router-interface_8cc.html#af2f17e24d29f39f6804d0d10d8cedc71" title=" " alt="" coords="1419,157,1541,184"/>
 <area shape="rect" href="classns3_1_1_simulator.html#ac3178fa975b419f7875e7105be122800" title="Return the current simulation virtual time." alt="" coords="399,252,552,279"/>
@@ -768,7 +797,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_lte_interference_a18d105beca4a94a1f2b502139540ab12_icgraph.png" border="0" usemap="#classns3_1_1_lte_interference_a18d105beca4a94a1f2b502139540ab12_icgraph" alt=""/></div>
 <map name="classns3_1_1_lte_interference_a18d105beca4a94a1f2b502139540ab12_icgraph" id="classns3_1_1_lte_interference_a18d105beca4a94a1f2b502139540ab12_icgraph">
-<area shape="rect" title="Considitionally evaluate chunk." alt="" coords="484,104,699,145"/>
+<area shape="rect" title="Conditionally evaluate chunk." alt="" coords="484,104,699,145"/>
 <area shape="rect" href="classns3_1_1_lte_interference.html#ae69e96d42e7d8eef67db46d19b86fc2a" title="Add signal function." alt="" coords="245,5,397,47"/>
 <area shape="rect" href="classns3_1_1_lte_interference.html#a0cf881018f086b6d34625336d754daa1" title="Subtract signal." alt="" coords="245,71,397,112"/>
 <area shape="rect" href="classns3_1_1_lte_interference.html#a41504a02d0e6e9a5a4b181e144ee7aaa" title="notify that the RX attempt has ended." alt="" coords="245,136,397,177"/>
@@ -798,7 +827,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -824,7 +853,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="center"><img src="classns3_1_1_lte_interference_ae69e96d42e7d8eef67db46d19b86fc2a_cgraph.png" border="0" usemap="#classns3_1_1_lte_interference_ae69e96d42e7d8eef67db46d19b86fc2a_cgraph" alt=""/></div>
 <map name="classns3_1_1_lte_interference_ae69e96d42e7d8eef67db46d19b86fc2a_cgraph" id="classns3_1_1_lte_interference_ae69e96d42e7d8eef67db46d19b86fc2a_cgraph">
 <area shape="rect" title="Add signal function." alt="" coords="5,949,157,990"/>
-<area shape="rect" href="classns3_1_1_lte_interference.html#a18d105beca4a94a1f2b502139540ab12" title="Considitionally evaluate chunk." alt="" coords="205,949,420,990"/>
+<area shape="rect" href="classns3_1_1_lte_interference.html#a18d105beca4a94a1f2b502139540ab12" title="Conditionally evaluate chunk." alt="" coords="205,949,420,990"/>
 <area shape="rect" href="group__simulator.html#gac3635e2e87f7ce316c89290ee1b01d0d" title="create an ns3::Time instance which contains the current simulation time." alt="" coords="468,905,551,932"/>
 <area shape="rect" href="global-router-interface_8cc.html#af2f17e24d29f39f6804d0d10d8cedc71" title=" " alt="" coords="1619,981,1741,1008"/>
 <area shape="rect" href="classns3_1_1_simulator.html#ac3178fa975b419f7875e7105be122800" title="Return the current simulation virtual time." alt="" coords="599,855,752,881"/>
@@ -921,7 +950,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="lte-interference_8cc_source.html#l00047">47</a> of file <a class="el" href="lte-interference_8cc_source.html">lte-interference.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="object_8cc_source.html#l00346">ns3::Object::DoDispose()</a>, <a class="el" href="lte-interference_8h_source.html#l00148">m_allSignals</a>, <a class="el" href="lte-interference_8h_source.html#l00171">m_interfChunkProcessorList</a>, <a class="el" href="lte-interference_8h_source.html#l00153">m_noise</a>, <a class="el" href="lte-interference_8h_source.html#l00163">m_rsPowerChunkProcessorList</a>, <a class="el" href="lte-interference_8h_source.html#l00143">m_rxSignal</a>, <a class="el" href="lte-interference_8h_source.html#l00167">m_sinrChunkProcessorList</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
+<p class="reference">References <a class="el" href="object_8cc_source.html#l00346">ns3::Object::DoDispose()</a>, <a class="el" href="lte-interference_8h_source.html#l00139">m_allSignals</a>, <a class="el" href="lte-interference_8h_source.html#l00163">m_interfChunkProcessorList</a>, <a class="el" href="lte-interference_8h_source.html#l00144">m_noise</a>, <a class="el" href="lte-interference_8h_source.html#l00155">m_rsPowerChunkProcessorList</a>, <a class="el" href="lte-interference_8h_source.html#l00134">m_rxSignal</a>, <a class="el" href="lte-interference_8h_source.html#l00159">m_sinrChunkProcessorList</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -965,7 +994,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -981,7 +1010,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="lte-interference_8cc_source.html#l00162">162</a> of file <a class="el" href="lte-interference_8cc_source.html">lte-interference.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="lte-interference_8cc_source.html#l00179">ConditionallyEvaluateChunk()</a>, <a class="el" href="lte-interference_8h_source.html#l00159">m_lastSignalIdBeforeReset</a>, <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>, and <a class="el" href="log_8h_source.html#l00281">NS_LOG_INFO</a>.</p>
+<p class="reference">References <a class="el" href="lte-interference_8cc_source.html#l00179">ConditionallyEvaluateChunk()</a>, <a class="el" href="lte-interference_8h_source.html#l00151">m_lastSignalIdBeforeReset</a>, <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>, and <a class="el" href="log_8h_source.html#l00281">NS_LOG_INFO</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lte-interference_8cc_source.html#l00135">AddSignal()</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -992,7 +1021,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="center"><img src="classns3_1_1_lte_interference_a0cf881018f086b6d34625336d754daa1_cgraph.png" border="0" usemap="#classns3_1_1_lte_interference_a0cf881018f086b6d34625336d754daa1_cgraph" alt=""/></div>
 <map name="classns3_1_1_lte_interference_a0cf881018f086b6d34625336d754daa1_cgraph" id="classns3_1_1_lte_interference_a0cf881018f086b6d34625336d754daa1_cgraph">
 <area shape="rect" title="Subtract signal." alt="" coords="5,949,157,990"/>
-<area shape="rect" href="classns3_1_1_lte_interference.html#a18d105beca4a94a1f2b502139540ab12" title="Considitionally evaluate chunk." alt="" coords="205,949,420,990"/>
+<area shape="rect" href="classns3_1_1_lte_interference.html#a18d105beca4a94a1f2b502139540ab12" title="Conditionally evaluate chunk." alt="" coords="205,949,420,990"/>
 <area shape="rect" href="group__simulator.html#gac3635e2e87f7ce316c89290ee1b01d0d" title="create an ns3::Time instance which contains the current simulation time." alt="" coords="468,905,551,932"/>
 <area shape="rect" href="global-router-interface_8cc.html#af2f17e24d29f39f6804d0d10d8cedc71" title=" " alt="" coords="1619,981,1741,1008"/>
 <area shape="rect" href="classns3_1_1_simulator.html#ac3178fa975b419f7875e7105be122800" title="Return the current simulation virtual time." alt="" coords="599,855,752,881"/>
@@ -1062,6 +1091,9 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void ns3::LteInterference::EndRx </td>
@@ -1070,6 +1102,11 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>notify that the RX attempt has ended. </p>
@@ -1077,7 +1114,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="lte-interference_8cc_source.html#l00107">107</a> of file <a class="el" href="lte-interference_8cc_source.html">lte-interference.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="lte-interference_8cc_source.html#l00179">ConditionallyEvaluateChunk()</a>, <a class="el" href="openflow-interface_8h_source.html#l00047">list</a>, <a class="el" href="lte-interference_8h_source.html#l00171">m_interfChunkProcessorList</a>, <a class="el" href="lte-interference_8h_source.html#l00141">m_receiving</a>, <a class="el" href="lte-interference_8h_source.html#l00163">m_rsPowerChunkProcessorList</a>, <a class="el" href="lte-interference_8h_source.html#l00167">m_sinrChunkProcessorList</a>, <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>, and <a class="el" href="log_8h_source.html#l00281">NS_LOG_INFO</a>.</p>
+<p class="reference">References <a class="el" href="lte-interference_8cc_source.html#l00179">ConditionallyEvaluateChunk()</a>, <a class="el" href="openflow-interface_8h_source.html#l00047">list</a>, <a class="el" href="lte-interference_8h_source.html#l00163">m_interfChunkProcessorList</a>, <a class="el" href="lte-interference_8h_source.html#l00132">m_receiving</a>, <a class="el" href="lte-interference_8h_source.html#l00155">m_rsPowerChunkProcessorList</a>, <a class="el" href="lte-interference_8h_source.html#l00159">m_sinrChunkProcessorList</a>, <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>, and <a class="el" href="log_8h_source.html#l00281">NS_LOG_INFO</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
@@ -1086,7 +1123,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="center"><img src="classns3_1_1_lte_interference_a41504a02d0e6e9a5a4b181e144ee7aaa_cgraph.png" border="0" usemap="#classns3_1_1_lte_interference_a41504a02d0e6e9a5a4b181e144ee7aaa_cgraph" alt=""/></div>
 <map name="classns3_1_1_lte_interference_a41504a02d0e6e9a5a4b181e144ee7aaa_cgraph" id="classns3_1_1_lte_interference_a41504a02d0e6e9a5a4b181e144ee7aaa_cgraph">
 <area shape="rect" title="notify that the RX attempt has ended." alt="" coords="5,949,157,990"/>
-<area shape="rect" href="classns3_1_1_lte_interference.html#a18d105beca4a94a1f2b502139540ab12" title="Considitionally evaluate chunk." alt="" coords="205,949,420,990"/>
+<area shape="rect" href="classns3_1_1_lte_interference.html#a18d105beca4a94a1f2b502139540ab12" title="Conditionally evaluate chunk." alt="" coords="205,949,420,990"/>
 <area shape="rect" href="group__simulator.html#gac3635e2e87f7ce316c89290ee1b01d0d" title="create an ns3::Time instance which contains the current simulation time." alt="" coords="468,905,551,932"/>
 <area shape="rect" href="global-router-interface_8cc.html#af2f17e24d29f39f6804d0d10d8cedc71" title=" " alt="" coords="1619,981,1741,1008"/>
 <area shape="rect" href="classns3_1_1_simulator.html#ac3178fa975b419f7875e7105be122800" title="Return the current simulation virtual time." alt="" coords="599,855,752,881"/>
@@ -1169,7 +1206,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="lte-interference_8cc_source.html#l00061">61</a> of file <a class="el" href="lte-interference_8cc_source.html">lte-interference.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="type-id_8cc_source.html#l00922">ns3::TypeId::SetParent()</a>.</p>
+<p class="reference">References <a class="el" href="type-id_8cc_source.html#l00923">ns3::TypeId::SetParent()</a>.</p>
 <div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-11-summary" class="dynsummary" style="display:block;">
@@ -1192,6 +1229,9 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void ns3::LteInterference::SetNoisePowerSpectralDensity </td>
@@ -1201,6 +1241,11 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1211,7 +1256,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="lte-interference_8cc_source.html#l00212">212</a> of file <a class="el" href="lte-interference_8cc_source.html">lte-interference.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="lte-interference_8cc_source.html#l00179">ConditionallyEvaluateChunk()</a>, <a class="el" href="lte-interference_8h_source.html#l00148">m_allSignals</a>, <a class="el" href="lte-interference_8h_source.html#l00158">m_lastSignalId</a>, <a class="el" href="lte-interference_8h_source.html#l00159">m_lastSignalIdBeforeReset</a>, <a class="el" href="lte-interference_8h_source.html#l00153">m_noise</a>, <a class="el" href="lte-interference_8h_source.html#l00141">m_receiving</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
+<p class="reference">References <a class="el" href="lte-interference_8cc_source.html#l00179">ConditionallyEvaluateChunk()</a>, <a class="el" href="lte-interference_8h_source.html#l00139">m_allSignals</a>, <a class="el" href="lte-interference_8h_source.html#l00150">m_lastSignalId</a>, <a class="el" href="lte-interference_8h_source.html#l00151">m_lastSignalIdBeforeReset</a>, <a class="el" href="lte-interference_8h_source.html#l00144">m_noise</a>, <a class="el" href="lte-interference_8h_source.html#l00132">m_receiving</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
@@ -1220,7 +1265,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="center"><img src="classns3_1_1_lte_interference_a372c2dd174d5b5339f1aa8ed0d96b1e9_cgraph.png" border="0" usemap="#classns3_1_1_lte_interference_a372c2dd174d5b5339f1aa8ed0d96b1e9_cgraph" alt=""/></div>
 <map name="classns3_1_1_lte_interference_a372c2dd174d5b5339f1aa8ed0d96b1e9_cgraph" id="classns3_1_1_lte_interference_a372c2dd174d5b5339f1aa8ed0d96b1e9_cgraph">
 <area shape="rect" title=" " alt="" coords="5,949,236,990"/>
-<area shape="rect" href="classns3_1_1_lte_interference.html#a18d105beca4a94a1f2b502139540ab12" title="Considitionally evaluate chunk." alt="" coords="284,949,499,990"/>
+<area shape="rect" href="classns3_1_1_lte_interference.html#a18d105beca4a94a1f2b502139540ab12" title="Conditionally evaluate chunk." alt="" coords="284,949,499,990"/>
 <area shape="rect" href="group__simulator.html#gac3635e2e87f7ce316c89290ee1b01d0d" title="create an ns3::Time instance which contains the current simulation time." alt="" coords="547,905,629,932"/>
 <area shape="rect" href="global-router-interface_8cc.html#af2f17e24d29f39f6804d0d10d8cedc71" title=" " alt="" coords="1698,981,1819,1008"/>
 <area shape="rect" href="classns3_1_1_simulator.html#ac3178fa975b419f7875e7105be122800" title="Return the current simulation virtual time." alt="" coords="677,855,831,881"/>
@@ -1279,6 +1324,9 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void ns3::LteInterference::StartRx </td>
@@ -1288,9 +1336,14 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>notify that the PHY is starting a RX attempt </p>
+<p>Notify that the PHY is starting a RX attempt. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rxPsd</td><td>the power spectral density of the signal being RX </td></tr>
@@ -1300,7 +1353,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="lte-interference_8cc_source.html#l00072">72</a> of file <a class="el" href="lte-interference_8cc_source.html">lte-interference.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="openflow-interface_8h_source.html#l00047">list</a>, <a class="el" href="lte-interference_8h_source.html#l00171">m_interfChunkProcessorList</a>, <a class="el" href="lte-interference_8h_source.html#l00155">m_lastChangeTime</a>, <a class="el" href="lte-interference_8h_source.html#l00141">m_receiving</a>, <a class="el" href="lte-interference_8h_source.html#l00163">m_rsPowerChunkProcessorList</a>, <a class="el" href="lte-interference_8h_source.html#l00143">m_rxSignal</a>, <a class="el" href="lte-interference_8h_source.html#l00167">m_sinrChunkProcessorList</a>, <a class="el" href="simulator_8cc_source.html#l00309">ns3::Now()</a>, <a class="el" href="assert_8h_source.html#l00067">NS_ASSERT</a>, <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>, <a class="el" href="global-router-interface_8cc.html#af2f17e24d29f39f6804d0d10d8cedc71">NS_LOG_LOGIC()</a>, and <a class="el" href="spectrum-value_8cc_source.html#l00362">ns3::Sum()</a>.</p>
+<p class="reference">References <a class="el" href="openflow-interface_8h_source.html#l00047">list</a>, <a class="el" href="lte-interference_8h_source.html#l00163">m_interfChunkProcessorList</a>, <a class="el" href="lte-interference_8h_source.html#l00146">m_lastChangeTime</a>, <a class="el" href="lte-interference_8h_source.html#l00132">m_receiving</a>, <a class="el" href="lte-interference_8h_source.html#l00155">m_rsPowerChunkProcessorList</a>, <a class="el" href="lte-interference_8h_source.html#l00134">m_rxSignal</a>, <a class="el" href="lte-interference_8h_source.html#l00159">m_sinrChunkProcessorList</a>, <a class="el" href="simulator_8cc_source.html#l00311">ns3::Now()</a>, <a class="el" href="assert_8h_source.html#l00067">NS_ASSERT</a>, <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>, <a class="el" href="global-router-interface_8cc.html#af2f17e24d29f39f6804d0d10d8cedc71">NS_LOG_LOGIC()</a>, and <a class="el" href="spectrum-value_8cc_source.html#l00362">ns3::Sum()</a>.</p>
 <div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-13-summary" class="dynsummary" style="display:block;">
@@ -1308,7 +1361,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_lte_interference_ac22640d17df2793412cf169fb4768e90_cgraph.png" border="0" usemap="#classns3_1_1_lte_interference_ac22640d17df2793412cf169fb4768e90_cgraph" alt=""/></div>
 <map name="classns3_1_1_lte_interference_ac22640d17df2793412cf169fb4768e90_cgraph" id="classns3_1_1_lte_interference_ac22640d17df2793412cf169fb4768e90_cgraph">
-<area shape="rect" title="notify that the PHY is starting a RX attempt" alt="" coords="5,974,157,1015"/>
+<area shape="rect" title="Notify that the PHY is starting a RX attempt." alt="" coords="5,974,157,1015"/>
 <area shape="rect" href="group__simulator.html#gac3635e2e87f7ce316c89290ee1b01d0d" title="create an ns3::Time instance which contains the current simulation time." alt="" coords="205,905,288,932"/>
 <area shape="rect" href="global-router-interface_8cc.html#af2f17e24d29f39f6804d0d10d8cedc71" title=" " alt="" coords="1357,981,1478,1008"/>
 <area shape="rect" href="namespacens3.html#afad5475661952172fe6ef1260360dad8" title=" " alt="" coords="205,1032,288,1059"/>
@@ -1374,19 +1427,19 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt;<a class="el" href="classns3_1_1_spectrum_value.html">SpectrumValue</a>&gt; ns3::LteInterference::m_allSignals</td>
+          <td class="memname"><a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt;<a class="el" href="classns3_1_1_spectrum_value.html">SpectrumValue</a>&gt; ns3::LteInterference::m_allSignals {nullptr}</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>stores the spectral power density of the sum of incoming signals; does not include noise, includes the SPD of the signal being RX </p>
 
-<p class="definition">Definition at line <a class="el" href="lte-interference_8h_source.html#l00148">148</a> of file <a class="el" href="lte-interference_8h_source.html">lte-interference.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lte-interference_8h_source.html#l00139">139</a> of file <a class="el" href="lte-interference_8h_source.html">lte-interference.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lte-interference_8cc_source.html#l00179">ConditionallyEvaluateChunk()</a>, <a class="el" href="lte-interference_8cc_source.html#l00047">DoDispose()</a>, and <a class="el" href="lte-interference_8cc_source.html#l00212">SetNoisePowerSpectralDensity()</a>.</p>
 
@@ -1407,14 +1460,14 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>all the processor instances that need to be notified whenever a new interference chunk is calculated </p>
 
-<p class="definition">Definition at line <a class="el" href="lte-interference_8h_source.html#l00171">171</a> of file <a class="el" href="lte-interference_8h_source.html">lte-interference.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lte-interference_8h_source.html#l00163">163</a> of file <a class="el" href="lte-interference_8h_source.html">lte-interference.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lte-interference_8cc_source.html#l00245">AddInterferenceChunkProcessor()</a>, <a class="el" href="lte-interference_8cc_source.html#l00179">ConditionallyEvaluateChunk()</a>, <a class="el" href="lte-interference_8cc_source.html#l00047">DoDispose()</a>, <a class="el" href="lte-interference_8cc_source.html#l00107">EndRx()</a>, and <a class="el" href="lte-interference_8cc_source.html#l00072">StartRx()</a>.</p>
 
@@ -1430,19 +1483,19 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classns3_1_1_time.html">Time</a> ns3::LteInterference::m_lastChangeTime</td>
+          <td class="memname"><a class="el" href="classns3_1_1_time.html">Time</a> ns3::LteInterference::m_lastChangeTime {<a class="el" href="group__timecivil.html#ga33c34b816f8ff6628e33d5c8e9713b9e">Seconds</a>(0)}</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>the time of the last change in m_TotalPower </p>
 
-<p class="definition">Definition at line <a class="el" href="lte-interference_8h_source.html#l00155">155</a> of file <a class="el" href="lte-interference_8h_source.html">lte-interference.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lte-interference_8h_source.html#l00146">146</a> of file <a class="el" href="lte-interference_8h_source.html">lte-interference.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lte-interference_8cc_source.html#l00179">ConditionallyEvaluateChunk()</a>, and <a class="el" href="lte-interference_8cc_source.html#l00072">StartRx()</a>.</p>
 
@@ -1458,19 +1511,19 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t ns3::LteInterference::m_lastSignalId</td>
+          <td class="memname">uint32_t ns3::LteInterference::m_lastSignalId {0}</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>the last signal ID </p>
 
-<p class="definition">Definition at line <a class="el" href="lte-interference_8h_source.html#l00158">158</a> of file <a class="el" href="lte-interference_8h_source.html">lte-interference.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lte-interference_8h_source.html#l00150">150</a> of file <a class="el" href="lte-interference_8h_source.html">lte-interference.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lte-interference_8cc_source.html#l00135">AddSignal()</a>, and <a class="el" href="lte-interference_8cc_source.html#l00212">SetNoisePowerSpectralDensity()</a>.</p>
 
@@ -1486,19 +1539,19 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t ns3::LteInterference::m_lastSignalIdBeforeReset</td>
+          <td class="memname">uint32_t ns3::LteInterference::m_lastSignalIdBeforeReset {0}</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>the last signal ID before reset </p>
 
-<p class="definition">Definition at line <a class="el" href="lte-interference_8h_source.html#l00159">159</a> of file <a class="el" href="lte-interference_8h_source.html">lte-interference.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lte-interference_8h_source.html#l00151">151</a> of file <a class="el" href="lte-interference_8h_source.html">lte-interference.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lte-interference_8cc_source.html#l00135">AddSignal()</a>, <a class="el" href="lte-interference_8cc_source.html#l00162">DoSubtractSignal()</a>, and <a class="el" href="lte-interference_8cc_source.html#l00212">SetNoisePowerSpectralDensity()</a>.</p>
 
@@ -1514,19 +1567,19 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt;const <a class="el" href="classns3_1_1_spectrum_value.html">SpectrumValue</a>&gt; ns3::LteInterference::m_noise</td>
+          <td class="memname"><a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt;const <a class="el" href="classns3_1_1_spectrum_value.html">SpectrumValue</a>&gt; ns3::LteInterference::m_noise {nullptr}</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>the noise value </p>
 
-<p class="definition">Definition at line <a class="el" href="lte-interference_8h_source.html#l00153">153</a> of file <a class="el" href="lte-interference_8h_source.html">lte-interference.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lte-interference_8h_source.html#l00144">144</a> of file <a class="el" href="lte-interference_8h_source.html">lte-interference.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lte-interference_8cc_source.html#l00179">ConditionallyEvaluateChunk()</a>, <a class="el" href="lte-interference_8cc_source.html#l00047">DoDispose()</a>, and <a class="el" href="lte-interference_8cc_source.html#l00212">SetNoisePowerSpectralDensity()</a>.</p>
 
@@ -1542,19 +1595,19 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool ns3::LteInterference::m_receiving</td>
+          <td class="memname">bool ns3::LteInterference::m_receiving {false}</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>are we receiving? </p>
 
-<p class="definition">Definition at line <a class="el" href="lte-interference_8h_source.html#l00141">141</a> of file <a class="el" href="lte-interference_8h_source.html">lte-interference.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lte-interference_8h_source.html#l00132">132</a> of file <a class="el" href="lte-interference_8h_source.html">lte-interference.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lte-interference_8cc_source.html#l00179">ConditionallyEvaluateChunk()</a>, <a class="el" href="lte-interference_8cc_source.html#l00107">EndRx()</a>, <a class="el" href="lte-interference_8cc_source.html#l00212">SetNoisePowerSpectralDensity()</a>, and <a class="el" href="lte-interference_8cc_source.html#l00072">StartRx()</a>.</p>
 
@@ -1575,14 +1628,14 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>all the processor instances that need to be notified whenever a new interference chunk is calculated </p>
 
-<p class="definition">Definition at line <a class="el" href="lte-interference_8h_source.html#l00163">163</a> of file <a class="el" href="lte-interference_8h_source.html">lte-interference.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lte-interference_8h_source.html#l00155">155</a> of file <a class="el" href="lte-interference_8h_source.html">lte-interference.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lte-interference_8cc_source.html#l00231">AddRsPowerChunkProcessor()</a>, <a class="el" href="lte-interference_8cc_source.html#l00179">ConditionallyEvaluateChunk()</a>, <a class="el" href="lte-interference_8cc_source.html#l00047">DoDispose()</a>, <a class="el" href="lte-interference_8cc_source.html#l00107">EndRx()</a>, and <a class="el" href="lte-interference_8cc_source.html#l00072">StartRx()</a>.</p>
 
@@ -1598,19 +1651,19 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt;<a class="el" href="classns3_1_1_spectrum_value.html">SpectrumValue</a>&gt; ns3::LteInterference::m_rxSignal</td>
+          <td class="memname"><a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt;<a class="el" href="classns3_1_1_spectrum_value.html">SpectrumValue</a>&gt; ns3::LteInterference::m_rxSignal {nullptr}</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>stores the power spectral density of the signal whose RX is being attempted </p>
 
-<p class="definition">Definition at line <a class="el" href="lte-interference_8h_source.html#l00143">143</a> of file <a class="el" href="lte-interference_8h_source.html">lte-interference.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lte-interference_8h_source.html#l00134">134</a> of file <a class="el" href="lte-interference_8h_source.html">lte-interference.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lte-interference_8cc_source.html#l00179">ConditionallyEvaluateChunk()</a>, <a class="el" href="lte-interference_8cc_source.html#l00047">DoDispose()</a>, and <a class="el" href="lte-interference_8cc_source.html#l00072">StartRx()</a>.</p>
 
@@ -1631,14 +1684,14 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>all the processor instances that need to be notified whenever a new SINR chunk is calculated </p>
 
-<p class="definition">Definition at line <a class="el" href="lte-interference_8h_source.html#l00167">167</a> of file <a class="el" href="lte-interference_8h_source.html">lte-interference.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lte-interference_8h_source.html#l00159">159</a> of file <a class="el" href="lte-interference_8h_source.html">lte-interference.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lte-interference_8cc_source.html#l00238">AddSinrChunkProcessor()</a>, <a class="el" href="lte-interference_8cc_source.html#l00179">ConditionallyEvaluateChunk()</a>, <a class="el" href="lte-interference_8cc_source.html#l00047">DoDispose()</a>, <a class="el" href="lte-interference_8cc_source.html#l00107">EndRx()</a>, and <a class="el" href="lte-interference_8cc_source.html#l00072">StartRx()</a>.</p>
 
@@ -1658,7 +1711,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_lte_interference.html">LteInterference</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:30 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:34 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

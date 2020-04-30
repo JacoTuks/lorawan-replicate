@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -161,7 +158,8 @@ $(document).ready(function(){initNavTree('network-server-helper_8cc.html',''); i
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;ns3/network-server-helper.h&quot;</code><br />
-<code>#include &quot;ns3/simple-network-server.h&quot;</code><br />
+<code>#include &quot;ns3/network-controller-components.h&quot;</code><br />
+<code>#include &quot;ns3/adr-component.h&quot;</code><br />
 <code>#include &quot;ns3/double.h&quot;</code><br />
 <code>#include &quot;ns3/string.h&quot;</code><br />
 <code>#include &quot;ns3/trace-source-accessor.h&quot;</code><br />
@@ -174,14 +172,15 @@ $(document).ready(function(){initNavTree('network-server-helper_8cc.html',''); i
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="network-server-helper_8cc__incl.png" border="0" usemap="#src_2lorawan_2helper_2network-server-helper_8cc" alt=""/></div>
 <map name="src_2lorawan_2helper_2network-server-helper_8cc" id="src_2lorawan_2helper_2network-server-helper_8cc">
-<area shape="rect" title=" " alt="" coords="437,5,625,47"/>
+<area shape="rect" title=" " alt="" coords="575,5,763,47"/>
 <area shape="rect" title=" " alt="" coords="5,95,153,136"/>
-<area shape="rect" title=" " alt="" coords="177,95,328,136"/>
-<area shape="rect" title=" " alt="" coords="352,102,457,129"/>
-<area shape="rect" title=" " alt="" coords="482,102,581,129"/>
-<area shape="rect" title=" " alt="" coords="605,102,809,129"/>
-<area shape="rect" title=" " alt="" coords="834,102,957,129"/>
-<area shape="rect" title=" " alt="" coords="981,102,1063,129"/>
+<area shape="rect" title=" " alt="" coords="177,95,347,136"/>
+<area shape="rect" title=" " alt="" coords="371,102,529,129"/>
+<area shape="rect" title=" " alt="" coords="553,102,659,129"/>
+<area shape="rect" title=" " alt="" coords="683,102,782,129"/>
+<area shape="rect" title=" " alt="" coords="807,102,1011,129"/>
+<area shape="rect" title=" " alt="" coords="1035,102,1158,129"/>
+<area shape="rect" title=" " alt="" coords="1183,102,1264,129"/>
 </map>
 </div>
 </div>
@@ -191,6 +190,8 @@ $(document).ready(function(){initNavTree('network-server-helper_8cc.html',''); i
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacens3"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacens3.html">ns3</a></td></tr>
 <tr class="memdesc:namespacens3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Every class exported by the <a class="el" href="namespacens3.html" title="Every class exported by the ns3 library is enclosed in the ns3 namespace.">ns3</a> library is enclosed in the <a class="el" href="namespacens3.html" title="Every class exported by the ns3 library is enclosed in the ns3 namespace.">ns3</a> namespace. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacens3_1_1lorawan"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacens3_1_1lorawan.html">ns3::lorawan</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
@@ -203,7 +204,7 @@ Namespaces</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_1fa77e9b4d98a3b702d3db2d326dbbf0.html">lorawan</a></li><li class="navelem"><a class="el" href="dir_1e85c98163cd740ed9c0cf6649947499.html">helper</a></li><li class="navelem"><a class="el" href="network-server-helper_8cc.html">network-server-helper.cc</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:10 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:17 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

@@ -45,7 +45,7 @@
 <area shape="rect" id="node34" href="$group__wifi.html#ga4e36efcff6dd83eaee42e1af0de43d48" title=" " alt="" coords="784,426,969,453"/>
 <area shape="rect" id="node35" href="$classns3_1_1_packet.html#a0961eccf975d75f902d40956c93ba63e" title="Deserialize and remove the header from the internal buffer." alt="" coords="484,305,689,331"/>
 <area shape="rect" id="node36" href="$classns3_1_1_regular_wifi_mac.html#a7f68e740fc48cfc03df7330077af8113" title="This method can be called to accept a received ADDBA Request." alt="" coords="503,356,670,397"/>
-<area shape="rect" id="node38" href="$classns3_1_1_channel_access_manager.html#a2f5f2e542c57be950d6c37e022d9caca" title=" " alt="" coords="756,1785,997,1811"/>
+<area shape="rect" id="node38" href="$classns3_1_1_channel_access_manager.html#addd3a289bd0d81aa412dbdbbf11b017e" title=" " alt="" coords="756,1785,997,1811"/>
 <area shape="rect" id="node41" href="$classns3_1_1_txop.html#a754c5bf114f966deeb301335e2ca0b68" title="Pass the packet included in the wifi MAC queue item to the packet dropped callback." alt="" coords="773,1835,980,1862"/>
 <area shape="rect" id="node46" href="$classns3_1_1_qos_txop.html#ab523d3895d795b7be5abab62d14ecc51" title="Complete block ack configuration." alt="" coords="475,1962,698,1989"/>
 <area shape="rect" id="node47" href="$classns3_1_1_qos_txop.html#a2baa117cf23ad1cad09353d492e919ae" title="Set the access category of this EDCAF." alt="" coords="465,2013,708,2039"/>

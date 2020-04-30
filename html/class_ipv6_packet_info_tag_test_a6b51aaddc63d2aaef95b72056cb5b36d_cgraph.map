@@ -25,7 +25,7 @@
 <area shape="rect" id="node6" href="$classns3_1_1_object.html#a822491fe32070f6bf703454ccab9f18a" title="Initialize() implementation." alt="" coords="780,224,957,251"/>
 <area shape="rect" id="node9" href="$classns3_1_1_node.html#a6cbe61c071c85bb3ba5d4843132cd119" title="Receive a packet from a device." alt="" coords="756,275,981,301"/>
 <area shape="rect" id="node10" href="$classns3_1_1_simulator.html#a8514b74ee2c42916b351b33c4a963bb0" title="Get the current simulation context." alt="" coords="1029,224,1228,251"/>
-<area shape="rect" id="node11" href="$classns3_1_1_packet.html#ab9f0b7e9cf21b7271eda0094e6ff2792" title="Returns the packet&#39;s Uid." alt="" coords="1054,275,1203,301"/>
+<area shape="rect" id="node11" href="$ipv4-address-generator_8cc.html#aaf5aa23b804d2e5e334106f207e8a6cc" title=" " alt="" coords="1061,275,1196,301"/>
 <area shape="rect" id="node15" href="$classns3_1_1_time.html#a60e845f4a74e62495b86356afe604cb4" title="Create a Time equal to value in unit unit." alt="" coords="783,325,955,352"/>
 <area shape="rect" id="node16" href="$classns3_1_1_time.html#a34e4acc13d0e08cc8cb9cd3b838b9baf" title="Create a Time in the current unit." alt="" coords="1065,325,1192,352"/>
 <area shape="rect" id="node20" href="$classns3_1_1_socket.html#af898fce6a58e0dbba23c1c6de1d4220e" title="Send data to a specified peer." alt="" coords="520,463,671,489"/>

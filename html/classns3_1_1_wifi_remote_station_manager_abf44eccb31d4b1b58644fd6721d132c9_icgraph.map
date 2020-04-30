@@ -1,7 +1,7 @@
 <map id="ns3::WifiRemoteStationManager::DoGetRtsTxVector" name="ns3::WifiRemoteStationManager::DoGetRtsTxVector">
 <area shape="rect" id="node1" title=" " alt="" coords="2031,267,2264,308"/>
-<area shape="rect" id="node2" href="$classns3_1_1_wifi_remote_station_manager.html#a0f4f6984f11037508c46a1af90508a34" title=" " alt="" coords="1749,208,1983,249"/>
-<area shape="rect" id="node15" href="$classns3_1_1_wifi_remote_station_manager.html#a4812b9abae368de05cbd1393b7053f90" title=" " alt="" coords="1749,299,1983,340"/>
+<area shape="rect" id="node2" href="$classns3_1_1_wifi_remote_station_manager.html#a853f412b16d537be85a70277c522dec7" title=" " alt="" coords="1749,208,1983,249"/>
+<area shape="rect" id="node15" href="$classns3_1_1_wifi_remote_station_manager.html#a38a2549c86091c3ca7eba3841f0060d3" title=" " alt="" coords="1749,299,1983,340"/>
 <area shape="rect" id="node3" href="$classns3_1_1_mac_low.html#a89fbeddfe91a47f0dcc1f3d7fd5108a0" title="Return a TXVECTOR for the RTS frame given the destination." alt="" coords="1241,147,1457,174"/>
 <area shape="rect" id="node4" href="$classns3_1_1_mac_low.html#aa2d5acb9a87a417cfa46a4e8b4a8ed01" title=" " alt="" coords="941,5,1180,47"/>
 <area shape="rect" id="node8" href="$classns3_1_1_mac_low.html#aa477261c5209c13c66af9e2ae78b07e5" title=" " alt="" coords="663,71,893,98"/>

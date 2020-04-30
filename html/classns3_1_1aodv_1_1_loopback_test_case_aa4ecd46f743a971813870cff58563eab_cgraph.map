@@ -4,7 +4,7 @@
 <area shape="rect" id="node3" href="$classns3_1_1_socket.html#abdac6e2498c5aa2963ef361d4200ddf3" title="Close a socket." alt="" coords="303,137,443,163"/>
 <area shape="rect" id="node4" href="$classns3_1_1_yans_wifi_channel_helper.html#a6bb01082fd42806a6b95e6684a4344d4" title=" " alt="" coords="271,369,475,411"/>
 <area shape="rect" id="node8" href="$classns3_1_1_yans_wifi_channel_helper.html#a9a7fb65955fd9eb046600b89292e8062" title="Create a channel helper in a default working state." alt="" coords="271,239,475,280"/>
-<area shape="rect" id="node13" href="$classns3_1_1_yans_wifi_phy_helper.html#a75b0af43b173308e2f130605ddf34a7f" title="Create a phy helper in a default working state." alt="" coords="286,304,461,345"/>
+<area shape="rect" id="node13" href="$classns3_1_1_yans_wifi_phy_helper.html#a75b0af43b173308e2f130605ddf34a7f" title="Create a PHY helper in a default working state." alt="" coords="286,304,461,345"/>
 <area shape="rect" id="node15" href="$classns3_1_1_simulator.html#a2a056e59a6623225df0957eda0ee8252" title="Execute the events scheduled with ScheduleDestroy()." alt="" coords="564,485,739,511"/>
 <area shape="rect" id="node19" href="$classns3_1_1aodv_1_1_loopback_test_case.html#a42ff3dfd76f3816cd5682c132fc6bcb1" title="Echo data function." alt="" coords="267,833,480,875"/>
 <area shape="rect" id="node26" href="$classns3_1_1_node.html#a2ed8663077afcb8db519296b0ada6355" title=" " alt="" coords="586,1038,717,1065"/>

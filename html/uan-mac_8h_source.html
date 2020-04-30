@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -223,7 +220,7 @@ $(document).ready(function(){initNavTree('uan-mac_8h_source.html',''); initResiz
 <div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="classns3_1_1_uan_mac.html#a903c2313ccb53edb49fb7b97c1417684">  120</a></span>&#160;  <span class="keyword">virtual</span> int64_t <a class="code" href="classns3_1_1_uan_mac.html#a903c2313ccb53edb49fb7b97c1417684">AssignStreams</a> (int64_t stream) = 0;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
 <div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="classns3_1_1_uan_mac.html#a4fb81936b5d7a5bf85f74c3bb75f437f">  128</a></span>&#160;  <span class="keyword">typedef</span> void (* <a class="code" href="classns3_1_1_uan_mac.html#a4fb81936b5d7a5bf85f74c3bb75f437f">PacketModeTracedCallback</a>)</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;const Packet&gt;</a> <a class="code" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>, <a class="code" href="classns3_1_1_uan_tx_mode.html">UanTxMode</a> mode);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;const Packet&gt;</a> packet, <a class="code" href="classns3_1_1_uan_tx_mode.html">UanTxMode</a> mode);</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  uint32_t <a class="code" href="classns3_1_1_uan_mac.html#aff067837de08263ff1c30465b3140e45">GetTxModeIndex</a> ();</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_uan_mac.html#a138e522091bc93646bc1a3df920e3577">SetTxModeIndex</a> (uint32_t txModeIndex);</div>
@@ -246,7 +243,6 @@ $(document).ready(function(){initNavTree('uan-mac_8h_source.html',''); initResiz
 <div class="ttc" id="anamespacens3_html"><div class="ttname"><a href="namespacens3.html">ns3</a></div><div class="ttdoc">Every class exported by the ns3 library is enclosed in the ns3 namespace.</div></div>
 <div class="ttc" id="aclassns3_1_1_uan_mac_html_a138e522091bc93646bc1a3df920e3577"><div class="ttname"><a href="classns3_1_1_uan_mac.html#a138e522091bc93646bc1a3df920e3577">ns3::UanMac::SetTxModeIndex</a></div><div class="ttdeci">void SetTxModeIndex(uint32_t txModeIndex)</div><div class="ttdef"><b>Definition:</b> <a href="uan-mac_8cc_source.html#l00043">uan-mac.cc:43</a></div></div>
 <div class="ttc" id="aclassns3_1_1_uan_mac_html_a82fb3d02bc2fe1f0eed7ad3b816af7bd"><div class="ttname"><a href="classns3_1_1_uan_mac.html#a82fb3d02bc2fe1f0eed7ad3b816af7bd">ns3::UanMac::Clear</a></div><div class="ttdeci">virtual void Clear(void)=0</div><div class="ttdoc">Clears all pointer references.</div></div>
-<div class="ttc" id="alora-mac-test_8cc_html_a084e879e2a4e6b1e078575d3693a0c3a"><div class="ttname"><a href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a></div><div class="ttdeci">Ptr&lt; Packet &gt; packet</div><div class="ttdef"><b>Definition:</b> <a href="lora-mac-test_8cc_source.html#l00021">lora-mac-test.cc:21</a></div></div>
 <div class="ttc" id="aclassns3_1_1_uan_mac_html_a903c2313ccb53edb49fb7b97c1417684"><div class="ttname"><a href="classns3_1_1_uan_mac.html#a903c2313ccb53edb49fb7b97c1417684">ns3::UanMac::AssignStreams</a></div><div class="ttdeci">virtual int64_t AssignStreams(int64_t stream)=0</div><div class="ttdoc">Assign a fixed random variable stream number to the random variables used by this model.</div></div>
 <div class="ttc" id="aclassns3_1_1_ptr_html"><div class="ttname"><a href="classns3_1_1_ptr.html">ns3::Ptr&lt; Packet &gt;</a></div></div>
 <div class="ttc" id="aclassns3_1_1_address_html"><div class="ttname"><a href="classns3_1_1_address.html">ns3::Address</a></div><div class="ttdoc">a polymophic address class</div><div class="ttdef"><b>Definition:</b> <a href="address_8h_source.html#l00090">address.h:91</a></div></div>
@@ -273,7 +269,7 @@ $(document).ready(function(){initNavTree('uan-mac_8h_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_d0a70199355efd62843e48a9530b6bf9.html">uan</a></li><li class="navelem"><a class="el" href="dir_edaa50cf80a35881f4b649f59b6d1d27.html">model</a></li><li class="navelem"><a class="el" href="uan-mac_8h.html">uan-mac.h</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:06 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:13 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

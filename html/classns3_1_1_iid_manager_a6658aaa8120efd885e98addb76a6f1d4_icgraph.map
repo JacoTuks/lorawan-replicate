@@ -10,7 +10,7 @@
 <area shape="rect" id="node9" href="$namespacens3.html#a0b4dc016823f5ae857205ca40e91cc56" title="This function displays the tooltip for an object, pointer, vector item or an attribute." alt="" coords="524,340,711,367"/>
 <area shape="rect" id="node10" href="$namespacens3.html#a614e487215e562d0b6ac0b3b3f443f20" title="This function is used to display a tooltip whenever the user puts the mouse over a type ID or an attr..." alt="" coords="524,391,711,433"/>
 <area shape="rect" id="node11" href="$classns3_1_1_object_base.html#a5cda18dec6d0744cb652a3ed60056958" title="Complete construction of ObjectBase; invoked by derived classes." alt="" coords="204,487,427,513"/>
-<area shape="rect" id="node12" href="$classns3_1_1_lora_phy_helper.html#a4a4be7e4b9026dbb7a37aa0a5ac52230" title="Crate a LoraPhy and connect it to a device on a node." alt="" coords="543,626,691,667"/>
+<area shape="rect" id="node12" href="$classns3_1_1lorawan_1_1_lora_phy_helper.html#a5e4963824107f71d88d6d5fa36af5fe9" title="Crate a LoraPhy and connect it to a device on a node." alt="" coords="513,626,721,667"/>
 <area shape="rect" id="node13" href="$classns3_1_1_tcp_l4_protocol.html#aff234df940f094cabaf74f5383639574" title="Create a TCP socket using the specified congestion control algorithm TypeId." alt="" coords="546,691,689,733"/>
 <area shape="rect" id="node14" href="$class_packet_test.html#a8bfedb5c3b60f014e305a87701e73797" title="Checks the packet." alt="" coords="539,757,696,784"/>
 <area shape="rect" id="node15" href="$class_static_information.html#a069effffe5ecd58b6cc7eeb86d4eed0e" title="Gather attribute, configuration path information for tid." alt="" coords="546,809,689,850"/>

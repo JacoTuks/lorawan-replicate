@@ -62,9 +62,6 @@
 		      <a id="ns3_tut"
 			 href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-		      <a id="ns3_ptbr"
-			 href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 	        </li>
 	        <li><span
 		      onmouseover="mopen('mDocs')" 
@@ -271,7 +268,7 @@ for detailed information on all the possible methods to do it
 how to do it using input files together with the ns-3 ConfigStore.
 First of all, you need to put the following in your simulation
 program, right after <code class="docutils literal notranslate"><span class="pre">main</span> <span class="pre">()</span></code> starts:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>CommandLine cmd;
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>COMMANDLINE (cmd);
 cmd.Parse (argc, argv);
 ConfigStore inputConfig;
 inputConfig.ConfigureDefaults ();
@@ -2782,7 +2779,7 @@ you find where packets stop being processed / forwarded.</p></li>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2006-2019.
-      Last updated on Apr 23, 2020 07:52.
+      Last updated on Apr 29, 2020 17:37.
       Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.2.
     </div>
   </body>

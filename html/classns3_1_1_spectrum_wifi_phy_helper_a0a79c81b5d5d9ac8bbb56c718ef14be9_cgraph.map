@@ -1,5 +1,5 @@
 <map id="ns3::SpectrumWifiPhyHelper::Default" name="ns3::SpectrumWifiPhyHelper::Default">
-<area shape="rect" id="node1" title="Create a phy helper in a default working state." alt="" coords="5,165,213,207"/>
+<area shape="rect" id="node1" title="Create a PHY helper in a default working state." alt="" coords="5,165,213,207"/>
 <area shape="rect" id="node2" href="$classns3_1_1_wifi_phy_helper.html#a219d3ae5881842aa42ea341b985ce114" title=" " alt="" coords="261,165,413,207"/>
 <area shape="rect" id="node3" href="$classns3_1_1_object_factory.html#aef5c0d5019c96bdf01cefd1ff83f4a68" title="Set an attribute to be set during construction." alt="" coords="461,143,632,170"/>
 <area shape="rect" id="node16" href="$classns3_1_1_object_factory.html#a77dcd099064038a1eb7a6b8251229ec3" title="Set the TypeId of the Objects to be created by this factory." alt="" coords="475,195,618,236"/>

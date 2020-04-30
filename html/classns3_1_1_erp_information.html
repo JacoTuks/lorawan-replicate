@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -201,31 +198,28 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aac1455adc57b9f6f499bc666e570b6a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_erp_information.html#aac1455adc57b9f6f499bc666e570b6a4">ErpInformation</a> ()</td></tr>
 <tr class="separator:aac1455adc57b9f6f499bc666e570b6a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21c6a694790ee605de242bb9f0bd6b10"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_erp_information.html#a21c6a694790ee605de242bb9f0bd6b10">DeserializeInformationField</a> (<a class="el" href="classns3_1_1_buffer_1_1_iterator.html">Buffer::Iterator</a> start, uint8_t length)</td></tr>
-<tr class="memdesc:a21c6a694790ee605de242bb9f0bd6b10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the information field size.  <a href="classns3_1_1_erp_information.html#a21c6a694790ee605de242bb9f0bd6b10">More...</a><br /></td></tr>
+<tr class="memdesc:a21c6a694790ee605de242bb9f0bd6b10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserialize information (i.e., the body of the IE, not including the Element ID and length octets)  <a href="classns3_1_1_erp_information.html#a21c6a694790ee605de242bb9f0bd6b10">More...</a><br /></td></tr>
 <tr class="separator:a21c6a694790ee605de242bb9f0bd6b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0955ed7a8237d3d95c98f79405241564"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacens3.html#aeb185e0c8a60816016bca079f1420478">WifiInformationElementId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_erp_information.html#a0955ed7a8237d3d95c98f79405241564">ElementId</a> () const</td></tr>
-<tr class="memdesc:a0955ed7a8237d3d95c98f79405241564"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the element ID field.  <a href="classns3_1_1_erp_information.html#a0955ed7a8237d3d95c98f79405241564">More...</a><br /></td></tr>
 <tr class="separator:a0955ed7a8237d3d95c98f79405241564"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad9eca735cf2c7e3fab60a15effbecca"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_erp_information.html#aad9eca735cf2c7e3fab60a15effbecca">GetBarkerPreambleMode</a> (void) const</td></tr>
 <tr class="memdesc:aad9eca735cf2c7e3fab60a15effbecca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the Barker_Preamble_Mode field in the <a class="el" href="classns3_1_1_erp_information.html" title="The ErpInformation Information Element.">ErpInformation</a> information element.  <a href="classns3_1_1_erp_information.html#aad9eca735cf2c7e3fab60a15effbecca">More...</a><br /></td></tr>
 <tr class="separator:aad9eca735cf2c7e3fab60a15effbecca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a186bc3aa95396cb1d0f4e5fe04c16074"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_erp_information.html#a186bc3aa95396cb1d0f4e5fe04c16074">GetInformationFieldSize</a> () const</td></tr>
-<tr class="memdesc:a186bc3aa95396cb1d0f4e5fe04c16074"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the information field size.  <a href="classns3_1_1_erp_information.html#a186bc3aa95396cb1d0f4e5fe04c16074">More...</a><br /></td></tr>
+<tr class="memdesc:a186bc3aa95396cb1d0f4e5fe04c16074"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of serialized information (i.e., the length of the body of the IE, not including the Element ID and length octets.  <a href="classns3_1_1_erp_information.html#a186bc3aa95396cb1d0f4e5fe04c16074">More...</a><br /></td></tr>
 <tr class="separator:a186bc3aa95396cb1d0f4e5fe04c16074"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a6d05dd7f8f75e9657701a5e13c36e4"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_erp_information.html#a8a6d05dd7f8f75e9657701a5e13c36e4">GetNonErpPresent</a> (void) const</td></tr>
 <tr class="memdesc:a8a6d05dd7f8f75e9657701a5e13c36e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the Non_Erp_Present field in the <a class="el" href="classns3_1_1_erp_information.html" title="The ErpInformation Information Element.">ErpInformation</a> information element.  <a href="classns3_1_1_erp_information.html#a8a6d05dd7f8f75e9657701a5e13c36e4">More...</a><br /></td></tr>
 <tr class="separator:a8a6d05dd7f8f75e9657701a5e13c36e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5888988760b9d20054a7d9f5b5e2d92b"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_erp_information.html#a5888988760b9d20054a7d9f5b5e2d92b">GetSerializedSize</a> () const</td></tr>
-<tr class="memdesc:a5888988760b9d20054a7d9f5b5e2d92b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the serialized size of this <a class="el" href="classns3_1_1_erp_information.html" title="The ErpInformation Information Element.">ErpInformation</a> information element.  <a href="classns3_1_1_erp_information.html#a5888988760b9d20054a7d9f5b5e2d92b">More...</a><br /></td></tr>
 <tr class="separator:a5888988760b9d20054a7d9f5b5e2d92b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace556a204c74bc96005c3daf53f50650"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_erp_information.html#ace556a204c74bc96005c3daf53f50650">GetUseProtection</a> (void) const</td></tr>
 <tr class="memdesc:ace556a204c74bc96005c3daf53f50650"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the Use_Protection field in the <a class="el" href="classns3_1_1_erp_information.html" title="The ErpInformation Information Element.">ErpInformation</a> information element.  <a href="classns3_1_1_erp_information.html#ace556a204c74bc96005c3daf53f50650">More...</a><br /></td></tr>
 <tr class="separator:ace556a204c74bc96005c3daf53f50650"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a647ca63253a099f4e9a03ab14f6f347e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classns3_1_1_buffer_1_1_iterator.html">Buffer::Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_erp_information.html#a647ca63253a099f4e9a03ab14f6f347e">Serialize</a> (<a class="el" href="classns3_1_1_buffer_1_1_iterator.html">Buffer::Iterator</a> start) const</td></tr>
-<tr class="memdesc:a647ca63253a099f4e9a03ab14f6f347e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This information element is a bit special in that it is only included if the STA is an ERP STA.  <a href="classns3_1_1_erp_information.html#a647ca63253a099f4e9a03ab14f6f347e">More...</a><br /></td></tr>
 <tr class="separator:a647ca63253a099f4e9a03ab14f6f347e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39ab4c2ac37195ac63a2596c0a2b58b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_erp_information.html#a39ab4c2ac37195ac63a2596c0a2b58b4">SerializeInformationField</a> (<a class="el" href="classns3_1_1_buffer_1_1_iterator.html">Buffer::Iterator</a> start) const</td></tr>
-<tr class="memdesc:a39ab4c2ac37195ac63a2596c0a2b58b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the information field.  <a href="classns3_1_1_erp_information.html#a39ab4c2ac37195ac63a2596c0a2b58b4">More...</a><br /></td></tr>
+<tr class="memdesc:a39ab4c2ac37195ac63a2596c0a2b58b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize information (i.e., the body of the IE, not including the Element ID and length octets)  <a href="classns3_1_1_erp_information.html#a39ab4c2ac37195ac63a2596c0a2b58b4">More...</a><br /></td></tr>
 <tr class="separator:a39ab4c2ac37195ac63a2596c0a2b58b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22b4c83f0066163c6f5cb2cafe666c67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_erp_information.html#a22b4c83f0066163c6f5cb2cafe666c67">SetBarkerPreambleMode</a> (uint8_t barkerPreambleMode)</td></tr>
 <tr class="memdesc:a22b4c83f0066163c6f5cb2cafe666c67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Barker_Preamble_Mode field in the <a class="el" href="classns3_1_1_erp_information.html" title="The ErpInformation Information Element.">ErpInformation</a> information element.  <a href="classns3_1_1_erp_information.html#a22b4c83f0066163c6f5cb2cafe666c67">More...</a><br /></td></tr>
@@ -351,21 +345,21 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the information field size. </p>
+<p>Deserialize information (i.e., the body of the IE, not including the Element ID and length octets) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">start</td><td>the information element iterator </td></tr>
-    <tr><td class="paramname">length</td><td>the information field length</td></tr>
+    <tr><td class="paramname">start</td><td>an iterator which points to where the information should be written. </td></tr>
+    <tr><td class="paramname">length</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the information field </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of bytes read </dd></dl>
 
 <p>Implements <a class="el" href="classns3_1_1_wifi_information_element.html#a92135cae0f188d7d8f6c30d9f4becd82">ns3::WifiInformationElement</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="erp-information_8cc_source.html#l00116">116</a> of file <a class="el" href="erp-information_8cc_source.html">erp-information.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="erp-information_8h_source.html#l00131">m_erpInformation</a>, <a class="el" href="buffer_8h_source.html#l01021">ns3::Buffer::Iterator::ReadU8()</a>, and <a class="el" href="core_8py_source.html#l01855">visualizer.core::start()</a>.</p>
+<p class="reference">References <a class="el" href="erp-information_8h_source.html#l00100">m_erpInformation</a>, <a class="el" href="buffer_8h_source.html#l01021">ns3::Buffer::Iterator::ReadU8()</a>, and <a class="el" href="core_8py_source.html#l01855">visualizer.core::start()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -373,7 +367,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_erp_information_a21c6a694790ee605de242bb9f0bd6b10_cgraph.png" border="0" usemap="#classns3_1_1_erp_information_a21c6a694790ee605de242bb9f0bd6b10_cgraph" alt=""/></div>
 <map name="classns3_1_1_erp_information_a21c6a694790ee605de242bb9f0bd6b10_cgraph" id="classns3_1_1_erp_information_a21c6a694790ee605de242bb9f0bd6b10_cgraph">
-<area shape="rect" title="Get the information field size." alt="" coords="5,35,215,76"/>
+<area shape="rect" title="Deserialize information (i.e., the body of the IE, not including the Element ID and length octets)" alt="" coords="5,35,215,76"/>
 <area shape="rect" href="classns3_1_1_buffer_1_1_iterator.html#a7d7d5299e27ecf41aef37e315984ad5a" title=" " alt="" coords="263,5,413,47"/>
 <area shape="rect" href="namespacevisualizer_1_1core.html#a2a35e5d8a34af358b508dac8635754e0" title=" " alt="" coords="263,71,413,98"/>
 <area shape="rect" href="namespacevisualizer_1_1base.html#ad171497a5ff1afe0a73bedaebf35448f" title=" " alt="" coords="461,64,613,105"/>
@@ -405,9 +399,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Get the element ID field. </p>
-<dl class="section return"><dt>Returns</dt><dd>WifiInformationElementId </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Own unique Element ID </dd></dl>
 
 <p>Implements <a class="el" href="classns3_1_1_wifi_information_element.html#a0c16b85dc0c63baf7fc437ddbc13ada6">ns3::WifiInformationElement</a>.</p>
 
@@ -438,9 +430,9 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="erp-information_8cc_source.html#l00062">62</a> of file <a class="el" href="erp-information_8cc_source.html">erp-information.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="erp-information_8h_source.html#l00131">m_erpInformation</a>.</p>
+<p class="reference">References <a class="el" href="erp-information_8h_source.html#l00100">m_erpInformation</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="erp-information_8cc_source.html#l00133">ns3::operator&lt;&lt;()</a>, <a class="el" href="sta-wifi-mac_8cc_source.html#l00945">ns3::StaWifiMac::UpdateApInfoFromAssocResp()</a>, <a class="el" href="sta-wifi-mac_8cc_source.html#l00749">ns3::StaWifiMac::UpdateApInfoFromBeacon()</a>, and <a class="el" href="sta-wifi-mac_8cc_source.html#l00876">ns3::StaWifiMac::UpdateApInfoFromProbeResp()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="erp-information_8cc_source.html#l00125">ns3::operator&lt;&lt;()</a>, <a class="el" href="sta-wifi-mac_8cc_source.html#l00945">ns3::StaWifiMac::UpdateApInfoFromAssocResp()</a>, <a class="el" href="sta-wifi-mac_8cc_source.html#l00749">ns3::StaWifiMac::UpdateApInfoFromBeacon()</a>, and <a class="el" href="sta-wifi-mac_8cc_source.html#l00876">ns3::StaWifiMac::UpdateApInfoFromProbeResp()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -449,7 +441,7 @@ Private Attributes</h2></td></tr>
 <div class="center"><img src="classns3_1_1_erp_information_aad9eca735cf2c7e3fab60a15effbecca_icgraph.png" border="0" usemap="#classns3_1_1_erp_information_aad9eca735cf2c7e3fab60a15effbecca_icgraph" alt=""/></div>
 <map name="classns3_1_1_erp_information_aad9eca735cf2c7e3fab60a15effbecca_icgraph" id="classns3_1_1_erp_information_aad9eca735cf2c7e3fab60a15effbecca_icgraph">
 <area shape="rect" title="Return the Barker_Preamble_Mode field in the ErpInformation information element." alt="" coords="1783,78,1976,119"/>
-<area shape="rect" href="namespacens3.html#a73b78fecda4d1cb211d4fec57c7f2586" title="output stream output operator" alt="" coords="1570,5,1701,32"/>
+<area shape="rect" href="namespacens3.html#a7d413f89b8a29a147b27a7f669ebcf3e" title="output stream output operator" alt="" coords="1570,5,1701,32"/>
 <area shape="rect" href="classns3_1_1_sta_wifi_mac.html#a3b4db84fc465a25c98c6a46e75d83008" title="Update AP&#39;s information from association response." alt="" coords="1289,45,1488,86"/>
 <area shape="rect" href="classns3_1_1_sta_wifi_mac.html#a242fea4aa708280497d93f94dbb8a142" title="Update associated AP&#39;s information from beacon." alt="" coords="1536,107,1735,149"/>
 <area shape="rect" href="classns3_1_1_sta_wifi_mac.html#a1a40177fb80bfd5029f083d53b42f787" title="Update AP&#39;s information from probe response." alt="" coords="1536,190,1735,231"/>
@@ -491,14 +483,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the information field size. </p>
-<dl class="section return"><dt>Returns</dt><dd>the element field size </dd></dl>
+<p>Length of serialized information (i.e., the length of the body of the IE, not including the Element ID and length octets. </p>
+<p>This is the value that will appear in the second octet of the entire IE - the length field)</p>
+<dl class="section return"><dt>Returns</dt><dd>the length of serialized information </dd></dl>
 
 <p>Implements <a class="el" href="classns3_1_1_wifi_information_element.html#a04af58633c58364e6b8d0ae2a7d777b2">ns3::WifiInformationElement</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="erp-information_8cc_source.html#l00080">80</a> of file <a class="el" href="erp-information_8cc_source.html">erp-information.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="erp-information_8h_source.html#l00134">m_erpSupported</a>, and <a class="el" href="assert_8h_source.html#l00067">NS_ASSERT</a>.</p>
+<p class="reference">References <a class="el" href="erp-information_8h_source.html#l00103">m_erpSupported</a>, and <a class="el" href="assert_8h_source.html#l00067">NS_ASSERT</a>.</p>
 
 </div>
 </div>
@@ -523,9 +516,9 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="erp-information_8cc_source.html#l00074">74</a> of file <a class="el" href="erp-information_8cc_source.html">erp-information.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="erp-information_8h_source.html#l00131">m_erpInformation</a>.</p>
+<p class="reference">References <a class="el" href="erp-information_8h_source.html#l00100">m_erpInformation</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="erp-information_8cc_source.html#l00133">ns3::operator&lt;&lt;()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="erp-information_8cc_source.html#l00125">ns3::operator&lt;&lt;()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -534,7 +527,7 @@ Private Attributes</h2></td></tr>
 <div class="center"><img src="classns3_1_1_erp_information_a8a6d05dd7f8f75e9657701a5e13c36e4_icgraph.png" border="0" usemap="#classns3_1_1_erp_information_a8a6d05dd7f8f75e9657701a5e13c36e4_icgraph" alt=""/></div>
 <map name="classns3_1_1_erp_information_a8a6d05dd7f8f75e9657701a5e13c36e4_icgraph" id="classns3_1_1_erp_information_a8a6d05dd7f8f75e9657701a5e13c36e4_icgraph">
 <area shape="rect" title="Return the Non_Erp_Present field in the ErpInformation information element." alt="" coords="184,5,335,47"/>
-<area shape="rect" href="namespacens3.html#a73b78fecda4d1cb211d4fec57c7f2586" title="output stream output operator" alt="" coords="5,13,136,39"/>
+<area shape="rect" href="namespacens3.html#a7d413f89b8a29a147b27a7f669ebcf3e" title="output stream output operator" alt="" coords="5,13,136,39"/>
 </map>
 </div>
 
@@ -555,12 +548,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Return the serialized size of this <a class="el" href="classns3_1_1_erp_information.html" title="The ErpInformation Information Element.">ErpInformation</a> information element. </p>
-<dl class="section return"><dt>Returns</dt><dd>the serialized size of this <a class="el" href="classns3_1_1_erp_information.html" title="The ErpInformation Information Element.">ErpInformation</a> information element </dd></dl>
-
 <p class="definition">Definition at line <a class="el" href="erp-information_8cc_source.html#l00097">97</a> of file <a class="el" href="erp-information_8cc_source.html">erp-information.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="wifi-information-element_8cc_source.html#l00035">ns3::WifiInformationElement::GetSerializedSize()</a>, and <a class="el" href="erp-information_8h_source.html#l00134">m_erpSupported</a>.</p>
+<p class="reference">References <a class="el" href="wifi-information-element_8cc_source.html#l00035">ns3::WifiInformationElement::GetSerializedSize()</a>, and <a class="el" href="erp-information_8h_source.html#l00103">m_erpSupported</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mgt-headers_8cc_source.html#l01087">ns3::MgtAssocResponseHeader::GetSerializedSize()</a>, and <a class="el" href="mgt-headers_8cc_source.html#l00399">ns3::MgtProbeResponseHeader::GetSerializedSize()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -570,7 +560,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_erp_information_a5888988760b9d20054a7d9f5b5e2d92b_cgraph.png" border="0" usemap="#classns3_1_1_erp_information_a5888988760b9d20054a7d9f5b5e2d92b_cgraph" alt=""/></div>
 <map name="classns3_1_1_erp_information_a5888988760b9d20054a7d9f5b5e2d92b_cgraph" id="classns3_1_1_erp_information_a5888988760b9d20054a7d9f5b5e2d92b_cgraph">
-<area shape="rect" title="Return the serialized size of this ErpInformation information element." alt="" coords="5,5,156,47"/>
+<area shape="rect" title=" " alt="" coords="5,5,156,47"/>
 <area shape="rect" href="classns3_1_1_wifi_information_element.html#a1e40d7d7a90f9c6d383223c26a977dc3" title="Get the size of the serialized IE including Element ID and length fields." alt="" coords="204,5,413,47"/>
 <area shape="rect" href="classns3_1_1_wifi_information_element.html#a04af58633c58364e6b8d0ae2a7d777b2" title="Length of serialized information (i.e., the length of the body of the IE, not including the Element I..." alt="" coords="461,5,671,47"/>
 </map>
@@ -582,7 +572,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_erp_information_a5888988760b9d20054a7d9f5b5e2d92b_icgraph.png" border="0" usemap="#classns3_1_1_erp_information_a5888988760b9d20054a7d9f5b5e2d92b_icgraph" alt=""/></div>
 <map name="classns3_1_1_erp_information_a5888988760b9d20054a7d9f5b5e2d92b_icgraph" id="classns3_1_1_erp_information_a5888988760b9d20054a7d9f5b5e2d92b_icgraph">
-<area shape="rect" title="Return the serialized size of this ErpInformation information element." alt="" coords="280,39,431,80"/>
+<area shape="rect" title=" " alt="" coords="280,39,431,80"/>
 <area shape="rect" href="classns3_1_1_mgt_assoc_response_header.html#a5e89f2a2f4de5bf66291e26e882d5400" title=" " alt="" coords="5,5,232,47"/>
 <area shape="rect" href="classns3_1_1_mgt_probe_response_header.html#ab5e4c638c35be8e8d0670cfa03cd20ec" title=" " alt="" coords="6,71,231,112"/>
 </map>
@@ -611,9 +601,9 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="erp-information_8cc_source.html#l00068">68</a> of file <a class="el" href="erp-information_8cc_source.html">erp-information.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="erp-information_8h_source.html#l00131">m_erpInformation</a>.</p>
+<p class="reference">References <a class="el" href="erp-information_8h_source.html#l00100">m_erpInformation</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="erp-information_8cc_source.html#l00133">ns3::operator&lt;&lt;()</a>, and <a class="el" href="sta-wifi-mac_8cc_source.html#l00749">ns3::StaWifiMac::UpdateApInfoFromBeacon()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="erp-information_8cc_source.html#l00125">ns3::operator&lt;&lt;()</a>, and <a class="el" href="sta-wifi-mac_8cc_source.html#l00749">ns3::StaWifiMac::UpdateApInfoFromBeacon()</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -622,7 +612,7 @@ Private Attributes</h2></td></tr>
 <div class="center"><img src="classns3_1_1_erp_information_ace556a204c74bc96005c3daf53f50650_icgraph.png" border="0" usemap="#classns3_1_1_erp_information_ace556a204c74bc96005c3daf53f50650_icgraph" alt=""/></div>
 <map name="classns3_1_1_erp_information_ace556a204c74bc96005c3daf53f50650_icgraph" id="classns3_1_1_erp_information_ace556a204c74bc96005c3daf53f50650_icgraph">
 <area shape="rect" title="Return the Use_Protection field in the ErpInformation information element." alt="" coords="1779,27,1929,69"/>
-<area shape="rect" href="namespacens3.html#a73b78fecda4d1cb211d4fec57c7f2586" title="output stream output operator" alt="" coords="1566,5,1697,32"/>
+<area shape="rect" href="namespacens3.html#a7d413f89b8a29a147b27a7f669ebcf3e" title="output stream output operator" alt="" coords="1566,5,1697,32"/>
 <area shape="rect" href="classns3_1_1_sta_wifi_mac.html#a242fea4aa708280497d93f94dbb8a142" title="Update associated AP&#39;s information from beacon." alt="" coords="1532,57,1731,98"/>
 <area shape="rect" href="classns3_1_1_sta_wifi_mac.html#a3ccd3b2dd36c5b80ba53eb57b6c96e96" title="Handle a received packet." alt="" coords="5,64,192,91"/>
 <area shape="rect" href="classns3_1_1_sta_wifi_mac.html#a0813f90cc1f856b0907845686caa592f" title="This method is called after wait beacon timeout or wait probe request timeout has occurred." alt="" coords="1289,137,1484,178"/>
@@ -655,19 +645,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>This information element is a bit special in that it is only included if the STA is an ERP STA. </p>
-<p>To support this we override the Serialize and GetSerializedSize methods of <a class="el" href="classns3_1_1_wifi_information_element.html" title="Information element, as defined in 802.11-2007 standard.">WifiInformationElement</a>.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">start</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>an iterator </dd></dl>
-
 <p class="definition">Definition at line <a class="el" href="erp-information_8cc_source.html#l00087">87</a> of file <a class="el" href="erp-information_8cc_source.html">erp-information.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="erp-information_8h_source.html#l00134">m_erpSupported</a>, and <a class="el" href="wifi-information-element_8cc_source.html#l00047">ns3::WifiInformationElement::Serialize()</a>.</p>
+<p class="reference">References <a class="el" href="erp-information_8h_source.html#l00103">m_erpSupported</a>, and <a class="el" href="wifi-information-element_8cc_source.html#l00047">ns3::WifiInformationElement::Serialize()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mgt-headers_8cc_source.html#l01124">ns3::MgtAssocResponseHeader::Serialize()</a>, and <a class="el" href="mgt-headers_8cc_source.html#l00438">ns3::MgtProbeResponseHeader::Serialize()</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -677,7 +657,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_erp_information_a647ca63253a099f4e9a03ab14f6f347e_cgraph.png" border="0" usemap="#classns3_1_1_erp_information_a647ca63253a099f4e9a03ab14f6f347e_cgraph" alt=""/></div>
 <map name="classns3_1_1_erp_information_a647ca63253a099f4e9a03ab14f6f347e_cgraph" id="classns3_1_1_erp_information_a647ca63253a099f4e9a03ab14f6f347e_cgraph">
-<area shape="rect" title="This information element is a bit special in that it is only included if the STA is an ERP STA." alt="" coords="5,169,156,211"/>
+<area shape="rect" title=" " alt="" coords="5,169,156,211"/>
 <area shape="rect" href="classns3_1_1_wifi_information_element.html#a8662b6056d624747d927e9c041e24ab0" title="Serialize entire IE including Element ID and length fields." alt="" coords="204,169,413,211"/>
 <area shape="rect" href="classns3_1_1_wifi_information_element.html#a0c16b85dc0c63baf7fc437ddbc13ada6" title=" " alt="" coords="461,5,671,47"/>
 <area shape="rect" href="classns3_1_1_wifi_information_element.html#ae24bfd29837cfb426a44dadd56d72f4b" title=" " alt="" coords="461,71,671,112"/>
@@ -695,7 +675,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_erp_information_a647ca63253a099f4e9a03ab14f6f347e_icgraph.png" border="0" usemap="#classns3_1_1_erp_information_a647ca63253a099f4e9a03ab14f6f347e_icgraph" alt=""/></div>
 <map name="classns3_1_1_erp_information_a647ca63253a099f4e9a03ab14f6f347e_icgraph" id="classns3_1_1_erp_information_a647ca63253a099f4e9a03ab14f6f347e_icgraph">
-<area shape="rect" title="This information element is a bit special in that it is only included if the STA is an ERP STA." alt="" coords="280,39,431,80"/>
+<area shape="rect" title=" " alt="" coords="280,39,431,80"/>
 <area shape="rect" href="classns3_1_1_mgt_assoc_response_header.html#ac7eb0a62c467eb513d37dc095c896985" title=" " alt="" coords="5,5,232,47"/>
 <area shape="rect" href="classns3_1_1_mgt_probe_response_header.html#a1f83599e2f55616f48c23e5115749d93" title=" " alt="" coords="6,71,231,112"/>
 </map>
@@ -727,10 +707,10 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Serialize the information field. </p>
+<p>Serialize information (i.e., the body of the IE, not including the Element ID and length octets) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">start</td><td>the information element iterator </td></tr>
+    <tr><td class="paramname">start</td><td>an iterator which points to where the information should be written. </td></tr>
   </table>
   </dd>
 </dl>
@@ -739,7 +719,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="erp-information_8cc_source.html#l00107">107</a> of file <a class="el" href="erp-information_8cc_source.html">erp-information.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="erp-information_8h_source.html#l00131">m_erpInformation</a>, <a class="el" href="erp-information_8h_source.html#l00134">m_erpSupported</a>, and <a class="el" href="core_8py_source.html#l01855">visualizer.core::start()</a>.</p>
+<p class="reference">References <a class="el" href="erp-information_8h_source.html#l00100">m_erpInformation</a>, <a class="el" href="erp-information_8h_source.html#l00103">m_erpSupported</a>, and <a class="el" href="core_8py_source.html#l01855">visualizer.core::start()</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
@@ -747,7 +727,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_erp_information_a39ab4c2ac37195ac63a2596c0a2b58b4_cgraph.png" border="0" usemap="#classns3_1_1_erp_information_a39ab4c2ac37195ac63a2596c0a2b58b4_cgraph" alt=""/></div>
 <map name="classns3_1_1_erp_information_a39ab4c2ac37195ac63a2596c0a2b58b4_cgraph" id="classns3_1_1_erp_information_a39ab4c2ac37195ac63a2596c0a2b58b4_cgraph">
-<area shape="rect" title="Serialize the information field." alt="" coords="5,5,197,47"/>
+<area shape="rect" title="Serialize information (i.e., the body of the IE, not including the Element ID and length octets)" alt="" coords="5,5,197,47"/>
 <area shape="rect" href="namespacevisualizer_1_1core.html#a2a35e5d8a34af358b508dac8635754e0" title=" " alt="" coords="245,13,396,39"/>
 <area shape="rect" href="namespacevisualizer_1_1base.html#ad171497a5ff1afe0a73bedaebf35448f" title=" " alt="" coords="444,5,596,47"/>
 <area shape="rect" href="namespacevisualizer_1_1base.html#a6b0ffcff1e17ec4027496f50177e5b9e" title=" " alt="" coords="644,5,819,47"/>
@@ -782,7 +762,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="erp-information_8cc_source.html#l00044">44</a> of file <a class="el" href="erp-information_8cc_source.html">erp-information.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="erp-information_8h_source.html#l00131">m_erpInformation</a>.</p>
+<p class="reference">References <a class="el" href="erp-information_8h_source.html#l00100">m_erpInformation</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ap-wifi-mac_8cc_source.html#l00481">ns3::ApWifiMac::GetErpInformation()</a>.</p>
 <div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -832,7 +812,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="erp-information_8cc_source.html#l00038">38</a> of file <a class="el" href="erp-information_8cc_source.html">erp-information.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="erp-information_8h_source.html#l00134">m_erpSupported</a>.</p>
+<p class="reference">References <a class="el" href="erp-information_8h_source.html#l00103">m_erpSupported</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ap-wifi-mac_8cc_source.html#l00481">ns3::ApWifiMac::GetErpInformation()</a>.</p>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -882,7 +862,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="erp-information_8cc_source.html#l00056">56</a> of file <a class="el" href="erp-information_8cc_source.html">erp-information.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="erp-information_8h_source.html#l00131">m_erpInformation</a>.</p>
+<p class="reference">References <a class="el" href="erp-information_8h_source.html#l00100">m_erpInformation</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ap-wifi-mac_8cc_source.html#l00481">ns3::ApWifiMac::GetErpInformation()</a>.</p>
 <div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -932,7 +912,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="erp-information_8cc_source.html#l00050">50</a> of file <a class="el" href="erp-information_8cc_source.html">erp-information.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="erp-information_8h_source.html#l00131">m_erpInformation</a>.</p>
+<p class="reference">References <a class="el" href="erp-information_8h_source.html#l00100">m_erpInformation</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ap-wifi-mac_8cc_source.html#l00481">ns3::ApWifiMac::GetErpInformation()</a>.</p>
 <div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -979,7 +959,7 @@ Private Attributes</h2></td></tr>
 
 <p>ERP information. </p>
 
-<p class="definition">Definition at line <a class="el" href="erp-information_8h_source.html#l00131">131</a> of file <a class="el" href="erp-information_8h_source.html">erp-information.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="erp-information_8h_source.html#l00100">100</a> of file <a class="el" href="erp-information_8h_source.html">erp-information.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="erp-information_8cc_source.html#l00116">DeserializeInformationField()</a>, <a class="el" href="erp-information_8cc_source.html#l00062">GetBarkerPreambleMode()</a>, <a class="el" href="erp-information_8cc_source.html#l00074">GetNonErpPresent()</a>, <a class="el" href="erp-information_8cc_source.html#l00068">GetUseProtection()</a>, <a class="el" href="erp-information_8cc_source.html#l00107">SerializeInformationField()</a>, <a class="el" href="erp-information_8cc_source.html#l00044">SetBarkerPreambleMode()</a>, <a class="el" href="erp-information_8cc_source.html#l00056">SetNonErpPresent()</a>, and <a class="el" href="erp-information_8cc_source.html#l00050">SetUseProtection()</a>.</p>
 
@@ -1007,7 +987,7 @@ Private Attributes</h2></td></tr>
 
 <p>This is used to decide whether this element should be added to the frame or not. </p>
 
-<p class="definition">Definition at line <a class="el" href="erp-information_8h_source.html#l00134">134</a> of file <a class="el" href="erp-information_8h_source.html">erp-information.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="erp-information_8h_source.html#l00103">103</a> of file <a class="el" href="erp-information_8h_source.html">erp-information.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="erp-information_8cc_source.html#l00080">GetInformationFieldSize()</a>, <a class="el" href="erp-information_8cc_source.html#l00097">GetSerializedSize()</a>, <a class="el" href="erp-information_8cc_source.html#l00087">Serialize()</a>, <a class="el" href="erp-information_8cc_source.html#l00107">SerializeInformationField()</a>, and <a class="el" href="erp-information_8cc_source.html#l00038">SetErpSupported()</a>.</p>
 
@@ -1027,7 +1007,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_erp_information.html">ErpInformation</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:24 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:29 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

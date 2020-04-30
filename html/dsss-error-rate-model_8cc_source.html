@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -228,7 +225,7 @@ $(document).ready(function(){initNavTree('dsss-error-rate-model_8cc_source.html'
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="80211b_8c.html#ac6afabdc09a49a433ee19d8a9486056d">std::min</a> (1.0, std::pow (1.0 - sep, nbits / 4.0));</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="group__logging.html#gade7208b4009cdf0e25783cd26766f559">NS_LOG_WARN</a> (<span class="stringliteral">&quot;Running a 802.11b CCK Matlab model less accurate than GSL model&quot;</span>);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="comment">//The matlab model</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="comment">//The Matlab model</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">double</span> ber;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordflow">if</span> (sinr &gt; <a class="code" href="classns3_1_1_dsss_error_rate_model.html#a30cb6e7959e79909c2ca9ce7170e7fc1">WLAN_SIR_PERFECT</a>)</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    {</div>
@@ -240,7 +237,7 @@ $(document).ready(function(){initNavTree('dsss-error-rate-model_8cc_source.html'
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <span class="comment">//fitprops.coeff from matlab berfit</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <span class="comment">//fitprops.coeff from Matlab berfit</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <span class="keywordtype">double</span> a1 = 5.3681634344056195e-001;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <span class="keywordtype">double</span> a2 = 3.3092430025608586e-003;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      <span class="keywordtype">double</span> a3 = 4.1654372361004000e-001;</div>
@@ -263,7 +260,7 @@ $(document).ready(function(){initNavTree('dsss-error-rate-model_8cc_source.html'
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="80211b_8c.html#ac6afabdc09a49a433ee19d8a9486056d">std::min</a> (1.0, std::pow (1.0 - sep, nbits / 8.0));</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <a class="code" href="group__logging.html#gade7208b4009cdf0e25783cd26766f559">NS_LOG_WARN</a> (<span class="stringliteral">&quot;Running a 802.11b CCK Matlab model less accurate than GSL model&quot;</span>);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="comment">//The matlab model</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="comment">//The Matlab model</span></div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keywordtype">double</span> ber;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordflow">if</span> (sinr &gt; <a class="code" href="classns3_1_1_dsss_error_rate_model.html#a30cb6e7959e79909c2ca9ce7170e7fc1">WLAN_SIR_PERFECT</a>)</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    {</div>
@@ -275,7 +272,7 @@ $(document).ready(function(){initNavTree('dsss-error-rate-model_8cc_source.html'
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    {</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      <span class="comment">//fitprops.coeff from matlab berfit</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      <span class="comment">//fitprops.coeff from Matlab berfit</span></div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      <span class="keywordtype">double</span> a1 = 7.9056742265333456e-003;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      <span class="keywordtype">double</span> a2 = -1.8397449399176360e-001;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      <span class="keywordtype">double</span> a3 = 1.0740689468707241e+000;</div>
@@ -290,10 +287,10 @@ $(document).ready(function(){initNavTree('dsss-error-rate-model_8cc_source.html'
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#ifdef HAVE_GSL</span></div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keywordtype">double</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;IntegralFunction (<span class="keywordtype">double</span> <a class="code" href="namespacesample-rng-plot.html#a5b903688ba4a0e9d00ef4d0aa174b44f">x</a>, <span class="keywordtype">void</span> *params)</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;IntegralFunction (<span class="keywordtype">double</span> <a class="code" href="namespacesample-rng-plot.html#a5b903688ba4a0e9d00ef4d0aa174b44f">x</a>, <span class="keywordtype">void</span> *<a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>)</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;{</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keywordtype">double</span> beta = ((FunctionParameters *) params)-&gt;beta;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="namespacesample-rng-plot.html#aeb5ee5c431e338ef39b7ac5431242e1d">n</a> = ((FunctionParameters *) params)-&gt;n;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keywordtype">double</span> beta = ((FunctionParameters *) <a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>)-&gt;beta;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="namespacesample-rng-plot.html#aeb5ee5c431e338ef39b7ac5431242e1d">n</a> = ((FunctionParameters *) <a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>)-&gt;n;</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <span class="keywordtype">double</span> IntegralFunction = std::pow (2 * gsl_cdf_ugaussian_P (<a class="code" href="namespacesample-rng-plot.html#a5b903688ba4a0e9d00ef4d0aa174b44f">x</a> + beta) - 1, <a class="code" href="namespacesample-rng-plot.html#aeb5ee5c431e338ef39b7ac5431242e1d">n</a> - 1)</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    * std::exp (-<a class="code" href="namespacesample-rng-plot.html#a5b903688ba4a0e9d00ef4d0aa174b44f">x</a> * <a class="code" href="namespacesample-rng-plot.html#a5b903688ba4a0e9d00ef4d0aa174b44f">x</a> / 2.0) / std::sqrt (2.0 * M_PI);</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <span class="keywordflow">return</span> IntegralFunction;</div>
@@ -305,17 +302,17 @@ $(document).ready(function(){initNavTree('dsss-error-rate-model_8cc_source.html'
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <span class="keywordtype">double</span> sep;</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="keywordtype">double</span> error;</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  FunctionParameters params;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  params.beta = std::sqrt (2.0 * e2);</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  params.n = 8.0;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  FunctionParameters <a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>.beta = std::sqrt (2.0 * e2);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>.n = 8.0;</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  gsl_integration_workspace * w = gsl_integration_workspace_alloc (1000);</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  gsl_function F;</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  F.function = &amp;IntegralFunction;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  F.params = &amp;params;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  F.params = &amp;<a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>;</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  gsl_integration_qagiu (&amp;F,-params.beta, 0, 1e-7, 1000, w, &amp;sep, &amp;error);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  gsl_integration_qagiu (&amp;F,-<a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>.beta, 0, 1e-7, 1000, w, &amp;sep, &amp;error);</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  gsl_integration_workspace_free (w);</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="keywordflow">if</span> (error == 0.0)</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    {</div>
@@ -336,13 +333,14 @@ $(document).ready(function(){initNavTree('dsss-error-rate-model_8cc_source.html'
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="agroup__logging_html_ga225a95395fa117b7309aa3c43518d02e"><div class="ttname"><a href="group__logging.html#ga225a95395fa117b7309aa3c43518d02e">NS_LOG_COMPONENT_DEFINE</a></div><div class="ttdeci">#define NS_LOG_COMPONENT_DEFINE(name)</div><div class="ttdoc">Define a Log component with a specific name.</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00206">log.h:205</a></div></div>
+<div class="ttc" id="anamespacealoha_html_aff1381c591fdaf9d3af2b19080c9eed7"><div class="ttname"><a href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">aloha.params</a></div><div class="ttdeci">dictionary params</div><div class="ttdef"><b>Definition:</b> <a href="aloha_8py_source.html#l00013">aloha.py:13</a></div></div>
 <div class="ttc" id="aclassns3_1_1_dsss_error_rate_model_html_af92549280fdcedac6d4cc697e0992321"><div class="ttname"><a href="classns3_1_1_dsss_error_rate_model.html#af92549280fdcedac6d4cc697e0992321">ns3::DsssErrorRateModel::DqpskFunction</a></div><div class="ttdeci">static double DqpskFunction(double x)</div><div class="ttdoc">A function DQPSK.</div><div class="ttdef"><b>Definition:</b> <a href="dsss-error-rate-model_8cc_source.html#l00035">dsss-error-rate-model.cc:35</a></div></div>
 <div class="ttc" id="a80211b_8c_html_ac6afabdc09a49a433ee19d8a9486056d"><div class="ttname"><a href="80211b_8c.html#ac6afabdc09a49a433ee19d8a9486056d">min</a></div><div class="ttdeci">#define min(a, b)</div><div class="ttdef"><b>Definition:</b> <a href="80211b_8c_source.html#l00043">80211b.c:42</a></div></div>
 <div class="ttc" id="anamespacens3_html"><div class="ttname"><a href="namespacens3.html">ns3</a></div><div class="ttdoc">Every class exported by the ns3 library is enclosed in the ns3 namespace.</div></div>
-<div class="ttc" id="aclassns3_1_1_dsss_error_rate_model_html_ab2d065a2e6978215da5fc5a1c8d74a37"><div class="ttname"><a href="classns3_1_1_dsss_error_rate_model.html#ab2d065a2e6978215da5fc5a1c8d74a37">ns3::DsssErrorRateModel::WLAN_SIR_IMPOSSIBLE</a></div><div class="ttdeci">static const double WLAN_SIR_IMPOSSIBLE</div><div class="ttdoc">WLAN impossible.</div><div class="ttdef"><b>Definition:</b> <a href="dsss-error-rate-model_8h_source.html#l00125">dsss-error-rate-model.h:125</a></div></div>
+<div class="ttc" id="aclassns3_1_1_dsss_error_rate_model_html_ab2d065a2e6978215da5fc5a1c8d74a37"><div class="ttname"><a href="classns3_1_1_dsss_error_rate_model.html#ab2d065a2e6978215da5fc5a1c8d74a37">ns3::DsssErrorRateModel::WLAN_SIR_IMPOSSIBLE</a></div><div class="ttdeci">static const double WLAN_SIR_IMPOSSIBLE</div><div class="ttdoc">WLAN impossible.</div><div class="ttdef"><b>Definition:</b> <a href="dsss-error-rate-model_8h_source.html#l00136">dsss-error-rate-model.h:136</a></div></div>
 <div class="ttc" id="agroup__logging_html_gade7208b4009cdf0e25783cd26766f559"><div class="ttname"><a href="group__logging.html#gade7208b4009cdf0e25783cd26766f559">NS_LOG_WARN</a></div><div class="ttdeci">#define NS_LOG_WARN(msg)</div><div class="ttdoc">Use NS_LOG to output a message of level LOG_WARN.</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00266">log.h:265</a></div></div>
 <div class="ttc" id="adsss-error-rate-model_8h_html"><div class="ttname"><a href="dsss-error-rate-model_8h.html">dsss-error-rate-model.h</a></div></div>
-<div class="ttc" id="aclassns3_1_1_dsss_error_rate_model_html_a30cb6e7959e79909c2ca9ce7170e7fc1"><div class="ttname"><a href="classns3_1_1_dsss_error_rate_model.html#a30cb6e7959e79909c2ca9ce7170e7fc1">ns3::DsssErrorRateModel::WLAN_SIR_PERFECT</a></div><div class="ttdeci">static const double WLAN_SIR_PERFECT</div><div class="ttdoc">WLAN perfect.</div><div class="ttdef"><b>Definition:</b> <a href="dsss-error-rate-model_8h_source.html#l00123">dsss-error-rate-model.h:123</a></div></div>
+<div class="ttc" id="aclassns3_1_1_dsss_error_rate_model_html_a30cb6e7959e79909c2ca9ce7170e7fc1"><div class="ttname"><a href="classns3_1_1_dsss_error_rate_model.html#a30cb6e7959e79909c2ca9ce7170e7fc1">ns3::DsssErrorRateModel::WLAN_SIR_PERFECT</a></div><div class="ttdeci">static const double WLAN_SIR_PERFECT</div><div class="ttdoc">WLAN perfect.</div><div class="ttdef"><b>Definition:</b> <a href="dsss-error-rate-model_8h_source.html#l00134">dsss-error-rate-model.h:134</a></div></div>
 <div class="ttc" id="aclassns3_1_1_dsss_error_rate_model_html_a8d71469147201f9069a39d1c0fad856c"><div class="ttname"><a href="classns3_1_1_dsss_error_rate_model.html#a8d71469147201f9069a39d1c0fad856c">ns3::DsssErrorRateModel::GetDsssDqpskCck11SuccessRate</a></div><div class="ttdeci">static double GetDsssDqpskCck11SuccessRate(double sinr, uint64_t nbits)</div><div class="ttdoc">Return the chunk success rate of the differential encoded QPSK for 11Mbps data rate.</div><div class="ttdef"><b>Definition:</b> <a href="dsss-error-rate-model_8cc_source.html#l00095">dsss-error-rate-model.cc:95</a></div></div>
 <div class="ttc" id="aclassns3_1_1_dsss_error_rate_model_html_a407fb0112d1c50944dc4f11aaef47441"><div class="ttname"><a href="classns3_1_1_dsss_error_rate_model.html#a407fb0112d1c50944dc4f11aaef47441">ns3::DsssErrorRateModel::GetDsssDqpskCck5_5SuccessRate</a></div><div class="ttdeci">static double GetDsssDqpskCck5_5SuccessRate(double sinr, uint64_t nbits)</div><div class="ttdoc">Return the chunk success rate of the differential encoded QPSK for 5.5Mbps data rate.</div><div class="ttdef"><b>Definition:</b> <a href="dsss-error-rate-model_8cc_source.html#l00061">dsss-error-rate-model.cc:61</a></div></div>
 <div class="ttc" id="agroup__logging_html_ga8f7e4afc291c9d29a65c18ac1f79197b"><div class="ttname"><a href="group__logging.html#ga8f7e4afc291c9d29a65c18ac1f79197b">NS_LOG_FUNCTION_NOARGS</a></div><div class="ttdeci">#define NS_LOG_FUNCTION_NOARGS()</div><div class="ttdef"><b>Definition:</b> <a href="log-macros-enabled_8h_source.html#l00175">log-macros-enabled.h:174</a></div></div>
@@ -359,7 +357,7 @@ $(document).ready(function(){initNavTree('dsss-error-rate-model_8cc_source.html'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_9bb89822448514d94fe3e213d3ac83be.html">wifi</a></li><li class="navelem"><a class="el" href="dir_a444d77082d8b776da6eccf888b54154.html">model</a></li><li class="navelem"><a class="el" href="dsss-error-rate-model_8cc.html">dsss-error-rate-model.cc</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:07 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:14 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

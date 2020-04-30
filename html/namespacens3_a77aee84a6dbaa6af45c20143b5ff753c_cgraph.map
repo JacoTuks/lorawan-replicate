@@ -1,5 +1,5 @@
 <map id="ns3::AsciiPhyReceiveSinkWithoutContext" name="ns3::AsciiPhyReceiveSinkWithoutContext">
-<area shape="rect" id="node1" title="ASCII trace Phy receive sink without context." alt="" coords="5,333,193,374"/>
+<area shape="rect" id="node1" title="ASCII trace PHY receive sink without context." alt="" coords="5,333,193,374"/>
 <area shape="rect" id="node2" href="$classns3_1_1_time.html#a27cb7c22324e0447740929b024dbeb66" title="Get an approximation of the time stored in this instance in the indicated unit." alt="" coords="255,176,426,203"/>
 <area shape="rect" id="node11" href="$classns3_1_1_output_stream_wrapper.html#a0cf30a4188ab6fdae2b2ab74db11acc2" title="Return a pointer to an ostream previously set in the wrapper." alt="" coords="241,391,440,433"/>
 <area shape="rect" id="node12" href="$classns3_1_1_simulator.html#ac3178fa975b419f7875e7105be122800" title="Return the current simulation virtual time." alt="" coords="264,340,417,367"/>

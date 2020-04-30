@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -394,7 +391,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The Weibull distribution Random Number Generator (RNG) that allows stream numbers to be set deterministically. </p>
 <p>This class supports the creation of objects that return random numbers from a fixed Weibull distribution. It also supports the generation of single random numbers from various Weibull distributions.</p>
-<p>The probability density function is defined over the interval [0, <img class="formulaInl" alt="$+\infty$" src="form_21.png" width="0" height="10"/>] as: <img class="formulaInl" alt="$ \frac{k}{\lambda}\left(\frac{x}{\lambda}\right)^{k-1}e^{-\left(\frac{x}{\lambda}\right)^k} $" src="form_27.png" width="0" height="21"/> where <img class="formulaInl" alt="$ k &gt; 0$" src="form_24.png" width="0" height="11"/> is the shape parameter and <img class="formulaInl" alt="$ \lambda &gt; 0$" src="form_28.png" width="0" height="11"/> is the scale parameter. The specified mean is related to the scale and shape parameters by the following relation: <img class="formulaInl" alt="$ mean = \lambda\Gamma\left(1+\frac{1}{k}\right) $" src="form_29.png" width="0" height="16"/> where <img class="formulaInl" alt="$ \Gamma $" src="form_30.png" width="0" height="9"/> is the Gamma function.</p>
+<p>The probability density function is defined over the interval [0, <img class="formulaInl" alt="$+\infty$" src="form_21.png" width="21" height="10"/>] as: <img class="formulaInl" alt="$ \frac{k}{\lambda}\left(\frac{x}{\lambda}\right)^{k-1}e^{-\left(\frac{x}{\lambda}\right)^k} $" src="form_27.png" width="88" height="21"/> where <img class="formulaInl" alt="$ k &gt; 0$" src="form_24.png" width="30" height="11"/> is the shape parameter and <img class="formulaInl" alt="$ \lambda &gt; 0$" src="form_28.png" width="30" height="11"/> is the scale parameter. The specified mean is related to the scale and shape parameters by the following relation: <img class="formulaInl" alt="$ mean = \lambda\Gamma\left(1+\frac{1}{k}\right) $" src="form_29.png" width="105" height="16"/> where <img class="formulaInl" alt="$ \Gamma $" src="form_30.png" width="9" height="9"/> is the Gamma function.</p>
 <p>Since Weibull distributions can theoretically return unbounded values, it is sometimes useful to specify a fixed upper limit. Note however when the upper limit is specified, the true mean of the distribution is slightly smaller than the mean value specified.</p>
 <p>Here is an example of how to use this class: </p><div class="fragment"><div class="line"><span class="keywordtype">double</span> scale = 5.0;</div>
 <div class="line"><span class="keywordtype">double</span> shape = 1.0;</div>
@@ -520,15 +517,15 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A random unsigned integer value.</dd></dl>
-<p>Note that antithetic values are being generated if m_isAntithetic is equal to true. If <img class="formulaInl" alt="$u$" src="form_13.png" width="0" height="6"/> is a uniform variable over [0,1] and</p>
+<p>Note that antithetic values are being generated if m_isAntithetic is equal to true. If <img class="formulaInl" alt="$u$" src="form_13.png" width="9" height="6"/> is a uniform variable over [0,1] and</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ x = scale * {(-\log(u))}^{\frac{1}{shape}} \]" src="form_62.png" width="0" height="19"/>
+<img class="formulaDsp" alt="\[ x = scale * {(-\log(u))}^{\frac{1}{shape}} \]" src="form_62.png" width="143" height="19"/>
 </p>
-<p>is a value that would be returned normally, then <img class="formulaInl" alt="$(1 - u$" src="form_63.png" width="0" height="14"/>) is the distance that <img class="formulaInl" alt="$u$" src="form_13.png" width="0" height="6"/> would be from <img class="formulaInl" alt="$1$" src="form_64.png" width="0" height="9"/>. The value returned in the antithetic case, <img class="formulaInl" alt="$x'$" src="form_59.png" width="0" height="10"/>, is calculated as</p>
+<p>is a value that would be returned normally, then <img class="formulaInl" alt="$(1 - u$" src="form_63.png" width="34" height="14"/>) is the distance that <img class="formulaInl" alt="$u$" src="form_13.png" width="9" height="6"/> would be from <img class="formulaInl" alt="$1$" src="form_64.png" width="5" height="9"/>. The value returned in the antithetic case, <img class="formulaInl" alt="$x'$" src="form_59.png" width="11" height="10"/>, is calculated as</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ x' = scale * {(-\log(1 - u))}^{\frac{1}{shape}} , \]" src="form_65.png" width="0" height="19"/>
+<img class="formulaDsp" alt="\[ x' = scale * {(-\log(1 - u))}^{\frac{1}{shape}} , \]" src="form_65.png" width="173" height="19"/>
 </p>
-<p>which now involves the log of the distance <img class="formulaInl" alt="$u$" src="form_13.png" width="0" height="6"/> is from 1. </p>
+<p>which now involves the log of the distance <img class="formulaInl" alt="$u$" src="form_13.png" width="9" height="6"/> is from 1. </p>
 
 <p class="definition">Definition at line <a class="el" href="random-variable-stream_8cc_source.html#l00642">642</a> of file <a class="el" href="random-variable-stream_8cc_source.html">random-variable-stream.cc</a>.</p>
 
@@ -573,15 +570,15 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns a random unsigned integer from a Weibull distribution with the current scale, shape, and upper bound. </p>
 <dl class="section return"><dt>Returns</dt><dd>A random unsigned integer value.</dd></dl>
-<p>Note that antithetic values are being generated if m_isAntithetic is equal to true. If <img class="formulaInl" alt="$u$" src="form_13.png" width="0" height="6"/> is a uniform variable over [0,1] and</p>
+<p>Note that antithetic values are being generated if m_isAntithetic is equal to true. If <img class="formulaInl" alt="$u$" src="form_13.png" width="9" height="6"/> is a uniform variable over [0,1] and</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ x = scale * {(-\log(u))}^{\frac{1}{shape}} \]" src="form_62.png" width="0" height="19"/>
+<img class="formulaDsp" alt="\[ x = scale * {(-\log(u))}^{\frac{1}{shape}} \]" src="form_62.png" width="143" height="19"/>
 </p>
-<p>is a value that would be returned normally, then <img class="formulaInl" alt="$(1 - u$" src="form_63.png" width="0" height="14"/>) is the distance that <img class="formulaInl" alt="$u$" src="form_13.png" width="0" height="6"/> would be from <img class="formulaInl" alt="$1$" src="form_64.png" width="0" height="9"/>. The value returned in the antithetic case, <img class="formulaInl" alt="$x'$" src="form_59.png" width="0" height="10"/>, is calculated as</p>
+<p>is a value that would be returned normally, then <img class="formulaInl" alt="$(1 - u$" src="form_63.png" width="34" height="14"/>) is the distance that <img class="formulaInl" alt="$u$" src="form_13.png" width="9" height="6"/> would be from <img class="formulaInl" alt="$1$" src="form_64.png" width="5" height="9"/>. The value returned in the antithetic case, <img class="formulaInl" alt="$x'$" src="form_59.png" width="11" height="10"/>, is calculated as</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ x' = scale * {(-\log(1 - u))}^{\frac{1}{shape}} , \]" src="form_65.png" width="0" height="19"/>
+<img class="formulaDsp" alt="\[ x' = scale * {(-\log(1 - u))}^{\frac{1}{shape}} , \]" src="form_65.png" width="173" height="19"/>
 </p>
-<p>which now involves the log of the distance <img class="formulaInl" alt="$u$" src="form_13.png" width="0" height="6"/> is from 1. </p>
+<p>which now involves the log of the distance <img class="formulaInl" alt="$u$" src="form_13.png" width="9" height="6"/> is from 1. </p>
 
 <p>Implements <a class="el" href="classns3_1_1_random_variable_stream.html#a66cd94e6305ce7f000f1a9ff0fcb9aef">ns3::RandomVariableStream</a>.</p>
 
@@ -681,7 +678,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="random-variable-stream_8cc_source.html#l00570">570</a> of file <a class="el" href="random-variable-stream_8cc_source.html">random-variable-stream.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="random-variable-stream_8h_source.html#l01012">m_bound</a>, <a class="el" href="random-variable-stream_8h_source.html#l01006">m_scale</a>, <a class="el" href="random-variable-stream_8h_source.html#l01009">m_shape</a>, <a class="el" href="double_8h_source.html#l00042">ns3::MakeDoubleAccessor()</a>, and <a class="el" href="type-id_8cc_source.html#l00922">ns3::TypeId::SetParent()</a>.</p>
+<p class="reference">References <a class="el" href="random-variable-stream_8h_source.html#l01012">m_bound</a>, <a class="el" href="random-variable-stream_8h_source.html#l01006">m_scale</a>, <a class="el" href="random-variable-stream_8h_source.html#l01009">m_shape</a>, <a class="el" href="double_8h_source.html#l00042">ns3::MakeDoubleAccessor()</a>, and <a class="el" href="type-id_8cc_source.html#l00923">ns3::TypeId::SetParent()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -742,15 +739,15 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A floating point random value.</dd></dl>
-<p>Note that antithetic values are being generated if m_isAntithetic is equal to true. If <img class="formulaInl" alt="$u$" src="form_13.png" width="0" height="6"/> is a uniform variable over [0,1] and</p>
+<p>Note that antithetic values are being generated if m_isAntithetic is equal to true. If <img class="formulaInl" alt="$u$" src="form_13.png" width="9" height="6"/> is a uniform variable over [0,1] and</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ x = scale * {(-\log(u))}^{\frac{1}{shape}} \]" src="form_62.png" width="0" height="19"/>
+<img class="formulaDsp" alt="\[ x = scale * {(-\log(u))}^{\frac{1}{shape}} \]" src="form_62.png" width="143" height="19"/>
 </p>
-<p>is a value that would be returned normally, then <img class="formulaInl" alt="$(1 - u$" src="form_63.png" width="0" height="14"/>) is the distance that <img class="formulaInl" alt="$u$" src="form_13.png" width="0" height="6"/> would be from <img class="formulaInl" alt="$1$" src="form_64.png" width="0" height="9"/>. The value returned in the antithetic case, <img class="formulaInl" alt="$x'$" src="form_59.png" width="0" height="10"/>, is calculated as</p>
+<p>is a value that would be returned normally, then <img class="formulaInl" alt="$(1 - u$" src="form_63.png" width="34" height="14"/>) is the distance that <img class="formulaInl" alt="$u$" src="form_13.png" width="9" height="6"/> would be from <img class="formulaInl" alt="$1$" src="form_64.png" width="5" height="9"/>. The value returned in the antithetic case, <img class="formulaInl" alt="$x'$" src="form_59.png" width="11" height="10"/>, is calculated as</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ x' = scale * {(-\log(1 - u))}^{\frac{1}{shape}} , \]" src="form_65.png" width="0" height="19"/>
+<img class="formulaDsp" alt="\[ x' = scale * {(-\log(1 - u))}^{\frac{1}{shape}} , \]" src="form_65.png" width="173" height="19"/>
 </p>
-<p>which now involves the log of the distance <img class="formulaInl" alt="$u$" src="form_13.png" width="0" height="6"/> is from 1. </p>
+<p>which now involves the log of the distance <img class="formulaInl" alt="$u$" src="form_13.png" width="9" height="6"/> is from 1. </p>
 
 <p class="definition">Definition at line <a class="el" href="random-variable-stream_8cc_source.html#l00618">618</a> of file <a class="el" href="random-variable-stream_8cc_source.html">random-variable-stream.cc</a>.</p>
 
@@ -813,15 +810,15 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns a random double from a Weibull distribution with the current scale, shape, and upper bound. </p>
 <dl class="section return"><dt>Returns</dt><dd>A floating point random value.</dd></dl>
-<p>Note that antithetic values are being generated if m_isAntithetic is equal to true. If <img class="formulaInl" alt="$u$" src="form_13.png" width="0" height="6"/> is a uniform variable over [0,1] and</p>
+<p>Note that antithetic values are being generated if m_isAntithetic is equal to true. If <img class="formulaInl" alt="$u$" src="form_13.png" width="9" height="6"/> is a uniform variable over [0,1] and</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ x = scale * {(-\log(u))}^{\frac{1}{shape}} \]" src="form_62.png" width="0" height="19"/>
+<img class="formulaDsp" alt="\[ x = scale * {(-\log(u))}^{\frac{1}{shape}} \]" src="form_62.png" width="143" height="19"/>
 </p>
-<p>is a value that would be returned normally, then <img class="formulaInl" alt="$(1 - u$" src="form_63.png" width="0" height="14"/>) is the distance that <img class="formulaInl" alt="$u$" src="form_13.png" width="0" height="6"/> would be from <img class="formulaInl" alt="$1$" src="form_64.png" width="0" height="9"/>. The value returned in the antithetic case, <img class="formulaInl" alt="$x'$" src="form_59.png" width="0" height="10"/>, is calculated as</p>
+<p>is a value that would be returned normally, then <img class="formulaInl" alt="$(1 - u$" src="form_63.png" width="34" height="14"/>) is the distance that <img class="formulaInl" alt="$u$" src="form_13.png" width="9" height="6"/> would be from <img class="formulaInl" alt="$1$" src="form_64.png" width="5" height="9"/>. The value returned in the antithetic case, <img class="formulaInl" alt="$x'$" src="form_59.png" width="11" height="10"/>, is calculated as</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ x' = scale * {(-\log(1 - u))}^{\frac{1}{shape}} , \]" src="form_65.png" width="0" height="19"/>
+<img class="formulaDsp" alt="\[ x' = scale * {(-\log(1 - u))}^{\frac{1}{shape}} , \]" src="form_65.png" width="173" height="19"/>
 </p>
-<p>which now involves the log of the distance <img class="formulaInl" alt="$u$" src="form_13.png" width="0" height="6"/> is from 1.</p>
+<p>which now involves the log of the distance <img class="formulaInl" alt="$u$" src="form_13.png" width="9" height="6"/> is from 1.</p>
 <p>Note that we have to re-implement this method here because the method is overloaded above for the three-argument variant and the c++ name resolution rules don't work well with overloads split between parent and child classes. </p>
 
 <p>Implements <a class="el" href="classns3_1_1_random_variable_stream.html#a4fa5944dc4cb11544e661ed23072b36c">ns3::RandomVariableStream</a>.</p>
@@ -945,7 +942,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_weibull_random_variable.html">WeibullRandomVariable</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:45 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:47 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

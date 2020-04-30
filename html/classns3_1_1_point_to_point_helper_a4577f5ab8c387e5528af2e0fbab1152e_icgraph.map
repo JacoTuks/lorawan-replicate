@@ -1,6 +1,6 @@
 <map id="ns3::PointToPointHelper::SetDeviceAttribute" name="ns3::PointToPointHelper::SetDeviceAttribute">
 <area shape="rect" id="node1" title="Set an attribute value to be propagated to each NetDevice created by the helper." alt="" coords="760,913,936,955"/>
-<area shape="rect" id="node2" href="$classns3_1_1_network_server_helper.html#af4ddb0296a0a7c2da241604ff8ccdf79" title=" " alt="" coords="505,5,699,47"/>
+<area shape="rect" id="node2" href="$classns3_1_1lorawan_1_1_network_server_helper.html#adca0866178c044c2f0f74d369a468621" title=" " alt="" coords="495,5,709,47"/>
 <area shape="rect" id="node3" href="$classns3_1_1_no_backhaul_epc_helper.html#a8822666431eefe3a78ba2a0bf4ca1bae" title="Constructor." alt="" coords="503,71,701,112"/>
 <area shape="rect" id="node4" href="$classns3_1_1_point_to_point_epc_helper.html#a6636cc9c0501b719bd81ed13efd3c589" title="Add an eNB to the EPC." alt="" coords="503,188,701,229"/>
 <area shape="rect" id="node5" href="$class_epc_s1u_dl_test_case.html#a2ac9313672e6c5e2a5a33f98a77ffec2" title="Implementation to actually run this TestCase." alt="" coords="251,166,443,193"/>

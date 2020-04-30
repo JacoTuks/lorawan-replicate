@@ -27,7 +27,7 @@
 <area shape="rect" id="node41" href="$classns3_1_1_wifi_remote_station_manager.html#a77a584441267f8d0ecc1d048606bcab1" title="Return whether the station associated." alt="" coords="261,981,495,1023"/>
 <area shape="rect" id="node42" href="$classns3_1_1_wifi_remote_station_manager.html#a30badbd2880707a2f4a25ee45f464045" title="Return whether the station state is brand new." alt="" coords="261,136,495,177"/>
 <area shape="rect" id="node43" href="$classns3_1_1_wifi_remote_station_manager.html#af9131818f8f0cbb26fdce64cf7a0972b" title="Return whether we are waiting for an ACK for the association response we sent." alt="" coords="557,1901,790,1943"/>
-<area shape="rect" id="node44" href="$classns3_1_1_wifi_remote_station_manager.html#a144c73228215aec46edcb2db2b545abf" title="Return the station associated with the given address and TID." alt="" coords="557,1967,790,2008"/>
+<area shape="rect" id="node44" href="$classns3_1_1_wifi_remote_station_manager.html#a230ec2422481af84c0e2a8dcc1ccb630" title="Return the station associated with the given address." alt="" coords="557,1967,790,2008"/>
 <area shape="rect" id="node45" href="$classns3_1_1_wifi_remote_station_manager.html#abcb92c63342aed2603c1dfb131e0fe8a" title="Records that the STA was disassociated." alt="" coords="261,201,495,243"/>
 <area shape="rect" id="node46" href="$classns3_1_1_wifi_remote_station_manager.html#ae84c9b8961758783f13640e2300aab83" title="Records that we missed an ACK for the association response we sent." alt="" coords="557,2032,790,2073"/>
 <area shape="rect" id="node47" href="$classns3_1_1_wifi_remote_station_manager.html#a8c61f2f22d687bcb7eff7c5342906005" title="Records that we got an ACK for the association response we sent." alt="" coords="557,2097,790,2139"/>

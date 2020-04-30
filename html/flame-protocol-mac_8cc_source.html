@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -205,14 +202,14 @@ $(document).ready(function(){initNavTree('flame-protocol-mac_8cc_source.html',''
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keywordtype">bool</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classns3_1_1flame_1_1_flame_protocol_mac.html#acbb5e05076cc472cdd9dbb57eda73091">   48</a></span>&#160;<a class="code" href="classns3_1_1flame_1_1_flame_protocol_mac.html#acbb5e05076cc472cdd9dbb57eda73091">FlameProtocolMac::Receive</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Packet&gt;</a> <a class="code" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>, <span class="keyword">const</span> <a class="code" href="classns3_1_1_wifi_mac_header.html">WifiMacHeader</a> &amp; header)</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classns3_1_1flame_1_1_flame_protocol_mac.html#acbb5e05076cc472cdd9dbb57eda73091">   48</a></span>&#160;<a class="code" href="classns3_1_1flame_1_1_flame_protocol_mac.html#acbb5e05076cc472cdd9dbb57eda73091">FlameProtocolMac::Receive</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Packet&gt;</a> packet, <span class="keyword">const</span> <a class="code" href="classns3_1_1_wifi_mac_header.html">WifiMacHeader</a> &amp; header)</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordflow">if</span> (!header.<a class="code" href="classns3_1_1_wifi_mac_header.html#ab7141548a921f63a084720b3b022de79">IsData</a> ())</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="classns3_1_1flame_1_1_flame_tag.html">FlameTag</a> tag;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>-&gt;<a class="code" href="classns3_1_1_packet.html#aec5a71b498e6cd5816de9f5e9b36c397">PeekPacketTag</a> (tag))</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordflow">if</span> (packet-&gt;<a class="code" href="classns3_1_1_packet.html#aec5a71b498e6cd5816de9f5e9b36c397">PeekPacketTag</a> (tag))</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <a class="code" href="group__fatal.html#ga5131d5e3f75d7d4cbfd706ac456fdc85">NS_FATAL_ERROR</a> (<span class="stringliteral">&quot;FLAME tag is not supposed to be received by network&quot;</span>);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
@@ -226,12 +223,12 @@ $(document).ready(function(){initNavTree('flame-protocol-mac_8cc_source.html',''
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    {</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <a class="code" href="classns3_1_1flame_1_1_flame_protocol_mac.html#a57bb890f13b6f1733587ce706368c037">m_stats</a>.<a class="code" href="structns3_1_1flame_1_1_flame_protocol_mac_1_1_statistics.html#a6de469d2dffb7dad53e67a0d5e4c7c3d">rxUnicast</a>++;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="classns3_1_1flame_1_1_flame_protocol_mac.html#a57bb890f13b6f1733587ce706368c037">m_stats</a>.<a class="code" href="structns3_1_1flame_1_1_flame_protocol_mac_1_1_statistics.html#a519e7e2a79a3b16700f633672c97ff76">rxBytes</a> += <a class="code" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>-&gt;<a class="code" href="classns3_1_1_packet.html#afff7cb1ff518ee6dc0d424e10a5ad6ec">GetSize</a> ();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>-&gt;<a class="code" href="classns3_1_1_packet.html#ac4a6bcd77e58bdc14c42a7d572d66cc9">AddPacketTag</a> (tag);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="classns3_1_1flame_1_1_flame_protocol_mac.html#a57bb890f13b6f1733587ce706368c037">m_stats</a>.<a class="code" href="structns3_1_1flame_1_1_flame_protocol_mac_1_1_statistics.html#a519e7e2a79a3b16700f633672c97ff76">rxBytes</a> += packet-&gt;<a class="code" href="classns3_1_1_packet.html#afff7cb1ff518ee6dc0d424e10a5ad6ec">GetSize</a> ();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  packet-&gt;<a class="code" href="classns3_1_1_packet.html#ac4a6bcd77e58bdc14c42a7d572d66cc9">AddPacketTag</a> (tag);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keywordtype">bool</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classns3_1_1flame_1_1_flame_protocol_mac.html#a2f27306682cf1ea601d7fd9a37d8b875">   74</a></span>&#160;<a class="code" href="classns3_1_1flame_1_1_flame_protocol_mac.html#a2f27306682cf1ea601d7fd9a37d8b875">FlameProtocolMac::UpdateOutcomingFrame</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Packet&gt;</a> <a class="code" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>, <a class="code" href="classns3_1_1_wifi_mac_header.html">WifiMacHeader</a> &amp; header, <a class="code" href="classns3_1_1_mac48_address.html">Mac48Address</a> from,</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classns3_1_1flame_1_1_flame_protocol_mac.html#a2f27306682cf1ea601d7fd9a37d8b875">   74</a></span>&#160;<a class="code" href="classns3_1_1flame_1_1_flame_protocol_mac.html#a2f27306682cf1ea601d7fd9a37d8b875">FlameProtocolMac::UpdateOutcomingFrame</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Packet&gt;</a> packet, <a class="code" href="classns3_1_1_wifi_mac_header.html">WifiMacHeader</a> &amp; header, <a class="code" href="classns3_1_1_mac48_address.html">Mac48Address</a> from,</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                        <a class="code" href="classns3_1_1_mac48_address.html">Mac48Address</a> to)</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordflow">if</span> (!header.<a class="code" href="classns3_1_1_wifi_mac_header.html#ab7141548a921f63a084720b3b022de79">IsData</a> ())</div>
@@ -239,7 +236,7 @@ $(document).ready(function(){initNavTree('flame-protocol-mac_8cc_source.html',''
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <a class="code" href="classns3_1_1flame_1_1_flame_tag.html">FlameTag</a> tag;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>-&gt;<a class="code" href="classns3_1_1_packet.html#a078fe922d976a417ab25ba2f3c2fd667">RemovePacketTag</a> (tag))</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordflow">if</span> (!packet-&gt;<a class="code" href="classns3_1_1_packet.html#a078fe922d976a417ab25ba2f3c2fd667">RemovePacketTag</a> (tag))</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    {</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <a class="code" href="group__fatal.html#ga5131d5e3f75d7d4cbfd706ac456fdc85">NS_FATAL_ERROR</a> (<span class="stringliteral">&quot;FLAME tag must exist here&quot;</span>);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
@@ -252,7 +249,7 @@ $(document).ready(function(){initNavTree('flame-protocol-mac_8cc_source.html',''
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    {</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      <a class="code" href="classns3_1_1flame_1_1_flame_protocol_mac.html#a57bb890f13b6f1733587ce706368c037">m_stats</a>.<a class="code" href="structns3_1_1flame_1_1_flame_protocol_mac_1_1_statistics.html#a536fc0b2aeb6ac3d81221a6ed9ca07e2">txUnicast</a>++;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="classns3_1_1flame_1_1_flame_protocol_mac.html#a57bb890f13b6f1733587ce706368c037">m_stats</a>.<a class="code" href="structns3_1_1flame_1_1_flame_protocol_mac_1_1_statistics.html#a66c4802b2e3e3f367de9b842e36d9536">txBytes</a> += <a class="code" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>-&gt;<a class="code" href="classns3_1_1_packet.html#afff7cb1ff518ee6dc0d424e10a5ad6ec">GetSize</a> ();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="classns3_1_1flame_1_1_flame_protocol_mac.html#a57bb890f13b6f1733587ce706368c037">m_stats</a>.<a class="code" href="structns3_1_1flame_1_1_flame_protocol_mac_1_1_statistics.html#a66c4802b2e3e3f367de9b842e36d9536">txBytes</a> += packet-&gt;<a class="code" href="classns3_1_1_packet.html#afff7cb1ff518ee6dc0d424e10a5ad6ec">GetSize</a> ();</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;uint16_t</div>
@@ -303,7 +300,6 @@ $(document).ready(function(){initNavTree('flame-protocol-mac_8cc_source.html',''
 <div class="ttc" id="aclassns3_1_1flame_1_1_flame_protocol_mac_html_acbb5e05076cc472cdd9dbb57eda73091"><div class="ttname"><a href="classns3_1_1flame_1_1_flame_protocol_mac.html#acbb5e05076cc472cdd9dbb57eda73091">ns3::flame::FlameProtocolMac::Receive</a></div><div class="ttdeci">bool Receive(Ptr&lt; Packet &gt; packet, const WifiMacHeader &amp;header)</div><div class="ttdoc">Receive and process a packet; packets are given a FlameTag packet tag.</div><div class="ttdef"><b>Definition:</b> <a href="flame-protocol-mac_8cc_source.html#l00048">flame-protocol-mac.cc:48</a></div></div>
 <div class="ttc" id="aclassns3_1_1_packet_html_afff7cb1ff518ee6dc0d424e10a5ad6ec"><div class="ttname"><a href="classns3_1_1_packet.html#afff7cb1ff518ee6dc0d424e10a5ad6ec">ns3::Packet::GetSize</a></div><div class="ttdeci">uint32_t GetSize(void) const</div><div class="ttdoc">Returns the the size in bytes of the packet (including the zero-filled initial payload).</div><div class="ttdef"><b>Definition:</b> <a href="packet_8h_source.html#l00854">packet.h:854</a></div></div>
 <div class="ttc" id="anamespacens3_html"><div class="ttname"><a href="namespacens3.html">ns3</a></div><div class="ttdoc">Every class exported by the ns3 library is enclosed in the ns3 namespace.</div></div>
-<div class="ttc" id="alora-mac-test_8cc_html_a084e879e2a4e6b1e078575d3693a0c3a"><div class="ttname"><a href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a></div><div class="ttdeci">Ptr&lt; Packet &gt; packet</div><div class="ttdef"><b>Definition:</b> <a href="lora-mac-test_8cc_source.html#l00021">lora-mac-test.cc:21</a></div></div>
 <div class="ttc" id="aclassns3_1_1_mac48_address_html"><div class="ttname"><a href="classns3_1_1_mac48_address.html">ns3::Mac48Address</a></div><div class="ttdoc">an EUI-48 address</div><div class="ttdef"><b>Definition:</b> <a href="mac48-address_8h_source.html#l00043">mac48-address.h:44</a></div></div>
 <div class="ttc" id="astructns3_1_1flame_1_1_flame_protocol_mac_1_1_statistics_html"><div class="ttname"><a href="structns3_1_1flame_1_1_flame_protocol_mac_1_1_statistics.html">ns3::flame::FlameProtocolMac::Statistics</a></div><div class="ttdoc">Statistics structure.</div><div class="ttdef"><b>Definition:</b> <a href="flame-protocol-mac_8h_source.html#l00099">flame-protocol-mac.h:100</a></div></div>
 <div class="ttc" id="aclassns3_1_1_wifi_mac_header_html_aa1c4acbda4ace9f7a920c97d71bdd097"><div class="ttname"><a href="classns3_1_1_wifi_mac_header.html#aa1c4acbda4ace9f7a920c97d71bdd097">ns3::WifiMacHeader::GetAddr1</a></div><div class="ttdeci">Mac48Address GetAddr1(void) const</div><div class="ttdoc">Return the address in the Address 1 field.</div><div class="ttdef"><b>Definition:</b> <a href="wifi-mac-header_8cc_source.html#l00395">wifi-mac-header.cc:395</a></div></div>
@@ -344,7 +340,7 @@ $(document).ready(function(){initNavTree('flame-protocol-mac_8cc_source.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_7be0d8c199b9408ae01f5d77515b8def.html">mesh</a></li><li class="navelem"><a class="el" href="dir_e2c42637d2a532f1364e489f41cce52f.html">model</a></li><li class="navelem"><a class="el" href="dir_3ab602cfa0d5426fc0839d27824b262b.html">flame</a></li><li class="navelem"><a class="el" href="flame-protocol-mac_8cc.html">flame-protocol-mac.cc</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:02 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:09 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

@@ -10,7 +10,7 @@ var classns3_1_1_ampdu_tag =
     [ "Print", "classns3_1_1_ampdu_tag.html#a79a7f8fc7ba759d127432f17ca48288a", null ],
     [ "Serialize", "classns3_1_1_ampdu_tag.html#af6655cea5fad94b3564af20a0c025723", null ],
     [ "SetRemainingAmpduDuration", "classns3_1_1_ampdu_tag.html#a9b907f46acd800c833aba6f13c6db846", null ],
-    [ "SetRemainingNbOfMpdus", "classns3_1_1_ampdu_tag.html#ae1d886252977069594b65dc7467c9367", null ],
+    [ "SetRemainingNbOfMpdus", "classns3_1_1_ampdu_tag.html#a252f2bb20c427eacc8ed4b65ca342120", null ],
     [ "m_duration", "classns3_1_1_ampdu_tag.html#a35ee6675183604c7b5dda5579ced3b13", null ],
     [ "m_nbOfMpdus", "classns3_1_1_ampdu_tag.html#af7d038a557bd07ea38664700b14ccffb", null ]
 ];

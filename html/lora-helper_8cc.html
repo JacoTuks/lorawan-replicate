@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -162,6 +159,7 @@ $(document).ready(function(){initNavTree('lora-helper_8cc.html',''); initResizab
 <div class="contents">
 <div class="textblock"><code>#include &quot;ns3/lora-helper.h&quot;</code><br />
 <code>#include &quot;ns3/log.h&quot;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for lora-helper.cc:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -169,9 +167,10 @@ $(document).ready(function(){initNavTree('lora-helper_8cc.html',''); initResizab
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="lora-helper_8cc__incl.png" border="0" usemap="#src_2lorawan_2helper_2lora-helper_8cc" alt=""/></div>
 <map name="src_2lorawan_2helper_2lora-helper_8cc" id="src_2lorawan_2helper_2lora-helper_8cc">
-<area shape="rect" title=" " alt="" coords="65,5,208,47"/>
+<area shape="rect" title=" " alt="" coords="131,5,273,47"/>
 <area shape="rect" title=" " alt="" coords="5,95,137,121"/>
 <area shape="rect" title=" " alt="" coords="161,95,243,121"/>
+<area shape="rect" title=" " alt="" coords="267,95,340,121"/>
 </map>
 </div>
 </div>
@@ -181,6 +180,8 @@ $(document).ready(function(){initNavTree('lora-helper_8cc.html',''); initResizab
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacens3"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacens3.html">ns3</a></td></tr>
 <tr class="memdesc:namespacens3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Every class exported by the <a class="el" href="namespacens3.html" title="Every class exported by the ns3 library is enclosed in the ns3 namespace.">ns3</a> library is enclosed in the <a class="el" href="namespacens3.html" title="Every class exported by the ns3 library is enclosed in the ns3 namespace.">ns3</a> namespace. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacens3_1_1lorawan"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacens3_1_1lorawan.html">ns3::lorawan</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
@@ -193,7 +194,7 @@ Namespaces</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_1fa77e9b4d98a3b702d3db2d326dbbf0.html">lorawan</a></li><li class="navelem"><a class="el" href="dir_1e85c98163cd740ed9c0cf6649947499.html">helper</a></li><li class="navelem"><a class="el" href="lora-helper_8cc.html">lora-helper.cc</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:10 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:17 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

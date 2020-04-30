@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -410,7 +407,10 @@ Additional Inherited Members</h2></td></tr>
     <tr><td class="paramname">segmentSize</td><td>Segment size. </td></tr>
     <tr><td class="paramname">ssThresh</td><td>Slow Start Threshold. </td></tr>
     <tr><td class="paramname">unAckDataCount</td><td>Unacknowledged data at the start of recovery. </td></tr>
-    <tr><td class="paramname">bytesInFlight</td><td>Current bytes in flight. \para m_deliveredBytes Bytes SACKed on last acknowledgment. \para bytesSent Bytes sent while in recovery phase. \para reductionBound Type of reduction bound to be used. </td></tr>
+    <tr><td class="paramname">bytesInFlight</td><td>Current bytes in flight. </td></tr>
+    <tr><td class="paramname">m_deliveredBytes</td><td>Bytes SACKed on last acknowledgment. </td></tr>
+    <tr><td class="paramname">bytesSent</td><td>Bytes sent while in recovery phase. </td></tr>
+    <tr><td class="paramname">reductionBound</td><td>Type of reduction bound to be used. </td></tr>
     <tr><td class="paramname">name</td><td>Test description. </td></tr>
   </table>
   </dd>
@@ -452,7 +452,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="tcp-prr-recovery-test_8cc_source.html#l00101">101</a> of file <a class="el" href="tcp-prr-recovery-test_8cc_source.html">tcp-prr-recovery-test.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="tcp-prr-recovery_8cc_source.html#l00086">ns3::TcpPrrRecovery::DoRecovery()</a>, <a class="el" href="tcp-prr-recovery_8cc_source.html#l00072">ns3::TcpPrrRecovery::EnterRecovery()</a>, <a class="el" href="traced-value_8h_source.html#l00227">ns3::TracedValue&lt; T &gt;::Get()</a>, <a class="el" href="tcp-socket-state_8h_source.html#l00189">ns3::TcpSocketState::m_bytesInFlight</a>, <a class="el" href="tcp-prr-recovery-test_8cc_source.html#l00071">m_bytesInFlight</a>, <a class="el" href="tcp-prr-recovery-test_8cc_source.html#l00073">m_bytesSent</a>, <a class="el" href="tcp-socket-state_8h_source.html#l00162">ns3::TcpSocketState::m_cWnd</a>, <a class="el" href="tcp-prr-recovery-test_8cc_source.html#l00067">m_cWnd</a>, <a class="el" href="tcp-socket-state_8h_source.html#l00163">ns3::TcpSocketState::m_cWndInfl</a>, <a class="el" href="tcp-prr-recovery-test_8cc_source.html#l00072">m_deliveredBytes</a>, <a class="el" href="tcp-prr-recovery-test_8cc_source.html#l00074">m_reductionBound</a>, <a class="el" href="tcp-socket-state_8h_source.html#l00169">ns3::TcpSocketState::m_segmentSize</a>, <a class="el" href="tcp-prr-recovery-test_8cc_source.html#l00068">m_segmentSize</a>, <a class="el" href="tcp-socket-state_8h_source.html#l00164">ns3::TcpSocketState::m_ssThresh</a>, <a class="el" href="tcp-prr-recovery-test_8cc_source.html#l00069">m_ssThresh</a>, <a class="el" href="tcp-prr-recovery-test_8cc_source.html#l00076">m_state</a>, <a class="el" href="tcp-prr-recovery-test_8cc_source.html#l00070">m_unAckDataCount</a>, <a class="el" href="test_8h_source.html#l01016">NS_TEST_ASSERT_MSG_GT_OR_EQ</a>, <a class="el" href="test_8h_source.html#l00830">NS_TEST_ASSERT_MSG_LT_OR_EQ</a>, <a class="el" href="object-base_8cc_source.html#l00187">ns3::ObjectBase::SetAttribute()</a>, and <a class="el" href="tcp-prr-recovery_8cc_source.html#l00125">ns3::TcpPrrRecovery::UpdateBytesSent()</a>.</p>
+<p class="reference">References <a class="el" href="tcp-prr-recovery_8cc_source.html#l00086">ns3::TcpPrrRecovery::DoRecovery()</a>, <a class="el" href="tcp-prr-recovery_8cc_source.html#l00072">ns3::TcpPrrRecovery::EnterRecovery()</a>, <a class="el" href="traced-value_8h_source.html#l00227">ns3::TracedValue&lt; T &gt;::Get()</a>, <a class="el" href="tcp-socket-state_8h_source.html#l00189">ns3::TcpSocketState::m_bytesInFlight</a>, <a class="el" href="tcp-prr-recovery-test_8cc_source.html#l00071">m_bytesInFlight</a>, <a class="el" href="tcp-prr-recovery-test_8cc_source.html#l00073">m_bytesSent</a>, <a class="el" href="tcp-socket-state_8h_source.html#l00162">ns3::TcpSocketState::m_cWnd</a>, <a class="el" href="tcp-prr-recovery-test_8cc_source.html#l00067">m_cWnd</a>, <a class="el" href="tcp-socket-state_8h_source.html#l00163">ns3::TcpSocketState::m_cWndInfl</a>, <a class="el" href="tcp-prr-recovery-test_8cc_source.html#l00072">m_deliveredBytes</a>, <a class="el" href="tcp-prr-recovery-test_8cc_source.html#l00074">m_reductionBound</a>, <a class="el" href="tcp-socket-state_8h_source.html#l00169">ns3::TcpSocketState::m_segmentSize</a>, <a class="el" href="tcp-prr-recovery-test_8cc_source.html#l00068">m_segmentSize</a>, <a class="el" href="tcp-socket-state_8h_source.html#l00164">ns3::TcpSocketState::m_ssThresh</a>, <a class="el" href="tcp-prr-recovery-test_8cc_source.html#l00069">m_ssThresh</a>, <a class="el" href="tcp-prr-recovery-test_8cc_source.html#l00076">m_state</a>, <a class="el" href="tcp-prr-recovery-test_8cc_source.html#l00070">m_unAckDataCount</a>, <a class="el" href="test_8h_source.html#l01016">NS_TEST_ASSERT_MSG_GT_OR_EQ</a>, <a class="el" href="test_8h_source.html#l00830">NS_TEST_ASSERT_MSG_LT_OR_EQ</a>, <a class="el" href="object-base_8cc_source.html#l00185">ns3::ObjectBase::SetAttribute()</a>, and <a class="el" href="tcp-prr-recovery_8cc_source.html#l00125">ns3::TcpPrrRecovery::UpdateBytesSent()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -739,7 +739,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_prr_recovery_test.html">PrrRecoveryTest</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:16 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:23 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

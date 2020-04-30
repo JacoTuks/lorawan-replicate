@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -197,6 +194,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abe3ae6e99ee4203a2b5b1bc92e824f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a67446b6da5eaba91652d1387461564"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_box.html#a1a67446b6da5eaba91652d1387461564">IsInside</a> (const Vector &amp;position) const</td></tr>
 <tr class="separator:a1a67446b6da5eaba91652d1387461564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f1d0fb7e03da61916c46ec2c6bc2aa8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_box.html#a9f1d0fb7e03da61916c46ec2c6bc2aa8">IsIntersect</a> (const Vector &amp;l1, const Vector &amp;l2) const</td></tr>
+<tr class="memdesc:a9f1d0fb7e03da61916c46ec2c6bc2aa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a line-segment between position l1 and position l2 intersects a box.  <a href="classns3_1_1_box.html#a9f1d0fb7e03da61916c46ec2c6bc2aa8">More...</a><br /></td></tr>
+<tr class="separator:a9f1d0fb7e03da61916c46ec2c6bc2aa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -377,7 +377,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="box_8cc_source.html#l00110">110</a> of file <a class="el" href="box_8cc_source.html">box.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="box_8cc_source.html#l00054">IsInside()</a>, <a class="el" href="assert_8h_source.html#l00067">NS_ASSERT</a>, <a class="el" href="box_8h_source.html#l00095">xMax</a>, <a class="el" href="box_8h_source.html#l00093">xMin</a>, <a class="el" href="box_8h_source.html#l00099">yMax</a>, and <a class="el" href="box_8h_source.html#l00097">yMin</a>.</p>
+<p class="reference">References <a class="el" href="box_8cc_source.html#l00054">IsInside()</a>, <a class="el" href="assert_8h_source.html#l00067">NS_ASSERT</a>, <a class="el" href="box_8h_source.html#l00112">xMax</a>, <a class="el" href="box_8h_source.html#l00110">xMin</a>, <a class="el" href="box_8h_source.html#l00116">yMax</a>, and <a class="el" href="box_8h_source.html#l00114">yMin</a>.</p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -418,7 +418,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="box_8cc_source.html#l00063">63</a> of file <a class="el" href="box_8cc_source.html">box.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="box_8h_source.html#l00044">BOTTOM</a>, <a class="el" href="box_8h_source.html#l00046">DOWN</a>, <a class="el" href="box_8h_source.html#l00042">LEFT</a>, <a class="el" href="80211b_8c_source.html#l00042">min</a>, <a class="el" href="box_8h_source.html#l00041">RIGHT</a>, <a class="el" href="box_8h_source.html#l00043">TOP</a>, <a class="el" href="box_8h_source.html#l00045">UP</a>, <a class="el" href="box_8h_source.html#l00095">xMax</a>, <a class="el" href="box_8h_source.html#l00099">yMax</a>, and <a class="el" href="box_8h_source.html#l00103">zMax</a>.</p>
+<p class="reference">References <a class="el" href="box_8h_source.html#l00044">BOTTOM</a>, <a class="el" href="box_8h_source.html#l00046">DOWN</a>, <a class="el" href="box_8h_source.html#l00042">LEFT</a>, <a class="el" href="80211b_8c_source.html#l00042">min</a>, <a class="el" href="box_8h_source.html#l00041">RIGHT</a>, <a class="el" href="box_8h_source.html#l00043">TOP</a>, <a class="el" href="box_8h_source.html#l00045">UP</a>, <a class="el" href="box_8h_source.html#l00112">xMax</a>, <a class="el" href="box_8h_source.html#l00116">yMax</a>, and <a class="el" href="box_8h_source.html#l00120">zMax</a>.</p>
 
 </div>
 </div>
@@ -448,9 +448,9 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="box_8cc_source.html#l00054">54</a> of file <a class="el" href="box_8cc_source.html">box.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="box_8h_source.html#l00095">xMax</a>, <a class="el" href="box_8h_source.html#l00093">xMin</a>, <a class="el" href="box_8h_source.html#l00099">yMax</a>, <a class="el" href="box_8h_source.html#l00097">yMin</a>, <a class="el" href="box_8h_source.html#l00103">zMax</a>, and <a class="el" href="box_8h_source.html#l00101">zMin</a>.</p>
+<p class="reference">References <a class="el" href="box_8h_source.html#l00112">xMax</a>, <a class="el" href="box_8h_source.html#l00110">xMin</a>, <a class="el" href="box_8h_source.html#l00116">yMax</a>, <a class="el" href="box_8h_source.html#l00114">yMin</a>, <a class="el" href="box_8h_source.html#l00120">zMax</a>, and <a class="el" href="box_8h_source.html#l00118">zMin</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="box_8cc_source.html#l00110">CalculateIntersection()</a>, <a class="el" href="gauss-markov-mobility-model_8cc_source.html#l00149">ns3::GaussMarkovMobilityModel::DoWalk()</a>, and <a class="el" href="building_8cc_source.html#l00218">ns3::Building::IsInside()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="box_8cc_source.html#l00110">CalculateIntersection()</a>, <a class="el" href="gauss-markov-mobility-model_8cc_source.html#l00149">ns3::GaussMarkovMobilityModel::DoWalk()</a>, <a class="el" href="building_8cc_source.html#l00218">ns3::Building::IsInside()</a>, and <a class="el" href="box_8cc_source.html#l00147">IsIntersect()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -458,16 +458,88 @@ Public Attributes</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_box_a1a67446b6da5eaba91652d1387461564_icgraph.png" border="0" usemap="#classns3_1_1_box_a1a67446b6da5eaba91652d1387461564_icgraph" alt=""/></div>
 <map name="classns3_1_1_box_a1a67446b6da5eaba91652d1387461564_icgraph" id="classns3_1_1_box_a1a67446b6da5eaba91652d1387461564_icgraph">
-<area shape="rect" title=" " alt="" coords="819,64,955,91"/>
-<area shape="rect" href="classns3_1_1_box.html#a89912e6315f57872e21d5c7f9ac90e49" title=" " alt="" coords="547,5,771,32"/>
-<area shape="rect" href="classns3_1_1_gauss_markov_mobility_model.html#a1ede407a75cc9524898cde98368bd395" title="Perform a walk operation." alt="" coords="561,57,756,98"/>
-<area shape="rect" href="classns3_1_1_building.html#ad9b09336c28f796974a77abd201ae12f" title=" " alt="" coords="577,148,741,175"/>
-<area shape="rect" href="classns3_1_1_gauss_markov_mobility_model.html#aad0bc916f9593960e6b2b72884688774" title="Initialize the model and calculate new velocity, direction, and pitch." alt="" coords="304,57,499,98"/>
-<area shape="rect" href="classns3_1_1_gauss_markov_mobility_model.html#aa151f31da16245cc8bd7fd05e64a3cee" title=" " alt="" coords="5,25,256,66"/>
-<area shape="rect" href="classns3_1_1_gauss_markov_mobility_model.html#abe13b92e3c92adfff7aee6cbb6b52f26" title=" " alt="" coords="33,90,228,131"/>
-<area shape="rect" href="classns3_1_1_building.html#abd0d6b0c3f9cdc4b11f679a90a0f0577" title=" " alt="" coords="316,123,487,149"/>
-<area shape="rect" href="classns3_1_1_building.html#af14aa37f4bdf3d1c409a92477df29826" title=" " alt="" coords="309,173,493,200"/>
-<area shape="rect" href="classns3_1_1_building.html#a6d2b15db27dff44a5b0b2ffa3b72ac19" title=" " alt="" coords="310,224,493,251"/>
+<area shape="rect" title=" " alt="" coords="833,119,969,145"/>
+<area shape="rect" href="classns3_1_1_box.html#a89912e6315f57872e21d5c7f9ac90e49" title=" " alt="" coords="561,5,785,32"/>
+<area shape="rect" href="classns3_1_1_gauss_markov_mobility_model.html#a1ede407a75cc9524898cde98368bd395" title="Perform a walk operation." alt="" coords="576,57,771,98"/>
+<area shape="rect" href="classns3_1_1_building.html#ad9b09336c28f796974a77abd201ae12f" title=" " alt="" coords="591,148,755,175"/>
+<area shape="rect" href="classns3_1_1_box.html#a9f1d0fb7e03da61916c46ec2c6bc2aa8" title="Checks if a line&#45;segment between position l1 and position l2 intersects a box." alt="" coords="596,269,751,296"/>
+<area shape="rect" href="classns3_1_1_gauss_markov_mobility_model.html#aad0bc916f9593960e6b2b72884688774" title="Initialize the model and calculate new velocity, direction, and pitch." alt="" coords="311,43,506,85"/>
+<area shape="rect" href="classns3_1_1_gauss_markov_mobility_model.html#aa151f31da16245cc8bd7fd05e64a3cee" title=" " alt="" coords="5,11,256,53"/>
+<area shape="rect" href="classns3_1_1_gauss_markov_mobility_model.html#abe13b92e3c92adfff7aee6cbb6b52f26" title=" " alt="" coords="33,77,228,118"/>
+<area shape="rect" href="classns3_1_1_building.html#abd0d6b0c3f9cdc4b11f679a90a0f0577" title=" " alt="" coords="323,109,494,136"/>
+<area shape="rect" href="classns3_1_1_building.html#af14aa37f4bdf3d1c409a92477df29826" title=" " alt="" coords="317,160,501,187"/>
+<area shape="rect" href="classns3_1_1_building.html#a6d2b15db27dff44a5b0b2ffa3b72ac19" title=" " alt="" coords="317,211,500,237"/>
+<area shape="rect" href="class_box_line_intersection_test_case.html#a972598d409c14dd29860ba6786fcb257" title="Setup the simulation according to the configuration set by the class constructor, run it,..." alt="" coords="304,262,513,303"/>
+<area shape="rect" href="classns3_1_1_building.html#a6a3cda6ae72c0792c3f3820d7adea687" title="Checks if a line&#45;segment between position l1 and position l2 intersects a building." alt="" coords="317,328,500,355"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9f1d0fb7e03da61916c46ec2c6bc2aa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f1d0fb7e03da61916c46ec2c6bc2aa8">&#9670;&nbsp;</a></span>IsIntersect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ns3::Box::IsIntersect </td>
+          <td>(</td>
+          <td class="paramtype">const Vector &amp;&#160;</td>
+          <td class="paramname"><em>l1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Vector &amp;&#160;</td>
+          <td class="paramname"><em>l2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if a line-segment between position l1 and position l2 intersects a box. </p>
+<p>This method considers all the three coordinates, i.e., x, y, and z. This function was developed by NYU Wireless and is based on the algorithm described here <a href="http://www.3dkingdoms.com/weekly/weekly.php?a=21">http://www.3dkingdoms.com/weekly/weekly.php?a=21</a>. Reference: Menglei Zhang, Michele Polese, Marco Mezzavilla, Sundeep Rangan, Michele Zorzi. "ns-3 Implementation of the 3GPP MIMO Channel Model for
+Frequency Spectrum above 6 GHz". In Proceedings of the Workshop on ns-3 (WNS3 '17). 2017.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">l1</td><td>position </td></tr>
+    <tr><td class="paramname">l2</td><td>position </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if there is a intersection, false otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="box_8cc_source.html#l00147">147</a> of file <a class="el" href="box_8cc_source.html">box.cc</a>.</p>
+
+<p class="reference">References <a class="el" href="box_8cc_source.html#l00054">IsInside()</a>, <a class="el" href="box_8h_source.html#l00112">xMax</a>, <a class="el" href="box_8h_source.html#l00110">xMin</a>, <a class="el" href="box_8h_source.html#l00116">yMax</a>, <a class="el" href="box_8h_source.html#l00114">yMin</a>, <a class="el" href="box_8h_source.html#l00120">zMax</a>, and <a class="el" href="box_8h_source.html#l00118">zMin</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="box-line-intersection-test_8cc_source.html#l00104">BoxLineIntersectionTestCase::DoRun()</a>, and <a class="el" href="building_8cc_source.html#l00288">ns3::Building::IsIntersect()</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classns3_1_1_box_a9f1d0fb7e03da61916c46ec2c6bc2aa8_cgraph.png" border="0" usemap="#classns3_1_1_box_a9f1d0fb7e03da61916c46ec2c6bc2aa8_cgraph" alt=""/></div>
+<map name="classns3_1_1_box_a9f1d0fb7e03da61916c46ec2c6bc2aa8_cgraph" id="classns3_1_1_box_a9f1d0fb7e03da61916c46ec2c6bc2aa8_cgraph">
+<area shape="rect" title="Checks if a line&#45;segment between position l1 and position l2 intersects a box." alt="" coords="5,5,160,32"/>
+<area shape="rect" href="classns3_1_1_box.html#a1a67446b6da5eaba91652d1387461564" title=" " alt="" coords="208,5,344,32"/>
+</map>
+</div>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classns3_1_1_box_a9f1d0fb7e03da61916c46ec2c6bc2aa8_icgraph.png" border="0" usemap="#classns3_1_1_box_a9f1d0fb7e03da61916c46ec2c6bc2aa8_icgraph" alt=""/></div>
+<map name="classns3_1_1_box_a9f1d0fb7e03da61916c46ec2c6bc2aa8_icgraph" id="classns3_1_1_box_a9f1d0fb7e03da61916c46ec2c6bc2aa8_icgraph">
+<area shape="rect" title="Checks if a line&#45;segment between position l1 and position l2 intersects a box." alt="" coords="263,42,417,69"/>
+<area shape="rect" href="class_box_line_intersection_test_case.html#a972598d409c14dd29860ba6786fcb257" title="Setup the simulation according to the configuration set by the class constructor, run it,..." alt="" coords="5,5,215,47"/>
+<area shape="rect" href="classns3_1_1_building.html#a6a3cda6ae72c0792c3f3820d7adea687" title="Checks if a line&#45;segment between position l1 and position l2 intersects a building." alt="" coords="19,71,201,98"/>
 </map>
 </div>
 
@@ -488,9 +560,9 @@ Public Attributes</h2></td></tr>
 
 <p>The x coordinate of the right bound of the box. </p>
 
-<p class="definition">Definition at line <a class="el" href="box_8h_source.html#l00095">95</a> of file <a class="el" href="box_8h_source.html">box.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="box_8h_source.html#l00112">112</a> of file <a class="el" href="box_8h_source.html">box.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lena-dual-stripe_8cc_source.html#l00091">FemtocellBlockAllocator::FemtocellBlockAllocator()</a>, <a class="el" href="lena-dual-stripe_8cc_source.html#l00045">AreOverlapping()</a>, <a class="el" href="box_8cc_source.html#l00110">CalculateIntersection()</a>, <a class="el" href="lena-dual-stripe_8cc_source.html#l00116">FemtocellBlockAllocator::Create()</a>, <a class="el" href="gauss-markov-mobility-model_8cc_source.html#l00149">ns3::GaussMarkovMobilityModel::DoWalk()</a>, <a class="el" href="box_8cc_source.html#l00063">GetClosestSide()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00070">ns3::RandomBuildingPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00244">ns3::RandomRoomPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00348">ns3::SameRoomPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00430">ns3::FixedRoomPositionAllocator::GetNext()</a>, <a class="el" href="building_8cc_source.html#l00225">ns3::Building::GetRoomX()</a>, <a class="el" href="box_8cc_source.html#l00054">IsInside()</a>, <a class="el" href="buildings-channel-condition-model_8cc_source.html#l00106">ns3::BuildingsChannelConditionModel::IsWithinLineOfSight()</a>, <a class="el" href="box_8cc_source.html#l00156">ns3::operator&lt;&lt;()</a>, <a class="el" href="box_8cc_source.html#l00169">ns3::operator&gt;&gt;()</a>, <a class="el" href="lena-dual-stripe_8cc_source.html#l00163">PrintGnuplottableBuildingListToFile()</a>, and <a class="el" href="constant-velocity-helper_8cc_source.html#l00109">ns3::ConstantVelocityHelper::UpdateWithBounds()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lena-dual-stripe_8cc_source.html#l00091">FemtocellBlockAllocator::FemtocellBlockAllocator()</a>, <a class="el" href="lena-dual-stripe_8cc_source.html#l00045">AreOverlapping()</a>, <a class="el" href="box-line-intersection-test_8cc_source.html#l00091">BoxLineIntersectionTestCase::BuildNameString()</a>, <a class="el" href="box_8cc_source.html#l00110">CalculateIntersection()</a>, <a class="el" href="lena-dual-stripe_8cc_source.html#l00116">FemtocellBlockAllocator::Create()</a>, <a class="el" href="gauss-markov-mobility-model_8cc_source.html#l00149">ns3::GaussMarkovMobilityModel::DoWalk()</a>, <a class="el" href="box_8cc_source.html#l00063">GetClosestSide()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00070">ns3::RandomBuildingPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00244">ns3::RandomRoomPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00348">ns3::SameRoomPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00430">ns3::FixedRoomPositionAllocator::GetNext()</a>, <a class="el" href="building_8cc_source.html#l00225">ns3::Building::GetRoomX()</a>, <a class="el" href="box_8cc_source.html#l00054">IsInside()</a>, <a class="el" href="box_8cc_source.html#l00147">IsIntersect()</a>, <a class="el" href="box_8cc_source.html#l00217">ns3::operator&lt;&lt;()</a>, <a class="el" href="box_8cc_source.html#l00230">ns3::operator&gt;&gt;()</a>, <a class="el" href="lena-dual-stripe_8cc_source.html#l00163">PrintGnuplottableBuildingListToFile()</a>, and <a class="el" href="constant-velocity-helper_8cc_source.html#l00109">ns3::ConstantVelocityHelper::UpdateWithBounds()</a>.</p>
 
 </div>
 </div>
@@ -508,9 +580,9 @@ Public Attributes</h2></td></tr>
 
 <p>The x coordinate of the left bound of the box. </p>
 
-<p class="definition">Definition at line <a class="el" href="box_8h_source.html#l00093">93</a> of file <a class="el" href="box_8h_source.html">box.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="box_8h_source.html#l00110">110</a> of file <a class="el" href="box_8h_source.html">box.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lena-dual-stripe_8cc_source.html#l00091">FemtocellBlockAllocator::FemtocellBlockAllocator()</a>, <a class="el" href="lena-dual-stripe_8cc_source.html#l00045">AreOverlapping()</a>, <a class="el" href="box_8cc_source.html#l00110">CalculateIntersection()</a>, <a class="el" href="lena-dual-stripe_8cc_source.html#l00116">FemtocellBlockAllocator::Create()</a>, <a class="el" href="gauss-markov-mobility-model_8cc_source.html#l00149">ns3::GaussMarkovMobilityModel::DoWalk()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00070">ns3::RandomBuildingPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00244">ns3::RandomRoomPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00348">ns3::SameRoomPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00430">ns3::FixedRoomPositionAllocator::GetNext()</a>, <a class="el" href="building_8cc_source.html#l00225">ns3::Building::GetRoomX()</a>, <a class="el" href="box_8cc_source.html#l00054">IsInside()</a>, <a class="el" href="buildings-channel-condition-model_8cc_source.html#l00106">ns3::BuildingsChannelConditionModel::IsWithinLineOfSight()</a>, <a class="el" href="box_8cc_source.html#l00156">ns3::operator&lt;&lt;()</a>, <a class="el" href="box_8cc_source.html#l00169">ns3::operator&gt;&gt;()</a>, <a class="el" href="lena-dual-stripe_8cc_source.html#l00163">PrintGnuplottableBuildingListToFile()</a>, and <a class="el" href="constant-velocity-helper_8cc_source.html#l00109">ns3::ConstantVelocityHelper::UpdateWithBounds()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lena-dual-stripe_8cc_source.html#l00091">FemtocellBlockAllocator::FemtocellBlockAllocator()</a>, <a class="el" href="lena-dual-stripe_8cc_source.html#l00045">AreOverlapping()</a>, <a class="el" href="box-line-intersection-test_8cc_source.html#l00091">BoxLineIntersectionTestCase::BuildNameString()</a>, <a class="el" href="box_8cc_source.html#l00110">CalculateIntersection()</a>, <a class="el" href="lena-dual-stripe_8cc_source.html#l00116">FemtocellBlockAllocator::Create()</a>, <a class="el" href="gauss-markov-mobility-model_8cc_source.html#l00149">ns3::GaussMarkovMobilityModel::DoWalk()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00070">ns3::RandomBuildingPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00244">ns3::RandomRoomPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00348">ns3::SameRoomPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00430">ns3::FixedRoomPositionAllocator::GetNext()</a>, <a class="el" href="building_8cc_source.html#l00225">ns3::Building::GetRoomX()</a>, <a class="el" href="box_8cc_source.html#l00054">IsInside()</a>, <a class="el" href="box_8cc_source.html#l00147">IsIntersect()</a>, <a class="el" href="box_8cc_source.html#l00217">ns3::operator&lt;&lt;()</a>, <a class="el" href="box_8cc_source.html#l00230">ns3::operator&gt;&gt;()</a>, <a class="el" href="lena-dual-stripe_8cc_source.html#l00163">PrintGnuplottableBuildingListToFile()</a>, and <a class="el" href="constant-velocity-helper_8cc_source.html#l00109">ns3::ConstantVelocityHelper::UpdateWithBounds()</a>.</p>
 
 </div>
 </div>
@@ -528,9 +600,9 @@ Public Attributes</h2></td></tr>
 
 <p>The y coordinate of the top bound of the box. </p>
 
-<p class="definition">Definition at line <a class="el" href="box_8h_source.html#l00099">99</a> of file <a class="el" href="box_8h_source.html">box.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="box_8h_source.html#l00116">116</a> of file <a class="el" href="box_8h_source.html">box.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lena-dual-stripe_8cc_source.html#l00091">FemtocellBlockAllocator::FemtocellBlockAllocator()</a>, <a class="el" href="lena-dual-stripe_8cc_source.html#l00045">AreOverlapping()</a>, <a class="el" href="box_8cc_source.html#l00110">CalculateIntersection()</a>, <a class="el" href="lena-dual-stripe_8cc_source.html#l00116">FemtocellBlockAllocator::Create()</a>, <a class="el" href="gauss-markov-mobility-model_8cc_source.html#l00149">ns3::GaussMarkovMobilityModel::DoWalk()</a>, <a class="el" href="box_8cc_source.html#l00063">GetClosestSide()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00070">ns3::RandomBuildingPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00244">ns3::RandomRoomPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00348">ns3::SameRoomPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00430">ns3::FixedRoomPositionAllocator::GetNext()</a>, <a class="el" href="building_8cc_source.html#l00246">ns3::Building::GetRoomY()</a>, <a class="el" href="box_8cc_source.html#l00054">IsInside()</a>, <a class="el" href="buildings-channel-condition-model_8cc_source.html#l00106">ns3::BuildingsChannelConditionModel::IsWithinLineOfSight()</a>, <a class="el" href="box_8cc_source.html#l00156">ns3::operator&lt;&lt;()</a>, <a class="el" href="box_8cc_source.html#l00169">ns3::operator&gt;&gt;()</a>, <a class="el" href="lena-dual-stripe_8cc_source.html#l00163">PrintGnuplottableBuildingListToFile()</a>, and <a class="el" href="constant-velocity-helper_8cc_source.html#l00109">ns3::ConstantVelocityHelper::UpdateWithBounds()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lena-dual-stripe_8cc_source.html#l00091">FemtocellBlockAllocator::FemtocellBlockAllocator()</a>, <a class="el" href="lena-dual-stripe_8cc_source.html#l00045">AreOverlapping()</a>, <a class="el" href="box-line-intersection-test_8cc_source.html#l00091">BoxLineIntersectionTestCase::BuildNameString()</a>, <a class="el" href="box_8cc_source.html#l00110">CalculateIntersection()</a>, <a class="el" href="lena-dual-stripe_8cc_source.html#l00116">FemtocellBlockAllocator::Create()</a>, <a class="el" href="gauss-markov-mobility-model_8cc_source.html#l00149">ns3::GaussMarkovMobilityModel::DoWalk()</a>, <a class="el" href="box_8cc_source.html#l00063">GetClosestSide()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00070">ns3::RandomBuildingPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00244">ns3::RandomRoomPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00348">ns3::SameRoomPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00430">ns3::FixedRoomPositionAllocator::GetNext()</a>, <a class="el" href="building_8cc_source.html#l00246">ns3::Building::GetRoomY()</a>, <a class="el" href="box_8cc_source.html#l00054">IsInside()</a>, <a class="el" href="box_8cc_source.html#l00147">IsIntersect()</a>, <a class="el" href="box_8cc_source.html#l00217">ns3::operator&lt;&lt;()</a>, <a class="el" href="box_8cc_source.html#l00230">ns3::operator&gt;&gt;()</a>, <a class="el" href="lena-dual-stripe_8cc_source.html#l00163">PrintGnuplottableBuildingListToFile()</a>, and <a class="el" href="constant-velocity-helper_8cc_source.html#l00109">ns3::ConstantVelocityHelper::UpdateWithBounds()</a>.</p>
 
 </div>
 </div>
@@ -548,9 +620,9 @@ Public Attributes</h2></td></tr>
 
 <p>The y coordinate of the bottom bound of the box. </p>
 
-<p class="definition">Definition at line <a class="el" href="box_8h_source.html#l00097">97</a> of file <a class="el" href="box_8h_source.html">box.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="box_8h_source.html#l00114">114</a> of file <a class="el" href="box_8h_source.html">box.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lena-dual-stripe_8cc_source.html#l00091">FemtocellBlockAllocator::FemtocellBlockAllocator()</a>, <a class="el" href="lena-dual-stripe_8cc_source.html#l00045">AreOverlapping()</a>, <a class="el" href="box_8cc_source.html#l00110">CalculateIntersection()</a>, <a class="el" href="lena-dual-stripe_8cc_source.html#l00116">FemtocellBlockAllocator::Create()</a>, <a class="el" href="gauss-markov-mobility-model_8cc_source.html#l00149">ns3::GaussMarkovMobilityModel::DoWalk()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00070">ns3::RandomBuildingPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00244">ns3::RandomRoomPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00348">ns3::SameRoomPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00430">ns3::FixedRoomPositionAllocator::GetNext()</a>, <a class="el" href="building_8cc_source.html#l00246">ns3::Building::GetRoomY()</a>, <a class="el" href="box_8cc_source.html#l00054">IsInside()</a>, <a class="el" href="buildings-channel-condition-model_8cc_source.html#l00106">ns3::BuildingsChannelConditionModel::IsWithinLineOfSight()</a>, <a class="el" href="box_8cc_source.html#l00156">ns3::operator&lt;&lt;()</a>, <a class="el" href="box_8cc_source.html#l00169">ns3::operator&gt;&gt;()</a>, <a class="el" href="lena-dual-stripe_8cc_source.html#l00163">PrintGnuplottableBuildingListToFile()</a>, and <a class="el" href="constant-velocity-helper_8cc_source.html#l00109">ns3::ConstantVelocityHelper::UpdateWithBounds()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lena-dual-stripe_8cc_source.html#l00091">FemtocellBlockAllocator::FemtocellBlockAllocator()</a>, <a class="el" href="lena-dual-stripe_8cc_source.html#l00045">AreOverlapping()</a>, <a class="el" href="box-line-intersection-test_8cc_source.html#l00091">BoxLineIntersectionTestCase::BuildNameString()</a>, <a class="el" href="box_8cc_source.html#l00110">CalculateIntersection()</a>, <a class="el" href="lena-dual-stripe_8cc_source.html#l00116">FemtocellBlockAllocator::Create()</a>, <a class="el" href="gauss-markov-mobility-model_8cc_source.html#l00149">ns3::GaussMarkovMobilityModel::DoWalk()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00070">ns3::RandomBuildingPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00244">ns3::RandomRoomPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00348">ns3::SameRoomPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00430">ns3::FixedRoomPositionAllocator::GetNext()</a>, <a class="el" href="building_8cc_source.html#l00246">ns3::Building::GetRoomY()</a>, <a class="el" href="box_8cc_source.html#l00054">IsInside()</a>, <a class="el" href="box_8cc_source.html#l00147">IsIntersect()</a>, <a class="el" href="box_8cc_source.html#l00217">ns3::operator&lt;&lt;()</a>, <a class="el" href="box_8cc_source.html#l00230">ns3::operator&gt;&gt;()</a>, <a class="el" href="lena-dual-stripe_8cc_source.html#l00163">PrintGnuplottableBuildingListToFile()</a>, and <a class="el" href="constant-velocity-helper_8cc_source.html#l00109">ns3::ConstantVelocityHelper::UpdateWithBounds()</a>.</p>
 
 </div>
 </div>
@@ -568,9 +640,9 @@ Public Attributes</h2></td></tr>
 
 <p>The z coordinate of the up bound of the box. </p>
 
-<p class="definition">Definition at line <a class="el" href="box_8h_source.html#l00103">103</a> of file <a class="el" href="box_8h_source.html">box.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="box_8h_source.html#l00120">120</a> of file <a class="el" href="box_8h_source.html">box.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gauss-markov-mobility-model_8cc_source.html#l00149">ns3::GaussMarkovMobilityModel::DoWalk()</a>, <a class="el" href="box_8cc_source.html#l00063">GetClosestSide()</a>, <a class="el" href="building_8cc_source.html#l00267">ns3::Building::GetFloor()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00070">ns3::RandomBuildingPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00244">ns3::RandomRoomPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00348">ns3::SameRoomPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00430">ns3::FixedRoomPositionAllocator::GetNext()</a>, <a class="el" href="box_8cc_source.html#l00054">IsInside()</a>, <a class="el" href="buildings-channel-condition-model_8cc_source.html#l00106">ns3::BuildingsChannelConditionModel::IsWithinLineOfSight()</a>, <a class="el" href="box_8cc_source.html#l00156">ns3::operator&lt;&lt;()</a>, <a class="el" href="box_8cc_source.html#l00169">ns3::operator&gt;&gt;()</a>, and <a class="el" href="constant-velocity-helper_8cc_source.html#l00109">ns3::ConstantVelocityHelper::UpdateWithBounds()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="box-line-intersection-test_8cc_source.html#l00091">BoxLineIntersectionTestCase::BuildNameString()</a>, <a class="el" href="box-line-intersection-test_8cc_source.html#l00104">BoxLineIntersectionTestCase::DoRun()</a>, <a class="el" href="gauss-markov-mobility-model_8cc_source.html#l00149">ns3::GaussMarkovMobilityModel::DoWalk()</a>, <a class="el" href="box_8cc_source.html#l00063">GetClosestSide()</a>, <a class="el" href="building_8cc_source.html#l00267">ns3::Building::GetFloor()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00070">ns3::RandomBuildingPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00244">ns3::RandomRoomPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00348">ns3::SameRoomPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00430">ns3::FixedRoomPositionAllocator::GetNext()</a>, <a class="el" href="box_8cc_source.html#l00054">IsInside()</a>, <a class="el" href="box_8cc_source.html#l00147">IsIntersect()</a>, <a class="el" href="box_8cc_source.html#l00217">ns3::operator&lt;&lt;()</a>, <a class="el" href="box_8cc_source.html#l00230">ns3::operator&gt;&gt;()</a>, and <a class="el" href="constant-velocity-helper_8cc_source.html#l00109">ns3::ConstantVelocityHelper::UpdateWithBounds()</a>.</p>
 
 </div>
 </div>
@@ -588,9 +660,9 @@ Public Attributes</h2></td></tr>
 
 <p>The z coordinate of the down bound of the box. </p>
 
-<p class="definition">Definition at line <a class="el" href="box_8h_source.html#l00101">101</a> of file <a class="el" href="box_8h_source.html">box.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="box_8h_source.html#l00118">118</a> of file <a class="el" href="box_8h_source.html">box.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gauss-markov-mobility-model_8cc_source.html#l00149">ns3::GaussMarkovMobilityModel::DoWalk()</a>, <a class="el" href="building_8cc_source.html#l00267">ns3::Building::GetFloor()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00070">ns3::RandomBuildingPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00244">ns3::RandomRoomPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00348">ns3::SameRoomPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00430">ns3::FixedRoomPositionAllocator::GetNext()</a>, <a class="el" href="box_8cc_source.html#l00054">IsInside()</a>, <a class="el" href="buildings-channel-condition-model_8cc_source.html#l00106">ns3::BuildingsChannelConditionModel::IsWithinLineOfSight()</a>, <a class="el" href="box_8cc_source.html#l00156">ns3::operator&lt;&lt;()</a>, <a class="el" href="box_8cc_source.html#l00169">ns3::operator&gt;&gt;()</a>, and <a class="el" href="constant-velocity-helper_8cc_source.html#l00109">ns3::ConstantVelocityHelper::UpdateWithBounds()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="box-line-intersection-test_8cc_source.html#l00091">BoxLineIntersectionTestCase::BuildNameString()</a>, <a class="el" href="box-line-intersection-test_8cc_source.html#l00104">BoxLineIntersectionTestCase::DoRun()</a>, <a class="el" href="gauss-markov-mobility-model_8cc_source.html#l00149">ns3::GaussMarkovMobilityModel::DoWalk()</a>, <a class="el" href="building_8cc_source.html#l00267">ns3::Building::GetFloor()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00070">ns3::RandomBuildingPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00244">ns3::RandomRoomPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00348">ns3::SameRoomPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00430">ns3::FixedRoomPositionAllocator::GetNext()</a>, <a class="el" href="box_8cc_source.html#l00054">IsInside()</a>, <a class="el" href="box_8cc_source.html#l00147">IsIntersect()</a>, <a class="el" href="box_8cc_source.html#l00217">ns3::operator&lt;&lt;()</a>, <a class="el" href="box_8cc_source.html#l00230">ns3::operator&gt;&gt;()</a>, and <a class="el" href="constant-velocity-helper_8cc_source.html#l00109">ns3::ConstantVelocityHelper::UpdateWithBounds()</a>.</p>
 
 </div>
 </div>
@@ -608,7 +680,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_box.html">Box</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:21 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:27 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

@@ -1,5 +1,5 @@
 <map id="src/wifi/test/wifi&#45;test.cc" name="src/wifi/test/wifi&#45;test.cc">
-<area shape="rect" id="node1" title=" " alt="" coords="2014,5,2141,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="2158,5,2285,47"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,102,104,129"/>
 <area shape="rect" id="node3" title=" " alt="" coords="129,102,295,129"/>
 <area shape="rect" id="node4" title=" " alt="" coords="319,102,481,129"/>
@@ -14,15 +14,17 @@
 <area shape="rect" id="node13" title=" " alt="" coords="1821,102,2003,129"/>
 <area shape="rect" id="node14" title=" " alt="" coords="2027,102,2128,129"/>
 <area shape="rect" id="node15" title=" " alt="" coords="2153,102,2290,129"/>
-<area shape="rect" id="node16" title=" " alt="" coords="2315,102,2512,129"/>
-<area shape="rect" id="node17" title=" " alt="" coords="2536,102,2728,129"/>
-<area shape="rect" id="node18" title=" " alt="" coords="2752,102,2949,129"/>
-<area shape="rect" id="node19" title=" " alt="" coords="2973,102,3171,129"/>
-<area shape="rect" id="node20" title=" " alt="" coords="3195,95,3389,136"/>
-<area shape="rect" id="node21" title=" " alt="" coords="3414,95,3597,136"/>
-<area shape="rect" id="node22" title=" " alt="" coords="3621,102,3769,129"/>
-<area shape="rect" id="node23" title=" " alt="" coords="3793,102,3937,129"/>
-<area shape="rect" id="node24" title=" " alt="" coords="3961,102,4127,129"/>
-<area shape="rect" id="node25" title=" " alt="" coords="4151,102,4273,129"/>
-<area shape="rect" id="node26" title=" " alt="" coords="4298,102,4419,129"/>
+<area shape="rect" id="node16" title=" " alt="" coords="2314,102,2417,129"/>
+<area shape="rect" id="node17" title=" " alt="" coords="2441,102,2639,129"/>
+<area shape="rect" id="node18" title=" " alt="" coords="2663,102,2855,129"/>
+<area shape="rect" id="node19" title=" " alt="" coords="2879,102,3076,129"/>
+<area shape="rect" id="node20" title=" " alt="" coords="3100,102,3297,129"/>
+<area shape="rect" id="node21" title=" " alt="" coords="3321,95,3516,136"/>
+<area shape="rect" id="node22" title=" " alt="" coords="3541,95,3723,136"/>
+<area shape="rect" id="node23" title=" " alt="" coords="3747,102,3895,129"/>
+<area shape="rect" id="node24" title=" " alt="" coords="3920,102,4064,129"/>
+<area shape="rect" id="node25" title=" " alt="" coords="4088,102,4253,129"/>
+<area shape="rect" id="node26" title=" " alt="" coords="4277,102,4400,129"/>
+<area shape="rect" id="node27" title=" " alt="" coords="4425,102,4546,129"/>
+<area shape="rect" id="node28" title=" " alt="" coords="4571,95,4739,136"/>
 </map>

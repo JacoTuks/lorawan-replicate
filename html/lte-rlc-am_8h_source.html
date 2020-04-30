@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -217,7 +214,7 @@ $(document).ready(function(){initNavTree('lte-rlc-am_8h_source.html',''); initRe
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">//   void ReassembleSnLessThan (uint16_t seqNumber);</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">// </span></div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_lte_rlc_am.html#ada1201339d0a54e50adc27b09d3c5c1e">ReassembleAndDeliver</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Packet&gt;</a> <a class="code" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_lte_rlc_am.html#ada1201339d0a54e50adc27b09d3c5c1e">ReassembleAndDeliver</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Packet&gt;</a> packet);</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_lte_rlc_am.html#ad81917dde659b1c241aa8d22013c8f4b">DoReportBufferStatus</a> ();</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
@@ -342,7 +339,6 @@ $(document).ready(function(){initNavTree('lte-rlc-am_8h_source.html',''); initRe
 <div class="ttc" id="aclassns3_1_1_lte_rlc_am_html_a529666294956659251df1e79ffd3fca5"><div class="ttname"><a href="classns3_1_1_lte_rlc_am.html#a529666294956659251df1e79ffd3fca5">ns3::LteRlcAm::DoNotifyTxOpportunity</a></div><div class="ttdeci">virtual void DoNotifyTxOpportunity(LteMacSapUser::TxOpportunityParameters txOpParams)</div><div class="ttdoc">MAC SAP.</div><div class="ttdef"><b>Definition:</b> <a href="lte-rlc-am_8cc_source.html#l00184">lte-rlc-am.cc:184</a></div></div>
 <div class="ttc" id="aclassns3_1_1_lte_rlc_am_html_aafbeed1507367d3bcb51a3a5f7d3aa57"><div class="ttname"><a href="classns3_1_1_lte_rlc_am.html#aafbeed1507367d3bcb51a3a5f7d3aa57">ns3::LteRlcAm::m_vrX</a></div><div class="ttdeci">SequenceNumber10 m_vrX</div><div class="ttdoc">VR(X)</div><div class="ttdef"><b>Definition:</b> <a href="lte-rlc-am_8h_source.html#l00183">lte-rlc-am.h:183</a></div></div>
 <div class="ttc" id="aclassns3_1_1_lte_rlc_am_html_a735a20f26634b44104176445de24d995"><div class="ttname"><a href="classns3_1_1_lte_rlc_am.html#a735a20f26634b44104176445de24d995">ns3::LteRlcAm::m_controlPduBuffer</a></div><div class="ttdeci">Ptr&lt; Packet &gt; m_controlPduBuffer</div><div class="ttdoc">Control PDU buffer (just one PDU)</div><div class="ttdef"><b>Definition:</b> <a href="lte-rlc-am_8h_source.html#l00164">lte-rlc-am.h:164</a></div></div>
-<div class="ttc" id="alora-mac-test_8cc_html_a084e879e2a4e6b1e078575d3693a0c3a"><div class="ttname"><a href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a></div><div class="ttdeci">Ptr&lt; Packet &gt; packet</div><div class="ttdef"><b>Definition:</b> <a href="lora-mac-test_8cc_source.html#l00021">lora-mac-test.cc:21</a></div></div>
 <div class="ttc" id="aclassns3_1_1_lte_rlc_am_html_a722cecd1994be0d51675dea14b187623"><div class="ttname"><a href="classns3_1_1_lte_rlc_am.html#a722cecd1994be0d51675dea14b187623">ns3::LteRlcAm::m_statusPduBufferSize</a></div><div class="ttdeci">uint32_t m_statusPduBufferSize</div><div class="ttdoc">status PDU buffer size</div><div class="ttdef"><b>Definition:</b> <a href="lte-rlc-am_8h_source.html#l00151">lte-rlc-am.h:151</a></div></div>
 <div class="ttc" id="aclassns3_1_1_lte_rlc_am_html_a6c9e3ac7026e952b3e2e48da74a5bf4b"><div class="ttname"><a href="classns3_1_1_lte_rlc_am.html#a6c9e3ac7026e952b3e2e48da74a5bf4b">ns3::LteRlcAm::m_rbsTimer</a></div><div class="ttdeci">EventId m_rbsTimer</div><div class="ttdoc">RBS timer.</div><div class="ttdef"><b>Definition:</b> <a href="lte-rlc-am_8h_source.html#l00207">lte-rlc-am.h:207</a></div></div>
 <div class="ttc" id="aclassns3_1_1_lte_rlc_am_html_a7f5585ee93a02f0fe8f9c3a2679a4866"><div class="ttname"><a href="classns3_1_1_lte_rlc_am.html#a7f5585ee93a02f0fe8f9c3a2679a4866">ns3::LteRlcAm::m_txOpportunityForRetxAlwaysBigEnough</a></div><div class="ttdeci">bool m_txOpportunityForRetxAlwaysBigEnough</div><div class="ttdoc">transmit opportunity for retransmit?</div><div class="ttdef"><b>Definition:</b> <a href="lte-rlc-am_8h_source.html#l00217">lte-rlc-am.h:217</a></div></div>
@@ -411,7 +407,7 @@ $(document).ready(function(){initNavTree('lte-rlc-am_8h_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ef1775b0ff4284164f823a882317d681.html">lte</a></li><li class="navelem"><a class="el" href="dir_d84c0a9c9435ae3a7e1022dda3bc062b.html">model</a></li><li class="navelem"><a class="el" href="lte-rlc-am_8h.html">lte-rlc-am.h</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:34:59 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:07 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

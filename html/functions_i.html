@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -709,7 +706,7 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 : <a class="el" href="class_test_ampdu_reception.html#aa5bfa46cf87814bc1d5bdf6af112378a">TestAmpduReception</a>
 </li>
 <li>IncrementGwCnt()
-: <a class="el" href="classns3_1_1_link_check_ans.html#afe57dfa019865714a7f759e17d821ad7">ns3::LinkCheckAns</a>
+: <a class="el" href="classns3_1_1lorawan_1_1_link_check_ans.html#a0439b17acc2140e08fa274c8199128d7">ns3::lorawan::LinkCheckAns</a>
 </li>
 <li>IncrementInvitedRangingRetries()
 : <a class="el" href="classns3_1_1_s_s_record.html#aaaa1931f5cc66c626a8bdb14affa3010">ns3::SSRecord</a>
@@ -928,6 +925,9 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 , <a class="el" href="class_test_child_queue_disc.html#a853186a94b3ac86b05520cf2c6f38531">TestChildQueueDisc</a>
 , <a class="el" href="class_test_parent_queue_disc.html#afc51108746b0f48151863d962fc43ec5">TestParentQueueDisc</a>
 </li>
+<li>InitializeReply()
+: <a class="el" href="classns3_1_1lorawan_1_1_end_device_status.html#a9d25dab867d40f0ef85881527d3467e8">ns3::lorawan::EndDeviceStatus</a>
+</li>
 <li>InitializeRlfParams()
 : <a class="el" href="classns3_1_1_lte_ue_phy.html#ac5e38bb355e6c5d961535e137d7aabe8">ns3::LteUePhy</a>
 </li>
@@ -1080,6 +1080,9 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 <li>InsertPrecursor()
 : <a class="el" href="classns3_1_1aodv_1_1_routing_table_entry.html#a2334dfcef4b003358fef8da9acc19180">ns3::aodv::RoutingTableEntry</a>
 </li>
+<li>InsertReceivedPacket()
+: <a class="el" href="classns3_1_1lorawan_1_1_end_device_status.html#a57c324b1fc3708fab5b3a6c638226d91">ns3::lorawan::EndDeviceStatus</a>
+</li>
 <li>InsertTopologyTuple()
 : <a class="el" href="classns3_1_1olsr_1_1_olsr_state.html#a2f5c3c6493a7c8df5d6fcd684c65ee3c">ns3::olsr::OlsrState</a>
 </li>
@@ -1087,7 +1090,7 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 : <a class="el" href="classns3_1_1olsr_1_1_olsr_state.html#ab1fcedee8cd07d9067b1e5db4a84c80e">ns3::olsr::OlsrState</a>
 </li>
 <li>Install()
-: <a class="el" href="classns3_1_1_adhoc_aloha_noack_ideal_phy_helper.html#af934d66802b42e6594fe4fad8920fbc1">ns3::AdhocAlohaNoackIdealPhyHelper</a>
+: <a class="el" href="classns3_1_1_adhoc_aloha_noack_ideal_phy_helper.html#a7b38cdfdd014421c19f30fb3d1dc17cd">ns3::AdhocAlohaNoackIdealPhyHelper</a>
 , <a class="el" href="classns3_1_1_bridge_helper.html#aba53f6381b7adda00d9163840b072fa6">ns3::BridgeHelper</a>
 , <a class="el" href="classns3_1_1_buildings_helper.html#a1f8163c577bf4fbadd091327e0f15f9a">ns3::BuildingsHelper</a>
 , <a class="el" href="classns3_1_1_bulk_send_helper.html#afc9241b5e57a619cb2d408bdcac50f3a">ns3::BulkSendHelper</a>
@@ -1101,27 +1104,28 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 , <a class="el" href="classns3_1_1_fd_net_device_helper.html#a37f21e05db2c909d15b70969732e8b84">ns3::FdNetDeviceHelper</a>
 , <a class="el" href="classns3_1_1flame_1_1_flame_protocol.html#a824a540ca72c5a413ce31a2f037a8487">ns3::flame::FlameProtocol</a>
 , <a class="el" href="classns3_1_1_flow_monitor_helper.html#abffcd31f85872c6b736f30e9d300390d">ns3::FlowMonitorHelper</a>
-, <a class="el" href="classns3_1_1_forwarder_helper.html#af18b2d999c8fb3d259dd1d49b62fab79">ns3::ForwarderHelper</a>
 , <a class="el" href="classns3_1_1_internet_stack_helper.html#a10e8d697dcd9153f1da11695cd08e713">ns3::InternetStackHelper</a>
-, <a class="el" href="classns3_1_1_lora_helper.html#ae246c7ecb63e0498128cbab9bfc3423f">ns3::LoraHelper</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_forwarder_helper.html#a3023933d0eea2c15d7b42e18a7b1766e">ns3::lorawan::ForwarderHelper</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_lora_helper.html#adeced2ddf7e1004ff7932b6e48a589a7">ns3::lorawan::LoraHelper</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_network_controller.html#a39dd06a8108bd9eb19961c2b050d47db">ns3::lorawan::NetworkController</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_network_server_helper.html#a2620dbe0fa19818b033c4b69ee0e702d">ns3::lorawan::NetworkServerHelper</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_one_shot_sender_helper.html#a86a58ba044ba75bce5d5c42ddd675d51">ns3::lorawan::OneShotSenderHelper</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_periodic_sender_helper.html#af2eb761634f1c2981352acf8667bcb75">ns3::lorawan::PeriodicSenderHelper</a>
 , <a class="el" href="classns3_1_1_lr_wpan_helper.html#a7863b7b79168f747197faf479e4951fe">ns3::LrWpanHelper</a>
 , <a class="el" href="classns3_1_1_mesh_helper.html#aad0ab4cd70adc0f716489a725dac3acc">ns3::MeshHelper</a>
 , <a class="el" href="classns3_1_1_mobility_helper.html#a4da4b0cc1211f4c9288b978ed7d3f85a">ns3::MobilityHelper</a>
-, <a class="el" href="classns3_1_1_network_server_helper.html#a3661233cff7255c9c7957155ec3a5541">ns3::NetworkServerHelper</a>
 , <a class="el" href="classns3_1_1_ns2_mobility_helper.html#abc85feeb736f55564fa629fee1e873e5">ns3::Ns2MobilityHelper</a>
-, <a class="el" href="classns3_1_1_one_shot_sender_helper.html#ad040a401afd53d2db56a9b4e9d2a13ee">ns3::OneShotSenderHelper</a>
 , <a class="el" href="classns3_1_1_on_off_helper.html#a87cc5963ff591c4ba397ba4439ea39d7">ns3::OnOffHelper</a>
 , <a class="el" href="classns3_1_1_open_flow_switch_helper.html#a761e89df7011d691652d85bc5c36e32d">ns3::OpenFlowSwitchHelper</a>
 , <a class="el" href="classns3_1_1_packet_sink_helper.html#a0808437e17663beb7c6a4a082d458115">ns3::PacketSinkHelper</a>
 , <a class="el" href="classns3_1_1_packet_socket_helper.html#acefb3e034a102efc148fac496c5e9f33">ns3::PacketSocketHelper</a>
-, <a class="el" href="classns3_1_1_periodic_sender_helper.html#a55ec83798f81f2e86702cbb44ce99764">ns3::PeriodicSenderHelper</a>
 , <a class="el" href="classns3_1_1_ping6_helper.html#a3f450b54b353b5181dec6c6d69733e0a">ns3::Ping6Helper</a>
 , <a class="el" href="classns3_1_1_point_to_point_helper.html#ab9162fea3e88722666fed1106df1f9ec">ns3::PointToPointHelper</a>
 , <a class="el" href="classns3_1_1_radio_environment_map_helper.html#a0b15c982ea80037f9409d73654b48548">ns3::RadioEnvironmentMapHelper</a>
 , <a class="el" href="classns3_1_1_radvd_helper.html#ac0d0b33362b5bf0b852f01623f952ab1">ns3::RadvdHelper</a>
 , <a class="el" href="classns3_1_1_simple_net_device_helper.html#adb47953df754f4b9877f616aea5860c9">ns3::SimpleNetDeviceHelper</a>
 , <a class="el" href="classns3_1_1_six_low_pan_helper.html#a638d855fa28d59736b59446aefccf7b3">ns3::SixLowPanHelper</a>
-, <a class="el" href="classns3_1_1_spectrum_analyzer_helper.html#a30f8a94f79a0e65a0efe1ad283f6fa5b">ns3::SpectrumAnalyzerHelper</a>
+, <a class="el" href="classns3_1_1_spectrum_analyzer_helper.html#a32d0b627f609f9c61f7d7043f1d779af">ns3::SpectrumAnalyzerHelper</a>
 , <a class="el" href="classns3_1_1_tap_bridge_helper.html#a3bc88e67e28990845ce6cab3e7cafd6e">ns3::TapBridgeHelper</a>
 , <a class="el" href="classns3_1_1_three_gpp_http_client_helper.html#a459d43c6c66dc0ce737936842cd2bfc8">ns3::ThreeGppHttpClientHelper</a>
 , <a class="el" href="classns3_1_1_three_gpp_http_server_helper.html#ad57b73428635f557219096c3c8e70fee">ns3::ThreeGppHttpServerHelper</a>
@@ -1165,6 +1169,9 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 , <a class="el" href="class_hwmp_simplest_regression_test.html#a8c6e0b9cf7ae88ff06694a2520978ffc">HwmpSimplestRegressionTest</a>
 , <a class="el" href="class_traceroute_example.html#a0368ba8e53061dedc5597acf740d9818">TracerouteExample</a>
 </li>
+<li>InstallComponents()
+: <a class="el" href="classns3_1_1lorawan_1_1_network_server_helper.html#a4f51f549a68a1873124538cc9661cf35">ns3::lorawan::NetworkServerHelper</a>
+</li>
 <li>InstallDhcpClient()
 : <a class="el" href="classns3_1_1_dhcp_helper.html#a79339a359fbd1501dd9b6d4fccc83acd">ns3::DhcpHelper</a>
 </li>
@@ -1195,12 +1202,12 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 , <a class="el" href="classns3_1_1_csma_helper.html#a83eb53470f7326db42ce99cf4563eb40">ns3::CsmaHelper</a>
 , <a class="el" href="classns3_1_1_emu_fd_net_device_helper.html#af1fec8e1f99c996e297507a1cb3fe084">ns3::EmuFdNetDeviceHelper</a>
 , <a class="el" href="classns3_1_1_fd_net_device_helper.html#a7e1059ae7fd337972babf8ad48c9456a">ns3::FdNetDeviceHelper</a>
-, <a class="el" href="classns3_1_1_forwarder_helper.html#a9d420de0f4be4d252a1df120abe4db27">ns3::ForwarderHelper</a>
-, <a class="el" href="classns3_1_1_network_server_helper.html#ac729285355c2897ead70b4fce30addd8">ns3::NetworkServerHelper</a>
-, <a class="el" href="classns3_1_1_one_shot_sender_helper.html#a71c94914e6a38dadedbd259c53e2cada">ns3::OneShotSenderHelper</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_forwarder_helper.html#ad62c2a4a15e40e1dff0cbf2144fde1c5">ns3::lorawan::ForwarderHelper</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_network_server_helper.html#a5cee81b9fef7bab361fad1c7b154b5c1">ns3::lorawan::NetworkServerHelper</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_one_shot_sender_helper.html#ad98b1925e3fb30d1e41ee9d98c780a22">ns3::lorawan::OneShotSenderHelper</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_periodic_sender_helper.html#aa3e5114c618ee265b43e08cbcc16e091">ns3::lorawan::PeriodicSenderHelper</a>
 , <a class="el" href="classns3_1_1_on_off_helper.html#ac06b1d705c5024e022b4fd48025db25f">ns3::OnOffHelper</a>
 , <a class="el" href="classns3_1_1_packet_sink_helper.html#af0c261c1001d87730581926bbd25e6b8">ns3::PacketSinkHelper</a>
-, <a class="el" href="classns3_1_1_periodic_sender_helper.html#a3ef34cd901a418043ef61610639d1c81">ns3::PeriodicSenderHelper</a>
 , <a class="el" href="classns3_1_1_planet_lab_fd_net_device_helper.html#a244310cd940f8c73f0accde34f42c1b7">ns3::PlanetLabFdNetDeviceHelper</a>
 , <a class="el" href="classns3_1_1_simple_net_device_helper.html#a1b1ca69a12532cb197b2e2f5b920367e">ns3::SimpleNetDeviceHelper</a>
 , <a class="el" href="classns3_1_1_tap_fd_net_device_helper.html#a106e5a301230cb9be050450552235c21">ns3::TapFdNetDeviceHelper</a>
@@ -1342,6 +1349,9 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 <li>Interference()
 : <a class="el" href="class_phy_connectivity_test.html#ad3bf4d4e2d2f4573a8fde11cbcb1097d">PhyConnectivityTest</a>
 , <a class="el" href="class_receive_path_test.html#aacfc9adb02f3ee4810227aa7e6fd4202">ReceivePathTest</a>
+</li>
+<li>InterferenceCallback()
+: <a class="el" href="classns3_1_1lorawan_1_1_lora_packet_tracker.html#adef059592d11a9a1617668ae4d57ade3">ns3::lorawan::LoraPacketTracker</a>
 </li>
 <li>InterferenceExperiment()
 : <a class="el" href="class_interference_experiment.html#aee21bb8de20e5363a217e869279f7834">InterferenceExperiment</a>
@@ -1931,7 +1941,7 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 : <a class="el" href="classns3_1_1_ipv6_interface.html#a2f1b354b13fabe08717e1d05e5ada2d5">ns3::Ipv6Interface</a>
 </li>
 <li>Ipv6InterfaceAddress()
-: <a class="el" href="classns3_1_1_ipv6_interface_address.html#ac6dde13e0f51fd8db2fd7b42862922a2">ns3::Ipv6InterfaceAddress</a>
+: <a class="el" href="classns3_1_1_ipv6_interface_address.html#a89994c5821b84bb87128ee09fd2c5522">ns3::Ipv6InterfaceAddress</a>
 </li>
 <li>Ipv6InterfaceAddressList
 : <a class="el" href="classns3_1_1_ipv6_interface.html#a8983603129d14da06c4bdeec91f1f9df">ns3::Ipv6Interface</a>
@@ -1990,7 +2000,7 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 : <a class="el" href="classns3_1_1_ipv6_multicast_route.html#a5578652051075133a6093ce5a4ab246d">ns3::Ipv6MulticastRoute</a>
 </li>
 <li>Ipv6MulticastRoutingTableEntry()
-: <a class="el" href="classns3_1_1_ipv6_multicast_routing_table_entry.html#a9e03739078a3a1dcc6e08126e59d6d1b">ns3::Ipv6MulticastRoutingTableEntry</a>
+: <a class="el" href="classns3_1_1_ipv6_multicast_routing_table_entry.html#a61886faf76c968e9967b905651124e85">ns3::Ipv6MulticastRoutingTableEntry</a>
 </li>
 <li>Ipv6OptionDemux()
 : <a class="el" href="classns3_1_1_ipv6_option_demux.html#a24eda18f711bb1626e93b85cad2894b3">ns3::Ipv6OptionDemux</a>
@@ -2048,13 +2058,13 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 : <a class="el" href="classns3_1_1_ipv6_pmtu_cache.html#a63abb5eb22c149f2d20a56c3b5b3461a">ns3::Ipv6PmtuCache</a>
 </li>
 <li>Ipv6Prefix()
-: <a class="el" href="classns3_1_1_ipv6_prefix.html#a0df62b59a6c0fbbce73e6a2530093ce2">ns3::Ipv6Prefix</a>
+: <a class="el" href="classns3_1_1_ipv6_prefix.html#a9e2a46109349db082923b647bcf8e456">ns3::Ipv6Prefix</a>
 </li>
 <li>Ipv6PrefixValue()
-: <a class="el" href="classns3_1_1_ipv6_prefix_value.html#afb89239728c0437b0c628ffd7d00e0d8">ns3::Ipv6PrefixValue</a>
+: <a class="el" href="classns3_1_1_ipv6_prefix_value.html#a7f16ac3d3024666466c34e13fa3883f0">ns3::Ipv6PrefixValue</a>
 </li>
 <li>Ipv6QueueDiscItem()
-: <a class="el" href="classns3_1_1_ipv6_queue_disc_item.html#a40f044073b99c978ecf2a6ee12588776">ns3::Ipv6QueueDiscItem</a>
+: <a class="el" href="classns3_1_1_ipv6_queue_disc_item.html#ac2b0c25b849d8b0e9b5336c72432b71b">ns3::Ipv6QueueDiscItem</a>
 </li>
 <li>Ipv6RawSocketImpl()
 : <a class="el" href="classns3_1_1_ipv6_raw_socket_impl.html#aa3ee357e602db12a279eb34ba2968391">ns3::Ipv6RawSocketImpl</a>
@@ -2108,13 +2118,13 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 : <a class="el" href="classns3_1_1_ipv6_list_routing.html#ac06678936e0664598621368bbfa8f6de">ns3::Ipv6ListRouting</a>
 </li>
 <li>Ipv6RoutingTableEntry()
-: <a class="el" href="classns3_1_1_ipv6_routing_table_entry.html#a21d8401fecedc606a93e0c8536488ff0">ns3::Ipv6RoutingTableEntry</a>
+: <a class="el" href="classns3_1_1_ipv6_routing_table_entry.html#aab957fcc3e31047f5f130eb9fe016cd0">ns3::Ipv6RoutingTableEntry</a>
 </li>
 <li>Ipv6StaticRouting()
 : <a class="el" href="classns3_1_1_ipv6_static_routing.html#a1f9a909686971c59e89905cb46194fee">ns3::Ipv6StaticRouting</a>
 </li>
 <li>Ipv6StaticRoutingHelper()
-: <a class="el" href="classns3_1_1_ipv6_static_routing_helper.html#ad6606fcb427f3261f2d2d9d2c5ab5c8b">ns3::Ipv6StaticRoutingHelper</a>
+: <a class="el" href="classns3_1_1_ipv6_static_routing_helper.html#ae72254093470eae64213505e1a17c567">ns3::Ipv6StaticRoutingHelper</a>
 </li>
 <li>Is()
 : <a class="el" href="classns3_1_1_capability_information.html#ace5b8446b186c060d29afbe316d414d5">ns3::CapabilityInformation</a>
@@ -2232,13 +2242,13 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 : <a class="el" href="classns3_1_1_radvd_prefix.html#ab668dcff90549370a67d944977966eca">ns3::RadvdPrefix</a>
 </li>
 <li>IsAvailable()
-: <a class="el" href="classns3_1_1_gateway_lora_phy_1_1_reception_path.html#ae9145cbf88c30433cdd16c60f894b537">ns3::GatewayLoraPhy::ReceptionPath</a>
+: <a class="el" href="classns3_1_1lorawan_1_1_gateway_lora_phy_1_1_reception_path.html#ad2422662f1100b92a4267de0976f9b0b">ns3::lorawan::GatewayLoraPhy::ReceptionPath</a>
 </li>
 <li>IsAvailableChannel()
 : <a class="el" href="classns3_1_1_wave_net_device.html#ab3e4fd698e4452efd95fa93dfca3963d">ns3::WaveNetDevice</a>
 </li>
 <li>IsAvailableForTransmission()
-: <a class="el" href="classns3_1_1_gateway_status.html#a0de1ce215115b1db88285638a278b4a7">ns3::GatewayStatus</a>
+: <a class="el" href="classns3_1_1lorawan_1_1_gateway_status.html#a09aa68088ae7a91f6c215742eb2e5e6b">ns3::lorawan::GatewayStatus</a>
 </li>
 <li>IsBasic()
 : <a class="el" href="classns3_1_1_cid_factory.html#a5216e05a73cab8a702291d76f0375d2a">ns3::CidFactory</a>
@@ -2276,7 +2286,7 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 , <a class="el" href="classns3_1_1_csma_net_device.html#ad5c5196c236c4c6f034690c136e4216d">ns3::CsmaNetDevice</a>
 , <a class="el" href="classns3_1_1_fd_net_device.html#a8c82b7d78d4de4d336b08ead9bb25e72">ns3::FdNetDevice</a>
 , <a class="el" href="classns3_1_1_loopback_net_device.html#aa939dbb773e66956fa6a485b02b99c74">ns3::LoopbackNetDevice</a>
-, <a class="el" href="classns3_1_1_lora_net_device.html#ab63c1413b0c7ebabe0a3f1cef405cbad">ns3::LoraNetDevice</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_lora_net_device.html#a627f1c69aae3e26cf636ce552e2935df">ns3::lorawan::LoraNetDevice</a>
 , <a class="el" href="classns3_1_1_lr_wpan_net_device.html#a33bcc6b1000f6bab8cc2ce3eb0e1641c">ns3::LrWpanNetDevice</a>
 , <a class="el" href="classns3_1_1_lte_net_device.html#adc81317e1691029eacd5e578aca83bcf">ns3::LteNetDevice</a>
 , <a class="el" href="classns3_1_1_mesh_point_device.html#a0e2732bc77defa1b7035f71eef9b5f4d">ns3::MeshPointDevice</a>
@@ -2302,7 +2312,7 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 , <a class="el" href="classns3_1_1_fd_net_device.html#add34a68b539feeedc697119f1abadb52">ns3::FdNetDevice</a>
 , <a class="el" href="classns3_1_1_ipv4_address.html#a79a1d91f0cfdb52f3b89cee50811af04">ns3::Ipv4Address</a>
 , <a class="el" href="classns3_1_1_loopback_net_device.html#a5c0be3aaa87246ec9e0d116a7d6ddbc6">ns3::LoopbackNetDevice</a>
-, <a class="el" href="classns3_1_1_lora_net_device.html#a0947741b9dc6ac4683310731ee42b8f4">ns3::LoraNetDevice</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_lora_net_device.html#a04011b7a1bcfae80bcfc55c65ad3a835">ns3::lorawan::LoraNetDevice</a>
 , <a class="el" href="classns3_1_1_lr_wpan_net_device.html#a06ca8308e3667b55add6bd1aa56b80a3">ns3::LrWpanNetDevice</a>
 , <a class="el" href="classns3_1_1_lte_net_device.html#a967f3603cd95557f0756e28942bd144f">ns3::LteNetDevice</a>
 , <a class="el" href="classns3_1_1_mac16_address.html#a14e46b632e34e41d42adb02c4c50185a">ns3::Mac16Address</a>
@@ -2389,6 +2399,9 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 : <a class="el" href="classns3_1_1_ctrl_b_ack_request_header.html#a858b7852315773c514d5bf6d420f0f22">ns3::CtrlBAckRequestHeader</a>
 , <a class="el" href="classns3_1_1_ctrl_b_ack_response_header.html#a251298f92a1f6a74fc2ba641eacdecbb">ns3::CtrlBAckResponseHeader</a>
 </li>
+<li>IsConfirmed()
+: <a class="el" href="classns3_1_1lorawan_1_1_lorawan_mac_header.html#a9149bf8586ddfb204080c8e38e88dc24">ns3::lorawan::LorawanMacHeader</a>
+</li>
 <li>IsContinuousAccessAssigned()
 : <a class="el" href="classns3_1_1_channel_scheduler.html#a7e6a269552c6439d679fced8ede85a75">ns3::ChannelScheduler</a>
 </li>
@@ -2441,7 +2454,7 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 , <a class="el" href="classns3_1_1_ipv4_l3_protocol.html#afc5ec4a7c76351efb45992457f61ea2b">ns3::Ipv4L3Protocol</a>
 </li>
 <li>IsDestroyedByInterference()
-: <a class="el" href="classns3_1_1_lora_interference_helper.html#a004a4a2d30df8d8208bd08a6122a5f05">ns3::LoraInterferenceHelper</a>
+: <a class="el" href="classns3_1_1lorawan_1_1_lora_interference_helper.html#ad37985e0b3cbcd00bdce3b36e5729b37">ns3::lorawan::LoraInterferenceHelper</a>
 </li>
 <li>IsDisassociation()
 : <a class="el" href="classns3_1_1_wifi_mac_header.html#a901165988ced1d5214ff40734f6252d3">ns3::WifiMacHeader</a>
@@ -2503,7 +2516,7 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 , <a class="el" href="classns3_1_1_socket_set_dont_fragment_tag.html#a0bbee231521ae5e9a90966ba4e32c898">ns3::SocketSetDontFragmentTag</a>
 </li>
 <li>IsEnabledForUplink()
-: <a class="el" href="classns3_1_1_logical_lora_channel.html#a6ad70e917dbbfa1bf9c396150277ca13">ns3::LogicalLoraChannel</a>
+: <a class="el" href="classns3_1_1lorawan_1_1_logical_lora_channel.html#a05fd7f9703aad2b8657612fca09db0b9">ns3::lorawan::LogicalLoraChannel</a>
 </li>
 <li>IsEnd()
 : <a class="el" href="classns3_1_1_buffer_1_1_iterator.html#a1dcabf102937b1f2262551938d87c3c9">ns3::Buffer::Iterator</a>
@@ -2618,7 +2631,7 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 , <a class="el" href="classns3_1_1_ipv6_routing_table_entry.html#af1ac44ec0efbbfb54c9dcbbbc343d86e">ns3::Ipv6RoutingTableEntry</a>
 </li>
 <li>IsGbr()
-: <a class="el" href="classns3_1_1_eps_bearer.html#aee2885e6d55f6e5e58f420fe7db8f120">ns3::EpsBearer</a>
+: <a class="el" href="classns3_1_1_eps_bearer.html#ac9a585e5eea14ed35ef842f57a9626b3">ns3::EpsBearer</a>
 </li>
 <li>isGbr
 : <a class="el" href="structns3_1_1_lte_enb_cmac_sap_provider_1_1_lc_info.html#a6b5223044e8a2dfd723b0d4606c0f805">ns3::LteEnbCmacSapProvider::LcInfo</a>
@@ -2705,6 +2718,10 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 <li>IsInsideReorderingWindow()
 : <a class="el" href="classns3_1_1_lte_rlc_um.html#af9dc02493802d28c36558a1f1324cd4c">ns3::LteRlcUm</a>
 </li>
+<li>IsIntersect()
+: <a class="el" href="classns3_1_1_box.html#a9f1d0fb7e03da61916c46ec2c6bc2aa8">ns3::Box</a>
+, <a class="el" href="classns3_1_1_building.html#a6a3cda6ae72c0792c3f3820d7adea687">ns3::Building</a>
+</li>
 <li>IsIntervalOpt()
 : <a class="el" href="classns3_1_1_radvd_interface.html#a23c5c7ffc17e413cea3fb8475489c16b">ns3::RadvdInterface</a>
 </li>
@@ -2741,6 +2758,9 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 <li>IsLessStrictly()
 : <a class="el" href="classns3_1_1_heap_scheduler.html#a0ecf702d2a326b3e13debc0e9022773a">ns3::HeapScheduler</a>
 </li>
+<li>IsLineOfSightBlocked()
+: <a class="el" href="classns3_1_1_buildings_channel_condition_model.html#a3b97a7666596f013e8e59e42ca93d756">ns3::BuildingsChannelConditionModel</a>
+</li>
 <li>IsLinkCache()
 : <a class="el" href="classns3_1_1dsr_1_1_dsr_route_cache.html#a3ec7cfaaf07c337cf71aa21793059293">ns3::dsr::DsrRouteCache</a>
 , <a class="el" href="classns3_1_1dsr_1_1_dsr_routing.html#a857054926335441b467ee12bdf160852">ns3::dsr::DsrRouting</a>
@@ -2757,7 +2777,7 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 , <a class="el" href="classns3_1_1_csma_net_device.html#a23c729dba3c7fc53bd22fb535f0af967">ns3::CsmaNetDevice</a>
 , <a class="el" href="classns3_1_1_fd_net_device.html#a850e95921279495a9f4a3bf71694fdb1">ns3::FdNetDevice</a>
 , <a class="el" href="classns3_1_1_loopback_net_device.html#a3cf7297bdaf126e9f7969ebe1d3ee80b">ns3::LoopbackNetDevice</a>
-, <a class="el" href="classns3_1_1_lora_net_device.html#aba41ca6a5adbd35147aa55aea7e66b26">ns3::LoraNetDevice</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_lora_net_device.html#abd4f25cf91580a899f3446293dbe96d0">ns3::lorawan::LoraNetDevice</a>
 , <a class="el" href="classns3_1_1_lr_wpan_net_device.html#a165de4be760746970c192a9639dabc78">ns3::LrWpanNetDevice</a>
 , <a class="el" href="classns3_1_1_lte_net_device.html#ae64a898c975d637ede14ef196286169b">ns3::LteNetDevice</a>
 , <a class="el" href="classns3_1_1_mesh_point_device.html#a05da01c8695ee1a3d3e156d4c8647031">ns3::MeshPointDevice</a>
@@ -2845,7 +2865,7 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 : <a class="el" href="classns3_1_1_amrr_wifi_manager.html#a342d93dd7b8294cb194ce8cec7dcdaae">ns3::AmrrWifiManager</a>
 </li>
 <li>IsMcsSupported()
-: <a class="el" href="classns3_1_1_wifi_phy.html#ace15a5e48e92eadceffbfb8ef3eb332c">ns3::WifiPhy</a>
+: <a class="el" href="classns3_1_1_wifi_phy.html#a87743ee95a1024ae5968b7e390efbfdc">ns3::WifiPhy</a>
 </li>
 <li>IsMgt()
 : <a class="el" href="classns3_1_1_wifi_mac_header.html#a9e27e439b0ef655ac9598f45218364bd">ns3::WifiMacHeader</a>
@@ -2874,7 +2894,7 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 , <a class="el" href="classns3_1_1_ipv4_address.html#a3a39d50664243b7e37a1244bb03b4ec2">ns3::Ipv4Address</a>
 , <a class="el" href="classns3_1_1_ipv6_address.html#a68f522d40b6db6d383848ea90bc47dd0">ns3::Ipv6Address</a>
 , <a class="el" href="classns3_1_1_loopback_net_device.html#a669799de7910ec0782724e00cddcce85">ns3::LoopbackNetDevice</a>
-, <a class="el" href="classns3_1_1_lora_net_device.html#a7c2f24d581517df0c030ad727159a043">ns3::LoraNetDevice</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_lora_net_device.html#a6a18359bc6d5810de4429724d9739f4b">ns3::lorawan::LoraNetDevice</a>
 , <a class="el" href="classns3_1_1_lr_wpan_net_device.html#a63afe0e16e92e0c02283e43d18c7325b">ns3::LrWpanNetDevice</a>
 , <a class="el" href="classns3_1_1_lte_net_device.html#a74bf151aa6ab14f99d7bddf06f6961a8">ns3::LteNetDevice</a>
 , <a class="el" href="classns3_1_1_mac16_address.html#aa64d5aeb71c210a0bad9830e1542f015">ns3::Mac16Address</a>
@@ -2963,9 +2983,9 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 : <a class="el" href="classns3_1_1_three_gpp_antenna_array_model.html#a6d4e814198d981416b99f385ccf2cc99">ns3::ThreeGppAntennaArrayModel</a>
 </li>
 <li>IsOnFrequency()
-: <a class="el" href="classns3_1_1_end_device_lora_phy.html#a87bf471fccdc24bc01b6cbe3691f1448">ns3::EndDeviceLoraPhy</a>
-, <a class="el" href="classns3_1_1_gateway_lora_phy.html#aa801aa99fd806506351cd0a9b7fe38ce">ns3::GatewayLoraPhy</a>
-, <a class="el" href="classns3_1_1_lora_phy.html#ab206f65f4fcacb9d9f544807ae0e7f37">ns3::LoraPhy</a>
+: <a class="el" href="classns3_1_1lorawan_1_1_end_device_lora_phy.html#a70a83e7dde5b2ae33f6f47dbbf4ad0cd">ns3::lorawan::EndDeviceLoraPhy</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_gateway_lora_phy.html#a293b678aaaf872fb1d6c0385bbab9d71">ns3::lorawan::GatewayLoraPhy</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_lora_phy.html#a554597e30a17b099e8a7f68242cb16a7">ns3::lorawan::LoraPhy</a>
 </li>
 <li>IsOnLinkFlag()
 : <a class="el" href="classns3_1_1_radvd_prefix.html#ac4ce699b4d8a126ec0ae4f76a57e3a69">ns3::RadvdPrefix</a>
@@ -3064,7 +3084,7 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 , <a class="el" href="classns3_1_1_csma_net_device.html#ae30a8e9df54b6a060a16b581f1a5714d">ns3::CsmaNetDevice</a>
 , <a class="el" href="classns3_1_1_fd_net_device.html#abac187931d881abbae427979dc7f68b6">ns3::FdNetDevice</a>
 , <a class="el" href="classns3_1_1_loopback_net_device.html#ae298849b462c921fb0f19805c2072388">ns3::LoopbackNetDevice</a>
-, <a class="el" href="classns3_1_1_lora_net_device.html#a0adf79ce5e68a4c857460951f7aff4ce">ns3::LoraNetDevice</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_lora_net_device.html#aaba6ad5f7ae5116faaa3cf187b3ff2b4">ns3::lorawan::LoraNetDevice</a>
 , <a class="el" href="classns3_1_1_lr_wpan_net_device.html#af7c391fbb6770bd6a49a775b1ffed34f">ns3::LrWpanNetDevice</a>
 , <a class="el" href="classns3_1_1_lte_net_device.html#a8d61b1087b3c4e0894e2426165b2c874">ns3::LteNetDevice</a>
 , <a class="el" href="classns3_1_1_mesh_point_device.html#a0d0221ee1ed442a61856a70b6f635d90">ns3::MeshPointDevice</a>
@@ -3178,7 +3198,7 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 , <a class="el" href="classns3_1_1_subscriber_station_net_device.html#a98e2f48c9fdbc98ef57228b5dcdfac31">ns3::SubscriberStationNetDevice</a>
 </li>
 <li>IsRegisteredMulticastAddress()
-: <a class="el" href="classns3_1_1_ipv6_l3_protocol.html#aa6b8639abf7bd0293f65b735a15d3c77">ns3::Ipv6L3Protocol</a>
+: <a class="el" href="classns3_1_1_ipv6_l3_protocol.html#a0f4b8856923e5c3064cffe446d318389">ns3::Ipv6L3Protocol</a>
 </li>
 <li>IsRejected()
 : <a class="el" href="classns3_1_1_originator_block_ack_agreement.html#a09d2e711b91874dcb864416d977f93d4">ns3::OriginatorBlockAckAgreement</a>
@@ -3387,6 +3407,12 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 : <a class="el" href="classns3_1_1_amrr_wifi_manager.html#a93dcdb454bf97d47b550fe8ce87a7e28">ns3::AmrrWifiManager</a>
 , <a class="el" href="classns3_1_1_status_code.html#a840c471261012caa4fcfb92514c971c6">ns3::StatusCode</a>
 </li>
+<li>Issue169TestCase()
+: <a class="el" href="class_issue169_test_case.html#abbfb970e860d37fd1e1b6db9731269ac">Issue169TestCase</a>
+</li>
+<li>Issue40TestCase()
+: <a class="el" href="class_issue40_test_case.html#ae62587cf45c0fca00d45e39e8731374c">Issue40TestCase</a>
+</li>
 <li>isSupported
 : <a class="el" href="structns3_1_1_mcs_group.html#ae80bed20d83ea94500f6c4afddf41bfc">ns3::McsGroup</a>
 </li>
@@ -3425,10 +3451,10 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 : <a class="el" href="classns3_1_1_reservation.html#aa99849171655a5b2a5f27572fc8d4a91">ns3::Reservation</a>
 </li>
 <li>IsTransmitting()
-: <a class="el" href="classns3_1_1_end_device_lora_phy.html#a777b8ec044372c5edfbd908d3a048f7b">ns3::EndDeviceLoraPhy</a>
-, <a class="el" href="classns3_1_1_gateway_lora_mac.html#a7be696a89a8ec19681ab7304207c528f">ns3::GatewayLoraMac</a>
-, <a class="el" href="classns3_1_1_gateway_lora_phy.html#a935132c22c3d62ec75cbb639e42b87db">ns3::GatewayLoraPhy</a>
-, <a class="el" href="classns3_1_1_lora_phy.html#a572287322acfb3a6ad04dd8fac6c500d">ns3::LoraPhy</a>
+: <a class="el" href="classns3_1_1lorawan_1_1_end_device_lora_phy.html#a3925d5a27b7e1352c04a78f008071d23">ns3::lorawan::EndDeviceLoraPhy</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_gateway_lora_phy.html#a9184985bc4da2d1c0cc9fedb105b20f8">ns3::lorawan::GatewayLoraPhy</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_gateway_lorawan_mac.html#adc61486ecc6b22078f006cc6f17d8e19">ns3::lorawan::GatewayLorawanMac</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_lora_phy.html#a5280764d934ba5ff8d305b0bc6b600ce">ns3::lorawan::LoraPhy</a>
 </li>
 <li>IsTransport()
 : <a class="el" href="classns3_1_1_cid_factory.html#ae4c27f5005d7ee8498357bca80277e3f">ns3::CidFactory</a>
@@ -3481,7 +3507,8 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 , <a class="el" href="classns3_1_1_ipv6_l3_protocol.html#aa6ac57ceab8bac8db8b4d69d845a727c">ns3::Ipv6L3Protocol</a>
 </li>
 <li>IsUplink()
-: <a class="el" href="classns3_1_1_lora_mac_header.html#a98985e98cedb88bed41d265c150ab2c4">ns3::LoraMacHeader</a>
+: <a class="el" href="classns3_1_1lorawan_1_1_lora_packet_tracker.html#ad3241a6b1525acdc4c1e60b18735f98a">ns3::lorawan::LoraPacketTracker</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_lorawan_mac_header.html#a6706b980d50f629fd073b2ccc57df57f">ns3::lorawan::LorawanMacHeader</a>
 </li>
 <li>IsUsn()
 : <a class="el" href="classns3_1_1dot11s_1_1_destination_address_unit.html#a57c4c7f9a0142f229edfb38444309751">ns3::dot11s::DestinationAddressUnit</a>
@@ -3532,9 +3559,6 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 </li>
 <li>IsWaveChannel()
 : <a class="el" href="classns3_1_1_channel_manager.html#ae06978b638275c7a37ba6505e2104f92">ns3::ChannelManager</a>
-</li>
-<li>IsWithinLineOfSight()
-: <a class="el" href="classns3_1_1_buildings_channel_condition_model.html#a4fd08585f74c4712c3865c0f48f2ab8c">ns3::BuildingsChannelConditionModel</a>
 </li>
 <li>IsWithinSizeAndTimeLimits()
 : <a class="el" href="classns3_1_1_mac_low.html#a2dc2b39866b901f5baad7f45ec8484a9">ns3::MacLow</a>
@@ -3605,7 +3629,7 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 : <a class="el" href="classns3_1_1_hybrid_buildings_propagation_loss_model.html#ab5c5e1bc50f86f7332520f5365e4ad86">ns3::HybridBuildingsPropagationLossModel</a>
 </li>
 <li>ItuR1411LosPropagationLossModel()
-: <a class="el" href="classns3_1_1_itu_r1411_los_propagation_loss_model.html#a9bb5356302975a38ad9141ec052b9d1e">ns3::ItuR1411LosPropagationLossModel</a>
+: <a class="el" href="classns3_1_1_itu_r1411_los_propagation_loss_model.html#a03327b3eb2073296f3b2cd72a65a089e">ns3::ItuR1411LosPropagationLossModel</a>
 </li>
 <li>ItuR1411LosPropagationLossModelTestCase()
 : <a class="el" href="class_itu_r1411_los_propagation_loss_model_test_case.html#a20f776cecb8cf923c31e710d0f329e83">ItuR1411LosPropagationLossModelTestCase</a>
@@ -3614,7 +3638,7 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 : <a class="el" href="class_itu_r1411_los_propagation_loss_model_test_suite.html#ae7a78ad0a301bb2d6dcd6e7e3ffb666f">ItuR1411LosPropagationLossModelTestSuite</a>
 </li>
 <li>ItuR1411NlosOverRooftopPropagationLossModel()
-: <a class="el" href="classns3_1_1_itu_r1411_nlos_over_rooftop_propagation_loss_model.html#a19c16e75c86e40aeda486dd4067e3118">ns3::ItuR1411NlosOverRooftopPropagationLossModel</a>
+: <a class="el" href="classns3_1_1_itu_r1411_nlos_over_rooftop_propagation_loss_model.html#aa173c36ea44d328e68cf45404f333c35">ns3::ItuR1411NlosOverRooftopPropagationLossModel</a>
 </li>
 <li>ItuR1411NlosOverRooftopPropagationLossModelTestCase()
 : <a class="el" href="class_itu_r1411_nlos_over_rooftop_propagation_loss_model_test_case.html#ab495d72c14e39c20ff7310ea47f79e69">ItuR1411NlosOverRooftopPropagationLossModelTestCase</a>
@@ -3635,7 +3659,7 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:51 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:52 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

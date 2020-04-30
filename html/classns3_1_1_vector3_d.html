@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -390,7 +387,7 @@ Related Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The distance between <code>a</code> and <code>b</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The distance between <span class="params"><span class="paramname">a</span></span> and <span class="params"><span class="paramname">b</span></span>. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="vector_8cc_source.html#l00092">92</a> of file <a class="el" href="vector_8cc_source.html">vector.cc</a>.</p>
 
@@ -423,13 +420,13 @@ Related Functions</h2></td></tr>
 <p></p>
 <p>Create an <a class="el" href="classns3_1_1_attribute_accessor.html" title="allow setting and getting the value of an attribute.">AttributeAccessor</a> for a class data member, or a lone class get functor or set method.</p>
 <p>The get functor method should have a signature like </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> U (T::*getter)(void) const</div>
-</div><!-- fragment --><p> where <code>T</code> is the class and <code>U</code> is the type of the return value.</p>
+</div><!-- fragment --><p> where <span class="params"><span class="paramname">T</span></span> is the class and <span class="params"><span class="paramname">U</span></span> is the type of the return value.</p>
 <p>The set method should have one of these signatures: </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> void (T::*setter)(U)</div>
 <div class="line"><span class="keyword">typedef</span> <span class="keywordtype">bool</span> (T::*setter)(U)</div>
-</div><!-- fragment --><p> where <code>T</code> is the class and <code>U</code> is the type of the value to set the attribute to, which should be compatible with the specific <a class="el" href="classns3_1_1_attribute_value.html" title="Hold a value for an Attribute.">AttributeValue</a> type <code>V</code> which holds the value (or the type implied by the name <code>Make&lt;V&gt;Accessor</code> of this function.) In the case of a <code>setter</code> returning <code>bool</code>, the return value should be <code>true</code> if the value could be set successfully.</p>
+</div><!-- fragment --><p> where <span class="params"><span class="paramname">T</span></span> is the class and <span class="params"><span class="paramname">U</span></span> is the type of the value to set the attribute to, which should be compatible with the specific <a class="el" href="classns3_1_1_attribute_value.html" title="Hold a value for an Attribute.">AttributeValue</a> type <span class="params"><span class="paramname">V</span></span> which holds the value (or the type implied by the name <code>Make&lt;V&gt;Accessor</code> of this function.) In the case of a <span class="params"><span class="paramname">setter</span></span> returning <span class="params"><span class="paramname">bool,</span></span> the return value should be <code>true</code> if the value could be set successfully.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">V</td><td><span class="params"><span class="paramdir">[explicit]</span></span> (If present) The specific <a class="el" href="classns3_1_1_attribute_value.html" title="Hold a value for an Attribute.">AttributeValue</a> type to use to represent the Attribute. (If not present, the type <code>V</code> is implicit in the name of this function, as "Make&lt;V&gt;Accessor" </td></tr>
+    <tr><td class="paramname">V</td><td><span class="params"><span class="paramdir">[explicit]</span></span> (If present) The specific <a class="el" href="classns3_1_1_attribute_value.html" title="Hold a value for an Attribute.">AttributeValue</a> type to use to represent the Attribute. (If not present, the type <span class="params"><span class="paramname">V</span></span> is implicit in the name of this function, as "Make&lt;V&gt;Accessor" </td></tr>
     <tr><td class="paramname">T1</td><td><span class="params"><span class="paramdir">[deduced] </span></span> The type of the class data member, or the type of the class get functor or set method. </td></tr>
   </table>
   </dd>
@@ -484,14 +481,14 @@ Related Functions</h2></td></tr>
 <p></p>
 <p>Create an <a class="el" href="classns3_1_1_attribute_accessor.html" title="allow setting and getting the value of an attribute.">AttributeAccessor</a> using a pair of get functor and set methods from a class.</p>
 <p>The get functor method should have a signature like </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> U (T::*getter)(void) const</div>
-</div><!-- fragment --><p> where <code>T</code> is the class and <code>U</code> is the type of the return value.</p>
+</div><!-- fragment --><p> where <span class="params"><span class="paramname">T</span></span> is the class and <span class="params"><span class="paramname">U</span></span> is the type of the return value.</p>
 <p>The set method should have one of these signatures: </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> void (T::*setter)(U)</div>
 <div class="line"><span class="keyword">typedef</span> <span class="keywordtype">bool</span> (T::*setter)(U)</div>
-</div><!-- fragment --><p> where <code>T</code> is the class and <code>U</code> is the type of the value to set the attribute to, which should be compatible with the specific <a class="el" href="classns3_1_1_attribute_value.html" title="Hold a value for an Attribute.">AttributeValue</a> type <code>V</code> which holds the value (or the type implied by the name <code>Make&lt;V&gt;Accessor</code> of this function.) In the case of a <code>setter</code> returning <code>bool</code>, the return value should be true if the value could be set successfully.</p>
+</div><!-- fragment --><p> where <span class="params"><span class="paramname">T</span></span> is the class and <span class="params"><span class="paramname">U</span></span> is the type of the value to set the attribute to, which should be compatible with the specific <a class="el" href="classns3_1_1_attribute_value.html" title="Hold a value for an Attribute.">AttributeValue</a> type <span class="params"><span class="paramname">V</span></span> which holds the value (or the type implied by the name <code>Make&lt;V&gt;Accessor</code> of this function.) In the case of a <span class="params"><span class="paramname">setter</span></span> returning <span class="params"><span class="paramname">bool,</span></span> the return value should be true if the value could be set successfully.</p>
 <p>In practice the setter and getter arguments can appear in either order, but setter first is preferred.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">V</td><td><span class="params"><span class="paramdir">[explicit]</span></span> (If present) The specific <a class="el" href="classns3_1_1_attribute_value.html" title="Hold a value for an Attribute.">AttributeValue</a> type to use to represent the Attribute. (If not present, the type <code>V</code> is implicit in the name of this function as "Make&lt;V&gt;Accessor" </td></tr>
+    <tr><td class="paramname">V</td><td><span class="params"><span class="paramdir">[explicit]</span></span> (If present) The specific <a class="el" href="classns3_1_1_attribute_value.html" title="Hold a value for an Attribute.">AttributeValue</a> type to use to represent the Attribute. (If not present, the type <span class="params"><span class="paramname">V</span></span> is implicit in the name of this function as "Make&lt;V&gt;Accessor" </td></tr>
     <tr><td class="paramname">T1</td><td><span class="params"><span class="paramdir">[deduced] </span></span> The type of the class data member, or the type of the class get functor or set method.</td></tr>
     <tr><td class="paramname">T2</td><td><span class="params"><span class="paramdir">[deduced] </span></span> The type of the getter class functor method. </td></tr>
   </table>
@@ -583,7 +580,7 @@ Related Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if <code>a</code> is not equal to <code>b</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if <span class="params"><span class="paramname">a</span></span> is not equal to <span class="params"><span class="paramname">b</span></span>. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="vector_8cc_source.html#l00145">145</a> of file <a class="el" href="vector_8cc_source.html">vector.cc</a>.</p>
 
@@ -631,7 +628,7 @@ Related Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The vector sum of <code>a</code> and <code>b</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The vector sum of <span class="params"><span class="paramname">a</span></span> and <span class="params"><span class="paramname">b</span></span>. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="vector_8cc_source.html#l00150">150</a> of file <a class="el" href="vector_8cc_source.html">vector.cc</a>.</p>
 
@@ -679,7 +676,7 @@ Related Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The vector difference of <code>a</code> and <code>b</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The vector difference of <span class="params"><span class="paramname">a</span></span> and <span class="params"><span class="paramname">b</span></span>. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="vector_8cc_source.html#l00155">155</a> of file <a class="el" href="vector_8cc_source.html">vector.cc</a>.</p>
 
@@ -727,7 +724,7 @@ Related Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if <code>a</code> is less than <code>b</code> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if <span class="params"><span class="paramname">a</span></span> is less than <span class="params"><span class="paramname">b</span></span> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="vector_8cc_source.html#l00120">120</a> of file <a class="el" href="vector_8cc_source.html">vector.cc</a>.</p>
 
@@ -824,7 +821,7 @@ Related Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if <code>a</code> is less than or equal to <code>b</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if <span class="params"><span class="paramname">a</span></span> is less than or equal to <span class="params"><span class="paramname">b</span></span>. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="vector_8cc_source.html#l00125">125</a> of file <a class="el" href="vector_8cc_source.html">vector.cc</a>.</p>
 
@@ -872,7 +869,7 @@ Related Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if <code>a</code> is equal to <code>b</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if <span class="params"><span class="paramname">a</span></span> is equal to <span class="params"><span class="paramname">b</span></span>. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="vector_8cc_source.html#l00140">140</a> of file <a class="el" href="vector_8cc_source.html">vector.cc</a>.</p>
 
@@ -920,7 +917,7 @@ Related Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if <code>a</code> is greater than <code>b</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if <span class="params"><span class="paramname">a</span></span> is greater than <span class="params"><span class="paramname">b</span></span>. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="vector_8cc_source.html#l00130">130</a> of file <a class="el" href="vector_8cc_source.html">vector.cc</a>.</p>
 
@@ -968,7 +965,7 @@ Related Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if <code>a</code> is greater than or equal to <code>b</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if <span class="params"><span class="paramname">a</span></span> is greater than or equal to <span class="params"><span class="paramname">b</span></span>. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="vector_8cc_source.html#l00135">135</a> of file <a class="el" href="vector_8cc_source.html">vector.cc</a>.</p>
 
@@ -1173,7 +1170,7 @@ Related Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_vector3_d.html">Vector3D</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:45 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:46 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

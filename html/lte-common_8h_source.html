@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -276,7 +273,7 @@ $(document).ready(function(){initNavTree('lte-common_8h_source.html',''); initRe
 <div class="line"><a name="l00197"></a><span class="lineno"><a class="line" href="structns3_1_1_phy_transmission_stat_parameters.html#a10c7161e27960de7d057b991d953f3f1">  197</a></span>&#160;  uint8_t  <a class="code" href="structns3_1_1_phy_transmission_stat_parameters.html#a10c7161e27960de7d057b991d953f3f1">m_ndi</a>;     </div>
 <div class="line"><a name="l00198"></a><span class="lineno"><a class="line" href="structns3_1_1_phy_transmission_stat_parameters.html#ac094171c3feecb758da92a65ae82d9d2">  198</a></span>&#160;  uint8_t  <a class="code" href="structns3_1_1_phy_transmission_stat_parameters.html#ac094171c3feecb758da92a65ae82d9d2">m_ccId</a>;    </div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  </div>
-<div class="line"><a name="l00206"></a><span class="lineno"><a class="line" href="structns3_1_1_phy_transmission_stat_parameters.html#aecc20b412b636e62462a33785f33c6b8">  206</a></span>&#160;  <span class="keyword">typedef</span> void (* <a class="code" href="classns3_1_1_traced_callback.html">TracedCallback</a>)(<span class="keyword">const</span> <a class="code" href="structns3_1_1_phy_transmission_stat_parameters.html">PhyTransmissionStatParameters</a> params);</div>
+<div class="line"><a name="l00206"></a><span class="lineno"><a class="line" href="structns3_1_1_phy_transmission_stat_parameters.html#aecc20b412b636e62462a33785f33c6b8">  206</a></span>&#160;  <span class="keyword">typedef</span> void (* <a class="code" href="classns3_1_1_traced_callback.html">TracedCallback</a>)(<span class="keyword">const</span> <a class="code" href="structns3_1_1_phy_transmission_stat_parameters.html">PhyTransmissionStatParameters</a> <a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>);</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  </div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;};</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
@@ -296,7 +293,7 @@ $(document).ready(function(){initNavTree('lte-common_8h_source.html',''); initRe
 <div class="line"><a name="l00224"></a><span class="lineno"><a class="line" href="structns3_1_1_phy_reception_stat_parameters.html#a6657e7b9e0a31e63570a91a25e5ef0a1">  224</a></span>&#160;  uint8_t  <a class="code" href="structns3_1_1_phy_reception_stat_parameters.html#a6657e7b9e0a31e63570a91a25e5ef0a1">m_correctness</a>;  </div>
 <div class="line"><a name="l00225"></a><span class="lineno"><a class="line" href="structns3_1_1_phy_reception_stat_parameters.html#af3971301b1cefc594b5ffa263506328c">  225</a></span>&#160;  uint8_t  <a class="code" href="structns3_1_1_phy_reception_stat_parameters.html#af3971301b1cefc594b5ffa263506328c">m_ccId</a>;        </div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
-<div class="line"><a name="l00233"></a><span class="lineno"><a class="line" href="structns3_1_1_phy_reception_stat_parameters.html#a19b866f11c89b3a11777bd5608bc4ccb">  233</a></span>&#160;  <span class="keyword">typedef</span> void (* <a class="code" href="classns3_1_1_traced_callback.html">TracedCallback</a>)(<span class="keyword">const</span> <a class="code" href="structns3_1_1_phy_reception_stat_parameters.html">PhyReceptionStatParameters</a> params);</div>
+<div class="line"><a name="l00233"></a><span class="lineno"><a class="line" href="structns3_1_1_phy_reception_stat_parameters.html#a19b866f11c89b3a11777bd5608bc4ccb">  233</a></span>&#160;  <span class="keyword">typedef</span> void (* <a class="code" href="classns3_1_1_traced_callback.html">TracedCallback</a>)(<span class="keyword">const</span> <a class="code" href="structns3_1_1_phy_reception_stat_parameters.html">PhyReceptionStatParameters</a> <a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>);</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  </div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;};</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
@@ -352,6 +349,7 @@ $(document).ready(function(){initNavTree('lte-common_8h_source.html',''); initRe
 <div class="ttc" id="astructns3_1_1_phy_reception_stat_parameters_html_a59144e2126c9d52d7b1d5fb6412320c3"><div class="ttname"><a href="structns3_1_1_phy_reception_stat_parameters.html#a59144e2126c9d52d7b1d5fb6412320c3">ns3::PhyReceptionStatParameters::m_imsi</a></div><div class="ttdeci">uint64_t m_imsi</div><div class="ttdoc">IMSI of the scheduled UE.</div><div class="ttdef"><b>Definition:</b> <a href="lte-common_8h_source.html#l00216">lte-common.h:216</a></div></div>
 <div class="ttc" id="astructns3_1_1_phy_reception_stat_parameters_html_a1b1f247cff7d15da79333f6c94e56d0b"><div class="ttname"><a href="structns3_1_1_phy_reception_stat_parameters.html#a1b1f247cff7d15da79333f6c94e56d0b">ns3::PhyReceptionStatParameters::m_rv</a></div><div class="ttdeci">uint8_t m_rv</div><div class="ttdoc">the redundancy version (HARQ)</div><div class="ttdef"><b>Definition:</b> <a href="lte-common_8h_source.html#l00222">lte-common.h:222</a></div></div>
 <div class="ttc" id="aclassns3_1_1_eutran_measurement_mapping_html_aa0e6f0265dccf1b6998658066ccb4ee0"><div class="ttname"><a href="classns3_1_1_eutran_measurement_mapping.html#aa0e6f0265dccf1b6998658066ccb4ee0">ns3::EutranMeasurementMapping::IeValue2ActualQRxLevMin</a></div><div class="ttdeci">static double IeValue2ActualQRxLevMin(int8_t qRxLevMinIeValue)</div><div class="ttdoc">Returns the actual value of an Q-RxLevMin parameter.</div><div class="ttdef"><b>Definition:</b> <a href="lte-common_8cc_source.html#l00351">lte-common.cc:351</a></div></div>
+<div class="ttc" id="anamespacealoha_html_aff1381c591fdaf9d3af2b19080c9eed7"><div class="ttname"><a href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">aloha.params</a></div><div class="ttdeci">dictionary params</div><div class="ttdef"><b>Definition:</b> <a href="aloha_8py_source.html#l00013">aloha.py:13</a></div></div>
 <div class="ttc" id="astructns3_1_1_dl_scheduling_callback_info_html_a94f2ac7d894bb394c85b8d370263d403"><div class="ttname"><a href="structns3_1_1_dl_scheduling_callback_info.html#a94f2ac7d894bb394c85b8d370263d403">ns3::DlSchedulingCallbackInfo::rnti</a></div><div class="ttdeci">uint16_t rnti</div><div class="ttdoc">RNTI.</div><div class="ttdef"><b>Definition:</b> <a href="lte-common_8h_source.html#l00243">lte-common.h:243</a></div></div>
 <div class="ttc" id="astructns3_1_1_lte_flow_id__t_html_a35feedba4d6f5a18fc68f2c9fad8432f"><div class="ttname"><a href="structns3_1_1_lte_flow_id__t.html#a35feedba4d6f5a18fc68f2c9fad8432f">ns3::LteFlowId_t::m_lcId</a></div><div class="ttdeci">uint8_t m_lcId</div><div class="ttdoc">LCID.</div><div class="ttdef"><b>Definition:</b> <a href="lte-common_8h_source.html#l00039">lte-common.h:39</a></div></div>
 <div class="ttc" id="astructns3_1_1_imsi_lcid_pair__t_html_a6cb24e8610619e4c10f1c24da56cc86a"><div class="ttname"><a href="structns3_1_1_imsi_lcid_pair__t.html#a6cb24e8610619e4c10f1c24da56cc86a">ns3::ImsiLcidPair_t::operator==</a></div><div class="ttdeci">friend bool operator==(const ImsiLcidPair_t &amp;a, const ImsiLcidPair_t &amp;b)</div><div class="ttdoc">Equaity operator.</div><div class="ttdef"><b>Definition:</b> <a href="lte-common_8cc_source.html#l00084">lte-common.cc:84</a></div></div>
@@ -435,7 +433,7 @@ $(document).ready(function(){initNavTree('lte-common_8h_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ef1775b0ff4284164f823a882317d681.html">lte</a></li><li class="navelem"><a class="el" href="dir_d84c0a9c9435ae3a7e1022dda3bc062b.html">model</a></li><li class="navelem"><a class="el" href="lte-common_8h.html">lte-common.h</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:34:59 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:07 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -201,12 +198,14 @@ $(document).ready(function(){initNavTree('functions_func_h.html',''); initResiza
 <li>HandleEnergyChanged()
 : <a class="el" href="classns3_1_1_acoustic_modem_energy_model.html#aed6575ddd43709b8a7281198ced3df67">ns3::AcousticModemEnergyModel</a>
 , <a class="el" href="classns3_1_1_device_energy_model.html#a353779b8d1129c0716c02c1ec65ea2da">ns3::DeviceEnergyModel</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_lora_radio_energy_model.html#a273129f01f327c1201269703e5a45b08">ns3::lorawan::LoraRadioEnergyModel</a>
 , <a class="el" href="classns3_1_1_simple_device_energy_model.html#a8e0bcd9ac443872361d04f6c9f089361">ns3::SimpleDeviceEnergyModel</a>
 , <a class="el" href="classns3_1_1_wifi_radio_energy_model.html#a7133964abb308e00ea7cab3daea10f81">ns3::WifiRadioEnergyModel</a>
 </li>
 <li>HandleEnergyDepletion()
 : <a class="el" href="classns3_1_1_acoustic_modem_energy_model.html#aa9af4358a1a528e7e77783e0195ebd93">ns3::AcousticModemEnergyModel</a>
 , <a class="el" href="classns3_1_1_device_energy_model.html#a8c5d6736dc63f20edd756503edb605f7">ns3::DeviceEnergyModel</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_lora_radio_energy_model.html#a71bb7a383f4c6b97a34f0185fb059996">ns3::lorawan::LoraRadioEnergyModel</a>
 , <a class="el" href="classns3_1_1_simple_device_energy_model.html#aac1f14576de2a1b9c7082b4e085e4639">ns3::SimpleDeviceEnergyModel</a>
 , <a class="el" href="classns3_1_1_wifi_radio_energy_model.html#a599225366342af93f109bb4ef74269ac">ns3::WifiRadioEnergyModel</a>
 </li>
@@ -218,6 +217,7 @@ $(document).ready(function(){initNavTree('functions_func_h.html',''); initResiza
 <li>HandleEnergyRecharged()
 : <a class="el" href="classns3_1_1_acoustic_modem_energy_model.html#ab523ba8080020aa5f2aff449a8833190">ns3::AcousticModemEnergyModel</a>
 , <a class="el" href="classns3_1_1_device_energy_model.html#a9fb1053906abf1e8fb6dc3ae3f287046">ns3::DeviceEnergyModel</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_lora_radio_energy_model.html#a6aaebbbe9d57a1ed344ab16e9f0c9bb5">ns3::lorawan::LoraRadioEnergyModel</a>
 , <a class="el" href="classns3_1_1_simple_device_energy_model.html#a7f7688698b6da2afbb2a2ba945cff41d">ns3::SimpleDeviceEnergyModel</a>
 , <a class="el" href="classns3_1_1_wifi_radio_energy_model.html#a196c41c7ee7f52c456a18272ec6227c5">ns3::WifiRadioEnergyModel</a>
 </li>
@@ -467,7 +467,7 @@ $(document).ready(function(){initNavTree('functions_func_h.html',''); initResiza
 <li>HasPackets()
 : <a class="el" href="classns3_1_1_block_ack_manager.html#ad77ac6b773c60dcb97e6ed4fcb2ede89">ns3::BlockAckManager</a>
 , <a class="el" href="classns3_1_1_connection_manager.html#a1a42b9211c5c2f4fe116d9983a34a0d5">ns3::ConnectionManager</a>
-, <a class="el" href="classns3_1_1_service_flow.html#aaf5ef10abb1b0e112731e6697a1c7e39">ns3::ServiceFlow</a>
+, <a class="el" href="classns3_1_1_service_flow.html#a696774075b84a53d0fc4a41243c4c60c">ns3::ServiceFlow</a>
 , <a class="el" href="classns3_1_1_wimax_connection.html#ab75562b70cc740458bde7a48fe72b520">ns3::WimaxConnection</a>
 </li>
 <li>HasParent()
@@ -475,10 +475,6 @@ $(document).ready(function(){initNavTree('functions_func_h.html',''); initResiza
 </li>
 <li>HasPrefix()
 : <a class="el" href="classns3_1_1_ipv6_address.html#adee719a6ea20a80c98c813e3f3939e96">ns3::Ipv6Address</a>
-</li>
-<li>HasReply()
-: <a class="el" href="classns3_1_1_device_status.html#aa0355842f0b43a583ecde8133092f5ee">ns3::DeviceStatus</a>
-, <a class="el" href="classns3_1_1_simple_network_server.html#a3237074fd0a0ccdf3e527146718c4f6e">ns3::SimpleNetworkServer</a>
 </li>
 <li>HasSequenceNumber()
 : <a class="el" href="classns3_1_1_pbb_message.html#aa51d7d39c290615aa45c7f480c04925f">ns3::PbbMessage</a>
@@ -562,6 +558,9 @@ $(document).ready(function(){initNavTree('functions_func_h.html',''); initResiza
 <li>HeSigHeader()
 : <a class="el" href="classns3_1_1_he_sig_header.html#af6ed53d713836a13bff13e6b7195c973">ns3::HeSigHeader</a>
 </li>
+<li>HexGridPositionAllocator()
+: <a class="el" href="classns3_1_1_hex_grid_position_allocator.html#a6c0dcfb1bf45e5c5662b7c7939ad0f81">ns3::HexGridPositionAllocator</a>
+</li>
 <li>HideFromDocumentation()
 : <a class="el" href="classns3_1_1_iid_manager.html#a62df70ccf35b9bfe34c5bc4af70d7e9d">ns3::IidManager</a>
 , <a class="el" href="classns3_1_1_type_id.html#aa77c94c80d8c942a0da0db2de637fc14">ns3::TypeId</a>
@@ -570,22 +569,22 @@ $(document).ready(function(){initNavTree('functions_func_h.html',''); initResiza
 : <a class="el" href="classns3_1_1_hierarchical_mobility_model.html#a7c90a694a3be183f38bf1d6ea9e4216c">ns3::HierarchicalMobilityModel</a>
 </li>
 <li>HigherLayerTxVectorTag()
-: <a class="el" href="classns3_1_1_higher_layer_tx_vector_tag.html#a8888b9e437cae59ac0910d987a0a25cd">ns3::HigherLayerTxVectorTag</a>
+: <a class="el" href="classns3_1_1_higher_layer_tx_vector_tag.html#acfc4b717d4aa396e367712e83b814d0e">ns3::HigherLayerTxVectorTag</a>
 </li>
 <li>HighestTxSeqTrace()
 : <a class="el" href="classns3_1_1_tcp_general_test.html#a05a379c3da61386ac489484268f7c869">ns3::TcpGeneralTest</a>
 </li>
 <li>HighLatencyCtsToSelfTxVectorTag()
-: <a class="el" href="classns3_1_1_high_latency_cts_to_self_tx_vector_tag.html#a2e7bef7cc2bb4d1b50d09561f9cc721f">ns3::HighLatencyCtsToSelfTxVectorTag</a>
+: <a class="el" href="classns3_1_1_high_latency_cts_to_self_tx_vector_tag.html#a0dd62698c36cb036c793f491e4e67e93">ns3::HighLatencyCtsToSelfTxVectorTag</a>
 </li>
 <li>HighLatencyDataTxVectorTag()
-: <a class="el" href="classns3_1_1_high_latency_data_tx_vector_tag.html#ab603a83ceb46c81a61deb6f197c0bdff">ns3::HighLatencyDataTxVectorTag</a>
+: <a class="el" href="classns3_1_1_high_latency_data_tx_vector_tag.html#ae1fde451ed3cd4fe856d49bca64cf6b0">ns3::HighLatencyDataTxVectorTag</a>
 </li>
 <li>HighLatencyRtsTxVectorTag()
 : <a class="el" href="classns3_1_1_high_latency_rts_tx_vector_tag.html#ac4b9c7e7f11790c9d4a110c379ffe54b">ns3::HighLatencyRtsTxVectorTag</a>
 </li>
 <li>Histogram()
-: <a class="el" href="classns3_1_1_histogram.html#ac05aafde16936be7156168fef389ff2d">ns3::Histogram</a>
+: <a class="el" href="classns3_1_1_histogram.html#ad1338f0d4e5873b5d27a695bc5a182a0">ns3::Histogram</a>
 </li>
 <li>HistogramTestCase()
 : <a class="el" href="class_histogram_test_case.html#a53b35d8ce4109804eeaf879c1dde73c5">HistogramTestCase</a>
@@ -615,7 +614,7 @@ $(document).ready(function(){initNavTree('functions_func_h.html',''); initResiza
 : <a class="el" href="classns3_1_1olsr_1_1_routing_protocol.html#a6ef2a79ac872935b84a3f1d54316456d">ns3::olsr::RoutingProtocol</a>
 </li>
 <li>Hold()
-: <a class="el" href="classanonymous__namespace_02sample-show-progress_8cc_03_1_1_hold.html#af9f503344e07b6ab2a31db789c829581">anonymous_namespace{sample-show-progress.cc}::Hold</a>
+: <a class="el" href="classanonymous__namespace_02sample-show-progress_8cc_03_1_1_hold.html#a79e8e7875b314d84bc98996e6086f9a2">anonymous_namespace{sample-show-progress.cc}::Hold</a>
 </li>
 <li>HoldingTimeout()
 : <a class="el" href="classns3_1_1dot11s_1_1_peer_link.html#aca3f4d3e0cd9305f88f968aa8c5dcadd">ns3::dot11s::PeerLink</a>
@@ -666,7 +665,7 @@ $(document).ready(function(){initNavTree('functions_func_h.html',''); initResiza
 : <a class="el" href="class_hwmp_proactive_regression_test.html#a5887a375111c2375bd92cb49d9d6209a">HwmpProactiveRegressionTest</a>
 </li>
 <li>HwmpProtocol()
-: <a class="el" href="classns3_1_1dot11s_1_1_hwmp_protocol.html#afe4408ad645b5c3daebd66391fb27b9d">ns3::dot11s::HwmpProtocol</a>
+: <a class="el" href="classns3_1_1dot11s_1_1_hwmp_protocol.html#a52333fe51a8148fb17e5ac736735a26c">ns3::dot11s::HwmpProtocol</a>
 </li>
 <li>HwmpProtocolMac()
 : <a class="el" href="classns3_1_1dot11s_1_1_hwmp_protocol_mac.html#a220af4f141c3d06366231c0943df1aae">ns3::dot11s::HwmpProtocolMac</a>
@@ -699,7 +698,7 @@ $(document).ready(function(){initNavTree('functions_func_h.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:51 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:53 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

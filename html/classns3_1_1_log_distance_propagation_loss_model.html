@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -396,13 +393,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>a log distance propagation model. </p>
-<p>This model calculates the reception power with a so-called log-distance propagation model: <img class="formulaInl" alt="$ L = L_0 + 10 n log_{10}(\frac{d}{d_0})$" src="form_131.png" width="0" height="19"/></p>
+<p>This model calculates the reception power with a so-called log-distance propagation model: <img class="formulaInl" alt="$ L = L_0 + 10 n log_{10}(\frac{d}{d_0})$" src="form_131.png" width="123" height="19"/></p>
 <p>where:</p><ul>
-<li><img class="formulaInl" alt="$ n $" src="form_132.png" width="0" height="6"/> : the path loss distance exponent</li>
-<li><img class="formulaInl" alt="$ d_0 $" src="form_133.png" width="0" height="13"/> : reference distance (m)</li>
-<li><img class="formulaInl" alt="$ L_0 $" src="form_134.png" width="0" height="13"/> : path loss at reference distance (dB)</li>
-<li><img class="formulaInl" alt="$ d $" src="form_115.png" width="0" height="10"/> : distance (m)</li>
-<li><img class="formulaInl" alt="$ L $" src="form_116.png" width="0" height="10"/> : path loss (dB)</li>
+<li><img class="formulaInl" alt="$ n $" src="form_132.png" width="9" height="6"/> : the path loss distance exponent</li>
+<li><img class="formulaInl" alt="$ d_0 $" src="form_133.png" width="11" height="13"/> : reference distance (m)</li>
+<li><img class="formulaInl" alt="$ L_0 $" src="form_134.png" width="14" height="13"/> : path loss at reference distance (dB)</li>
+<li><img class="formulaInl" alt="$ d $" src="form_115.png" width="6" height="10"/> : distance (m)</li>
+<li><img class="formulaInl" alt="$ L $" src="form_116.png" width="9" height="10"/> : path loss (dB)</li>
 </ul>
 <p>When the path loss is requested at a distance smaller than the reference distance, the tx power is returned. </p>
 
@@ -646,7 +643,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="propagation-loss-model_8cc_source.html#l00459">459</a> of file <a class="el" href="propagation-loss-model_8cc_source.html">propagation-loss-model.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="propagation-loss-model_8h_source.html#l00540">m_exponent</a>, <a class="el" href="propagation-loss-model_8h_source.html#l00541">m_referenceDistance</a>, <a class="el" href="propagation-loss-model_8h_source.html#l00542">m_referenceLoss</a>, <a class="el" href="double_8h_source.html#l00042">ns3::MakeDoubleAccessor()</a>, and <a class="el" href="type-id_8cc_source.html#l00922">ns3::TypeId::SetParent()</a>.</p>
+<p class="reference">References <a class="el" href="propagation-loss-model_8h_source.html#l00540">m_exponent</a>, <a class="el" href="propagation-loss-model_8h_source.html#l00541">m_referenceDistance</a>, <a class="el" href="propagation-loss-model_8h_source.html#l00542">m_referenceLoss</a>, <a class="el" href="double_8h_source.html#l00042">ns3::MakeDoubleAccessor()</a>, and <a class="el" href="type-id_8cc_source.html#l00923">ns3::TypeId::SetParent()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -720,7 +717,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="reference">References <a class="el" href="propagation-loss-model_8h_source.html#l00540">m_exponent</a>, and <a class="el" href="sample-rng-plot_8py_source.html#l00037">sample-rng-plot::n</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lr-wpan-cca-test_8cc_source.html#l00160">LrWpanCcaTestCase::DoRun()</a>, <a class="el" href="lorawan-test-suite_8cc_source.html#l01024">PhyConnectivityTest::Reset()</a>, and <a class="el" href="lora-mac-test_8cc_source.html#l00109">Reset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lr-wpan-cca-test_8cc_source.html#l00160">LrWpanCcaTestCase::DoRun()</a>, and <a class="el" href="lorawan-test-suite_8cc_source.html#l01049">PhyConnectivityTest::Reset()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -728,10 +725,9 @@ Additional Inherited Members</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_log_distance_propagation_loss_model_af8d2797bafdf56b2e656d7183fb37169_icgraph.png" border="0" usemap="#classns3_1_1_log_distance_propagation_loss_model_af8d2797bafdf56b2e656d7183fb37169_icgraph" alt=""/></div>
 <map name="classns3_1_1_log_distance_propagation_loss_model_af8d2797bafdf56b2e656d7183fb37169_icgraph" id="classns3_1_1_log_distance_propagation_loss_model_af8d2797bafdf56b2e656d7183fb37169_icgraph">
-<area shape="rect" title=" " alt="" coords="417,71,656,112"/>
+<area shape="rect" title=" " alt="" coords="417,39,656,80"/>
 <area shape="rect" href="class_lr_wpan_cca_test_case.html#a3e2872a3bd57d754a2bdb613437e18a8" title="Implementation to actually run this TestCase." alt="" coords="208,5,369,47"/>
 <area shape="rect" href="class_phy_connectivity_test.html#a10a5c0c19c265e99fb771b09d53b3086" title=" " alt="" coords="211,71,366,112"/>
-<area shape="rect" href="lora-mac-test_8cc.html#aed19948be38e80a0af0f88a8ef598706" title=" " alt="" coords="259,137,318,163"/>
 <area shape="rect" href="class_phy_connectivity_test.html#a3b10d458529e00bbd8cd33f52b1146d7" title="Implementation to actually run this TestCase." alt="" coords="5,71,160,112"/>
 </map>
 </div>
@@ -777,7 +773,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="reference">References <a class="el" href="propagation-loss-model_8h_source.html#l00541">m_referenceDistance</a>, and <a class="el" href="propagation-loss-model_8h_source.html#l00542">m_referenceLoss</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lr-wpan-cca-test_8cc_source.html#l00160">LrWpanCcaTestCase::DoRun()</a>, <a class="el" href="lorawan-test-suite_8cc_source.html#l01024">PhyConnectivityTest::Reset()</a>, and <a class="el" href="lora-mac-test_8cc_source.html#l00109">Reset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lr-wpan-cca-test_8cc_source.html#l00160">LrWpanCcaTestCase::DoRun()</a>, and <a class="el" href="lorawan-test-suite_8cc_source.html#l01049">PhyConnectivityTest::Reset()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -785,10 +781,9 @@ Additional Inherited Members</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_log_distance_propagation_loss_model_a4a5676c5b8a1a56b954ba7f50931acad_icgraph.png" border="0" usemap="#classns3_1_1_log_distance_propagation_loss_model_a4a5676c5b8a1a56b954ba7f50931acad_icgraph" alt=""/></div>
 <map name="classns3_1_1_log_distance_propagation_loss_model_a4a5676c5b8a1a56b954ba7f50931acad_icgraph" id="classns3_1_1_log_distance_propagation_loss_model_a4a5676c5b8a1a56b954ba7f50931acad_icgraph">
-<area shape="rect" title="Set the reference path loss at a given distance." alt="" coords="417,71,628,112"/>
+<area shape="rect" title="Set the reference path loss at a given distance." alt="" coords="417,39,628,80"/>
 <area shape="rect" href="class_lr_wpan_cca_test_case.html#a3e2872a3bd57d754a2bdb613437e18a8" title="Implementation to actually run this TestCase." alt="" coords="208,5,369,47"/>
 <area shape="rect" href="class_phy_connectivity_test.html#a10a5c0c19c265e99fb771b09d53b3086" title=" " alt="" coords="211,71,366,112"/>
-<area shape="rect" href="lora-mac-test_8cc.html#aed19948be38e80a0af0f88a8ef598706" title=" " alt="" coords="259,137,318,163"/>
 <area shape="rect" href="class_phy_connectivity_test.html#a3b10d458529e00bbd8cd33f52b1146d7" title="Implementation to actually run this TestCase." alt="" coords="5,71,160,112"/>
 </map>
 </div>
@@ -894,7 +889,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_log_distance_propagation_loss_model.html">LogDistancePropagationLossModel</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:28 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:33 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

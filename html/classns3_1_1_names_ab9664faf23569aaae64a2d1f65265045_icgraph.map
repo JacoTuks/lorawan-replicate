@@ -38,7 +38,7 @@
 <area shape="rect" id="node23" href="$classns3_1_1_lr_wpan_helper.html#a0accf3ecc8c464cde332c92dca565c05" title="Enable ascii trace output on the indicated net device." alt="" coords="298,659,451,700"/>
 <area shape="rect" id="node24" href="$classns3_1_1_point_to_point_helper.html#a500491e31095208060544b015d1112d5" title="Enable ascii trace output on the indicated net device." alt="" coords="287,724,463,765"/>
 <area shape="rect" id="node25" href="$classns3_1_1_yans_wave_phy_helper.html#ad015eeeabbdf7522d52de94d22fcc207" title="Enable ascii trace output on the indicated net device." alt="" coords="281,789,468,831"/>
-<area shape="rect" id="node26" href="$classns3_1_1_wifi_phy_helper.html#a930fe270c6c08af23d5333b87ed5997b" title="Enable ascii trace output on the indicated net device." alt="" coords="297,855,452,896"/>
+<area shape="rect" id="node26" href="$classns3_1_1_wifi_phy_helper.html#a930fe270c6c08af23d5333b87ed5997b" title="Enable ASCII trace output on the indicated net device." alt="" coords="297,855,452,896"/>
 <area shape="rect" id="node27" href="$classns3_1_1_wimax_helper.html#a17c3c18e993e68328621e3a36d5cc350" title="Enable ascii trace output on the indicated net device." alt="" coords="277,920,472,961"/>
 <area shape="rect" id="node28" href="$classns3_1_1_spectrum_analyzer_helper.html#a32d0b627f609f9c61f7d7043f1d779af" title=" " alt="" coords="267,985,482,1027"/>
 <area shape="rect" id="node30" href="$classns3_1_1_internet_stack_helper.html#aec9bacdd0e3902ad274270d914fdee23" title="Enable pcap output the indicated Ipv4 and interface pair." alt="" coords="283,1051,466,1092"/>

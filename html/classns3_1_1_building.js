@@ -27,6 +27,7 @@ var classns3_1_1_building =
     [ "GetRoomY", "classns3_1_1_building.html#a6d2b15db27dff44a5b0b2ffa3b72ac19", null ],
     [ "GetTypeId", "classns3_1_1_building.html#ad8d823ade148dd17d8767427d1986d02", null ],
     [ "IsInside", "classns3_1_1_building.html#ad9b09336c28f796974a77abd201ae12f", null ],
+    [ "IsIntersect", "classns3_1_1_building.html#a6a3cda6ae72c0792c3f3820d7adea687", null ],
     [ "SetBoundaries", "classns3_1_1_building.html#a4b69659f05a983f06e33e7db62415915", null ],
     [ "SetBuildingType", "classns3_1_1_building.html#a2f193ed27d25ed8bf29962d3c7d77204", null ],
     [ "SetExtWallsType", "classns3_1_1_building.html#a8084b2aafb9ca8bcb775fad0319d42e8", null ],

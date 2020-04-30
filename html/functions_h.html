@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -207,12 +204,14 @@ $(document).ready(function(){initNavTree('functions_h.html',''); initResizable()
 <li>HandleEnergyChanged()
 : <a class="el" href="classns3_1_1_acoustic_modem_energy_model.html#aed6575ddd43709b8a7281198ced3df67">ns3::AcousticModemEnergyModel</a>
 , <a class="el" href="classns3_1_1_device_energy_model.html#a353779b8d1129c0716c02c1ec65ea2da">ns3::DeviceEnergyModel</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_lora_radio_energy_model.html#a273129f01f327c1201269703e5a45b08">ns3::lorawan::LoraRadioEnergyModel</a>
 , <a class="el" href="classns3_1_1_simple_device_energy_model.html#a8e0bcd9ac443872361d04f6c9f089361">ns3::SimpleDeviceEnergyModel</a>
 , <a class="el" href="classns3_1_1_wifi_radio_energy_model.html#a7133964abb308e00ea7cab3daea10f81">ns3::WifiRadioEnergyModel</a>
 </li>
 <li>HandleEnergyDepletion()
 : <a class="el" href="classns3_1_1_acoustic_modem_energy_model.html#aa9af4358a1a528e7e77783e0195ebd93">ns3::AcousticModemEnergyModel</a>
 , <a class="el" href="classns3_1_1_device_energy_model.html#a8c5d6736dc63f20edd756503edb605f7">ns3::DeviceEnergyModel</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_lora_radio_energy_model.html#a71bb7a383f4c6b97a34f0185fb059996">ns3::lorawan::LoraRadioEnergyModel</a>
 , <a class="el" href="classns3_1_1_simple_device_energy_model.html#aac1f14576de2a1b9c7082b4e085e4639">ns3::SimpleDeviceEnergyModel</a>
 , <a class="el" href="classns3_1_1_wifi_radio_energy_model.html#a599225366342af93f109bb4ef74269ac">ns3::WifiRadioEnergyModel</a>
 </li>
@@ -224,6 +223,7 @@ $(document).ready(function(){initNavTree('functions_h.html',''); initResizable()
 <li>HandleEnergyRecharged()
 : <a class="el" href="classns3_1_1_acoustic_modem_energy_model.html#ab523ba8080020aa5f2aff449a8833190">ns3::AcousticModemEnergyModel</a>
 , <a class="el" href="classns3_1_1_device_energy_model.html#a9fb1053906abf1e8fb6dc3ae3f287046">ns3::DeviceEnergyModel</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_lora_radio_energy_model.html#a6aaebbbe9d57a1ed344ab16e9f0c9bb5">ns3::lorawan::LoraRadioEnergyModel</a>
 , <a class="el" href="classns3_1_1_simple_device_energy_model.html#a7f7688698b6da2afbb2a2ba945cff41d">ns3::SimpleDeviceEnergyModel</a>
 , <a class="el" href="classns3_1_1_wifi_radio_energy_model.html#a196c41c7ee7f52c456a18272ec6227c5">ns3::WifiRadioEnergyModel</a>
 </li>
@@ -561,15 +561,6 @@ $(document).ready(function(){initNavTree('functions_h.html',''); initResizable()
 </li>
 <li>HasPrefix()
 : <a class="el" href="classns3_1_1_ipv6_address.html#adee719a6ea20a80c98c813e3f3939e96">ns3::Ipv6Address</a>
-</li>
-<li>HasReply()
-: <a class="el" href="classns3_1_1_device_status.html#aa0355842f0b43a583ecde8133092f5ee">ns3::DeviceStatus</a>
-</li>
-<li>hasReply
-: <a class="el" href="structns3_1_1_device_status_1_1_reply.html#af7ab3e184fd0ba130baf1b268c0dc120">ns3::DeviceStatus::Reply</a>
-</li>
-<li>HasReply()
-: <a class="el" href="classns3_1_1_simple_network_server.html#a3237074fd0a0ccdf3e527146718c4f6e">ns3::SimpleNetworkServer</a>
 </li>
 <li>HasSequenceNumber()
 : <a class="el" href="classns3_1_1_pbb_message.html#aa51d7d39c290615aa45c7f480c04925f">ns3::PbbMessage</a>
@@ -932,7 +923,7 @@ $(document).ready(function(){initNavTree('functions_h.html',''); initResizable()
 : <a class="el" href="classns3_1_1_six_low_pan_iphc.html#a384e6b68c86e9d9a07c923dbc21a6843">ns3::SixLowPanIphc</a>
 </li>
 <li>headerDisabled
-: <a class="el" href="structns3_1_1_lora_tx_parameters.html#a808d3be6b7cfd211612d19ac680577c7">ns3::LoraTxParameters</a>
+: <a class="el" href="structns3_1_1lorawan_1_1_lora_tx_parameters.html#a69fe45b4fe69cd3962dcf73be7f3822e">ns3::lorawan::LoraTxParameters</a>
 </li>
 <li>headers
 : <a class="el" href="structns3_1_1_py_viz_1_1_packet_capture_options.html#ad59cd9cdfe4df5223e037b561ea21d26">ns3::PyViz::PacketCaptureOptions</a>
@@ -1002,6 +993,9 @@ $(document).ready(function(){initNavTree('functions_h.html',''); initResizable()
 <li>HeSigHeader()
 : <a class="el" href="classns3_1_1_he_sig_header.html#af6ed53d713836a13bff13e6b7195c973">ns3::HeSigHeader</a>
 </li>
+<li>HexGridPositionAllocator()
+: <a class="el" href="classns3_1_1_hex_grid_position_allocator.html#ac62bbcbf5d7c8fbc1371b16132fdb585">ns3::HexGridPositionAllocator</a>
+</li>
 <li>hi
 : <a class="el" href="structcairo__int128__t.html#ad855c913bdc36f84bfa72e899c9104b9">cairo_int128_t</a>
 </li>
@@ -1049,7 +1043,7 @@ $(document).ready(function(){initNavTree('functions_h.html',''); initResizable()
 : <a class="el" href="classns3_1_1_gnuplot2d_dataset.html#abdad90b4b2abed9a198e4b19470de882a1c96628e3995526daee70dcfc2f4ab2c">ns3::Gnuplot2dDataset</a>
 </li>
 <li>Histogram()
-: <a class="el" href="classns3_1_1_histogram.html#ad1338f0d4e5873b5d27a695bc5a182a0">ns3::Histogram</a>
+: <a class="el" href="classns3_1_1_histogram.html#ac05aafde16936be7156168fef389ff2d">ns3::Histogram</a>
 </li>
 <li>HistogramTestCase()
 : <a class="el" href="class_histogram_test_case.html#a53b35d8ce4109804eeaf879c1dde73c5">HistogramTestCase</a>
@@ -1063,6 +1057,9 @@ $(document).ready(function(){initNavTree('functions_h.html',''); initResizable()
 <li>history_pos
 : <a class="el" href="classvisualizer_1_1ipython__view_1_1_i_python_view.html#a7862c74bd0d2e5f58ade1f6410ddca1d">visualizer.ipython_view.IPythonView</a>
 </li>
+<li>historyAveraging
+: <a class="el" href="classns3_1_1lorawan_1_1_adr_component.html#a1877d3e57d5f61610f81125ff2c35dc8">ns3::lorawan::AdrComponent</a>
+</li>
 <li>historyBack()
 : <a class="el" href="classvisualizer_1_1ipython__view_1_1_iterable_i_p_shell.html#a708ac9d5b786b5030e34c33f89c40b39">visualizer.ipython_view.IterableIPShell</a>
 </li>
@@ -1074,6 +1071,9 @@ $(document).ready(function(){initNavTree('functions_h.html',''); initResizable()
 </li>
 <li>HistoryHeaderBase()
 : <a class="el" href="classanonymous__namespace_02packet-metadata-test_8cc_03_1_1_history_header_base.html#a94b435adf7452213bb79f7ae8901a565">anonymous_namespace{packet-metadata-test.cc}::HistoryHeaderBase</a>
+</li>
+<li>historyRange
+: <a class="el" href="classns3_1_1lorawan_1_1_adr_component.html#a5c127f4c8649bb9db1418e86eb28d6af">ns3::lorawan::AdrComponent</a>
 </li>
 <li>HistoryTrailer()
 : <a class="el" href="classanonymous__namespace_02packet-metadata-test_8cc_03_1_1_history_trailer.html#a20b3ae3da2e63992536c2df0f1aecfab">anonymous_namespace{packet-metadata-test.cc}::HistoryTrailer&lt; N &gt;</a>
@@ -1112,7 +1112,7 @@ $(document).ready(function(){initNavTree('functions_h.html',''); initResizable()
 : <a class="el" href="classns3_1_1olsr_1_1_routing_protocol.html#a6ef2a79ac872935b84a3f1d54316456d">ns3::olsr::RoutingProtocol</a>
 </li>
 <li>Hold()
-: <a class="el" href="classanonymous__namespace_02sample-show-progress_8cc_03_1_1_hold.html#af9f503344e07b6ab2a31db789c829581">anonymous_namespace{sample-show-progress.cc}::Hold</a>
+: <a class="el" href="classanonymous__namespace_02sample-show-progress_8cc_03_1_1_hold.html#a79e8e7875b314d84bc98996e6086f9a2">anonymous_namespace{sample-show-progress.cc}::Hold</a>
 </li>
 <li>HOLDING
 : <a class="el" href="classns3_1_1dot11s_1_1_peer_link.html#a432024c7d584aebae1ee15aa88ffb06dac5609fa8019ce1b47b4612621d5e56da">ns3::dot11s::PeerLink</a>
@@ -1254,7 +1254,7 @@ $(document).ready(function(){initNavTree('functions_h.html',''); initResizable()
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:51 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:52 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

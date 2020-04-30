@@ -1,6 +1,6 @@
 <map id="ns3::BlockAckManager::HasPackets" name="ns3::BlockAckManager::HasPackets">
 <area shape="rect" id="node1" title="Returns true if there are packets that need of retransmission or at least a BAR is scheduled." alt="" coords="5,1113,176,1154"/>
-<area shape="rect" id="node2" href="$classns3_1_1_block_ack_manager.html#a1bf04ecd18719598e52a343e580a6912" title="Returns the next Block Ack Request to send, if any." alt="" coords="224,1113,395,1154"/>
+<area shape="rect" id="node2" href="$classns3_1_1_block_ack_manager.html#a1bf04ecd18719598e52a343e580a6912" title="Returns the next BlockAckRequest to send, if any." alt="" coords="224,1113,395,1154"/>
 <area shape="rect" id="node3" href="$classns3_1_1_packet.html#a465108c595a0bc592095cbcab1832ed8" title="Add header to this packet." alt="" coords="459,652,635,679"/>
 <area shape="rect" id="node36" href="$classns3_1_1_ctrl_b_ack_request_header.html#a8ca10bacb9cc50ae0f849044769ca88d" title="Return the starting sequence number." alt="" coords="443,1142,652,1183"/>
 <area shape="rect" id="node37" href="$classns3_1_1_simulator.html#ac3178fa975b419f7875e7105be122800" title="Return the current simulation virtual time." alt="" coords="471,1091,624,1117"/>

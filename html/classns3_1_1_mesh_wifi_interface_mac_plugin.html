@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -204,7 +201,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a04c64b14381481b5caa0c7e65c7af0e3"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_mesh_wifi_interface_mac_plugin.html#a04c64b14381481b5caa0c7e65c7af0e3">AssignStreams</a> (int64_t stream)=0</td></tr>
 <tr class="memdesc:a04c64b14381481b5caa0c7e65c7af0e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign a fixed random variable stream number to the random variables used by this model.  <a href="classns3_1_1_mesh_wifi_interface_mac_plugin.html#a04c64b14381481b5caa0c7e65c7af0e3">More...</a><br /></td></tr>
 <tr class="separator:a04c64b14381481b5caa0c7e65c7af0e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36279337239f8cbdb31162221e192236"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_mesh_wifi_interface_mac_plugin.html#a36279337239f8cbdb31162221e192236">Receive</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; <a class="el" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>, const <a class="el" href="classns3_1_1_wifi_mac_header.html">WifiMacHeader</a> &amp;header)=0</td></tr>
+<tr class="memitem:a36279337239f8cbdb31162221e192236"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_mesh_wifi_interface_mac_plugin.html#a36279337239f8cbdb31162221e192236">Receive</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; packet, const <a class="el" href="classns3_1_1_wifi_mac_header.html">WifiMacHeader</a> &amp;header)=0</td></tr>
 <tr class="memdesc:a36279337239f8cbdb31162221e192236"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process received frame.  <a href="classns3_1_1_mesh_wifi_interface_mac_plugin.html#a36279337239f8cbdb31162221e192236">More...</a><br /></td></tr>
 <tr class="separator:a36279337239f8cbdb31162221e192236"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9418207bcd6efc135baca7939cdc6f39"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_mesh_wifi_interface_mac_plugin.html#a9418207bcd6efc135baca7939cdc6f39">SetParent</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_mesh_wifi_interface_mac.html">MeshWifiInterfaceMac</a> &gt; parent)=0</td></tr>
@@ -213,7 +210,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a918469724b1e324a30deaa9703cff3d1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_mesh_wifi_interface_mac_plugin.html#a918469724b1e324a30deaa9703cff3d1">UpdateBeacon</a> (<a class="el" href="classns3_1_1_mesh_wifi_beacon.html">MeshWifiBeacon</a> &amp;beacon) const =0</td></tr>
 <tr class="memdesc:a918469724b1e324a30deaa9703cff3d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update beacon before it will be formed and sent.  <a href="classns3_1_1_mesh_wifi_interface_mac_plugin.html#a918469724b1e324a30deaa9703cff3d1">More...</a><br /></td></tr>
 <tr class="separator:a918469724b1e324a30deaa9703cff3d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af14bbe6ab750951c0291b0e4144d2caf"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_mesh_wifi_interface_mac_plugin.html#af14bbe6ab750951c0291b0e4144d2caf">UpdateOutcomingFrame</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; <a class="el" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>, <a class="el" href="classns3_1_1_wifi_mac_header.html">WifiMacHeader</a> &amp;header, <a class="el" href="classns3_1_1_mac48_address.html">Mac48Address</a> from, <a class="el" href="classns3_1_1_mac48_address.html">Mac48Address</a> to)=0</td></tr>
+<tr class="memitem:af14bbe6ab750951c0291b0e4144d2caf"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_mesh_wifi_interface_mac_plugin.html#af14bbe6ab750951c0291b0e4144d2caf">UpdateOutcomingFrame</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; packet, <a class="el" href="classns3_1_1_wifi_mac_header.html">WifiMacHeader</a> &amp;header, <a class="el" href="classns3_1_1_mac48_address.html">Mac48Address</a> from, <a class="el" href="classns3_1_1_mac48_address.html">Mac48Address</a> to)=0</td></tr>
 <tr class="memdesc:af14bbe6ab750951c0291b0e4144d2caf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update frame before it will be forwarded down.  <a href="classns3_1_1_mesh_wifi_interface_mac_plugin.html#af14bbe6ab750951c0291b0e4144d2caf">More...</a><br /></td></tr>
 <tr class="separator:af14bbe6ab750951c0291b0e4144d2caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classns3_1_1_simple_ref_count"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classns3_1_1_simple_ref_count')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classns3_1_1_simple_ref_count.html">ns3::SimpleRefCount&lt; MeshWifiInterfaceMacPlugin &gt;</a></td></tr>
@@ -521,7 +518,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_mesh_wifi_interface_mac_plugin.html">MeshWifiInterfaceMacPlugin</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:32 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:35 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -225,16 +222,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad46906e79b348c49476427f19f644a9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_athstats_wifi_trace_sink.html#ad46906e79b348c49476427f19f644a9b">Open</a> (std::string const &amp;name)</td></tr>
 <tr class="memdesc:ad46906e79b348c49476427f19f644a9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a file for output.  <a href="classns3_1_1_athstats_wifi_trace_sink.html#ad46906e79b348c49476427f19f644a9b">More...</a><br /></td></tr>
 <tr class="separator:ad46906e79b348c49476427f19f644a9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e65ff0ceae205118fc40867f18988e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_athstats_wifi_trace_sink.html#a6e65ff0ceae205118fc40867f18988e5">PhyRxErrorTrace</a> (std::string context, <a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; const <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; <a class="el" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>, double snr)</td></tr>
+<tr class="memitem:a6e65ff0ceae205118fc40867f18988e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_athstats_wifi_trace_sink.html#a6e65ff0ceae205118fc40867f18988e5">PhyRxErrorTrace</a> (std::string context, <a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; const <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; packet, double snr)</td></tr>
 <tr class="memdesc:a6e65ff0ceae205118fc40867f18988e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be called when a frame reception by the PHY layer of the considered device resulted in an error due to a failure in the CRC check of the frame.  <a href="classns3_1_1_athstats_wifi_trace_sink.html#a6e65ff0ceae205118fc40867f18988e5">More...</a><br /></td></tr>
 <tr class="separator:a6e65ff0ceae205118fc40867f18988e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bcee4c270902c401a4af1a63667499f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_athstats_wifi_trace_sink.html#a2bcee4c270902c401a4af1a63667499f">PhyRxOkTrace</a> (std::string context, <a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; const <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; <a class="el" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>, double snr, <a class="el" href="classns3_1_1_wifi_mode.html">WifiMode</a> mode, <a class="el" href="group__wifi.html#ga5e94a56cb338a14ffbbb19c6a41251eb">WifiPreamble</a> preamble)</td></tr>
+<tr class="memitem:a2bcee4c270902c401a4af1a63667499f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_athstats_wifi_trace_sink.html#a2bcee4c270902c401a4af1a63667499f">PhyRxOkTrace</a> (std::string context, <a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; const <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; packet, double snr, <a class="el" href="classns3_1_1_wifi_mode.html">WifiMode</a> mode, <a class="el" href="group__wifi.html#ga5e94a56cb338a14ffbbb19c6a41251eb">WifiPreamble</a> preamble)</td></tr>
 <tr class="memdesc:a2bcee4c270902c401a4af1a63667499f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be called when the PHY layer of the considered device receives a frame.  <a href="classns3_1_1_athstats_wifi_trace_sink.html#a2bcee4c270902c401a4af1a63667499f">More...</a><br /></td></tr>
 <tr class="separator:a2bcee4c270902c401a4af1a63667499f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e5346f6b6a267ee276419c201297b39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_athstats_wifi_trace_sink.html#a6e5346f6b6a267ee276419c201297b39">PhyStateTrace</a> (std::string context, <a class="el" href="classns3_1_1_time.html">Time</a> start, <a class="el" href="classns3_1_1_time.html">Time</a> duration, <a class="el" href="wifi-phy-state_8h.html#a8fa53df55adf350b6c5e2565ca156918">WifiPhyState</a> state)</td></tr>
 <tr class="memdesc:a6e5346f6b6a267ee276419c201297b39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be called when the PHY layer of the considered device changes state.  <a href="classns3_1_1_athstats_wifi_trace_sink.html#a6e5346f6b6a267ee276419c201297b39">More...</a><br /></td></tr>
 <tr class="separator:a6e5346f6b6a267ee276419c201297b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84f788ebed6522f48a3b36ea173650c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_athstats_wifi_trace_sink.html#a84f788ebed6522f48a3b36ea173650c2">PhyTxTrace</a> (std::string context, <a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; const <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; <a class="el" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>, <a class="el" href="classns3_1_1_wifi_mode.html">WifiMode</a> mode, <a class="el" href="group__wifi.html#ga5e94a56cb338a14ffbbb19c6a41251eb">WifiPreamble</a> preamble, uint8_t txPower)</td></tr>
+<tr class="memitem:a84f788ebed6522f48a3b36ea173650c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_athstats_wifi_trace_sink.html#a84f788ebed6522f48a3b36ea173650c2">PhyTxTrace</a> (std::string context, <a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; const <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; packet, <a class="el" href="classns3_1_1_wifi_mode.html">WifiMode</a> mode, <a class="el" href="group__wifi.html#ga5e94a56cb338a14ffbbb19c6a41251eb">WifiPreamble</a> preamble, uint8_t txPower)</td></tr>
 <tr class="memdesc:a84f788ebed6522f48a3b36ea173650c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be called when a frame is being transmitted by the PHY layer of the considered device.  <a href="classns3_1_1_athstats_wifi_trace_sink.html#a84f788ebed6522f48a3b36ea173650c2">More...</a><br /></td></tr>
 <tr class="separator:a84f788ebed6522f48a3b36ea173650c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc308a4d8b65afc5775cf4001515909c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_athstats_wifi_trace_sink.html#abc308a4d8b65afc5775cf4001515909c">TxDataFailedTrace</a> (std::string context, <a class="el" href="classns3_1_1_mac48_address.html">Mac48Address</a> address)</td></tr>
@@ -365,13 +362,13 @@ Private Attributes</h2></td></tr>
 <tr class="memdesc:a82893101ecd74542f7860fdf96df9ba5"><td class="mdescLeft">&#160;</td><td class="mdescRight">long retry count  <a href="classns3_1_1_athstats_wifi_trace_sink.html#a82893101ecd74542f7860fdf96df9ba5">More...</a><br /></td></tr>
 <tr class="separator:a82893101ecd74542f7860fdf96df9ba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac05a02e26c52753fcbb45885326d9bab"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_athstats_wifi_trace_sink.html#ac05a02e26c52753fcbb45885326d9bab">m_phyRxErrorCount</a></td></tr>
-<tr class="memdesc:ac05a02e26c52753fcbb45885326d9bab"><td class="mdescLeft">&#160;</td><td class="mdescRight">phy receive error count  <a href="classns3_1_1_athstats_wifi_trace_sink.html#ac05a02e26c52753fcbb45885326d9bab">More...</a><br /></td></tr>
+<tr class="memdesc:ac05a02e26c52753fcbb45885326d9bab"><td class="mdescLeft">&#160;</td><td class="mdescRight">PHY receive error count.  <a href="classns3_1_1_athstats_wifi_trace_sink.html#ac05a02e26c52753fcbb45885326d9bab">More...</a><br /></td></tr>
 <tr class="separator:ac05a02e26c52753fcbb45885326d9bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abecbc84dd7ae1460900505b58dfa8b3a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_athstats_wifi_trace_sink.html#abecbc84dd7ae1460900505b58dfa8b3a">m_phyRxOkCount</a></td></tr>
-<tr class="memdesc:abecbc84dd7ae1460900505b58dfa8b3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">phy receive ok count  <a href="classns3_1_1_athstats_wifi_trace_sink.html#abecbc84dd7ae1460900505b58dfa8b3a">More...</a><br /></td></tr>
+<tr class="memdesc:abecbc84dd7ae1460900505b58dfa8b3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">PHY receive OK count.  <a href="classns3_1_1_athstats_wifi_trace_sink.html#abecbc84dd7ae1460900505b58dfa8b3a">More...</a><br /></td></tr>
 <tr class="separator:abecbc84dd7ae1460900505b58dfa8b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92bf3040ddd1a97add4d6befabf88316"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_athstats_wifi_trace_sink.html#a92bf3040ddd1a97add4d6befabf88316">m_phyTxCount</a></td></tr>
-<tr class="memdesc:a92bf3040ddd1a97add4d6befabf88316"><td class="mdescLeft">&#160;</td><td class="mdescRight">phy transmit count  <a href="classns3_1_1_athstats_wifi_trace_sink.html#a92bf3040ddd1a97add4d6befabf88316">More...</a><br /></td></tr>
+<tr class="memdesc:a92bf3040ddd1a97add4d6befabf88316"><td class="mdescLeft">&#160;</td><td class="mdescRight">PHY transmit count.  <a href="classns3_1_1_athstats_wifi_trace_sink.html#a92bf3040ddd1a97add4d6befabf88316">More...</a><br /></td></tr>
 <tr class="separator:a92bf3040ddd1a97add4d6befabf88316"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ecf47643c96e60bd3e44261abb6da30"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_athstats_wifi_trace_sink.html#a4ecf47643c96e60bd3e44261abb6da30">m_rxCount</a></td></tr>
 <tr class="memdesc:a4ecf47643c96e60bd3e44261abb6da30"><td class="mdescLeft">&#160;</td><td class="mdescRight">receive count  <a href="classns3_1_1_athstats_wifi_trace_sink.html#a4ecf47643c96e60bd3e44261abb6da30">More...</a><br /></td></tr>
@@ -530,7 +527,7 @@ Additional Inherited Members</h2></td></tr>
 <p>function to be called when the net device receives a packet </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">context</td><td></td></tr>
+    <tr><td class="paramname">context</td><td>the calling context </td></tr>
     <tr><td class="paramname">p</td><td>the packet being received </td></tr>
   </table>
   </dd>
@@ -585,7 +582,7 @@ Additional Inherited Members</h2></td></tr>
 <p>function to be called when the net device transmits a packet </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">context</td><td></td></tr>
+    <tr><td class="paramname">context</td><td>the calling context </td></tr>
     <tr><td class="paramname">p</td><td>the packet being transmitted </td></tr>
   </table>
   </dd>
@@ -640,7 +637,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="athstats-helper_8cc_source.html#l00104">104</a> of file <a class="el" href="athstats-helper_8cc_source.html">athstats-helper.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="athstats-helper_8h_source.html#l00229">m_interval</a>, <a class="el" href="nstime_8h_source.html#l01127">ns3::MakeTimeAccessor()</a>, <a class="el" href="time_8cc_source.html#l00449">ns3::MakeTimeChecker()</a>, <a class="el" href="nstime_8h_source.html#l01064">ns3::Seconds()</a>, and <a class="el" href="type-id_8cc_source.html#l00922">ns3::TypeId::SetParent()</a>.</p>
+<p class="reference">References <a class="el" href="athstats-helper_8h_source.html#l00229">m_interval</a>, <a class="el" href="nstime_8h_source.html#l01133">ns3::MakeTimeAccessor()</a>, <a class="el" href="time_8cc_source.html#l00449">ns3::MakeTimeChecker()</a>, <a class="el" href="nstime_8h_source.html#l01070">ns3::Seconds()</a>, and <a class="el" href="type-id_8cc_source.html#l00923">ns3::TypeId::SetParent()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -650,7 +647,7 @@ Additional Inherited Members</h2></td></tr>
 <map name="classns3_1_1_athstats_wifi_trace_sink_a763d39674b3aae919c3778e3261923f1_cgraph" id="classns3_1_1_athstats_wifi_trace_sink_a763d39674b3aae919c3778e3261923f1_cgraph">
 <area shape="rect" title="Get the type ID." alt="" coords="5,175,201,217"/>
 <area shape="rect" href="namespacens3.html#a14613e89827b8d95bcfcbe23a763d4b6" title=" " alt="" coords="249,107,428,133"/>
-<area shape="rect" href="group__time.html#ga7032965bd4afa578691d88c09e4481c1" title="Helper to make a Time checker with bounded range. Both limits are inclusive." alt="" coords="253,157,425,184"/>
+<area shape="rect" href="namespacens3.html#a7032965bd4afa578691d88c09e4481c1" title="Helper to make a Time checker with bounded range. Both limits are inclusive." alt="" coords="253,157,425,184"/>
 <area shape="rect" href="group__timecivil.html#ga33c34b816f8ff6628e33d5c8e9713b9e" title=" " alt="" coords="285,233,392,260"/>
 <area shape="rect" href="classns3_1_1_type_id.html#abaaca67ab7d2471067e7c275df0f7309" title="Set the parent TypeId." alt="" coords="255,347,422,373"/>
 <area shape="rect" href="namespacens3.html#a952d99f6d759fee74dda19f308451bc1" title="Return a deep copy of a Ptr." alt="" coords="534,5,621,32"/>
@@ -750,16 +747,16 @@ Additional Inherited Members</h2></td></tr>
 <p>Function to be called when a frame reception by the PHY layer of the considered device resulted in an error due to a failure in the CRC check of the frame. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">context</td><td></td></tr>
-    <tr><td class="paramname">packet</td><td></td></tr>
-    <tr><td class="paramname">snr</td><td></td></tr>
+    <tr><td class="paramname">context</td><td>the calling context </td></tr>
+    <tr><td class="paramname">packet</td><td>the packet </td></tr>
+    <tr><td class="paramname">snr</td><td>the SNR in linear scale </td></tr>
   </table>
   </dd>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="athstats-helper_8cc_source.html#l00221">221</a> of file <a class="el" href="athstats-helper_8cc_source.html">athstats-helper.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="athstats-helper_8h_source.html#l00224">m_phyRxErrorCount</a>, <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>, and <a class="el" href="lora-mac-test_8cc_source.html#l00021">packet</a>.</p>
+<p class="reference">References <a class="el" href="athstats-helper_8h_source.html#l00224">m_phyRxErrorCount</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="athstats-helper_8cc_source.html#l00043">ns3::AthstatsHelper::EnableAthstats()</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -824,18 +821,18 @@ Additional Inherited Members</h2></td></tr>
 <p>Function to be called when the PHY layer of the considered device receives a frame. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">context</td><td></td></tr>
-    <tr><td class="paramname">packet</td><td></td></tr>
-    <tr><td class="paramname">snr</td><td></td></tr>
-    <tr><td class="paramname">mode</td><td></td></tr>
-    <tr><td class="paramname">preamble</td><td></td></tr>
+    <tr><td class="paramname">context</td><td>the calling context </td></tr>
+    <tr><td class="paramname">packet</td><td>the packet </td></tr>
+    <tr><td class="paramname">snr</td><td>the SNR in linear scale </td></tr>
+    <tr><td class="paramname">mode</td><td>the <a class="el" href="classns3_1_1_wifi_mode.html" title="represent a single transmission mode">WifiMode</a> </td></tr>
+    <tr><td class="paramname">preamble</td><td>the wifi preamble </td></tr>
   </table>
   </dd>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="athstats-helper_8cc_source.html#l00214">214</a> of file <a class="el" href="athstats-helper_8cc_source.html">athstats-helper.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="athstats-helper_8h_source.html#l00223">m_phyRxOkCount</a>, <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>, and <a class="el" href="lora-mac-test_8cc_source.html#l00021">packet</a>.</p>
+<p class="reference">References <a class="el" href="athstats-helper_8h_source.html#l00223">m_phyRxOkCount</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="athstats-helper_8cc_source.html#l00043">ns3::AthstatsHelper::EnableAthstats()</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -894,17 +891,17 @@ Additional Inherited Members</h2></td></tr>
 <p>Function to be called when the PHY layer of the considered device changes state. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">context</td><td></td></tr>
-    <tr><td class="paramname">start</td><td></td></tr>
-    <tr><td class="paramname">duration</td><td></td></tr>
-    <tr><td class="paramname">state</td><td></td></tr>
+    <tr><td class="paramname">context</td><td>the calling context </td></tr>
+    <tr><td class="paramname">start</td><td>the time at which the state changed </td></tr>
+    <tr><td class="paramname">duration</td><td>the duration of the state </td></tr>
+    <tr><td class="paramname">state</td><td>the PHY layer state </td></tr>
   </table>
   </dd>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="athstats-helper_8cc_source.html#l00235">235</a> of file <a class="el" href="athstats-helper_8cc_source.html">athstats-helper.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>, and <a class="el" href="core_8py_source.html#l01855">visualizer.core::start()</a>.</p>
+<p class="reference">References <a class="el" href="aloha_8py_source.html#l00037">aloha::duration</a>, <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>, and <a class="el" href="core_8py_source.html#l01855">visualizer.core::start()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="athstats-helper_8cc_source.html#l00043">ns3::AthstatsHelper::EnableAthstats()</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -982,18 +979,18 @@ Additional Inherited Members</h2></td></tr>
 <p>Function to be called when a frame is being transmitted by the PHY layer of the considered device. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">context</td><td></td></tr>
-    <tr><td class="paramname">packet</td><td></td></tr>
-    <tr><td class="paramname">mode</td><td></td></tr>
-    <tr><td class="paramname">preamble</td><td></td></tr>
-    <tr><td class="paramname">txPower</td><td></td></tr>
+    <tr><td class="paramname">context</td><td>the calling context </td></tr>
+    <tr><td class="paramname">packet</td><td>the packet </td></tr>
+    <tr><td class="paramname">mode</td><td>the <a class="el" href="classns3_1_1_wifi_mode.html" title="represent a single transmission mode">WifiMode</a> </td></tr>
+    <tr><td class="paramname">preamble</td><td>the wifi preamble </td></tr>
+    <tr><td class="paramname">txPower</td><td>the transmit power level </td></tr>
   </table>
   </dd>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="athstats-helper_8cc_source.html#l00228">228</a> of file <a class="el" href="athstats-helper_8cc_source.html">athstats-helper.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="athstats-helper_8h_source.html#l00225">m_phyTxCount</a>, <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>, and <a class="el" href="lora-mac-test_8cc_source.html#l00021">packet</a>.</p>
+<p class="reference">References <a class="el" href="athstats-helper_8h_source.html#l00225">m_phyTxCount</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="athstats-helper_8cc_source.html#l00043">ns3::AthstatsHelper::EnableAthstats()</a>.</p>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1085,7 +1082,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Function to be called when a data frame transmission by the considered device has failed. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">context</td><td></td></tr>
+    <tr><td class="paramname">context</td><td>the calling context </td></tr>
     <tr><td class="paramname">address</td><td>the MAC address of the remote station </td></tr>
   </table>
   </dd>
@@ -1140,7 +1137,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Function to be called when the transmission of a data frame has exceeded the retry limit. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">context</td><td></td></tr>
+    <tr><td class="paramname">context</td><td>the calling context </td></tr>
     <tr><td class="paramname">address</td><td>the MAC address of the remote station </td></tr>
   </table>
   </dd>
@@ -1195,7 +1192,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Function to be called when the transmission of a RTS frame has exceeded the retry limit. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">context</td><td></td></tr>
+    <tr><td class="paramname">context</td><td>the calling context </td></tr>
     <tr><td class="paramname">address</td><td>the MAC address of the remote station </td></tr>
   </table>
   </dd>
@@ -1250,7 +1247,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Function to be called when a RTS frame transmission by the considered device has failed. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">context</td><td></td></tr>
+    <tr><td class="paramname">context</td><td>the calling context </td></tr>
     <tr><td class="paramname">address</td><td>the MAC address of the remote station </td></tr>
   </table>
   </dd>
@@ -1437,7 +1434,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>phy receive error count </p>
+<p>PHY receive error count. </p>
 
 <p class="definition">Definition at line <a class="el" href="athstats-helper_8h_source.html#l00224">224</a> of file <a class="el" href="athstats-helper_8h_source.html">athstats-helper.h</a>.</p>
 
@@ -1465,7 +1462,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>phy receive ok count </p>
+<p>PHY receive OK count. </p>
 
 <p class="definition">Definition at line <a class="el" href="athstats-helper_8h_source.html#l00223">223</a> of file <a class="el" href="athstats-helper_8h_source.html">athstats-helper.h</a>.</p>
 
@@ -1493,7 +1490,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>phy transmit count </p>
+<p>PHY transmit count. </p>
 
 <p class="definition">Definition at line <a class="el" href="athstats-helper_8h_source.html#l00225">225</a> of file <a class="el" href="athstats-helper_8h_source.html">athstats-helper.h</a>.</p>
 
@@ -1627,7 +1624,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_athstats_wifi_trace_sink.html">AthstatsWifiTraceSink</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:20 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:26 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

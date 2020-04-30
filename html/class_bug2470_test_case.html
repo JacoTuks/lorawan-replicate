@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -233,9 +230,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:aece82e66803706c43cae6e23c367208b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bug2470_test_case.html#aece82e66803706c43cae6e23c367208b">RxCallback</a> (std::string context, <a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; const <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; p, uint16_t channelFreqMhz, <a class="el" href="classns3_1_1_wifi_tx_vector.html">WifiTxVector</a> txVector, <a class="el" href="structns3_1_1_mpdu_info.html">MpduInfo</a> aMpdu, <a class="el" href="structns3_1_1_signal_noise_dbm.html">SignalNoiseDbm</a> signalNoise)</td></tr>
 <tr class="memdesc:aece82e66803706c43cae6e23c367208b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback when packet is received.  <a href="class_bug2470_test_case.html#aece82e66803706c43cae6e23c367208b">More...</a><br /></td></tr>
 <tr class="separator:aece82e66803706c43cae6e23c367208b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ffc28b52b1d9754c3a7744ba2256596"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bug2470_test_case.html#a7ffc28b52b1d9754c3a7744ba2256596">RxDropCallback</a> (std::string context, <a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; const <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; p, <a class="el" href="namespacens3.html#a31d20111afabdc05bd83999d2af0aef6">WifiPhyRxfailureReason</a> reason)</td></tr>
-<tr class="memdesc:a7ffc28b52b1d9754c3a7744ba2256596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback when packet is dropped.  <a href="class_bug2470_test_case.html#a7ffc28b52b1d9754c3a7744ba2256596">More...</a><br /></td></tr>
-<tr class="separator:a7ffc28b52b1d9754c3a7744ba2256596"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07ca947dff412fdb002ae7c375ced1e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bug2470_test_case.html#a07ca947dff412fdb002ae7c375ced1e2">RxErrorCallback</a> (std::string context, <a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; const <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; p, double snr)</td></tr>
+<tr class="memdesc:a07ca947dff412fdb002ae7c375ced1e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback when packet is dropped.  <a href="class_bug2470_test_case.html#a07ca947dff412fdb002ae7c375ced1e2">More...</a><br /></td></tr>
+<tr class="separator:a07ca947dff412fdb002ae7c375ced1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4cc9d638b99f42a3a44ea1213c9a49b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bug2470_test_case.html#ae4cc9d638b99f42a3a44ea1213c9a49b">SendPacketBurst</a> (uint32_t numPackets, <a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_net_device.html">NetDevice</a> &gt; sourceDevice, <a class="el" href="classns3_1_1_address.html">Address</a> &amp;destination) const</td></tr>
 <tr class="memdesc:ae4cc9d638b99f42a3a44ea1213c9a49b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggers the arrival of a burst of 1000 Byte-long packets in the source device.  <a href="class_bug2470_test_case.html#ae4cc9d638b99f42a3a44ea1213c9a49b">More...</a><br /></td></tr>
 <tr class="separator:ae4cc9d638b99f42a3a44ea1213c9a49b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -257,9 +254,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a3f19f943c847273faaf4544eb8ec145e"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bug2470_test_case.html#a3f19f943c847273faaf4544eb8ec145e">m_addbaResetCount</a></td></tr>
 <tr class="memdesc:a3f19f943c847273faaf4544eb8ec145e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count number of times ADDBA state machine is in reset state.  <a href="class_bug2470_test_case.html#a3f19f943c847273faaf4544eb8ec145e">More...</a><br /></td></tr>
 <tr class="separator:a3f19f943c847273faaf4544eb8ec145e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77de878136e12042cc0c639985dfc3be"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bug2470_test_case.html#a77de878136e12042cc0c639985dfc3be">m_droppedActionCount</a></td></tr>
-<tr class="memdesc:a77de878136e12042cc0c639985dfc3be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count dropped ADDBA request/response.  <a href="class_bug2470_test_case.html#a77de878136e12042cc0c639985dfc3be">More...</a><br /></td></tr>
-<tr class="separator:a77de878136e12042cc0c639985dfc3be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97558ac5a03b3d5efd0a71be2a679306"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bug2470_test_case.html#a97558ac5a03b3d5efd0a71be2a679306">m_failedActionCount</a></td></tr>
+<tr class="memdesc:a97558ac5a03b3d5efd0a71be2a679306"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count failed ADDBA request/response.  <a href="class_bug2470_test_case.html#a97558ac5a03b3d5efd0a71be2a679306">More...</a><br /></td></tr>
+<tr class="separator:a97558ac5a03b3d5efd0a71be2a679306"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef332476376f8e37a13012475b3c481f"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bug2470_test_case.html#aef332476376f8e37a13012475b3c481f">m_receivedAmpduCount</a></td></tr>
 <tr class="memdesc:aef332476376f8e37a13012475b3c481f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count received A-MPDU packets on STA.  <a href="class_bug2470_test_case.html#aef332476376f8e37a13012475b3c481f">More...</a><br /></td></tr>
 <tr class="separator:aef332476376f8e37a13012475b3c481f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -321,7 +318,7 @@ Additional Inherited Members</h2></td></tr>
 </ol>
 <p>See <a href="http://www.nsnam.org/bugzilla/show_bug.cgi?id=2470">Bug 2470</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l01895">1895</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l01897">1897</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a270911a10f940f593520e244390f2f36"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a270911a10f940f593520e244390f2f36">&#9670;&nbsp;</a></span>Bug2470TestCase()</h2>
@@ -338,7 +335,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l01953">1953</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l01955">1955</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
 
 </div>
 </div>
@@ -365,7 +362,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l01966">1966</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l01968">1968</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
 
 </div>
 </div>
@@ -434,11 +431,11 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l01971">1971</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l01973">1973</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="wifi-test_8cc_source.html#l01946">m_addbaEstablishedCount</a>, <a class="el" href="wifi-test_8cc_source.html#l01949">m_addbaNoReplyCount</a>, <a class="el" href="wifi-test_8cc_source.html#l01947">m_addbaPendingCount</a>, <a class="el" href="wifi-test_8cc_source.html#l01948">m_addbaRejectedCount</a>, and <a class="el" href="wifi-test_8cc_source.html#l01950">m_addbaResetCount</a>.</p>
+<p class="reference">References <a class="el" href="wifi-test_8cc_source.html#l01948">m_addbaEstablishedCount</a>, <a class="el" href="wifi-test_8cc_source.html#l01951">m_addbaNoReplyCount</a>, <a class="el" href="wifi-test_8cc_source.html#l01949">m_addbaPendingCount</a>, <a class="el" href="wifi-test_8cc_source.html#l01950">m_addbaRejectedCount</a>, and <a class="el" href="wifi-test_8cc_source.html#l01952">m_addbaResetCount</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l02036">RunSubtest()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l02038">RunSubtest()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -483,9 +480,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classns3_1_1_test_case.html#a8ff74680cf017ed42011e4be51917a24">ns3::TestCase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l02096">2096</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l02098">2098</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="wifi-test_8cc_source.html#l01946">m_addbaEstablishedCount</a>, <a class="el" href="wifi-test_8cc_source.html#l01949">m_addbaNoReplyCount</a>, <a class="el" href="wifi-test_8cc_source.html#l01947">m_addbaPendingCount</a>, <a class="el" href="wifi-test_8cc_source.html#l01948">m_addbaRejectedCount</a>, <a class="el" href="wifi-test_8cc_source.html#l01950">m_addbaResetCount</a>, <a class="el" href="wifi-test_8cc_source.html#l01945">m_droppedActionCount</a>, <a class="el" href="wifi-test_8cc_source.html#l01944">m_receivedAmpduCount</a>, <a class="el" href="wifi-test_8cc_source.html#l01943">m_receivedNormalMpduCount</a>, <a class="el" href="test_8h_source.html#l00166">NS_TEST_ASSERT_MSG_EQ</a>, <a class="el" href="wifi-test_8cc_source.html#l02036">RunSubtest()</a>, and <a class="el" href="error-model_8cc_source.html#l00520">ns3::ReceiveListErrorModel::SetList()</a>.</p>
+<p class="reference">References <a class="el" href="wifi-test_8cc_source.html#l01948">m_addbaEstablishedCount</a>, <a class="el" href="wifi-test_8cc_source.html#l01951">m_addbaNoReplyCount</a>, <a class="el" href="wifi-test_8cc_source.html#l01949">m_addbaPendingCount</a>, <a class="el" href="wifi-test_8cc_source.html#l01950">m_addbaRejectedCount</a>, <a class="el" href="wifi-test_8cc_source.html#l01952">m_addbaResetCount</a>, <a class="el" href="wifi-test_8cc_source.html#l01947">m_failedActionCount</a>, <a class="el" href="wifi-test_8cc_source.html#l01946">m_receivedAmpduCount</a>, <a class="el" href="wifi-test_8cc_source.html#l01945">m_receivedNormalMpduCount</a>, <a class="el" href="test_8h_source.html#l00166">NS_TEST_ASSERT_MSG_EQ</a>, <a class="el" href="wifi-test_8cc_source.html#l02038">RunSubtest()</a>, and <a class="el" href="error-model_8cc_source.html#l00520">ns3::ReceiveListErrorModel::SetList()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -493,56 +490,56 @@ Additional Inherited Members</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_bug2470_test_case_afbba4f7484356bcf9adbfc09b37b8f73_cgraph.png" border="0" usemap="#class_bug2470_test_case_afbba4f7484356bcf9adbfc09b37b8f73_cgraph" alt=""/></div>
 <map name="class_bug2470_test_case_afbba4f7484356bcf9adbfc09b37b8f73_cgraph" id="class_bug2470_test_case_afbba4f7484356bcf9adbfc09b37b8f73_cgraph">
-<area shape="rect" title="Implementation to actually run this TestCase." alt="" coords="5,533,193,560"/>
-<area shape="rect" href="class_bug2470_test_case.html#a84bc33b7203f45b9821714a4c654c17c" title="Run subtest for this test suite." alt="" coords="241,504,460,531"/>
-<area shape="rect" href="classns3_1_1_receive_list_error_model.html#ae710ec96d43c47bedb5d941351a4d809" title=" " alt="" coords="251,555,450,597"/>
-<area shape="rect" href="classns3_1_1_list_position_allocator.html#a460e82f015ac012a73ba0ea0cccb3486" title="Add a position to the list of positions." alt="" coords="523,235,742,261"/>
-<area shape="rect" href="class_bug2470_test_case.html#a8078747997d7e5b6af976452dd7980da" title="Callback when ADDBA state changed." alt="" coords="523,286,743,327"/>
-<area shape="rect" href="group__config.html#ga4014f151241cd0939b6cb64409605736" title=" " alt="" coords="555,453,711,480"/>
-<area shape="rect" href="classns3_1_1_node_container.html#a787f059e2813e8b951cc6914d11dfe69" title="Create n nodes and append pointers to them to the end of this NodeContainer." alt="" coords="557,606,708,647"/>
-<area shape="rect" href="classns3_1_1_net_device_container.html#ae114b3a9fc193fee40c07e4a4207aef4" title="Get the Ptr&lt;NetDevice&gt; stored in this container at a given index." alt="" coords="525,672,740,699"/>
-<area shape="rect" href="group__makecallbackmemptr.html#ga9376283685aa99d204048d6a4b7610a4" title=" " alt="" coords="561,723,705,749"/>
-<area shape="rect" href="group__timecivil.html#ga17465a639c8d1464e76538afdd78a9f0" title=" " alt="" coords="561,352,704,379"/>
-<area shape="rect" href="class_bug2470_test_case.html#aece82e66803706c43cae6e23c367208b" title="Callback when packet is received." alt="" coords="523,504,742,531"/>
-<area shape="rect" href="class_bug2470_test_case.html#a7ffc28b52b1d9754c3a7744ba2256596" title="Callback when packet is dropped." alt="" coords="508,555,757,581"/>
-<area shape="rect" href="group__timecivil.html#ga33c34b816f8ff6628e33d5c8e9713b9e" title=" " alt="" coords="579,403,686,429"/>
-<area shape="rect" href="class_bug2470_test_case.html#ae4cc9d638b99f42a3a44ea1213c9a49b" title="Triggers the arrival of a burst of 1000 Byte&#45;long packets in the source device." alt="" coords="523,774,743,815"/>
-<area shape="rect" href="classns3_1_1_config_1_1_config_impl.html#a5db61ce4675ab9e3548b6da5703848fe" title=" " alt="" coords="821,339,995,381"/>
-<area shape="rect" href="classns3_1_1_singleton.html#a80a2cd3c25a27ea72add7a9f7a141ffa" title="Get a pointer to the singleton instance." alt="" coords="1320,226,1520,267"/>
-<area shape="rect" href="classns3_1_1_config_1_1_match_container.html#a3faec88bf2938163282336eef46e21ee" title=" " alt="" coords="1059,274,1265,315"/>
-<area shape="rect" href="classns3_1_1_config_1_1_match_container.html#a9e7455e824d416a6658b429165481d5f" title=" " alt="" coords="1059,339,1265,381"/>
-<area shape="rect" href="classns3_1_1_config_1_1_config_impl.html#aef8d461e235704cdeb8a85581ba249fb" title=" " alt="" coords="1075,405,1249,446"/>
-<area shape="rect" href="classns3_1_1_config_1_1_config_impl.html#ab482a563857309e0e70beba3af32be71" title="Break a Config path into the leading path and the last leaf token." alt="" coords="1075,209,1249,250"/>
-<area shape="rect" href="classns3_1_1_time.html#a3e742c67b2764e75ff95f9b754d43fe9" title="Create a Time equal to value in unit unit." alt="" coords="822,56,994,83"/>
-<area shape="rect" href="classns3_1_1_time.html#a8a39dc1b8cbbd7fe6d940e492d1b925e" title="Default constructor, with value 0." alt="" coords="1357,107,1483,133"/>
-<area shape="rect" href="classns3_1_1_time.html#a0b023c55c20582aa7c1781aacf128034" title="Get the Information record for timeUnit for the current Resolution." alt="" coords="1061,5,1263,32"/>
-<area shape="rect" href="classns3_1_1_time.html#aa7eef2a1119c1c4855d99f1e83d44c54" title="Record a Time instance with the MarkedTimes." alt="" coords="1635,244,1762,271"/>
-<area shape="rect" href="classns3_1_1_time.html#addd8e672203391b3ae98ee475ce05272" title=" " alt="" coords="1871,244,2081,271"/>
-<area shape="rect" href="global-router-interface_8cc.html#af2f17e24d29f39f6804d0d10d8cedc71" title=" " alt="" coords="1915,480,2037,507"/>
-<area shape="rect" href="classns3_1_1_time.html#a963e53522278fcbdf1ab9f7adbd0f5d6" title="Get the current Resolution." alt="" coords="1323,5,1517,32"/>
-<area shape="rect" href="classns3_1_1_time.html#a6a872e62f71dfa817fef2c549473d980" title="Set the default resolution." alt="" coords="1575,5,1823,32"/>
-<area shape="rect" href="classns3_1_1_packet.html#afb38be706cfc761bc1c0591f595fc1b7" title="performs a COW copy of the packet." alt="" coords="839,609,977,636"/>
-<area shape="rect" href="classns3_1_1_wifi_mac_header.html#ab7141548a921f63a084720b3b022de79" title="Return true if the Type is DATA." alt="" coords="831,493,985,534"/>
-<area shape="rect" href="classns3_1_1_packet.html#a0961eccf975d75f902d40956c93ba63e" title="Deserialize and remove the header from the internal buffer." alt="" coords="805,559,1011,585"/>
-<area shape="rect" href="classns3_1_1_byte_tag_list.html#a1fec06d7e6daaf8039cf2a148e4090f2" title="Adjust the offsets stored internally by the adjustment delta." alt="" coords="1073,740,1251,767"/>
-<area shape="rect" href="classns3_1_1_buffer.html#acb977a0179de9abe4e295ce22023b4ca" title=" " alt="" coords="1093,791,1231,817"/>
-<area shape="rect" href="classns3_1_1_header.html#a78be9400bb66b2a8543606f395ef5396" title=" " alt="" coords="1071,689,1253,716"/>
-<area shape="rect" href="classns3_1_1_object_base.html#abe5b43a6f5b99a92a4c3122db31f06fb" title="Get the most derived TypeId for this Object." alt="" coords="1313,581,1527,622"/>
-<area shape="rect" href="classns3_1_1_type_id.html#abc4965475a579c2afdc668d7a7d58374" title="Get the name." alt="" coords="1079,471,1245,497"/>
-<area shape="rect" href="classns3_1_1_buffer.html#adeecbb3e8f518aec6fee0437578ade4b" title=" " alt="" coords="1062,639,1262,665"/>
-<area shape="rect" href="classns3_1_1_packet_metadata.html#afa8a589ec783d4998516d7f39f21242d" title="Remove an header." alt="" coords="1083,522,1241,563"/>
-<area shape="rect" href="classns3_1_1_buffer.html#a200897ee202518b0d2bf91ead4e82be9" title="Checks the internal buffer structures consistency." alt="" coords="1325,698,1515,739"/>
-<area shape="rect" href="namespacens3.html#aaad5cc5702ff29a1fcc8cdffd10a12e9" title=" " alt="" coords="1667,588,1730,615"/>
-<area shape="rect" href="classns3_1_1_iid_manager.html#a6658aaa8120efd885e98addb76a6f1d4" title="Get the name of a type id." alt="" coords="1322,361,1518,388"/>
-<area shape="rect" href="namespacevisualizer_1_1core.html#a2a35e5d8a34af358b508dac8635754e0" title=" " alt="" coords="1345,647,1495,673"/>
-<area shape="rect" href="classns3_1_1_type_id.html#a429535085325d6f926724771446d9047" title="Get the internal id of this TypeId." alt="" coords="1346,529,1494,556"/>
-<area shape="rect" href="classns3_1_1_packet_metadata.html#a547dc7d09f1b2d41a28445a91c2fcf37" title="Check if the metadata state is ok." alt="" coords="1341,463,1499,505"/>
-<area shape="rect" href="classns3_1_1_packet_metadata.html#a7fe144386274167b6aac05ac0a0cdf6f" title="Read items." alt="" coords="1619,434,1778,475"/>
-<area shape="rect" href="classns3_1_1_wifi_mac_header.html#a940491cedf184f20c615215d7b15746a" title="Return true if the header is an Action header." alt="" coords="831,686,985,727"/>
-<area shape="rect" href="classns3_1_1_wifi_mac_header.html#ac602baa163798e5da4945338dd5ef9b5" title="Return the type (enum WifiMacType)" alt="" coords="1085,842,1239,883"/>
-<area shape="rect" href="classns3_1_1_time.html#a60e845f4a74e62495b86356afe604cb4" title="Create a Time equal to value in unit unit." alt="" coords="822,107,994,133"/>
-<area shape="rect" href="classns3_1_1_time.html#a34e4acc13d0e08cc8cb9cd3b838b9baf" title="Create a Time in the current unit." alt="" coords="1099,107,1225,133"/>
-<area shape="rect" href="classns3_1_1_net_device.html#a59f41afb0fe8951bb94d5739cbe6ee7d" title=" " alt="" coords="827,781,989,808"/>
+<area shape="rect" title="Implementation to actually run this TestCase." alt="" coords="5,529,193,556"/>
+<area shape="rect" href="class_bug2470_test_case.html#a84bc33b7203f45b9821714a4c654c17c" title="Run subtest for this test suite." alt="" coords="241,500,460,527"/>
+<area shape="rect" href="classns3_1_1_receive_list_error_model.html#ae710ec96d43c47bedb5d941351a4d809" title=" " alt="" coords="251,551,450,593"/>
+<area shape="rect" href="classns3_1_1_list_position_allocator.html#a460e82f015ac012a73ba0ea0cccb3486" title="Add a position to the list of positions." alt="" coords="509,231,727,257"/>
+<area shape="rect" href="class_bug2470_test_case.html#a8078747997d7e5b6af976452dd7980da" title="Callback when ADDBA state changed." alt="" coords="508,282,728,323"/>
+<area shape="rect" href="group__config.html#ga4014f151241cd0939b6cb64409605736" title=" " alt="" coords="540,449,696,476"/>
+<area shape="rect" href="classns3_1_1_node_container.html#a787f059e2813e8b951cc6914d11dfe69" title="Create n nodes and append pointers to them to the end of this NodeContainer." alt="" coords="543,617,693,658"/>
+<area shape="rect" href="classns3_1_1_net_device_container.html#ae114b3a9fc193fee40c07e4a4207aef4" title="Get the Ptr&lt;NetDevice&gt; stored in this container at a given index." alt="" coords="511,683,725,709"/>
+<area shape="rect" href="group__makecallbackmemptr.html#ga9376283685aa99d204048d6a4b7610a4" title=" " alt="" coords="546,733,690,760"/>
+<area shape="rect" href="group__timecivil.html#ga17465a639c8d1464e76538afdd78a9f0" title=" " alt="" coords="547,348,689,375"/>
+<area shape="rect" href="class_bug2470_test_case.html#aece82e66803706c43cae6e23c367208b" title="Callback when packet is received." alt="" coords="509,500,727,527"/>
+<area shape="rect" href="class_bug2470_test_case.html#a07ca947dff412fdb002ae7c375ced1e2" title="Callback when packet is dropped." alt="" coords="521,551,715,593"/>
+<area shape="rect" href="group__timecivil.html#ga33c34b816f8ff6628e33d5c8e9713b9e" title=" " alt="" coords="565,399,671,425"/>
+<area shape="rect" href="class_bug2470_test_case.html#ae4cc9d638b99f42a3a44ea1213c9a49b" title="Triggers the arrival of a burst of 1000 Byte&#45;long packets in the source device." alt="" coords="508,785,728,826"/>
+<area shape="rect" href="classns3_1_1_config_1_1_config_impl.html#a5db61ce4675ab9e3548b6da5703848fe" title=" " alt="" coords="791,339,966,381"/>
+<area shape="rect" href="classns3_1_1_singleton.html#a80a2cd3c25a27ea72add7a9f7a141ffa" title="Get a pointer to the singleton instance." alt="" coords="1291,226,1491,267"/>
+<area shape="rect" href="classns3_1_1_config_1_1_match_container.html#a3faec88bf2938163282336eef46e21ee" title=" " alt="" coords="1029,274,1236,315"/>
+<area shape="rect" href="classns3_1_1_config_1_1_match_container.html#a9e7455e824d416a6658b429165481d5f" title=" " alt="" coords="1029,339,1236,381"/>
+<area shape="rect" href="classns3_1_1_config_1_1_config_impl.html#aef8d461e235704cdeb8a85581ba249fb" title=" " alt="" coords="1045,405,1220,446"/>
+<area shape="rect" href="classns3_1_1_config_1_1_config_impl.html#ab482a563857309e0e70beba3af32be71" title="Break a Config path into the leading path and the last leaf token." alt="" coords="1045,209,1220,250"/>
+<area shape="rect" href="classns3_1_1_time.html#a3e742c67b2764e75ff95f9b754d43fe9" title="Create a Time equal to value in unit unit." alt="" coords="793,56,965,83"/>
+<area shape="rect" href="classns3_1_1_time.html#a8a39dc1b8cbbd7fe6d940e492d1b925e" title="Default constructor, with value 0." alt="" coords="1328,107,1453,133"/>
+<area shape="rect" href="classns3_1_1_time.html#a0b023c55c20582aa7c1781aacf128034" title="Get the Information record for timeUnit for the current Resolution." alt="" coords="1032,5,1233,32"/>
+<area shape="rect" href="classns3_1_1_time.html#aa7eef2a1119c1c4855d99f1e83d44c54" title="Record a Time instance with the MarkedTimes." alt="" coords="1606,244,1733,271"/>
+<area shape="rect" href="classns3_1_1_time.html#addd8e672203391b3ae98ee475ce05272" title=" " alt="" coords="1841,244,2052,271"/>
+<area shape="rect" href="global-router-interface_8cc.html#af2f17e24d29f39f6804d0d10d8cedc71" title=" " alt="" coords="1886,480,2007,507"/>
+<area shape="rect" href="classns3_1_1_time.html#a963e53522278fcbdf1ab9f7adbd0f5d6" title="Get the current Resolution." alt="" coords="1293,5,1488,32"/>
+<area shape="rect" href="classns3_1_1_time.html#a6a872e62f71dfa817fef2c549473d980" title="Set the default resolution." alt="" coords="1545,5,1793,32"/>
+<area shape="rect" href="classns3_1_1_packet.html#afb38be706cfc761bc1c0591f595fc1b7" title="performs a COW copy of the packet." alt="" coords="810,609,947,636"/>
+<area shape="rect" href="classns3_1_1_wifi_mac_header.html#ab7141548a921f63a084720b3b022de79" title="Return true if the Type is DATA." alt="" coords="802,493,955,534"/>
+<area shape="rect" href="classns3_1_1_packet.html#a0961eccf975d75f902d40956c93ba63e" title="Deserialize and remove the header from the internal buffer." alt="" coords="776,559,981,585"/>
+<area shape="rect" href="classns3_1_1_byte_tag_list.html#a1fec06d7e6daaf8039cf2a148e4090f2" title="Adjust the offsets stored internally by the adjustment delta." alt="" coords="1044,740,1221,767"/>
+<area shape="rect" href="classns3_1_1_buffer.html#acb977a0179de9abe4e295ce22023b4ca" title=" " alt="" coords="1063,791,1202,817"/>
+<area shape="rect" href="classns3_1_1_header.html#a78be9400bb66b2a8543606f395ef5396" title=" " alt="" coords="1042,689,1223,716"/>
+<area shape="rect" href="classns3_1_1_object_base.html#abe5b43a6f5b99a92a4c3122db31f06fb" title="Get the most derived TypeId for this Object." alt="" coords="1284,581,1497,622"/>
+<area shape="rect" href="classns3_1_1_type_id.html#abc4965475a579c2afdc668d7a7d58374" title="Get the name." alt="" coords="1050,471,1215,497"/>
+<area shape="rect" href="classns3_1_1_buffer.html#adeecbb3e8f518aec6fee0437578ade4b" title=" " alt="" coords="1033,639,1233,665"/>
+<area shape="rect" href="classns3_1_1_packet_metadata.html#afa8a589ec783d4998516d7f39f21242d" title="Remove an header." alt="" coords="1053,522,1212,563"/>
+<area shape="rect" href="classns3_1_1_buffer.html#a200897ee202518b0d2bf91ead4e82be9" title="Checks the internal buffer structures consistency." alt="" coords="1295,698,1486,739"/>
+<area shape="rect" href="namespacens3.html#aaad5cc5702ff29a1fcc8cdffd10a12e9" title=" " alt="" coords="1638,588,1701,615"/>
+<area shape="rect" href="classns3_1_1_iid_manager.html#a6658aaa8120efd885e98addb76a6f1d4" title="Get the name of a type id." alt="" coords="1293,361,1489,388"/>
+<area shape="rect" href="namespacevisualizer_1_1core.html#a2a35e5d8a34af358b508dac8635754e0" title=" " alt="" coords="1315,647,1466,673"/>
+<area shape="rect" href="classns3_1_1_type_id.html#a429535085325d6f926724771446d9047" title="Get the internal id of this TypeId." alt="" coords="1317,529,1465,556"/>
+<area shape="rect" href="classns3_1_1_packet_metadata.html#a547dc7d09f1b2d41a28445a91c2fcf37" title="Check if the metadata state is ok." alt="" coords="1311,463,1470,505"/>
+<area shape="rect" href="classns3_1_1_packet_metadata.html#a7fe144386274167b6aac05ac0a0cdf6f" title="Read items." alt="" coords="1590,434,1749,475"/>
+<area shape="rect" href="classns3_1_1_wifi_mac_header.html#a940491cedf184f20c615215d7b15746a" title="Return true if the header is an Action header." alt="" coords="802,693,955,734"/>
+<area shape="rect" href="classns3_1_1_wifi_mac_header.html#ac602baa163798e5da4945338dd5ef9b5" title="Return the type (enum WifiMacType)" alt="" coords="1056,842,1209,883"/>
+<area shape="rect" href="classns3_1_1_time.html#a60e845f4a74e62495b86356afe604cb4" title="Create a Time equal to value in unit unit." alt="" coords="793,107,965,133"/>
+<area shape="rect" href="classns3_1_1_time.html#a34e4acc13d0e08cc8cb9cd3b838b9baf" title="Create a Time in the current unit." alt="" coords="1069,107,1196,133"/>
+<area shape="rect" href="classns3_1_1_net_device.html#a59f41afb0fe8951bb94d5739cbe6ee7d" title=" " alt="" coords="798,792,959,819"/>
 </map>
 </div>
 
@@ -591,11 +588,11 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l02036">2036</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l02038">2038</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="position-allocator_8cc_source.html#l00068">ns3::ListPositionAllocator::Add()</a>, <a class="el" href="wifi-test_8cc_source.html#l01971">AddbaStateChangedCallback()</a>, <a class="el" href="phy-communication-test_8cc_source.html#l00010">channel</a>, <a class="el" href="config_8cc_source.html#l00873">ns3::Config::Connect()</a>, <a class="el" href="node-container_8cc_source.html#l00093">ns3::NodeContainer::Create()</a>, <a class="el" href="net-device-container_8cc_source.html#l00062">ns3::NetDeviceContainer::Get()</a>, <a class="el" href="third_8py_source.html#l00099">third::mac</a>, <a class="el" href="callback_8h_source.html#l01610">ns3::MakeCallback()</a>, <a class="el" href="nstime_8h_source.html#l01080">ns3::MicroSeconds()</a>, <a class="el" href="third_8py_source.html#l00108">third::mobility</a>, <a class="el" href="third_8py_source.html#l00093">third::phy</a>, <a class="el" href="wifi-test_8cc_source.html#l01994">RxCallback()</a>, <a class="el" href="wifi-test_8cc_source.html#l02013">RxDropCallback()</a>, <a class="el" href="nstime_8h_source.html#l01064">ns3::Seconds()</a>, <a class="el" href="wifi-test_8cc_source.html#l02025">SendPacketBurst()</a>, <a class="el" href="third_8py_source.html#l00096">third::wifi</a>, <a class="el" href="wifi-phy-standard_8h_source.html#l00051">ns3::WIFI_PHY_STANDARD_80211n_5GHZ</a>, and <a class="el" href="third_8py_source.html#l00090">third::wifiApNode</a>.</p>
+<p class="reference">References <a class="el" href="position-allocator_8cc_source.html#l00068">ns3::ListPositionAllocator::Add()</a>, <a class="el" href="wifi-test_8cc_source.html#l01973">AddbaStateChangedCallback()</a>, <a class="el" href="third_8py_source.html#l00092">third::channel</a>, <a class="el" href="config_8cc_source.html#l00873">ns3::Config::Connect()</a>, <a class="el" href="node-container_8cc_source.html#l00098">ns3::NodeContainer::Create()</a>, <a class="el" href="net-device-container_8cc_source.html#l00062">ns3::NetDeviceContainer::Get()</a>, <a class="el" href="third_8py_source.html#l00099">third::mac</a>, <a class="el" href="callback_8h_source.html#l01610">ns3::MakeCallback()</a>, <a class="el" href="nstime_8h_source.html#l01086">ns3::MicroSeconds()</a>, <a class="el" href="third_8py_source.html#l00108">third::mobility</a>, <a class="el" href="third_8py_source.html#l00093">third::phy</a>, <a class="el" href="wifi-test_8cc_source.html#l01996">RxCallback()</a>, <a class="el" href="wifi-test_8cc_source.html#l02015">RxErrorCallback()</a>, <a class="el" href="nstime_8h_source.html#l01070">ns3::Seconds()</a>, <a class="el" href="wifi-test_8cc_source.html#l02027">SendPacketBurst()</a>, <a class="el" href="third_8py_source.html#l00096">third::wifi</a>, <a class="el" href="wifi-phy-standard_8h_source.html#l00051">ns3::WIFI_PHY_STANDARD_80211n_5GHZ</a>, and <a class="el" href="third_8py_source.html#l00090">third::wifiApNode</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l02096">DoRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l02098">DoRun()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -603,56 +600,56 @@ Additional Inherited Members</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_bug2470_test_case_a84bc33b7203f45b9821714a4c654c17c_cgraph.png" border="0" usemap="#class_bug2470_test_case_a84bc33b7203f45b9821714a4c654c17c_cgraph" alt=""/></div>
 <map name="class_bug2470_test_case_a84bc33b7203f45b9821714a4c654c17c_cgraph" id="class_bug2470_test_case_a84bc33b7203f45b9821714a4c654c17c_cgraph">
-<area shape="rect" title="Run subtest for this test suite." alt="" coords="5,504,224,531"/>
-<area shape="rect" href="classns3_1_1_list_position_allocator.html#a460e82f015ac012a73ba0ea0cccb3486" title="Add a position to the list of positions." alt="" coords="287,235,506,261"/>
-<area shape="rect" href="class_bug2470_test_case.html#a8078747997d7e5b6af976452dd7980da" title="Callback when ADDBA state changed." alt="" coords="287,286,507,327"/>
-<area shape="rect" href="group__config.html#ga4014f151241cd0939b6cb64409605736" title=" " alt="" coords="319,453,475,480"/>
-<area shape="rect" href="classns3_1_1_node_container.html#a787f059e2813e8b951cc6914d11dfe69" title="Create n nodes and append pointers to them to the end of this NodeContainer." alt="" coords="321,606,472,647"/>
-<area shape="rect" href="classns3_1_1_net_device_container.html#ae114b3a9fc193fee40c07e4a4207aef4" title="Get the Ptr&lt;NetDevice&gt; stored in this container at a given index." alt="" coords="289,672,504,699"/>
-<area shape="rect" href="group__makecallbackmemptr.html#ga9376283685aa99d204048d6a4b7610a4" title=" " alt="" coords="325,723,469,749"/>
-<area shape="rect" href="group__timecivil.html#ga17465a639c8d1464e76538afdd78a9f0" title=" " alt="" coords="325,352,468,379"/>
-<area shape="rect" href="class_bug2470_test_case.html#aece82e66803706c43cae6e23c367208b" title="Callback when packet is received." alt="" coords="287,504,506,531"/>
-<area shape="rect" href="class_bug2470_test_case.html#a7ffc28b52b1d9754c3a7744ba2256596" title="Callback when packet is dropped." alt="" coords="272,555,521,581"/>
-<area shape="rect" href="group__timecivil.html#ga33c34b816f8ff6628e33d5c8e9713b9e" title=" " alt="" coords="343,403,450,429"/>
-<area shape="rect" href="class_bug2470_test_case.html#ae4cc9d638b99f42a3a44ea1213c9a49b" title="Triggers the arrival of a burst of 1000 Byte&#45;long packets in the source device." alt="" coords="287,774,507,815"/>
-<area shape="rect" href="classns3_1_1_config_1_1_config_impl.html#a5db61ce4675ab9e3548b6da5703848fe" title=" " alt="" coords="585,339,759,381"/>
-<area shape="rect" href="classns3_1_1_singleton.html#a80a2cd3c25a27ea72add7a9f7a141ffa" title="Get a pointer to the singleton instance." alt="" coords="1084,226,1284,267"/>
-<area shape="rect" href="classns3_1_1_config_1_1_match_container.html#a3faec88bf2938163282336eef46e21ee" title=" " alt="" coords="823,274,1029,315"/>
-<area shape="rect" href="classns3_1_1_config_1_1_match_container.html#a9e7455e824d416a6658b429165481d5f" title=" " alt="" coords="823,339,1029,381"/>
-<area shape="rect" href="classns3_1_1_config_1_1_config_impl.html#aef8d461e235704cdeb8a85581ba249fb" title=" " alt="" coords="839,405,1013,446"/>
-<area shape="rect" href="classns3_1_1_config_1_1_config_impl.html#ab482a563857309e0e70beba3af32be71" title="Break a Config path into the leading path and the last leaf token." alt="" coords="839,209,1013,250"/>
-<area shape="rect" href="classns3_1_1_time.html#a3e742c67b2764e75ff95f9b754d43fe9" title="Create a Time equal to value in unit unit." alt="" coords="586,56,758,83"/>
-<area shape="rect" href="classns3_1_1_time.html#a8a39dc1b8cbbd7fe6d940e492d1b925e" title="Default constructor, with value 0." alt="" coords="1121,107,1247,133"/>
-<area shape="rect" href="classns3_1_1_time.html#a0b023c55c20582aa7c1781aacf128034" title="Get the Information record for timeUnit for the current Resolution." alt="" coords="825,5,1027,32"/>
-<area shape="rect" href="classns3_1_1_time.html#aa7eef2a1119c1c4855d99f1e83d44c54" title="Record a Time instance with the MarkedTimes." alt="" coords="1399,231,1526,257"/>
-<area shape="rect" href="classns3_1_1_time.html#addd8e672203391b3ae98ee475ce05272" title=" " alt="" coords="1635,231,1845,257"/>
-<area shape="rect" href="global-router-interface_8cc.html#af2f17e24d29f39f6804d0d10d8cedc71" title=" " alt="" coords="1679,555,1801,581"/>
-<area shape="rect" href="classns3_1_1_time.html#a963e53522278fcbdf1ab9f7adbd0f5d6" title="Get the current Resolution." alt="" coords="1087,5,1281,32"/>
-<area shape="rect" href="classns3_1_1_time.html#a6a872e62f71dfa817fef2c549473d980" title="Set the default resolution." alt="" coords="1339,5,1587,32"/>
-<area shape="rect" href="classns3_1_1_packet.html#afb38be706cfc761bc1c0591f595fc1b7" title="performs a COW copy of the packet." alt="" coords="603,609,741,636"/>
-<area shape="rect" href="classns3_1_1_wifi_mac_header.html#ab7141548a921f63a084720b3b022de79" title="Return true if the Type is DATA." alt="" coords="595,493,749,534"/>
-<area shape="rect" href="classns3_1_1_packet.html#a0961eccf975d75f902d40956c93ba63e" title="Deserialize and remove the header from the internal buffer." alt="" coords="569,559,775,585"/>
-<area shape="rect" href="classns3_1_1_byte_tag_list.html#a1fec06d7e6daaf8039cf2a148e4090f2" title="Adjust the offsets stored internally by the adjustment delta." alt="" coords="837,740,1015,767"/>
-<area shape="rect" href="classns3_1_1_buffer.html#acb977a0179de9abe4e295ce22023b4ca" title=" " alt="" coords="857,791,995,817"/>
-<area shape="rect" href="classns3_1_1_header.html#a78be9400bb66b2a8543606f395ef5396" title=" " alt="" coords="835,689,1017,716"/>
-<area shape="rect" href="classns3_1_1_object_base.html#abe5b43a6f5b99a92a4c3122db31f06fb" title="Get the most derived TypeId for this Object." alt="" coords="1077,581,1291,622"/>
-<area shape="rect" href="classns3_1_1_type_id.html#abc4965475a579c2afdc668d7a7d58374" title="Get the name." alt="" coords="843,471,1009,497"/>
-<area shape="rect" href="classns3_1_1_buffer.html#adeecbb3e8f518aec6fee0437578ade4b" title=" " alt="" coords="826,639,1026,665"/>
-<area shape="rect" href="classns3_1_1_packet_metadata.html#afa8a589ec783d4998516d7f39f21242d" title="Remove an header." alt="" coords="847,522,1005,563"/>
-<area shape="rect" href="classns3_1_1_buffer.html#a200897ee202518b0d2bf91ead4e82be9" title="Checks the internal buffer structures consistency." alt="" coords="1089,698,1279,739"/>
-<area shape="rect" href="namespacens3.html#aaad5cc5702ff29a1fcc8cdffd10a12e9" title=" " alt="" coords="1431,705,1494,732"/>
-<area shape="rect" href="classns3_1_1_iid_manager.html#a6658aaa8120efd885e98addb76a6f1d4" title="Get the name of a type id." alt="" coords="1086,361,1282,388"/>
-<area shape="rect" href="namespacevisualizer_1_1core.html#a2a35e5d8a34af358b508dac8635754e0" title=" " alt="" coords="1109,647,1259,673"/>
-<area shape="rect" href="namespacevisualizer_1_1base.html#ad171497a5ff1afe0a73bedaebf35448f" title=" " alt="" coords="1387,639,1539,681"/>
-<area shape="rect" href="classns3_1_1_type_id.html#a429535085325d6f926724771446d9047" title="Get the internal id of this TypeId." alt="" coords="1110,529,1258,556"/>
-<area shape="rect" href="classns3_1_1_packet_metadata.html#a547dc7d09f1b2d41a28445a91c2fcf37" title="Check if the metadata state is ok." alt="" coords="1105,413,1263,454"/>
-<area shape="rect" href="classns3_1_1_packet_metadata.html#a7fe144386274167b6aac05ac0a0cdf6f" title="Read items." alt="" coords="1383,471,1542,513"/>
-<area shape="rect" href="classns3_1_1_packet_metadata.html#ac6fcebd163b3655b041476c3277102c1" title="Check if the position is valid." alt="" coords="1383,406,1542,447"/>
-<area shape="rect" href="classns3_1_1_wifi_mac_header.html#a940491cedf184f20c615215d7b15746a" title="Return true if the header is an Action header." alt="" coords="595,686,749,727"/>
-<area shape="rect" href="classns3_1_1_wifi_mac_header.html#ac602baa163798e5da4945338dd5ef9b5" title="Return the type (enum WifiMacType)" alt="" coords="849,842,1003,883"/>
-<area shape="rect" href="classns3_1_1_time.html#a60e845f4a74e62495b86356afe604cb4" title="Create a Time equal to value in unit unit." alt="" coords="586,107,758,133"/>
-<area shape="rect" href="classns3_1_1_time.html#a34e4acc13d0e08cc8cb9cd3b838b9baf" title="Create a Time in the current unit." alt="" coords="863,107,989,133"/>
-<area shape="rect" href="classns3_1_1_net_device.html#a59f41afb0fe8951bb94d5739cbe6ee7d" title=" " alt="" coords="591,781,753,808"/>
+<area shape="rect" title="Run subtest for this test suite." alt="" coords="5,500,224,527"/>
+<area shape="rect" href="classns3_1_1_list_position_allocator.html#a460e82f015ac012a73ba0ea0cccb3486" title="Add a position to the list of positions." alt="" coords="273,231,491,257"/>
+<area shape="rect" href="class_bug2470_test_case.html#a8078747997d7e5b6af976452dd7980da" title="Callback when ADDBA state changed." alt="" coords="272,282,492,323"/>
+<area shape="rect" href="group__config.html#ga4014f151241cd0939b6cb64409605736" title=" " alt="" coords="304,449,460,476"/>
+<area shape="rect" href="classns3_1_1_node_container.html#a787f059e2813e8b951cc6914d11dfe69" title="Create n nodes and append pointers to them to the end of this NodeContainer." alt="" coords="307,617,457,658"/>
+<area shape="rect" href="classns3_1_1_net_device_container.html#ae114b3a9fc193fee40c07e4a4207aef4" title="Get the Ptr&lt;NetDevice&gt; stored in this container at a given index." alt="" coords="275,683,489,709"/>
+<area shape="rect" href="group__makecallbackmemptr.html#ga9376283685aa99d204048d6a4b7610a4" title=" " alt="" coords="310,733,454,760"/>
+<area shape="rect" href="group__timecivil.html#ga17465a639c8d1464e76538afdd78a9f0" title=" " alt="" coords="311,348,453,375"/>
+<area shape="rect" href="class_bug2470_test_case.html#aece82e66803706c43cae6e23c367208b" title="Callback when packet is received." alt="" coords="273,500,491,527"/>
+<area shape="rect" href="class_bug2470_test_case.html#a07ca947dff412fdb002ae7c375ced1e2" title="Callback when packet is dropped." alt="" coords="285,551,479,593"/>
+<area shape="rect" href="group__timecivil.html#ga33c34b816f8ff6628e33d5c8e9713b9e" title=" " alt="" coords="329,399,435,425"/>
+<area shape="rect" href="class_bug2470_test_case.html#ae4cc9d638b99f42a3a44ea1213c9a49b" title="Triggers the arrival of a burst of 1000 Byte&#45;long packets in the source device." alt="" coords="272,785,492,826"/>
+<area shape="rect" href="classns3_1_1_config_1_1_config_impl.html#a5db61ce4675ab9e3548b6da5703848fe" title=" " alt="" coords="555,339,730,381"/>
+<area shape="rect" href="classns3_1_1_singleton.html#a80a2cd3c25a27ea72add7a9f7a141ffa" title="Get a pointer to the singleton instance." alt="" coords="1055,226,1255,267"/>
+<area shape="rect" href="classns3_1_1_config_1_1_match_container.html#a3faec88bf2938163282336eef46e21ee" title=" " alt="" coords="793,274,1000,315"/>
+<area shape="rect" href="classns3_1_1_config_1_1_match_container.html#a9e7455e824d416a6658b429165481d5f" title=" " alt="" coords="793,339,1000,381"/>
+<area shape="rect" href="classns3_1_1_config_1_1_config_impl.html#aef8d461e235704cdeb8a85581ba249fb" title=" " alt="" coords="809,405,984,446"/>
+<area shape="rect" href="classns3_1_1_config_1_1_config_impl.html#ab482a563857309e0e70beba3af32be71" title="Break a Config path into the leading path and the last leaf token." alt="" coords="809,209,984,250"/>
+<area shape="rect" href="classns3_1_1_time.html#a3e742c67b2764e75ff95f9b754d43fe9" title="Create a Time equal to value in unit unit." alt="" coords="557,56,729,83"/>
+<area shape="rect" href="classns3_1_1_time.html#a8a39dc1b8cbbd7fe6d940e492d1b925e" title="Default constructor, with value 0." alt="" coords="1092,107,1217,133"/>
+<area shape="rect" href="classns3_1_1_time.html#a0b023c55c20582aa7c1781aacf128034" title="Get the Information record for timeUnit for the current Resolution." alt="" coords="796,5,997,32"/>
+<area shape="rect" href="classns3_1_1_time.html#aa7eef2a1119c1c4855d99f1e83d44c54" title="Record a Time instance with the MarkedTimes." alt="" coords="1370,231,1497,257"/>
+<area shape="rect" href="classns3_1_1_time.html#addd8e672203391b3ae98ee475ce05272" title=" " alt="" coords="1605,231,1816,257"/>
+<area shape="rect" href="global-router-interface_8cc.html#af2f17e24d29f39f6804d0d10d8cedc71" title=" " alt="" coords="1650,555,1771,581"/>
+<area shape="rect" href="classns3_1_1_time.html#a963e53522278fcbdf1ab9f7adbd0f5d6" title="Get the current Resolution." alt="" coords="1057,5,1252,32"/>
+<area shape="rect" href="classns3_1_1_time.html#a6a872e62f71dfa817fef2c549473d980" title="Set the default resolution." alt="" coords="1309,5,1557,32"/>
+<area shape="rect" href="classns3_1_1_packet.html#afb38be706cfc761bc1c0591f595fc1b7" title="performs a COW copy of the packet." alt="" coords="574,609,711,636"/>
+<area shape="rect" href="classns3_1_1_wifi_mac_header.html#ab7141548a921f63a084720b3b022de79" title="Return true if the Type is DATA." alt="" coords="566,493,719,534"/>
+<area shape="rect" href="classns3_1_1_packet.html#a0961eccf975d75f902d40956c93ba63e" title="Deserialize and remove the header from the internal buffer." alt="" coords="540,559,745,585"/>
+<area shape="rect" href="classns3_1_1_byte_tag_list.html#a1fec06d7e6daaf8039cf2a148e4090f2" title="Adjust the offsets stored internally by the adjustment delta." alt="" coords="808,740,985,767"/>
+<area shape="rect" href="classns3_1_1_buffer.html#acb977a0179de9abe4e295ce22023b4ca" title=" " alt="" coords="827,791,966,817"/>
+<area shape="rect" href="classns3_1_1_header.html#a78be9400bb66b2a8543606f395ef5396" title=" " alt="" coords="806,689,987,716"/>
+<area shape="rect" href="classns3_1_1_object_base.html#abe5b43a6f5b99a92a4c3122db31f06fb" title="Get the most derived TypeId for this Object." alt="" coords="1048,581,1261,622"/>
+<area shape="rect" href="classns3_1_1_type_id.html#abc4965475a579c2afdc668d7a7d58374" title="Get the name." alt="" coords="814,471,979,497"/>
+<area shape="rect" href="classns3_1_1_buffer.html#adeecbb3e8f518aec6fee0437578ade4b" title=" " alt="" coords="797,639,997,665"/>
+<area shape="rect" href="classns3_1_1_packet_metadata.html#afa8a589ec783d4998516d7f39f21242d" title="Remove an header." alt="" coords="817,522,976,563"/>
+<area shape="rect" href="classns3_1_1_buffer.html#a200897ee202518b0d2bf91ead4e82be9" title="Checks the internal buffer structures consistency." alt="" coords="1059,698,1250,739"/>
+<area shape="rect" href="namespacens3.html#aaad5cc5702ff29a1fcc8cdffd10a12e9" title=" " alt="" coords="1402,705,1465,732"/>
+<area shape="rect" href="classns3_1_1_iid_manager.html#a6658aaa8120efd885e98addb76a6f1d4" title="Get the name of a type id." alt="" coords="1057,361,1253,388"/>
+<area shape="rect" href="namespacevisualizer_1_1core.html#a2a35e5d8a34af358b508dac8635754e0" title=" " alt="" coords="1079,647,1230,673"/>
+<area shape="rect" href="namespacevisualizer_1_1base.html#ad171497a5ff1afe0a73bedaebf35448f" title=" " alt="" coords="1357,639,1509,681"/>
+<area shape="rect" href="classns3_1_1_type_id.html#a429535085325d6f926724771446d9047" title="Get the internal id of this TypeId." alt="" coords="1081,529,1229,556"/>
+<area shape="rect" href="classns3_1_1_packet_metadata.html#a547dc7d09f1b2d41a28445a91c2fcf37" title="Check if the metadata state is ok." alt="" coords="1075,413,1234,454"/>
+<area shape="rect" href="classns3_1_1_packet_metadata.html#a7fe144386274167b6aac05ac0a0cdf6f" title="Read items." alt="" coords="1354,471,1513,513"/>
+<area shape="rect" href="classns3_1_1_packet_metadata.html#ac6fcebd163b3655b041476c3277102c1" title="Check if the position is valid." alt="" coords="1354,406,1513,447"/>
+<area shape="rect" href="classns3_1_1_wifi_mac_header.html#a940491cedf184f20c615215d7b15746a" title="Return true if the header is an Action header." alt="" coords="566,693,719,734"/>
+<area shape="rect" href="classns3_1_1_wifi_mac_header.html#ac602baa163798e5da4945338dd5ef9b5" title="Return the type (enum WifiMacType)" alt="" coords="820,842,973,883"/>
+<area shape="rect" href="classns3_1_1_time.html#a60e845f4a74e62495b86356afe604cb4" title="Create a Time equal to value in unit unit." alt="" coords="557,107,729,133"/>
+<area shape="rect" href="classns3_1_1_time.html#a34e4acc13d0e08cc8cb9cd3b838b9baf" title="Create a Time in the current unit." alt="" coords="833,107,960,133"/>
+<area shape="rect" href="classns3_1_1_net_device.html#a59f41afb0fe8951bb94d5739cbe6ee7d" title=" " alt="" coords="562,792,723,819"/>
 </map>
 </div>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -740,11 +737,11 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l01994">1994</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l01996">1996</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="packet_8cc_source.html#l00121">ns3::Packet::Copy()</a>, <a class="el" href="wifi-mac-header_8cc_source.html#l00527">ns3::WifiMacHeader::IsData()</a>, <a class="el" href="wifi-test_8cc_source.html#l01944">m_receivedAmpduCount</a>, <a class="el" href="wifi-test_8cc_source.html#l01943">m_receivedNormalMpduCount</a>, <a class="el" href="wifi-mpdu-type_8h_source.html#l00033">ns3::NORMAL_MPDU</a>, <a class="el" href="lora-mac-test_8cc_source.html#l00021">packet</a>, <a class="el" href="packet_8cc_source.html#l00280">ns3::Packet::RemoveHeader()</a>, and <a class="el" href="wifi-phy_8h_source.html#l00078">ns3::MpduInfo::type</a>.</p>
+<p class="reference">References <a class="el" href="packet_8cc_source.html#l00121">ns3::Packet::Copy()</a>, <a class="el" href="wifi-mac-header_8cc_source.html#l00527">ns3::WifiMacHeader::IsData()</a>, <a class="el" href="wifi-test_8cc_source.html#l01946">m_receivedAmpduCount</a>, <a class="el" href="wifi-test_8cc_source.html#l01945">m_receivedNormalMpduCount</a>, <a class="el" href="wifi-mpdu-type_8h_source.html#l00033">ns3::NORMAL_MPDU</a>, <a class="el" href="packet_8cc_source.html#l00280">ns3::Packet::RemoveHeader()</a>, and <a class="el" href="wifi-phy_8h_source.html#l00126">ns3::MpduInfo::type</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l02036">RunSubtest()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l02038">RunSubtest()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -798,8 +795,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a7ffc28b52b1d9754c3a7744ba2256596"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ffc28b52b1d9754c3a7744ba2256596">&#9670;&nbsp;</a></span>RxDropCallback()</h2>
+<a id="a07ca947dff412fdb002ae7c375ced1e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07ca947dff412fdb002ae7c375ced1e2">&#9670;&nbsp;</a></span>RxErrorCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -808,7 +805,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Bug2470TestCase::RxDropCallback </td>
+          <td class="memname">void Bug2470TestCase::RxErrorCallback </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>context</em>, </td>
@@ -822,8 +819,8 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacens3.html#a31d20111afabdc05bd83999d2af0aef6">WifiPhyRxfailureReason</a>&#160;</td>
-          <td class="paramname"><em>reason</em>&#160;</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>snr</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -842,54 +839,54 @@ Additional Inherited Members</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">context</td><td>node context </td></tr>
-    <tr><td class="paramname">p</td><td>the dropped packet </td></tr>
-    <tr><td class="paramname">reason</td><td>the reason </td></tr>
+    <tr><td class="paramname">p</td><td>the failed packet </td></tr>
+    <tr><td class="paramname">snr</td><td>the SNR of the failed packet in linear scale </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l02013">2013</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l02015">2015</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="packet_8cc_source.html#l00121">ns3::Packet::Copy()</a>, <a class="el" href="wifi-mac-header_8cc_source.html#l00698">ns3::WifiMacHeader::IsAction()</a>, <a class="el" href="wifi-test_8cc_source.html#l01945">m_droppedActionCount</a>, <a class="el" href="lora-mac-test_8cc_source.html#l00021">packet</a>, and <a class="el" href="packet_8cc_source.html#l00280">ns3::Packet::RemoveHeader()</a>.</p>
+<p class="reference">References <a class="el" href="packet_8cc_source.html#l00121">ns3::Packet::Copy()</a>, <a class="el" href="wifi-mac-header_8cc_source.html#l00698">ns3::WifiMacHeader::IsAction()</a>, <a class="el" href="wifi-test_8cc_source.html#l01947">m_failedActionCount</a>, and <a class="el" href="packet_8cc_source.html#l00280">ns3::Packet::RemoveHeader()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l02036">RunSubtest()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l02038">RunSubtest()</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="class_bug2470_test_case_a7ffc28b52b1d9754c3a7744ba2256596_cgraph.png" border="0" usemap="#class_bug2470_test_case_a7ffc28b52b1d9754c3a7744ba2256596_cgraph" alt=""/></div>
-<map name="class_bug2470_test_case_a7ffc28b52b1d9754c3a7744ba2256596_cgraph" id="class_bug2470_test_case_a7ffc28b52b1d9754c3a7744ba2256596_cgraph">
-<area shape="rect" title="Callback when packet is dropped." alt="" coords="5,146,255,173"/>
-<area shape="rect" href="classns3_1_1_packet.html#afb38be706cfc761bc1c0591f595fc1b7" title="performs a COW copy of the packet." alt="" coords="337,87,474,114"/>
-<area shape="rect" href="classns3_1_1_wifi_mac_header.html#a940491cedf184f20c615215d7b15746a" title="Return true if the header is an Action header." alt="" coords="329,139,482,180"/>
-<area shape="rect" href="classns3_1_1_packet.html#a0961eccf975d75f902d40956c93ba63e" title="Deserialize and remove the header from the internal buffer." alt="" coords="303,275,508,302"/>
-<area shape="rect" href="classns3_1_1_wifi_mac_header.html#ac602baa163798e5da4945338dd5ef9b5" title="Return the type (enum WifiMacType)" alt="" coords="579,68,733,109"/>
-<area shape="rect" href="classns3_1_1_byte_tag_list.html#a1fec06d7e6daaf8039cf2a148e4090f2" title="Adjust the offsets stored internally by the adjustment delta." alt="" coords="567,199,745,226"/>
-<area shape="rect" href="classns3_1_1_buffer.html#acb977a0179de9abe4e295ce22023b4ca" title=" " alt="" coords="587,351,725,378"/>
-<area shape="rect" href="classns3_1_1_header.html#a78be9400bb66b2a8543606f395ef5396" title=" " alt="" coords="565,301,747,327"/>
-<area shape="rect" href="classns3_1_1_object_base.html#abe5b43a6f5b99a92a4c3122db31f06fb" title="Get the most derived TypeId for this Object." alt="" coords="804,243,1017,284"/>
-<area shape="rect" href="classns3_1_1_type_id.html#abc4965475a579c2afdc668d7a7d58374" title="Get the name." alt="" coords="573,457,739,483"/>
-<area shape="rect" href="classns3_1_1_buffer.html#adeecbb3e8f518aec6fee0437578ade4b" title=" " alt="" coords="556,402,756,429"/>
-<area shape="rect" href="classns3_1_1_packet_metadata.html#afa8a589ec783d4998516d7f39f21242d" title="Remove an header." alt="" coords="577,133,735,175"/>
-<area shape="rect" href="classns3_1_1_buffer.html#a200897ee202518b0d2bf91ead4e82be9" title="Checks the internal buffer structures consistency." alt="" coords="815,340,1006,381"/>
-<area shape="rect" href="namespacens3.html#aaad5cc5702ff29a1fcc8cdffd10a12e9" title=" " alt="" coords="1113,347,1176,374"/>
-<area shape="rect" href="classns3_1_1_net_device_container.html#a7ca8bc1d7ec00fd4fcc63869987fbda5" title="Append the contents of another NetDeviceContainer to the end of this container." alt="" coords="1272,322,1489,349"/>
-<area shape="rect" href="classns3_1_1_node.html#a2ed8663077afcb8db519296b0ada6355" title=" " alt="" coords="1315,373,1446,399"/>
-<area shape="rect" href="global-router-interface_8cc.html#af2f17e24d29f39f6804d0d10d8cedc71" title=" " alt="" coords="1320,271,1441,298"/>
-<area shape="rect" href="classns3_1_1_net_device_container.html#a4ddc336af319061f5b61c515f0453242" title="Get an iterator which refers to the first NetDevice in the container." alt="" coords="1553,285,1737,327"/>
-<area shape="rect" href="classns3_1_1_net_device_container.html#a436d9df206570861f96c3f278eaccb92" title="Get an iterator which indicates past&#45;the&#45;last NetDevice in the container." alt="" coords="1537,351,1753,378"/>
-<area shape="rect" href="classns3_1_1_singleton.html#a80a2cd3c25a27ea72add7a9f7a141ffa" title="Get a pointer to the singleton instance." alt="" coords="809,508,1012,549"/>
-<area shape="rect" href="classns3_1_1_iid_manager.html#a6658aaa8120efd885e98addb76a6f1d4" title="Get the name of a type id." alt="" coords="813,457,1009,483"/>
-<area shape="rect" href="namespacevisualizer_1_1core.html#a2a35e5d8a34af358b508dac8635754e0" title=" " alt="" coords="835,406,986,433"/>
-<area shape="rect" href="namespacevisualizer_1_1base.html#ad171497a5ff1afe0a73bedaebf35448f" title=" " alt="" coords="1069,399,1221,440"/>
-<area shape="rect" href="namespacevisualizer_1_1base.html#a6b0ffcff1e17ec4027496f50177e5b9e" title=" " alt="" coords="1293,424,1468,465"/>
-<area shape="rect" href="classns3_1_1_type_id.html#a429535085325d6f926724771446d9047" title="Get the internal id of this TypeId." alt="" coords="837,191,985,218"/>
-<area shape="rect" href="classns3_1_1_packet_metadata.html#a547dc7d09f1b2d41a28445a91c2fcf37" title="Check if the metadata state is ok." alt="" coords="831,72,990,113"/>
-<area shape="rect" href="classns3_1_1_packet_metadata.html#a7fe144386274167b6aac05ac0a0cdf6f" title="Read items." alt="" coords="1065,136,1224,177"/>
-<area shape="rect" href="classns3_1_1_packet_metadata.html#ac6fcebd163b3655b041476c3277102c1" title="Check if the position is valid." alt="" coords="1065,71,1224,112"/>
-<area shape="rect" href="classns3_1_1_packet_metadata.html#ac9e6db729cae99e9755981de02f3ffa0" title="Check if the position is valid." alt="" coords="1065,5,1224,47"/>
-<area shape="rect" href="classns3_1_1_packet_metadata.html#a7378e5fe71fcefd939f19c1669e54c79" title="Read a ULEB128 (Unsigned Little Endian Base 128) coded number." alt="" coords="1301,136,1460,177"/>
+<div class="center"><img src="class_bug2470_test_case_a07ca947dff412fdb002ae7c375ced1e2_cgraph.png" border="0" usemap="#class_bug2470_test_case_a07ca947dff412fdb002ae7c375ced1e2_cgraph" alt=""/></div>
+<map name="class_bug2470_test_case_a07ca947dff412fdb002ae7c375ced1e2_cgraph" id="class_bug2470_test_case_a07ca947dff412fdb002ae7c375ced1e2_cgraph">
+<area shape="rect" title="Callback when packet is dropped." alt="" coords="5,139,199,180"/>
+<area shape="rect" href="classns3_1_1_packet.html#afb38be706cfc761bc1c0591f595fc1b7" title="performs a COW copy of the packet." alt="" coords="281,87,418,114"/>
+<area shape="rect" href="classns3_1_1_wifi_mac_header.html#a940491cedf184f20c615215d7b15746a" title="Return true if the header is an Action header." alt="" coords="273,139,426,180"/>
+<area shape="rect" href="classns3_1_1_packet.html#a0961eccf975d75f902d40956c93ba63e" title="Deserialize and remove the header from the internal buffer." alt="" coords="247,275,452,302"/>
+<area shape="rect" href="classns3_1_1_wifi_mac_header.html#ac602baa163798e5da4945338dd5ef9b5" title="Return the type (enum WifiMacType)" alt="" coords="523,68,677,109"/>
+<area shape="rect" href="classns3_1_1_byte_tag_list.html#a1fec06d7e6daaf8039cf2a148e4090f2" title="Adjust the offsets stored internally by the adjustment delta." alt="" coords="511,199,689,226"/>
+<area shape="rect" href="classns3_1_1_buffer.html#acb977a0179de9abe4e295ce22023b4ca" title=" " alt="" coords="531,351,669,378"/>
+<area shape="rect" href="classns3_1_1_header.html#a78be9400bb66b2a8543606f395ef5396" title=" " alt="" coords="509,301,691,327"/>
+<area shape="rect" href="classns3_1_1_object_base.html#abe5b43a6f5b99a92a4c3122db31f06fb" title="Get the most derived TypeId for this Object." alt="" coords="748,243,961,284"/>
+<area shape="rect" href="classns3_1_1_type_id.html#abc4965475a579c2afdc668d7a7d58374" title="Get the name." alt="" coords="517,457,683,483"/>
+<area shape="rect" href="classns3_1_1_buffer.html#adeecbb3e8f518aec6fee0437578ade4b" title=" " alt="" coords="500,402,700,429"/>
+<area shape="rect" href="classns3_1_1_packet_metadata.html#afa8a589ec783d4998516d7f39f21242d" title="Remove an header." alt="" coords="521,133,679,175"/>
+<area shape="rect" href="classns3_1_1_buffer.html#a200897ee202518b0d2bf91ead4e82be9" title="Checks the internal buffer structures consistency." alt="" coords="759,340,950,381"/>
+<area shape="rect" href="namespacens3.html#aaad5cc5702ff29a1fcc8cdffd10a12e9" title=" " alt="" coords="1057,347,1120,374"/>
+<area shape="rect" href="classns3_1_1_net_device_container.html#a7ca8bc1d7ec00fd4fcc63869987fbda5" title="Append the contents of another NetDeviceContainer to the end of this container." alt="" coords="1216,322,1433,349"/>
+<area shape="rect" href="classns3_1_1_node.html#a2ed8663077afcb8db519296b0ada6355" title=" " alt="" coords="1259,373,1390,399"/>
+<area shape="rect" href="global-router-interface_8cc.html#af2f17e24d29f39f6804d0d10d8cedc71" title=" " alt="" coords="1264,271,1385,298"/>
+<area shape="rect" href="classns3_1_1_net_device_container.html#a4ddc336af319061f5b61c515f0453242" title="Get an iterator which refers to the first NetDevice in the container." alt="" coords="1497,285,1681,327"/>
+<area shape="rect" href="classns3_1_1_net_device_container.html#a436d9df206570861f96c3f278eaccb92" title="Get an iterator which indicates past&#45;the&#45;last NetDevice in the container." alt="" coords="1481,351,1697,378"/>
+<area shape="rect" href="classns3_1_1_singleton.html#a80a2cd3c25a27ea72add7a9f7a141ffa" title="Get a pointer to the singleton instance." alt="" coords="753,508,956,549"/>
+<area shape="rect" href="classns3_1_1_iid_manager.html#a6658aaa8120efd885e98addb76a6f1d4" title="Get the name of a type id." alt="" coords="757,457,953,483"/>
+<area shape="rect" href="namespacevisualizer_1_1core.html#a2a35e5d8a34af358b508dac8635754e0" title=" " alt="" coords="779,406,930,433"/>
+<area shape="rect" href="namespacevisualizer_1_1base.html#ad171497a5ff1afe0a73bedaebf35448f" title=" " alt="" coords="1013,399,1165,440"/>
+<area shape="rect" href="namespacevisualizer_1_1base.html#a6b0ffcff1e17ec4027496f50177e5b9e" title=" " alt="" coords="1237,424,1412,465"/>
+<area shape="rect" href="classns3_1_1_type_id.html#a429535085325d6f926724771446d9047" title="Get the internal id of this TypeId." alt="" coords="781,191,929,218"/>
+<area shape="rect" href="classns3_1_1_packet_metadata.html#a547dc7d09f1b2d41a28445a91c2fcf37" title="Check if the metadata state is ok." alt="" coords="775,72,934,113"/>
+<area shape="rect" href="classns3_1_1_packet_metadata.html#a7fe144386274167b6aac05ac0a0cdf6f" title="Read items." alt="" coords="1009,136,1168,177"/>
+<area shape="rect" href="classns3_1_1_packet_metadata.html#ac6fcebd163b3655b041476c3277102c1" title="Check if the position is valid." alt="" coords="1009,71,1168,112"/>
+<area shape="rect" href="classns3_1_1_packet_metadata.html#ac9e6db729cae99e9755981de02f3ffa0" title="Check if the position is valid." alt="" coords="1009,5,1168,47"/>
+<area shape="rect" href="classns3_1_1_packet_metadata.html#a7378e5fe71fcefd939f19c1669e54c79" title="Read a ULEB128 (Unsigned Little Endian Base 128) coded number." alt="" coords="1245,136,1404,177"/>
 </map>
 </div>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -897,11 +894,11 @@ Additional Inherited Members</h2></td></tr>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="class_bug2470_test_case_a7ffc28b52b1d9754c3a7744ba2256596_icgraph.png" border="0" usemap="#class_bug2470_test_case_a7ffc28b52b1d9754c3a7744ba2256596_icgraph" alt=""/></div>
-<map name="class_bug2470_test_case_a7ffc28b52b1d9754c3a7744ba2256596_icgraph" id="class_bug2470_test_case_a7ffc28b52b1d9754c3a7744ba2256596_icgraph">
-<area shape="rect" title="Callback when packet is dropped." alt="" coords="508,5,757,32"/>
-<area shape="rect" href="class_bug2470_test_case.html#a84bc33b7203f45b9821714a4c654c17c" title="Run subtest for this test suite." alt="" coords="241,5,460,32"/>
-<area shape="rect" href="class_bug2470_test_case.html#afbba4f7484356bcf9adbfc09b37b8f73" title="Implementation to actually run this TestCase." alt="" coords="5,5,193,32"/>
+<div class="center"><img src="class_bug2470_test_case_a07ca947dff412fdb002ae7c375ced1e2_icgraph.png" border="0" usemap="#class_bug2470_test_case_a07ca947dff412fdb002ae7c375ced1e2_icgraph" alt=""/></div>
+<map name="class_bug2470_test_case_a07ca947dff412fdb002ae7c375ced1e2_icgraph" id="class_bug2470_test_case_a07ca947dff412fdb002ae7c375ced1e2_icgraph">
+<area shape="rect" title="Callback when packet is dropped." alt="" coords="508,5,701,47"/>
+<area shape="rect" href="class_bug2470_test_case.html#a84bc33b7203f45b9821714a4c654c17c" title="Run subtest for this test suite." alt="" coords="241,13,460,39"/>
+<area shape="rect" href="class_bug2470_test_case.html#afbba4f7484356bcf9adbfc09b37b8f73" title="Implementation to actually run this TestCase." alt="" coords="5,13,193,39"/>
 </map>
 </div>
 
@@ -957,11 +954,11 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l02025">2025</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l02027">2027</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
 
 <p class="reference">References <a class="el" href="classns3_1_1_net_device.html#a59f41afb0fe8951bb94d5739cbe6ee7d">ns3::NetDevice::Send()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l02036">RunSubtest()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l02038">RunSubtest()</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
@@ -1011,9 +1008,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Count number of times ADDBA state machine is in established state. </p>
 
-<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l01946">1946</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l01948">1948</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l01971">AddbaStateChangedCallback()</a>, and <a class="el" href="wifi-test_8cc_source.html#l02096">DoRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l01973">AddbaStateChangedCallback()</a>, and <a class="el" href="wifi-test_8cc_source.html#l02098">DoRun()</a>.</p>
 
 </div>
 </div>
@@ -1039,9 +1036,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Count number of times ADDBA state machine is in no_reply state. </p>
 
-<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l01949">1949</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l01951">1951</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l01971">AddbaStateChangedCallback()</a>, and <a class="el" href="wifi-test_8cc_source.html#l02096">DoRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l01973">AddbaStateChangedCallback()</a>, and <a class="el" href="wifi-test_8cc_source.html#l02098">DoRun()</a>.</p>
 
 </div>
 </div>
@@ -1067,9 +1064,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Count number of times ADDBA state machine is in pending state. </p>
 
-<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l01947">1947</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l01949">1949</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l01971">AddbaStateChangedCallback()</a>, and <a class="el" href="wifi-test_8cc_source.html#l02096">DoRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l01973">AddbaStateChangedCallback()</a>, and <a class="el" href="wifi-test_8cc_source.html#l02098">DoRun()</a>.</p>
 
 </div>
 </div>
@@ -1095,9 +1092,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Count number of times ADDBA state machine is in rejected state. </p>
 
-<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l01948">1948</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l01950">1950</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l01971">AddbaStateChangedCallback()</a>, and <a class="el" href="wifi-test_8cc_source.html#l02096">DoRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l01973">AddbaStateChangedCallback()</a>, and <a class="el" href="wifi-test_8cc_source.html#l02098">DoRun()</a>.</p>
 
 </div>
 </div>
@@ -1123,14 +1120,14 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Count number of times ADDBA state machine is in reset state. </p>
 
-<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l01950">1950</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l01952">1952</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l01971">AddbaStateChangedCallback()</a>, and <a class="el" href="wifi-test_8cc_source.html#l02096">DoRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l01973">AddbaStateChangedCallback()</a>, and <a class="el" href="wifi-test_8cc_source.html#l02098">DoRun()</a>.</p>
 
 </div>
 </div>
-<a id="a77de878136e12042cc0c639985dfc3be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77de878136e12042cc0c639985dfc3be">&#9670;&nbsp;</a></span>m_droppedActionCount</h2>
+<a id="a97558ac5a03b3d5efd0a71be2a679306"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97558ac5a03b3d5efd0a71be2a679306">&#9670;&nbsp;</a></span>m_failedActionCount</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1139,7 +1136,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t Bug2470TestCase::m_droppedActionCount</td>
+          <td class="memname">uint16_t Bug2470TestCase::m_failedActionCount</td>
         </tr>
       </table>
   </td>
@@ -1149,11 +1146,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Count dropped ADDBA request/response. </p>
+<p>Count failed ADDBA request/response. </p>
 
-<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l01945">1945</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l01947">1947</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l02096">DoRun()</a>, and <a class="el" href="wifi-test_8cc_source.html#l02013">RxDropCallback()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l02098">DoRun()</a>, and <a class="el" href="wifi-test_8cc_source.html#l02015">RxErrorCallback()</a>.</p>
 
 </div>
 </div>
@@ -1179,9 +1176,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Count received A-MPDU packets on STA. </p>
 
-<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l01944">1944</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l01946">1946</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l02096">DoRun()</a>, and <a class="el" href="wifi-test_8cc_source.html#l01994">RxCallback()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l02098">DoRun()</a>, and <a class="el" href="wifi-test_8cc_source.html#l01996">RxCallback()</a>.</p>
 
 </div>
 </div>
@@ -1207,9 +1204,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Count received normal MPDU packets on STA. </p>
 
-<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l01943">1943</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l01945">1945</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l02096">DoRun()</a>, and <a class="el" href="wifi-test_8cc_source.html#l01994">RxCallback()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l02098">DoRun()</a>, and <a class="el" href="wifi-test_8cc_source.html#l01996">RxCallback()</a>.</p>
 
 </div>
 </div>
@@ -1226,7 +1223,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_bug2470_test_case.html">Bug2470TestCase</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:13 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:20 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

@@ -1,5 +1,5 @@
 <map id="ns3::ChannelAccessManager::NotifyRxEndErrorNow" name="ns3::ChannelAccessManager::NotifyRxEndErrorNow">
-<area shape="rect" id="node1" title="Notify the DCF that a packet reception was just completed unsuccessfully." alt="" coords="5,851,213,892"/>
+<area shape="rect" id="node1" title="Notify the Txop that a packet reception was just completed unsuccessfully." alt="" coords="5,851,213,892"/>
 <area shape="rect" id="node2" href="$classns3_1_1_simulator.html#ac3178fa975b419f7875e7105be122800" title="Return the current simulation virtual time." alt="" coords="261,858,415,885"/>
 <area shape="rect" id="node3" href="$group__simulator.html#ga42eb4eddad41528d4d99794a3dae3fd0" title="Get the SimulatorImpl singleton." alt="" coords="501,782,607,809"/>
 <area shape="rect" id="node50" href="$classns3_1_1_simulator_impl.html#aa516c50060846adc6fd316e83ef0797c" title="Return the current simulation virtual time." alt="" coords="463,858,645,885"/>

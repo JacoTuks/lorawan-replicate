@@ -3,7 +3,7 @@
 <area shape="rect" id="node2" href="$classns3_1_1_lte_interference.html#ae69e96d42e7d8eef67db46d19b86fc2a" title="Add signal function." alt="" coords="221,869,373,911"/>
 <area shape="rect" id="node49" href="$classns3_1_1_lte_interference.html#a0cf881018f086b6d34625336d754daa1" title="Subtract signal." alt="" coords="221,935,373,976"/>
 <area shape="rect" id="node50" href="$classns3_1_1_simulator.html#a671882c894a08af4a5e91181bf1eec13" title="Schedule an event to expire after delay." alt="" coords="205,1001,388,1027"/>
-<area shape="rect" id="node3" href="$classns3_1_1_lte_interference.html#a18d105beca4a94a1f2b502139540ab12" title="Considitionally evaluate chunk." alt="" coords="436,903,651,944"/>
+<area shape="rect" id="node3" href="$classns3_1_1_lte_interference.html#a18d105beca4a94a1f2b502139540ab12" title="Conditionally evaluate chunk." alt="" coords="436,903,651,944"/>
 <area shape="rect" id="node4" href="$group__simulator.html#gac3635e2e87f7ce316c89290ee1b01d0d" title="create an ns3::Time instance which contains the current simulation time." alt="" coords="699,845,781,871"/>
 <area shape="rect" id="node34" href="$global-router-interface_8cc.html#af2f17e24d29f39f6804d0d10d8cedc71" title=" " alt="" coords="1850,959,1971,986"/>
 <area shape="rect" id="node5" href="$classns3_1_1_simulator.html#ac3178fa975b419f7875e7105be122800" title="Return the current simulation virtual time." alt="" coords="829,803,983,830"/>

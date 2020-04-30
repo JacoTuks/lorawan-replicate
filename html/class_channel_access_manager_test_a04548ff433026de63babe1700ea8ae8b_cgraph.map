@@ -1,5 +1,5 @@
 <map id="ChannelAccessManagerTest::AddAckTimeoutReset" name="ChannelAccessManagerTest::AddAckTimeoutReset">
-<area shape="rect" id="node1" title="Add ack timeout reset function." alt="" coords="5,182,208,223"/>
+<area shape="rect" id="node1" title="Add Ack timeout reset function." alt="" coords="5,182,208,223"/>
 <area shape="rect" id="node2" href="$group__timecivil.html#ga17465a639c8d1464e76538afdd78a9f0" title=" " alt="" coords="256,164,399,190"/>
 <area shape="rect" id="node11" href="$group__simulator.html#gac3635e2e87f7ce316c89290ee1b01d0d" title="create an ns3::Time instance which contains the current simulation time." alt="" coords="286,214,369,241"/>
 <area shape="rect" id="node3" href="$classns3_1_1_time.html#a3e742c67b2764e75ff95f9b754d43fe9" title="Create a Time equal to value in unit unit." alt="" coords="653,62,825,89"/>

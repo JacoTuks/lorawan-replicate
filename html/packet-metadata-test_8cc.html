@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -335,9 +332,9 @@ Variables</h2></td></tr>
 <div class="line">    uint32_t size = p-&gt;GetSerializedSize ();                       \</div>
 <div class="line">    uint8_t* buffer = <span class="keyword">new</span> uint8_t[size];                           \</div>
 <div class="line">    p-&gt;Serialize (buffer, size);                                   \</div>
-<div class="line">    Ptr&lt;Packet&gt; <a class="code" href="lora-mac-test_8cc.html#a7f738197f6333798a5080db58aaa3fb1">otherPacket</a> = Create&lt;Packet&gt; (buffer, size, <span class="keyword">true</span>); \</div>
+<div class="line">    Ptr&lt;Packet&gt; otherPacket = Create&lt;Packet&gt; (buffer, size, <span class="keyword">true</span>); \</div>
 <div class="line">    delete [] buffer;                                              \</div>
-<div class="line">    CheckHistory (<a class="code" href="lora-mac-test_8cc.html#a7f738197f6333798a5080db58aaa3fb1">otherPacket</a>, __FILE__, __LINE__, __VA_ARGS__);   \</div>
+<div class="line">    CheckHistory (otherPacket, __FILE__, __LINE__, __VA_ARGS__);   \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="packet-metadata-test_8cc_source.html#l00459">459</a> of file <a class="el" href="packet-metadata-test_8cc_source.html">packet-metadata-test.cc</a>.</p>
@@ -441,7 +438,6 @@ Variables</h2></td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="alora-mac-test_8cc_html_a7f738197f6333798a5080db58aaa3fb1"><div class="ttname"><a href="lora-mac-test_8cc.html#a7f738197f6333798a5080db58aaa3fb1">otherPacket</a></div><div class="ttdeci">Ptr&lt; Packet &gt; otherPacket</div><div class="ttdef"><b>Definition:</b> <a href="lora-mac-test_8cc_source.html#l00022">lora-mac-test.cc:22</a></div></div>
 <!-- ns-3 doxygen header, based on
      HTML header for doxygen 1.8.3.1
      Verified compatible with 1.8.6
@@ -450,7 +446,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_fc4c7f03e1a69a98c370fae55a743828.html">network</a></li><li class="navelem"><a class="el" href="dir_601f5b2d753ac681ebe33000f4aab33b.html">test</a></li><li class="navelem"><a class="el" href="packet-metadata-test_8cc.html">packet-metadata-test.cc</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:11 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:18 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

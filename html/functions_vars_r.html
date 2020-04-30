@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -275,6 +272,10 @@ $(document).ready(function(){initNavTree('functions_vars_r.html',''); initResiza
 <li>receivedPackets
 : <a class="el" href="structns3_1_1_py_viz_1_1_net_device_statistics.html#a511e8676815e5f02ff8d1f67b8617e5c">ns3::PyViz::NetDeviceStatistics</a>
 </li>
+<li>receivedTime
+: <a class="el" href="structns3_1_1lorawan_1_1_end_device_status_1_1_packet_info_per_gw.html#a3a492ecebce086a55571975f0b123fcd">ns3::lorawan::EndDeviceStatus::PacketInfoPerGw</a>
+, <a class="el" href="structns3_1_1lorawan_1_1_mac_packet_status.html#a29dc061938dcd4f802e962c01243b791">ns3::lorawan::MacPacketStatus</a>
+</li>
 <li>receiver
 : <a class="el" href="classns3_1_1flame_1_1_flame_tag.html#a7f0f7e6470b5b8f008fc6a2e10543f89">ns3::flame::FlameTag</a>
 , <a class="el" href="structns3_1_1_py_viz_1_1_transmission_sample.html#ad27e64165d1154bdf44f36e9f5adb758">ns3::PyViz::TransmissionSample</a>
@@ -286,6 +287,9 @@ $(document).ready(function(){initNavTree('functions_vars_r.html',''); initResiza
 </li>
 <li>receiveStatusOfUlPdcpSdus
 : <a class="el" href="structns3_1_1_epc_x2_sap_1_1_erabs_subject_to_status_transfer_item.html#a32bf29a8c3d8aa391bcebac2c813afa2">ns3::EpcX2Sap::ErabsSubjectToStatusTransferItem</a>
+</li>
+<li>receptionTimes
+: <a class="el" href="structns3_1_1lorawan_1_1_mac_packet_status.html#ada1561b788226715a1e3c4a33b97e74f">ns3::lorawan::MacPacketStatus</a>
 </li>
 <li>recvBeacons
 : <a class="el" href="structns3_1_1_mesh_wifi_interface_mac_1_1_statistics.html#ae9d9c10ed7681fe6ae3dd127ad6d5788">ns3::MeshWifiInterfaceMac::Statistics</a>
@@ -404,6 +408,12 @@ $(document).ready(function(){initNavTree('functions_vars_r.html',''); initResiza
 </li>
 <li>retx
 : <a class="el" href="classns3_1_1_rtt_history.html#aa09a8578166430fa105d30606c56cc5c">ns3::RttHistory</a>
+</li>
+<li>reTxAttempts
+: <a class="el" href="structns3_1_1lorawan_1_1_retransmission_status.html#a7f6c444c1f25dabf5a6ebb6b20d38ff2">ns3::lorawan::RetransmissionStatus</a>
+</li>
+<li>retxLeft
+: <a class="el" href="structns3_1_1lorawan_1_1_end_device_lorawan_mac_1_1_lora_retx_parameters.html#a2fed5f079988d8f0fe61252b81e61c49">ns3::lorawan::EndDeviceLorawanMac::LoraRetxParameters</a>
 </li>
 <li>retxQueueHolDelay
 : <a class="el" href="structns3_1_1_lte_mac_sap_provider_1_1_report_buffer_status_parameters.html#a0ded201ceba83eff003ddbea6483f966">ns3::LteMacSapProvider::ReportBufferStatusParameters</a>
@@ -581,8 +591,11 @@ $(document).ready(function(){initNavTree('functions_vars_r.html',''); initResiza
 <li>rxPerr
 : <a class="el" href="structns3_1_1dot11s_1_1_hwmp_protocol_mac_1_1_statistics.html#a4c2d00bd9896bba23fa3dabcb40c5b7e">ns3::dot11s::HwmpProtocolMac::Statistics</a>
 </li>
+<li>rxPower
+: <a class="el" href="structns3_1_1lorawan_1_1_end_device_status_1_1_packet_info_per_gw.html#ad85cad73c3645edcdb4ce04e850a7983">ns3::lorawan::EndDeviceStatus::PacketInfoPerGw</a>
+</li>
 <li>rxPowerDbm
-: <a class="el" href="structns3_1_1_lora_channel_parameters.html#a904dfad250d097015308e1acd9e4f914">ns3::LoraChannelParameters</a>
+: <a class="el" href="structns3_1_1lorawan_1_1_lora_channel_parameters.html#a3407e61d9e37d95f1a48dfac0e149322">ns3::lorawan::LoraChannelParameters</a>
 </li>
 <li>rxPrep
 : <a class="el" href="structns3_1_1dot11s_1_1_hwmp_protocol_mac_1_1_statistics.html#a506d2ea8770378dcdee1619a12e3aeca">ns3::dot11s::HwmpProtocolMac::Statistics</a>
@@ -613,7 +626,7 @@ $(document).ready(function(){initNavTree('functions_vars_r.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:51 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:53 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

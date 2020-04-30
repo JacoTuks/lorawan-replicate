@@ -3,7 +3,7 @@
 <area shape="rect" id="node2" href="$classns3_1_1_list_position_allocator.html#a460e82f015ac012a73ba0ea0cccb3486" title="Add a position to the list of positions." alt="" coords="185,5,403,32"/>
 <area shape="rect" id="node3" href="$classns3_1_1_node_container.html#a787f059e2813e8b951cc6914d11dfe69" title="Create n nodes and append pointers to them to the end of this NodeContainer." alt="" coords="219,57,369,98"/>
 <area shape="rect" id="node4" href="$classns3_1_1_yans_wifi_channel_helper.html#a9a7fb65955fd9eb046600b89292e8062" title="Create a channel helper in a default working state." alt="" coords="192,122,396,163"/>
-<area shape="rect" id="node7" href="$classns3_1_1_yans_wifi_phy_helper.html#a75b0af43b173308e2f130605ddf34a7f" title="Create a phy helper in a default working state." alt="" coords="207,187,381,229"/>
+<area shape="rect" id="node7" href="$classns3_1_1_yans_wifi_phy_helper.html#a75b0af43b173308e2f130605ddf34a7f" title="Create a PHY helper in a default working state." alt="" coords="207,187,381,229"/>
 <area shape="rect" id="node9" href="$classns3_1_1_simulator.html#a2a056e59a6623225df0957eda0ee8252" title="Execute the events scheduled with ScheduleDestroy()." alt="" coords="207,253,381,280"/>
 <area shape="rect" id="node13" href="$classns3_1_1_application_container.html#a62e08fd97405a2076d2129b3743eb938" title="Get the Ptr&lt;Application&gt; stored in this container at a given index." alt="" coords="184,304,404,331"/>
 <area shape="rect" id="node14" href="$classns3_1_1_node_container.html#aff885e5a6b02ca4a27f5725de647d96e" title="Get the Ptr&lt;Node&gt; stored in this container at a given index." alt="" coords="203,355,385,381"/>

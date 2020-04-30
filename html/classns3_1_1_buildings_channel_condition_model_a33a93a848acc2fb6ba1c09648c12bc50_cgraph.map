@@ -1,6 +1,6 @@
 <map id="ns3::BuildingsChannelConditionModel::GetChannelCondition" name="ns3::BuildingsChannelConditionModel::GetChannelCondition">
 <area shape="rect" id="node1" title="Computes the condition of the channel between a and b." alt="" coords="5,68,233,109"/>
-<area shape="rect" id="node2" href="$classns3_1_1_buildings_channel_condition_model.html#a4fd08585f74c4712c3865c0f48f2ab8c" title="Checks if the is a building in between position L1 and position L2." alt="" coords="281,39,509,80"/>
+<area shape="rect" id="node2" href="$classns3_1_1_buildings_channel_condition_model.html#a3b97a7666596f013e8e59e42ca93d756" title="Checks if the line of sight between position l1 and position l2 is blocked by a building." alt="" coords="281,39,509,80"/>
 <area shape="rect" id="node14" href="$ipv4-address-generator_8cc.html#aaf5aa23b804d2e5e334106f207e8a6cc" title=" " alt="" coords="328,105,463,131"/>
 <area shape="rect" id="node3" href="$classns3_1_1_building_list.html#adbb122872e11541e930f0a3afa70a479" title=" " alt="" coords="569,9,707,51"/>
 <area shape="rect" id="node13" href="$classns3_1_1_building_list.html#abc6b941dbb194efb9f00352cc6b3db65" title=" " alt="" coords="557,75,719,102"/>

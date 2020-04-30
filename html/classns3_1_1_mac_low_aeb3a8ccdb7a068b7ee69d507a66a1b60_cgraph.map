@@ -18,7 +18,7 @@
 <area shape="rect" id="node28" href="$classns3_1_1_wifi_remote_station_manager.html#a9864b09190adb8e2b0c2d3658eacc6ce" title="Return whether the device uses short PHY preambles." alt="" coords="581,910,815,951"/>
 <area shape="rect" id="node29" href="$classns3_1_1_wifi_remote_station_manager.html#a3b5ae71dce8e994b493ddfdb1d2f57f6" title=" " alt="" coords="581,975,815,1017"/>
 <area shape="rect" id="node30" href="$classns3_1_1_wifi_mac_header.html#a9e27e439b0ef655ac9598f45218364bd" title="Return true if the Type is Management." alt="" coords="621,1041,775,1082"/>
-<area shape="rect" id="node31" href="$classns3_1_1_wifi_remote_station_manager.html#a144c73228215aec46edcb2db2b545abf" title="Return the station associated with the given address and TID." alt="" coords="581,742,815,783"/>
+<area shape="rect" id="node31" href="$classns3_1_1_wifi_remote_station_manager.html#a230ec2422481af84c0e2a8dcc1ccb630" title="Return the station associated with the given address." alt="" coords="581,742,815,783"/>
 <area shape="rect" id="node37" href="$classns3_1_1_wifi_tx_vector.html#abb9bd0e5390bd7e7b4c1c1295142cdc4" title="Set the BSS color." alt="" coords="625,1171,771,1213"/>
 <area shape="rect" id="node38" href="$classns3_1_1_wifi_tx_vector.html#a2bd711576c12a747bc3a800ef4cc0a5b" title="Sets the selected channelWidth (in MHz)" alt="" coords="625,1237,771,1278"/>
 <area shape="rect" id="node39" href="$classns3_1_1_wifi_tx_vector.html#a40280b31baf8d7cef1a7234715969d06" title="Sets the guard interval duration (in nanoseconds)" alt="" coords="625,1302,771,1343"/>

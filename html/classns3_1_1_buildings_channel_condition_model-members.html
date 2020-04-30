@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -188,7 +185,7 @@ $(document).ready(function(){initNavTree('classns3_1_1_buildings_channel_conditi
   <tr class="even"><td class="entry"><a class="el" href="classns3_1_1_buildings_channel_condition_model.html#abc90724f42f2d3bb77cfde99db241d6a">GetTypeId</a>(void)</td><td class="entry"><a class="el" href="classns3_1_1_buildings_channel_condition_model.html">ns3::BuildingsChannelConditionModel</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="classns3_1_1_object.html#a900bb91b733c232cb18e44782cebcdc6">Initialize</a>(void)</td><td class="entry"><a class="el" href="classns3_1_1_object.html">ns3::Object</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classns3_1_1_object.html#a285e5644a29f17dcadacff20767ed000">IsInitialized</a>(void) const</td><td class="entry"><a class="el" href="classns3_1_1_object.html">ns3::Object</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classns3_1_1_buildings_channel_condition_model.html#a4fd08585f74c4712c3865c0f48f2ab8c">IsWithinLineOfSight</a>(const Vector &amp;l1, const Vector &amp;l2) const</td><td class="entry"><a class="el" href="classns3_1_1_buildings_channel_condition_model.html">ns3::BuildingsChannelConditionModel</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classns3_1_1_buildings_channel_condition_model.html#a3b97a7666596f013e8e59e42ca93d756">IsLineOfSightBlocked</a>(const Vector &amp;l1, const Vector &amp;l2) const</td><td class="entry"><a class="el" href="classns3_1_1_buildings_channel_condition_model.html">ns3::BuildingsChannelConditionModel</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classns3_1_1_object.html#a1f0aff511aa8bbed3f3c3dc9b1d41fe4">m_aggregates</a></td><td class="entry"><a class="el" href="classns3_1_1_object.html">ns3::Object</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="classns3_1_1_simple_ref_count.html#ae4c6daa11a1ad9add971e129fc31fc85">m_count</a></td><td class="entry"><a class="el" href="classns3_1_1_simple_ref_count.html">ns3::SimpleRefCount&lt; Object, ObjectBase, ObjectDeleter &gt;</a></td><td class="entry"><span class="mlabel">mutable</span><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classns3_1_1_object.html#a37e25c1c8e56ae9e7f9c15f1236e4081">m_disposed</a></td><td class="entry"><a class="el" href="classns3_1_1_object.html">ns3::Object</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
@@ -226,7 +223,7 @@ $(document).ready(function(){initNavTree('classns3_1_1_buildings_channel_conditi
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:21 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:27 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

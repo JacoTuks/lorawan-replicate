@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -162,26 +159,35 @@ $(document).ready(function(){initNavTree('classanonymous__namespace_02sample-sho
 <div class="title">anonymous_namespace{sample-show-progress.cc}::Timestamp Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Utility class to record the difference between to wall-clock times.  
+ <a href="classanonymous__namespace_02sample-show-progress_8cc_03_1_1_timestamp.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4be9986ae1a4c707536669683c6d9a3a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanonymous__namespace_02sample-show-progress_8cc_03_1_1_timestamp.html#a4be9986ae1a4c707536669683c6d9a3a">Timestamp</a> ()</td></tr>
+<tr class="memdesc:a4be9986ae1a4c707536669683c6d9a3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classanonymous__namespace_02sample-show-progress_8cc_03_1_1_timestamp.html#a4be9986ae1a4c707536669683c6d9a3a">More...</a><br /></td></tr>
 <tr class="separator:a4be9986ae1a4c707536669683c6d9a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad40e1c07e70c5096763b10b7dd0e83ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanonymous__namespace_02sample-show-progress_8cc_03_1_1_timestamp.html#ad40e1c07e70c5096763b10b7dd0e83ce">stamp</a> ()</td></tr>
+<tr class="memdesc:ad40e1c07e70c5096763b10b7dd0e83ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record the current wall-clock time and delta since the last <a class="el" href="classanonymous__namespace_02sample-show-progress_8cc_03_1_1_timestamp.html#ad40e1c07e70c5096763b10b7dd0e83ce" title="Record the current wall-clock time and delta since the last stamp().">stamp()</a>.  <a href="classanonymous__namespace_02sample-show-progress_8cc_03_1_1_timestamp.html#ad40e1c07e70c5096763b10b7dd0e83ce">More...</a><br /></td></tr>
 <tr class="separator:ad40e1c07e70c5096763b10b7dd0e83ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a531cb2b1338caedb4f41babe782893b7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanonymous__namespace_02sample-show-progress_8cc_03_1_1_timestamp.html#a531cb2b1338caedb4f41babe782893b7">string</a> ()</td></tr>
+<tr class="memdesc:a531cb2b1338caedb4f41babe782893b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the last time stamp as a string.  <a href="classanonymous__namespace_02sample-show-progress_8cc_03_1_1_timestamp.html#a531cb2b1338caedb4f41babe782893b7">More...</a><br /></td></tr>
 <tr class="separator:a531cb2b1338caedb4f41babe782893b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:adfc27fae299a0b71efb1c52c569ee75a"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanonymous__namespace_02sample-show-progress_8cc_03_1_1_timestamp.html#adfc27fae299a0b71efb1c52c569ee75a">diff</a></td></tr>
+<tr class="memdesc:adfc27fae299a0b71efb1c52c569ee75a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Difference between the two previous time stamps.  <a href="classanonymous__namespace_02sample-show-progress_8cc_03_1_1_timestamp.html#adfc27fae299a0b71efb1c52c569ee75a">More...</a><br /></td></tr>
 <tr class="separator:adfc27fae299a0b71efb1c52c569ee75a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18a0a24d7444830ba8e31639c31ff36c"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanonymous__namespace_02sample-show-progress_8cc_03_1_1_timestamp.html#a18a0a24d7444830ba8e31639c31ff36c">last</a></td></tr>
+<tr class="memdesc:a18a0a24d7444830ba8e31639c31ff36c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The last time stamp.  <a href="classanonymous__namespace_02sample-show-progress_8cc_03_1_1_timestamp.html#a18a0a24d7444830ba8e31639c31ff36c">More...</a><br /></td></tr>
 <tr class="separator:a18a0a24d7444830ba8e31639c31ff36c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="sample-show-progress_8cc_source.html#l00047">47</a> of file <a class="el" href="sample-show-progress_8cc_source.html">sample-show-progress.cc</a>.</p>
+<div class="textblock"><p>Utility class to record the difference between to wall-clock times. </p>
+
+<p class="definition">Definition at line <a class="el" href="sample-show-progress_8cc_source.html#l00050">50</a> of file <a class="el" href="sample-show-progress_8cc_source.html">sample-show-progress.cc</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4be9986ae1a4c707536669683c6d9a3a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4be9986ae1a4c707536669683c6d9a3a">&#9670;&nbsp;</a></span>Timestamp()</h2>
@@ -206,7 +212,9 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sample-show-progress_8cc_source.html#l00050">50</a> of file <a class="el" href="sample-show-progress_8cc_source.html">sample-show-progress.cc</a>.</p>
+<p>Constructor. </p>
+
+<p class="definition">Definition at line <a class="el" href="sample-show-progress_8cc_source.html#l00054">54</a> of file <a class="el" href="sample-show-progress_8cc_source.html">sample-show-progress.cc</a>.</p>
 
 </div>
 </div>
@@ -234,7 +242,9 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sample-show-progress_8cc_source.html#l00057">57</a> of file <a class="el" href="sample-show-progress_8cc_source.html">sample-show-progress.cc</a>.</p>
+<p>Record the current wall-clock time and delta since the last <a class="el" href="classanonymous__namespace_02sample-show-progress_8cc_03_1_1_timestamp.html#ad40e1c07e70c5096763b10b7dd0e83ce" title="Record the current wall-clock time and delta since the last stamp().">stamp()</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="sample-show-progress_8cc_source.html#l00062">62</a> of file <a class="el" href="sample-show-progress_8cc_source.html">sample-show-progress.cc</a>.</p>
 
 </div>
 </div>
@@ -261,7 +271,10 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sample-show-progress_8cc_source.html#l00064">64</a> of file <a class="el" href="sample-show-progress_8cc_source.html">sample-show-progress.cc</a>.</p>
+<p>Get the last time stamp as a string. </p>
+<dl class="section return"><dt>Returns</dt><dd>The last time stamp. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sample-show-progress_8cc_source.html#l00073">73</a> of file <a class="el" href="sample-show-progress_8cc_source.html">sample-show-progress.cc</a>.</p>
 
 </div>
 </div>
@@ -278,7 +291,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sample-show-progress_8cc_source.html#l00072">72</a> of file <a class="el" href="sample-show-progress_8cc_source.html">sample-show-progress.cc</a>.</p>
+<p>Difference between the two previous time stamps. </p>
+
+<p class="definition">Definition at line <a class="el" href="sample-show-progress_8cc_source.html#l00081">81</a> of file <a class="el" href="sample-show-progress_8cc_source.html">sample-show-progress.cc</a>.</p>
 
 </div>
 </div>
@@ -294,7 +309,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sample-show-progress_8cc_source.html#l00071">71</a> of file <a class="el" href="sample-show-progress_8cc_source.html">sample-show-progress.cc</a>.</p>
+<p>The last time stamp. </p>
+
+<p class="definition">Definition at line <a class="el" href="sample-show-progress_8cc_source.html#l00080">80</a> of file <a class="el" href="sample-show-progress_8cc_source.html">sample-show-progress.cc</a>.</p>
 
 </div>
 </div>
@@ -311,7 +328,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceanonymous__namespace_02sample-show-progress_8cc_03.html">anonymous_namespace{sample-show-progress.cc}</a></li><li class="navelem"><a class="el" href="classanonymous__namespace_02sample-show-progress_8cc_03_1_1_timestamp.html">Timestamp</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:19 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:25 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

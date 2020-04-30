@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -277,12 +274,12 @@ $(document).ready(function(){initNavTree('base_8py_source.html',''); initResizab
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">try</span>:</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            plugin_module = __import__(name)</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordflow">except</span> ImportError <span class="keyword">as</span> ex:</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            print(<span class="stringliteral">&quot;Could not load plugin %r: %s&quot;</span> % (filename, str(ex)), file=sys.stderr)</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <a class="code" href="complete-network-example_8cc.html#a1c9376cdc5e467bb714d0cf35d9bdc80">print</a>(<span class="stringliteral">&quot;Could not load plugin %r: %s&quot;</span> % (filename, str(ex)), file=sys.stderr)</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <span class="keywordflow">continue</span></div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">try</span>:</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            plugin_func = plugin_module.register</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keywordflow">except</span> AttributeError:</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            print(<span class="stringliteral">&quot;Plugin %r has no &#39;register&#39; function&quot;</span> % name, file=sys.stderr)</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            <a class="code" href="complete-network-example_8cc.html#a1c9376cdc5e467bb714d0cf35d9bdc80">print</a>(<span class="stringliteral">&quot;Plugin %r has no &#39;register&#39; function&quot;</span> % name, file=sys.stderr)</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keywordflow">else</span>:</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            <span class="comment">#print(&quot;Plugin %r registered&quot; % name, file=sys.stderr)</span></div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            <a class="code" href="namespacevisualizer_1_1base.html#a6b0ffcff1e17ec4027496f50177e5b9e">register_plugin</a>(plugin_func, name, plugin_module)</div>
@@ -306,6 +303,7 @@ $(document).ready(function(){initNavTree('base_8py_source.html',''); initResizab
 <div class="ttc" id="aclassvisualizer_1_1base_1_1_net_device_traits_html_a055d7014aaf481d14df4024527a3c119"><div class="ttname"><a href="classvisualizer_1_1base_1_1_net_device_traits.html#a055d7014aaf481d14df4024527a3c119">visualizer.base.NetDeviceTraits.__init__</a></div><div class="ttdeci">def __init__(self, is_wireless=None, is_virtual=False)</div><div class="ttdef"><b>Definition:</b> <a href="base_8py_source.html#l00049">base.py:49</a></div></div>
 <div class="ttc" id="aclassvisualizer_1_1base_1_1_py_viz_object_html_a90239a572ea417decce5964a065978a7"><div class="ttname"><a href="classvisualizer_1_1base_1_1_py_viz_object.html#a90239a572ea417decce5964a065978a7">visualizer.base.PyVizObject.tooltip_query</a></div><div class="ttdeci">def tooltip_query(self, tooltip)</div><div class="ttdoc">Returns tooltip text string.</div><div class="ttdef"><b>Definition:</b> <a href="base_8py_source.html#l00026">base.py:26</a></div></div>
 <div class="ttc" id="anamespacevisualizer_1_1base_html_ad171497a5ff1afe0a73bedaebf35448f"><div class="ttname"><a href="namespacevisualizer_1_1base.html#ad171497a5ff1afe0a73bedaebf35448f">visualizer.base.load_plugins</a></div><div class="ttdeci">def load_plugins()</div><div class="ttdef"><b>Definition:</b> <a href="base_8py_source.html#l00115">base.py:115</a></div></div>
+<div class="ttc" id="acomplete-network-example_8cc_html_a1c9376cdc5e467bb714d0cf35d9bdc80"><div class="ttname"><a href="complete-network-example_8cc.html#a1c9376cdc5e467bb714d0cf35d9bdc80">print</a></div><div class="ttdeci">bool print</div><div class="ttdef"><b>Definition:</b> <a href="complete-network-example_8cc_source.html#l00049">complete-network-example.cc:49</a></div></div>
 <!-- ns-3 doxygen header, based on
      HTML header for doxygen 1.8.3.1
      Verified compatible with 1.8.6
@@ -314,7 +312,7 @@ $(document).ready(function(){initNavTree('base_8py_source.html',''); initResizab
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ba77f8dab2f3b5b8a1cbb129ed9c63cb.html">visualizer</a></li><li class="navelem"><a class="el" href="dir_37738c098fb7bb201082a8a35f2b1fdc.html">visualizer</a></li><li class="navelem"><a class="el" href="base_8py.html">base.py</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:06 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:13 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

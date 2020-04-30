@@ -4,7 +4,7 @@
 <area shape="rect" id="node46" href="$namespacens3_1_1internal.html#ace03ae9f889a7a79d87e3a4352a37099" title=" " alt="" coords="608,1423,800,1464"/>
 <area shape="rect" id="node47" href="$namespacens3_1_1internal.html#ad16c6dd4fd0319992767b9ac2a17b19b" title=" " alt="" coords="608,1488,800,1529"/>
 <area shape="rect" id="node48" href="$group__attributeimpl.html#gabb1f14e9bbd7c4eda14c8a794a9b29ad" title=" " alt="" coords="609,1553,799,1595"/>
-<area shape="rect" id="node49" href="$group__time.html#ga7032965bd4afa578691d88c09e4481c1" title="Helper to make a Time checker with bounded range. Both limits are inclusive." alt="" coords="618,1619,790,1646"/>
+<area shape="rect" id="node49" href="$namespacens3.html#a7032965bd4afa578691d88c09e4481c1" title="Helper to make a Time checker with bounded range. Both limits are inclusive." alt="" coords="618,1619,790,1646"/>
 <area shape="rect" id="node50" href="$namespacens3_1_1internal.html#a4b15bd1dbc7f165db34704f333c6b005" title=" " alt="" coords="603,1671,805,1712"/>
 <area shape="rect" id="node3" href="$classns3_1_1_lte_helper.html#a93de068f676cc2ad235df74d23ecb54e" title="Activate a Data Radio Bearer on a UE device (for LTE&#45;only simulation)." alt="" coords="312,5,491,47"/>
 <area shape="rect" id="node4" href="$classns3_1_1_command_line.html#ad66977ccb2c042574cb1831b8c1ad18f" title="Add a program argument as a shorthand for an Attribute." alt="" coords="293,71,510,98"/>
@@ -46,7 +46,7 @@
 <area shape="rect" id="node40" href="$classns3_1_1_lr_wpan_helper.html#a0accf3ecc8c464cde332c92dca565c05" title="Enable ascii trace output on the indicated net device." alt="" coords="325,2413,478,2455"/>
 <area shape="rect" id="node41" href="$classns3_1_1_point_to_point_helper.html#a500491e31095208060544b015d1112d5" title="Enable ascii trace output on the indicated net device." alt="" coords="313,2479,489,2520"/>
 <area shape="rect" id="node42" href="$classns3_1_1_yans_wave_phy_helper.html#ad015eeeabbdf7522d52de94d22fcc207" title="Enable ascii trace output on the indicated net device." alt="" coords="308,2544,495,2585"/>
-<area shape="rect" id="node43" href="$classns3_1_1_wifi_phy_helper.html#a930fe270c6c08af23d5333b87ed5997b" title="Enable ascii trace output on the indicated net device." alt="" coords="324,2609,479,2651"/>
+<area shape="rect" id="node43" href="$classns3_1_1_wifi_phy_helper.html#a930fe270c6c08af23d5333b87ed5997b" title="Enable ASCII trace output on the indicated net device." alt="" coords="324,2609,479,2651"/>
 <area shape="rect" id="node44" href="$classns3_1_1_internet_stack_helper.html#ab09a45882051edfc4881fc751ccbdd48" title="Enable ascii trace output on the indicated Ipv4 and interface pair." alt="" coords="310,2675,493,2716"/>
 <area shape="rect" id="node45" href="$classns3_1_1_internet_stack_helper.html#a812b901ab8c2aff1f7feca6a9864b9c2" title="Enable ascii trace output on the indicated Ipv6 and interface pair." alt="" coords="310,2740,493,2781"/>
 </map>

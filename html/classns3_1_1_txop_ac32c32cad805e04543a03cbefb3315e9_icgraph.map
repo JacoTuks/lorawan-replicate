@@ -1,13 +1,13 @@
 <map id="ns3::Txop::GetBackoffStart" name="ns3::Txop::GetBackoffStart">
 <area shape="rect" id="node1" title="Return the time when the backoff procedure started." alt="" coords="2415,559,2611,585"/>
-<area shape="rect" id="node2" href="$classns3_1_1_channel_access_manager.html#ac6478233e5614262d947ae3eccd25a4f" title="Return the time when the backoff procedure started for the given Txop." alt="" coords="2159,471,2367,513"/>
-<area shape="rect" id="node11" href="$classns3_1_1_channel_access_manager.html#af5da1581cec5dbf79c2780c0821391a8" title=" " alt="" coords="809,571,1017,613"/>
-<area shape="rect" id="node3" href="$classns3_1_1_channel_access_manager.html#a4c16ce82405ae0a6e9348bb141c20eed" title="Return the time when the backoff procedure ended (or will ended) for the given Txop." alt="" coords="1903,471,2111,513"/>
+<area shape="rect" id="node2" href="$classns3_1_1_channel_access_manager.html#ae0a0f234530510cafd165d338fe21a53" title="Return the time when the backoff procedure started for the given Txop." alt="" coords="2159,471,2367,513"/>
+<area shape="rect" id="node11" href="$classns3_1_1_channel_access_manager.html#abb772d23a9ee81e9b6ce46b3aefc67a8" title=" " alt="" coords="809,571,1017,613"/>
+<area shape="rect" id="node3" href="$classns3_1_1_channel_access_manager.html#a1e38ecb70f2cbab09955d359fe642695" title="Return the time when the backoff procedure ended (or will ended) for the given Txop." alt="" coords="1903,471,2111,513"/>
 <area shape="rect" id="node41" href="$classns3_1_1_channel_access_manager.html#a16abdc22e5c20496f49ee0d080145b2c" title="Update backoff slots for all Txops." alt="" coords="1647,282,1855,323"/>
-<area shape="rect" id="node4" href="$classns3_1_1_channel_access_manager.html#ab456b95950fd1381ed14c4f7289b997e" title="Grant access to DCF." alt="" coords="1647,442,1855,483"/>
+<area shape="rect" id="node4" href="$classns3_1_1_channel_access_manager.html#ab456b95950fd1381ed14c4f7289b997e" title="Grant access to Txop using DCF/EDCF contention rules." alt="" coords="1647,442,1855,483"/>
 <area shape="rect" id="node6" href="$classns3_1_1_channel_access_manager.html#a4197521f9ff8b1a70f837ed87e8737e3" title=" " alt="" coords="1068,391,1320,433"/>
 <area shape="rect" id="node5" href="$classns3_1_1_channel_access_manager.html#a0b155956cb94bba762d15d54cc1fe7ca" title="Called when access timeout should occur (e.g." alt="" coords="1379,391,1587,433"/>
-<area shape="rect" id="node7" href="$classns3_1_1_channel_access_manager.html#ad6ada9e298f4ba088d5761960dad307b" title="Notify that ACK timer has reset." alt="" coords="807,457,1020,498"/>
+<area shape="rect" id="node7" href="$classns3_1_1_channel_access_manager.html#ad6ada9e298f4ba088d5761960dad307b" title="Notify that ack timer has reset." alt="" coords="807,457,1020,498"/>
 <area shape="rect" id="node8" href="$classns3_1_1_channel_access_manager.html#a34d6b5afc6410e08275fa93817d00f25" title="Notify that CTS timer has reset." alt="" coords="808,391,1019,433"/>
 <area shape="rect" id="node9" href="$classns3_1_1_channel_access_manager.html#ad718d29686e51027419769b3735e5dd4" title=" " alt="" coords="809,326,1017,367"/>
 <area shape="rect" id="node10" href="$classns3_1_1_mesh_wifi_interface_mac.html#a2d850463970dd7f6d477dd0ecf615e2b" title="Switch frequency channel." alt="" coords="554,293,753,334"/>

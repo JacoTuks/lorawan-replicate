@@ -252,29 +252,29 @@
 \contentsline {subsubsection}{Usage}{115}{subsubsection*.109}% 
 \contentsline {paragraph}{TCP Socket interaction and interface with Application layer}{116}{paragraph*.110}% 
 \contentsline {subsubsection}{Congestion Control Algorithms}{119}{subsubsection*.111}% 
-\contentsline {paragraph}{New Reno}{119}{paragraph*.112}% 
-\contentsline {paragraph}{High Speed}{120}{paragraph*.113}% 
+\contentsline {paragraph}{NewReno}{119}{paragraph*.112}% 
+\contentsline {paragraph}{HighSpeed}{120}{paragraph*.113}% 
 \contentsline {paragraph}{Hybla}{120}{paragraph*.114}% 
 \contentsline {paragraph}{Westwood}{120}{paragraph*.115}% 
 \contentsline {paragraph}{Vegas}{121}{paragraph*.116}% 
 \contentsline {paragraph}{Scalable}{121}{paragraph*.117}% 
 \contentsline {paragraph}{Veno}{121}{paragraph*.118}% 
-\contentsline {paragraph}{Bic}{122}{paragraph*.119}% 
+\contentsline {paragraph}{BIC}{122}{paragraph*.119}% 
 \contentsline {paragraph}{YeAH}{122}{paragraph*.120}% 
 \contentsline {paragraph}{Illinois}{123}{paragraph*.121}% 
 \contentsline {paragraph}{H\sphinxhyphen {}TCP}{124}{paragraph*.122}% 
 \contentsline {paragraph}{LEDBAT}{124}{paragraph*.123}% 
 \contentsline {paragraph}{TCP\sphinxhyphen {}LP}{125}{paragraph*.124}% 
-\contentsline {paragraph}{Data Center TCP (DCTCP)}{126}{paragraph*.125}% 
+\contentsline {paragraph}{Data Center TCP (DCTCP)}{125}{paragraph*.125}% 
 \contentsline {subsubsection}{Support for Explicit Congestion Notification (ECN)}{127}{subsubsection*.126}% 
 \contentsline {paragraph}{Enabling ECN}{128}{paragraph*.127}% 
 \contentsline {paragraph}{ECN negotiation}{128}{paragraph*.128}% 
 \contentsline {paragraph}{ECN State Transitions}{129}{paragraph*.129}% 
 \contentsline {paragraph}{RFC 3168 compliance}{129}{paragraph*.130}% 
-\contentsline {paragraph}{Open issues}{130}{paragraph*.131}% 
+\contentsline {paragraph}{Open issues}{129}{paragraph*.131}% 
 \contentsline {subsubsection}{Validation}{130}{subsubsection*.132}% 
 \contentsline {subsubsection}{Writing a new congestion control algorithm}{131}{subsubsection*.133}% 
-\contentsline {subsubsection}{TCP SACK and non\sphinxhyphen {}SACK}{132}{subsubsection*.134}% 
+\contentsline {subsubsection}{TCP SACK and non\sphinxhyphen {}SACK}{131}{subsubsection*.134}% 
 \contentsline {subsubsection}{Loss Recovery Algorithms}{132}{subsubsection*.135}% 
 \contentsline {paragraph}{Classic Recovery}{132}{paragraph*.136}% 
 \contentsline {paragraph}{Proportional Rate Reduction}{132}{paragraph*.137}% 
@@ -283,28 +283,28 @@
 \contentsline {subsubsection}{Current limitations}{134}{subsubsection*.140}% 
 \contentsline {subsubsection}{Writing TCP tests}{134}{subsubsection*.141}% 
 \contentsline {subsection}{\numberline {17.5.3}Network Simulation Cradle}{140}{subsection.17.5.3}% 
-\contentsline {subsubsection}{Prerequisites}{141}{subsubsection*.142}% 
-\contentsline {subsubsection}{Configuring and Downloading}{141}{subsubsection*.143}% 
+\contentsline {subsubsection}{Prerequisites}{140}{subsubsection*.142}% 
+\contentsline {subsubsection}{Configuring and Downloading}{140}{subsubsection*.143}% 
 \contentsline {subsubsection}{Building and validating}{141}{subsubsection*.144}% 
 \contentsline {subsubsection}{Usage}{142}{subsubsection*.145}% 
-\contentsline {subsubsection}{Stack configuration}{143}{subsubsection*.146}% 
+\contentsline {subsubsection}{Stack configuration}{142}{subsubsection*.146}% 
 \contentsline {subsubsection}{NSC API}{143}{subsubsection*.147}% 
-\contentsline {subsubsection}{ns\sphinxhyphen {}3 implementation}{144}{subsubsection*.148}% 
+\contentsline {subsubsection}{ns\sphinxhyphen {}3 implementation}{143}{subsubsection*.148}% 
 \contentsline {subsubsection}{Limitations}{144}{subsubsection*.149}% 
-\contentsline {section}{\numberline {17.6}UDP model in ns\sphinxhyphen {}3}{145}{section.17.6}% 
-\contentsline {subsection}{\numberline {17.6.1}Generic support for UDP}{145}{subsection.17.6.1}% 
+\contentsline {section}{\numberline {17.6}UDP model in ns\sphinxhyphen {}3}{144}{section.17.6}% 
+\contentsline {subsection}{\numberline {17.6.1}Generic support for UDP}{144}{subsection.17.6.1}% 
 \contentsline {subsection}{\numberline {17.6.2}ns\sphinxhyphen {}3 UDP}{145}{subsection.17.6.2}% 
 \contentsline {subsubsection}{Usage}{145}{subsubsection*.150}% 
 \contentsline {paragraph}{UDP Socket interaction and interface with Application layer}{146}{paragraph*.151}% 
 \contentsline {subsubsection}{Validation}{147}{subsubsection*.152}% 
 \contentsline {subsubsection}{Limitations}{147}{subsubsection*.153}% 
-\contentsline {section}{\numberline {17.7}Internet Applications Module Documentation}{148}{section.17.7}% 
-\contentsline {subsection}{\numberline {17.7.1}V4Ping}{148}{subsection.17.7.1}% 
+\contentsline {section}{\numberline {17.7}Internet Applications Module Documentation}{147}{section.17.7}% 
+\contentsline {subsection}{\numberline {17.7.1}V4Ping}{147}{subsection.17.7.1}% 
 \contentsline {subsection}{\numberline {17.7.2}Ping6}{148}{subsection.17.7.2}% 
 \contentsline {subsection}{\numberline {17.7.3}Radvd}{148}{subsection.17.7.3}% 
-\contentsline {subsection}{\numberline {17.7.4}DHCPv4}{149}{subsection.17.7.4}% 
-\contentsline {subsubsection}{Helpers}{149}{subsubsection*.154}% 
-\contentsline {subsubsection}{Tests}{149}{subsubsection*.155}% 
+\contentsline {subsection}{\numberline {17.7.4}DHCPv4}{148}{subsection.17.7.4}% 
+\contentsline {subsubsection}{Helpers}{148}{subsubsection*.154}% 
+\contentsline {subsubsection}{Tests}{148}{subsubsection*.155}% 
 \contentsline {subsubsection}{Examples}{149}{subsubsection*.156}% 
 \contentsline {subsubsection}{Scope and Limitations}{149}{subsubsection*.157}% 
 \contentsline {chapter}{\numberline {18}Low\sphinxhyphen {}Rate Wireless Personal Area Network (LR\sphinxhyphen {}WPAN)}{151}{chapter.18}% 
@@ -495,13 +495,13 @@
 \contentsline {subsection}{\numberline {19.2.7}Fading Trace Usage}{280}{subsection.19.2.7}% 
 \contentsline {subsubsection}{Fading Traces Generation}{280}{subsubsection*.305}% 
 \contentsline {subsubsection}{Fading Traces Usage}{280}{subsubsection*.306}% 
-\contentsline {subsection}{\numberline {19.2.8}Mobility Model with Buildings}{284}{subsection.19.2.8}% 
+\contentsline {subsection}{\numberline {19.2.8}Mobility Model with Buildings}{281}{subsection.19.2.8}% 
 \contentsline {subsection}{\numberline {19.2.9}PHY Error Model}{285}{subsection.19.2.9}% 
 \contentsline {subsection}{\numberline {19.2.10}MIMO Model}{285}{subsection.19.2.10}% 
 \contentsline {subsection}{\numberline {19.2.11}Use of AntennaModel}{286}{subsection.19.2.11}% 
 \contentsline {subsection}{\numberline {19.2.12}Radio Environment Maps}{286}{subsection.19.2.12}% 
 \contentsline {subsection}{\numberline {19.2.13}AMC Model and CQI Calculation}{288}{subsection.19.2.13}% 
-\contentsline {subsection}{\numberline {19.2.14}Evolved Packet Core (EPC)}{289}{subsection.19.2.14}% 
+\contentsline {subsection}{\numberline {19.2.14}Evolved Packet Core (EPC)}{288}{subsection.19.2.14}% 
 \contentsline {subsection}{\numberline {19.2.15}Using the EPC with emulation mode}{291}{subsection.19.2.15}% 
 \contentsline {subsection}{\numberline {19.2.16}Custom Backhaul}{292}{subsection.19.2.16}% 
 \contentsline {subsection}{\numberline {19.2.17}Network Attachment}{294}{subsection.19.2.17}% 
@@ -775,18 +775,18 @@
 \contentsline {subsubsection}{ThreeGppRMaPropagationLossModel}{430}{subsubsection*.444}% 
 \contentsline {subsubsection}{ThreeGppUMaPropagationLossModel}{430}{subsubsection*.445}% 
 \contentsline {subsubsection}{ThreeGppUmiStreetCanyonPropagationLossModel}{430}{subsubsection*.446}% 
-\contentsline {subsubsection}{ThreeGppIndoorOfficePropagationLossModel}{431}{subsubsection*.447}% 
+\contentsline {subsubsection}{ThreeGppIndoorOfficePropagationLossModel}{430}{subsubsection*.447}% 
 \contentsline {subsubsection}{Testing}{431}{subsubsection*.448}% 
 \contentsline {section}{\numberline {28.2}ChannelConditionModel}{431}{section.28.2}% 
 \contentsline {subsection}{\numberline {28.2.1}ThreeGppChannelConditionModel}{431}{subsection.28.2.1}% 
-\contentsline {subsubsection}{ThreeGppRmaChannelConditionModel}{432}{subsubsection*.449}% 
+\contentsline {subsubsection}{ThreeGppRmaChannelConditionModel}{431}{subsubsection*.449}% 
 \contentsline {subsubsection}{ThreeGppUmaChannelConditionModel}{432}{subsubsection*.450}% 
 \contentsline {subsubsection}{ThreeGppUmiStreetCanyonChannelConditionModel}{432}{subsubsection*.451}% 
 \contentsline {subsubsection}{ThreeGppIndoorMixedOfficeChannelConditionModel}{432}{subsubsection*.452}% 
 \contentsline {subsubsection}{ThreeGppIndoorOpenOfficeChannelConditionModel}{432}{subsubsection*.453}% 
 \contentsline {subsection}{\numberline {28.2.2}Testing}{432}{subsection.28.2.2}% 
 \contentsline {section}{\numberline {28.3}PropagationDelayModel}{432}{section.28.3}% 
-\contentsline {subsection}{\numberline {28.3.1}ConstantSpeedPropagationDelayModel}{433}{subsection.28.3.1}% 
+\contentsline {subsection}{\numberline {28.3.1}ConstantSpeedPropagationDelayModel}{432}{subsection.28.3.1}% 
 \contentsline {subsection}{\numberline {28.3.2}RandomPropagationDelayModel}{433}{subsection.28.3.2}% 
 \contentsline {section}{\numberline {28.4}References}{433}{section.28.4}% 
 \contentsline {chapter}{\numberline {29}Spectrum Module}{435}{chapter.29}% 
@@ -970,7 +970,7 @@
 \contentsline {subsection}{\numberline {35.2.4}Output}{510}{subsection.35.2.4}% 
 \contentsline {subsection}{\numberline {35.2.5}Advanced Usage}{510}{subsection.35.2.5}% 
 \contentsline {subsubsection}{Advanced WaveHelper configuration}{510}{subsubsection*.530}% 
-\contentsline {subsection}{\numberline {35.2.6}Examples}{511}{subsection.35.2.6}% 
+\contentsline {subsection}{\numberline {35.2.6}Examples}{510}{subsection.35.2.6}% 
 \contentsline {subsection}{\numberline {35.2.7}Troubleshooting}{511}{subsection.35.2.7}% 
 \contentsline {section}{\numberline {35.3}Validation}{511}{section.35.3}% 
 \contentsline {chapter}{\numberline {36}Wi\sphinxhyphen {}Fi Module}{513}{chapter.36}% 
@@ -989,20 +989,20 @@
 \contentsline {subsubsection}{The MAC model}{521}{subsubsection*.539}% 
 \contentsline {paragraph}{Infrastructure association}{521}{paragraph*.540}% 
 \contentsline {paragraph}{Roaming}{521}{paragraph*.541}% 
-\contentsline {paragraph}{Channel access}{521}{paragraph*.542}% 
+\contentsline {paragraph}{Channel access}{522}{paragraph*.542}% 
 \contentsline {paragraph}{Rate control algorithms}{523}{paragraph*.543}% 
-\contentsline {paragraph}{ConstantRateWifiManager}{523}{paragraph*.544}% 
+\contentsline {paragraph}{ConstantRateWifiManager}{524}{paragraph*.544}% 
 \contentsline {paragraph}{IdealWifiManager}{524}{paragraph*.545}% 
 \contentsline {paragraph}{MinstrelWifiManager}{524}{paragraph*.546}% 
-\contentsline {paragraph}{Ack policy selection}{524}{paragraph*.547}% 
+\contentsline {paragraph}{Ack policy selection}{525}{paragraph*.547}% 
 \contentsline {paragraph}{ConstantWifiAckPolicySelector}{525}{paragraph*.548}% 
 \contentsline {paragraph}{802.11ax OBSS PD spatial reuse}{525}{paragraph*.549}% 
 \contentsline {paragraph}{OBSS PD Algorithm}{525}{paragraph*.550}% 
-\contentsline {paragraph}{Constant OBSS PD Algorithm}{525}{paragraph*.551}% 
+\contentsline {paragraph}{Constant OBSS PD Algorithm}{526}{paragraph*.551}% 
 \contentsline {paragraph}{Modifying Wifi model}{526}{paragraph*.552}% 
 \contentsline {section}{\numberline {36.2}User Documentation}{526}{section.36.2}% 
 \contentsline {subsection}{\numberline {36.2.1}Using the WifiNetDevice}{526}{subsection.36.2.1}% 
-\contentsline {subsubsection}{YansWifiChannelHelper}{527}{subsubsection*.553}% 
+\contentsline {subsubsection}{YansWifiChannelHelper}{528}{subsubsection*.553}% 
 \contentsline {subsubsection}{YansWifiPhyHelper}{528}{subsubsection*.554}% 
 \contentsline {subsubsection}{Channel, frequency, and channel width configuration}{529}{subsubsection*.555}% 
 \contentsline {paragraph}{WifiHelper::SetStandard()}{530}{paragraph*.556}% 
@@ -1050,4 +1050,3 @@
 \contentsline {section}{\numberline {37.7}Channel model}{556}{section.37.7}% 
 \contentsline {section}{\numberline {37.8}Physical model}{557}{section.37.8}% 
 \contentsline {chapter}{Bibliography}{559}{chapter*.577}% 
-\contentsline {chapter}{Index}{565}{section*.578}% 

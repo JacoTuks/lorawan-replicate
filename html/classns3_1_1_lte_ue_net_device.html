@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -282,7 +279,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9506233a2a840bcc5799d9e865ce189b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_lte_enb_net_device.html">LteEnbNetDevice</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_ue_net_device.html#a9506233a2a840bcc5799d9e865ce189b">GetTargetEnb</a> (void)</td></tr>
 <tr class="memdesc:a9506233a2a840bcc5799d9e865ce189b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the target eNB where the UE is registered.  <a href="classns3_1_1_lte_ue_net_device.html#a9506233a2a840bcc5799d9e865ce189b">More...</a><br /></td></tr>
 <tr class="separator:a9506233a2a840bcc5799d9e865ce189b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adad6545b0b0608e97f08c19d69fe50a1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_ue_net_device.html#adad6545b0b0608e97f08c19d69fe50a1">Send</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; <a class="el" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>, const <a class="el" href="classns3_1_1_address.html">Address</a> &amp;dest, uint16_t protocolNumber)</td></tr>
+<tr class="memitem:adad6545b0b0608e97f08c19d69fe50a1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_ue_net_device.html#adad6545b0b0608e97f08c19d69fe50a1">Send</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; packet, const <a class="el" href="classns3_1_1_address.html">Address</a> &amp;dest, uint16_t protocolNumber)</td></tr>
 <tr class="separator:adad6545b0b0608e97f08c19d69fe50a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adadd98b0439e6fcb3e70f01fbf3c09f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_ue_net_device.html#adadd98b0439e6fcb3e70f01fbf3c09f7">SetCcMap</a> (std::map&lt; uint8_t, <a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_component_carrier_ue.html">ComponentCarrierUe</a> &gt; &gt; ccm)</td></tr>
 <tr class="memdesc:adadd98b0439e6fcb3e70f01fbf3c09f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the <a class="el" href="classns3_1_1_component_carrier.html">ComponentCarrier</a> Map for the UE.  <a href="classns3_1_1_lte_ue_net_device.html#adadd98b0439e6fcb3e70f01fbf3c09f7">More...</a><br /></td></tr>
@@ -337,7 +334,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a52302e688e6fdf9abba088b2b26e5408 inherit pub_methods_classns3_1_1_lte_net_device"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_net_device.html#a52302e688e6fdf9abba088b2b26e5408">Receive</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; p)</td></tr>
 <tr class="memdesc:a52302e688e6fdf9abba088b2b26e5408 inherit pub_methods_classns3_1_1_lte_net_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">receive a packet from the lower layers in order to forward it to the upper layers  <a href="classns3_1_1_lte_net_device.html#a52302e688e6fdf9abba088b2b26e5408">More...</a><br /></td></tr>
 <tr class="separator:a52302e688e6fdf9abba088b2b26e5408 inherit pub_methods_classns3_1_1_lte_net_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5db1286052905f80b9df65b6af5f3c5e inherit pub_methods_classns3_1_1_lte_net_device"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_net_device.html#a5db1286052905f80b9df65b6af5f3c5e">SendFrom</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; <a class="el" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>, const <a class="el" href="classns3_1_1_address.html">Address</a> &amp;source, const <a class="el" href="classns3_1_1_address.html">Address</a> &amp;dest, uint16_t protocolNumber)</td></tr>
+<tr class="memitem:a5db1286052905f80b9df65b6af5f3c5e inherit pub_methods_classns3_1_1_lte_net_device"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_net_device.html#a5db1286052905f80b9df65b6af5f3c5e">SendFrom</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; packet, const <a class="el" href="classns3_1_1_address.html">Address</a> &amp;source, const <a class="el" href="classns3_1_1_address.html">Address</a> &amp;dest, uint16_t protocolNumber)</td></tr>
 <tr class="separator:a5db1286052905f80b9df65b6af5f3c5e inherit pub_methods_classns3_1_1_lte_net_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa937a7835283631ef67300a98793de05 inherit pub_methods_classns3_1_1_lte_net_device"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lte_net_device.html#aa937a7835283631ef67300a98793de05">SetAddress</a> (<a class="el" href="classns3_1_1_address.html">Address</a> address)</td></tr>
 <tr class="memdesc:aa937a7835283631ef67300a98793de05 inherit pub_methods_classns3_1_1_lte_net_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the address of this interface.  <a href="classns3_1_1_lte_net_device.html#aa937a7835283631ef67300a98793de05">More...</a><br /></td></tr>
@@ -1119,7 +1116,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="lte-ue-net-device_8cc_source.html#l00063">63</a> of file <a class="el" href="lte-ue-net-device_8cc_source.html">lte-ue-net-device.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="lte-ue-net-device_8cc_source.html#l00229">GetCsgId()</a>, <a class="el" href="lte-ue-net-device_8cc_source.html#l00215">GetDlEarfcn()</a>, <a class="el" href="lte-ue-net-device_8h_source.html#l00202">m_ccMap</a>, <a class="el" href="lte-ue-net-device_8h_source.html#l00194">m_componentCarrierManager</a>, <a class="el" href="lte-ue-net-device_8h_source.html#l00196">m_imsi</a>, <a class="el" href="lte-ue-net-device_8h_source.html#l00193">m_nas</a>, <a class="el" href="lte-ue-net-device_8h_source.html#l00192">m_rrc</a>, <a class="el" href="object-map_8h_source.html#l00080">ns3::MakeObjectMapAccessor()</a>, <a class="el" href="pointer_8h_source.html#l00229">ns3::MakePointerAccessor()</a>, <a class="el" href="uinteger_8h_source.html#l00045">ns3::MakeUintegerAccessor()</a>, <a class="el" href="lte-ue-net-device_8cc_source.html#l00236">SetCsgId()</a>, <a class="el" href="lte-ue-net-device_8cc_source.html#l00222">SetDlEarfcn()</a>, and <a class="el" href="type-id_8cc_source.html#l00922">ns3::TypeId::SetParent()</a>.</p>
+<p class="reference">References <a class="el" href="lte-ue-net-device_8cc_source.html#l00229">GetCsgId()</a>, <a class="el" href="lte-ue-net-device_8cc_source.html#l00215">GetDlEarfcn()</a>, <a class="el" href="lte-ue-net-device_8h_source.html#l00202">m_ccMap</a>, <a class="el" href="lte-ue-net-device_8h_source.html#l00194">m_componentCarrierManager</a>, <a class="el" href="lte-ue-net-device_8h_source.html#l00196">m_imsi</a>, <a class="el" href="lte-ue-net-device_8h_source.html#l00193">m_nas</a>, <a class="el" href="lte-ue-net-device_8h_source.html#l00192">m_rrc</a>, <a class="el" href="object-map_8h_source.html#l00080">ns3::MakeObjectMapAccessor()</a>, <a class="el" href="pointer_8h_source.html#l00229">ns3::MakePointerAccessor()</a>, <a class="el" href="uinteger_8h_source.html#l00045">ns3::MakeUintegerAccessor()</a>, <a class="el" href="lte-ue-net-device_8cc_source.html#l00236">SetCsgId()</a>, <a class="el" href="lte-ue-net-device_8cc_source.html#l00222">SetDlEarfcn()</a>, and <a class="el" href="type-id_8cc_source.html#l00923">ns3::TypeId::SetParent()</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
@@ -1200,7 +1197,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="lte-ue-net-device_8cc_source.html#l00287">287</a> of file <a class="el" href="lte-ue-net-device_8cc_source.html">lte-ue-net-device.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="lte-ue-net-device_8h_source.html#l00193">m_nas</a>, <a class="el" href="abort_8h_source.html#l00108">NS_ABORT_MSG_IF</a>, <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>, <a class="el" href="lora-mac-test_8cc_source.html#l00021">packet</a>, <a class="el" href="ipv4-l3-protocol_8h_source.html#l00088">ns3::Ipv4L3Protocol::PROT_NUMBER</a>, and <a class="el" href="ipv6-l3-protocol_8h_source.html#l00074">ns3::Ipv6L3Protocol::PROT_NUMBER</a>.</p>
+<p class="reference">References <a class="el" href="lte-ue-net-device_8h_source.html#l00193">m_nas</a>, <a class="el" href="abort_8h_source.html#l00108">NS_ABORT_MSG_IF</a>, <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>, <a class="el" href="ipv4-l3-protocol_8h_source.html#l00088">ns3::Ipv4L3Protocol::PROT_NUMBER</a>, and <a class="el" href="ipv6-l3-protocol_8h_source.html#l00074">ns3::Ipv6L3Protocol::PROT_NUMBER</a>.</p>
 
 </div>
 </div>
@@ -1688,7 +1685,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_lte_ue_net_device.html">LteUeNetDevice</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:31 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:35 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

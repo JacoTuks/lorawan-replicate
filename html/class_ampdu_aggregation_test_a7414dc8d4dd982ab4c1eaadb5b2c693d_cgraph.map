@@ -27,7 +27,7 @@
 <area shape="rect" id="node32" href="$classns3_1_1_wifi_net_device.html#a2f08e359eb50ff8be69d611ad3b84605" title=" " alt="" coords="267,1500,421,1541"/>
 <area shape="rect" id="node33" href="$classns3_1_1_mgt_add_ba_request_header.html#a6c500c2af17b44cead2c9449ed35bc5f" title="Enable immediate BlockAck." alt="" coords="234,1565,454,1607"/>
 <area shape="rect" id="node34" href="$classns3_1_1_wifi_net_device.html#a0a9b545ba9a5a8538b0c4165ab1dc93f" title=" " alt="" coords="271,1631,417,1672"/>
-<area shape="rect" id="node35" href="$classns3_1_1_ht_capabilities.html#a4ba40bf6a99dadf2b5cbac209cbd9d00" title="Set the maximum AMPDU length." alt="" coords="259,1696,429,1737"/>
+<area shape="rect" id="node35" href="$classns3_1_1_ht_capabilities.html#aecbe859f067fede7a68196eb5bdfc049" title="Set the maximum AMPDU length." alt="" coords="259,1696,429,1737"/>
 <area shape="rect" id="node36" href="$classns3_1_1_wifi_remote_station_manager.html#aa88ee92e80145998f7f825e24bfd52d0" title="Sets the maximum STA short retry count (SSRC)." alt="" coords="227,1761,461,1803"/>
 <area shape="rect" id="node37" href="$classns3_1_1_wifi_mac_header.html#a3898df5358df4247926b74175f2789c3" title="Un&#45;set the More Fragment bit in the Frame Control Field." alt="" coords="259,1827,429,1868"/>
 <area shape="rect" id="node38" href="$classns3_1_1_wifi_mac_header.html#a2dbe5e569e783f6d975c13daf3015f12" title="Un&#45;set the Retry bit in the Frame Control field." alt="" coords="267,1892,421,1933"/>

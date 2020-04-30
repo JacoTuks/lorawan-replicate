@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -226,7 +223,7 @@ $(document).ready(function(){initNavTree('main-ptr_8cc_source.html',''); initRes
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keywordtype">int</span> main (<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;{</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <a class="code" href="classns3_1_1_command_line.html">CommandLine</a> <a class="code" href="namespacesecond.html#ae84c87468c0e4398eab4dbb6cadc17d9">cmd</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <a class="code" href="group__commandline.html#ga6520780a7fe4f370c303f7a8a39fd077">COMMANDLINE</a> (<a class="code" href="namespacesecond.html#ae84c87468c0e4398eab4dbb6cadc17d9">cmd</a>);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <a class="code" href="namespacesecond.html#ae84c87468c0e4398eab4dbb6cadc17d9">cmd</a>.Parse (argc, argv);</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  {</div>
@@ -259,7 +256,6 @@ $(document).ready(function(){initNavTree('main-ptr_8cc_source.html',''); initRes
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassns3_1_1_command_line_html"><div class="ttname"><a href="classns3_1_1_command_line.html">ns3::CommandLine</a></div><div class="ttdoc">Parse command-line arguments.</div><div class="ttdef"><b>Definition:</b> <a href="command-line_8h_source.html#l00212">command-line.h:213</a></div></div>
 <div class="ttc" id="agroup__assert_html_ga6dccdb0de9b252f60088ce281c49d052"><div class="ttname"><a href="group__assert.html#ga6dccdb0de9b252f60088ce281c49d052">NS_ASSERT</a></div><div class="ttdeci">#define NS_ASSERT(condition)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8h_source.html#l00068">assert.h:67</a></div></div>
 <div class="ttc" id="amain-ptr_8cc_html_a192be4f338c81bbf13abb66e0ba1db14"><div class="ttname"><a href="main-ptr_8cc.html#a192be4f338c81bbf13abb66e0ba1db14">StorePtr</a></div><div class="ttdeci">static Ptr&lt; PtrExample &gt; StorePtr(Ptr&lt; PtrExample &gt; p)</div><div class="ttdoc">Example Ptr manipulations.</div><div class="ttdef"><b>Definition:</b> <a href="main-ptr_8cc_source.html#l00076">main-ptr.cc:76</a></div></div>
 <div class="ttc" id="anamespacens3_html"><div class="ttname"><a href="namespacens3.html">ns3</a></div><div class="ttdoc">Every class exported by the ns3 library is enclosed in the ns3 namespace.</div></div>
@@ -268,6 +264,7 @@ $(document).ready(function(){initNavTree('main-ptr_8cc_source.html',''); initRes
 <div class="ttc" id="aclass_ptr_example_html_adb474d25bb99de1bb8a0da53311db3d8"><div class="ttname"><a href="class_ptr_example.html#adb474d25bb99de1bb8a0da53311db3d8">PtrExample::Method</a></div><div class="ttdeci">void Method(void)</div><div class="ttdoc">Example class method.</div><div class="ttdef"><b>Definition:</b> <a href="main-ptr_8cc_source.html#l00056">main-ptr.cc:56</a></div></div>
 <div class="ttc" id="aclassns3_1_1_ptr_html"><div class="ttname"><a href="classns3_1_1_ptr.html">ns3::Ptr</a></div><div class="ttdoc">Smart pointer class similar to boost::intrusive_ptr.</div><div class="ttdef"><b>Definition:</b> <a href="ptr_8h_source.html#l00073">ptr.h:74</a></div></div>
 <div class="ttc" id="aclassns3_1_1_object_html"><div class="ttname"><a href="classns3_1_1_object.html">ns3::Object</a></div><div class="ttdoc">A base class which provides memory management and object aggregation.</div><div class="ttdef"><b>Definition:</b> <a href="object_8h_source.html#l00087">object.h:88</a></div></div>
+<div class="ttc" id="agroup__commandline_html_ga6520780a7fe4f370c303f7a8a39fd077"><div class="ttname"><a href="group__commandline.html#ga6520780a7fe4f370c303f7a8a39fd077">COMMANDLINE</a></div><div class="ttdeci">#define COMMANDLINE(var)</div><div class="ttdoc">Declare a CommandLine instance.</div><div class="ttdef"><b>Definition:</b> <a href="command-line_8h_source.html#l00057">command-line.h:56</a></div></div>
 <div class="ttc" id="aclassns3_1_1_simple_ref_count_html_a092779b0899c44f966e98913ddceeb64"><div class="ttname"><a href="classns3_1_1_simple_ref_count.html#a092779b0899c44f966e98913ddceeb64">ns3::SimpleRefCount::Unref</a></div><div class="ttdeci">void Unref(void) const</div><div class="ttdoc">Decrement the reference count.</div><div class="ttdef"><b>Definition:</b> <a href="simple-ref-count_8h_source.html#l00116">simple-ref-count.h:116</a></div></div>
 <div class="ttc" id="anamespacesecond_html_ae84c87468c0e4398eab4dbb6cadc17d9"><div class="ttname"><a href="namespacesecond.html#ae84c87468c0e4398eab4dbb6cadc17d9">second.cmd</a></div><div class="ttdeci">cmd</div><div class="ttdef"><b>Definition:</b> <a href="second_8py_source.html#l00035">second.py:35</a></div></div>
 <div class="ttc" id="amain-ptr_8cc_html_a6c8a7abd464ec1e718a0122299262f78"><div class="ttname"><a href="main-ptr_8cc.html#a6c8a7abd464ec1e718a0122299262f78">ClearPtr</a></div><div class="ttdeci">static void ClearPtr(void)</div><div class="ttdoc">Set g_ptr to NULL.</div><div class="ttdef"><b>Definition:</b> <a href="main-ptr_8cc_source.html#l00087">main-ptr.cc:87</a></div></div>
@@ -282,7 +279,7 @@ $(document).ready(function(){initNavTree('main-ptr_8cc_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li><li class="navelem"><a class="el" href="dir_885eb8bfa2a2428b32ca0bb7bd8db8ab.html">examples</a></li><li class="navelem"><a class="el" href="main-ptr_8cc.html">main-ptr.cc</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:34:52 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:00 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

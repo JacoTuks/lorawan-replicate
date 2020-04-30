@@ -7,7 +7,7 @@
 <area shape="rect" id="node33" href="$classns3_1_1_three_gpp_channel_model.html" title="Channel Matrix Generation following 3GPP TR 38.901." alt="" coords="3105,399,3315,426"/>
 <area shape="rect" id="node36" href="$classns3_1_1_random_variable_stream.html" title="The basic uniform Random Number Generator (RNG)." alt="" coords="1523,283,1731,310"/>
 <area shape="rect" id="node45" href="$classns3_1_1_channel_condition_model.html" title="Models the channel condition." alt="" coords="1523,230,1731,257"/>
-<area shape="rect" id="node48" href="$classns3_1_1_three_gpp_antenna_array_model.html" title="Class implementing the antenna model defined in 3GPP TR 38.901." alt="" coords="1525,717,1730,759"/>
+<area shape="rect" id="node48" href="$classns3_1_1_three_gpp_antenna_array_model.html" title="Class implementing the antenna model defined in 3GPP TR 38.901 V15.0.0." alt="" coords="1525,717,1730,759"/>
 <area shape="rect" id="node4" href="$classns3_1_1_simple_ref_count.html" title=" " alt="" coords="678,398,843,454"/>
 <area shape="rect" id="node5" href="$classns3_1_1_object_base.html" title="Anchor the ns&#45;3 type and attribute system." alt="" coords="243,413,370,439"/>
 <area shape="rect" id="node6" href="$classns3_1_1_simple_ref_count.html" title="A template&#45;based reference counting class." alt="" coords="213,728,400,769"/>

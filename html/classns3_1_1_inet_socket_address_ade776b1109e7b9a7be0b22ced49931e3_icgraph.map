@@ -19,7 +19,7 @@
 <area shape="rect" id="node28" href="$namespacens3_1_1address_utils.html#a2806342189d7bd73179d40bbf81bdb41" title="Address family&#45;independent test for a multicast address." alt="" coords="613,747,755,789"/>
 <area shape="rect" id="node29" href="$classns3_1_1_dhcp_server.html#acc55231b1b1e6ef243e7fb0295209fe8" title="Handles incoming packets from the network." alt="" coords="579,1060,789,1087"/>
 <area shape="rect" id="node31" href="$structns3_1_1_packet_sink_1_1_address_hash.html#ac467936955a1add1847f554d69371108" title="operator ()" alt="" coords="592,1111,776,1153"/>
-<area shape="rect" id="node32" href="$energy-model-example_8cc.html#af91365680e54e535a1777c872388bc29" title=" " alt="" coords="607,1177,761,1204"/>
+<area shape="rect" id="node32" href="$examples_2energy_2energy-model-example_8cc.html#af91365680e54e535a1777c872388bc29" title=" " alt="" coords="607,1177,761,1204"/>
 <area shape="rect" id="node34" href="$classns3_1_1_tcp_socket_base.html#a69113acf27c4b8267c9e107a5dca7cc1" title="Received a packet upon SYN_RCVD." alt="" coords="335,1221,484,1262"/>
 <area shape="rect" id="node35" href="$classns3_1_1_v4_ping.html#a87c38673f7b4c568d114c2815ff2aa78" title="Receive an ICMP Echo." alt="" coords="605,1279,763,1305"/>
 <area shape="rect" id="node36" href="$classns3_1_1_v4_trace_route.html#ad558557c4c875e55d97200c84e3e752f" title="Receive an ICMP Echo." alt="" coords="609,1330,759,1371"/>
@@ -48,5 +48,5 @@
 <area shape="rect" id="node25" href="$classns3_1_1_udp_echo_server.html#a4c90329af8d6524862467808c3023786" title="Application specific startup code." alt="" coords="333,798,485,839"/>
 <area shape="rect" id="node27" href="$classns3_1_1_udp_server.html#a784bd9b3274fc411c042b3502dacb3fa" title="Application specific startup code." alt="" coords="293,1060,526,1087"/>
 <area shape="rect" id="node30" href="$classns3_1_1_dhcp_server.html#ab3c7516bfe4275063212414342201940" title="Starts the DHCP Server application." alt="" coords="289,1111,529,1137"/>
-<area shape="rect" id="node33" href="$energy-model-example_8cc.html#a80dc0d980be124d8d5c4ee0b7943bfae" title=" " alt="" coords="351,1169,468,1196"/>
+<area shape="rect" id="node33" href="$examples_2energy_2energy-model-example_8cc.html#a80dc0d980be124d8d5c4ee0b7943bfae" title=" " alt="" coords="351,1169,468,1196"/>
 </map>

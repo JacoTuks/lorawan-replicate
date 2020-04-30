@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -424,12 +421,12 @@ Private Attributes</h2></td></tr>
 <p>Report the expected number of collisions. </p>
 <p>See, e.g., <a href="http://www.math.dartmouth.edu/archive/m19w03/public_html/Section6-5.pdf">http://www.math.dartmouth.edu/archive/m19w03/public_html/Section6-5.pdf</a></p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ E(collisions) = n - k + k (1 - 1/k)^n \]" src="form_0.png" width="0" height="14"/>
+<img class="formulaDsp" alt="\[ E(collisions) = n - k + k (1 - 1/k)^n \]" src="form_0.png" width="199" height="14"/>
 </p>
 <p>where <em>n</em> is the number of entries in the table, and <em>k</em> is the number of buckets.</p>
-<p>This form is numerically unstable for low collision rates. Expanding for large <img class="formulaInl" alt="$ k $" src="form_1.png" width="0" height="10"/> we get</p>
+<p>This form is numerically unstable for low collision rates. Expanding for large <img class="formulaInl" alt="$ k $" src="form_1.png" width="6" height="10"/> we get</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\begin{eqnarray*} E(c) &amp;=&amp; \frac{1}{k} \binom{n}{2} - \frac{1}{{{k^2}}} \binom{n}{3} + \frac{1}{{{k^3}}} \binom{n}{4} - \ldots \\ &amp;=&amp; \frac{1}{k} \binom{n}{2} \left[ {1 - \frac{{n - 2}}{{3k}} + \frac{{\left( {n - 2} \right) \left( {n - 3} \right)}}{{12{k^2}}} - \ldots } \right] \\ &amp;=&amp; \frac{1}{k} \binom{n}{2} \left\{ {1 - \frac{{n - 2}}{{3k}} \left[ {1 + \frac{{n - 3}}{{4k}} - \ldots } \right]} \right\} \end{eqnarray*}" src="form_2.png" width="0" height="101"/>
+<img class="formulaDsp" alt="\begin{eqnarray*} E(c) &amp;=&amp; \frac{1}{k} \binom{n}{2} - \frac{1}{{{k^2}}} \binom{n}{3} + \frac{1}{{{k^3}}} \binom{n}{4} - \ldots \\ &amp;=&amp; \frac{1}{k} \binom{n}{2} \left[ {1 - \frac{{n - 2}}{{3k}} + \frac{{\left( {n - 2} \right) \left( {n - 3} \right)}}{{12{k^2}}} - \ldots } \right] \\ &amp;=&amp; \frac{1}{k} \binom{n}{2} \left\{ {1 - \frac{{n - 2}}{{3k}} \left[ {1 + \frac{{n - 3}}{{4k}} - \ldots } \right]} \right\} \end{eqnarray*}" src="form_2.png" width="289" height="101"/>
 </p>
 <p>For simplicity, we'll use the first two terms of the second form. </p>
 
@@ -663,7 +660,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="namespacens3_1_1_hash.html">Hash</a></li><li class="navelem"><a class="el" href="namespacens3_1_1_hash_1_1_example.html">Example</a></li><li class="navelem"><a class="el" href="classns3_1_1_hash_1_1_example_1_1_dictionary.html">Dictionary</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:49 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:50 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

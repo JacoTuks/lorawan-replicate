@@ -43,7 +43,7 @@
 <area shape="rect" id="node36" href="$classns3_1_1_node_list.html#a93d2211831f5cb71d1dbb721e2721d7f" title=" " alt="" coords="819,56,973,83"/>
 <area shape="rect" id="node37" href="$classns3_1_1_node_list.html#a027a558c16e6078e25c7ffc67becb559" title=" " alt="" coords="825,5,967,32"/>
 <area shape="rect" id="node38" href="$classns3_1_1_flow_monitor_helper.html#abffcd31f85872c6b736f30e9d300390d" title="Enable flow monitoring on a set of nodes." alt="" coords="807,158,985,199"/>
-<area shape="rect" id="node40" href="$classns3_1_1_random_variable_stream.html#a66cd94e6305ce7f000f1a9ff0fcb9aef" title="Get the next random value as an integer drawn from the distribution." alt="" coords="499,671,707,713"/>
+<area shape="rect" id="node40" href="$classns3_1_1_uniform_random_variable.html#ab7c7dedc88cb97e74418df2edc28a787" title="Get the next random value, as an unsigned integer in the specified range ." alt="" coords="496,671,711,713"/>
 <area shape="rect" id="node41" href="$classns3_1_1_object_base.html#ac60245d3ea4123bbc9b1d391f1f6592f" title="Set a single attribute, raising fatal errors if unsuccessful." alt="" coords="497,737,710,764"/>
 <area shape="rect" id="node43" href="$classns3_1_1_node.html#a2ed8663077afcb8db519296b0ada6355" title=" " alt="" coords="538,920,669,947"/>
 <area shape="rect" id="node44" href="$classns3_1_1_exponential_random_variable.html#a5d7a50466c0b0f036ec0fc1aa478f2c3" title="Get the next random value, as a double from the exponential distribution with the specified mean and ..." alt="" coords="484,789,723,830"/>

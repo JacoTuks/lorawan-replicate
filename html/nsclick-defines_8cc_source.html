@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -192,7 +189,7 @@ $(document).ready(function(){initNavTree('nsclick-defines_8cc_source.html',''); 
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#ifdef NS3_CLICK</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  std::string clickConfigFolder = <span class="stringliteral">&quot;src/click/examples&quot;</span>;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="classns3_1_1_command_line.html">CommandLine</a> <a class="code" href="namespacesecond.html#ae84c87468c0e4398eab4dbb6cadc17d9">cmd</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="group__commandline.html#ga6520780a7fe4f370c303f7a8a39fd077">COMMANDLINE</a> (<a class="code" href="namespacesecond.html#ae84c87468c0e4398eab4dbb6cadc17d9">cmd</a>);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="namespacesecond.html#ae84c87468c0e4398eab4dbb6cadc17d9">cmd</a>.AddValue (<span class="stringliteral">&quot;clickConfigFolder&quot;</span>, <span class="stringliteral">&quot;Base folder for click configuration files&quot;</span>, clickConfigFolder);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="namespacesecond.html#ae84c87468c0e4398eab4dbb6cadc17d9">cmd</a>.Parse (argc, argv);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
@@ -232,15 +229,15 @@ $(document).ready(function(){initNavTree('nsclick-defines_8cc_source.html',''); 
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="agroup__logging_html_ga225a95395fa117b7309aa3c43518d02e"><div class="ttname"><a href="group__logging.html#ga225a95395fa117b7309aa3c43518d02e">NS_LOG_COMPONENT_DEFINE</a></div><div class="ttdeci">#define NS_LOG_COMPONENT_DEFINE(name)</div><div class="ttdoc">Define a Log component with a specific name.</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00206">log.h:205</a></div></div>
-<div class="ttc" id="aclassns3_1_1_command_line_html"><div class="ttname"><a href="classns3_1_1_command_line.html">ns3::CommandLine</a></div><div class="ttdoc">Parse command-line arguments.</div><div class="ttdef"><b>Definition:</b> <a href="command-line_8h_source.html#l00212">command-line.h:213</a></div></div>
 <div class="ttc" id="anamespacens3_html"><div class="ttname"><a href="namespacens3.html">ns3</a></div><div class="ttdoc">Every class exported by the ns3 library is enclosed in the ns3 namespace.</div></div>
 <div class="ttc" id="agroup__fatal_html_ga5131d5e3f75d7d4cbfd706ac456fdc85"><div class="ttname"><a href="group__fatal.html#ga5131d5e3f75d7d4cbfd706ac456fdc85">NS_FATAL_ERROR</a></div><div class="ttdeci">#define NS_FATAL_ERROR(msg)</div><div class="ttdoc">Report a fatal error with a message and terminate.</div><div class="ttdef"><b>Definition:</b> <a href="fatal-error_8h_source.html#l00163">fatal-error.h:162</a></div></div>
-<div class="ttc" id="aclassns3_1_1_simulator_html_a2335ba5b62e9066e893fecb21b7f6afd"><div class="ttname"><a href="classns3_1_1_simulator.html#a2335ba5b62e9066e893fecb21b7f6afd">ns3::Simulator::Stop</a></div><div class="ttdeci">static void Stop(void)</div><div class="ttdoc">Tell the Simulator the calling event should be the last one executed.</div><div class="ttdef"><b>Definition:</b> <a href="simulator_8cc_source.html#l00178">simulator.cc:178</a></div></div>
+<div class="ttc" id="aclassns3_1_1_simulator_html_a2335ba5b62e9066e893fecb21b7f6afd"><div class="ttname"><a href="classns3_1_1_simulator.html#a2335ba5b62e9066e893fecb21b7f6afd">ns3::Simulator::Stop</a></div><div class="ttdeci">static void Stop(void)</div><div class="ttdoc">Tell the Simulator the calling event should be the last one executed.</div><div class="ttdef"><b>Definition:</b> <a href="simulator_8cc_source.html#l00180">simulator.cc:180</a></div></div>
 <div class="ttc" id="agroup__logging_html_gafbd73ee2cf9f26b319f49086d8e860fb"><div class="ttname"><a href="group__logging.html#gafbd73ee2cf9f26b319f49086d8e860fb">NS_LOG_INFO</a></div><div class="ttdeci">#define NS_LOG_INFO(msg)</div><div class="ttdoc">Use NS_LOG to output a message of level LOG_INFO.</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00282">log.h:281</a></div></div>
+<div class="ttc" id="agroup__commandline_html_ga6520780a7fe4f370c303f7a8a39fd077"><div class="ttname"><a href="group__commandline.html#ga6520780a7fe4f370c303f7a8a39fd077">COMMANDLINE</a></div><div class="ttdeci">#define COMMANDLINE(var)</div><div class="ttdoc">Declare a CommandLine instance.</div><div class="ttdef"><b>Definition:</b> <a href="command-line_8h_source.html#l00057">command-line.h:56</a></div></div>
 <div class="ttc" id="anamespacesecond_html_ae84c87468c0e4398eab4dbb6cadc17d9"><div class="ttname"><a href="namespacesecond.html#ae84c87468c0e4398eab4dbb6cadc17d9">second.cmd</a></div><div class="ttdeci">cmd</div><div class="ttdef"><b>Definition:</b> <a href="second_8py_source.html#l00035">second.py:35</a></div></div>
-<div class="ttc" id="aclassns3_1_1_simulator_html_a84be982e6d03b62c3dc3303c75a9b909"><div class="ttname"><a href="classns3_1_1_simulator.html#a84be982e6d03b62c3dc3303c75a9b909">ns3::Simulator::Run</a></div><div class="ttdeci">static void Run(void)</div><div class="ttdoc">Run the simulation.</div><div class="ttdef"><b>Definition:</b> <a href="simulator_8cc_source.html#l00170">simulator.cc:170</a></div></div>
-<div class="ttc" id="agroup__timecivil_html_ga33c34b816f8ff6628e33d5c8e9713b9e"><div class="ttname"><a href="group__timecivil.html#ga33c34b816f8ff6628e33d5c8e9713b9e">ns3::Seconds</a></div><div class="ttdeci">Time Seconds(double value)</div><div class="ttdef"><b>Definition:</b> <a href="nstime_8h_source.html#l01064">nstime.h:1064</a></div></div>
-<div class="ttc" id="aclassns3_1_1_simulator_html_a2a056e59a6623225df0957eda0ee8252"><div class="ttname"><a href="classns3_1_1_simulator.html#a2a056e59a6623225df0957eda0ee8252">ns3::Simulator::Destroy</a></div><div class="ttdeci">static void Destroy(void)</div><div class="ttdoc">Execute the events scheduled with ScheduleDestroy().</div><div class="ttdef"><b>Definition:</b> <a href="simulator_8cc_source.html#l00134">simulator.cc:134</a></div></div>
+<div class="ttc" id="aclassns3_1_1_simulator_html_a84be982e6d03b62c3dc3303c75a9b909"><div class="ttname"><a href="classns3_1_1_simulator.html#a84be982e6d03b62c3dc3303c75a9b909">ns3::Simulator::Run</a></div><div class="ttdeci">static void Run(void)</div><div class="ttdoc">Run the simulation.</div><div class="ttdef"><b>Definition:</b> <a href="simulator_8cc_source.html#l00172">simulator.cc:172</a></div></div>
+<div class="ttc" id="agroup__timecivil_html_ga33c34b816f8ff6628e33d5c8e9713b9e"><div class="ttname"><a href="group__timecivil.html#ga33c34b816f8ff6628e33d5c8e9713b9e">ns3::Seconds</a></div><div class="ttdeci">Time Seconds(double value)</div><div class="ttdef"><b>Definition:</b> <a href="nstime_8h_source.html#l01070">nstime.h:1070</a></div></div>
+<div class="ttc" id="aclassns3_1_1_simulator_html_a2a056e59a6623225df0957eda0ee8252"><div class="ttname"><a href="classns3_1_1_simulator.html#a2a056e59a6623225df0957eda0ee8252">ns3::Simulator::Destroy</a></div><div class="ttdeci">static void Destroy(void)</div><div class="ttdoc">Execute the events scheduled with ScheduleDestroy().</div><div class="ttdef"><b>Definition:</b> <a href="simulator_8cc_source.html#l00136">simulator.cc:136</a></div></div>
 <div class="ttc" id="aclassns3_1_1_node_container_html"><div class="ttname"><a href="classns3_1_1_node_container.html">ns3::NodeContainer</a></div><div class="ttdoc">keep track of a set of node pointers.</div><div class="ttdef"><b>Definition:</b> <a href="node-container_8h_source.html#l00038">node-container.h:39</a></div></div>
 <div class="ttc" id="anamespacesample-rng-plot_html_aeb5ee5c431e338ef39b7ac5431242e1d"><div class="ttname"><a href="namespacesample-rng-plot.html#aeb5ee5c431e338ef39b7ac5431242e1d">sample-rng-plot.n</a></div><div class="ttdeci">n</div><div class="ttdef"><b>Definition:</b> <a href="sample-rng-plot_8py_source.html#l00037">sample-rng-plot.py:37</a></div></div>
 <!-- ns-3 doxygen header, based on
@@ -251,7 +248,7 @@ $(document).ready(function(){initNavTree('nsclick-defines_8cc_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_07ef199b396d54af450074e3ff1d6e42.html">click</a></li><li class="navelem"><a class="el" href="dir_87c7fd464e24892b2774298f00fdd93c.html">examples</a></li><li class="navelem"><a class="el" href="nsclick-defines_8cc.html">nsclick-defines.cc</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:34:52 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:00 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

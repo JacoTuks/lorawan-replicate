@@ -75,7 +75,7 @@
 
 
 \title{ns-3 Model Library}
-\date{Apr 23, 2020}
+\date{Apr 29, 2020}
 \release{ns-3-dev}
 \author{ns-3 project}
 \newcommand{\sphinxlogo}{\sphinxincludegraphics{ns-3.png}\par}
@@ -564,9 +564,9 @@ The class ThreeGppAntennaArrayModel implements the antenna model described in
 %
 \end{footnote}, which is used by the classes ThreeGppSpectrumPropagationLossModel
 and ThreeGppChannelModel.
-Each instance of this class models an isotropic rectangular antenna array with
-NxM elements, where N is the number of rows and M is the number of columns,
-configurable through the attributes “NumRows” and “NumColumns”.
+Each instance of this class models an isotropic rectangular antenna array composed
+of a single panel with NxM elements, where N is the number of rows and M is the
+number of columns, configurable through the attributes “NumRows” and “NumColumns”.
 The radiation pattern of the antenna elements follows the model specified in
 Sec. 7.3 of 3GPP TR 38.901; only vertical polarization is considered (i.e.,
 \({\zeta = 0}\)).
@@ -577,6 +577,18 @@ direction, but the orientation can be changed through the attributes “BearingA
 which adjusts the azimuth angle, and “DowntiltAngle”, which adjusts the elevation angle.
 The spacing between the horizontal and vertical elements can be configured through
 the attributes “AntennaHorizontalSpacing” and “AntennaVerticalSpacing”.
+
+\sphinxstylestrong{Note:}
+\begin{itemize}
+\item {} 
+Currently, the model does not support multi\sphinxhyphen{}panel antennas, i.e.,
+\(N_{g} = M_{g} = 1\).
+
+\item {} 
+Currently, the model supports only single polarized (i.e., P = 1) antenna
+panels with vertical polarization (i.e., \({\zeta = 0}\))
+
+\end{itemize}
 
 
 \section{User Documentation}
@@ -5943,14 +5955,14 @@ user code can swap out implementations with minimal changes to the scripts.
 There are two important abstract base classes:
 \begin{itemize}
 \item {} 
-class \sphinxcode{\sphinxupquote{TcpSocket}}:  This is defined in
+class \sphinxcode{\sphinxupquote{TcpSocket}}: This is defined in
 \sphinxcode{\sphinxupquote{src/internet/model/tcp\sphinxhyphen{}socket.\{cc,h\}}}. This class exists for hosting TcpSocket
 attributes that can be reused across different implementations. For instance,
 the attribute \sphinxcode{\sphinxupquote{InitialCwnd}} can be used for any of the implementations
 that derive from class \sphinxcode{\sphinxupquote{TcpSocket}}.
 
 \item {} 
-class \sphinxcode{\sphinxupquote{TcpSocketFactory}}:  This is used by the layer\sphinxhyphen{}4 protocol
+class \sphinxcode{\sphinxupquote{TcpSocketFactory}}: This is used by the layer\sphinxhyphen{}4 protocol
 instance to create TCP sockets of the right type.
 
 \end{itemize}
@@ -5979,7 +5991,7 @@ those are out of scope for this chapter.
 \subsection{ns\sphinxhyphen{}3 TCP}
 \label{\detokenize{tcp:ns-3-tcp}}
 In brief, the native \sphinxstyleemphasis{ns\sphinxhyphen{}3} TCP model supports a full bidirectional TCP with
-connection setup and close logic.  Several congestion control algorithms
+connection setup and close logic. Several congestion control algorithms
 are supported, with NewReno the default, and Westwood, Hybla, HighSpeed,
 Vegas, Scalable, Veno, Binary Increase Congestion Control (BIC), Yet Another
 HighSpeed TCP (YeAH), Illinois, H\sphinxhyphen{}TCP, Low Extra Delay Background Transport
@@ -6017,7 +6029,7 @@ following the congestion control design.
 \subsubsection{Acknowledgments}
 \label{\detokenize{tcp:acknowledgments}}
 As mentioned above, \sphinxstyleemphasis{ns\sphinxhyphen{}3} TCP has had multiple authors and maintainers over
-the years.  Several publications exist on aspects of \sphinxstyleemphasis{ns\sphinxhyphen{}3} TCP, and users
+the years. Several publications exist on aspects of \sphinxstyleemphasis{ns\sphinxhyphen{}3} TCP, and users
 of \sphinxstyleemphasis{ns\sphinxhyphen{}3} TCP are requested to cite one of the applicable papers when
 publishing new work.
 
@@ -6065,17 +6077,16 @@ TCP:
 
 The careful reader will note above that we have specified the TypeId of an
 abstract base class \sphinxcode{\sphinxupquote{TcpSocketFactory}}. How does the script tell
-\sphinxstyleemphasis{ns\sphinxhyphen{}3} that it wants the native \sphinxstyleemphasis{ns\sphinxhyphen{}3} TCP vs. some other one?  Well, when
+\sphinxstyleemphasis{ns\sphinxhyphen{}3} that it wants the native \sphinxstyleemphasis{ns\sphinxhyphen{}3} TCP vs. some other one? Well, when
 internet stacks are added to the node, the default TCP implementation that is
-aggregated to the node is the \sphinxstyleemphasis{ns\sphinxhyphen{}3} TCP.  This can be overridden as we show
+aggregated to the node is the \sphinxstyleemphasis{ns\sphinxhyphen{}3} TCP. This can be overridden as we show
 below when using Network Simulation Cradle. So, by default, when using the \sphinxstyleemphasis{ns\sphinxhyphen{}3}
 helper API, the TCP that is aggregated to nodes with an Internet stack is the
 native \sphinxstyleemphasis{ns\sphinxhyphen{}3} TCP.
 
 To configure behavior of TCP, a number of parameters are exported through the
-\sphinxstyleemphasis{ns\sphinxhyphen{}3} attribute system. These are documented in the \sphinxtitleref{Doxygen
-\textless{}http://www.nsnam.org/doxygen/classns3\_1\_1\_tcp\_socket.html\textgreater{}} for class
-\sphinxcode{\sphinxupquote{TcpSocket}}.  For example, the maximum segment size is a
+\sphinxstyleemphasis{ns\sphinxhyphen{}3} attribute system. These are documented in the \sphinxhref{http://www.nsnam.org/doxygen/classns3\_1\_1\_tcp\_socket.html}{Doxygen} for class
+\sphinxcode{\sphinxupquote{TcpSocket}}. For example, the maximum segment size is a
 settable attribute.
 
 To set the default socket type before any internet stack\sphinxhyphen{}related objects are
@@ -6089,11 +6100,11 @@ program:
 For users who wish to have a pointer to the actual socket (so that
 socket operations like Bind(), setting socket options, etc. can be
 done on a per\sphinxhyphen{}socket basis), Tcp sockets can be created by using the
-\sphinxcode{\sphinxupquote{Socket::CreateSocket()}} method.  The TypeId passed to CreateSocket()
+\sphinxcode{\sphinxupquote{Socket::CreateSocket()}} method. The TypeId passed to CreateSocket()
 must be of type \sphinxcode{\sphinxupquote{ns3::SocketFactory}}, so configuring the underlying
 socket type must be done by twiddling the attribute associated with the
-underlying TcpL4Protocol object.  The easiest way to get at this would be
-through the attribute configuration system.  In the below example,
+underlying TcpL4Protocol object. The easiest way to get at this would be
+through the attribute configuration system. In the below example,
 the Node container “n0n1” is accessed to get the zeroth element, and a socket is
 created on this node:
 
@@ -6107,7 +6118,7 @@ created on this node:
 
 Above, the “*” wild card for node number is passed to the attribute
 configuration system, so that all future sockets on all nodes are set to
-NewReno, not just on node ‘n0n1.Get (0)’.  If one wants to limit it to just
+NewReno, not just on node ‘n0n1.Get (0)’. If one wants to limit it to just
 the specified node, one would have to do something like:
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
@@ -6125,7 +6136,7 @@ Once a TCP socket is created, one will want to follow conventional socket logic
 and either connect() and send() (for a TCP client) or bind(), listen(), and
 accept() (for a TCP server).
 Please note that applications usually create the sockets they use automatically,
-and so is not straightforward to connect direcly to them using pointers. Please
+and so is not straightforward to connect directly to them using pointers. Please
 refer to the source code of your preferred application to discover how and when
 it creates the socket.
 
@@ -6152,7 +6163,7 @@ definition can be applied to both sockets in case of full\sphinxhyphen{}duplex m
 \capstart
 
 \noindent\sphinxincludegraphics{{tcp-state-machine}.png}
-\caption{TCP State machine}\label{\detokenize{tcp:id3}}\label{\detokenize{tcp:fig-tcp-state-machine}}\end{figure}
+\caption{TCP State machine}\label{\detokenize{tcp:id7}}\label{\detokenize{tcp:fig-tcp-state-machine}}\end{figure}
 
 In ns\sphinxhyphen{}3 we are fully compliant with the state machine depicted in
 Figure {\hyperref[\detokenize{tcp:fig-tcp-state-machine}]{\sphinxcrossref{\DUrole{std,std-ref}{TCP State machine}}}}.
@@ -6197,7 +6208,7 @@ ESTABLISHED state, and then notify the application with
 \sphinxstyleemphasis{NotifyNewConnectionCreated}.
 
 \item[{\sphinxstyleemphasis{ShutdownSend()}}] \leavevmode
-Signal a termination of send, or in other words revents data from being added
+Signal a termination of send, or in other words prevents data from being added
 to the buffer. After this call, if buffer is already empty, the socket
 will send a FIN, otherwise FIN will go when buffer empties. Please note
 that this is useful only for modeling “Sink” applications. If you have
@@ -6276,14 +6287,14 @@ callback as well.
 \begin{description}
 \item[{\sphinxstyleemphasis{NotifyConnectionSucceeded}: \sphinxstyleemphasis{SetConnectCallback}, 1st argument}] \leavevmode
 Called in the SYN\_SENT state, before moving to ESTABLISHED. In other words, we
-have sent the SYN, and we received the SYN\sphinxhyphen{}ACK: the socket prepare the
-sequence numbers, send the ACK for the SYN\sphinxhyphen{}ACK, try to send out more data (in
-another segment) and then invoke this callback. After this callback, it
+have sent the SYN, and we received the SYN\sphinxhyphen{}ACK: the socket prepares the
+sequence numbers, sends the ACK for the SYN\sphinxhyphen{}ACK, tries to send out more data (in
+another segment) and then invokes this callback. After this callback, it
 invokes the NotifySend callback.
 
 \item[{\sphinxstyleemphasis{NotifyConnectionFailed}: \sphinxstyleemphasis{SetConnectCallback}, 2nd argument}] \leavevmode
 Called after the SYN retransmission count goes to 0. SYN packet is lost
-multiple time, and the socket give up.
+multiple times, and the socket gives up.
 
 \item[{\sphinxstyleemphasis{NotifyNormalClose}: \sphinxstyleemphasis{SetCloseCallbacks}, 1st argument}] \leavevmode
 A normal close is invoked. A rare case is when we receive an RST segment (or a
@@ -6305,24 +6316,24 @@ if the socket should accept the connection (return true) or should ignore it
 
 \item[{\sphinxstyleemphasis{NotifyNewConnectionCreated}: \sphinxstyleemphasis{SetAcceptCallback}, 2nd argument}] \leavevmode
 Invoked when from SYN\_RCVD the socket passes to ESTABLISHED, and after setting
-up the congestion control, the sequence numbers, and processed the incoming
+up the congestion control, the sequence numbers, and processing the incoming
 ACK. If there is some space in the buffer, \sphinxstyleemphasis{NotifySend} is called shortly
 after this callback. The Socket pointer, passed with this callback, is the
 newly created socket, after a Fork().
 
 \item[{\sphinxstyleemphasis{NotifyDataSent}: \sphinxstyleemphasis{SetDataSentCallback}}] \leavevmode
-The Socket notifies the application that some bytes has been transmitted on
+The Socket notifies the application that some bytes have been transmitted on
 the IP level. These bytes could still be lost in the node (traffic control
 layer) or in the network.
 
 \item[{\sphinxstyleemphasis{NotifySend}: \sphinxstyleemphasis{SetSendCallback}}] \leavevmode
 Invoked if there is some space in the tx buffer when entering the ESTABLISHED
 state (e.g. after the ACK for SYN\sphinxhyphen{}ACK is received), after the connection
-succeeds (e.g. after the SYN\sphinxhyphen{}ACK is received) and after each new ack (i.e.
+succeeds (e.g. after the SYN\sphinxhyphen{}ACK is received) and after each new ACK (i.e.
 that advances SND.UNA).
 
 \item[{\sphinxstyleemphasis{NotifyDataRecv}: \sphinxstyleemphasis{SetRecvCallback}}] \leavevmode
-Called when in the receiver buffere there are in\sphinxhyphen{}order bytes, and when in
+Called when in the receiver buffer there are in\sphinxhyphen{}order bytes, and when in
 FIN\_WAIT\_1 or FIN\_WAIT\_2 the socket receive a in\sphinxhyphen{}sequence FIN (that can carry
 data).
 
@@ -6336,18 +6347,18 @@ academic peer\sphinxhyphen{}reviewed paper on these congestion control algorithm
 \sphinxurl{http://dl.acm.org/citation.cfm?id=2756518} .
 
 
-\paragraph{New Reno}
-\label{\detokenize{tcp:new-reno}}
-New Reno algorithm introduces partial ACKs inside the well\sphinxhyphen{}established Reno
+\paragraph{NewReno}
+\label{\detokenize{tcp:newreno}}
+NewReno algorithm introduces partial ACKs inside the well\sphinxhyphen{}established Reno
 algorithm. This and other modifications are described in RFC 6582. We have two
 possible congestion window increment strategy: slow start and congestion
 avoidance. Taken from RFC 5681:
 \begin{quote}
 
 During slow start, a TCP increments cwnd by at most SMSS bytes for
-each ACK received that cumulatively acknowledges new data.  Slow
+each ACK received that cumulatively acknowledges new data. Slow
 start ends when cwnd exceeds ssthresh (or, optionally, when it
-reaches it, as noted above) or when congestion is observed.  While
+reaches it, as noted above) or when congestion is observed. While
 traditionally TCP implementations have increased cwnd by precisely
 SMSS bytes upon receipt of an ACK covering new data, we RECOMMEND
 that TCP implementations increase cwnd, per Equation \eqref{equation:tcp:newrenocongavoid},
@@ -6362,30 +6373,30 @@ segment per round\sphinxhyphen{}trip time (RTT), and for each congestion event, 
 start threshold is halved.
 
 
-\paragraph{High Speed}
-\label{\detokenize{tcp:high-speed}}
+\paragraph{HighSpeed}
+\label{\detokenize{tcp:highspeed}}
 TCP HighSpeed is designed for high\sphinxhyphen{}capacity channels or, in general, for
 TCP connections with large congestion windows.
 Conceptually, with respect to the standard TCP, HighSpeed makes the
 cWnd grow faster during the probing phases and accelerates the
 cWnd recovery from losses.
 This behavior is executed only when the window grows beyond a
-certain threshold, which allows TCP Highspeed to be friendly with standard
+certain threshold, which allows TCP HighSpeed to be friendly with standard
 TCP in environments with heavy congestion, without introducing new dangers
 of congestion collapse.
 
 Mathematically:
-\begin{equation*}
+\begin{equation}\label{equation:tcp:highspeedcwndincrement}
 \begin{split}cWnd = cWnd + \frac{a(cWnd)}{cWnd}\end{split}
-\end{equation*}
+\end{equation}
 The function a() is calculated using a fixed RTT the value 100 ms (the
 lookup table for this function is taken from RFC 3649). For each congestion
 event, the slow start threshold is decreased by a value that depends on the
 size of the slow start threshold itself. Then, the congestion window is set
 to such value.
-\begin{equation*}
+\begin{equation}\label{equation:tcp:highspeedcwnddecrement}
 \begin{split}cWnd = (1-b(cWnd)) \cdot cWnd\end{split}
-\end{equation*}
+\end{equation}
 The lookup table for the function b() is taken from the same RFC.
 More information at: \sphinxurl{http://dl.acm.org/citation.cfm?id=2756518}
 
@@ -6423,17 +6434,19 @@ More information at: \sphinxurl{http://dl.acm.org/citation.cfm?id=381704} and
 TCP Vegas is a pure delay\sphinxhyphen{}based congestion control algorithm implementing a
 proactive scheme that tries to prevent packet drops by maintaining a small
 backlog at the bottleneck queue. Vegas continuously samples the RTT and computes
-the actual throughput a connection achieves using Equation (1) and compares it
-with the expected throughput calculated in Equation (2). The difference between
-these 2 sending rates in Equation (3) reflects the amount of extra packets being
+the actual throughput a connection achieves using Equation \eqref{equation:tcp:vegasactual} and compares it
+with the expected throughput calculated in Equation \eqref{equation:tcp:vegasexpected}. The difference between
+these 2 sending rates in Equation \eqref{equation:tcp:vegasdiff} reflects the amount of extra packets being
 queued at the bottleneck.
-\begin{equation*}
-\begin{split}actual &= \frac{cWnd}{RTT}        \\
-expected &= \frac{cWnd}{BaseRTT}  \\
-diff &= expected - actual\end{split}
-\end{equation*}
+\begin{equation}\label{equation:tcp:vegasactual}
+\begin{split}actual &= \frac{cWnd}{RTT}\end{split}
+\end{equation}\begin{equation}\label{equation:tcp:vegasexpected}
+\begin{split}expected &= \frac{cWnd}{BaseRTT}\end{split}
+\end{equation}\begin{equation}\label{equation:tcp:vegasdiff}
+\begin{split}diff &= expected - actual\end{split}
+\end{equation}
 To avoid congestion, Vegas linearly increases/decreases its congestion window
-to ensure the diff value fall between the two predefined thresholds, alpha and
+to ensure the diff value falls between the two predefined thresholds, alpha and
 beta. diff and another threshold, gamma, are used to determine when Vegas
 should change from its slow\sphinxhyphen{}start mode to linear increase/decrease mode.
 Following the implementation of Vegas in Linux, we use 2, 4, and 1 as the
@@ -6447,19 +6460,19 @@ More information at: \sphinxurl{http://dx.doi.org/10.1109/49.464716}
 \label{\detokenize{tcp:scalable}}
 Scalable improves TCP performance to better utilize the available bandwidth of
 a highspeed wide area network by altering NewReno congestion window adjustment
-algorithm.  When congestion has not been detected, for each ACK received in an
+algorithm. When congestion has not been detected, for each ACK received in an
 RTT, Scalable increases its cwnd per:
-\begin{equation*}
+\begin{equation}\label{equation:tcp:scalablecwndincrement}
 \begin{split}cwnd = cwnd + 0.01\end{split}
-\end{equation*}
+\end{equation}
 Following Linux implementation of Scalable, we use 50 instead of 100 to account
 for delayed ACK.
 
 On the first detection of congestion in a given RTT, cwnd is reduced based on
 the following equation:
-\begin{equation*}
+\begin{equation}\label{equation:tcp:scalablecwnddecrement}
 \begin{split}cwnd = cwnd - ceil(0.125 \cdot cwnd)\end{split}
-\end{equation*}
+\end{equation}
 More information at: \sphinxurl{http://dl.acm.org/citation.cfm?id=956989}
 
 
@@ -6471,37 +6484,37 @@ estimating the backlog at the bottleneck queue to distinguish between
 congestive and non\sphinxhyphen{}congestive states.
 
 The backlog (the number of packets accumulated at the bottleneck queue) is
-calculated using Equation (1):
-\begin{equation*}
+calculated using Equation \eqref{equation:tcp:venoN}:
+\begin{equation}\label{equation:tcp:venoN}
 \begin{split}N &= Actual \cdot (RTT - BaseRTT) \\
   &= Diff \cdot BaseRTT\end{split}
-\end{equation*}
+\end{equation}
 where:
-\begin{equation*}
+\begin{equation}\label{equation:tcp:venoDiff}
 \begin{split}Diff &= Expected - Actual \\
      &= \frac{cWnd}{BaseRTT} - \frac{cWnd}{RTT}\end{split}
-\end{equation*}
+\end{equation}
 Veno makes decision on cwnd modification based on the calculated N and its
 predefined threshold beta.
 
 Specifically, it refines the additive increase algorithm of Reno so that the
 connection can stay longer in the stable state by incrementing cwnd by
 1/cwnd for every other new ACK received after the available bandwidth has
-been fully utilized, i.e. when N exceeds beta.  Otherwise, Veno increases
+been fully utilized, i.e. when N exceeds beta. Otherwise, Veno increases
 its cwnd by 1/cwnd upon every new ACK receipt as in Reno.
 
 In the multiplicative decrease algorithm, when Veno is in the non\sphinxhyphen{}congestive
 state, i.e. when N is less than beta, Veno decrements its cwnd by only 1/5
 because the loss encountered is more likely a corruption\sphinxhyphen{}based loss than a
-congestion\sphinxhyphen{}based.  Only when N is greater than beta, Veno halves its sending
+congestion\sphinxhyphen{}based. Only when N is greater than beta, Veno halves its sending
 rate as in Reno.
 
 More information at: \sphinxurl{http://dx.doi.org/10.1109/JSAC.2002.807336}
 
 
-\paragraph{Bic}
+\paragraph{BIC}
 \label{\detokenize{tcp:bic}}
-In TCP Bic the congestion control problem is viewed as a search
+In TCP BIC the congestion control problem is viewed as a search
 problem. Taking as a starting point the current window value
 and as a target point the last maximum window value
 (i.e. the cWnd value just before the loss event) a binary search
@@ -6545,12 +6558,12 @@ achieve high performance regardless of buffer size
 
 \end{enumerate}
 
-YeAH operates between 2 modes: Fast and Slow mode.  In the Fast mode when the queue
+YeAH operates between 2 modes: Fast and Slow mode. In the Fast mode when the queue
 occupancy is small and the network congestion level is low, YeAH increments
-its congestion window according to the aggressive STCP rule.  When the number of packets
+its congestion window according to the aggressive HSTCP rule. When the number of packets
 in the queue grows beyond a threshold and the network congestion level is high, YeAH enters
-its Slow mode, acting as Reno with a decongestion algorithm.  YeAH employs Vegas’ mechanism
-for calculating the backlog as in Equation \eqref{equation:tcp:q_yeah}.  The estimation of the network congestion
+its Slow mode, acting as Reno with a decongestion algorithm. YeAH employs Vegas’ mechanism
+for calculating the backlog as in Equation \eqref{equation:tcp:q_yeah}. The estimation of the network congestion
 level is shown in Equation \eqref{equation:tcp:l_yeah}.
 \begin{equation}\label{equation:tcp:q_yeah}
 \begin{split}Q = (RTT - BaseRTT) \cdot \frac{cWnd}{RTT}\end{split}
@@ -6558,63 +6571,65 @@ level is shown in Equation \eqref{equation:tcp:l_yeah}.
 \begin{split}L = \frac{RTT - BaseRTT}{BaseRTT}\end{split}
 \end{equation}
 To ensure TCP friendliness, YeAH also implements an algorithm to detect the presence of legacy
-Reno flows.  Upon the receipt of 3 duplicate ACKs, YeAH decreases its slow start threshold
-according to Equation (3) if it’s not competing with Reno flows.  Otherwise,  the ssthresh is
+Reno flows. Upon the receipt of 3 duplicate ACKs, YeAH decreases its slow start threshold
+according to Equation \eqref{equation:tcp:yeahssthresh} if it’s not competing with Reno flows. Otherwise, the ssthresh is
 halved as in Reno:
-\begin{equation*}
+\begin{equation}\label{equation:tcp:yeahssthresh}
 \begin{split}ssthresh = min(max(\frac{cWnd}{8}, Q), \frac{cWnd}{2})\end{split}
-\end{equation*}
+\end{equation}
 More information: \sphinxurl{http://www.csc.lsu.edu/~sjpark/cs7601/4-YeAH\_TCP.pdf}
 
 
 \paragraph{Illinois}
 \label{\detokenize{tcp:illinois}}
 TCP Illinois is a hybrid congestion control algorithm designed for
-high\sphinxhyphen{}speed networks.  Illinois implements a Concave\sphinxhyphen{}AIMD (or C\sphinxhyphen{}AIMD)
+high\sphinxhyphen{}speed networks. Illinois implements a Concave\sphinxhyphen{}AIMD (or C\sphinxhyphen{}AIMD)
 algorithm that uses packet loss as the primary congestion signal to
 determine the direction of window update and queueing delay as the
 secondary congestion signal to determine the amount of change.
 
 The additive increase and multiplicative decrease factors (denoted as
 alpha and beta, respectively) are functions of the current average queueing
-delay da as shown in Equations (1) and (2).  To improve the protocol
+delay da as shown in Equations \eqref{equation:tcp:illinoisalpha} and \eqref{equation:tcp:illinoisbeta}. To improve the protocol
 robustness against sudden fluctuations in its delay sampling,
 Illinois allows the increment of alpha to alphaMax
 only if da stays below d1 for a some (theta) amount of time.
-\begin{equation*}
+\begin{equation}\label{equation:tcp:illinoisalpha}
 \begin{split}alpha &=
 \begin{cases}
    \quad alphaMax              & \quad \text{if } da <= d1 \\
    \quad k1 / (k2 + da)        & \quad \text{otherwise} \\
-\end{cases} \\
-\\
-beta &=
+\end{cases}\end{split}
+\end{equation}\begin{equation}\label{equation:tcp:illinoisbeta}
+\begin{split}beta &=
 \begin{cases}
    \quad betaMin               & \quad \text{if } da <= d2 \\
    \quad k3 + k4 \, da         & \quad \text{if } d2 < da < d3 \\
    \quad betaMax               & \quad \text{otherwise}
 \end{cases}\end{split}
-\end{equation*}
+\end{equation}
 where the calculations of k1, k2, k3, and k4 are shown in the following:
-\begin{equation*}
-\begin{split}k1 &= \frac{(dm - d1) \cdot alphaMin \cdot alphaMax}{alphaMax - alphaMin} \\
-\\
-k2 &= \frac{(dm - d1) \cdot alphaMin}{alphaMax - alphaMin} - d1 \\
-\\
-k3 &= \frac{alphaMin \cdot d3 - alphaMax \cdot d2}{d3 - d2} \\
-\\
-k4 &= \frac{alphaMax - alphaMin}{d3 - d2}\end{split}
-\end{equation*}
+\begin{equation}\label{equation:tcp:illinoisk1}
+\begin{split}k1 &= \frac{(dm - d1) \cdot alphaMin \cdot alphaMax}{alphaMax - alphaMin}\end{split}
+\end{equation}\begin{equation}\label{equation:tcp:illinoisk2}
+\begin{split}k2 &= \frac{(dm - d1) \cdot alphaMin}{alphaMax - alphaMin} - d1\end{split}
+\end{equation}\begin{equation}\label{equation:tcp:illinoisk3}
+\begin{split}k3 &= \frac{alphaMin \cdot d3 - alphaMax \cdot d2}{d3 - d2}\end{split}
+\end{equation}\begin{equation}\label{equation:tcp:illinoisk4}
+\begin{split}k4 &= \frac{alphaMax - alphaMin}{d3 - d2}\end{split}
+\end{equation}
 Other parameters include da (the current average queueing delay), and
 Ta (the average RTT, calculated as sumRtt / cntRtt in the implementation) and
 Tmin (baseRtt in the implementation) which is the minimum RTT ever seen.
 dm is the maximum (average) queueing delay, and Tmax (maxRtt in the
 implementation) is the maximum RTT ever seen.
-\begin{align*}\!\begin{aligned}
-da &= Ta - Tmin\\
-dm &= Tmax - Tmin\\
-d_i &= eta_i \cdot dm\\
-\end{aligned}\end{align*}
+\begin{equation}\label{equation:tcp:illinoisda}
+\begin{split}da &= Ta - Tmin\end{split}
+\end{equation}\begin{equation}\label{equation:tcp:illinoisdm}
+\begin{split}dm &= Tmax - Tmin\end{split}
+\end{equation}\begin{equation}\label{equation:tcp:illinoisdi}
+\begin{split}d_i &= eta_i \cdot dm\end{split}
+\end{equation}
 Illinois only executes its adaptation of alpha and beta when cwnd exceeds a threshold
 called winThresh. Otherwise, it sets alpha and beta to the base values of 1 and 0.5,
 respectively.
@@ -6662,17 +6677,17 @@ with the same rate of increment and decrement for the congestion window.
 However, in high BDP networks, when it finds no congestion on the path
 after \sphinxcode{\sphinxupquote{deltal}} seconds, it increases the window size based on the alpha
 function in the following:
-\begin{equation*}
+\begin{equation}\label{equation:tcp:htcpalpha}
 \begin{split}alpha(delta)=1+10(delta-deltal)+0.5(delta-deltal)^2\end{split}
-\end{equation*}
+\end{equation}
 where \sphinxcode{\sphinxupquote{deltal}} is a threshold in seconds for switching between the modes and
 \sphinxcode{\sphinxupquote{delta}} is the elapsed time from the last congestion. During congestion,
 it reduces the window size by multiplying by beta function provided
-in the reference paper.  The calculated throughput between the last two
+in the reference paper. The calculated throughput between the last two
 consecutive congestion events is considered for beta calculation.
 
 The transport \sphinxcode{\sphinxupquote{TcpHtcp}} can be selected in the program
-\sphinxcode{\sphinxupquote{examples/tcp/tcp\sphinxhyphen{}variants/comparison}} to perform an experiment with H\sphinxhyphen{}TCP,
+\sphinxcode{\sphinxupquote{examples/tcp/tcp\sphinxhyphen{}variants\sphinxhyphen{}comparison.cc}} to perform an experiment with H\sphinxhyphen{}TCP,
 although it is useful to increase the bandwidth in this example (e.g.
 to 20 Mb/s) to create a higher BDP link, such as
 
@@ -6680,9 +6695,9 @@ to 20 Mb/s) to create a higher BDP link, such as
 \PYG{p}{.}\PYG{o}{/}\PYG{n}{waf} \PYG{o}{\PYGZhy{}}\PYG{o}{\PYGZhy{}}\PYG{n}{run} \PYG{l+s}{\PYGZdq{}}\PYG{l+s}{tcp\PYGZhy{}variants\PYGZhy{}comparison \PYGZhy{}\PYGZhy{}transport\PYGZus{}prot=TcpHtcp \PYGZhy{}\PYGZhy{}bandwidth=20Mbps \PYGZhy{}\PYGZhy{}duration=10}\PYG{l+s}{\PYGZdq{}}
 \end{sphinxVerbatim}
 
-More information (paper):  \sphinxurl{http://www.hamilton.ie/net/htcp3.pdf}
+More information (paper): \sphinxurl{http://www.hamilton.ie/net/htcp3.pdf}
 
-More information (Internet Draft):  \sphinxurl{https://tools.ietf.org/html/draft-leith-tcp-htcp-06}
+More information (Internet Draft): \sphinxurl{https://tools.ietf.org/html/draft-leith-tcp-htcp-06}
 
 
 \paragraph{LEDBAT}
@@ -6695,7 +6710,7 @@ congestion that the flow itself induces in the network.
 
 As a first approximation, the LEDBAT sender operates as shown below:
 
-on receipt of an ACK:
+On receipt of an ACK:
 \begin{equation*}
 \begin{split}currentdelay = acknowledgement.delay
 basedelay = min (basedelay, currentdelay)
@@ -6705,7 +6720,7 @@ cWnd += GAIN * offtarget * bytesnewlyacked * MSS / cWnd\end{split}
 \end{equation*}
 \sphinxcode{\sphinxupquote{TARGET}} is the maximum queueing delay that LEDBAT itself may introduce in the
 network, and \sphinxcode{\sphinxupquote{GAIN}} determines the rate at which the cwnd responds to changes in
-queueing delay;  \sphinxcode{\sphinxupquote{offtarget}} is a normalized value representing the difference between
+queueing delay; \sphinxcode{\sphinxupquote{offtarget}} is a normalized value representing the difference between
 the measured current queueing delay and the predetermined TARGET delay. offtarget can
 be positive or negative; consequently, cwnd increases or decreases in proportion to
 offtarget.
@@ -6770,12 +6785,12 @@ More information about LEDBAT is available in RFC 6817: \sphinxurl{https://tools
 
 \paragraph{TCP\sphinxhyphen{}LP}
 \label{\detokenize{tcp:tcp-lp}}
-TCP\sphinxhyphen{}Low priority is a delay based congestion control protocol in which the low
+TCP\sphinxhyphen{}Low Priority (TCP\sphinxhyphen{}LP) is a delay based congestion control protocol in which the low
 priority data utilizes only the excess bandwidth available on an end\sphinxhyphen{}to\sphinxhyphen{}end path.
 TCP\sphinxhyphen{}LP uses one way delay measurements as an indicator of congestion as it does
 not influence cross\sphinxhyphen{}traffic in the reverse direction.
 
-On acknowledgement:
+On receipt of an ACK:
 \begin{equation*}
 \begin{split}One way delay = Receiver timestamp - Receiver timestamp echo reply
 Smoothed one way delay = 7/8 * Old Smoothed one way delay + 1/8 * one way delay
@@ -6804,23 +6819,12 @@ window based on this estimate. This approach achieves high burst tolerance, low
 latency, and high throughput with shallow\sphinxhyphen{}buffered switches.
 \begin{itemize}
 \item {} 
-Receiver functionality: If CE is set in IP header of incoming packet, send
+Receiver functionality: If CE is set in IP header of incoming packet, send congestion notification to the sender by setting ECE in TCP header. This processing is different from standard ECN processing which sets ECE bit for every ACK until it observes CWR
 
-\end{itemize}
-
-congestion notification to the sender by setting ECE in TCP header. This processing
-is different from standard ECN processing which sets ECE bit for every ACK untill
-it observes CWR
-\begin{itemize}
 \item {} 
-Sender functionality: The sender makes use of the modified receiver ECE semantics
+Sender functionality: The sender makes use of the modified receiver ECE semantics to maintain an average of fraction of packets marked (α) by using the exponential weighted moving average as shown below:
 
 \end{itemize}
-\begin{description}
-\item[{to maintain an average of fraction of packets marked (α) by using the exponential}] \leavevmode
-weighted moving average as shown below:
-
-\end{description}
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
 α = (1 \PYGZhy{} g) x α + g x F
@@ -6893,7 +6897,7 @@ ECT flags should not be set for SYN, SYN+ACK and pure ACK packets, but should be
 ECE should be set only when CE flags are received at receiver and even if sender doesn’t send CWR, receiver should not send ECE if it doesn’t receive packets with CE flags
 
 \item {} 
-DCTCP follows New Reno behavior for slow start
+DCTCP follows NewReno behavior for slow start
 
 \item {} 
 Test to validate cwnd decrement in DCTCP
@@ -6908,7 +6912,7 @@ fairness, and queue delay properties of the network.
 
 This implementation was tested extensively against a version of DCTCP in
 the Linux kernel version 4.4 using the ns\sphinxhyphen{}3 direct code execution (DCE)
-environment.  Some differences were noted:
+environment. Some differences were noted:
 \begin{itemize}
 \item {} 
 Linux maintains its congestion window in segments and not bytes, and
@@ -6969,8 +6973,10 @@ The following enum represents the mode of ECN:
     \PYG{n}{DctcpEcn}\PYG{p}{,}    \PYG{c+c1}{//!\PYGZlt{} ECN functionality as described in RFC 8257. Note: this mode is specific to DCTCP.}
   \PYG{p}{\PYGZcb{}} \PYG{n}{EcnMode\PYGZus{}t}\PYG{p}{;}
 \end{sphinxVerbatim}
+
+The following are some important ECN parameters:
 \begin{description}
-\item[{The following are some important ECN parameters}] \leavevmode
+\item[{::}] \leavevmode
 // ECN parameters
 EcnMode\_t              m\_ecnMode \{ClassicEcn\}; //!\textless{} ECN mode
 UseEcn\_t               m\_useEcn \{Off\};         //!\textless{} Socket ECN capability
@@ -6980,9 +6986,9 @@ UseEcn\_t               m\_useEcn \{Off\};         //!\textless{} Socket ECN cap
 
 \paragraph{Enabling ECN}
 \label{\detokenize{tcp:enabling-ecn}}
-By default, support for ECN is disabled in TCP sockets.  To enable, change
+By default, support for ECN is disabled in TCP sockets. To enable, change
 the value of the attribute \sphinxcode{\sphinxupquote{ns3::TcpSocketBase::UseEcn}} to \sphinxcode{\sphinxupquote{On}}.
-Following are supported value for the same, this functionality is aligned with
+Following are supported values for the same, this functionality is aligned with
 Linux: \sphinxurl{https://www.kernel.org/doc/Documentation/networking/ip-sysctl.txt}
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
@@ -7064,7 +7070,7 @@ Sender sends ACK
 Once the ECN\sphinxhyphen{}negotiation is successful, the sender sends data packets with ECT
 bits set in the IP header.
 
-Note: As mentioned in Section 6.1.1 of RFC 3168, ECT bits should not be set
+Note: As mentioned in \sphinxhref{https://tools.ietf.org/html/rfc3168\#section-6.1.1}{Section 6.1.1 of RFC 3168}, ECT bits should not be set
 during ECN negotiation. The ECN negotiation implemented in \sphinxstyleemphasis{ns\sphinxhyphen{}3} follows
 this guideline.
 
@@ -7092,7 +7098,7 @@ is set as ECN\_ECE\_RCVD
 The sender’s state changes to ECN\_CWR\_SENT when it sends a packet with
 CWR bit set. It remains in this state until an ACK with valid ECE is received
 (i.e., ECE is received for a packet that belongs to a new window),
-following which, it’s state changes to ECN\_ECE\_RCVD.
+following which, its state changes to ECN\_ECE\_RCVD.
 
 \end{enumerate}
 
@@ -7104,22 +7110,22 @@ been implemented:
 \begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \item {} 
-Pure ACK packets should not have the ECT bit set (Section 6.1.4).
+Pure ACK packets should not have the ECT bit set (\sphinxhref{https://tools.ietf.org/html/rfc3168\#section-6.1.4}{Section 6.1.4}).
 
 \item {} 
 In the current implementation, the sender only sends ECT(0) in the IP header.
 
 \item {} 
 The sender should should reduce the congestion window only once in each
-window (Section 6.1.2).
+window (\sphinxhref{https://tools.ietf.org/html/rfc3168\#section-6.1.2}{Section 6.1.2}).
 
 \item {} 
 The receiver should ignore the CE bits set in a packet arriving out of
-window (Section 6.1.5).
+window (\sphinxhref{https://tools.ietf.org/html/rfc3168\#section-6.1.5}{Section 6.1.5}).
 
 \item {} 
 The sender should ignore the ECE bits set in the packet arriving out of
-window (Section 6.1.2).
+window (\sphinxhref{https://tools.ietf.org/html/rfc3168\#section-6.1.2}{Section 6.1.2}).
 
 \end{enumerate}
 
@@ -7130,14 +7136,14 @@ The following issues are yet to be addressed:
 \begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \item {} 
-Retransmitted packets should not have the CWR bit set (Section 6.1.5).
+Retransmitted packets should not have the CWR bit set (\sphinxhref{https://tools.ietf.org/html/rfc3168\#section-6.1.5}{Section 6.1.5}).
 
 \item {} 
 Despite the congestion window size being 1 MSS, the sender should reduce its
 congestion window by half when it receives a packet with the ECE bit set. The
 sender must reset the retransmit timer on receiving the ECN\sphinxhyphen{}Echo packet when
-the congestion window is one.  The sending TCP will then be able to send a
-new packet only when the retransmit timer expires (Section 6.1.2).
+the congestion window is one. The sending TCP will then be able to send a
+new packet only when the retransmit timer expires (\sphinxhref{https://tools.ietf.org/html/rfc3168\#section-6.1.2}{Section 6.1.2}).
 
 \item {} 
 Support for separately handling the enabling of ECN on the incoming and
@@ -7149,10 +7155,10 @@ ECT codepoints on its outbound data segments).
 
 \subsubsection{Validation}
 \label{\detokenize{tcp:validation}}
-The following tests are found in the \sphinxcode{\sphinxupquote{src/internet/test}} directory.  In
+The following tests are found in the \sphinxcode{\sphinxupquote{src/internet/test}} directory. In
 general, TCP tests inherit from a class called \sphinxcode{\sphinxupquote{TcpGeneralTest}},
 which provides common operations to set up test scenarios involving TCP
-objects.  For more information on how to write new tests, see the
+objects. For more information on how to write new tests, see the
 section below on {\hyperref[\detokenize{tcp:writing-tcp-tests}]{\sphinxcrossref{\DUrole{std,std-ref}{Writing TCP tests}}}}.
 \begin{itemize}
 \item {} 
@@ -7177,7 +7183,7 @@ section below on {\hyperref[\detokenize{tcp:writing-tcp-tests}]{\sphinxcrossref{
 \sphinxstylestrong{tcp\sphinxhyphen{}header:} Unit tests on the TCP header
 
 \item {} 
-\sphinxstylestrong{tcp\sphinxhyphen{}highspeed\sphinxhyphen{}test:} Unit tests on the Highspeed congestion control
+\sphinxstylestrong{tcp\sphinxhyphen{}highspeed\sphinxhyphen{}test:} Unit tests on the HighSpeed congestion control
 
 \item {} 
 \sphinxstylestrong{tcp\sphinxhyphen{}htcp\sphinxhyphen{}test:} Unit tests on the H\sphinxhyphen{}TCP congestion control
@@ -7210,13 +7216,16 @@ section below on {\hyperref[\detokenize{tcp:writing-tcp-tests}]{\sphinxcrossref{
 \sphinxstylestrong{tcp\sphinxhyphen{}lp\sphinxhyphen{}test:} Unit tests on the TCP\sphinxhyphen{}LP congestion control
 
 \item {} 
+\sphinxstylestrong{tcp\sphinxhyphen{}dctcp\sphinxhyphen{}test:} Unit tests on the DCTCP congestion control
+
+\item {} 
 \sphinxstylestrong{tcp\sphinxhyphen{}option:} Unit tests on TCP options
 
 \item {} 
 \sphinxstylestrong{tcp\sphinxhyphen{}pkts\sphinxhyphen{}acked\sphinxhyphen{}test:} Unit test the number of time that PktsAcked is called
 
 \item {} 
-\sphinxstylestrong{tcp\sphinxhyphen{}rto\sphinxhyphen{}test:} Unit test behavior after a RTO timeout occurs
+\sphinxstylestrong{tcp\sphinxhyphen{}rto\sphinxhyphen{}test:} Unit test behavior after a RTO occurs
 
 \item {} 
 \sphinxstylestrong{tcp\sphinxhyphen{}rtt\sphinxhyphen{}estimation\sphinxhyphen{}test:} Check RTT calculations, including retransmission cases
@@ -7237,12 +7246,12 @@ section below on {\hyperref[\detokenize{tcp:writing-tcp-tests}]{\sphinxcrossref{
 \sphinxstylestrong{tcp\sphinxhyphen{}close\sphinxhyphen{}test:} Unit test on the socket closing: both receiver and sender have to close their socket when all bytes are transferred
 
 \item {} 
-\sphinxstylestrong{tcp\sphinxhyphen{}ecn\sphinxhyphen{}test:} Unit tests on explicit congestion notification
+\sphinxstylestrong{tcp\sphinxhyphen{}ecn\sphinxhyphen{}test:} Unit tests on Explicit Congestion Notification
 
 \end{itemize}
 
 Several tests have dependencies outside of the \sphinxcode{\sphinxupquote{internet}} module, so they
-are located in a system test directory called \sphinxcode{\sphinxupquote{src/test/ns3tcp}}.  Three
+are located in a system test directory called \sphinxcode{\sphinxupquote{src/test/ns3tcp}}. Three
 of these six tests involve use of the Network Simulation Cradle, and are
 disabled if NSC is not enabled in the build.
 \begin{itemize}
@@ -7259,7 +7268,7 @@ disabled if NSC is not enabled in the build.
 \sphinxstylestrong{nsc\sphinxhyphen{}tcp\sphinxhyphen{}loss:} Check behavior of NSC TCP upon packet losses
 
 \item {} 
-\sphinxstylestrong{ns3\sphinxhyphen{}tcp\sphinxhyphen{}no\sphinxhyphen{}delay:} Check that ns\sphinxhyphen{}3 TCP Nagle”s algorithm works correctly and that it can be disabled
+\sphinxstylestrong{ns3\sphinxhyphen{}tcp\sphinxhyphen{}no\sphinxhyphen{}delay:} Check that ns\sphinxhyphen{}3 TCP Nagle’s algorithm works correctly and that it can be disabled
 
 \item {} 
 \sphinxstylestrong{ns3\sphinxhyphen{}tcp\sphinxhyphen{}socket:} Check that ns\sphinxhyphen{}3 TCP successfully transfers an application data write of various sizes
@@ -7363,7 +7372,7 @@ same when SACK based loss recovery is used.
 
 \paragraph{Proportional Rate Reduction}
 \label{\detokenize{tcp:proportional-rate-reduction}}
-Proportional Rate Reduction (PRR) is the fast recovery algorithm described in
+Proportional Rate Reduction (PRR) is a loss recovery algorithm described in
 RFC 6937 and currently used in Linux. The design of PRR helps in avoiding
 excess window adjustments and aims to keep the congestion window as close as
 possible to ssThresh.
@@ -7401,9 +7410,9 @@ After limit calculation, the cWnd is updated as given below:
 \end{equation*}\begin{equation*}
 \begin{split}cWnd = pipe + sndcnt\end{split}
 \end{equation*}
-More information (paper):  \sphinxurl{https://dl.acm.org/citation.cfm?id=2068832}
+More information (paper): \sphinxurl{https://dl.acm.org/citation.cfm?id=2068832}
 
-More information (RFC):  \sphinxurl{https://tools.ietf.org/html/rfc6937}
+More information (RFC): \sphinxurl{https://tools.ietf.org/html/rfc6937}
 
 
 \subsubsection{Adding a new loss recovery algorithm in ns\sphinxhyphen{}3}
@@ -7464,7 +7473,7 @@ to a congestion avoidance algorithm:
 \begin{split}delivery_rate = (d1 - d0)/(t1 - t0)\end{split}
 \end{equation*}
 The implementation to estimate delivery rate is a joint work between TcpTxBuffer and TcpRateOps.
-For more information, please take a look at their doxygen documentation.
+For more information, please take a look at their Doxygen documentation.
 
 The implementation follows the Internet draft (Delivery Rate Estimation):
 \sphinxurl{https://tools.ietf.org/html/draft-cheng-iccrg-delivery-rate-estimation-00}
@@ -7479,14 +7488,14 @@ TcpCongestionOps interface does not contain every possible Linux operation
 
 
 \subsubsection{Writing TCP tests}
-\label{\detokenize{tcp:writing-tcp-tests}}\label{\detokenize{tcp:id1}}
+\label{\detokenize{tcp:writing-tcp-tests}}\label{\detokenize{tcp:id4}}
 The TCP subsystem supports automated test
 cases on both socket functions and congestion control algorithms. To show
 how to write tests for TCP, here we explain the process of creating a test
-case that reproduces a bug (\#1571 in the project bug tracker).
+case that reproduces the {\color{red}\bfseries{}\textasciigrave{}Bug \#1571\textless{}https://www.nsnam.org/bugzilla/show\_bug.cgi?id=1571\textgreater{}\textasciigrave{}\_}.
 
-The bug concerns the zero window situation, which happens when the receiver can
-not handle more data. In this case, it advertises a zero window, which causes
+The bug concerns the zero window situation, which happens when the receiver
+cannot handle more data. In this case, it advertises a zero window, which causes
 the sender to pause transmission and wait for the receiver to increase the
 window.
 
@@ -7510,7 +7519,7 @@ the interesting values inside the method. To get a list of available methods,
 please check the Doxygen documentation.
 \end{sphinxadmonition}
 
-We describe the writing of two test case, covering both situations: the
+We describe the writing of two test cases, covering both situations: the
 sender’s zero\sphinxhyphen{}window probing and the receiver “active” window update. Our focus
 will be on dealing with the reported problems, which are:
 \begin{itemize}
@@ -7583,7 +7592,7 @@ Application starting time: 20 s after the starting point
 
 To define the properties of the environment (e.g. properties which should be
 set before the object creation, such as propagation delay) one next implements
-ehe method ConfigureEnvironment:
+the method ConfigureEnvironment:
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
 \PYG{k+kt}{void}
@@ -7602,7 +7611,7 @@ ConfigureProperties ().
 The difference is that some values, such as initial congestion window
 or initial slow start threshold, are applicable only to a single instance, not
 to every instance we have. Usually, methods that requires an id and a value
-are meant to be called inside ConfigureProperties (). Please see the doxygen
+are meant to be called inside ConfigureProperties (). Please see the Doxygen
 documentation for an exhaustive list of the tunable properties.
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
@@ -7957,19 +7966,19 @@ framework for wrapping real\sphinxhyphen{}world network code into simulators, al
 simulation of real\sphinxhyphen{}world behavior at little extra cost. This work has been
 validated by comparing situations using a test network with the same situations
 in the simulator. To date, it has been shown that the NSC is able to produce
-extremely accurate results.  NSC supports four real world stacks: FreeBSD,
+extremely accurate results. NSC supports four real world stacks: FreeBSD,
 OpenBSD, lwIP and Linux. Emphasis has been placed on not changing any of the
 network stacks by hand. Not a single line of code has been changed in the
 network protocol implementations of any of the above four stacks. However, a
 custom C parser was built to programmatically change source code.
 
 NSC has previously been ported to \sphinxstyleemphasis{ns\sphinxhyphen{}2} and OMNeT++, and was
-was added to \sphinxstyleemphasis{ns\sphinxhyphen{}3} in September 2008 (ns\sphinxhyphen{}3.2 release).  This section
+was added to \sphinxstyleemphasis{ns\sphinxhyphen{}3} in September 2008 (ns\sphinxhyphen{}3.2 release). This section
 describes the \sphinxstyleemphasis{ns\sphinxhyphen{}3} port of NSC and how to use it.
 
 NSC has been obsoleted by the Linux kernel support within
-\sphinxhref{http://www.nsnam.org/docs/dce/manual/singlehtml/index.html}{Direct Code Execution (DCE)}.  However, NSC is still available through the bake build
-system.  NSC supports Linux kernels 2.6.18 and 2.6.26, and an experimental
+\sphinxhref{http://www.nsnam.org/docs/dce/manual/singlehtml/index.html}{Direct Code Execution (DCE)}. However, NSC is still available through the bake build
+system. NSC supports Linux kernels 2.6.18 and 2.6.26, and an experimental
 version of 2.6.29 exists on ns\sphinxhyphen{}3’s code server
 (\sphinxurl{http://code.nsnam.org/fw/nsc-linux-2.6.29/}), but newer
 versions of the kernel have not been ported.
@@ -7978,7 +7987,7 @@ versions of the kernel have not been ported.
 \subsubsection{Prerequisites}
 \label{\detokenize{tcp:prerequisites}}
 Presently, NSC has been tested and shown to work on these platforms:
-Linux i386 and Linux x86\sphinxhyphen{}64.  NSC does not support powerpc.  Use on
+Linux i386 and Linux x86\sphinxhyphen{}64. NSC does not support powerpc. Use on
 FreeBSD or OS X is unsupported (although it may be able to work).
 
 Building NSC requires the packages flex and bison.
@@ -8075,7 +8084,7 @@ type:
 \end{sphinxVerbatim}
 
 If waf detects NSC, then building \sphinxstyleemphasis{ns\sphinxhyphen{}3} with NSC is performed the same way
-with waf as without it.  Once \sphinxstyleemphasis{ns\sphinxhyphen{}3} is built, try running the following
+with waf as without it. Once \sphinxstyleemphasis{ns\sphinxhyphen{}3} is built, try running the following
 test suite:
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
@@ -8093,8 +8102,8 @@ This confirms that NSC is ready to use.
 
 
 \subsubsection{Usage}
-\label{\detokenize{tcp:id2}}
-There are a few example files.  Try:
+\label{\detokenize{tcp:id5}}
+There are a few example files. Try:
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
 \PYGZdl{} ./waf \PYGZhy{}\PYGZhy{}run tcp\PYGZhy{}nsc\PYGZhy{}zoo
@@ -8118,9 +8127,9 @@ set:
 \PYG{n}{internetStack}\PYG{p}{.}\PYG{n}{Install} \PYG{p}{(}\PYG{n}{n}\PYG{p}{.}\PYG{n}{Get}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{)}\PYG{p}{)}\PYG{p}{;}
 \end{sphinxVerbatim}
 
-The key line is the \sphinxcode{\sphinxupquote{SetNscStack}}.  This tells the InternetStack
+The key line is the \sphinxcode{\sphinxupquote{SetNscStack}}. This tells the InternetStack
 helper to aggregate instances of NSC TCP instead of native \sphinxstyleemphasis{ns\sphinxhyphen{}3} TCP
-to the remaining nodes.  It is important that this function be called
+to the remaining nodes. It is important that this function be called
 \sphinxstylestrong{before} calling the \sphinxcode{\sphinxupquote{Install()}} function, as shown above.
 
 Which stacks are available to use? Presently, the focus has been on
@@ -8160,18 +8169,18 @@ can see the following configuration:
 
 These additional configuration variables are not available to native \sphinxstyleemphasis{ns\sphinxhyphen{}3} TCP.
 
-Also note that default values for TCP attributes in \sphinxstyleemphasis{ns\sphinxhyphen{}3} TCP may differ from the nsc TCP implementation.  Specifically in \sphinxstyleemphasis{ns\sphinxhyphen{}3}:
+Also note that default values for TCP attributes in \sphinxstyleemphasis{ns\sphinxhyphen{}3} TCP may differ from the NSC TCP implementation. Specifically in \sphinxstyleemphasis{ns\sphinxhyphen{}3}:
 \begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{)}%
 \item {} 
 TCP default MSS is 536
 
 \item {} 
-TCP Delayed Ack count is 2
+TCP Delayed ACK count is 2
 
 \end{enumerate}
 
-Therefore when making comparisons between results obtained using nsc and \sphinxstyleemphasis{ns\sphinxhyphen{}3} TCP, care must be taken to ensure these values are set appropriately.  See /examples/tcp/tcp\sphinxhyphen{}nsc\sphinxhyphen{}comparision.cc for an example.
+Therefore when making comparisons between results obtained using NSC and \sphinxstyleemphasis{ns\sphinxhyphen{}3} TCP, care must be taken to ensure these values are set appropriately. See /examples/tcp/tcp\sphinxhyphen{}nsc\sphinxhyphen{}comparison.cc for an example.
 
 
 \subsubsection{NSC API}
@@ -8183,7 +8192,7 @@ defined in \sphinxcode{\sphinxupquote{sim/sim\_interface.h}} in the nsc director
 \item {} 
 \sphinxstylestrong{INetStack} INetStack contains the ‘low level’ operations for the operating
 system network stack, e.g. in and output functions from and to the network
-stack (think of this as the ‘network driver interface’. There are also
+stack (think of this as the ‘network driver interface’). There are also
 functions to create new TCP or UDP sockets.
 
 \item {} 
@@ -8191,7 +8200,7 @@ functions to create new TCP or UDP sockets.
 the network. This simulator should use this callback to re\sphinxhyphen{}inject the packet
 into the simulator so the actual data can be delivered/routed to its
 destination, where it will eventually be handed into Receive() (and eventually
-back to the receivers NSC instance via INetStack\sphinxhyphen{}\textgreater{}if\_receive() ).
+back to the receivers NSC instance via INetStack\sphinxhyphen{}\textgreater{}if\_receive()).
 
 \item {} 
 \sphinxstylestrong{INetStreamSocket} This is the structure defining a particular connection
@@ -8199,7 +8208,7 @@ endpoint (file descriptor). It contains methods to operate on this endpoint,
 e.g. connect, disconnect, accept, listen, send\_data/read\_data, …
 
 \item {} 
-\sphinxstylestrong{IInterruptCallback} This contains the wakeup callback, which is called by
+\sphinxstylestrong{IInterruptCallback} This contains the wakeup() callback, which is called by
 NSC whenever something of interest happens. Think of wakeup() as a replacement
 of the operating systems wakeup function: Whenever the operating system would
 wake up a process that has been waiting for an operation to complete (for
@@ -8217,54 +8226,54 @@ follows.
 The three main parts are:
 \begin{itemize}
 \item {} 
-\sphinxcode{\sphinxupquote{ns3::NscTcpL4Protocol}}:  a subclass of Ipv4L4Protocol (and two nsc
+\sphinxcode{\sphinxupquote{ns3::NscTcpL4Protocol}}: a subclass of Ipv4L4Protocol (and two NSC
 classes: ISendCallback and IInterruptCallback)
 
 \item {} 
 \sphinxcode{\sphinxupquote{ns3::NscTcpSocketImpl}}: a subclass of TcpSocket
 
 \item {} 
-\sphinxcode{\sphinxupquote{ns3::NscTcpSocketFactoryImpl}}:  a factory to create new NSC
+\sphinxcode{\sphinxupquote{ns3::NscTcpSocketFactoryImpl}}: a factory to create new NSC
 sockets
 
 \end{itemize}
 
 \sphinxcode{\sphinxupquote{src/internet/model/nsc\sphinxhyphen{}tcp\sphinxhyphen{}l4\sphinxhyphen{}protocol}} is the main class. Upon
-Initialization, it loads an nsc network stack to use (via dlopen()). Each
+Initialization, it loads an NSC network stack to use (via dlopen()). Each
 instance of this class may use a different stack. The stack (=shared library) to
 use is set using the SetNscLibrary() method (at this time its called indirectly
-via the internet stack helper). The nsc stack is then set up accordingly (timers
+via the internet stack helper). The NSC stack is then set up accordingly (timers
 etc). The NscTcpL4Protocol::Receive() function hands the packet it receives
-(must be a complete tcp/ip packet) to the nsc stack for further processing.  To
-be able to send packets, this class implements the nsc send\_callback method.
-This method is called by nsc whenever the nsc stack wishes to send a packet out
+(must be a complete TCP/IP packet) to the NSC stack for further processing. To
+be able to send packets, this class implements the NSC send\_callback() method.
+This method is called by NSC whenever the NSC stack wishes to send a packet out
 to the network. Its arguments are a raw buffer, containing a complete TCP/IP
 packet, and a length value. This method therefore has to convert the raw data to
-a Ptr\textless{}Packet\textgreater{} usable by \sphinxstyleemphasis{ns\sphinxhyphen{}3}. In order to avoid various ipv4 header issues,
-the nsc ip header is not included. Instead, the tcp header and the actual
+a Ptr\textless{}Packet\textgreater{} usable by \sphinxstyleemphasis{ns\sphinxhyphen{}3}. In order to avoid various IPv4 header issues,
+the NSC IP header is not included. Instead, the TCP header and the actual
 payload are put into the Ptr\textless{}Packet\textgreater{}, after this the Packet is passed down to
 layer 3 for sending the packet out (no further special treatment is needed in
 the send code path).
 
-This class calls \sphinxcode{\sphinxupquote{ns3::NscTcpSocketImpl}} both from the nsc wakeup() callback
-and from the Receive path (to ensure that possibly queued data is scheduled for
+This class calls \sphinxcode{\sphinxupquote{ns3::NscTcpSocketImpl}} both from the NSC wakeup() callback
+and from the receive path (to ensure that possibly queued data is scheduled for
 sending).
 
-\sphinxcode{\sphinxupquote{src/internet/model/nsc\sphinxhyphen{}tcp\sphinxhyphen{}socket\sphinxhyphen{}impl}} implements the nsc socket interface.
-Each instance has its own nscTcpSocket. Data that is Send() will be handed to
-the nsc stack via m\_nscTcpSocket\sphinxhyphen{}\textgreater{}send\_data(). (and not to nsc\sphinxhyphen{}tcp\sphinxhyphen{}l4, this is
-the major difference compared to \sphinxstyleemphasis{ns\sphinxhyphen{}3} TCP). The class also queues up data that
-is Send() before the underlying descriptor has entered an ESTABLISHED state.
-This class is called from the nsc\sphinxhyphen{}tcp\sphinxhyphen{}l4 class, when the nsc\sphinxhyphen{}tcp\sphinxhyphen{}l4 wakeup()
-callback is invoked by nsc. nsc\sphinxhyphen{}tcp\sphinxhyphen{}socket\sphinxhyphen{}impl then checks the current
+\sphinxcode{\sphinxupquote{src/internet/model/nsc\sphinxhyphen{}tcp\sphinxhyphen{}socket\sphinxhyphen{}impl}} implements the NSC socket interface.
+Each instance has its own m\_nscTcpSocket. Data that is sent will be handed to
+the NSC stack via m\_nscTcpSocket\sphinxhyphen{}\textgreater{}send\_data() (and not to NscTcpL4Protocol, this
+is the major difference compared to \sphinxstyleemphasis{ns\sphinxhyphen{}3} TCP). The class also queues up data
+that is sent before the underlying descriptor has entered an ESTABLISHED state.
+This class is called from the NscTcpL4Protocol class, when the NscTcpL4Protocol
+wakeup() callback is invoked by NSC. NscTcpSocketImpl then checks the current
 connection state (SYN\_SENT, ESTABLISHED, LISTEN…) and schedules appropriate
-callbacks as needed, e.g. a LISTEN socket will schedule Accept to see if a new
+callbacks as needed, e.g. a LISTEN socket will schedule accept() to see if a new
 connection must be accepted, an ESTABLISHED socket schedules any pending data
-for writing, schedule a read callback, etc.
+for writing, schedule a read() callback, etc.
 
-Note that \sphinxcode{\sphinxupquote{ns3::NscTcpSocketImpl}} does not interact with nsc\sphinxhyphen{}tcp directly:
-instead, data is redirected to nsc. nsc\sphinxhyphen{}tcp calls the nsc\sphinxhyphen{}tcp\sphinxhyphen{}sockets of a node
-when its wakeup callback is invoked by nsc.
+Note that \sphinxcode{\sphinxupquote{ns3::NscTcpSocketImpl}} does not interact with NSC TCP directly:
+instead, data is redirected to NSC. NSC TCP calls the NSC TCP sockets of a node
+when its wakeup() callback is invoked by NSC.
 
 
 \subsubsection{Limitations}
@@ -14524,7 +14533,7 @@ First of all, you need to put the following in your simulation
 program, right after \sphinxcode{\sphinxupquote{main ()}} starts:
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-CommandLine cmd;
+COMMANDLINE (cmd);
 cmd.Parse (argc, argv);
 ConfigStore inputConfig;
 inputConfig.ConfigureDefaults ();
@@ -23528,15 +23537,15 @@ unicast routing protocol.  It has been developed at the
 University of Murcia (Spain) by Francisco J. Ros for NS\sphinxhyphen{}2, and was
 ported to NS\sphinxhyphen{}3 by Gustavo Carneiro at INESC Porto (Portugal).
 
-The implementation is based on OLSR Version 1 (\index{RFC@\spxentry{RFC}!RFC 3626@\spxentry{RFC 3626}}\sphinxhref{https://tools.ietf.org/html/rfc3626.html}{\sphinxstylestrong{RFC 3626}}) and
-it is \sphinxstyleemphasis{not} compliant with OLSR Version 2 (\index{RFC@\spxentry{RFC}!RFC 7181@\spxentry{RFC 7181}}\sphinxhref{https://tools.ietf.org/html/rfc7181.html}{\sphinxstylestrong{RFC 7181}}) or any
+The implementation is based on OLSR Version 1 (\index{RFC@\spxentry{RFC}!RFC 3626@\spxentry{RFC 3626}}\sphinxhref{https://tools.ietf.org/html/rfc3626.html}{\sphinxstylestrong{RFC 3626}} \sphinxcite{olsr:rfc3626}) and
+it is \sphinxstyleemphasis{not} compliant with OLSR Version 2 (\index{RFC@\spxentry{RFC}!RFC 7181@\spxentry{RFC 7181}}\sphinxhref{https://tools.ietf.org/html/rfc7181.html}{\sphinxstylestrong{RFC 7181}} \sphinxcite{olsr:rfc7181}) or any
 of the Version 2 extensions.
 
 
 \section{Model Description}
 \label{\detokenize{olsr:model-description}}
 The source code for the OLSR model lives in the directory \sphinxtitleref{src/olsr}.
-As stated before, the model is based on \index{RFC@\spxentry{RFC}!RFC 3626@\spxentry{RFC 3626}}\sphinxhref{https://tools.ietf.org/html/rfc3626.html}{\sphinxstylestrong{RFC 3626}}. Moreover, many
+As stated before, the model is based on \index{RFC@\spxentry{RFC}!RFC 3626@\spxentry{RFC 3626}}\sphinxhref{https://tools.ietf.org/html/rfc3626.html}{\sphinxstylestrong{RFC 3626}} (\sphinxcite{olsr:rfc3626}). Moreover, many
 design choices are based on the previous ns2 model.
 
 
@@ -23545,7 +23554,7 @@ design choices are based on the previous ns2 model.
 The model is for IPv4 only.
 \begin{itemize}
 \item {} 
-Mostly compliant with OLSR as documented in \index{RFC@\spxentry{RFC}!RFC 3626@\spxentry{RFC 3626}}\sphinxhref{https://tools.ietf.org/html/rfc3626.html}{\sphinxstylestrong{RFC 3626}},
+Mostly compliant with OLSR as documented in \index{RFC@\spxentry{RFC}!RFC 3626@\spxentry{RFC 3626}}\sphinxhref{https://tools.ietf.org/html/rfc3626.html}{\sphinxstylestrong{RFC 3626}} (\sphinxcite{olsr:rfc3626}),
 
 \item {} 
 The use of multiple interfaces was not supported by the NS\sphinxhyphen{}2 version, but is supported in NS\sphinxhyphen{}3;
@@ -23554,7 +23563,7 @@ The use of multiple interfaces was not supported by the NS\sphinxhyphen{}2 versi
 OLSR does not respond to the routing event notifications corresponding to dynamic interface up and down (\sphinxcode{\sphinxupquote{ns3::RoutingProtocol::NotifyInterfaceUp}} and \sphinxcode{\sphinxupquote{ns3::RoutingProtocol::NotifyInterfaceDown}}) or address insertion/removal \sphinxcode{\sphinxupquote{ns3::RoutingProtocol::NotifyAddAddress}} and \sphinxcode{\sphinxupquote{ns3::RoutingProtocol::NotifyRemoveAddress}}).
 
 \item {} 
-Unlike the NS\sphinxhyphen{}2 version, does not yet support MAC layer feedback as described in \index{RFC@\spxentry{RFC}!RFC 3626@\spxentry{RFC 3626}}\sphinxhref{https://tools.ietf.org/html/rfc3626.html}{\sphinxstylestrong{RFC 3626}};
+Unlike the NS\sphinxhyphen{}2 version, does not yet support MAC layer feedback as described in \index{RFC@\spxentry{RFC}!RFC 3626@\spxentry{RFC 3626}}\sphinxhref{https://tools.ietf.org/html/rfc3626.html}{\sphinxstylestrong{RFC 3626}} (\sphinxcite{olsr:rfc3626});
 
 \end{itemize}
 
@@ -24957,7 +24966,7 @@ The model was first introduced in
 \noindent\sphinxincludegraphics{{spectrum-analyzer-example}.pdf}
 \caption{Spectrogram produced by a spectrum analyzer in a scenario
 involving wifi signals interfered by a microwave oven, as simulated
-by the example \sphinxcode{\sphinxupquote{adhoc\sphinxhyphen{}aloha\sphinxhyphen{}ideal\sphinxhyphen{}phy\sphinxhyphen{}with\sphinxhyphen{}microwave\sphinxhyphen{}oven}}.}\label{\detokenize{spectrum:id15}}\label{\detokenize{spectrum:fig-spectrum-analyzer-example}}\end{figure}
+by the example \sphinxcode{\sphinxupquote{adhoc\sphinxhyphen{}aloha\sphinxhyphen{}ideal\sphinxhyphen{}phy\sphinxhyphen{}with\sphinxhyphen{}microwave\sphinxhyphen{}oven}}.}\label{\detokenize{spectrum:id21}}\label{\detokenize{spectrum:fig-spectrum-analyzer-example}}\end{figure}
 
 
 \section{Model Description}
@@ -25044,7 +25053,7 @@ reception of signals over the medium. The way this interaction works is depicted
 \capstart
 
 \noindent\sphinxincludegraphics{{spectrum-channel-phy-interface}.pdf}
-\caption{Sequence diagram showing the interaction between SpectrumPhy and SpectrumChannel}\label{\detokenize{spectrum:id16}}\label{\detokenize{spectrum:fig-spectrum-channel-phy-interface}}\end{figure}
+\caption{Sequence diagram showing the interaction between SpectrumPhy and SpectrumChannel}\label{\detokenize{spectrum:id22}}\label{\detokenize{spectrum:fig-spectrum-channel-phy-interface}}\end{figure}
 
 
 \subsubsection{Spectrum Channel implementations}
@@ -25397,7 +25406,7 @@ create and transmit the signal on the channel.
 
 \noindent\sphinxincludegraphics{{spectrum-tv-cofdm}.png}
 \caption{8K COFDM signal spectrum generated from \sphinxcode{\sphinxupquote{TvSpectrumTransmitter}} (Left) and
-theoretical COFDM signal spectrum {[}KoppCOFDM{]} (Right)}\label{\detokenize{spectrum:id17}}\label{\detokenize{spectrum:spectrum-tv-cofdm}}\end{figure}
+theoretical COFDM signal spectrum \sphinxcite{spectrum:koppcofdm} (Right)}\label{\detokenize{spectrum:id23}}\label{\detokenize{spectrum:spectrum-tv-cofdm}}\end{figure}
 
 One of the user\sphinxhyphen{}configurable attributes is the type of modulation for the TV
 transmitter to use. The options are 8\sphinxhyphen{}VSB (Eight\sphinxhyphen{}Level Vestigial Sideband
@@ -25409,8 +25418,8 @@ technology but is still being used by some countries today. To accomplish
 realistic PSD models for these modulation types, the signals’ PSDs were
 approximated from real standards and developed into models that are scalable by
 frequency and power. The COFDM PSD is approximated from Figure 12 (8k mode) of
-{[}KoppCOFDM{]}, the 8\sphinxhyphen{}VSB PSD is approximated from Figure 3 of {[}Baron8VSB{]}, and the
-analog PSD is approximated from Figure 4 of {[}QualcommAnalog{]}. Note that the
+\sphinxcite{spectrum:koppcofdm}, the 8\sphinxhyphen{}VSB PSD is approximated from Figure 3 of \sphinxcite{spectrum:baron8vsb}, and the
+analog PSD is approximated from Figure 4 of \sphinxcite{spectrum:qualcommanalog}. Note that the
 analog model is approximated from the NTSC standard, but other analog modulation
 standards such as PAL have similar signals. The approximated COFDM PSD model is
 in 8K mode. The other configurable attributes are the start frequency,
@@ -25442,8 +25451,8 @@ is also provided to easily simulate real\sphinxhyphen{}world scenarios.
 \noindent\sphinxincludegraphics{{spectrum-tv-8vsb}.png}
 \caption{North America ATSC channel 19 \& 20 signals generated using
 \sphinxcode{\sphinxupquote{TvSpectrumTransmitterHelper}} (Left) and theoretical 8\sphinxhyphen{}VSB signal
-{[}Baron8VSB{]} (Right). Note that the theoretical signal is not shown in dB
-while the ns\sphinxhyphen{}3 generated signals are.}\label{\detokenize{spectrum:id18}}\label{\detokenize{spectrum:spectrum-tv-8vsb}}\end{figure}
+\sphinxcite{spectrum:baron8vsb} (Right). Note that the theoretical signal is not shown in dB
+while the ns\sphinxhyphen{}3 generated signals are.}\label{\detokenize{spectrum:id24}}\label{\detokenize{spectrum:spectrum-tv-8vsb}}\end{figure}
 
 Using this helper class, users can easily set up TV transmitters right after
 configuring attributes. Multiple transmitters can be created at a time. Also
@@ -25460,7 +25469,7 @@ channel for each these regions are provided.
 \caption{Plot from MATLAB implementation of CreateRegionalTvTransmitters method in
 \sphinxcode{\sphinxupquote{TvSpectrumTransmitterHelper}}. Shows 100 random points on Earth’s surface
 (with altitude 0) corresponding to TV transmitter locations within a 2000 km
-radius of 35° latitude and \sphinxhyphen{}100° longitude.}\label{\detokenize{spectrum:id19}}\label{\detokenize{spectrum:spectrum-tv-rand-geo-points}}\end{figure}
+radius of 35° latitude and \sphinxhyphen{}100° longitude.}\label{\detokenize{spectrum:id25}}\label{\detokenize{spectrum:spectrum-tv-rand-geo-points}}\end{figure}
 
 A method (CreateRegionalTvTransmitters) is provided that enables users to
 randomly generate multiple TV transmitters from a specified region with a given
@@ -25477,7 +25486,7 @@ anywhere on Earth around the origin point within the chosen maximum radius.
 
 
 \subsubsection{Examples}
-\label{\detokenize{spectrum:id4}}
+\label{\detokenize{spectrum:id9}}
 Two example simulations are provided that demonstrate the functionality of the
 TV transmitter model. \sphinxcode{\sphinxupquote{tv\sphinxhyphen{}trans\sphinxhyphen{}example}} simulates two 8\sphinxhyphen{}VSB TV transmitters
 with adjacent channel frequencies. \sphinxcode{\sphinxupquote{tv\sphinxhyphen{}trans\sphinxhyphen{}regional\sphinxhyphen{}example}} simulates
@@ -25487,7 +25496,7 @@ corresponding to the European television channel allocations.
 
 
 \subsubsection{Testing}
-\label{\detokenize{spectrum:id5}}
+\label{\detokenize{spectrum:id10}}
 The \sphinxcode{\sphinxupquote{tv\sphinxhyphen{}spectrum\sphinxhyphen{}transmitter}} test suite verifies the accuracy of the
 spectrum/PSD model in \sphinxcode{\sphinxupquote{TvSpectrumTransmitter}} by testing if the maximum power
 spectral density, start frequency, and end frequency comply with expected values
@@ -25507,7 +25516,7 @@ correspond to TV transmitter positions. The first method converts Earth
 geographic coordinates to Earth\sphinxhyphen{}Centered Earth\sphinxhyphen{}Fixed (ECEF) Cartesian
 coordinates, and is tested in the \sphinxcode{\sphinxupquote{geo\sphinxhyphen{}to\sphinxhyphen{}cartesian}} test suite by comparing
 (with 10 meter tolerance) its output with the output of the geographic to ECEF
-conversion function {[}MatlabGeo{]} of the MATLAB Mapping Toolbox for numerous
+conversion function \sphinxcite{spectrum:matlabgeo} of the MATLAB Mapping Toolbox for numerous
 test cases. The other used method generates random ECEF Cartesian points around
 the given geographic origin point, and is tested in the \sphinxcode{\sphinxupquote{rand\sphinxhyphen{}cart\sphinxhyphen{}around\sphinxhyphen{}geo}}
 test suite by verifying that the generated points do not exceed the given
@@ -25549,34 +25558,27 @@ please have a look at the documentation of the classes
 ThreeGppChannelModel and ThreeGppSpectrumPropagationLossModel.
 
 \sphinxstylestrong{Note:}
-\begin{quote}
 \begin{itemize}
 \item {} 
 Currently, no error model is provided; a link\sphinxhyphen{}to\sphinxhyphen{}system campaign may be
-
-\end{itemize}
-
 needed to incorporate it in existing modules.
-\begin{itemize}
+
 \item {} 
 The model does not include any spatial consistency update procedure
-
-\end{itemize}
-
 (see \sphinxcite{spectrum:tr38901}, Sec. 7.6.1). The implementation of this feature is left
 as future work.
-\begin{itemize}
+
 \item {} 
 Issue regarding the blockage model: according to 3GPP TR 38.901 v15.0.0
-
-\end{itemize}
-
 (2018\sphinxhyphen{}06) section 7.6.4.1, the blocking region for self\sphinxhyphen{}blocking is provided
 in LCS.
+
 However, here, clusterAOA and clusterZOA are in GCS and blocking check is
 performed for self\sphinxhyphen{}blocking similar to non\sphinxhyphen{}self blocking, that is in GCS.
-One would expect the angles to be transposed to LCS before checking self\sphinxhyphen{}blockage.
-\end{quote}
+One would expect the angles to be transposed to LCS before checking
+self\sphinxhyphen{}blockage.
+
+\end{itemize}
 
 
 \subsubsection{ThreeGppSpectrumPropagationLossModel}
@@ -25686,33 +25688,38 @@ to configure the model.
 
 
 \subsubsection{Testing}
-\label{\detokenize{spectrum:id13}}
+\label{\detokenize{spectrum:id19}}
 The test suite ThreeGppChannelTestSuite includes three test cases:
 \begin{itemize}
 \item {} 
 ThreeGppChannelMatrixComputationTest checks if the channel matrix has the
-
-\end{itemize}
-
 correct dimensions and if it correctly normalized
-\begin{itemize}
+
 \item {} 
-ThreeGppChannelMatrixUpdateTest, which checks if the channel matrix is correctly
+ThreeGppChannelMatrixUpdateTest, which checks if the channel matrix
+is correctly updated when the coherence time exceeds
+
+\item {} 
+ThreeGppSpectrumPropagationLossModelTest, which tests the functionalities
+of the class ThreeGppSpectrumPropagationLossModel. It builds a simple
+network composed of two nodes, computes the power spectral density
+received by the receiving node, and
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+Checks if the long term components for the direct and
+the reverse link are the same,
+
+\item {} 
+Checks if the long term component is updated when changing
+the beamforming vectors,
+
+\item {} 
+Checks if the long term is updated when changing the channel matrix
+
+\end{enumerate}
 
 \end{itemize}
-
-updated when the coherence time exceeds
-\begin{itemize}
-\item {} 
-ThreeGppSpectrumPropagationLossModelTest, which tests the functionalities of the
-
-\end{itemize}
-
-class ThreeGppSpectrumPropagationLossModel. It builds a simple network composed of two
-nodes, computes the power spectral density received by the
-receiving node, and (i) checks if the long term components for the direct and the reverse link
-are the same, (ii) checks if the long term component is updated when changing the beamforming
-vectors, (iii) checks if the long term is updated when changing the channel matrix
 
 \sphinxstylestrong{Note:} TR 38.901 includes a calibration procedure that can be used to validate
 the model, but it requires some additional features which are not currently
@@ -25720,13 +25727,13 @@ implemented, thus is left as future work.
 
 
 \subsubsection{References}
-\label{\detokenize{spectrum:id14}}
+\label{\detokenize{spectrum:id20}}
 
 \chapter{6LoWPAN: Transmission of IPv6 Packets over IEEE 802.15.4 Networks}
 \label{\detokenize{sixlowpan:lowpan-transmission-of-ipv6-packets-over-ieee-802-15-4-networks}}\label{\detokenize{sixlowpan::doc}}
 This chapter describes the implementation of \sphinxstyleemphasis{ns\sphinxhyphen{}3} model for the
 compression of IPv6 packets over IEEE 802.15.4\sphinxhyphen{}Based Networks
-as specified by \index{RFC@\spxentry{RFC}!RFC 4944@\spxentry{RFC 4944}}\sphinxhref{https://tools.ietf.org/html/rfc4944.html}{\sphinxstylestrong{RFC 4944}} and \index{RFC@\spxentry{RFC}!RFC 6282@\spxentry{RFC 6282}}\sphinxhref{https://tools.ietf.org/html/rfc6282.html}{\sphinxstylestrong{RFC 6282}}.
+as specified by \index{RFC@\spxentry{RFC}!RFC 4944@\spxentry{RFC 4944}}\sphinxhref{https://tools.ietf.org/html/rfc4944.html}{\sphinxstylestrong{RFC 4944}} (\sphinxcite{sixlowpan:rfc4944}) and \index{RFC@\spxentry{RFC}!RFC 6282@\spxentry{RFC 6282}}\sphinxhref{https://tools.ietf.org/html/rfc6282.html}{\sphinxstylestrong{RFC 6282}} (\sphinxcite{sixlowpan:rfc6282}).
 
 
 \section{Model Description}
@@ -25754,7 +25761,7 @@ IPHC’s SAC and DAC are not supported
 The HC2 encoding is not supported, as it has been superseded by IPHC and NHC
 compression type (\index{RFC@\spxentry{RFC}!RFC 6282@\spxentry{RFC 6282}}\sphinxhref{https://tools.ietf.org/html/rfc6282.html}{\sphinxstylestrong{RFC 6282}}).
 
-IPHC SAC and DAC are not yet supported, as they do require \index{RFC@\spxentry{RFC}!RFC 6775@\spxentry{RFC 6775}}\sphinxhref{https://tools.ietf.org/html/rfc6775.html}{\sphinxstylestrong{RFC 6775}} for full
+IPHC SAC and DAC are not yet supported, as they do require \index{RFC@\spxentry{RFC}!RFC 6775@\spxentry{RFC 6775}}\sphinxhref{https://tools.ietf.org/html/rfc6775.html}{\sphinxstylestrong{RFC 6775}} (\sphinxcite{sixlowpan:rfc6775}) for full
 compliance. It is planned to support them in the future.
 
 
@@ -25772,7 +25779,7 @@ The module does provide some attributes and some tracesources.
 The attributes are:
 \begin{itemize}
 \item {} 
-Rfc6282 (boolean, default true), used to activate HC1 (\index{RFC@\spxentry{RFC}!RFC 4944@\spxentry{RFC 4944}}\sphinxhref{https://tools.ietf.org/html/rfc4944.html}{\sphinxstylestrong{RFC 4944}}) or IPHC (\index{RFC@\spxentry{RFC}!RFC 6282@\spxentry{RFC 6282}}\sphinxhref{https://tools.ietf.org/html/rfc6282.html}{\sphinxstylestrong{RFC 6282}}) compression.
+\index{RFC@\spxentry{RFC}!RFC 6282@\spxentry{RFC 6282}}\sphinxhref{https://tools.ietf.org/html/rfc6282.html}{\sphinxstylestrong{RFC 6282}} (boolean, default true), used to activate HC1 (\index{RFC@\spxentry{RFC}!RFC 4944@\spxentry{RFC 4944}}\sphinxhref{https://tools.ietf.org/html/rfc4944.html}{\sphinxstylestrong{RFC 4944}}) or IPHC (\index{RFC@\spxentry{RFC}!RFC 6282@\spxentry{RFC 6282}}\sphinxhref{https://tools.ietf.org/html/rfc6282.html}{\sphinxstylestrong{RFC 6282}}) compression.
 
 \item {} 
 OmitUdpChecksum (boolean, default true), used to activate UDP checksum compression in IPHC.
@@ -28235,12 +28242,22 @@ The need for underwater wireless communications exists in applications such as r
 BINGHAM, D.; DRAKE, T.; HILL, A.; LOTT, R.; The Application of Autonomous Underwater Vehicle (AUV) Technology in the Oil Industry \textendash{} Vision and Experiences, URL: \sphinxurl{http://www.fig.net/pub/fig\_2002/Ts4-4/TS4\_4\_bingham\_etal.pdf}
 %
 \end{footnote}, pollution monitoring in environmental systems, speech transmission between divers, mapping of the ocean floor, mine counter measures %
+\begin{footnote}[2]\sphinxAtStartFootnote
+AUVfest2008: Underwater mines; URL: \sphinxurl{http://oceanexplorer.noaa.gov/explorations/08auvfest/background/mines/mines.html}
+%
+\end{footnote} %
 \begin{footnote}[4]\sphinxAtStartFootnote
 WHOI, Autonomous Underwater Vehicle, REMUS; URL: \sphinxurl{http://www.whoi.edu/page.do?pid=29856}
 %
 \end{footnote}, seismic monitoring of ocean faults as well as climate changes monitoring. Unfortunately, making on\sphinxhyphen{}field measurements is very expensive and there are no commonly accepted standard to base on. Hence, the priority to make research work going on, it is to realize a complete simulation framework that researchers can use to experiment, make tests and make performance evaluation and comparison.
 
-The NS\sphinxhyphen{}3 UAN module is a first step in this direction, trying to offer a reliable and realistic tool. In fact, the UAN module offers accurate modelling of the underwater acoustic channel, a model of the WHOI acoustic modem (one of the widely used acoustic modems){[}6{]}\_ and its communications performance, and some MAC protocols.
+The NS\sphinxhyphen{}3 UAN module is a first step in this direction, trying to offer a reliable and realistic tool. In fact, the UAN module offers accurate modelling of the underwater acoustic channel, a model of the WHOI acoustic modem (one of the widely used acoustic modems) %
+\begin{footnote}[6]\sphinxAtStartFootnote
+L. Freitag, M. Grund, I. Singh, J. Partan, P. Koski, K. Ball, and W. Hole, The whoi
+micro\sphinxhyphen{}modem: an acoustic communications and navigation system for multiple platforms,
+In Proc. IEEE OCEANS05 Conf, 2005. URL: \sphinxurl{http://ieeexplore.ieee.org/iel5/10918/34367/01639901.pdf}
+%
+\end{footnote} and its communications performance, and some MAC protocols.
 
 
 \section{Model Description}
@@ -28498,7 +28515,7 @@ Regarding the sea gliders, it is modelled the characteristic saw\sphinxhyphen{}t
 \capstart
 
 \noindent\sphinxincludegraphics{{auvmobility-classes}.pdf}
-\caption{AUV’s mobility model classes overview}\label{\detokenize{uan:id23}}\label{\detokenize{uan:auvmobilitymodel}}\end{figure}
+\caption{AUV’s mobility model classes overview}\label{\detokenize{uan:id27}}\label{\detokenize{uan:auvmobilitymodel}}\end{figure}
 
 An \sphinxcode{\sphinxupquote{ns3::AuvMobilityModel}} interface has been designed to give users a generic interface to access AUV’s navigation functions.
 The AuvMobilityModel interface is implemented by the RemusMobilityModel and the GliderMobilityModel classes. The AUV’s mobility models organization it is shown in {\hyperref[\detokenize{uan:auvmobilitymodel}]{\sphinxcrossref{\DUrole{std,std-ref}{AUV’s mobility model classes overview}}}}.
@@ -28513,7 +28530,7 @@ The energy models have been designed as in the follows.
 
 
 \paragraph{Use cases}
-\label{\detokenize{uan:id11}}
+\label{\detokenize{uan:id13}}
 The user will be able to:
 \begin{itemize}
 \item {} 
@@ -28562,7 +28579,7 @@ TODO extend a little bit
 \label{\detokenize{uan:acoustic-modem-energy-model}}
 Basing on the Device Energy Model interface, has been implemented a generic energy model for acoustic modem. The model allows to trace four modem’s power\sphinxhyphen{}states: Sleep, Idle, Receiving, Transmitting. The default parameters for the energy model are set to fit those of the WHOI μmodem. The class follows pretty closely the RadioEnergyModel class as the transducer behaviour is pretty close to that of a Wi\sphinxhyphen{}Fi radio.
 
-The default power consumption values implemented into the model are as follows {[}6{]}:
+The default power consumption values implemented into the model are as follows \sphinxfootnotemark[6]:
 
 
 \begin{savenotes}\sphinxattablestart
@@ -28612,7 +28629,11 @@ A user should take into account that, if the power consumption handling is enabl
 A generic Li\sphinxhyphen{}Ion battery model has been implemented based on {[}7{]}{[}8{]}. The model can be fitted to any type of Li\sphinxhyphen{}Ion battery simply changing the model’s parameters The default values are fitted for the Panasonic CGR18650DA Li\sphinxhyphen{}Ion Battery {[}9{]}.
 {[}TODO insert figure{]}
 As shown in figure the model approximates very well the Li\sphinxhyphen{}Ion cells.
-Regarding Seagliders, the batteries used into the AUV are Electrochem 3B36 Lithium / Sulfuryl Chloride cells {[}10{]}. Also with this cell type, the model seems to approximates the different discharge curves pretty well, as shown in the figure.
+Regarding Seagliders, the batteries used into the AUV are Electrochem 3B36 Lithium / Sulfuryl Chloride cells %
+\begin{footnote}[10]\sphinxAtStartFootnote
+Electrochem 3B36 Datasheet, URL: \sphinxurl{http://www.electrochem.com.cn/products/Primary/HighRate/CSC/3B36.pdf}
+%
+\end{footnote}. Also with this cell type, the model seems to approximates the different discharge curves pretty well, as shown in the figure.
 
 \begin{sphinxadmonition}{note}{Note:}
 should I insert the li\sphinxhyphen{}ion model deatils here? I think it is better to put them into an Energy\sphinxhyphen{}related chapter..
@@ -30305,7 +30326,7 @@ are used to look up probability of successful reception.
 base interface defined in the \sphinxcode{\sphinxupquote{ns3::WifiPhy}} class.  The YansWifiPhy
 class has been the only physical layer model until recently; the model
 implemented there is described in a paper entitled
-\sphinxhref{http://cutebugs.net/files/wns2-yans.pdf}{Yet Another Network Simulator}
+\sphinxhref{https://dl.acm.org/doi/pdf/10.1145/1190455.1190467?download=true}{Yet Another Network Simulator}
 The acronym \sphinxstyleemphasis{Yans} derives from this paper title.  The SpectrumWifiPhy
 class is an alternative implementation based on the Spectrum framework
 used for other \sphinxstyleemphasis{ns\sphinxhyphen{}3} wireless models.  Spectrum allows a fine\sphinxhyphen{}grained
@@ -30560,7 +30581,9 @@ packet to schedule this.  The second event to schedule is
 have been received and the payload is about to start.
 
 The next event at \sphinxcode{\sphinxupquote{StartReceivePayload ()}} checks, using the interference
-helper and error model, whether the header was successfully decoded.
+helper and error model, whether the header was successfully decoded, and if so,
+a \sphinxcode{\sphinxupquote{PhyRxPayloadBegin}} callback (equivalent to the PHY\sphinxhyphen{}RXSTART primitive)
+is triggered.
 The PHY header is often transmitted
 at a lower modulation rate than is the payload.  The portion of the packet
 corresponding to the PHY header is evaluated for probability of error
@@ -31022,7 +31045,7 @@ is used for RTS frames only.  The rate of CTS and ACK frames are
 selected according to the 802.11 standard.  However, users can still
 manually add WifiMode to the basic rate set that will allow control
 response frames to be sent at other rates.  Please consult the
-\sphinxhref{http://www.nsnam.org/wiki}{project wiki} on how to do this.
+\sphinxhref{https://www.nsnam.org/wiki/HOWTO\_add\_basic\_rates\_to\_802.11}{project wiki} on how to do this.
 
 Available attributes:
 \begin{itemize}
@@ -31289,7 +31312,7 @@ configuration may be performed.
 \subsubsection{YansWifiChannelHelper}
 \label{\detokenize{wifi-user:yanswifichannelhelper}}
 The YansWifiChannelHelper has an unusual name. Readers may wonder why it is
-named this way. The reference is to the \sphinxhref{http://cutebugs.net/files/wns2-yans.pdf}{yans simulator} from which this model is taken. The
+named this way. The reference is to the \sphinxhref{https://dl.acm.org/doi/pdf/10.1145/1190455.1190467?download=true}{yans simulator} from which this model is taken. The
 helper can be used to create a YansWifiChannel with a default PropagationLoss and
 PropagationDelay model.
 
@@ -33390,7 +33413,7 @@ in Proc. of 4th Int. Conference on Land Mobile Radio, 1987.
 \sphinxsetlistlabels{\Alph}{enumi}{enumii}{}{.}%
 \setcounter{enumi}{6}
 \item {} 
-Carneiro, P. Fortuna, and M. Ricardo. 2009. FlowMonitor: a network monitoring framework for the network simulator 3 (NS\sphinxhyphen{}3). In Proceedings of the Fourth International ICST Conference on Performance Evaluation Methodologies and Tools (VALUETOOLS ‘09). \sphinxurl{http://dx.doi.org/10.4108/ICST.VALUETOOLS2009.7493}
+Carneiro, P. Fortuna, and M. Ricardo. 2009. FlowMonitor: a network monitoring framework for the network simulator 3 (NS\sphinxhyphen{}3). In Proceedings of the Fourth International ICST Conference on Performance Evaluation Methodologies and Tools (VALUETOOLS ‘09). \sphinxurl{http://dx.doi.org/10.4108/ICST.VALUETOOLS2009.7493} (Full text: \sphinxurl{https://dl.acm.org/doi/abs/10.4108/ICST.VALUETOOLS2009.7493})
 
 \end{enumerate}
 \bibitem[TS25814]{lte-references:ts25814}
@@ -33693,7 +33716,7 @@ G. Pei and Tom Henderson, \sphinxhref{http://www.nsnam.org/~pei/80211b.pdf}{Vali
 \bibitem[pei80211ofdm]{wifi-references:pei80211ofdm}
 G. Pei and Tom Henderson, \sphinxhref{http://www.nsnam.org/~pei/80211ofdm.pdf}{Validation of OFDM error rate model in ns\sphinxhyphen{}3}
 \bibitem[lacage2006yans]{wifi-references:lacage2006yans}
-M. Lacage and T. Henderson, \sphinxhref{http://cutebugs.net/files/wns2-yans.pdf}{Yet another Network Simulator}
+M. Lacage and T. Henderson, \sphinxhref{https://dl.acm.org/doi/pdf/10.1145/1190455.1190467?download=true}{Yet another Network Simulator}
 \bibitem[Haccoun]{wifi-references:haccoun}
 D. Haccoun and G. Begin, \sphinxstyleemphasis{High\sphinxhyphen{}Rate Punctured Convolutional Codes for Viterbi Sequential Decoding}, IEEE Transactions on Communications, Vol. 32, Issue 3, pp.315\sphinxhyphen{}319.
 \bibitem[Frenger]{wifi-references:frenger}
@@ -33701,7 +33724,7 @@ Pâl Frenger et al., “Multi\sphinxhyphen{}rate Convolutional Codes”.
 \bibitem[ji2004sslswn]{wifi-references:ji2004sslswn}
 Z. Ji, J. Zhou, M. Takai and R. Bagrodia, \sphinxstyleemphasis{Scalable simulation of large\sphinxhyphen{}scale wireless networks with bounded inaccuracies}, in Proc. of the Seventh ACM Symposium on Modeling, Analysis and Simulation of Wireless and Mobile Systems, October 2004.
 \bibitem[linuxminstrel]{wifi-references:linuxminstrel}
-\sphinxhref{http://wireless.kernel.org/en/developers/Documentation/mac80211/RateControl/minstrel}{minstrel linux wireless}
+\sphinxhref{https://wireless.wiki.kernel.org/en/developers/documentation/mac80211/ratecontrol/minstrel}{minstrel linux wireless}
 \bibitem[lacage2004aarfamrr]{wifi-references:lacage2004aarfamrr}
 M. Lacage, H. Manshaei, and T. Turletti, \sphinxstyleemphasis{IEEE 802.11 rate adaptation: a practical approach}, in Proc. 7th ACM International Symposium on Modeling, Analysis and Simulation of Wireless and Mobile Systems, 2004.
 \bibitem[kim2006cara]{wifi-references:kim2006cara}
@@ -33713,7 +33736,7 @@ F. Maguolo, M. Lacage, and T. Turletti, \sphinxstyleemphasis{Efficient collision
 \bibitem[proakis2001]{wifi-references:proakis2001}
 J. Proakis, Digital Communications, Wiley, 2001.
 \bibitem[miller2003]{wifi-references:miller2003}
- L. E. Miller, “Validation of 802.11a/UWB Coexistence Simulation.” Technical Report, October 2003.  Available \sphinxhref{http://www.antd.nist.gov/wctg/manet/docs/coexvalid\_031017.pdf}{online}
+ L. E. Miller, “Validation of 802.11a/UWB Coexistence Simulation.” Technical Report, October 2003.  Available \sphinxhref{https://doi.org/10.6028/NIST.WCTG.10-17-2003}{online}
 \bibitem[ferrari2004]{wifi-references:ferrari2004}
 G. Ferrari and G. Corazza, “Tight bounds and accurate approximations for DQPSK transmission bit error rate”, Electronics Letters, 40(20):1284\sphinxhyphen{}85, September 2004.
 \bibitem[pursley2009]{wifi-references:pursley2009}
@@ -33723,7 +33746,7 @@ A. Akella, G. Judd, S. Seshan, and P. Steenkiste, ‘Self\sphinxhyphen{}manageme
 \bibitem[chevillat2005aparf]{wifi-references:chevillat2005aparf}
  Chevillat, P.; Jelitto, J., and Truong, H. L., ‘Dynamic data rate and transmit power adjustment in IEEE 802.11 wireless LANs’, in International Journal of Wireless Information Networks, Springer, 2005, 12, 123\sphinxhyphen{}145.  \sphinxurl{http://www.cs.mun.ca/~yzchen/papers/papers/rate\_adaptation/80211\_dynamic\_rate\_power\_adjustment\_chevillat\_j2005.pdf}
 \bibitem[hepner2015]{wifi-references:hepner2015}
-C. Hepner, A. Witt, and R. Muenzner, “In depth analysis of the ns\sphinxhyphen{}3 physical layer abstraction for WLAN systems and evaluation of its influences on network simulation results”, BW\sphinxhyphen{}CAR Symposium on Information and Communication Systems (SInCom) 2015.  \sphinxurl{http://sincom.informatik.hs-furtwangen.de/index.php?id=85}
+C. Hepner, A. Witt, and R. Muenzner, “In depth analysis of the ns\sphinxhyphen{}3 physical layer abstraction for WLAN systems and evaluation of its influences on network simulation results”, BW\sphinxhyphen{}CAR Symposium on Information and Communication Systems (SInCom) 2015.  \sphinxurl{https://core.ac.uk/download/pdf/75487102.pdf\#page=50}
 \bibitem[baldo2010]{wifi-references:baldo2010}
 N. Baldo et al., “Validation of the ns\sphinxhyphen{}3 IEEE 802.11 model using the EXTREME testbed”, Proceedings of SIMUTools Conference, March 2010.
 \bibitem[lanante2019]{wifi-references:lanante2019}

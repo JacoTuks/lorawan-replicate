@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -266,10 +263,17 @@ $(document).ready(function(){initNavTree('functions_vars_c.html',''); initResiza
 : <a class="el" href="structns3_1_1_lte_rrc_sap_1_1_meas_result_eutra.html#a9ce8dff958c28eec9f3ae71c6d54f6bb">ns3::LteRrcSap::MeasResultEutra</a>
 </li>
 <li>channel
-: <a class="el" href="structns3_1_1_py_viz_1_1_transmission_sample.html#abe66e9e5905aaf85f4a04c69eb87b167">ns3::PyViz::TransmissionSample</a>
+: <a class="el" href="structns3_1_1lorawan_1_1_network_components.html#ac9654b5039e0d1a066c2315f90acca1c">ns3::lorawan::NetworkComponents</a>
+, <a class="el" href="structns3_1_1_py_viz_1_1_transmission_sample.html#abe66e9e5905aaf85f4a04c69eb87b167">ns3::PyViz::TransmissionSample</a>
 , <a class="el" href="structns3_1_1_py_viz_1_1_transmission_sample_key.html#a51eed101c9334bd83ab2131944693f62">ns3::PyViz::TransmissionSampleKey</a>
 , <a class="el" href="class_phy_connectivity_test.html#ace6dded6af759d0a75792a92ca9a7700">PhyConnectivityTest</a>
 , <a class="el" href="classvisualizer_1_1core_1_1_channel.html#a8f239a442e80fab3c2d40e4bd4683b15">visualizer.core.Channel</a>
+</li>
+<li>channelA
+: <a class="el" href="struct_interference_experiment_1_1_input.html#a4a24b552e707a8ed007d18f3fb0ccdae">InterferenceExperiment::Input</a>
+</li>
+<li>channelB
+: <a class="el" href="struct_interference_experiment_1_1_input.html#ae78b1e597300ff652ebf7b1ccaf5a3d0">InterferenceExperiment::Input</a>
 </li>
 <li>channelNumber
 : <a class="el" href="structns3_1_1_channel_manager_1_1_wave_channel.html#a78854f9258142c492ac15f842f74fa73">ns3::ChannelManager::WaveChannel</a>
@@ -335,11 +339,17 @@ $(document).ready(function(){initNavTree('functions_vars_c.html',''); initResiza
 , <a class="el" href="structns3_1_1dsr_1_1_dsr_route_cache_1_1_neighbor.html#ac43a90853cf07a1af19d303f0914c76b">ns3::dsr::DsrRouteCache::Neighbor</a>
 </li>
 <li>codingRate
-: <a class="el" href="structns3_1_1_lora_tx_parameters.html#ab47255a2cccdcb4e542f1080cee76c84">ns3::LoraTxParameters</a>
+: <a class="el" href="structns3_1_1lorawan_1_1_lora_tx_parameters.html#a2e91f3d7c716ce54ed085ea0b4334c03">ns3::lorawan::LoraTxParameters</a>
 , <a class="el" href="structns3_1_1_wifi_mode_factory_1_1_wifi_mode_item.html#a91cce9c5beef9c8a7fca90238cd93c53">ns3::WifiModeFactory::WifiModeItem</a>
 </li>
-<li>collisionSnir
-: <a class="el" href="classns3_1_1_lora_interference_helper.html#a0a8342903f1291e7ad9369130193b8c6">ns3::LoraInterferenceHelper</a>
+<li>collisionMatrix
+: <a class="el" href="classns3_1_1lorawan_1_1_lora_interference_helper.html#a9b7d19d12408d96aff635f0127fa0da7">ns3::lorawan::LoraInterferenceHelper</a>
+</li>
+<li>collisionSnirAloha
+: <a class="el" href="classns3_1_1lorawan_1_1_lora_interference_helper.html#aadeefaa84058819efd6bb6bbb2244223">ns3::lorawan::LoraInterferenceHelper</a>
+</li>
+<li>collisionSnirGoursaud
+: <a class="el" href="classns3_1_1lorawan_1_1_lora_interference_helper.html#a227c9ebacc1de749698d1828d1a168de">ns3::lorawan::LoraInterferenceHelper</a>
 </li>
 <li>color
 : <a class="el" href="classvisualizer_1_1hud_1_1_axes.html#ad728f986aa77a67a9ac95ee7ce7f56a9">visualizer.hud.Axes</a>
@@ -422,7 +432,7 @@ $(document).ready(function(){initNavTree('functions_vars_c.html',''); initResiza
 : <a class="el" href="structns3_1_1qos__rb__and___c_q_i__assigned__to__lc.html#a28c15d707ea74fb97019a7d840c90f30">ns3::qos_rb_and_CQI_assigned_to_lc</a>
 </li>
 <li>crcEnabled
-: <a class="el" href="structns3_1_1_lora_tx_parameters.html#ad86490cd805578e0b20cac5f0c71a02e">ns3::LoraTxParameters</a>
+: <a class="el" href="structns3_1_1lorawan_1_1_lora_tx_parameters.html#a89948e3aecca66500e212409176089bc">ns3::lorawan::LoraTxParameters</a>
 </li>
 <li>creditableThreshold
 : <a class="el" href="structns3_1_1fdtbfqs_flow_perf__t.html#a7607dde88a053cb2c41b17532368a220">ns3::fdtbfqsFlowPerf_t</a>
@@ -490,7 +500,7 @@ $(document).ready(function(){initNavTree('functions_vars_c.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:51 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:53 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

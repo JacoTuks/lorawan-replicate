@@ -33,9 +33,9 @@ This document is written in `reStructuredText <http://docutils.sourceforge.net/r
    fd-net-device
    flow-monitor
    internet-models
+   lorawan
    lr-wpan
    lte
-   lorawan
    mesh
    distributed
    mobility

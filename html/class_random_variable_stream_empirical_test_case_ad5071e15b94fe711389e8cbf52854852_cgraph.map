@@ -3,7 +3,7 @@
 <area shape="rect" id="node2" href="$classns3_1_1_empirical_random_variable.html#a1f85096a98576ebe48417698f191805d" title="Specifies a point in the empirical distribution." alt="" coords="292,107,549,134"/>
 <area shape="rect" id="node3" href="$classns3_1_1_empirical_random_variable.html#a1a2d5b20db4509d1518727eb725672f7" title="Returns the next value in the empirical distribution." alt="" coords="309,159,532,200"/>
 <area shape="rect" id="node9" href="$namespaceanonymous__namespace_02random-variable-stream-test-suite_8cc_03.html#a48879e3d3c9ded83f959395be9275277" title=" " alt="" coords="301,343,540,399"/>
-<area shape="rect" id="node4" href="$classns3_1_1_empirical_random_variable.html#a8e0a52a108ccb100a56e380c4b2ab102" title="Linear nterpolation between two points on the CDF to estimate the value at r." alt="" coords="597,253,820,295"/>
+<area shape="rect" id="node4" href="$classns3_1_1_empirical_random_variable.html#a8e0a52a108ccb100a56e380c4b2ab102" title="Linear nterpolation between two points on the CDF to estimate the value at r" alt="" coords="597,253,820,295"/>
 <area shape="rect" id="node5" href="$classns3_1_1_random_variable_stream.html#ae8f50692f36f1403a22d0cbb9c488db2" title="Check if antithetic values will be generated." alt="" coords="605,5,813,47"/>
 <area shape="rect" id="node6" href="$classns3_1_1_random_variable_stream.html#a72b37a5c0a574a51df77d378d9101936" title="Get the pointer to the underlying RngStream." alt="" coords="605,71,813,112"/>
 <area shape="rect" id="node7" href="$classns3_1_1_rng_stream.html#a46be36426b8bc712e9de468b63558c22" title="Generate the next random number for this stream." alt="" coords="613,137,805,163"/>

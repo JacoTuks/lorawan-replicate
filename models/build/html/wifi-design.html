@@ -62,9 +62,6 @@
 		      <a id="ns3_tut"
 			 href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-		      <a id="ns3_ptbr"
-			 href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 	        </li>
 	        <li><span
 		      onmouseover="mopen('mDocs')" 
@@ -253,7 +250,7 @@ are used to look up probability of successful reception.</p></li>
 base interface defined in the <code class="docutils literal notranslate"><span class="pre">ns3::WifiPhy</span></code> class.  The YansWifiPhy
 class has been the only physical layer model until recently; the model
 implemented there is described in a paper entitled
-<a class="reference external" href="http://cutebugs.net/files/wns2-yans.pdf">Yet Another Network Simulator</a>
+<a class="reference external" href="https://dl.acm.org/doi/pdf/10.1145/1190455.1190467?download=true">Yet Another Network Simulator</a>
 The acronym <em>Yans</em> derives from this paper title.  The SpectrumWifiPhy
 class is an alternative implementation based on the Spectrum framework
 used for other <em>ns-3</em> wireless models.  Spectrum allows a fine-grained
@@ -437,7 +434,9 @@ packet to schedule this.  The second event to schedule is
 <code class="docutils literal notranslate"><span class="pre">StartReceivePayload</span> <span class="pre">()</span></code> for the time at which the PHY headers
 have been received and the payload is about to start.</p>
 <p>The next event at <code class="docutils literal notranslate"><span class="pre">StartReceivePayload</span> <span class="pre">()</span></code> checks, using the interference
-helper and error model, whether the header was successfully decoded.
+helper and error model, whether the header was successfully decoded, and if so,
+a <code class="docutils literal notranslate"><span class="pre">PhyRxPayloadBegin</span></code> callback (equivalent to the PHY-RXSTART primitive)
+is triggered.
 The PHY header is often transmitted
 at a lower modulation rate than is the payload.  The portion of the packet
 corresponding to the PHY header is evaluated for probability of error
@@ -770,7 +769,7 @@ is used for RTS frames only.  The rate of CTS and ACK frames are
 selected according to the 802.11 standard.  However, users can still
 manually add WifiMode to the basic rate set that will allow control
 response frames to be sent at other rates.  Please consult the
-<a class="reference external" href="http://www.nsnam.org/wiki">project wiki</a> on how to do this.</p>
+<a class="reference external" href="https://www.nsnam.org/wiki/HOWTO_add_basic_rates_to_802.11">project wiki</a> on how to do this.</p>
 <p>Available attributes:</p>
 <ul class="simple">
 <li><p>DataMode (default WifiMode::OfdmRate6Mbps): specify a mode for
@@ -991,7 +990,7 @@ station manager or modifying the existing ones.</p></li>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2006-2019.
-      Last updated on Apr 23, 2020 07:52.
+      Last updated on Apr 29, 2020 17:37.
       Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.2.
     </div>
   </body>

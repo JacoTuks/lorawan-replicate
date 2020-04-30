@@ -4,7 +4,7 @@
 <area shape="rect" id="node16" href="$classns3_1_1_type_id.html#a8ae1cde65c16fc46c9c8608c73e4c4c6" title="Get a TypeId by index." alt="" coords="552,2047,748,2074"/>
 <area shape="rect" id="node26" href="$classns3_1_1_type_id.html#a89c7bc12203e64d22c402ba4b49cfb07" title="Get a TypeId by hash." alt="" coords="550,2098,750,2125"/>
 <area shape="rect" id="node27" href="$classns3_1_1_type_id.html#a3b82356d8b073ce008c3254f175ecbc8" title="Get a TypeId by hash." alt="" coords="550,2149,750,2191"/>
-<area shape="rect" id="node28" href="$classns3_1_1_type_id.html#a119cf99c20931fdc294602cd360b180e" title="Get a TypeId by name." alt="" coords="547,683,753,710"/>
+<area shape="rect" id="node28" href="$classns3_1_1_type_id.html#a119cf99c20931fdc294602cd360b180e" title="Get a TypeId by name." alt="" coords="547,691,753,718"/>
 <area shape="rect" id="node50" href="$classns3_1_1_type_id.html#acceab1f57bfe3c3af02130277d409f14" title="Get a TypeId by name." alt="" coords="547,2215,753,2256"/>
 <area shape="rect" id="node3" href="$namespacens3.html#a0b4dc016823f5ae857205ca40e91cc56" title="This function displays the tooltip for an object, pointer, vector item or an attribute." alt="" coords="281,1509,468,1535"/>
 <area shape="rect" id="node4" href="$classns3_1_1_object_base.html#a5cda18dec6d0744cb652a3ed60056958" title="Complete construction of ObjectBase; invoked by derived classes." alt="" coords="263,1326,486,1353"/>
@@ -36,17 +36,17 @@
 <area shape="rect" id="node34" href="$classns3_1_1_packet_metadata.html#a88efb0a5ff0339b9430ded4e3452397d" title="Deserialization from raw uint8_t*." alt="" coords="295,188,454,229"/>
 <area shape="rect" id="node35" href="$classns3_1_1_rip.html#a622ec450ec78945f81986b64ce3dcbed" title="Start protocol operation." alt="" coords="297,254,453,281"/>
 <area shape="rect" id="node36" href="$classns3_1_1_rip_ng.html#a81a7056d4a1d1afc266181406f5dbf64" title="Start protocol operation." alt="" coords="287,305,462,331"/>
-<area shape="rect" id="node37" href="$classns3_1_1_rip.html#a4c9095a4429399f342eb1bce3f20df59" title=" " alt="" coords="275,355,474,382"/>
-<area shape="rect" id="node38" href="$classns3_1_1_rip_ng.html#a588e191ae91316e498a8e5c84a9c77fb" title="Notify when specified interface goes UP." alt="" coords="267,406,483,433"/>
-<area shape="rect" id="node39" href="$classns3_1_1_py_viz.html#a222dd813791398f8bf76371dc9288772" title="Register CSMA like device function." alt="" coords="281,457,469,499"/>
-<area shape="rect" id="node40" href="$classns3_1_1_py_viz.html#ab4fcab57c7fe0d3724b786e0cb9a6f63" title="Register point to point like device function." alt="" coords="283,523,467,564"/>
-<area shape="rect" id="node41" href="$classns3_1_1_py_viz.html#a8c41fd7483bc8fc914a41dc29e7e5b27" title="Register WIFI like device function." alt="" coords="286,588,463,629"/>
-<area shape="rect" id="node42" href="$main-simple_8cc.html#aae4a035f2107d100249164fe508bac66" title=" " alt="" coords="316,654,433,681"/>
-<area shape="rect" id="node43" href="$classns3_1_1_object_factory.html#affafbb7457b9b2614f57858126e576b1" title="Set the TypeId of the Objects to be created by this factory." alt="" coords="303,705,446,747"/>
-<area shape="rect" id="node44" href="$class_uan_experiment.html#ad62aa5f0923163f18258fa09d54d2f40" title="Set the UAN nodes communication channels." alt="" coords="251,771,499,798"/>
-<area shape="rect" id="node45" href="$adhoc-aloha-ideal-phy-with-microwave-oven_8cc.html#a3858f39b0c1d0e52120fef78a82673cb" title=" " alt="" coords="297,822,452,849"/>
-<area shape="rect" id="node46" href="$classns3_1_1_ping6.html#aa7b184cb61e3c3cb32aefa4d0407f521" title="Start the application." alt="" coords="274,873,475,899"/>
-<area shape="rect" id="node47" href="$classns3_1_1_radvd.html#ab3d7cd100356262e43c24e608ef1aff4" title="Start the application." alt="" coords="271,923,478,950"/>
-<area shape="rect" id="node48" href="$classns3_1_1_udp_client.html#a18c3a451f2c18d2edc6a634a913f1474" title="Application specific startup code." alt="" coords="260,974,489,1001"/>
-<area shape="rect" id="node49" href="$classns3_1_1_udp_echo_client.html#a48fffea76bbceda5b0bec9c3007411fc" title="Application specific startup code." alt="" coords="301,1025,449,1067"/>
+<area shape="rect" id="node37" href="$classns3_1_1lorawan_1_1_lora_helper.html#adeced2ddf7e1004ff7932b6e48a589a7" title="Install LoraNetDevices on a list of nodes." alt="" coords="283,356,467,397"/>
+<area shape="rect" id="node38" href="$classns3_1_1_rip.html#a4c9095a4429399f342eb1bce3f20df59" title=" " alt="" coords="275,422,474,449"/>
+<area shape="rect" id="node39" href="$classns3_1_1_rip_ng.html#a588e191ae91316e498a8e5c84a9c77fb" title="Notify when specified interface goes UP." alt="" coords="267,473,483,499"/>
+<area shape="rect" id="node40" href="$classns3_1_1_py_viz.html#a222dd813791398f8bf76371dc9288772" title="Register CSMA like device function." alt="" coords="281,524,469,565"/>
+<area shape="rect" id="node41" href="$classns3_1_1_py_viz.html#ab4fcab57c7fe0d3724b786e0cb9a6f63" title="Register point to point like device function." alt="" coords="283,589,467,631"/>
+<area shape="rect" id="node42" href="$classns3_1_1_py_viz.html#a8c41fd7483bc8fc914a41dc29e7e5b27" title="Register WIFI like device function." alt="" coords="286,655,463,696"/>
+<area shape="rect" id="node43" href="$main-simple_8cc.html#aae4a035f2107d100249164fe508bac66" title=" " alt="" coords="316,721,433,747"/>
+<area shape="rect" id="node44" href="$classns3_1_1_object_factory.html#affafbb7457b9b2614f57858126e576b1" title="Set the TypeId of the Objects to be created by this factory." alt="" coords="303,772,446,813"/>
+<area shape="rect" id="node45" href="$class_uan_experiment.html#ad62aa5f0923163f18258fa09d54d2f40" title="Set the UAN nodes communication channels." alt="" coords="251,838,499,865"/>
+<area shape="rect" id="node46" href="$adhoc-aloha-ideal-phy-with-microwave-oven_8cc.html#a3858f39b0c1d0e52120fef78a82673cb" title=" " alt="" coords="297,889,452,915"/>
+<area shape="rect" id="node47" href="$classns3_1_1_ping6.html#aa7b184cb61e3c3cb32aefa4d0407f521" title="Start the application." alt="" coords="274,939,475,966"/>
+<area shape="rect" id="node48" href="$classns3_1_1_radvd.html#ab3d7cd100356262e43c24e608ef1aff4" title="Start the application." alt="" coords="271,990,478,1017"/>
+<area shape="rect" id="node49" href="$classns3_1_1_udp_client.html#a18c3a451f2c18d2edc6a634a913f1474" title="Application specific startup code." alt="" coords="260,1041,489,1067"/>
 </map>

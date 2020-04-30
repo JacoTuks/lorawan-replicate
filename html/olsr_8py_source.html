@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -274,7 +271,7 @@ $(document).ready(function(){initNavTree('olsr_8py_source.html',''); initResizab
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    ns3_node = ns.network.NodeList.GetNode(node.node_index)</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    olsr = ns3_node.GetObject(ns.olsr.olsr.RoutingProtocol.GetTypeId())</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">if</span> olsr <span class="keywordflow">is</span> <span class="keywordtype">None</span>:</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        print(<span class="stringliteral">&quot;No OLSR&quot;</span>)</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <a class="code" href="complete-network-example_8cc.html#a1c9376cdc5e467bb714d0cf35d9bdc80">print</a>(<span class="stringliteral">&quot;No OLSR&quot;</span>)</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordflow">return</span></div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    menu_item = Gtk.MenuItem(<span class="stringliteral">&quot;Show OLSR Routing Table&quot;</span>)</div>
@@ -302,6 +299,7 @@ $(document).ready(function(){initNavTree('olsr_8py_source.html',''); initResizab
 <div class="ttc" id="aclassolsr_1_1_show_olsr_routing_table_html_abc19f53930b613b2a11f1e6a3d50b9d4"><div class="ttname"><a href="classolsr_1_1_show_olsr_routing_table.html#abc19f53930b613b2a11f1e6a3d50b9d4">olsr.ShowOlsrRoutingTable.update</a></div><div class="ttdeci">def update(self)</div><div class="ttdoc">Update function.</div><div class="ttdef"><b>Definition:</b> <a href="olsr_8py_source.html#l00092">olsr.py:92</a></div></div>
 <div class="ttc" id="aclassolsr_1_1_show_olsr_routing_table_html_a1ffe99444da97be6a1afe82990d6dd4e"><div class="ttname"><a href="classolsr_1_1_show_olsr_routing_table.html#a1ffe99444da97be6a1afe82990d6dd4e">olsr.ShowOlsrRoutingTable.visualizer</a></div><div class="ttdeci">visualizer</div><div class="ttdef"><b>Definition:</b> <a href="olsr_8py_source.html#l00044">olsr.py:44</a></div></div>
 <div class="ttc" id="anamespaceolsr_html_a6a59ba6ef94ebcababd01e11a5585eb4"><div class="ttname"><a href="namespaceolsr.html#a6a59ba6ef94ebcababd01e11a5585eb4">olsr.register</a></div><div class="ttdeci">def register(viz)</div><div class="ttdef"><b>Definition:</b> <a href="olsr_8py_source.html#l00136">olsr.py:136</a></div></div>
+<div class="ttc" id="acomplete-network-example_8cc_html_a1c9376cdc5e467bb714d0cf35d9bdc80"><div class="ttname"><a href="complete-network-example_8cc.html#a1c9376cdc5e467bb714d0cf35d9bdc80">print</a></div><div class="ttdeci">bool print</div><div class="ttdef"><b>Definition:</b> <a href="complete-network-example_8cc_source.html#l00049">complete-network-example.cc:49</a></div></div>
 <!-- ns-3 doxygen header, based on
      HTML header for doxygen 1.8.3.1
      Verified compatible with 1.8.6
@@ -310,7 +308,7 @@ $(document).ready(function(){initNavTree('olsr_8py_source.html',''); initResizab
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ba77f8dab2f3b5b8a1cbb129ed9c63cb.html">visualizer</a></li><li class="navelem"><a class="el" href="dir_37738c098fb7bb201082a8a35f2b1fdc.html">visualizer</a></li><li class="navelem"><a class="el" href="dir_987e100771171475f449b2930f483a94.html">plugins</a></li><li class="navelem"><a class="el" href="olsr_8py.html">olsr.py</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:06 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:13 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

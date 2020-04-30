@@ -1,6 +1,6 @@
 <map id="ns3::MacLow::GetRtsTxVector" name="ns3::MacLow::GetRtsTxVector">
 <area shape="rect" id="node1" title="Return a TXVECTOR for the RTS frame given the destination." alt="" coords="5,768,221,795"/>
-<area shape="rect" id="node2" href="$classns3_1_1_wifi_remote_station_manager.html#a0f4f6984f11037508c46a1af90508a34" title=" " alt="" coords="269,761,503,802"/>
+<area shape="rect" id="node2" href="$classns3_1_1_wifi_remote_station_manager.html#a853f412b16d537be85a70277c522dec7" title=" " alt="" coords="269,761,503,802"/>
 <area shape="rect" id="node3" href="$namespacens3.html#a979caa1d7cbfc08ececb6fd3ad561e26" title="Convert the guard interval to nanoseconds based on the WifiMode." alt="" coords="591,261,784,302"/>
 <area shape="rect" id="node7" href="$classns3_1_1_wifi_mode.html#a67e1664cac501221b63a2be307184cc9" title=" " alt="" coords="884,27,1103,69"/>
 <area shape="rect" id="node17" href="$classns3_1_1_wifi_remote_station_manager.html#abf44eccb31d4b1b58644fd6721d132c9" title=" " alt="" coords="571,195,804,237"/>
@@ -12,7 +12,7 @@
 <area shape="rect" id="node26" href="$classns3_1_1_high_latency_rts_tx_vector_tag.html#a428781245a00ce4bc292d79b9b83dd4b" title=" " alt="" coords="581,597,794,638"/>
 <area shape="rect" id="node27" href="$classns3_1_1_wifi_remote_station_manager.html#a9864b09190adb8e2b0c2d3658eacc6ce" title="Return whether the device uses short PHY preambles." alt="" coords="571,662,804,703"/>
 <area shape="rect" id="node28" href="$classns3_1_1_wifi_remote_station_manager.html#a3b5ae71dce8e994b493ddfdb1d2f57f6" title=" " alt="" coords="571,727,804,769"/>
-<area shape="rect" id="node29" href="$classns3_1_1_wifi_remote_station_manager.html#a144c73228215aec46edcb2db2b545abf" title="Return the station associated with the given address and TID." alt="" coords="571,793,804,834"/>
+<area shape="rect" id="node29" href="$classns3_1_1_wifi_remote_station_manager.html#a230ec2422481af84c0e2a8dcc1ccb630" title="Return the station associated with the given address." alt="" coords="571,793,804,834"/>
 <area shape="rect" id="node35" href="$classns3_1_1_wifi_tx_vector.html#a2bd711576c12a747bc3a800ef4cc0a5b" title="Sets the selected channelWidth (in MHz)" alt="" coords="615,858,760,899"/>
 <area shape="rect" id="node36" href="$classns3_1_1_wifi_tx_vector.html#a40280b31baf8d7cef1a7234715969d06" title="Sets the guard interval duration (in nanoseconds)" alt="" coords="615,923,760,965"/>
 <area shape="rect" id="node37" href="$classns3_1_1_wifi_tx_vector.html#af39f17fec348c22f8c963bcb6bb5fc53" title="Sets the selected payload transmission mode." alt="" coords="615,989,760,1030"/>

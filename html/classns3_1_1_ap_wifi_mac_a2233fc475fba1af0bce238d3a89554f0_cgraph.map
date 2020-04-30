@@ -7,7 +7,7 @@
 <area shape="rect" id="node9" href="$classns3_1_1_wifi_phy.html#a58a9d7c9dea69f223eb45ca4a5e0c49f" title=" " alt="" coords="300,290,527,331"/>
 <area shape="rect" id="node10" href="$classns3_1_1_wifi_remote_station_manager.html#a0b892949ceb7de13dd489049563f203c" title="Return the number of spatial streams supported by the station." alt="" coords="293,225,533,266"/>
 <area shape="rect" id="node16" href="$classns3_1_1_he_operation.html#a0e4b65c89fde0d73e382bd4d6b674266" title="Set the BSS color." alt="" coords="320,355,507,397"/>
-<area shape="rect" id="node17" href="$classns3_1_1_he_operation.html#af11b3a8c03d6390f58870ef59ba08ca3" title="Set the HE supported information element." alt="" coords="289,421,537,448"/>
+<area shape="rect" id="node17" href="$classns3_1_1_he_operation.html#aff5b4e207742ef6a5680e083a4a636ac" title="Set the HE supported information element." alt="" coords="289,421,537,448"/>
 <area shape="rect" id="node18" href="$classns3_1_1_he_operation.html#a34c08080f80517feac1acf5b1e7d6512" title="Set the Basic HE&#45;MCS and NSS field in the HE Operation information element by specifying the tuple (n..." alt="" coords="317,473,509,514"/>
 <area shape="rect" id="node4" href="$classns3_1_1_wifi_mac.html#ad2f6868310980347c60bbfa08494dc4a" title="Return the device this PHY is associated with." alt="" coords="901,123,1084,149"/>
 <area shape="rect" id="node5" href="$classns3_1_1_wifi_net_device.html#af4a86ccc320631308e9f1023baecdd6b" title=" " alt="" coords="1449,311,1607,353"/>

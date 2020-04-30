@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -200,9 +197,9 @@ $(document).ready(function(){initNavTree('wifi-ack-policy-selector_8h_source.htm
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;QosTxop&gt;</a> <a class="code" href="classns3_1_1_wifi_ack_policy_selector.html#a508f13791f089f5b05c01b575ef82f1b">GetQosTxop</a> (<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_wifi_ack_policy_selector.html#a376474fad375ba1c4a2537e56e2b0e40">SetAckPolicy</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;WifiPsdu&gt;</a> psdu, <span class="keyword">const</span> <a class="code" href="classns3_1_1_mac_low_transmission_parameters.html">MacLowTransmissionParameters</a> &amp; params);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_wifi_ack_policy_selector.html#a376474fad375ba1c4a2537e56e2b0e40">SetAckPolicy</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;WifiPsdu&gt;</a> psdu, <span class="keyword">const</span> <a class="code" href="classns3_1_1_mac_low_transmission_parameters.html">MacLowTransmissionParameters</a> &amp; <a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classns3_1_1_wifi_ack_policy_selector.html#a384e2dc4868e901660dd5365b36ee293">   85</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_wifi_ack_policy_selector.html#a384e2dc4868e901660dd5365b36ee293">UpdateTxParams</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;WifiPsdu&gt;</a> psdu, <a class="code" href="classns3_1_1_mac_low_transmission_parameters.html">MacLowTransmissionParameters</a> &amp; params) = 0;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classns3_1_1_wifi_ack_policy_selector.html#a384e2dc4868e901660dd5365b36ee293">   85</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_wifi_ack_policy_selector.html#a384e2dc4868e901660dd5365b36ee293">UpdateTxParams</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;WifiPsdu&gt;</a> psdu, <a class="code" href="classns3_1_1_mac_low_transmission_parameters.html">MacLowTransmissionParameters</a> &amp; <a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>) = 0;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="classns3_1_1_wifi_ack_policy_selector.html#a8be8121f3d8831e9616494176e149180">   88</a></span>&#160;  <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;QosTxop&gt;</a> <a class="code" href="classns3_1_1_wifi_ack_policy_selector.html#a8be8121f3d8831e9616494176e149180">m_qosTxop</a>;      </div>
@@ -215,6 +212,7 @@ $(document).ready(function(){initNavTree('wifi-ack-policy-selector_8h_source.htm
 </div><!-- doc-content -->
 <div class="ttc" id="aclassns3_1_1_type_id_html"><div class="ttname"><a href="classns3_1_1_type_id.html">ns3::TypeId</a></div><div class="ttdoc">a unique identifier for an interface.</div><div class="ttdef"><b>Definition:</b> <a href="type-id_8h_source.html#l00058">type-id.h:59</a></div></div>
 <div class="ttc" id="aclassns3_1_1_wifi_ack_policy_selector_html_a70b1c4edaa12a7982b6607798ccbeaaf"><div class="ttname"><a href="classns3_1_1_wifi_ack_policy_selector.html#a70b1c4edaa12a7982b6607798ccbeaaf">ns3::WifiAckPolicySelector::SetQosTxop</a></div><div class="ttdeci">void SetQosTxop(Ptr&lt; QosTxop &gt; qosTxop)</div><div class="ttdoc">Set the QoS Txop associated with this ack policy selector.</div><div class="ttdef"><b>Definition:</b> <a href="wifi-ack-policy-selector_8cc_source.html#l00054">wifi-ack-policy-selector.cc:54</a></div></div>
+<div class="ttc" id="anamespacealoha_html_aff1381c591fdaf9d3af2b19080c9eed7"><div class="ttname"><a href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">aloha.params</a></div><div class="ttdeci">dictionary params</div><div class="ttdef"><b>Definition:</b> <a href="aloha_8py_source.html#l00013">aloha.py:13</a></div></div>
 <div class="ttc" id="anamespacens3_html"><div class="ttname"><a href="namespacens3.html">ns3</a></div><div class="ttdoc">Every class exported by the ns3 library is enclosed in the ns3 namespace.</div></div>
 <div class="ttc" id="aqos-txop_8h_html"><div class="ttname"><a href="qos-txop_8h.html">qos-txop.h</a></div></div>
 <div class="ttc" id="aclassns3_1_1_wifi_ack_policy_selector_html_a376474fad375ba1c4a2537e56e2b0e40"><div class="ttname"><a href="classns3_1_1_wifi_ack_policy_selector.html#a376474fad375ba1c4a2537e56e2b0e40">ns3::WifiAckPolicySelector::SetAckPolicy</a></div><div class="ttdeci">static void SetAckPolicy(Ptr&lt; WifiPsdu &gt; psdu, const MacLowTransmissionParameters &amp;params)</div><div class="ttdoc">Set the QoS Ack Policy for the QoS Data frames contained in the given PSDU according to the given Mac...</div><div class="ttdef"><b>Definition:</b> <a href="wifi-ack-policy-selector_8cc_source.html#l00067">wifi-ack-policy-selector.cc:67</a></div></div>
@@ -238,7 +236,7 @@ $(document).ready(function(){initNavTree('wifi-ack-policy-selector_8h_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_9bb89822448514d94fe3e213d3ac83be.html">wifi</a></li><li class="navelem"><a class="el" href="dir_a444d77082d8b776da6eccf888b54154.html">model</a></li><li class="navelem"><a class="el" href="wifi-ack-policy-selector_8h.html">wifi-ack-policy-selector.h</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:07 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:15 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

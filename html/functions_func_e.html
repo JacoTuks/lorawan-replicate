@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -170,9 +167,6 @@ $(document).ready(function(){initNavTree('functions_func_e.html',''); initResiza
 <li>EdcaParameterSet()
 : <a class="el" href="classns3_1_1_edca_parameter_set.html#aad6e45108e2bec01f05038b1410a48de">ns3::EdcaParameterSet</a>
 </li>
-<li>EdcaTestSuite()
-: <a class="el" href="class_edca_test_suite.html#a104825874d8815241c529b801f6014e4">EdcaTestSuite</a>
-</li>
 <li>ElapsedTimeFromTsValue()
 : <a class="el" href="classns3_1_1_tcp_option_t_s.html#a43934610282898ab9631acb58f2bd35e">ns3::TcpOptionTS</a>
 </li>
@@ -251,6 +245,9 @@ $(document).ready(function(){initNavTree('functions_func_e.html',''); initResiza
 </li>
 <li>EnableAck()
 : <a class="el" href="classns3_1_1_mac_low_transmission_parameters.html#aa2db70f6786b7d0b9d9cc453b2292f2b">ns3::MacLowTransmissionParameters</a>
+</li>
+<li>EnableAdr()
+: <a class="el" href="classns3_1_1lorawan_1_1_network_server_helper.html#a22390332a45afe1ac24f2fc487a399a9">ns3::lorawan::NetworkServerHelper</a>
 </li>
 <li>EnableAggregation()
 : <a class="el" href="classns3_1_1_regular_wifi_mac.html#aff4c3c6089505d115e0cdb3403cf0eba">ns3::RegularWifiMac</a>
@@ -381,6 +378,9 @@ $(document).ready(function(){initNavTree('functions_func_e.html',''); initResiza
 <li>EnablePacketMetadata()
 : <a class="el" href="classns3_1_1_animation_interface.html#a9fd79d5671bb08d25aa43e8d1f8cd2b7">ns3::AnimationInterface</a>
 </li>
+<li>EnablePacketTracking()
+: <a class="el" href="classns3_1_1lorawan_1_1_lora_helper.html#a49c8b425070940aa3daf95c900748619">ns3::lorawan::LoraHelper</a>
+</li>
 <li>EnablePcap()
 : <a class="el" href="classns3_1_1_pcap_helper_for_device.html#a74866def9a881aa9d5c5be1225a26722">ns3::PcapHelperForDevice</a>
 </li>
@@ -424,6 +424,15 @@ $(document).ready(function(){initNavTree('functions_func_e.html',''); initResiza
 : <a class="el" href="classns3_1_1_lte_helper.html#adc62a53efe0437cf09062c9d6a95af3d">ns3::LteHelper</a>
 , <a class="el" href="classns3_1_1_lte_simple_helper.html#af104a1aed2953aa4f8fce9725aaf8ee8">ns3::LteSimpleHelper</a>
 </li>
+<li>EnablePeriodicDeviceStatusPrinting()
+: <a class="el" href="classns3_1_1lorawan_1_1_lora_helper.html#a128022c09c229a425b780239217e8651">ns3::lorawan::LoraHelper</a>
+</li>
+<li>EnablePeriodicGlobalPerformancePrinting()
+: <a class="el" href="classns3_1_1lorawan_1_1_lora_helper.html#af9a1da4f6765347065a22eaf2cd9d5be">ns3::lorawan::LoraHelper</a>
+</li>
+<li>EnablePeriodicPhyPerformancePrinting()
+: <a class="el" href="classns3_1_1lorawan_1_1_lora_helper.html#a74341c5513c8a4a24f41e298f043867f">ns3::lorawan::LoraHelper</a>
+</li>
 <li>EnablePhyTraces()
 : <a class="el" href="classns3_1_1_lte_helper.html#ad6d7edf234d29f7b8363e9ebf73fe32e">ns3::LteHelper</a>
 </li>
@@ -445,6 +454,9 @@ $(document).ready(function(){initNavTree('functions_func_e.html',''); initResiza
 </li>
 <li>EnableRts()
 : <a class="el" href="classns3_1_1_mac_low_transmission_parameters.html#a119d03769cf51e528d03f686c6bd8ed5">ns3::MacLowTransmissionParameters</a>
+</li>
+<li>EnableSimulationTimePrinting()
+: <a class="el" href="classns3_1_1lorawan_1_1_lora_helper.html#ab0665245660dbf2a92f09c0a11ce7179">ns3::lorawan::LoraHelper</a>
 </li>
 <li>EnableTraces()
 : <a class="el" href="classns3_1_1_lte_helper.html#aeb70fd96f1c58806a5b7ad9f68a795e0">ns3::LteHelper</a>
@@ -574,11 +586,17 @@ $(document).ready(function(){initNavTree('functions_func_e.html',''); initResiza
 <li>EndCycle()
 : <a class="el" href="classns3_1_1_uan_mac_rc_gw.html#afd7577179828a6dd31e59427f3c98672">ns3::UanMacRcGw</a>
 </li>
-<li>EndDeviceLoraMac()
-: <a class="el" href="classns3_1_1_end_device_lora_mac.html#a48caf82fddb1695caad59b9887619671">ns3::EndDeviceLoraMac</a>
-</li>
 <li>EndDeviceLoraPhy()
-: <a class="el" href="classns3_1_1_end_device_lora_phy.html#a4c5e60a4dcc7a7b56479c05318ca7768">ns3::EndDeviceLoraPhy</a>
+: <a class="el" href="classns3_1_1lorawan_1_1_end_device_lora_phy.html#a9d426b373fe102f45a2184bf1e66329f">ns3::lorawan::EndDeviceLoraPhy</a>
+</li>
+<li>EndDeviceLorawanMac()
+: <a class="el" href="classns3_1_1lorawan_1_1_end_device_lorawan_mac.html#ac25644121444aa07f17f4eb1afc02ba1">ns3::lorawan::EndDeviceLorawanMac</a>
+</li>
+<li>EndDeviceStatus()
+: <a class="el" href="classns3_1_1lorawan_1_1_end_device_status.html#af75a0c299dd2925b3d8e16a6158f896a">ns3::lorawan::EndDeviceStatus</a>
+</li>
+<li>EndDeviceStatusTest()
+: <a class="el" href="class_end_device_status_test.html#a278622bf2604ebac12a7cba1b949340e">EndDeviceStatusTest</a>
 </li>
 <li>EndDlSubFrame()
 : <a class="el" href="classns3_1_1_base_station_net_device.html#a0d20b289eddae756199cc8d11d4db589">ns3::BaseStationNetDevice</a>
@@ -597,9 +615,11 @@ $(document).ready(function(){initNavTree('functions_func_e.html',''); initResiza
 : <a class="el" href="classns3_1_1_waypoint_mobility_model.html#a7b70ccd32a63fb4b1c813da4548050c0">ns3::WaypointMobilityModel</a>
 </li>
 <li>EndReceive()
-: <a class="el" href="classns3_1_1_end_device_lora_phy.html#aac4b65bcbdd6f2dba398ec714445d82b">ns3::EndDeviceLoraPhy</a>
-, <a class="el" href="classns3_1_1_gateway_lora_phy.html#a807701b5721f0e4ff5f2ae8bce06cbe9">ns3::GatewayLoraPhy</a>
-, <a class="el" href="classns3_1_1_lora_phy.html#aea97455178e59c28dfbf3b070536b12f">ns3::LoraPhy</a>
+: <a class="el" href="classns3_1_1lorawan_1_1_end_device_lora_phy.html#af5618e5c03f0010244fcde7922d9899f">ns3::lorawan::EndDeviceLoraPhy</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_gateway_lora_phy.html#a030500acf630f508b12923627cdc4068">ns3::lorawan::GatewayLoraPhy</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_lora_phy.html#a719f749890c247abc3fda290d384c37f">ns3::lorawan::LoraPhy</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_simple_end_device_lora_phy.html#a03a9d0ffdd5f89991a61aa54e5a1e7ba">ns3::lorawan::SimpleEndDeviceLoraPhy</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_simple_gateway_lora_phy.html#aefb2464599926253bfb1003fa14f8fae">ns3::lorawan::SimpleGatewayLoraPhy</a>
 , <a class="el" href="classns3_1_1_simple_ofdm_wimax_phy.html#a17ca55242f086cdaacdbe55b571a8f37">ns3::SimpleOfdmWimaxPhy</a>
 , <a class="el" href="classns3_1_1_wifi_phy.html#a0528e5f0ded822ff3df47b5146cb0484">ns3::WifiPhy</a>
 </li>
@@ -694,7 +714,7 @@ $(document).ready(function(){initNavTree('functions_func_e.html',''); initResiza
 : <a class="el" href="classns3_1_1_energy_harvester.html#ab6520ad23083bc96b7ca4136b33ea688">ns3::EnergyHarvester</a>
 </li>
 <li>EnergyHarvesterContainer()
-: <a class="el" href="classns3_1_1_energy_harvester_container.html#aeb0675712b12a1380261dc450afa46b0">ns3::EnergyHarvesterContainer</a>
+: <a class="el" href="classns3_1_1_energy_harvester_container.html#ad806c83a2458510c665b299f2694a68d">ns3::EnergyHarvesterContainer</a>
 </li>
 <li>EnergyRechargeHandler()
 : <a class="el" href="classns3_1_1_uan_phy.html#a59b7f049d7d0510a498444ab6ada811c">ns3::UanPhy</a>
@@ -705,7 +725,7 @@ $(document).ready(function(){initNavTree('functions_func_e.html',''); initResiza
 : <a class="el" href="classns3_1_1_energy_source.html#a820794a417c3d2f7909f987ba6064cde">ns3::EnergySource</a>
 </li>
 <li>EnergySourceContainer()
-: <a class="el" href="classns3_1_1_energy_source_container.html#a9bc152cfe4158173e7e84591ec2985dd">ns3::EnergySourceContainer</a>
+: <a class="el" href="classns3_1_1_energy_source_container.html#a3d96da242e1b8c5c24e6d42ae31e9193">ns3::EnergySourceContainer</a>
 </li>
 <li>Enqueue()
 : <a class="el" href="class_ared_queue_disc_test_case.html#a5528c44233e1056913e76d5be988f049">AredQueueDiscTestCase</a>
@@ -868,7 +888,7 @@ $(document).ready(function(){initNavTree('functions_func_e.html',''); initResiza
 : <a class="el" href="classns3_1_1_epc_x2_sn_status_transfer_header.html#ac25ea3454ba063e1bca156de96265fb9">ns3::EpcX2SnStatusTransferHeader</a>
 </li>
 <li>EpcX2SpecificEpcX2SapProvider()
-: <a class="el" href="classns3_1_1_epc_x2_specific_epc_x2_sap_provider.html#ae02cf581402bd73c71583dba95d7422f">ns3::EpcX2SpecificEpcX2SapProvider&lt; C &gt;</a>
+: <a class="el" href="classns3_1_1_epc_x2_specific_epc_x2_sap_provider.html#a6a13ad96b39b151b4a13367c4db44463">ns3::EpcX2SpecificEpcX2SapProvider&lt; C &gt;</a>
 </li>
 <li>EpcX2SpecificEpcX2SapUser()
 : <a class="el" href="classns3_1_1_epc_x2_specific_epc_x2_sap_user.html#ac1f9a6426ecefc802f04e30d3844a70c">ns3::EpcX2SpecificEpcX2SapUser&lt; C &gt;</a>
@@ -877,7 +897,7 @@ $(document).ready(function(){initNavTree('functions_func_e.html',''); initResiza
 : <a class="el" href="classns3_1_1_epc_x2_ue_context_release_header.html#ac314302e711a1f041ed970f25935fb6e">ns3::EpcX2UeContextReleaseHeader</a>
 </li>
 <li>EpsBearer()
-: <a class="el" href="classns3_1_1_eps_bearer.html#a2116aa47ad61ee19ddc726558bc90cb8">ns3::EpsBearer</a>
+: <a class="el" href="classns3_1_1_eps_bearer.html#af6f94c7bbd1d1bc26e6895d19cf26086">ns3::EpsBearer</a>
 </li>
 <li>EpsBearerTag()
 : <a class="el" href="classns3_1_1_eps_bearer_tag.html#ae08784b82261c65bb660fcd2f2ddb4fa">ns3::EpsBearerTag</a>
@@ -1055,7 +1075,7 @@ $(document).ready(function(){initNavTree('functions_func_e.html',''); initResiza
 <li>Event()
 : <a class="el" href="classanonymous__namespace_02sample-show-progress_8cc_03_1_1_hold.html#a1308a258720ae7ead0afcadccdd91d3c">anonymous_namespace{sample-show-progress.cc}::Hold</a>
 , <a class="el" href="classns3_1_1_event.html#af3db91518915664f6017f384ab46d6b8">ns3::Event</a>
-, <a class="el" href="classns3_1_1_lora_interference_helper_1_1_event.html#a95bac4985858e44042476cf534bd827c">ns3::LoraInterferenceHelper::Event</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_lora_interference_helper_1_1_event.html#a7ed9e05bda1c59057d65d046d4982f39">ns3::lorawan::LoraInterferenceHelper::Event</a>
 </li>
 <li>EventA()
 : <a class="el" href="class_simulator_events_test_case.html#a1c00c3c0ad85145671fe4a5776f4ad62">SimulatorEventsTestCase</a>
@@ -1092,7 +1112,7 @@ $(document).ready(function(){initNavTree('functions_func_e.html',''); initResiza
 : <a class="el" href="classns3_1_1tests_1_1_event_garbage_collector_test_suite.html#a6d87827d6927b171def7d4c5212a5005">ns3::tests::EventGarbageCollectorTestSuite</a>
 </li>
 <li>EventId()
-: <a class="el" href="classns3_1_1_event_id.html#ae553d827bf2f5dea93b403b2f4ed56ef">ns3::EventId</a>
+: <a class="el" href="classns3_1_1_event_id.html#a014007cdca4aa0731e173670cea4a1ce">ns3::EventId</a>
 </li>
 <li>EventImpl()
 : <a class="el" href="classns3_1_1_event_impl.html#a26ff70b19449c64310a6c36569086eee">ns3::EventImpl</a>
@@ -1179,7 +1199,7 @@ $(document).ready(function(){initNavTree('functions_func_e.html',''); initResiza
 : <a class="el" href="class_channel_access_manager_test.html#abb4a56d004bc097925e6e7880a4a39a6">ChannelAccessManagerTest&lt; TxopType &gt;</a>
 </li>
 <li>Experiment()
-: <a class="el" href="class_experiment.html#ae5b795f9aa6b383828572659fa3e02f8">Experiment</a>
+: <a class="el" href="class_experiment.html#a303e6a05d99f403ff4793495a2fbff58">Experiment</a>
 </li>
 <li>Expire()
 : <a class="el" href="classns3_1_1tests_1_1_watchdog_test_case.html#a0f9bd969f01bde3599aa21353bc04316">ns3::tests::WatchdogTestCase</a>
@@ -1237,7 +1257,7 @@ $(document).ready(function(){initNavTree('functions_func_e.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:51 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:53 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

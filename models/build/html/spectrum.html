@@ -62,9 +62,6 @@
 		      <a id="ns3_tut"
 			 href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-		      <a id="ns3_ptbr"
-			 href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 	        </li>
 	        <li><span
 		      onmouseover="mopen('mDocs')" 
@@ -138,11 +135,11 @@
 aspects of communications in <em>ns-3</em>.
 The model was first introduced in
 <a class="reference internal" href="#baldo2009spectrum" id="id1"><span>[Baldo2009Spectrum]</span></a>, and has been enhanced and refined over the years.</p>
-<div class="figure align-center" id="id15">
+<div class="figure align-center" id="id21">
 <span id="fig-spectrum-analyzer-example"></span><img alt="_images/spectrum-analyzer-example.png" src="_images/spectrum-analyzer-example.png" />
 <p class="caption"><span class="caption-text">Spectrogram produced by a spectrum analyzer in a scenario
 involving wifi signals interfered by a microwave oven, as simulated
-by the example <code class="docutils literal notranslate"><span class="pre">adhoc-aloha-ideal-phy-with-microwave-oven</span></code>.</span><a class="headerlink" href="#id15" title="Permalink to this image">¶</a></p>
+by the example <code class="docutils literal notranslate"><span class="pre">adhoc-aloha-ideal-phy-with-microwave-oven</span></code>.</span><a class="headerlink" href="#id21" title="Permalink to this image">¶</a></p>
 </div>
 <div class="section" id="model-description">
 <h2>Model Description<a class="headerlink" href="#model-description" title="Permalink to this headline">¶</a></h2>
@@ -198,9 +195,9 @@ received over the air.</p>
 <p>The spectrum Channel/PHY interface is defined by the base classes <code class="docutils literal notranslate"><span class="pre">SpectrumChannel</span></code>
 and <code class="docutils literal notranslate"><span class="pre">SpectrumPhy</span></code>. Their interaction simulates the transmission and
 reception of signals over the medium. The way this interaction works is depicted in <a class="reference internal" href="#fig-spectrum-channel-phy-interface"><span class="std std-ref">Sequence diagram showing the interaction between SpectrumPhy and SpectrumChannel</span></a>:</p>
-<div class="figure align-center" id="id16">
+<div class="figure align-center" id="id22">
 <span id="fig-spectrum-channel-phy-interface"></span><img alt="_images/spectrum-channel-phy-interface.png" src="_images/spectrum-channel-phy-interface.png" />
-<p class="caption"><span class="caption-text">Sequence diagram showing the interaction between SpectrumPhy and SpectrumChannel</span><a class="headerlink" href="#id16" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text">Sequence diagram showing the interaction between SpectrumPhy and SpectrumChannel</span><a class="headerlink" href="#id22" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 <div class="section" id="spectrum-channel-implementations">
@@ -504,10 +501,10 @@ setting up simulations.</p>
 user-configurable PSD model that can be transmitted on the <code class="docutils literal notranslate"><span class="pre">SpectrumChannel</span></code>.
 It inherits from <code class="docutils literal notranslate"><span class="pre">SpectrumPhy</span></code> and is comprised of attributes and methods to
 create and transmit the signal on the channel.</p>
-<div class="figure align-center" id="id17">
+<div class="figure align-center" id="id23">
 <span id="spectrum-tv-cofdm"></span><img alt="_images/spectrum-tv-cofdm.png" src="_images/spectrum-tv-cofdm.png" />
 <p class="caption"><span class="caption-text">8K COFDM signal spectrum generated from <code class="docutils literal notranslate"><span class="pre">TvSpectrumTransmitter</span></code> (Left) and
-theoretical COFDM signal spectrum [KoppCOFDM] (Right)</span><a class="headerlink" href="#id17" title="Permalink to this image">¶</a></p>
+theoretical COFDM signal spectrum <a class="reference internal" href="#koppcofdm" id="id4"><span>[KoppCOFDM]</span></a> (Right)</span><a class="headerlink" href="#id23" title="Permalink to this image">¶</a></p>
 </div>
 <p>One of the user-configurable attributes is the type of modulation for the TV
 transmitter to use. The options are 8-VSB (Eight-Level Vestigial Sideband
@@ -519,8 +516,8 @@ technology but is still being used by some countries today. To accomplish
 realistic PSD models for these modulation types, the signals’ PSDs were
 approximated from real standards and developed into models that are scalable by
 frequency and power. The COFDM PSD is approximated from Figure 12 (8k mode) of
-[KoppCOFDM], the 8-VSB PSD is approximated from Figure 3 of [Baron8VSB], and the
-analog PSD is approximated from Figure 4 of [QualcommAnalog]. Note that the
+<a class="reference internal" href="#koppcofdm" id="id5"><span>[KoppCOFDM]</span></a>, the 8-VSB PSD is approximated from Figure 3 of <a class="reference internal" href="#baron8vsb" id="id6"><span>[Baron8VSB]</span></a>, and the
+analog PSD is approximated from Figure 4 of <a class="reference internal" href="#qualcommanalog" id="id7"><span>[QualcommAnalog]</span></a>. Note that the
 analog model is approximated from the NTSC standard, but other analog modulation
 standards such as PAL have similar signals. The approximated COFDM PSD model is
 in 8K mode. The other configurable attributes are the start frequency,
@@ -541,12 +538,12 @@ be created and transmitted on the channel.</p>
 <p>The helper class, <code class="docutils literal notranslate"><span class="pre">TvSpectrumTransmitterHelper</span></code>, consists of features to
 assist users in setting up TV transmitters for their simulations. Functionality
 is also provided to easily simulate real-world scenarios.</p>
-<div class="figure align-center" id="id18">
+<div class="figure align-center" id="id24">
 <span id="spectrum-tv-8vsb"></span><img alt="_images/spectrum-tv-8vsb.png" src="_images/spectrum-tv-8vsb.png" />
 <p class="caption"><span class="caption-text">North America ATSC channel 19 &amp; 20 signals generated using
 <code class="docutils literal notranslate"><span class="pre">TvSpectrumTransmitterHelper</span></code> (Left) and theoretical 8-VSB signal
-[Baron8VSB] (Right). Note that the theoretical signal is not shown in dB
-while the ns-3 generated signals are.</span><a class="headerlink" href="#id18" title="Permalink to this image">¶</a></p>
+<a class="reference internal" href="#baron8vsb" id="id8"><span>[Baron8VSB]</span></a> (Right). Note that the theoretical signal is not shown in dB
+while the ns-3 generated signals are.</span><a class="headerlink" href="#id24" title="Permalink to this image">¶</a></p>
 </div>
 <p>Using this helper class, users can easily set up TV transmitters right after
 configuring attributes. Multiple transmitters can be created at a time. Also
@@ -554,12 +551,12 @@ included are real characteristics of specific geographic regions that can be
 used to run realistic simulations. The regions currently included are
 North America, Europe, and Japan. The frequencies and bandwidth of each TV
 channel for each these regions are provided.</p>
-<div class="figure align-center" id="id19">
+<div class="figure align-center" id="id25">
 <span id="spectrum-tv-rand-geo-points"></span><img alt="_images/spectrum-tv-rand-geo-points.png" src="_images/spectrum-tv-rand-geo-points.png" />
 <p class="caption"><span class="caption-text">Plot from MATLAB implementation of CreateRegionalTvTransmitters method in
 <code class="docutils literal notranslate"><span class="pre">TvSpectrumTransmitterHelper</span></code>. Shows 100 random points on Earth’s surface
 (with altitude 0) corresponding to TV transmitter locations within a 2000 km
-radius of 35° latitude and -100° longitude.</span><a class="headerlink" href="#id19" title="Permalink to this image">¶</a></p>
+radius of 35° latitude and -100° longitude.</span><a class="headerlink" href="#id25" title="Permalink to this image">¶</a></p>
 </div>
 <p>A method (CreateRegionalTvTransmitters) is provided that enables users to
 randomly generate multiple TV transmitters from a specified region with a given
@@ -574,8 +571,8 @@ Earth-Fixed Cartesian coordinates. Note that bodies of water on Earth are not
 considered in location point generation–TV transmitters can be generated
 anywhere on Earth around the origin point within the chosen maximum radius.</p>
 </div>
-<div class="section" id="id4">
-<h4>Examples<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id9">
+<h4>Examples<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
 <p>Two example simulations are provided that demonstrate the functionality of the
 TV transmitter model. <code class="docutils literal notranslate"><span class="pre">tv-trans-example</span></code> simulates two 8-VSB TV transmitters
 with adjacent channel frequencies. <code class="docutils literal notranslate"><span class="pre">tv-trans-regional-example</span></code> simulates
@@ -583,8 +580,8 @@ randomly generated COFDM TV transmitters (modeling the DVB-T standard)
 located around the Paris, France area with channel frequencies and bandwidths
 corresponding to the European television channel allocations.</p>
 </div>
-<div class="section" id="id5">
-<h4>Testing<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id10">
+<h4>Testing<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
 <p>The <code class="docutils literal notranslate"><span class="pre">tv-spectrum-transmitter</span></code> test suite verifies the accuracy of the
 spectrum/PSD model in <code class="docutils literal notranslate"><span class="pre">TvSpectrumTransmitter</span></code> by testing if the maximum power
 spectral density, start frequency, and end frequency comply with expected values
@@ -602,7 +599,7 @@ correspond to TV transmitter positions. The first method converts Earth
 geographic coordinates to Earth-Centered Earth-Fixed (ECEF) Cartesian
 coordinates, and is tested in the <code class="docutils literal notranslate"><span class="pre">geo-to-cartesian</span></code> test suite by comparing
 (with 10 meter tolerance) its output with the output of the geographic to ECEF
-conversion function [MatlabGeo] of the MATLAB Mapping Toolbox for numerous
+conversion function <a class="reference internal" href="#matlabgeo" id="id11"><span>[MatlabGeo]</span></a> of the MATLAB Mapping Toolbox for numerous
 test cases. The other used method generates random ECEF Cartesian points around
 the given geographic origin point, and is tested in the <code class="docutils literal notranslate"><span class="pre">rand-cart-around-geo</span></code>
 test suite by verifying that the generated points do not exceed the given
@@ -611,7 +608,7 @@ maximum distance radius from the origin point.</p>
 </div>
 <div class="section" id="gpp-tr-38-901-fast-fading-model">
 <h3>3GPP TR 38.901 fast fading model<a class="headerlink" href="#gpp-tr-38-901-fast-fading-model" title="Permalink to this headline">¶</a></h3>
-<p>The framework described by TR 38.901 <a class="reference internal" href="#tr38901" id="id6"><span>[TR38901]</span></a> is a 3D statistical Spatial
+<p>The framework described by TR 38.901 <a class="reference internal" href="#tr38901" id="id12"><span>[TR38901]</span></a> is a 3D statistical Spatial
 Channel Model supporting different propagation environments (e.g., urban,
 rural, indoor), multi-antenna operations and the modeling of wireless channels
 between 0.5 and 100 GHz.
@@ -627,9 +624,9 @@ of the channel coefficients and the computation of the frequency-dependent
 propagation loss.</p>
 <div class="section" id="implementation">
 <h4>Implementation<a class="headerlink" href="#implementation" title="Permalink to this headline">¶</a></h4>
-<p>Our implementation is described in <a class="reference internal" href="#zugno" id="id7"><span>[Zugno]</span></a>. It is based on the model described
-in <a class="reference internal" href="#zhang" id="id8"><span>[Zhang]</span></a>, but the code has been refactored, extended, and aligned to TR 38.901
-<a class="reference internal" href="#tr38901" id="id9"><span>[TR38901]</span></a>.
+<p>Our implementation is described in <a class="reference internal" href="#zugno" id="id13"><span>[Zugno]</span></a>. It is based on the model described
+in <a class="reference internal" href="#zhang" id="id14"><span>[Zhang]</span></a>, but the code has been refactored, extended, and aligned to TR 38.901
+<a class="reference internal" href="#tr38901" id="id15"><span>[TR38901]</span></a>.
 The fundamental assumption behind this model is the channel reciprocity, i.e.,
 the impulse response of the channel between node a and node b is the same as
 between node b and node a.
@@ -642,23 +639,21 @@ please have a look at the documentation of the classes
 ThreeGppChannelModel and ThreeGppSpectrumPropagationLossModel.</p>
 <p><strong>Note:</strong></p>
 <blockquote>
-<div><ul class="simple">
-<li><p>Currently, no error model is provided; a link-to-system campaign may be</p></li>
-</ul>
-<p>needed to incorporate it in existing modules.</p>
-<ul class="simple">
-<li><p>The model does not include any spatial consistency update procedure</p></li>
-</ul>
-<p>(see <a class="reference internal" href="#tr38901" id="id10"><span>[TR38901]</span></a>, Sec. 7.6.1). The implementation of this feature is left
-as future work.</p>
-<ul class="simple">
-<li><p>Issue regarding the blockage model: according to 3GPP TR 38.901 v15.0.0</p></li>
-</ul>
-<p>(2018-06) section 7.6.4.1, the blocking region for self-blocking is provided
-in LCS.
-However, here, clusterAOA and clusterZOA are in GCS and blocking check is
+<div><ul>
+<li><p>Currently, no error model is provided; a link-to-system campaign may be
+needed to incorporate it in existing modules.</p></li>
+<li><p>The model does not include any spatial consistency update procedure
+(see <a class="reference internal" href="#tr38901" id="id16"><span>[TR38901]</span></a>, Sec. 7.6.1). The implementation of this feature is left
+as future work.</p></li>
+<li><p>Issue regarding the blockage model: according to 3GPP TR 38.901 v15.0.0
+(2018-06) section 7.6.4.1, the blocking region for self-blocking is provided
+in LCS.</p>
+<p>However, here, clusterAOA and clusterZOA are in GCS and blocking check is
 performed for self-blocking similar to non-self blocking, that is in GCS.
-One would expect the angles to be transposed to LCS before checking self-blockage.</p>
+One would expect the angles to be transposed to LCS before checking
+self-blockage.</p>
+</li>
+</ul>
 </div></blockquote>
 </div>
 <div class="section" id="threegppspectrumpropagationlossmodel">
@@ -708,7 +703,7 @@ cluster is computed considering only the central ray.</p>
 <div class="section" id="threegppchannelmodel">
 <h4>ThreeGppChannelModel<a class="headerlink" href="#threegppchannelmodel" title="Permalink to this headline">¶</a></h4>
 <p>The class ThreeGppChannelModel implements the channel matrix generation procedure
-described in Sec. of <a class="reference internal" href="#tr38901" id="id11"><span>[TR38901]</span></a>.
+described in Sec. of <a class="reference internal" href="#tr38901" id="id17"><span>[TR38901]</span></a>.
 The main method is GetChannel, which takes as input the mobility models of
 the transmitter and receiver nodes, the associated antenna objects,
 and returns a ThreeGppChannelMatrix object containing:</p>
@@ -739,69 +734,73 @@ feature is enabled, an additional attenuation is added to certain
 clusters, depending on their angle of arrival. There are two possi-
 ble methods for the computation of the additional attenuation, i.e.,
 stochastic (Model A) and geometric (Model B). In this work, we
-used the implementation provided by <a class="reference internal" href="#zhang" id="id12"><span>[Zhang]</span></a>, which
+used the implementation provided by <a class="reference internal" href="#zhang" id="id18"><span>[Zhang]</span></a>, which
 uses the stochastic method. In particular, the model is implemented by the
 method CalcAttenuationOfBlockage, which computes the additional attenuation.
 The blockage feature can be disable through the attribute “Blockage”. Also, the
 attributes “NumNonselfBlocking”, “PortraitMode” and “BlockerSpeed” can be used
 to configure the model.</p>
 </div>
-<div class="section" id="id13">
-<h4>Testing<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id19">
+<h4>Testing<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h4>
 <p>The test suite ThreeGppChannelTestSuite includes three test cases:</p>
-<ul class="simple">
-<li><p>ThreeGppChannelMatrixComputationTest checks if the channel matrix has the</p></li>
+<ul>
+<li><p>ThreeGppChannelMatrixComputationTest checks if the channel matrix has the
+correct dimensions and if it correctly normalized</p></li>
+<li><p>ThreeGppChannelMatrixUpdateTest, which checks if the channel matrix
+is correctly updated when the coherence time exceeds</p></li>
+<li><p>ThreeGppSpectrumPropagationLossModelTest, which tests the functionalities
+of the class ThreeGppSpectrumPropagationLossModel. It builds a simple
+network composed of two nodes, computes the power spectral density
+received by the receiving node, and</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Checks if the long term components for the direct and
+the reverse link are the same,</p></li>
+<li><p>Checks if the long term component is updated when changing
+the beamforming vectors,</p></li>
+<li><p>Checks if the long term is updated when changing the channel matrix</p></li>
+</ol>
+</div></blockquote>
+</li>
 </ul>
-<p>correct dimensions and if it correctly normalized</p>
-<ul class="simple">
-<li><p>ThreeGppChannelMatrixUpdateTest, which checks if the channel matrix is correctly</p></li>
-</ul>
-<p>updated when the coherence time exceeds</p>
-<ul class="simple">
-<li><p>ThreeGppSpectrumPropagationLossModelTest, which tests the functionalities of the</p></li>
-</ul>
-<p>class ThreeGppSpectrumPropagationLossModel. It builds a simple network composed of two
-nodes, computes the power spectral density received by the
-receiving node, and (i) checks if the long term components for the direct and the reverse link
-are the same, (ii) checks if the long term component is updated when changing the beamforming
-vectors, (iii) checks if the long term is updated when changing the channel matrix</p>
 <p><strong>Note:</strong> TR 38.901 includes a calibration procedure that can be used to validate
 the model, but it requires some additional features which are not currently
 implemented, thus is left as future work.</p>
 </div>
-<div class="section" id="id14">
-<h4>References<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id20">
+<h4>References<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h4>
 <dl class="citation">
-<dt class="label" id="baron8vsb"><span class="brackets">Baron8VSB</span></dt>
+<dt class="label" id="baron8vsb"><span class="brackets">Baron8VSB</span><span class="fn-backref">(<a href="#id6">1</a>,<a href="#id8">2</a>)</span></dt>
 <dd><p>Baron, Stanley. “First-Hand:Digital Television: The Digital
 Terrestrial Television Broadcasting (DTTB) Standard.” IEEE Global History
 Network. &lt;http://www.ieeeghn.org/wiki/index.php/First-Hand:Digital_Television:_The_Digital_Terrestrial_Television_Broadcasting_(DTTB)_Standard&gt;.</p>
 </dd>
-<dt class="label" id="koppcofdm"><span class="brackets">KoppCOFDM</span></dt>
+<dt class="label" id="koppcofdm"><span class="brackets">KoppCOFDM</span><span class="fn-backref">(<a href="#id4">1</a>,<a href="#id5">2</a>)</span></dt>
 <dd><p>Kopp, Carlo. “High Definition Television.” High Definition
 Television. Air Power Australia. &lt;<a class="reference external" href="http://www.ausairpower.net/AC-1100.html">http://www.ausairpower.net/AC-1100.html</a>&gt;.</p>
 </dd>
-<dt class="label" id="matlabgeo"><span class="brackets">MatlabGeo</span></dt>
+<dt class="label" id="matlabgeo"><span class="brackets"><a class="fn-backref" href="#id11">MatlabGeo</a></span></dt>
 <dd><p>“Geodetic2ecef.” Convert Geodetic to Geocentric (ECEF)
 Coordinates. The MathWorks, Inc.
 &lt;<a class="reference external" href="http://www.mathworks.com/help/map/ref/geodetic2ecef.html">http://www.mathworks.com/help/map/ref/geodetic2ecef.html</a>&gt;.</p>
 </dd>
-<dt class="label" id="qualcommanalog"><span class="brackets">QualcommAnalog</span></dt>
+<dt class="label" id="qualcommanalog"><span class="brackets"><a class="fn-backref" href="#id7">QualcommAnalog</a></span></dt>
 <dd><p>Stephen Shellhammer, Ahmed Sadek, and Wenyi Zhang.
 “Technical Challenges for Cognitive Radio in the TV White Space Spectrum.”
 Qualcomm Incorporated.</p>
 </dd>
-<dt class="label" id="tr38901"><span class="brackets">TR38901</span><span class="fn-backref">(<a href="#id6">1</a>,<a href="#id9">2</a>,<a href="#id10">3</a>,<a href="#id11">4</a>)</span></dt>
+<dt class="label" id="tr38901"><span class="brackets">TR38901</span><span class="fn-backref">(<a href="#id12">1</a>,<a href="#id15">2</a>,<a href="#id16">3</a>,<a href="#id17">4</a>)</span></dt>
 <dd><p>3GPP. 2018. TR 38.901. Study on channel for frequencies from 0.5 to
 100 GHz. V.15.0.0. (2018-06).</p>
 </dd>
-<dt class="label" id="zhang"><span class="brackets">Zhang</span><span class="fn-backref">(<a href="#id8">1</a>,<a href="#id12">2</a>)</span></dt>
+<dt class="label" id="zhang"><span class="brackets">Zhang</span><span class="fn-backref">(<a href="#id14">1</a>,<a href="#id18">2</a>)</span></dt>
 <dd><p>Menglei Zhang, Michele Polese, Marco Mezzavilla, Sundeep Rangan,
 Michele Zorzi. “ns-3 Implementation of the 3GPP MIMO Channel Model for
 Frequency Spectrum above 6 GHz”. In Proceedings of the Workshop on ns-3
 (WNS3 ‘17). 2017.</p>
 </dd>
-<dt class="label" id="zugno"><span class="brackets"><a class="fn-backref" href="#id7">Zugno</a></span></dt>
+<dt class="label" id="zugno"><span class="brackets"><a class="fn-backref" href="#id13">Zugno</a></span></dt>
 <dd><p>Tommaso Zugno, Michele Polese, Natale Patriciello, Biljana Bojovic,
 Sandra Lagen, Michele Zorzi. “Implementation of a Spatial Channel Model for
 ns-3”. Submitted to the Workshop on ns-3 (WNS3 ‘20). 2020.
@@ -852,16 +851,16 @@ Available: <a class="reference external" href="https://arxiv.org/abs/2002.09341"
 <li><a class="reference internal" href="#tv-transmitter-model">TV Transmitter Model</a><ul>
 <li><a class="reference internal" href="#main-model-class">Main Model Class</a></li>
 <li><a class="reference internal" href="#helper-class">Helper Class</a></li>
-<li><a class="reference internal" href="#id4">Examples</a></li>
-<li><a class="reference internal" href="#id5">Testing</a></li>
+<li><a class="reference internal" href="#id9">Examples</a></li>
+<li><a class="reference internal" href="#id10">Testing</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#gpp-tr-38-901-fast-fading-model">3GPP TR 38.901 fast fading model</a><ul>
 <li><a class="reference internal" href="#implementation">Implementation</a></li>
 <li><a class="reference internal" href="#threegppspectrumpropagationlossmodel">ThreeGppSpectrumPropagationLossModel</a></li>
 <li><a class="reference internal" href="#threegppchannelmodel">ThreeGppChannelModel</a></li>
-<li><a class="reference internal" href="#id13">Testing</a></li>
-<li><a class="reference internal" href="#id14">References</a></li>
+<li><a class="reference internal" href="#id19">Testing</a></li>
+<li><a class="reference internal" href="#id20">References</a></li>
 </ul>
 </li>
 </ul>
@@ -917,7 +916,7 @@ Available: <a class="reference external" href="https://arxiv.org/abs/2002.09341"
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2006-2019.
-      Last updated on Apr 23, 2020 07:52.
+      Last updated on Apr 29, 2020 17:37.
       Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.2.
     </div>
   </body>

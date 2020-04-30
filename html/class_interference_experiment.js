@@ -9,8 +9,8 @@ var class_interference_experiment =
     [ "m_droppedA", "class_interference_experiment.html#a7393e40ae24c49bade72e4c84ada21cb", null ],
     [ "m_droppedB", "class_interference_experiment.html#a7033600afad0cc8a54eccc4a85da0621", null ],
     [ "m_input", "class_interference_experiment.html#a36c38e073c0d336135f6ff16b0cdaeac", null ],
-    [ "m_txA", "class_interference_experiment.html#aac9b38170603ebf4d3c4565deaa8f0a7", null ],
-    [ "m_txB", "class_interference_experiment.html#ac2071a3bf35e68a316a7d251327d5708", null ],
+    [ "m_txA", "class_interference_experiment.html#a2b686e759df46794c62c9c67dc763279", null ],
+    [ "m_txB", "class_interference_experiment.html#aa098d08cca43d0710db6f0d8a3b8feb1", null ],
     [ "m_uidA", "class_interference_experiment.html#ab8cfc45b1960551e9fa29bcfa8e6d57b", null ],
     [ "m_uidB", "class_interference_experiment.html#a7174f5ddbbb5e4bd32869727c97599fc", null ]
 ];

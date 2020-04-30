@@ -46,7 +46,7 @@
 <area shape="rect" id="node45" href="$classns3_1_1_txop.html#ae211c699c905b2186281923353ba0a26" title="Generate a new backoff now." alt="" coords="769,657,971,683"/>
 <area shape="rect" id="node46" href="$classns3_1_1_wifi_mac_header.html#aa1c4acbda4ace9f7a920c97d71bdd097" title="Return the address in the Address 1 field." alt="" coords="793,708,947,749"/>
 <area shape="rect" id="node47" href="$classns3_1_1_channel_access_manager.html#ad7a1a64ddd5206865b5989d9401b70ee" title="Determine if a new backoff needs to be generated when a packet is queued for transmission." alt="" coords="766,773,974,815"/>
-<area shape="rect" id="node48" href="$classns3_1_1_wifi_remote_station_manager.html#a4812b9abae368de05cbd1393b7053f90" title=" " alt="" coords="753,839,987,880"/>
+<area shape="rect" id="node48" href="$classns3_1_1_wifi_remote_station_manager.html#a38a2549c86091c3ca7eba3841f0060d3" title=" " alt="" coords="753,839,987,880"/>
 <area shape="rect" id="node49" href="$classns3_1_1_packet.html#a078fe922d976a417ab25ba2f3c2fd667" title="Remove a packet tag." alt="" coords="759,606,981,633"/>
 <area shape="rect" id="node50" href="$classns3_1_1_txop.html#afd99f40351a5b67181f14008d0751075" title="Request access from Txop if needed." alt="" coords="781,904,959,945"/>
 </map>

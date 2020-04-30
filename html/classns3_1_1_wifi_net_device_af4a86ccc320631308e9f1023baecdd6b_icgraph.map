@@ -18,14 +18,14 @@
 <area shape="rect" id="node7" href="$classns3_1_1_mac_low.html#aae813ebc059b7e6aa1c88607e2969936" title="Return a TXVECTOR for the Ack frame given the destination and the mode of the Data used by the sender..." alt="" coords="303,137,522,163"/>
 <area shape="rect" id="node8" href="$classns3_1_1_mac_low.html#a227f7cf96af4e059f660cd6668869e69" title="Return a TXVECTOR for the BlockAck frame given the destination and the mode of the Data used by the s..." alt="" coords="314,188,511,229"/>
 <area shape="rect" id="node9" href="$classns3_1_1_mac_low.html#abe2810a59020adbcf64abbef2bcf319f" title="Return a TXVECTOR for the CTS frame given the destination and the mode of the RTS used by the sender." alt="" coords="305,254,521,281"/>
-<area shape="rect" id="node16" href="$classns3_1_1_wifi_remote_station_manager.html#a0f4f6984f11037508c46a1af90508a34" title=" " alt="" coords="296,488,529,529"/>
+<area shape="rect" id="node16" href="$classns3_1_1_wifi_remote_station_manager.html#a853f412b16d537be85a70277c522dec7" title=" " alt="" coords="296,488,529,529"/>
 <area shape="rect" id="node17" href="$classns3_1_1_mesh_wifi_interface_mac.html#ae564ee657ce84f1023eabfd6d3e474a4" title=" " alt="" coords="313,305,512,347"/>
 <area shape="rect" id="node18" href="$classns3_1_1_mesh_wifi_interface_mac.html#a5850d3b31d09fd6dc552e8fa839bf3f2" title="Frame receive handler." alt="" coords="313,5,512,47"/>
-<area shape="rect" id="node11" href="$classns3_1_1_mac_low.html#aeb3a8ccdb7a068b7ee69d507a66a1b60" title="Return a TXVECTOR for the Data frame given the destination." alt="" coords="10,451,237,478"/>
-<area shape="rect" id="node12" href="$classns3_1_1_txop.html#ad00c94d57c2d4df4ff1f0a8064805b65" title="Notify the Txop that access has been granted." alt="" coords="8,502,239,529"/>
+<area shape="rect" id="node11" href="$classns3_1_1_mac_low.html#aeb3a8ccdb7a068b7ee69d507a66a1b60" title="Return a TXVECTOR for the Data frame given the destination." alt="" coords="10,437,237,463"/>
+<area shape="rect" id="node12" href="$classns3_1_1_wifi_remote_station_manager.html#acdbe45062ca4d281c3043e3860b20f43" title=" " alt="" coords="7,488,240,529"/>
 <area shape="rect" id="node13" href="$class_power_rate_adaptation_test.html#a3c3954526cb787125fea4c50cfe76174" title="Test aparf function." alt="" coords="29,553,218,595"/>
 <area shape="rect" id="node14" href="$class_power_rate_adaptation_test.html#a06db52c180644f3b961de054c41f2115" title="Test parf function." alt="" coords="29,619,218,660"/>
-<area shape="rect" id="node15" href="$class_power_rate_adaptation_test.html#af0e5f044ed9bdf20dc203926ff8677b4" title="Test rrpaa function." alt="" coords="29,385,218,427"/>
+<area shape="rect" id="node15" href="$class_power_rate_adaptation_test.html#af0e5f044ed9bdf20dc203926ff8677b4" title="Test rrpaa function." alt="" coords="29,371,218,412"/>
 <area shape="rect" id="node20" href="$classns3_1_1_wifi_phy.html#a6ac379a25b68f6a8d72da740b58e0271" title="Get the type ID." alt="" coords="325,371,500,398"/>
 <area shape="rect" id="node22" href="$classns3_1_1_ideal_wifi_manager.html#a2e7570eb1f5cbef1067cfb714e94218e" title=" " alt="" coords="39,1192,207,1233"/>
 <area shape="rect" id="node23" href="$classns3_1_1_ideal_wifi_manager.html#a678947f49366ca1734b6299b667845da" title="Initialize() implementation." alt="" coords="39,1007,207,1048"/>

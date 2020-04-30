@@ -62,9 +62,6 @@
 		      <a id="ns3_tut"
 			 href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-		      <a id="ns3_ptbr"
-			 href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 	        </li>
 	        <li><span
 		      onmouseover="mopen('mDocs')" 
@@ -136,7 +133,7 @@
 <h1>6LoWPAN: Transmission of IPv6 Packets over IEEE 802.15.4 Networks<a class="headerlink" href="#lowpan-transmission-of-ipv6-packets-over-ieee-802-15-4-networks" title="Permalink to this headline">¶</a></h1>
 <p>This chapter describes the implementation of <em>ns-3</em> model for the
 compression of IPv6 packets over IEEE 802.15.4-Based Networks
-as specified by <span class="target" id="index-0"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc4944.html"><strong>RFC 4944</strong></a> and <span class="target" id="index-1"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc6282.html"><strong>RFC 6282</strong></a>.</p>
+as specified by <span class="target" id="index-0"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc4944.html"><strong>RFC 4944</strong></a> (<a class="reference internal" href="#rfc4944" id="id1"><span>[RFC4944]</span></a>) and <span class="target" id="index-1"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc6282.html"><strong>RFC 6282</strong></a> (<a class="reference internal" href="#rfc6282" id="id2"><span>[RFC6282]</span></a>).</p>
 <div class="section" id="model-description">
 <h2>Model Description<a class="headerlink" href="#model-description" title="Permalink to this headline">¶</a></h2>
 <p>The source code for the sixlowpan module lives in the directory <code class="docutils literal notranslate"><span class="pre">src/sixlowpan</span></code>.</p>
@@ -153,7 +150,7 @@ following exceptions:</p>
 </ul>
 <p>The HC2 encoding is not supported, as it has been superseded by IPHC and NHC
 compression type (<span class="target" id="index-4"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc6282.html"><strong>RFC 6282</strong></a>).</p>
-<p>IPHC SAC and DAC are not yet supported, as they do require <span class="target" id="index-5"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc6775.html"><strong>RFC 6775</strong></a> for full
+<p>IPHC SAC and DAC are not yet supported, as they do require <span class="target" id="index-5"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc6775.html"><strong>RFC 6775</strong></a> (<a class="reference internal" href="#rfc6775" id="id3"><span>[RFC6775]</span></a>) for full
 compliance. It is planned to support them in the future.</p>
 <div class="section" id="netdevice">
 <h4>NetDevice<a class="headerlink" href="#netdevice" title="Permalink to this headline">¶</a></h4>
@@ -166,7 +163,7 @@ GetMtu behaviour. It will always return <em>at least</em> 1280 bytes, as is the 
 <p>The module does provide some attributes and some tracesources.
 The attributes are:</p>
 <ul class="simple">
-<li><p>Rfc6282 (boolean, default true), used to activate HC1 (<span class="target" id="index-6"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc4944.html"><strong>RFC 4944</strong></a>) or IPHC (<span class="target" id="index-7"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc6282.html"><strong>RFC 6282</strong></a>) compression.</p></li>
+<li><p><span class="target" id="index-6"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc6282.html"><strong>RFC 6282</strong></a> (boolean, default true), used to activate HC1 (<span class="target" id="index-7"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc4944.html"><strong>RFC 4944</strong></a>) or IPHC (<span class="target" id="index-8"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc6282.html"><strong>RFC 6282</strong></a>) compression.</p></li>
 <li><p>OmitUdpChecksum (boolean, default true), used to activate UDP checksum compression in IPHC.</p></li>
 <li><p>FragmentReassemblyListSize (integer, default 0), indicating the number of packets that can be reassembled at the same time. If the limit is reached, the oldest packet is discarded. Zero means infinite.</p></li>
 <li><p>FragmentExpirationTimeout (Time, default 60 seconds), being the timeout to wait for further fragments before discarding a partial packet.</p></li>
@@ -186,7 +183,7 @@ compression would violate the requirement.</p>
 <p>The last two attributes are needed to use the module with a NetDevice other than 802.15.4, as
 neither IANA or IEEE did reserve an EtherType for 6LoWPAN. As a consequence there might be a
 conflict with the L2 multiplexer/demultiplexer which is based on EtherType. The default
-value is 0xFFFF, which is reserved by IEEE (see <a class="reference internal" href="#iana802" id="id1"><span>[IANA802]</span></a> and <a class="reference internal" href="#ethertype" id="id2"><span>[Ethertype]</span></a>).
+value is 0xFFFF, which is reserved by IEEE (see <a class="reference internal" href="#iana802" id="id4"><span>[IANA802]</span></a> and <a class="reference internal" href="#ethertype" id="id5"><span>[Ethertype]</span></a>).
 The default module behaviour is to not change the EtherType, however this would not work with
 any NetDevice actually understanding and using the EtherType.</p>
 <p>Note that the <cite>ForceEtherType</cite> parameter have also a direct effect on the MAC address kind the
@@ -209,7 +206,7 @@ invoked when a packet (or a fragment) is discarded.</p>
 </div>
 <div class="section" id="mesh-under-routing">
 <h4>Mesh-Under routing<a class="headerlink" href="#mesh-under-routing" title="Permalink to this headline">¶</a></h4>
-<p>The module provides a very simple mesh-under routing <a class="reference internal" href="#shelby" id="id3"><span>[Shelby]</span></a>, implemented as a flooding
+<p>The module provides a very simple mesh-under routing <a class="reference internal" href="#shelby" id="id6"><span>[Shelby]</span></a>, implemented as a flooding
 (a mesh-under routing protocol is a routing system implemented below IP).</p>
 <p>This functionality can be activated through the UseMeshUnder attribute and fine-tuned using
 the MeshUnderRadius and MeshUnderJitter attributes.</p>
@@ -223,7 +220,7 @@ attribute.</p>
 </div>
 <div class="section" id="scope-and-limitations">
 <h3>Scope and Limitations<a class="headerlink" href="#scope-and-limitations" title="Permalink to this headline">¶</a></h3>
-<p>Future versions of this module will support <span class="target" id="index-8"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc6775.html"><strong>RFC 6775</strong></a>, however no timeframe is guaranteed.</p>
+<p>Future versions of this module will support <span class="target" id="index-9"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc6775.html"><strong>RFC 6775</strong></a>, however no timeframe is guaranteed.</p>
 <p>It would be a good idea to improve the mesh-under flooding by providing the following:</p>
 <ul class="simple">
 <li><p>Adaptive hop-limit calculation,</p></li>
@@ -247,22 +244,22 @@ not been tested.</p>
 <div class="section" id="references">
 <h3>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h3>
 <dl class="citation">
-<dt class="label" id="rfc4944"><span class="brackets">RFC4944</span></dt>
-<dd><p><span class="target" id="index-9"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc4944.html"><strong>RFC 4944</strong></a>, “Transmission of IPv6 Packets over IEEE 802.15.4 Networks”</p>
+<dt class="label" id="rfc4944"><span class="brackets"><a class="fn-backref" href="#id1">RFC4944</a></span></dt>
+<dd><p><span class="target" id="index-10"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc4944.html"><strong>RFC 4944</strong></a>, “Transmission of IPv6 Packets over IEEE 802.15.4 Networks”</p>
 </dd>
-<dt class="label" id="rfc6282"><span class="brackets">RFC6282</span></dt>
-<dd><p><span class="target" id="index-10"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc6282.html"><strong>RFC 6282</strong></a>, “Compression Format for IPv6 Datagrams over IEEE 802.15.4-Based Networks”</p>
+<dt class="label" id="rfc6282"><span class="brackets"><a class="fn-backref" href="#id2">RFC6282</a></span></dt>
+<dd><p><span class="target" id="index-11"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc6282.html"><strong>RFC 6282</strong></a>, “Compression Format for IPv6 Datagrams over IEEE 802.15.4-Based Networks”</p>
 </dd>
-<dt class="label" id="rfc6775"><span class="brackets">RFC6775</span></dt>
-<dd><p><span class="target" id="index-11"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc6775.html"><strong>RFC 6775</strong></a>, “Neighbor Discovery Optimization for IPv6 over Low-Power Wireless Personal Area Networks (6LoWPANs)”</p>
+<dt class="label" id="rfc6775"><span class="brackets"><a class="fn-backref" href="#id3">RFC6775</a></span></dt>
+<dd><p><span class="target" id="index-12"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc6775.html"><strong>RFC 6775</strong></a>, “Neighbor Discovery Optimization for IPv6 over Low-Power Wireless Personal Area Networks (6LoWPANs)”</p>
 </dd>
-<dt class="label" id="iana802"><span class="brackets"><a class="fn-backref" href="#id1">IANA802</a></span></dt>
+<dt class="label" id="iana802"><span class="brackets"><a class="fn-backref" href="#id4">IANA802</a></span></dt>
 <dd><p>IANA, assigned IEEE 802 numbers: <a class="reference external" href="http://www.iana.org/assignments/ieee-802-numbers/ieee-802-numbers.xml">http://www.iana.org/assignments/ieee-802-numbers/ieee-802-numbers.xml</a></p>
 </dd>
-<dt class="label" id="ethertype"><span class="brackets"><a class="fn-backref" href="#id2">Ethertype</a></span></dt>
+<dt class="label" id="ethertype"><span class="brackets"><a class="fn-backref" href="#id5">Ethertype</a></span></dt>
 <dd><p>IEEE Ethertype numbers: <a class="reference external" href="http://standards.ieee.org/develop/regauth/ethertype/eth.txt">http://standards.ieee.org/develop/regauth/ethertype/eth.txt</a></p>
 </dd>
-<dt class="label" id="shelby"><span class="brackets"><a class="fn-backref" href="#id3">Shelby</a></span></dt>
+<dt class="label" id="shelby"><span class="brackets"><a class="fn-backref" href="#id6">Shelby</a></span></dt>
 <dd><ol class="upperalpha simple" start="26">
 <li><p>Shelby and C. Bormann, 6LoWPAN: The Wireless Embedded Internet. Wiley, 2011. [Online]. Available: <a class="reference external" href="https://books.google.it/books?id=3Nm7ZCxscMQC">https://books.google.it/books?id=3Nm7ZCxscMQC</a></p></li>
 </ol>
@@ -382,7 +379,7 @@ interpreted and validated.</p>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2006-2019.
-      Last updated on Apr 23, 2020 07:52.
+      Last updated on Apr 29, 2020 17:37.
       Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.2.
     </div>
   </body>

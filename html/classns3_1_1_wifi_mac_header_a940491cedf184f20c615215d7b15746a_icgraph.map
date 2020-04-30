@@ -8,8 +8,8 @@
 <area shape="rect" id="node11" href="$classns3_1_1dot11s_1_1_peer_management_protocol_mac.html#a2c235d74f54dc4f10d0bb6454f27a421" title="Receive and process a packet." alt="" coords="575,319,795,360"/>
 <area shape="rect" id="node12" href="$classns3_1_1_ocb_wifi_mac.html#a5fbb649d9d0554fc2e7973c8cd871cff" title="This method acts as the MacRxMiddle receive callback and is invoked to notify us that a frame has bee..." alt="" coords="284,319,475,346"/>
 <area shape="rect" id="node13" href="$classns3_1_1_regular_wifi_mac.html#a9c308b2371936d72302e0d15bd2ec6ae" title="This method acts as the MacRxMiddle receive callback and is invoked to notify us that a frame has bee..." alt="" coords="607,436,763,477"/>
-<area shape="rect" id="node18" href="$class_bug2470_test_case.html#a7ffc28b52b1d9754c3a7744ba2256596" title="Callback when packet is dropped." alt="" coords="561,502,810,529"/>
-<area shape="rect" id="node21" href="$classns3_1_1dot11s_1_1_peer_management_protocol_mac.html#a124edd9a9cce0b323ff5118d6f0b4069" title="This method appears to test a few conditions." alt="" coords="551,553,820,595"/>
+<area shape="rect" id="node18" href="$class_bug2470_test_case.html#a07ca947dff412fdb002ae7c375ced1e2" title="Callback when packet is dropped." alt="" coords="589,501,782,543"/>
+<area shape="rect" id="node21" href="$classns3_1_1dot11s_1_1_peer_management_protocol_mac.html#a124edd9a9cce0b323ff5118d6f0b4069" title="This method appears to test a few conditions." alt="" coords="551,567,820,608"/>
 <area shape="rect" id="node3" href="$classns3_1_1_mpdu_aggregator.html#abe47e62b7e26e62857688bf2a1bf537b" title="Attempt to aggregate other MPDUs to the given MPDU, while meeting the following constraints:" alt="" coords="299,64,460,105"/>
 <area shape="rect" id="node7" href="$classns3_1_1_qos_txop.html#afdeff6e3cb6c8bb4b3e8291cc77bc631" title="Check if the current packet should be fragmented." alt="" coords="256,130,503,157"/>
 <area shape="rect" id="node5" href="$class_ampdu_aggregation_test.html#a7414dc8d4dd982ab4c1eaadb5b2c693d" title="Implementation to actually run this TestCase." alt="" coords="20,5,193,47"/>

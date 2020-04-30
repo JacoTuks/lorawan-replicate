@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -1203,13 +1200,13 @@ $(document).ready(function(){initNavTree('core_8py_source.html',''); initResizab
 <div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160;        self.window.show()</div>
 <div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160; </div>
 <div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;    <span class="keyword">def </span>scan_topology(self):</div>
-<div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;        print(<span class="stringliteral">&quot;scanning topology: %i nodes...&quot;</span> % (ns.network.NodeList.GetNNodes(),))</div>
+<div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;        <a class="code" href="complete-network-example_8cc.html#a1c9376cdc5e467bb714d0cf35d9bdc80">print</a>(<span class="stringliteral">&quot;scanning topology: %i nodes...&quot;</span> % (ns.network.NodeList.GetNNodes(),))</div>
 <div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;        graph = pygraphviz.AGraph()</div>
 <div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;        seen_nodes = 0</div>
 <div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;        <span class="keywordflow">for</span> nodeI <span class="keywordflow">in</span> range(ns.network.NodeList.GetNNodes()):</div>
 <div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;            seen_nodes += 1</div>
 <div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;            <span class="keywordflow">if</span> seen_nodes == 100:</div>
-<div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;                print(<span class="stringliteral">&quot;scan topology... %i nodes visited (%.1f%%)&quot;</span> % (nodeI, 100*nodeI/ns.network.NodeList.GetNNodes()))</div>
+<div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;                <a class="code" href="complete-network-example_8cc.html#a1c9376cdc5e467bb714d0cf35d9bdc80">print</a>(<span class="stringliteral">&quot;scan topology... %i nodes visited (%.1f%%)&quot;</span> % (nodeI, 100*nodeI/ns.network.NodeList.GetNNodes()))</div>
 <div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;                seen_nodes = 0</div>
 <div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160;            node = ns.network.NodeList.GetNode(nodeI)</div>
 <div class="line"><a name="l01125"></a><span class="lineno"> 1125</span>&#160;            node_name = <span class="stringliteral">&quot;Node %i&quot;</span> % nodeI</div>
@@ -1262,7 +1259,7 @@ $(document).ready(function(){initNavTree('core_8py_source.html',''); initResizab
 <div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160;                                graph.add_edge(node_name, other_node_name)</div>
 <div class="line"><a name="l01173"></a><span class="lineno"> 1173</span>&#160;                            self.create_link(self.get_node(nodeI), otherNodeView)</div>
 <div class="line"><a name="l01174"></a><span class="lineno"> 1174</span>&#160; </div>
-<div class="line"><a name="l01175"></a><span class="lineno"> 1175</span>&#160;        print(<span class="stringliteral">&quot;scanning topology: calling graphviz layout&quot;</span>)</div>
+<div class="line"><a name="l01175"></a><span class="lineno"> 1175</span>&#160;        <a class="code" href="complete-network-example_8cc.html#a1c9376cdc5e467bb714d0cf35d9bdc80">print</a>(<span class="stringliteral">&quot;scanning topology: calling graphviz layout&quot;</span>)</div>
 <div class="line"><a name="l01176"></a><span class="lineno"> 1176</span>&#160;        graph.layout(LAYOUT_ALGORITHM)</div>
 <div class="line"><a name="l01177"></a><span class="lineno"> 1177</span>&#160;        <span class="keywordflow">for</span> node <span class="keywordflow">in</span> graph.iternodes():</div>
 <div class="line"><a name="l01178"></a><span class="lineno"> 1178</span>&#160;            <span class="comment">#print node, &quot;=&gt;&quot;, node.attr[&#39;pos&#39;]</span></div>
@@ -1274,7 +1271,7 @@ $(document).ready(function(){initNavTree('core_8py_source.html',''); initResizab
 <div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160;                obj = self.channels[int(node_id)]</div>
 <div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160;            obj.set_position(pos_x, pos_y)</div>
 <div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160; </div>
-<div class="line"><a name="l01187"></a><span class="lineno"> 1187</span>&#160;        print(<span class="stringliteral">&quot;scanning topology: all done.&quot;</span>)</div>
+<div class="line"><a name="l01187"></a><span class="lineno"> 1187</span>&#160;        <a class="code" href="complete-network-example_8cc.html#a1c9376cdc5e467bb714d0cf35d9bdc80">print</a>(<span class="stringliteral">&quot;scanning topology: all done.&quot;</span>)</div>
 <div class="line"><a name="l01188"></a><span class="lineno"> 1188</span>&#160;        self.emit(<span class="stringliteral">&quot;topology-scanned&quot;</span>)</div>
 <div class="line"><a name="l01189"></a><span class="lineno"> 1189</span>&#160; </div>
 <div class="line"><a name="l01190"></a><span class="lineno"> 1190</span>&#160;    <span class="keyword">def </span>get_node(self, index):</div>
@@ -1946,7 +1943,7 @@ $(document).ready(function(){initNavTree('core_8py_source.html',''); initResizab
 <div class="line"><a name="l01856"></a><span class="lineno"> 1856</span>&#160;    <span class="keyword">assert</span> Visualizer.INSTANCE <span class="keywordflow">is</span> <span class="keywordtype">None</span></div>
 <div class="line"><a name="l01857"></a><span class="lineno"> 1857</span>&#160;    <span class="keywordflow">if</span> _import_error <span class="keywordflow">is</span> <span class="keywordflow">not</span> <span class="keywordtype">None</span>:</div>
 <div class="line"><a name="l01858"></a><span class="lineno"> 1858</span>&#160;        <span class="keyword">import</span> sys</div>
-<div class="line"><a name="l01859"></a><span class="lineno"> 1859</span>&#160;        print(<span class="stringliteral">&quot;No visualization support (%s).&quot;</span> % (str(_import_error),),</div>
+<div class="line"><a name="l01859"></a><span class="lineno"> 1859</span>&#160;        <a class="code" href="complete-network-example_8cc.html#a1c9376cdc5e467bb714d0cf35d9bdc80">print</a>(<span class="stringliteral">&quot;No visualization support (%s).&quot;</span> % (str(_import_error),),</div>
 <div class="line"><a name="l01860"></a><span class="lineno"> 1860</span>&#160;              file=sys.stderr)</div>
 <div class="line"><a name="l01861"></a><span class="lineno"> 1861</span>&#160;        ns.core.Simulator.Run()</div>
 <div class="line"><a name="l01862"></a><span class="lineno"> 1862</span>&#160;        <span class="keywordflow">return</span></div>
@@ -2029,6 +2026,7 @@ $(document).ready(function(){initNavTree('core_8py_source.html',''); initResizab
 <div class="ttc" id="aclassvisualizer_1_1core_1_1_channel_html_a1c867aded25c8b525413da8b645da0fb"><div class="ttname"><a href="classvisualizer_1_1core_1_1_channel.html#a1c867aded25c8b525413da8b645da0fb">visualizer.core.Channel.set_position</a></div><div class="ttdeci">def set_position(self, x, y)</div><div class="ttdoc">Initializer function.</div><div class="ttdef"><b>Definition:</b> <a href="core_8py_source.html#l00538">core.py:538</a></div></div>
 <div class="ttc" id="aclassvisualizer_1_1core_1_1_node_html_a094a76fc571b4ae5ba76c3bd2d8d9b3b"><div class="ttname"><a href="classvisualizer_1_1core_1_1_node.html#a094a76fc571b4ae5ba76c3bd2d8d9b3b">visualizer.core.Node.on_enter_notify_event</a></div><div class="ttdeci">def on_enter_notify_event(self, view, target, event)</div><div class="ttdoc">On Enter event handle.</div><div class="ttdef"><b>Definition:</b> <a href="core_8py_source.html#l00285">core.py:285</a></div></div>
 <div class="ttc" id="aclassvisualizer_1_1svgitem_1_1_svg_item_html"><div class="ttname"><a href="classvisualizer_1_1svgitem_1_1_svg_item.html">visualizer.svgitem.SvgItem</a></div><div class="ttdoc">SvgItem class.</div><div class="ttdef"><b>Definition:</b> <a href="svgitem_8py_source.html#l00008">svgitem.py:8</a></div></div>
+<div class="ttc" id="acomplete-network-example_8cc_html_a1c9376cdc5e467bb714d0cf35d9bdc80"><div class="ttname"><a href="complete-network-example_8cc.html#a1c9376cdc5e467bb714d0cf35d9bdc80">print</a></div><div class="ttdeci">bool print</div><div class="ttdef"><b>Definition:</b> <a href="complete-network-example_8cc_source.html#l00049">complete-network-example.cc:49</a></div></div>
 <div class="ttc" id="aclassvisualizer_1_1core_1_1_node_html_ad470742fd4716201bf4aa0a6f4a619b6"><div class="ttname"><a href="classvisualizer_1_1core_1_1_node.html#ad470742fd4716201bf4aa0a6f4a619b6">visualizer.core.Node.has_mobility</a></div><div class="ttdeci">def has_mobility(self)</div><div class="ttdoc">Has mobility function.</div><div class="ttdef"><b>Definition:</b> <a href="core_8py_source.html#l00498">core.py:498</a></div></div>
 <div class="ttc" id="aclassvisualizer_1_1core_1_1_node_html_ac783a9a6e8c4799d2b38cf5cc5ce71f3"><div class="ttname"><a href="classvisualizer_1_1core_1_1_node.html#ac783a9a6e8c4799d2b38cf5cc5ce71f3">visualizer.core.Node._update_position</a></div><div class="ttdeci">def _update_position(self)</div><div class="ttdoc">Update position function.</div><div class="ttdef"><b>Definition:</b> <a href="core_8py_source.html#l00451">core.py:451</a></div></div>
 <div class="ttc" id="aclassvisualizer_1_1core_1_1_wired_link_html_a2485cb458212ca69209a22ec0a0701b6"><div class="ttname"><a href="classvisualizer_1_1core_1_1_wired_link.html#a2485cb458212ca69209a22ec0a0701b6">visualizer.core.WiredLink.__init__</a></div><div class="ttdeci">def __init__(self, node1, node2)</div><div class="ttdoc">Initializer function.</div><div class="ttdef"><b>Definition:</b> <a href="core_8py_source.html#l00572">core.py:572</a></div></div>
@@ -2046,7 +2044,7 @@ $(document).ready(function(){initNavTree('core_8py_source.html',''); initResizab
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ba77f8dab2f3b5b8a1cbb129ed9c63cb.html">visualizer</a></li><li class="navelem"><a class="el" href="dir_37738c098fb7bb201082a8a35f2b1fdc.html">visualizer</a></li><li class="navelem"><a class="el" href="core_8py.html">core.py</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:06 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:13 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

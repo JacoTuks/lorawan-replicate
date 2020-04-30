@@ -1,5 +1,5 @@
 <map id="ns3::BlockAckManager::NeedBarRetransmission" name="ns3::BlockAckManager::NeedBarRetransmission">
-<area shape="rect" id="node1" title="This function returns true if a Block Ack agreement is established with the given recipient for the g..." alt="" coords="5,785,192,826"/>
+<area shape="rect" id="node1" title="This function returns true if a block ack agreement is established with the given recipient for the g..." alt="" coords="5,785,192,826"/>
 <area shape="rect" id="node2" href="$classns3_1_1_block_ack_manager.html#ac9035d264058c48aa9f84eea71aa0541" title=" " alt="" coords="240,755,427,797"/>
 <area shape="rect" id="node3" href="$classns3_1_1_simulator.html#ac3178fa975b419f7875e7105be122800" title="Return the current simulation virtual time." alt="" coords="257,821,410,848"/>
 <area shape="rect" id="node4" href="$group__simulator.html#ga42eb4eddad41528d4d99794a3dae3fd0" title="Get the SimulatorImpl singleton." alt="" coords="513,745,619,772"/>

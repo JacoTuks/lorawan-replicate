@@ -1,52 +1,22 @@
 <map id="ReceivePathTest" name="ReceivePathTest">
-<area shape="rect" id="node1" title=" " alt="" coords="3597,207,3727,233"/>
-<area shape="rect" id="node2" href="$classns3_1_1_test_case.html" title="encapsulates test code" alt="" coords="1785,135,1896,161"/>
-<area shape="rect" id="node4" title=" " alt="" coords="2185,177,2406,204"/>
-<area shape="rect" id="node13" href="$classns3_1_1_test_suite.html" title="A suite of tests to run." alt="" coords="2239,228,2351,255"/>
-<area shape="rect" id="node3" href="$classns3_1_1_non_copyable.html" title=" " alt="" coords="1347,324,1487,351"/>
-<area shape="rect" id="node10" href="$classns3_1_1_singleton.html" title=" " alt="" coords="2195,301,2396,342"/>
-<area shape="rect" id="node11" href="$classns3_1_1_singleton.html" title="A template singleton." alt="" coords="1765,308,1917,335"/>
-<area shape="rect" id="node5" title="STL class." alt="" coords="445,333,574,360"/>
-<area shape="rect" id="node12" title=" " alt="" coords="2640,323,2831,349"/>
-<area shape="rect" id="node15" title=" " alt="" coords="914,186,1109,227"/>
-<area shape="rect" id="node6" title=" " alt="" coords="217,945,256,972"/>
-<area shape="rect" id="node28" title="STL class." alt="" coords="455,945,563,972"/>
-<area shape="rect" id="node48" href="$classns3_1_1_traced_value.html" title="Trace classes with value semantics." alt="" coords="677,1291,848,1317"/>
-<area shape="rect" id="node7" title="STL class." alt="" coords="193,73,280,100"/>
-<area shape="rect" id="node9" href="$classns3_1_1_test_runner_impl.html" title=" " alt="" coords="3004,187,3159,213"/>
-<area shape="rect" id="node16" href="$structns3_1_1_test_case_failure.html" title=" " alt="" coords="432,175,587,201"/>
-<area shape="rect" id="node8" title="STL class." alt="" coords="5,66,144,107"/>
-<area shape="rect" id="node14" href="$structns3_1_1_test_case_1_1_result.html" title=" " alt="" coords="1337,135,1497,161"/>
-<area shape="rect" id="node17" href="$classns3_1_1_system_wall_clock_ms.html" title="Measure elapsed wall clock time in milliseconds." alt="" coords="918,135,1105,161"/>
-<area shape="rect" id="node18" href="$classns3_1_1_system_wall_clock_ms_private.html" title="System&#45;dependent implementation for SystemWallClockMs." alt="" coords="393,124,625,151"/>
-<area shape="rect" id="node19" href="$classns3_1_1_ptr.html" title=" " alt="" coords="3253,788,3464,815"/>
-<area shape="rect" id="node20" href="$classns3_1_1_gateway_lora_phy.html" title="Class modeling a Lora SX1301 chip." alt="" coords="3000,1061,3163,1088"/>
-<area shape="rect" id="node21" href="$classns3_1_1_lora_phy.html" title=" " alt="" coords="2683,736,2788,763"/>
-<area shape="rect" id="node22" href="$classns3_1_1_object.html" title="A base class which provides memory management and object aggregation." alt="" coords="1370,605,1465,632"/>
-<area shape="rect" id="node25" href="$structns3_1_1_object_1_1_aggregates.html" title="The list of Objects aggregated to this one." alt="" coords="1752,663,1929,689"/>
-<area shape="rect" id="node31" href="$classns3_1_1_mobility_model.html" title="Keep track of the current position and velocity of an object." alt="" coords="1767,561,1914,588"/>
-<area shape="rect" id="node34" href="$classns3_1_1_net_device.html" title="Network layer to device interface." alt="" coords="1780,612,1901,639"/>
-<area shape="rect" id="node23" href="$classns3_1_1_simple_ref_count.html" title=" " alt="" coords="929,591,1094,647"/>
-<area shape="rect" id="node24" href="$classns3_1_1_type_id.html" title="a unique identifier for an interface." alt="" coords="964,671,1059,697"/>
-<area shape="rect" id="node26" href="$classns3_1_1_traced_callback.html" title=" " alt="" coords="1336,824,1499,880"/>
-<area shape="rect" id="node36" href="$classns3_1_1_lora_channel.html" title="The class that delivers packets among PHY layers." alt="" coords="1773,844,1908,871"/>
-<area shape="rect" id="node27" title=" " alt="" coords="900,807,1123,892"/>
-<area shape="rect" id="node41" title=" " alt="" coords="912,916,1111,1001"/>
-<area shape="rect" id="node44" title=" " alt="" coords="902,460,1121,516"/>
-<area shape="rect" id="node47" title=" " alt="" coords="900,1109,1123,1179"/>
-<area shape="rect" id="node49" title=" " alt="" coords="2646,1112,2825,1168"/>
-<area shape="rect" id="node29" href="$classns3_1_1_traced_callback.html" title="Forward calls to a chain of Callback." alt="" coords="935,1025,1088,1081"/>
-<area shape="rect" id="node40" href="$classns3_1_1_traced_callback.html" title=" " alt="" coords="1553,973,1717,1029"/>
-<area shape="rect" id="node46" href="$classns3_1_1_traced_callback.html" title=" " alt="" coords="1341,1141,1493,1182"/>
-<area shape="rect" id="node30" href="$classns3_1_1_ptr.html" title=" " alt="" coords="2183,591,2408,617"/>
-<area shape="rect" id="node32" href="$classns3_1_1_ptr.html" title="Smart pointer class similar to boost::intrusive_ptr." alt="" coords="1786,785,1895,812"/>
-<area shape="rect" id="node33" href="$classns3_1_1_ptr.html" title=" " alt="" coords="2195,737,2395,764"/>
-<area shape="rect" id="node35" href="$classns3_1_1_ptr.html" title=" " alt="" coords="2189,839,2402,865"/>
-<area shape="rect" id="node50" href="$classns3_1_1_ptr.html" title=" " alt="" coords="2194,987,2397,1029"/>
-<area shape="rect" id="node37" href="$classns3_1_1_callback.html" title=" " alt="" coords="2210,1121,2381,1162"/>
-<area shape="rect" id="node38" href="$classns3_1_1_callback_base.html" title=" " alt="" coords="1347,1089,1488,1116"/>
-<area shape="rect" id="node39" href="$classns3_1_1_callback.html" title="Callback template class." alt="" coords="1760,1072,1921,1128"/>
-<area shape="rect" id="node42" href="$classns3_1_1_lora_interference_helper.html" title="Helper for LoraPhy that manages interference calculations." alt="" coords="1316,475,1519,501"/>
-<area shape="rect" id="node43" href="$classns3_1_1_time.html" title="Simulation virtual time values and global simulation resolution." alt="" coords="969,540,1054,567"/>
-<area shape="rect" id="node45" href="$classns3_1_1_traced_value.html" title=" " alt="" coords="1751,1203,1931,1229"/>
+<area shape="rect" id="node1" title=" " alt="" coords="1975,96,2105,123"/>
+<area shape="rect" id="node2" href="$classns3_1_1_test_case.html" title="encapsulates test code" alt="" coords="1581,189,1692,216"/>
+<area shape="rect" id="node4" title=" " alt="" coords="1929,269,2151,296"/>
+<area shape="rect" id="node13" href="$classns3_1_1_test_suite.html" title="A suite of tests to run." alt="" coords="1984,207,2096,233"/>
+<area shape="rect" id="node3" href="$classns3_1_1_non_copyable.html" title=" " alt="" coords="1141,20,1281,47"/>
+<area shape="rect" id="node10" href="$classns3_1_1_singleton.html" title=" " alt="" coords="1939,22,2141,63"/>
+<area shape="rect" id="node11" href="$classns3_1_1_singleton.html" title="A template singleton." alt="" coords="1561,29,1713,56"/>
+<area shape="rect" id="node5" title="STL class." alt="" coords="445,352,574,379"/>
+<area shape="rect" id="node12" title=" " alt="" coords="2265,207,2456,233"/>
+<area shape="rect" id="node15" title=" " alt="" coords="841,251,1036,293"/>
+<area shape="rect" id="node6" title=" " alt="" coords="217,460,256,487"/>
+<area shape="rect" id="node7" title="STL class." alt="" coords="193,240,280,267"/>
+<area shape="rect" id="node9" href="$classns3_1_1_test_runner_impl.html" title=" " alt="" coords="2568,173,2723,200"/>
+<area shape="rect" id="node16" href="$structns3_1_1_test_case_failure.html" title=" " alt="" coords="432,240,587,267"/>
+<area shape="rect" id="node8" title="STL class." alt="" coords="5,233,144,274"/>
+<area shape="rect" id="node14" href="$structns3_1_1_test_case_1_1_result.html" title=" " alt="" coords="1131,200,1291,227"/>
+<area shape="rect" id="node17" href="$classns3_1_1_system_wall_clock_ms.html" title="Measure elapsed wall clock time in milliseconds." alt="" coords="845,200,1032,227"/>
+<area shape="rect" id="node18" href="$classns3_1_1_system_wall_clock_ms_private.html" title="System&#45;dependent implementation for SystemWallClockMs." alt="" coords="393,189,625,216"/>
+<area shape="rect" id="node19" href="$classns3_1_1_ptr.html" title=" " alt="" coords="1528,81,1745,122"/>
+<area shape="rect" id="node20" href="$classns3_1_1_ptr.html" title="Smart pointer class similar to boost::intrusive_ptr." alt="" coords="1156,88,1265,115"/>
 </map>

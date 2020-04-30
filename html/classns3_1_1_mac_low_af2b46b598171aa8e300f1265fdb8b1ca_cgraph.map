@@ -37,6 +37,6 @@
 <area shape="rect" id="node33" href="$classns3_1_1_wifi_tx_vector.html#ae3180e05aa71a628cab66eae3667d31b" title=" " alt="" coords="1096,613,1241,655"/>
 <area shape="rect" id="node36" href="$classns3_1_1_ctrl_b_ack_request_header.html#a6ed78dd6f7cbe32811f36ff95195fcbb" title=" " alt="" coords="516,692,725,733"/>
 <area shape="rect" id="node37" href="$classns3_1_1_wifi_mac_header.html#a5330ccda676bc7348bc633acc67df8fc" title="Return the size of the WifiMacHeader in octets." alt="" coords="544,757,697,799"/>
-<area shape="rect" id="node38" href="$classns3_1_1_ctrl_b_ack_request_header.html#a2de2783f9b09f03bbb16a0270ed8340f" title="Set the block ACK type." alt="" coords="516,561,725,603"/>
+<area shape="rect" id="node38" href="$classns3_1_1_ctrl_b_ack_request_header.html#a2de2783f9b09f03bbb16a0270ed8340f" title="Set the block ack type." alt="" coords="516,561,725,603"/>
 <area shape="rect" id="node39" href="$classns3_1_1_wifi_mac_header.html#a71172371f11f1cfcb3912bb03134c285" title="Set Type/Subtype values with the correct values depending on the given type." alt="" coords="544,627,697,668"/>
 </map>

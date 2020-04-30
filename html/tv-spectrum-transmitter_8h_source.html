@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -218,7 +215,7 @@ $(document).ready(function(){initNavTree('tv-spectrum-transmitter_8h_source.html
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="comment">// device does not use Rx but these pure virtual methods must be implemented</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;const SpectrumModel&gt;</a> <a class="code" href="classns3_1_1_tv_spectrum_transmitter.html#a68675959578670d88f2f9af7be189758">GetRxSpectrumModel</a> () <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;AntennaModel&gt;</a> <a class="code" href="classns3_1_1_tv_spectrum_transmitter.html#a50ace28d52f74a867343446689e20d0b">GetRxAntenna</a> ();</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_tv_spectrum_transmitter.html#ae913f36cda537d9f0834c7ed0d974745">StartRx</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;SpectrumSignalParameters&gt;</a> params);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_tv_spectrum_transmitter.html#ae913f36cda537d9f0834c7ed0d974745">StartRx</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;SpectrumSignalParameters&gt;</a> <a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;SpectrumChannel&gt;</a> <a class="code" href="classns3_1_1_tv_spectrum_transmitter.html#aa82bd278bfa0388c90e24173f1a118b3">GetChannel</a> () <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
@@ -257,6 +254,7 @@ $(document).ready(function(){initNavTree('tv-spectrum-transmitter_8h_source.html
 </div><!-- doc-content -->
 <div class="ttc" id="aclassns3_1_1_type_id_html"><div class="ttname"><a href="classns3_1_1_type_id.html">ns3::TypeId</a></div><div class="ttdoc">a unique identifier for an interface.</div><div class="ttdef"><b>Definition:</b> <a href="type-id_8h_source.html#l00058">type-id.h:59</a></div></div>
 <div class="ttc" id="aclassns3_1_1_tv_spectrum_transmitter_html_a1ee9da5da9b2f6fa1d5f4674d0b5f53e"><div class="ttname"><a href="classns3_1_1_tv_spectrum_transmitter.html#a1ee9da5da9b2f6fa1d5f4674d0b5f53e">ns3::TvSpectrumTransmitter::SetMobility</a></div><div class="ttdeci">void SetMobility(Ptr&lt; MobilityModel &gt; m)</div><div class="ttdoc">Set the mobility model associated with this device.</div><div class="ttdef"><b>Definition:</b> <a href="tv-spectrum-transmitter_8cc_source.html#l00133">tv-spectrum-transmitter.cc:133</a></div></div>
+<div class="ttc" id="anamespacealoha_html_aff1381c591fdaf9d3af2b19080c9eed7"><div class="ttname"><a href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">aloha.params</a></div><div class="ttdeci">dictionary params</div><div class="ttdef"><b>Definition:</b> <a href="aloha_8py_source.html#l00013">aloha.py:13</a></div></div>
 <div class="ttc" id="aclassns3_1_1_tv_spectrum_transmitter_html_a7d7f5cd8ad48714106082f9e7bbd11f9"><div class="ttname"><a href="classns3_1_1_tv_spectrum_transmitter.html#a7d7f5cd8ad48714106082f9e7bbd11f9">ns3::TvSpectrumTransmitter::SetupTx</a></div><div class="ttdeci">virtual void SetupTx()</div><div class="ttdoc">Sets up signal to be transmitted.</div><div class="ttdef"><b>Definition:</b> <a href="tv-spectrum-transmitter_8cc_source.html#l00561">tv-spectrum-transmitter.cc:561</a></div></div>
 <div class="ttc" id="anamespacens3_html"><div class="ttname"><a href="namespacens3.html">ns3</a></div><div class="ttdoc">Every class exported by the ns3 library is enclosed in the ns3 namespace.</div></div>
 <div class="ttc" id="aclassns3_1_1_tv_spectrum_transmitter_html_a474fa631e8aaa85445b0ba463b20b61b"><div class="ttname"><a href="classns3_1_1_tv_spectrum_transmitter.html#a474fa631e8aaa85445b0ba463b20b61b">ns3::TvSpectrumTransmitter::m_active</a></div><div class="ttdeci">bool m_active</div><div class="ttdoc">True if TV transmitter is transmitting.</div><div class="ttdef"><b>Definition:</b> <a href="tv-spectrum-transmitter_8h_source.html#l00146">tv-spectrum-transmitter.h:146</a></div></div>
@@ -302,7 +300,7 @@ $(document).ready(function(){initNavTree('tv-spectrum-transmitter_8h_source.html
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_10d0328e2266480c720033fb91de3081.html">spectrum</a></li><li class="navelem"><a class="el" href="dir_f25b46aff9dd2800f353f0cc2534eabd.html">model</a></li><li class="navelem"><a class="el" href="tv-spectrum-transmitter_8h.html">tv-spectrum-transmitter.h</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:04 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:12 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

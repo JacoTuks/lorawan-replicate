@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -240,8 +237,10 @@ $(document).ready(function(){initNavTree('functions_e.html',''); initResizable()
 : <a class="el" href="classns3_1_1_tcp_socket_state.html#a06e7333f55bcde30ef7f64b1d393b7f8a7c4f2d3cc9384e36baac57b65d122b54">ns3::TcpSocketState</a>
 </li>
 <li>ED
-: <a class="el" href="classns3_1_1_lora_mac_helper.html#ace4920f7461677a4592e872de13d0640ac69d83be1fd46861cc34333306ff73a3">ns3::LoraMacHelper</a>
-, <a class="el" href="classns3_1_1_lora_phy_helper.html#a6acc026421df26158cd0bf2806272921aea39047e9c6da25c61e0df0e7837bbf1">ns3::LoraPhyHelper</a>
+: <a class="el" href="classns3_1_1lorawan_1_1_lora_phy_helper.html#a37a063af941889a5ce222ecac71a0490a6f6418e23ba6f876f861a2f443f47197">ns3::lorawan::LoraPhyHelper</a>
+</li>
+<li>ED_A
+: <a class="el" href="classns3_1_1lorawan_1_1_lorawan_mac_helper.html#ae713d91d34000bf27bc7c7bb1b1b0d8ea32e63453f09bb0755a2bfc057d8fc55f">ns3::lorawan::LorawanMacHelper</a>
 </li>
 <li>edcaParameters
 : <a class="el" href="structns3_1_1_sch_info.html#a79df358208767350348f61063e4c3303">ns3::SchInfo</a>
@@ -254,9 +253,6 @@ $(document).ready(function(){initNavTree('functions_e.html',''); initResizable()
 , <a class="el" href="classns3_1_1_msdu_aggregator.html#a25faa17c8337ea1653f25836aba082c1">ns3::MsduAggregator</a>
 , <a class="el" href="classns3_1_1_regular_wifi_mac.html#ab6825655b05fd19fc3f1688290291b9b">ns3::RegularWifiMac</a>
 </li>
-<li>EdcaTestSuite()
-: <a class="el" href="class_edca_test_suite.html#a104825874d8815241c529b801f6014e4">EdcaTestSuite</a>
-</li>
 <li>EdgeArea
 : <a class="el" href="classns3_1_1_lte_ffr_distributed_algorithm.html#a8ff512b8e668c4e56fc5e1bb6c577ad6acfb0117a4a8824dd5c7a08029b774ed3">ns3::LteFfrDistributedAlgorithm</a>
 , <a class="el" href="classns3_1_1_lte_ffr_enhanced_algorithm.html#a743d5d1934dc49e7c88a2850f624e6c3a2cb214dc1035d1d17b954464601f7a3e">ns3::LteFfrEnhancedAlgorithm</a>
@@ -266,13 +262,13 @@ $(document).ready(function(){initNavTree('functions_e.html',''); initResizable()
 : <a class="el" href="structns3_1_1_brite_topology_helper_1_1_brite_edge_info.html#a0b750b04d5efb7bfdcba7bc20e563e19">ns3::BriteTopologyHelper::BriteEdgeInfo</a>
 </li>
 <li>edPhy1
-: <a class="el" href="class_phy_connectivity_test.html#a5d0bdfb40d39297174deaa6802d1eba2">PhyConnectivityTest</a>
+: <a class="el" href="class_phy_connectivity_test.html#a7392e1e8c2821c2be353b1f1d3880479">PhyConnectivityTest</a>
 </li>
 <li>edPhy2
-: <a class="el" href="class_phy_connectivity_test.html#a6d38d5569f47729a4725e796050d9616">PhyConnectivityTest</a>
+: <a class="el" href="class_phy_connectivity_test.html#a11ce69ca51febbb520b92429cc83689a">PhyConnectivityTest</a>
 </li>
 <li>edPhy3
-: <a class="el" href="class_phy_connectivity_test.html#a480042074d917189e10d1fd1b487564a">PhyConnectivityTest</a>
+: <a class="el" href="class_phy_connectivity_test.html#a4626d49e6110b8270cd138a96e802c96">PhyConnectivityTest</a>
 </li>
 <li>EID_DESTINATION_OPTIONS_H
 : <a class="el" href="classns3_1_1_six_low_pan_nhc_extension.html#ac692a22abe80c30bcbafa57ef36bf5ada874ee6f734081d5152bc6bf4ac1737c7">ns3::SixLowPanNhcExtension</a>
@@ -391,6 +387,9 @@ $(document).ready(function(){initNavTree('functions_e.html',''); initResizable()
 </li>
 <li>EnableAck()
 : <a class="el" href="classns3_1_1_mac_low_transmission_parameters.html#aa2db70f6786b7d0b9d9cc453b2292f2b">ns3::MacLowTransmissionParameters</a>
+</li>
+<li>EnableAdr()
+: <a class="el" href="classns3_1_1lorawan_1_1_network_server_helper.html#a22390332a45afe1ac24f2fc487a399a9">ns3::lorawan::NetworkServerHelper</a>
 </li>
 <li>EnableAggregation()
 : <a class="el" href="classns3_1_1_regular_wifi_mac.html#aff4c3c6089505d115e0cdb3403cf0eba">ns3::RegularWifiMac</a>
@@ -549,6 +548,9 @@ $(document).ready(function(){initNavTree('functions_e.html',''); initResizable()
 <li>EnablePacketMetadata()
 : <a class="el" href="classns3_1_1_animation_interface.html#a9fd79d5671bb08d25aa43e8d1f8cd2b7">ns3::AnimationInterface</a>
 </li>
+<li>EnablePacketTracking()
+: <a class="el" href="classns3_1_1lorawan_1_1_lora_helper.html#a49c8b425070940aa3daf95c900748619">ns3::lorawan::LoraHelper</a>
+</li>
 <li>enablePcap
 : <a class="el" href="class_experiment.html#a1c00092be1bf42b0e71d7b1928fe5548">Experiment</a>
 </li>
@@ -569,7 +571,7 @@ $(document).ready(function(){initNavTree('functions_e.html',''); initResizable()
 , <a class="el" href="classns3_1_1_yans_wave_phy_helper.html#a6bcc70f08dc2e44676089f334c4345b0">ns3::YansWavePhyHelper</a>
 </li>
 <li>EnablePcapIpv4()
-: <a class="el" href="classns3_1_1_pcap_helper_for_ipv4.html#ad4402620f7aee17ff7199235576ee2b2">ns3::PcapHelperForIpv4</a>
+: <a class="el" href="classns3_1_1_pcap_helper_for_ipv4.html#a3ca0f619ab92568052b358e3c50ca744">ns3::PcapHelperForIpv4</a>
 </li>
 <li>EnablePcapIpv4All()
 : <a class="el" href="classns3_1_1_pcap_helper_for_ipv4.html#ada4775887925dc107c3587d90beba76b">ns3::PcapHelperForIpv4</a>
@@ -594,6 +596,15 @@ $(document).ready(function(){initNavTree('functions_e.html',''); initResizable()
 <li>EnablePdcpTraces()
 : <a class="el" href="classns3_1_1_lte_helper.html#adc62a53efe0437cf09062c9d6a95af3d">ns3::LteHelper</a>
 , <a class="el" href="classns3_1_1_lte_simple_helper.html#af104a1aed2953aa4f8fce9725aaf8ee8">ns3::LteSimpleHelper</a>
+</li>
+<li>EnablePeriodicDeviceStatusPrinting()
+: <a class="el" href="classns3_1_1lorawan_1_1_lora_helper.html#a128022c09c229a425b780239217e8651">ns3::lorawan::LoraHelper</a>
+</li>
+<li>EnablePeriodicGlobalPerformancePrinting()
+: <a class="el" href="classns3_1_1lorawan_1_1_lora_helper.html#af9a1da4f6765347065a22eaf2cd9d5be">ns3::lorawan::LoraHelper</a>
+</li>
+<li>EnablePeriodicPhyPerformancePrinting()
+: <a class="el" href="classns3_1_1lorawan_1_1_lora_helper.html#a74341c5513c8a4a24f41e298f043867f">ns3::lorawan::LoraHelper</a>
 </li>
 <li>EnablePhyTraces()
 : <a class="el" href="classns3_1_1_lte_helper.html#ad6d7edf234d29f7b8363e9ebf73fe32e">ns3::LteHelper</a>
@@ -628,6 +639,9 @@ $(document).ready(function(){initNavTree('functions_e.html',''); initResizable()
 </li>
 <li>enableShortSlotTime
 : <a class="el" href="struct_parameters.html#a7f8c233784a8480f2d5ebdf8ce549879">Parameters</a>
+</li>
+<li>EnableSimulationTimePrinting()
+: <a class="el" href="classns3_1_1lorawan_1_1_lora_helper.html#ab0665245660dbf2a92f09c0a11ce7179">ns3::lorawan::LoraHelper</a>
 </li>
 <li>EnableTraces()
 : <a class="el" href="classns3_1_1_lte_helper.html#aeb70fd96f1c58806a5b7ad9f68a795e0">ns3::LteHelper</a>
@@ -822,11 +836,20 @@ $(document).ready(function(){initNavTree('functions_e.html',''); initResizable()
 <li>EndCycle()
 : <a class="el" href="classns3_1_1_uan_mac_rc_gw.html#afd7577179828a6dd31e59427f3c98672">ns3::UanMacRcGw</a>
 </li>
-<li>EndDeviceLoraMac()
-: <a class="el" href="classns3_1_1_end_device_lora_mac.html#a48caf82fddb1695caad59b9887619671">ns3::EndDeviceLoraMac</a>
-</li>
 <li>EndDeviceLoraPhy()
-: <a class="el" href="classns3_1_1_end_device_lora_phy.html#a4c5e60a4dcc7a7b56479c05318ca7768">ns3::EndDeviceLoraPhy</a>
+: <a class="el" href="classns3_1_1lorawan_1_1_end_device_lora_phy.html#a9d426b373fe102f45a2184bf1e66329f">ns3::lorawan::EndDeviceLoraPhy</a>
+</li>
+<li>EndDeviceLorawanMac()
+: <a class="el" href="classns3_1_1lorawan_1_1_end_device_lorawan_mac.html#ac25644121444aa07f17f4eb1afc02ba1">ns3::lorawan::EndDeviceLorawanMac</a>
+</li>
+<li>endDevices
+: <a class="el" href="structns3_1_1lorawan_1_1_network_components.html#adeb03e1b048b2d2dd36f4158338e65ad">ns3::lorawan::NetworkComponents</a>
+</li>
+<li>EndDeviceStatus()
+: <a class="el" href="classns3_1_1lorawan_1_1_end_device_status.html#af75a0c299dd2925b3d8e16a6158f896a">ns3::lorawan::EndDeviceStatus</a>
+</li>
+<li>EndDeviceStatusTest()
+: <a class="el" href="class_end_device_status_test.html#a278622bf2604ebac12a7cba1b949340e">EndDeviceStatusTest</a>
 </li>
 <li>EndDlSubFrame()
 : <a class="el" href="classns3_1_1_base_station_net_device.html#a0d20b289eddae756199cc8d11d4db589">ns3::BaseStationNetDevice</a>
@@ -856,9 +879,11 @@ $(document).ready(function(){initNavTree('functions_e.html',''); initResizable()
 , <a class="el" href="classns3_1_1_ipv6_end_point_demux.html#a79d7b69805dbd45a902e5e6b375e752b">ns3::Ipv6EndPointDemux</a>
 </li>
 <li>EndReceive()
-: <a class="el" href="classns3_1_1_end_device_lora_phy.html#aac4b65bcbdd6f2dba398ec714445d82b">ns3::EndDeviceLoraPhy</a>
-, <a class="el" href="classns3_1_1_gateway_lora_phy.html#a807701b5721f0e4ff5f2ae8bce06cbe9">ns3::GatewayLoraPhy</a>
-, <a class="el" href="classns3_1_1_lora_phy.html#aea97455178e59c28dfbf3b070536b12f">ns3::LoraPhy</a>
+: <a class="el" href="classns3_1_1lorawan_1_1_end_device_lora_phy.html#af5618e5c03f0010244fcde7922d9899f">ns3::lorawan::EndDeviceLoraPhy</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_gateway_lora_phy.html#a030500acf630f508b12923627cdc4068">ns3::lorawan::GatewayLoraPhy</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_lora_phy.html#a719f749890c247abc3fda290d384c37f">ns3::lorawan::LoraPhy</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_simple_end_device_lora_phy.html#a03a9d0ffdd5f89991a61aa54e5a1e7ba">ns3::lorawan::SimpleEndDeviceLoraPhy</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_simple_gateway_lora_phy.html#aefb2464599926253bfb1003fa14f8fae">ns3::lorawan::SimpleGatewayLoraPhy</a>
 , <a class="el" href="classns3_1_1_simple_ofdm_wimax_phy.html#a17ca55242f086cdaacdbe55b571a8f37">ns3::SimpleOfdmWimaxPhy</a>
 , <a class="el" href="classns3_1_1_wifi_phy.html#a0528e5f0ded822ff3df47b5146cb0484">ns3::WifiPhy</a>
 </li>
@@ -956,7 +981,7 @@ $(document).ready(function(){initNavTree('functions_e.html',''); initResizable()
 : <a class="el" href="classns3_1_1_energy_harvester.html#ab6520ad23083bc96b7ca4136b33ea688">ns3::EnergyHarvester</a>
 </li>
 <li>EnergyHarvesterContainer()
-: <a class="el" href="classns3_1_1_energy_harvester_container.html#aeb0675712b12a1380261dc450afa46b0">ns3::EnergyHarvesterContainer</a>
+: <a class="el" href="classns3_1_1_energy_harvester_container.html#aa96f0bb985848ddc27c440def6204b78">ns3::EnergyHarvesterContainer</a>
 </li>
 <li>EnergyRechargeHandler()
 : <a class="el" href="classns3_1_1_uan_phy.html#a59b7f049d7d0510a498444ab6ada811c">ns3::UanPhy</a>
@@ -967,7 +992,7 @@ $(document).ready(function(){initNavTree('functions_e.html',''); initResizable()
 : <a class="el" href="classns3_1_1_energy_source.html#a820794a417c3d2f7909f987ba6064cde">ns3::EnergySource</a>
 </li>
 <li>EnergySourceContainer()
-: <a class="el" href="classns3_1_1_energy_source_container.html#a3d96da242e1b8c5c24e6d42ae31e9193">ns3::EnergySourceContainer</a>
+: <a class="el" href="classns3_1_1_energy_source_container.html#a330a725e90a489fb1339624754a8f4c3">ns3::EnergySourceContainer</a>
 </li>
 <li>Enqueue()
 : <a class="el" href="class_ared_queue_disc_test_case.html#a5528c44233e1056913e76d5be988f049">AredQueueDiscTestCase</a>
@@ -998,7 +1023,7 @@ $(document).ready(function(){initNavTree('functions_e.html',''); initResizable()
 , <a class="el" href="classns3_1_1_uan_mac_cw.html#a5bf27e2d41d5f842196e1c7a90793810">ns3::UanMacCw</a>
 , <a class="el" href="classns3_1_1_uan_mac_rc.html#a6200c9a80f5a849006488c6374a79fe9">ns3::UanMacRc</a>
 , <a class="el" href="classns3_1_1_uan_mac_rc_gw.html#a039df43c21c9985c6ba130cd0ba98913">ns3::UanMacRcGw</a>
-, <a class="el" href="classns3_1_1_wifi_mac.html#a5673fb98fb558f05fd10304beb8671ec">ns3::WifiMac</a>
+, <a class="el" href="classns3_1_1_wifi_mac.html#a1ee1d8a8629e2058d43262b36b2ecf54">ns3::WifiMac</a>
 , <a class="el" href="classns3_1_1_wifi_mac_queue.html#a6b038d486e33d1bd79dc19bf6648e240">ns3::WifiMacQueue</a>
 , <a class="el" href="classns3_1_1_wimax_connection.html#a2f7f3bf452c58c3390a096e1b354a86f">ns3::WimaxConnection</a>
 , <a class="el" href="classns3_1_1_wimax_mac_queue.html#acf25b96a645045ebb802d721e52e6f49">ns3::WimaxMacQueue</a>
@@ -1049,9 +1074,8 @@ $(document).ready(function(){initNavTree('functions_e.html',''); initResizable()
 <li>EnumToBandwidth()
 : <a class="el" href="classns3_1_1_rrc_asn1_header.html#a5912ebf85c7d6d772bef0c5ae9c00f38">ns3::RrcAsn1Header</a>
 </li>
-<li>EnumValue
-: <a class="el" href="classns3_1_1_enum_checker.html#a5565403536e77f1cb3db26a8ba9b1b07">ns3::EnumChecker</a>
-, <a class="el" href="classns3_1_1_enum_value.html#a1a57e1bf2fecec7119db9bfa0d1a28c7">ns3::EnumValue</a>
+<li>EnumValue()
+: <a class="el" href="classns3_1_1_enum_value.html#a1a57e1bf2fecec7119db9bfa0d1a28c7">ns3::EnumValue</a>
 </li>
 <li>EnvVarCheck()
 : <a class="el" href="classns3_1_1_log_component.html#ad0d2eecba6290bf1ee398c7b1a1f5702">ns3::LogComponent</a>
@@ -1131,7 +1155,7 @@ $(document).ready(function(){initNavTree('functions_e.html',''); initResizable()
 : <a class="el" href="classns3_1_1_epc_x2_sn_status_transfer_header.html#ac25ea3454ba063e1bca156de96265fb9">ns3::EpcX2SnStatusTransferHeader</a>
 </li>
 <li>EpcX2SpecificEpcX2SapProvider()
-: <a class="el" href="classns3_1_1_epc_x2_specific_epc_x2_sap_provider.html#ae02cf581402bd73c71583dba95d7422f">ns3::EpcX2SpecificEpcX2SapProvider&lt; C &gt;</a>
+: <a class="el" href="classns3_1_1_epc_x2_specific_epc_x2_sap_provider.html#a6a13ad96b39b151b4a13367c4db44463">ns3::EpcX2SpecificEpcX2SapProvider&lt; C &gt;</a>
 </li>
 <li>EpcX2SpecificEpcX2SapProvider&lt; EpcX2 &gt;
 : <a class="el" href="classns3_1_1_epc_x2.html#a5fa3eadb39e71e0c9f7a469a8315c690">ns3::EpcX2</a>
@@ -1166,7 +1190,7 @@ $(document).ready(function(){initNavTree('functions_e.html',''); initResizable()
 : <a class="el" href="classns3_1_1_eps_bearer_tag.html#ae08784b82261c65bb660fcd2f2ddb4fa">ns3::EpsBearerTag</a>
 </li>
 <li>EpsBearerTagUdpClient()
-: <a class="el" href="class_eps_bearer_tag_udp_client.html#addffe0c4fc9e821a25825fa02b0c4ef2">EpsBearerTagUdpClient</a>
+: <a class="el" href="class_eps_bearer_tag_udp_client.html#a4735224725bb519825b10c13ed6637ff">EpsBearerTagUdpClient</a>
 </li>
 <li>EpsFlowId_t()
 : <a class="el" href="structns3_1_1_epc_enb_application_1_1_eps_flow_id__t.html#a03896c0e161b2f855b5840da289ab31d">ns3::EpcEnbApplication::EpsFlowId_t</a>
@@ -1211,7 +1235,7 @@ $(document).ready(function(){initNavTree('functions_e.html',''); initResizable()
 </li>
 <li>Erase()
 : <a class="el" href="classns3_1_1_pbb_address_tlv_block.html#a3416e73484d57d74c8b9063998a7b58b">ns3::PbbAddressTlvBlock</a>
-, <a class="el" href="classns3_1_1_pbb_packet.html#aade6a4c722a8e889cb775d42c6a44248">ns3::PbbPacket</a>
+, <a class="el" href="classns3_1_1_pbb_packet.html#a15a651f172f0f6dd62273a34e1869246">ns3::PbbPacket</a>
 , <a class="el" href="classns3_1_1_pbb_tlv_block.html#a025649e71e22709040684d6521a0306e">ns3::PbbTlvBlock</a>
 </li>
 <li>EraseAssociation()
@@ -1418,10 +1442,10 @@ $(document).ready(function(){initNavTree('functions_e.html',''); initResizable()
 : <a class="el" href="classns3_1_1_point_to_point_net_device.html#a597eb43fcf326b367f78ca09f4d2bdff">ns3::PointToPointNetDevice</a>
 </li>
 <li>EU
-: <a class="el" href="classns3_1_1_lora_mac_helper.html#aec85fe99c3b720e02602accd0cd8a0efa8875735b25be20227dbc33be29c35024">ns3::LoraMacHelper</a>
+: <a class="el" href="classns3_1_1lorawan_1_1_lorawan_mac_helper.html#a95652f849a70d7bebd5049fb37e78c94a898e762456ce15edc022a49be5b99221">ns3::lorawan::LorawanMacHelper</a>
 </li>
 <li>EU433MHz
-: <a class="el" href="classns3_1_1_lora_mac_helper.html#aec85fe99c3b720e02602accd0cd8a0efafee00c1dfc920f33e9c8fd9b019b7ad5">ns3::LoraMacHelper</a>
+: <a class="el" href="classns3_1_1lorawan_1_1_lorawan_mac_helper.html#a95652f849a70d7bebd5049fb37e78c94ad15c511ace3f0e2a1f0b205caa1faa52">ns3::lorawan::LorawanMacHelper</a>
 </li>
 <li>Evaluate()
 : <a class="el" href="class_carrier_aggregation_config_test_case.html#a67c43e1871244cde495057aa5d9a35dd">CarrierAggregationConfigTestCase</a>
@@ -1454,7 +1478,7 @@ $(document).ready(function(){initNavTree('functions_e.html',''); initResizable()
 </li>
 <li>Event()
 : <a class="el" href="classns3_1_1_event.html#af3db91518915664f6017f384ab46d6b8">ns3::Event</a>
-, <a class="el" href="classns3_1_1_lora_interference_helper_1_1_event.html#a95bac4985858e44042476cf534bd827c">ns3::LoraInterferenceHelper::Event</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_lora_interference_helper_1_1_event.html#a7ed9e05bda1c59057d65d046d4982f39">ns3::lorawan::LoraInterferenceHelper::Event</a>
 </li>
 <li>EVENT
 : <a class="el" href="structns3_1_1_lte_rrc_sap_1_1_report_config_eutra.html#a8c893c43213fab454870a9a704534c3ea492651ea4b8c0f484edb0c018e908fcf">ns3::LteRrcSap::ReportConfigEutra</a>
@@ -1539,7 +1563,7 @@ $(document).ready(function(){initNavTree('functions_e.html',''); initResizable()
 : <a class="el" href="classns3_1_1tests_1_1_event_garbage_collector_test_suite.html#a6d87827d6927b171def7d4c5212a5005">ns3::tests::EventGarbageCollectorTestSuite</a>
 </li>
 <li>EventId()
-: <a class="el" href="classns3_1_1_event_id.html#a014007cdca4aa0731e173670cea4a1ce">ns3::EventId</a>
+: <a class="el" href="classns3_1_1_event_id.html#ae553d827bf2f5dea93b403b2f4ed56ef">ns3::EventId</a>
 </li>
 <li>eventId
 : <a class="el" href="structns3_1_1_lte_rrc_sap_1_1_report_config_eutra.html#a6b677751237f876779d0eb9d55ba0c80">ns3::LteRrcSap::ReportConfigEutra</a>
@@ -1702,7 +1726,7 @@ $(document).ready(function(){initNavTree('functions_e.html',''); initResizable()
 : <a class="el" href="class_channel_access_manager_test.html#abb4a56d004bc097925e6e7880a4a39a6">ChannelAccessManagerTest&lt; TxopType &gt;</a>
 </li>
 <li>Experiment()
-: <a class="el" href="class_experiment.html#ae5b795f9aa6b383828572659fa3e02f8">Experiment</a>
+: <a class="el" href="class_experiment.html#a303e6a05d99f403ff4793495a2fbff58">Experiment</a>
 </li>
 <li>expFrames
 : <a class="el" href="structns3_1_1_uan_mac_rc_gw_1_1_ack_data.html#a28f52eb334f27e743967a3f63b7926cf">ns3::UanMacRcGw::AckData</a>
@@ -1791,7 +1815,7 @@ $(document).ready(function(){initNavTree('functions_e.html',''); initResizable()
 : <a class="el" href="classns3_1_1_extended_capabilities.html#a6c6b828da4ef00535090960ce6e93ec5">ns3::ExtendedCapabilities</a>
 </li>
 <li>ExtendedSupportedRatesIE()
-: <a class="el" href="classns3_1_1_extended_supported_rates_i_e.html#adc4caaf39f581f5d6c88e6bb4fc5cab5">ns3::ExtendedSupportedRatesIE</a>
+: <a class="el" href="classns3_1_1_extended_supported_rates_i_e.html#a7dfcd7864650f76286f38bf1a15f84ae">ns3::ExtendedSupportedRatesIE</a>
 , <a class="el" href="classns3_1_1_supported_rates.html#ac4af3e8b73361f2e64c62e41011c7517">ns3::SupportedRates</a>
 </li>
 <li>ExtensionBit_t
@@ -1823,7 +1847,7 @@ $(document).ready(function(){initNavTree('functions_e.html',''); initResizable()
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:51 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:52 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

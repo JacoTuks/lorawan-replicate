@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -272,9 +269,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a78f954ad686942a98d456a3dd5d418e5 inherit pub_methods_classns3_1_1_ipv4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classns3_1_1_ipv4_address.html">Ipv4Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_ipv4.html#a78f954ad686942a98d456a3dd5d418e5">SelectSourceAddress</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; const <a class="el" href="classns3_1_1_net_device.html">NetDevice</a> &gt; device, <a class="el" href="classns3_1_1_ipv4_address.html">Ipv4Address</a> dst, <a class="el" href="classns3_1_1_ipv4_interface_address.html#a329cea433e74f717c26c9e51c4fcd3d8">Ipv4InterfaceAddress::InterfaceAddressScope_e</a> scope)=0</td></tr>
 <tr class="memdesc:a78f954ad686942a98d456a3dd5d418e5 inherit pub_methods_classns3_1_1_ipv4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the first primary source address with scope less than or equal to the requested scope, to use in sending a packet to destination dst out of the specified device.  <a href="classns3_1_1_ipv4.html#a78f954ad686942a98d456a3dd5d418e5">More...</a><br /></td></tr>
 <tr class="separator:a78f954ad686942a98d456a3dd5d418e5 inherit pub_methods_classns3_1_1_ipv4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81f6cbb774cdc255e3e49490e0960539 inherit pub_methods_classns3_1_1_ipv4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_ipv4.html#a81f6cbb774cdc255e3e49490e0960539">Send</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; <a class="el" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>, <a class="el" href="classns3_1_1_ipv4_address.html">Ipv4Address</a> source, <a class="el" href="classns3_1_1_ipv4_address.html">Ipv4Address</a> destination, uint8_t protocol, <a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_ipv4_route.html">Ipv4Route</a> &gt; route)=0</td></tr>
+<tr class="memitem:a81f6cbb774cdc255e3e49490e0960539 inherit pub_methods_classns3_1_1_ipv4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_ipv4.html#a81f6cbb774cdc255e3e49490e0960539">Send</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; packet, <a class="el" href="classns3_1_1_ipv4_address.html">Ipv4Address</a> source, <a class="el" href="classns3_1_1_ipv4_address.html">Ipv4Address</a> destination, uint8_t protocol, <a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_ipv4_route.html">Ipv4Route</a> &gt; route)=0</td></tr>
 <tr class="separator:a81f6cbb774cdc255e3e49490e0960539 inherit pub_methods_classns3_1_1_ipv4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d6b3f031557d3fccc195df342f8598a inherit pub_methods_classns3_1_1_ipv4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_ipv4.html#a6d6b3f031557d3fccc195df342f8598a">SendWithHeader</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; <a class="el" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>, <a class="el" href="classns3_1_1_ipv4_header.html">Ipv4Header</a> ipHeader, <a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_ipv4_route.html">Ipv4Route</a> &gt; route)=0</td></tr>
+<tr class="memitem:a6d6b3f031557d3fccc195df342f8598a inherit pub_methods_classns3_1_1_ipv4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_ipv4.html#a6d6b3f031557d3fccc195df342f8598a">SendWithHeader</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; packet, <a class="el" href="classns3_1_1_ipv4_header.html">Ipv4Header</a> ipHeader, <a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_ipv4_route.html">Ipv4Route</a> &gt; route)=0</td></tr>
 <tr class="separator:a6d6b3f031557d3fccc195df342f8598a inherit pub_methods_classns3_1_1_ipv4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac148839884b1ce11f9237ddc523f5cd2 inherit pub_methods_classns3_1_1_ipv4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_ipv4.html#ac148839884b1ce11f9237ddc523f5cd2">SetDown</a> (uint32_t interface)=0</td></tr>
 <tr class="separator:ac148839884b1ce11f9237ddc523f5cd2 inherit pub_methods_classns3_1_1_ipv4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -434,7 +431,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_ipv4_l3_click_protocol.html">Ipv4L3ClickProtocol</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:27 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:31 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -243,8 +240,8 @@ $(document).ready(function(){initNavTree('ns3tcp-socket-writer_8cc_source.html',
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    {</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <a class="code" href="classns3_1_1_socket_writer.html#a63dcac21fa9f86360fc666a3d15058fc">Connect</a> ();</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Packet&gt;</a> <a class="code" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a> = Create&lt;Packet&gt; (numBytes);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <a class="code" href="classns3_1_1_socket_writer.html#acac6d81dbeee13777f27140b054a0a57">m_socket</a>-&gt;<a class="code" href="classns3_1_1_socket.html#a036901c8f485fe5b6eab93b7f2ec289d">Send</a> (<a class="code" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Packet&gt;</a> packet = Create&lt;Packet&gt; (numBytes);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <a class="code" href="classns3_1_1_socket_writer.html#acac6d81dbeee13777f27140b054a0a57">m_socket</a>-&gt;<a class="code" href="classns3_1_1_socket.html#a036901c8f485fe5b6eab93b7f2ec289d">Send</a> (packet);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keywordtype">void</span></div>
@@ -264,11 +261,10 @@ $(document).ready(function(){initNavTree('ns3tcp-socket-writer_8cc_source.html',
 <div class="ttc" id="aclassns3_1_1_socket_writer_html_a132e28853f1018b462fbde96e2b6df27"><div class="ttname"><a href="classns3_1_1_socket_writer.html#a132e28853f1018b462fbde96e2b6df27">ns3::SocketWriter::SocketWriter</a></div><div class="ttdeci">SocketWriter()</div><div class="ttdef"><b>Definition:</b> <a href="ns3tcp-socket-writer_8cc_source.html#l00026">ns3tcp-socket-writer.cc:26</a></div></div>
 <div class="ttc" id="aclassns3_1_1_socket_writer_html_a85e43b753f0575e8621678fc7caf9a0b"><div class="ttname"><a href="classns3_1_1_socket_writer.html#a85e43b753f0575e8621678fc7caf9a0b">ns3::SocketWriter::GetTypeId</a></div><div class="ttdeci">static TypeId GetTypeId(void)</div><div class="ttdoc">Register this type.</div><div class="ttdef"><b>Definition:</b> <a href="ns3tcp-socket-writer_8cc_source.html#l00038">ns3tcp-socket-writer.cc:38</a></div></div>
 <div class="ttc" id="aclassns3_1_1_socket_writer_html_a24494a9fb10911a35fbbd4f3bf550af9"><div class="ttname"><a href="classns3_1_1_socket_writer.html#a24494a9fb10911a35fbbd4f3bf550af9">ns3::SocketWriter::StopApplication</a></div><div class="ttdeci">virtual void StopApplication(void)</div><div class="ttdoc">Application specific shutdown code.</div><div class="ttdef"><b>Definition:</b> <a href="ns3tcp-socket-writer_8cc_source.html#l00056">ns3tcp-socket-writer.cc:56</a></div></div>
-<div class="ttc" id="alora-mac-test_8cc_html_a084e879e2a4e6b1e078575d3693a0c3a"><div class="ttname"><a href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a></div><div class="ttdeci">Ptr&lt; Packet &gt; packet</div><div class="ttdef"><b>Definition:</b> <a href="lora-mac-test_8cc_source.html#l00021">lora-mac-test.cc:21</a></div></div>
 <div class="ttc" id="aclassns3_1_1_socket_writer_html_aa01731157f8776513569dc880e8e7003"><div class="ttname"><a href="classns3_1_1_socket_writer.html#aa01731157f8776513569dc880e8e7003">ns3::SocketWriter::m_node</a></div><div class="ttdeci">Ptr&lt; Node &gt; m_node</div><div class="ttdef"><b>Definition:</b> <a href="ns3tcp-socket-writer_8h_source.html#l00048">ns3tcp-socket-writer.h:48</a></div></div>
 <div class="ttc" id="aclassns3_1_1_socket_writer_html_a8fd5c60d718d8e52b1861a760b25decb"><div class="ttname"><a href="classns3_1_1_socket_writer.html#a8fd5c60d718d8e52b1861a760b25decb">ns3::SocketWriter::Write</a></div><div class="ttdeci">void Write(uint32_t numBytes)</div><div class="ttdef"><b>Definition:</b> <a href="ns3tcp-socket-writer_8cc_source.html#l00080">ns3tcp-socket-writer.cc:80</a></div></div>
 <div class="ttc" id="aclassns3_1_1_socket_writer_html_a63dcac21fa9f86360fc666a3d15058fc"><div class="ttname"><a href="classns3_1_1_socket_writer.html#a63dcac21fa9f86360fc666a3d15058fc">ns3::SocketWriter::Connect</a></div><div class="ttdeci">void Connect()</div><div class="ttdef"><b>Definition:</b> <a href="ns3tcp-socket-writer_8cc_source.html#l00069">ns3tcp-socket-writer.cc:69</a></div></div>
-<div class="ttc" id="aclassns3_1_1_type_id_html_abaaca67ab7d2471067e7c275df0f7309"><div class="ttname"><a href="classns3_1_1_type_id.html#abaaca67ab7d2471067e7c275df0f7309">ns3::TypeId::SetParent</a></div><div class="ttdeci">TypeId SetParent(TypeId tid)</div><div class="ttdoc">Set the parent TypeId.</div><div class="ttdef"><b>Definition:</b> <a href="type-id_8cc_source.html#l00922">type-id.cc:922</a></div></div>
+<div class="ttc" id="aclassns3_1_1_type_id_html_abaaca67ab7d2471067e7c275df0f7309"><div class="ttname"><a href="classns3_1_1_type_id.html#abaaca67ab7d2471067e7c275df0f7309">ns3::TypeId::SetParent</a></div><div class="ttdeci">TypeId SetParent(TypeId tid)</div><div class="ttdoc">Set the parent TypeId.</div><div class="ttdef"><b>Definition:</b> <a href="type-id_8cc_source.html#l00923">type-id.cc:923</a></div></div>
 <div class="ttc" id="aclassns3_1_1_ptr_html"><div class="ttname"><a href="classns3_1_1_ptr.html">ns3::Ptr&lt; Node &gt;</a></div></div>
 <div class="ttc" id="agroup__fatal_html_ga5131d5e3f75d7d4cbfd706ac456fdc85"><div class="ttname"><a href="group__fatal.html#ga5131d5e3f75d7d4cbfd706ac456fdc85">NS_FATAL_ERROR</a></div><div class="ttdeci">#define NS_FATAL_ERROR(msg)</div><div class="ttdoc">Report a fatal error with a message and terminate.</div><div class="ttdef"><b>Definition:</b> <a href="fatal-error_8h_source.html#l00163">fatal-error.h:162</a></div></div>
 <div class="ttc" id="aclassns3_1_1_socket_html_a036901c8f485fe5b6eab93b7f2ec289d"><div class="ttname"><a href="classns3_1_1_socket.html#a036901c8f485fe5b6eab93b7f2ec289d">ns3::Socket::Send</a></div><div class="ttdeci">virtual int Send(Ptr&lt; Packet &gt; p, uint32_t flags)=0</div><div class="ttdoc">Send data (or dummy data) to the remote host.</div></div>
@@ -293,7 +289,7 @@ $(document).ready(function(){initNavTree('ns3tcp-socket-writer_8cc_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_120ed4da3e3217b1e7fc0b4f48568e79.html">test</a></li><li class="navelem"><a class="el" href="dir_bd09ed155f122bde674d0a0b4509ef01.html">ns3tcp</a></li><li class="navelem"><a class="el" href="ns3tcp-socket-writer_8cc.html">ns3tcp-socket-writer.cc</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:05 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:12 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

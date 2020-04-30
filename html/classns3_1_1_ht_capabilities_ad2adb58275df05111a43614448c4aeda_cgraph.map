@@ -1,5 +1,5 @@
 <map id="ns3::HtCapabilities::SerializeInformationField" name="ns3::HtCapabilities::SerializeInformationField">
-<area shape="rect" id="node1" title="Serialize the information field." alt="" coords="5,235,197,276"/>
+<area shape="rect" id="node1" title="Serialize information (i.e., the body of the IE, not including the Element ID and length octets)" alt="" coords="5,235,197,276"/>
 <area shape="rect" id="node2" href="$classns3_1_1_ht_capabilities.html#a3eac4b811f40834234949c54ad46d869" title="Return the A&#45;MPDU Parameters field in the HT Capabilities information element." alt="" coords="280,5,455,47"/>
 <area shape="rect" id="node3" href="$classns3_1_1_ht_capabilities.html#a0ab894942cd539236e56d7f160de5ce3" title="Return the Antenna Selection (ASEL) Capabilities field in the HT Capabilities information element." alt="" coords="245,71,489,112"/>
 <area shape="rect" id="node4" href="$classns3_1_1_ht_capabilities.html#a4b0931784360cf80dbc03b7d589c6692" title="Return the Extended HT Capabilities field in the HT Capabilities information element." alt="" coords="264,136,471,177"/>

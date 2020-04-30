@@ -1,5 +1,5 @@
 <map id="ns3::ThreeGppAntennaArrayModel" name="ns3::ThreeGppAntennaArrayModel">
-<area shape="rect" id="node1" title="Class implementing the antenna model defined in 3GPP TR 38.901." alt="" coords="1347,126,1552,167"/>
+<area shape="rect" id="node1" title="Class implementing the antenna model defined in 3GPP TR 38.901 V15.0.0." alt="" coords="1347,126,1552,167"/>
 <area shape="rect" id="node2" href="$classns3_1_1_object.html" title="A base class which provides memory management and object aggregation." alt="" coords="1001,77,1096,104"/>
 <area shape="rect" id="node8" href="$structns3_1_1_object_1_1_aggregates.html" title="The list of Objects aggregated to this one." alt="" coords="1361,65,1538,92"/>
 <area shape="rect" id="node3" href="$classns3_1_1_simple_ref_count.html" title=" " alt="" coords="539,5,705,61"/>

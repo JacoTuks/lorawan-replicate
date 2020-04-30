@@ -28,8 +28,8 @@
 <area shape="rect" id="node26" href="$classns3_1_1_rip_ng_helper.html#a9ed079b76d48ffc79c2e8797ff197c8e" title=" " alt="" coords="32,913,219,940"/>
 <area shape="rect" id="node27" href="$classns3_1_1_ipv4_nix_vector_helper.html#adace7e160af227688815fda9fa8987ff" title=" " alt="" coords="31,965,219,1006"/>
 <area shape="rect" id="node28" href="$classns3_1_1_olsr_helper.html#a0062126ad6b4ff7c725b51da13cd7172" title=" " alt="" coords="39,1031,212,1057"/>
-<area shape="rect" id="node29" href="$classns3_1_1_lora_mac_helper.html#ac20c2650280ec2c77ff098e195feea95" title="Create the LoRaMac instance and connect it to a device." alt="" coords="50,1082,201,1123"/>
-<area shape="rect" id="node30" href="$classns3_1_1_lora_phy_helper.html#a4a4be7e4b9026dbb7a37aa0a5ac52230" title="Crate a LoraPhy and connect it to a device on a node." alt="" coords="51,1147,199,1189"/>
+<area shape="rect" id="node29" href="$classns3_1_1lorawan_1_1_lora_phy_helper.html#a5e4963824107f71d88d6d5fa36af5fe9" title="Crate a LoraPhy and connect it to a device on a node." alt="" coords="21,1082,229,1123"/>
+<area shape="rect" id="node30" href="$classns3_1_1lorawan_1_1_lorawan_mac_helper.html#acd3048d9711c51d8c1e5c1f13e05e2a9" title="Create the LorawanMac instance and connect it to a device." alt="" coords="28,1147,223,1189"/>
 <area shape="rect" id="node31" href="$classns3_1_1_spectrum_phy_helper.html#aa26730d70bd86c0bf888a406c80d33fe" title=" " alt="" coords="34,1213,217,1254"/>
 <area shape="rect" id="node32" href="$classns3_1_1_spectrum_wifi_phy_helper.html#afa1dc80c04fa37baa2b3b9b696b82fb5" title=" " alt="" coords="21,1278,229,1319"/>
 <area shape="rect" id="node33" href="$classns3_1_1_yans_wifi_phy_helper.html#ab71a35fdc2bc9783b72e547da292921e" title=" " alt="" coords="38,1343,213,1385"/>
@@ -48,5 +48,5 @@
 <area shape="rect" id="node46" href="$classns3_1_1_tcp_l4_protocol.html#aff234df940f094cabaf74f5383639574" title="Create a TCP socket using the specified congestion control algorithm TypeId." alt="" coords="54,2137,197,2178"/>
 <area shape="rect" id="node47" href="$classns3_1_1_fq_co_del_queue_disc.html#a9763ff304b86d8c3d2f951d20e102d0a" title="This function actually enqueues a packet into the queue disc." alt="" coords="36,2202,215,2243"/>
 <area shape="rect" id="node48" href="$classns3_1_1_basic_energy_harvester_helper.html#af589eb05a93cedc253dee2697169a2c1" title=" " alt="" coords="27,2267,224,2309"/>
-<area shape="rect" id="node49" href="$classns3_1_1_acoustic_modem_energy_model_helper.html#a577df03965e1ad592108dfdb7e2bccbe" title="Implements DeviceEnergyModel::Install." alt="" coords="24,2333,227,2374"/>
+<area shape="rect" id="node49" href="$classns3_1_1lorawan_1_1_lora_radio_energy_model_helper.html#af211ea223166524f9a6d86a1a1bda4c3" title=" " alt="" coords="14,2333,237,2374"/>
 </map>

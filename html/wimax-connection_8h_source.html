@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -212,7 +209,7 @@ $(document).ready(function(){initNavTree('wimax-connection_8h_source.html',''); 
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="comment">// wrapper functions</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment"></span>  uint8_t <a class="code" href="classns3_1_1_wimax_connection.html#a8a1728c96243b7d4640e75aa6f1ed20e">GetSchedulingType</a> (<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classns3_1_1_wimax_connection.html#a2f7f3bf452c58c3390a096e1b354a86f">Enqueue</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Packet&gt;</a> <a class="code" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>, <span class="keyword">const</span> <a class="code" href="classns3_1_1_mac_header_type.html">MacHeaderType</a> &amp;hdrType, <span class="keyword">const</span> <a class="code" href="classns3_1_1_generic_mac_header.html">GenericMacHeader</a> &amp;hdr);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classns3_1_1_wimax_connection.html#a2f7f3bf452c58c3390a096e1b354a86f">Enqueue</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Packet&gt;</a> packet, <span class="keyword">const</span> <a class="code" href="classns3_1_1_mac_header_type.html">MacHeaderType</a> &amp;hdrType, <span class="keyword">const</span> <a class="code" href="classns3_1_1_generic_mac_header.html">GenericMacHeader</a> &amp;hdr);</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Packet&gt;</a> <a class="code" href="classns3_1_1_wimax_connection.html#a54b822cae000f9acd50c63f59219ab6a">Dequeue</a> (<a class="code" href="classns3_1_1_mac_header_type.html#a54d8fc8bc93a2b7865627965cdd31c20">MacHeaderType::HeaderType</a> packetType = <a class="code" href="classns3_1_1_mac_header_type.html#a54d8fc8bc93a2b7865627965cdd31c20a48fe5b2f20cadf78008c71469b518403">MacHeaderType::HEADER_TYPE_GENERIC</a>);</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Packet&gt;</a> <a class="code" href="classns3_1_1_wimax_connection.html#a54b822cae000f9acd50c63f59219ab6a">Dequeue</a> (<a class="code" href="classns3_1_1_mac_header_type.html#a54d8fc8bc93a2b7865627965cdd31c20">MacHeaderType::HeaderType</a> packetType, uint32_t availableByte);</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classns3_1_1_wimax_connection.html#ab75562b70cc740458bde7a48fe72b520">HasPackets</a> (<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
@@ -250,7 +247,6 @@ $(document).ready(function(){initNavTree('wimax-connection_8h_source.html',''); 
 <div class="ttc" id="aclassns3_1_1_wimax_connection_html_a9494f36649eee7785528efd34c492c9c"><div class="ttname"><a href="classns3_1_1_wimax_connection.html#a9494f36649eee7785528efd34c492c9c">ns3::WimaxConnection::SetServiceFlow</a></div><div class="ttdeci">void SetServiceFlow(ServiceFlow *serviceFlow)</div><div class="ttdoc">set the service flow associated to this connection</div><div class="ttdef"><b>Definition:</b> <a href="wimax-connection_8cc_source.html#l00105">wimax-connection.cc:105</a></div></div>
 <div class="ttc" id="aclassns3_1_1_wimax_connection_html_a1f584c9abac19d8efc5f9a34ac5306a8"><div class="ttname"><a href="classns3_1_1_wimax_connection.html#a1f584c9abac19d8efc5f9a34ac5306a8">ns3::WimaxConnection::m_serviceFlow</a></div><div class="ttdeci">ServiceFlow * m_serviceFlow</div><div class="ttdoc">service flow</div><div class="ttdef"><b>Definition:</b> <a href="wimax-connection_8h_source.html#l00154">wimax-connection.h:154</a></div></div>
 <div class="ttc" id="aclassns3_1_1_mac_header_type_html"><div class="ttname"><a href="classns3_1_1_mac_header_type.html">ns3::MacHeaderType</a></div><div class="ttdef"><b>Definition:</b> <a href="wimax-mac-header_8h_source.html#l00036">wimax-mac-header.h:37</a></div></div>
-<div class="ttc" id="alora-mac-test_8cc_html_a084e879e2a4e6b1e078575d3693a0c3a"><div class="ttname"><a href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a></div><div class="ttdeci">Ptr&lt; Packet &gt; packet</div><div class="ttdef"><b>Definition:</b> <a href="lora-mac-test_8cc_source.html#l00021">lora-mac-test.cc:21</a></div></div>
 <div class="ttc" id="awimax-mac-queue_8h_html"><div class="ttname"><a href="wimax-mac-queue_8h.html">wimax-mac-queue.h</a></div></div>
 <div class="ttc" id="aclassns3_1_1_wimax_connection_html_aee269cdada060d2bf916fd93f48b3a0b"><div class="ttname"><a href="classns3_1_1_wimax_connection.html#aee269cdada060d2bf916fd93f48b3a0b">ns3::WimaxConnection::GetServiceFlow</a></div><div class="ttdeci">ServiceFlow * GetServiceFlow(void) const</div><div class="ttdef"><b>Definition:</b> <a href="wimax-connection_8cc_source.html#l00111">wimax-connection.cc:111</a></div></div>
 <div class="ttc" id="aclassns3_1_1_wimax_connection_html"><div class="ttname"><a href="classns3_1_1_wimax_connection.html">ns3::WimaxConnection</a></div><div class="ttdef"><b>Definition:</b> <a href="wimax-connection_8h_source.html#l00042">wimax-connection.h:43</a></div></div>
@@ -290,7 +286,7 @@ $(document).ready(function(){initNavTree('wimax-connection_8h_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_81cc003b30758dae13caa0a9a27e4771.html">wimax</a></li><li class="navelem"><a class="el" href="dir_d0b412e18d034de3dac08327f1e7d596.html">model</a></li><li class="navelem"><a class="el" href="wimax-connection_8h.html">wimax-connection.h</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:09 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:16 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -221,7 +218,7 @@ $(document).ready(function(){initNavTree('spectrum-channel_8h_source.html',''); 
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classns3_1_1_spectrum_channel.html#a16ed0d6375582f739bd9beb770106083">  105</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_spectrum_channel.html#a16ed0d6375582f739bd9beb770106083">StartTx</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;SpectrumSignalParameters&gt;</a> params) = 0;</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classns3_1_1_spectrum_channel.html#a16ed0d6375582f739bd9beb770106083">  105</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_spectrum_channel.html#a16ed0d6375582f739bd9beb770106083">StartTx</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;SpectrumSignalParameters&gt;</a> <a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>) = 0;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
 <div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="classns3_1_1_spectrum_channel.html#ad59f405527de70c8cf52118b2eff8bc5">  122</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_spectrum_channel.html#ad59f405527de70c8cf52118b2eff8bc5">AddRx</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;SpectrumPhy&gt;</a> <a class="code" href="namespacethird.html#afd1150b3dae0722a64278ec9f040f321">phy</a>) = 0;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
@@ -232,7 +229,7 @@ $(document).ready(function(){initNavTree('spectrum-channel_8h_source.html',''); 
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;const MobilityModel&gt;</a> txMobility, <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;const MobilityModel&gt;</a> rxMobility,</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;     <span class="keywordtype">double</span> txAntennaGain, <span class="keywordtype">double</span> rxAntennaGain,</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;     <span class="keywordtype">double</span> propagationGain, <span class="keywordtype">double</span> pathloss);</div>
-<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="classns3_1_1_spectrum_channel.html#ad63e7c23b53bedabb67db99669416a37">  153</a></span>&#160;  <span class="keyword">typedef</span> void (* <a class="code" href="classns3_1_1_spectrum_channel.html#ad63e7c23b53bedabb67db99669416a37">SignalParametersTracedCallback</a>) (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;SpectrumSignalParameters&gt;</a> params);</div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="classns3_1_1_spectrum_channel.html#ad63e7c23b53bedabb67db99669416a37">  153</a></span>&#160;  <span class="keyword">typedef</span> void (* <a class="code" href="classns3_1_1_spectrum_channel.html#ad63e7c23b53bedabb67db99669416a37">SignalParametersTracedCallback</a>) (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;SpectrumSignalParameters&gt;</a> <a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>);</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
@@ -262,6 +259,7 @@ $(document).ready(function(){initNavTree('spectrum-channel_8h_source.html',''); 
 </div><!-- doc-content -->
 <div class="ttc" id="aclassns3_1_1_spectrum_channel_html_ad8177b91f5fcdc7c5614f6fce9725aa6"><div class="ttname"><a href="classns3_1_1_spectrum_channel.html#ad8177b91f5fcdc7c5614f6fce9725aa6">ns3::SpectrumChannel::SetPropagationDelayModel</a></div><div class="ttdeci">void SetPropagationDelayModel(Ptr&lt; PropagationDelayModel &gt; delay)</div><div class="ttdoc">Set the propagation delay model to be used.</div><div class="ttdef"><b>Definition:</b> <a href="spectrum-channel_8cc_source.html#l00139">spectrum-channel.cc:139</a></div></div>
 <div class="ttc" id="aclassns3_1_1_type_id_html"><div class="ttname"><a href="classns3_1_1_type_id.html">ns3::TypeId</a></div><div class="ttdoc">a unique identifier for an interface.</div><div class="ttdef"><b>Definition:</b> <a href="type-id_8h_source.html#l00058">type-id.h:59</a></div></div>
+<div class="ttc" id="anamespacealoha_html_aff1381c591fdaf9d3af2b19080c9eed7"><div class="ttname"><a href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">aloha.params</a></div><div class="ttdeci">dictionary params</div><div class="ttdef"><b>Definition:</b> <a href="aloha_8py_source.html#l00013">aloha.py:13</a></div></div>
 <div class="ttc" id="aclassns3_1_1_spectrum_channel_html_a00193951a8004999e310cc73f99083e5"><div class="ttname"><a href="classns3_1_1_spectrum_channel.html#a00193951a8004999e310cc73f99083e5">ns3::SpectrumChannel::AddPropagationLossModel</a></div><div class="ttdeci">void AddPropagationLossModel(Ptr&lt; PropagationLossModel &gt; loss)</div><div class="ttdoc">Add the single-frequency propagation loss model to be used.</div><div class="ttdef"><b>Definition:</b> <a href="spectrum-channel_8cc_source.html#l00117">spectrum-channel.cc:117</a></div></div>
 <div class="ttc" id="aclassns3_1_1_spectrum_channel_html"><div class="ttname"><a href="classns3_1_1_spectrum_channel.html">ns3::SpectrumChannel</a></div><div class="ttdef"><b>Definition:</b> <a href="spectrum-channel_8h_source.html#l00048">spectrum-channel.h:49</a></div></div>
 <div class="ttc" id="anamespacens3_html"><div class="ttname"><a href="namespacens3.html">ns3</a></div><div class="ttdoc">Every class exported by the ns3 library is enclosed in the ns3 namespace.</div></div>
@@ -295,7 +293,7 @@ $(document).ready(function(){initNavTree('spectrum-channel_8h_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_10d0328e2266480c720033fb91de3081.html">spectrum</a></li><li class="navelem"><a class="el" href="dir_f25b46aff9dd2800f353f0cc2534eabd.html">model</a></li><li class="navelem"><a class="el" href="spectrum-channel_8h.html">spectrum-channel.h</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:04 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:12 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

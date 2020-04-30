@@ -33,7 +33,7 @@
 <area shape="rect" id="node33" href="$classns3_1_1_wifi_phy.html#aa3d6056d67327dc5a757e5e49f68ab37" title=" " alt="" coords="309,1973,513,2014"/>
 <area shape="rect" id="node34" href="$classns3_1_1_wifi_phy.html#a9e4f1e101f3b4fdfdad3f4c470a16a6f" title=" " alt="" coords="301,1842,520,1883"/>
 <area shape="rect" id="node35" href="$classns3_1_1_wifi_mode.html#a686ba1d46740b0e71b852245f766bd36" title=" " alt="" coords="311,1427,511,1453"/>
-<area shape="rect" id="node36" href="$classns3_1_1_wifi_phy_helper.html#af1baefd0a50daeff72c8075f2eef7eda" title="Get the radiotap header." alt="" coords="331,2038,490,2079"/>
+<area shape="rect" id="node36" href="$classns3_1_1_wifi_phy_helper.html#af1baefd0a50daeff72c8075f2eef7eda" title="Get the Radiotap header." alt="" coords="331,2038,490,2079"/>
 <area shape="rect" id="node37" href="$classns3_1_1_mesh_wifi_interface_mac.html#ae564ee657ce84f1023eabfd6d3e474a4" title=" " alt="" coords="311,2103,510,2145"/>
 <area shape="rect" id="node38" href="$classns3_1_1_ap_wifi_mac.html#a0b627f2e2ca56a38915e18a7a55ace79" title="Return an instance of SupportedRates that contains all rates that we support including HT rates." alt="" coords="301,2169,521,2210"/>
 <area shape="rect" id="node39" href="$classns3_1_1_sta_wifi_mac.html#a484da19ff4bb12683c7c77c68f45c458" title="Return an instance of SupportedRates that contains all rates that we support including HT rates." alt="" coords="299,2234,523,2275"/>

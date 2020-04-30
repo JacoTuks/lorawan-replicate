@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -400,8 +397,8 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The Pareto distribution Random Number Generator (RNG). </p>
 <p>This class supports the creation of objects that return random numbers from a fixed Pareto distribution. It also supports the generation of single random numbers from various Pareto distributions.</p>
-<p>The probability density function of a Pareto variable is defined over the range [ <img class="formulaInl" alt="$x_m$" src="form_20.png" width="0" height="9"/>, <img class="formulaInl" alt="$+\infty$" src="form_21.png" width="0" height="10"/>) as: <img class="formulaInl" alt="$ k \frac{x_m^k}{x^{k+1}}$" src="form_22.png" width="0" height="20"/> where <img class="formulaInl" alt="$x_m &gt; 0$" src="form_23.png" width="0" height="11"/> is called the scale parameter and <img class="formulaInl" alt="$ k &gt; 0$" src="form_24.png" width="0" height="11"/> is called the Pareto index or shape.</p>
-<p>The parameter <img class="formulaInl" alt="$ x_m $" src="form_25.png" width="0" height="9"/> can be inferred from the mean and the parameter <img class="formulaInl" alt="$ k $" src="form_1.png" width="0" height="10"/> with the equation <img class="formulaInl" alt="$ x_m = mean \frac{k-1}{k}, k &gt; 1$" src="form_26.png" width="0" height="18"/>.</p>
+<p>The probability density function of a Pareto variable is defined over the range [ <img class="formulaInl" alt="$x_m$" src="form_20.png" width="18" height="9"/>, <img class="formulaInl" alt="$+\infty$" src="form_21.png" width="21" height="10"/>) as: <img class="formulaInl" alt="$ k \frac{x_m^k}{x^{k+1}}$" src="form_22.png" width="30" height="20"/> where <img class="formulaInl" alt="$x_m &gt; 0$" src="form_23.png" width="40" height="11"/> is called the scale parameter and <img class="formulaInl" alt="$ k &gt; 0$" src="form_24.png" width="30" height="11"/> is called the Pareto index or shape.</p>
+<p>The parameter <img class="formulaInl" alt="$ x_m $" src="form_25.png" width="18" height="9"/> can be inferred from the mean and the parameter <img class="formulaInl" alt="$ k $" src="form_1.png" width="6" height="10"/> with the equation <img class="formulaInl" alt="$ x_m = mean \frac{k-1}{k}, k &gt; 1$" src="form_26.png" width="121" height="18"/>.</p>
 <p>Since Pareto distributions can theoretically return unbounded values, it is sometimes useful to specify a fixed upper limit. Note however when the upper limit is specified, the true mean of the distribution is slightly smaller than the mean value specified.</p>
 <p>Here is an example of how to use this class: </p><div class="fragment"><div class="line"><span class="keywordtype">double</span> scale = 5.0;</div>
 <div class="line"><span class="keywordtype">double</span> shape = 2.0;</div>
@@ -512,16 +509,16 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A random unsigned integer value.</dd></dl>
-<p>Note that antithetic values are being generated if m_isAntithetic is equal to true. If <img class="formulaInl" alt="$u$" src="form_13.png" width="0" height="6"/> is a uniform variable over [0,1] and</p>
+<p>Note that antithetic values are being generated if m_isAntithetic is equal to true. If <img class="formulaInl" alt="$u$" src="form_13.png" width="9" height="6"/> is a uniform variable over [0,1] and</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ x = \frac{scale}{u^{\frac{1}{shape}}} \]" src="form_58.png" width="0" height="30"/>
+<img class="formulaDsp" alt="\[ x = \frac{scale}{u^{\frac{1}{shape}}} \]" src="form_58.png" width="60" height="30"/>
 </p>
 <p>is a value that would be returned normally.</p>
-<p>The value returned in the antithetic case, <img class="formulaInl" alt="$x'$" src="form_59.png" width="0" height="10"/>, is calculated as</p>
+<p>The value returned in the antithetic case, <img class="formulaInl" alt="$x'$" src="form_59.png" width="11" height="10"/>, is calculated as</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ x' = \frac{scale}{{(1 - u)}^{\frac{1}{shape}}} , \]" src="form_60.png" width="0" height="34"/>
+<img class="formulaDsp" alt="\[ x' = \frac{scale}{{(1 - u)}^{\frac{1}{shape}}} , \]" src="form_60.png" width="99" height="34"/>
 </p>
-<p>which now involves the distance <img class="formulaInl" alt="$u$" src="form_13.png" width="0" height="6"/> is from 1 in the denominator. </p>
+<p>which now involves the distance <img class="formulaInl" alt="$u$" src="form_13.png" width="9" height="6"/> is from 1 in the denominator. </p>
 
 <p class="definition">Definition at line <a class="el" href="random-variable-stream_8cc_source.html#l00548">548</a> of file <a class="el" href="random-variable-stream_8cc_source.html">random-variable-stream.cc</a>.</p>
 
@@ -566,16 +563,16 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns a random unsigned integer from a Pareto distribution with the current mean, shape, and upper bound. </p>
 <dl class="section return"><dt>Returns</dt><dd>A random unsigned integer value.</dd></dl>
-<p>Note that antithetic values are being generated if m_isAntithetic is equal to true. If <img class="formulaInl" alt="$u$" src="form_13.png" width="0" height="6"/> is a uniform variable over [0,1] and</p>
+<p>Note that antithetic values are being generated if m_isAntithetic is equal to true. If <img class="formulaInl" alt="$u$" src="form_13.png" width="9" height="6"/> is a uniform variable over [0,1] and</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ x = \frac{scale}{u^{\frac{1}{shape}}} \]" src="form_58.png" width="0" height="30"/>
+<img class="formulaDsp" alt="\[ x = \frac{scale}{u^{\frac{1}{shape}}} \]" src="form_58.png" width="60" height="30"/>
 </p>
 <p>is a value that would be returned normally.</p>
-<p>The value returned in the antithetic case, <img class="formulaInl" alt="$x'$" src="form_59.png" width="0" height="10"/>, is calculated as</p>
+<p>The value returned in the antithetic case, <img class="formulaInl" alt="$x'$" src="form_59.png" width="11" height="10"/>, is calculated as</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ x' = \frac{scale}{{(1 - u)}^{\frac{1}{shape}}} , \]" src="form_60.png" width="0" height="34"/>
+<img class="formulaDsp" alt="\[ x' = \frac{scale}{{(1 - u)}^{\frac{1}{shape}}} , \]" src="form_60.png" width="99" height="34"/>
 </p>
-<p>which now involves the distance <img class="formulaInl" alt="$u$" src="form_13.png" width="0" height="6"/> is from 1 in the denominator. </p>
+<p>which now involves the distance <img class="formulaInl" alt="$u$" src="form_13.png" width="9" height="6"/> is from 1 in the denominator. </p>
 
 <p>Implements <a class="el" href="classns3_1_1_random_variable_stream.html#a66cd94e6305ce7f000f1a9ff0fcb9aef">ns3::RandomVariableStream</a>.</p>
 
@@ -700,7 +697,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="random-variable-stream_8cc_source.html#l00451">451</a> of file <a class="el" href="random-variable-stream_8cc_source.html">random-variable-stream.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="type-id_8h_source.html#l00073">ns3::TypeId::DEPRECATED</a>, <a class="el" href="random-variable-stream_8h_source.html#l00806">m_bound</a>, <a class="el" href="random-variable-stream_8h_source.html#l00797">m_mean</a>, <a class="el" href="random-variable-stream_8h_source.html#l00800">m_scale</a>, <a class="el" href="random-variable-stream_8h_source.html#l00803">m_shape</a>, <a class="el" href="double_8h_source.html#l00042">ns3::MakeDoubleAccessor()</a>, and <a class="el" href="type-id_8cc_source.html#l00922">ns3::TypeId::SetParent()</a>.</p>
+<p class="reference">References <a class="el" href="type-id_8h_source.html#l00073">ns3::TypeId::DEPRECATED</a>, <a class="el" href="random-variable-stream_8h_source.html#l00806">m_bound</a>, <a class="el" href="random-variable-stream_8h_source.html#l00797">m_mean</a>, <a class="el" href="random-variable-stream_8h_source.html#l00800">m_scale</a>, <a class="el" href="random-variable-stream_8h_source.html#l00803">m_shape</a>, <a class="el" href="double_8h_source.html#l00042">ns3::MakeDoubleAccessor()</a>, and <a class="el" href="type-id_8cc_source.html#l00923">ns3::TypeId::SetParent()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -761,16 +758,16 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A floating point random value.</dd></dl>
-<p>Note that antithetic values are being generated if m_isAntithetic is equal to true. If <img class="formulaInl" alt="$u$" src="form_13.png" width="0" height="6"/> is a uniform variable over [0,1] and</p>
+<p>Note that antithetic values are being generated if m_isAntithetic is equal to true. If <img class="formulaInl" alt="$u$" src="form_13.png" width="9" height="6"/> is a uniform variable over [0,1] and</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ x = \frac{scale}{u^{\frac{1}{shape}}} \]" src="form_58.png" width="0" height="30"/>
+<img class="formulaDsp" alt="\[ x = \frac{scale}{u^{\frac{1}{shape}}} \]" src="form_58.png" width="60" height="30"/>
 </p>
 <p>is a value that would be returned normally.</p>
-<p>The value returned in the antithetic case, <img class="formulaInl" alt="$x'$" src="form_59.png" width="0" height="10"/>, is calculated as</p>
+<p>The value returned in the antithetic case, <img class="formulaInl" alt="$x'$" src="form_59.png" width="11" height="10"/>, is calculated as</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ x' = \frac{scale}{{(1 - u)}^{\frac{1}{shape}}} , \]" src="form_60.png" width="0" height="34"/>
+<img class="formulaDsp" alt="\[ x' = \frac{scale}{{(1 - u)}^{\frac{1}{shape}}} , \]" src="form_60.png" width="99" height="34"/>
 </p>
-<p>which now involves the distance <img class="formulaInl" alt="$u$" src="form_13.png" width="0" height="6"/> is from 1 in the denominator. </p>
+<p>which now involves the distance <img class="formulaInl" alt="$u$" src="form_13.png" width="9" height="6"/> is from 1 in the denominator. </p>
 
 <p class="definition">Definition at line <a class="el" href="random-variable-stream_8cc_source.html#l00523">523</a> of file <a class="el" href="random-variable-stream_8cc_source.html">random-variable-stream.cc</a>.</p>
 
@@ -835,19 +832,19 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns a random double from a Pareto distribution with the current mean, shape, and upper bound. </p>
 <dl class="section return"><dt>Returns</dt><dd>A floating point random value.</dd></dl>
-<p>Note that antithetic values are being generated if m_isAntithetic is equal to true. If <img class="formulaInl" alt="$u$" src="form_13.png" width="0" height="6"/> is a uniform variable over [0,1] and</p>
+<p>Note that antithetic values are being generated if m_isAntithetic is equal to true. If <img class="formulaInl" alt="$u$" src="form_13.png" width="9" height="6"/> is a uniform variable over [0,1] and</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ x = \frac{scale}{u^{\frac{1}{shape}}} \]" src="form_58.png" width="0" height="30"/>
+<img class="formulaDsp" alt="\[ x = \frac{scale}{u^{\frac{1}{shape}}} \]" src="form_58.png" width="60" height="30"/>
 </p>
 <p>is a value that would be returned normally, where</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ scale = mean * (shape - 1.0) / shape . \]" src="form_61.png" width="0" height="14"/>
+<img class="formulaDsp" alt="\[ scale = mean * (shape - 1.0) / shape . \]" src="form_61.png" width="201" height="14"/>
 </p>
-<p>The value returned in the antithetic case, <img class="formulaInl" alt="$x'$" src="form_59.png" width="0" height="10"/>, is calculated as</p>
+<p>The value returned in the antithetic case, <img class="formulaInl" alt="$x'$" src="form_59.png" width="11" height="10"/>, is calculated as</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ x' = \frac{scale}{{(1 - u)}^{\frac{1}{shape}}} , \]" src="form_60.png" width="0" height="34"/>
+<img class="formulaDsp" alt="\[ x' = \frac{scale}{{(1 - u)}^{\frac{1}{shape}}} , \]" src="form_60.png" width="99" height="34"/>
 </p>
-<p>which now involves the distance <img class="formulaInl" alt="$u$" src="form_13.png" width="0" height="6"/> is from 1 in the denominator.</p>
+<p>which now involves the distance <img class="formulaInl" alt="$u$" src="form_13.png" width="9" height="6"/> is from 1 in the denominator.</p>
 <p>Note that we have to re-implement this method here because the method is overloaded above for the three-argument variant and the c++ name resolution rules don't work well with overloads split between parent and child classes. </p>
 
 <p>Implements <a class="el" href="classns3_1_1_random_variable_stream.html#a4fa5944dc4cb11544e661ed23072b36c">ns3::RandomVariableStream</a>.</p>
@@ -999,7 +996,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_pareto_random_variable.html">ParetoRandomVariable</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:35 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:38 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

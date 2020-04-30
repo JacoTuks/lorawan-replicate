@@ -1,5 +1,5 @@
 <map id="ns3::LteInterference::StartRx" name="ns3::LteInterference::StartRx">
-<area shape="rect" id="node1" title="notify that the PHY is starting a RX attempt" alt="" coords="5,974,157,1015"/>
+<area shape="rect" id="node1" title="Notify that the PHY is starting a RX attempt." alt="" coords="5,974,157,1015"/>
 <area shape="rect" id="node2" href="$group__simulator.html#gac3635e2e87f7ce316c89290ee1b01d0d" title="create an ns3::Time instance which contains the current simulation time." alt="" coords="205,905,288,932"/>
 <area shape="rect" id="node33" href="$global-router-interface_8cc.html#af2f17e24d29f39f6804d0d10d8cedc71" title=" " alt="" coords="1357,981,1478,1008"/>
 <area shape="rect" id="node50" href="$namespacens3.html#afad5475661952172fe6ef1260360dad8" title=" " alt="" coords="205,1032,288,1059"/>

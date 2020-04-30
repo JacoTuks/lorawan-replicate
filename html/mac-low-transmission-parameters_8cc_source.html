@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -401,13 +398,13 @@ $(document).ready(function(){initNavTree('mac-low-transmission-parameters_8cc_so
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classns3_1_1_mac_low_transmission_parameters.html#af7cab47db1efae8fab586a9648dd91e5">m_nextSize</a>;</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;}</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
-<div class="line"><a name="l00244"></a><span class="lineno"><a class="line" href="namespacens3.html#a17416fd3f724a641f85376500de5944a">  244</a></span>&#160;std::ostream &amp;<a class="code" href="namespacens3.html#a3c02fbb48fc96063705554b6475514d8">operator &lt;&lt; </a>(std::ostream &amp;os, <span class="keyword">const</span> <a class="code" href="classns3_1_1_mac_low_transmission_parameters.html">MacLowTransmissionParameters</a> &amp;params)</div>
+<div class="line"><a name="l00244"></a><span class="lineno"><a class="line" href="namespacens3.html#a17416fd3f724a641f85376500de5944a">  244</a></span>&#160;std::ostream &amp;<a class="code" href="namespacens3.html#a3c02fbb48fc96063705554b6475514d8">operator &lt;&lt; </a>(std::ostream &amp;os, <span class="keyword">const</span> <a class="code" href="classns3_1_1_mac_low_transmission_parameters.html">MacLowTransmissionParameters</a> &amp;<a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>)</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;{</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  os &lt;&lt; <span class="stringliteral">&quot;[&quot;</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;     &lt;&lt; <span class="stringliteral">&quot;send rts=&quot;</span> &lt;&lt; params.<a class="code" href="classns3_1_1_mac_low_transmission_parameters.html#a10fe893345e02d862c67f0dffb8c0cde">m_sendRts</a> &lt;&lt; <span class="stringliteral">&quot;, &quot;</span></div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;     &lt;&lt; <span class="stringliteral">&quot;next size=&quot;</span> &lt;&lt; params.<a class="code" href="classns3_1_1_mac_low_transmission_parameters.html#af7cab47db1efae8fab586a9648dd91e5">m_nextSize</a> &lt;&lt; <span class="stringliteral">&quot;, &quot;</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;     &lt;&lt; <span class="stringliteral">&quot;send rts=&quot;</span> &lt;&lt; <a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>.m_sendRts &lt;&lt; <span class="stringliteral">&quot;, &quot;</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;     &lt;&lt; <span class="stringliteral">&quot;next size=&quot;</span> &lt;&lt; <a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>.m_nextSize &lt;&lt; <span class="stringliteral">&quot;, &quot;</span></div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;     &lt;&lt; <span class="stringliteral">&quot;ack=&quot;</span>;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  <span class="keywordflow">switch</span> (params.<a class="code" href="classns3_1_1_mac_low_transmission_parameters.html#a55cc721fe79766b56ab1f150d185cada">m_waitAck</a>)</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  <span class="keywordflow">switch</span> (<a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>.m_waitAck)</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    {</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="classns3_1_1_mac_low_transmission_parameters.html#a5f1d0c674a66364283fcbdfbd4cc51b3a06ddc737bbe3cb7feffe1ec8e75deb6c">MacLowTransmissionParameters::ACK_NONE</a>:</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;      os &lt;&lt; <span class="stringliteral">&quot;none, &quot;</span>;</div>
@@ -429,7 +426,7 @@ $(document).ready(function(){initNavTree('mac-low-transmission-parameters_8cc_so
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    }</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  os &lt;&lt; <span class="stringliteral">&quot;bar=&quot;</span>;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  <span class="keywordflow">switch</span> (params.<a class="code" href="classns3_1_1_mac_low_transmission_parameters.html#ad2f88f5d6b5afa58b4632bbd9cf01fa6">m_sendBar</a>)</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  <span class="keywordflow">switch</span> (<a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>.m_sendBar)</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    {</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="classns3_1_1_mac_low_transmission_parameters.html#a9fb15e88d15b4954ad0e9e1826ed86aaaec053d136182acd2f1472b1f29074db7">MacLowTransmissionParameters::BLOCK_ACK_REQUEST_NONE</a>:</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;      os &lt;&lt; <span class="stringliteral">&quot;none&quot;</span>;</div>
@@ -457,6 +454,7 @@ $(document).ready(function(){initNavTree('mac-low-transmission-parameters_8cc_so
 <div class="ttc" id="aclassns3_1_1_mac_low_transmission_parameters_html_a07cb0cef8eb1fdd3c3646f4665a2fcac"><div class="ttname"><a href="classns3_1_1_mac_low_transmission_parameters.html#a07cb0cef8eb1fdd3c3646f4665a2fcac">ns3::MacLowTransmissionParameters::MustSendBlockAckRequest</a></div><div class="ttdeci">bool MustSendBlockAckRequest(void) const</div><div class="ttdef"><b>Definition:</b> <a href="mac-low-transmission-parameters_8cc_source.html#l00182">mac-low-transmission-parameters.cc:182</a></div></div>
 <div class="ttc" id="aclassns3_1_1_mac_low_transmission_parameters_html_a9fb15e88d15b4954ad0e9e1826ed86aaacd518251b8c4cf6ca2457c143ed2c9d4"><div class="ttname"><a href="classns3_1_1_mac_low_transmission_parameters.html#a9fb15e88d15b4954ad0e9e1826ed86aaacd518251b8c4cf6ca2457c143ed2c9d4">ns3::MacLowTransmissionParameters::BLOCK_ACK_REQUEST_EXTENDED_COMPRESSED</a></div><div class="ttdeci">@ BLOCK_ACK_REQUEST_EXTENDED_COMPRESSED</div><div class="ttdef"><b>Definition:</b> <a href="mac-low-transmission-parameters_8h_source.html#l00160">mac-low-transmission-parameters.h:160</a></div></div>
 <div class="ttc" id="agroup__assert_html_ga6dccdb0de9b252f60088ce281c49d052"><div class="ttname"><a href="group__assert.html#ga6dccdb0de9b252f60088ce281c49d052">NS_ASSERT</a></div><div class="ttdeci">#define NS_ASSERT(condition)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8h_source.html#l00068">assert.h:67</a></div></div>
+<div class="ttc" id="anamespacealoha_html_aff1381c591fdaf9d3af2b19080c9eed7"><div class="ttname"><a href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">aloha.params</a></div><div class="ttdeci">dictionary params</div><div class="ttdef"><b>Definition:</b> <a href="aloha_8py_source.html#l00013">aloha.py:13</a></div></div>
 <div class="ttc" id="aclassns3_1_1_mac_low_transmission_parameters_html_a5f1d0c674a66364283fcbdfbd4cc51b3acc84d3a325b795df6fc7d95474335814"><div class="ttname"><a href="classns3_1_1_mac_low_transmission_parameters.html#a5f1d0c674a66364283fcbdfbd4cc51b3acc84d3a325b795df6fc7d95474335814">ns3::MacLowTransmissionParameters::BLOCK_ACK_MULTI_TID</a></div><div class="ttdeci">@ BLOCK_ACK_MULTI_TID</div><div class="ttdef"><b>Definition:</b> <a href="mac-low-transmission-parameters_8h_source.html#l00153">mac-low-transmission-parameters.h:152</a></div></div>
 <div class="ttc" id="anamespacens3_html"><div class="ttname"><a href="namespacens3.html">ns3</a></div><div class="ttdoc">Every class exported by the ns3 library is enclosed in the ns3 namespace.</div></div>
 <div class="ttc" id="aclassns3_1_1_mac_low_transmission_parameters_html_a5f1d0c674a66364283fcbdfbd4cc51b3aee086eb70ea8b8174d56ff12608ac07c"><div class="ttname"><a href="classns3_1_1_mac_low_transmission_parameters.html#a5f1d0c674a66364283fcbdfbd4cc51b3aee086eb70ea8b8174d56ff12608ac07c">ns3::MacLowTransmissionParameters::BLOCK_ACK_EXTENDED_COMPRESSED</a></div><div class="ttdeci">@ BLOCK_ACK_EXTENDED_COMPRESSED</div><div class="ttdef"><b>Definition:</b> <a href="mac-low-transmission-parameters_8h_source.html#l00151">mac-low-transmission-parameters.h:151</a></div></div>
@@ -506,7 +504,7 @@ $(document).ready(function(){initNavTree('mac-low-transmission-parameters_8cc_so
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_9bb89822448514d94fe3e213d3ac83be.html">wifi</a></li><li class="navelem"><a class="el" href="dir_a444d77082d8b776da6eccf888b54154.html">model</a></li><li class="navelem"><a class="el" href="mac-low-transmission-parameters_8cc.html">mac-low-transmission-parameters.cc</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:07 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:14 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

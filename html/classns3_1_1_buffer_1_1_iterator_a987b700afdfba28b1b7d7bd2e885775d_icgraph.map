@@ -18,7 +18,7 @@
 <area shape="rect" id="node18" href="$classns3_1_1_ctrl_b_ack_response_header.html#a29c8352eaa690d42a0eaefa3985c76d0" title="Deserialize bitmap from the given buffer." alt="" coords="279,972,497,1013"/>
 <area shape="rect" id="node19" href="$classns3_1_1dot11s_1_1_ie_beacon_timing.html#a5149f425c361a13f0b17083b71d46959" title="Deserialize information (i.e., the body of the IE, not including the Element ID and length octets)" alt="" coords="283,1037,493,1079"/>
 <area shape="rect" id="node20" href="$classns3_1_1dot11s_1_1_ie_peer_management.html#a6748d7d322a37a1ec741f9f0fa3134a0" title="Deserialize information (i.e., the body of the IE, not including the Element ID and length octets)" alt="" coords="272,1103,504,1144"/>
-<area shape="rect" id="node21" href="$classns3_1_1_cf_parameter_set.html#ac39505608d7318717aa76889cd54e294" title="Deserialize information field function." alt="" coords="283,1168,493,1209"/>
-<area shape="rect" id="node22" href="$classns3_1_1_ht_capabilities.html#ab446238e98254b5778cc209161e6f137" title="Return the information field." alt="" coords="283,1233,493,1275"/>
+<area shape="rect" id="node21" href="$classns3_1_1_cf_parameter_set.html#ac39505608d7318717aa76889cd54e294" title="Deserialize information (i.e., the body of the IE, not including the Element ID and length octets)" alt="" coords="283,1168,493,1209"/>
+<area shape="rect" id="node22" href="$classns3_1_1_ht_capabilities.html#ab446238e98254b5778cc209161e6f137" title="Deserialize information (i.e., the body of the IE, not including the Element ID and length octets)" alt="" coords="283,1233,493,1275"/>
 <area shape="rect" id="node3" href="$classns3_1_1_beacon_payload_header.html#a56c1a64f2733e729a365dd2964435c2f" title=" " alt="" coords="15,5,215,47"/>
 </map>

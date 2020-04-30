@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -331,9 +328,9 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a4fd08585f74c4712c3865c0f48f2ab8c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_buildings_channel_condition_model.html#a4fd08585f74c4712c3865c0f48f2ab8c">IsWithinLineOfSight</a> (const Vector &amp;l1, const Vector &amp;l2) const</td></tr>
-<tr class="memdesc:a4fd08585f74c4712c3865c0f48f2ab8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the is a building in between position L1 and position L2.  <a href="classns3_1_1_buildings_channel_condition_model.html#a4fd08585f74c4712c3865c0f48f2ab8c">More...</a><br /></td></tr>
-<tr class="separator:a4fd08585f74c4712c3865c0f48f2ab8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b97a7666596f013e8e59e42ca93d756"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_buildings_channel_condition_model.html#a3b97a7666596f013e8e59e42ca93d756">IsLineOfSightBlocked</a> (const Vector &amp;l1, const Vector &amp;l2) const</td></tr>
+<tr class="memdesc:a3b97a7666596f013e8e59e42ca93d756"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the line of sight between position l1 and position l2 is blocked by a building.  <a href="classns3_1_1_buildings_channel_condition_model.html#a3b97a7666596f013e8e59e42ca93d756">More...</a><br /></td></tr>
+<tr class="separator:a3b97a7666596f013e8e59e42ca93d756"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -455,7 +452,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classns3_1_1_channel_condition_model.html#a0a74e3459c539e1a3ce67a5a14050339">ns3::ChannelConditionModel</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="buildings-channel-condition-model_8cc_source.html#l00165">165</a> of file <a class="el" href="buildings-channel-condition-model_8cc_source.html">buildings-channel-condition-model.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="buildings-channel-condition-model_8cc_source.html#l00125">125</a> of file <a class="el" href="buildings-channel-condition-model_8cc_source.html">buildings-channel-condition-model.cc</a>.</p>
 
 <p class="reference">References <a class="el" href="unused_8h_source.html#l00036">NS_UNUSED</a>.</p>
 
@@ -509,7 +506,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="buildings-channel-condition-model_8cc_source.html#l00055">55</a> of file <a class="el" href="buildings-channel-condition-model_8cc_source.html">buildings-channel-condition-model.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="buildings-channel-condition-model_8cc_source.html#l00106">IsWithinLineOfSight()</a>, and <a class="el" href="ipv4-address-generator_8cc.html#aaf5aa23b804d2e5e334106f207e8a6cc">NS_ASSERT_MSG()</a>.</p>
+<p class="reference">References <a class="el" href="buildings-channel-condition-model_8cc_source.html#l00107">IsLineOfSightBlocked()</a>, and <a class="el" href="ipv4-address-generator_8cc.html#aaf5aa23b804d2e5e334106f207e8a6cc">NS_ASSERT_MSG()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="buildings-channel-condition-model-test_8cc_source.html#l00080">BuildingsChannelConditionModelTestCase::DoRun()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -520,7 +517,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="center"><img src="classns3_1_1_buildings_channel_condition_model_a33a93a848acc2fb6ba1c09648c12bc50_cgraph.png" border="0" usemap="#classns3_1_1_buildings_channel_condition_model_a33a93a848acc2fb6ba1c09648c12bc50_cgraph" alt=""/></div>
 <map name="classns3_1_1_buildings_channel_condition_model_a33a93a848acc2fb6ba1c09648c12bc50_cgraph" id="classns3_1_1_buildings_channel_condition_model_a33a93a848acc2fb6ba1c09648c12bc50_cgraph">
 <area shape="rect" title="Computes the condition of the channel between a and b." alt="" coords="5,68,233,109"/>
-<area shape="rect" href="classns3_1_1_buildings_channel_condition_model.html#a4fd08585f74c4712c3865c0f48f2ab8c" title="Checks if the is a building in between position L1 and position L2." alt="" coords="281,39,509,80"/>
+<area shape="rect" href="classns3_1_1_buildings_channel_condition_model.html#a3b97a7666596f013e8e59e42ca93d756" title="Checks if the line of sight between position l1 and position l2 is blocked by a building." alt="" coords="281,39,509,80"/>
 <area shape="rect" href="ipv4-address-generator_8cc.html#aaf5aa23b804d2e5e334106f207e8a6cc" title=" " alt="" coords="328,105,463,131"/>
 <area shape="rect" href="classns3_1_1_building_list.html#adbb122872e11541e930f0a3afa70a479" title=" " alt="" coords="569,9,707,51"/>
 <area shape="rect" href="classns3_1_1_building_list.html#abc6b941dbb194efb9f00352cc6b3db65" title=" " alt="" coords="557,75,719,102"/>
@@ -578,7 +575,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="buildings-channel-condition-model_8cc_source.html#l00035">35</a> of file <a class="el" href="buildings-channel-condition-model_8cc_source.html">buildings-channel-condition-model.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="type-id_8cc_source.html#l00922">ns3::TypeId::SetParent()</a>.</p>
+<p class="reference">References <a class="el" href="type-id_8cc_source.html#l00923">ns3::TypeId::SetParent()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -596,8 +593,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a4fd08585f74c4712c3865c0f48f2ab8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fd08585f74c4712c3865c0f48f2ab8c">&#9670;&nbsp;</a></span>IsWithinLineOfSight()</h2>
+<a id="a3b97a7666596f013e8e59e42ca93d756"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b97a7666596f013e8e59e42ca93d756">&#9670;&nbsp;</a></span>IsLineOfSightBlocked()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -606,7 +603,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool ns3::BuildingsChannelConditionModel::IsWithinLineOfSight </td>
+          <td class="memname">bool ns3::BuildingsChannelConditionModel::IsLineOfSightBlocked </td>
           <td>(</td>
           <td class="paramtype">const Vector &amp;&#160;</td>
           <td class="paramname"><em>l1</em>, </td>
@@ -630,9 +627,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Checks if the is a building in between position L1 and position L2. </p>
-<p>This function was developed by NYU Wireless and is based on the algorithm described here <a href="http://www.3dkingdoms.com/weekly/weekly.php?a=21">http://www.3dkingdoms.com/weekly/weekly.php?a=21</a>. Reference: Menglei Zhang, Michele Polese, Marco Mezzavilla, Sundeep Rangan, Michele Zorzi. "ns-3 Implementation of the 3GPP MIMO Channel Model for
-Frequency Spectrum above 6 GHz". In Proceedings of the Workshop on ns-3 (WNS3 '17). 2017.</p>
+<p>Checks if the line of sight between position l1 and position l2 is blocked by a building. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">l1</td><td>position </td></tr>
@@ -640,11 +635,11 @@ Frequency Spectrum above 6 GHz". In Proceedings of the Workshop on ns-3 (WNS3 '1
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if there is a building in between L1 and L2, false otherwise </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the line of sight is blocked, false otherwise </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="buildings-channel-condition-model_8cc_source.html#l00106">106</a> of file <a class="el" href="buildings-channel-condition-model_8cc_source.html">buildings-channel-condition-model.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="buildings-channel-condition-model_8cc_source.html#l00107">107</a> of file <a class="el" href="buildings-channel-condition-model_8cc_source.html">buildings-channel-condition-model.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="building-list_8cc_source.html#l00173">ns3::BuildingList::Begin()</a>, <a class="el" href="building-list_8cc_source.html#l00178">ns3::BuildingList::End()</a>, <a class="el" href="box_8h_source.html#l00095">ns3::Box::xMax</a>, <a class="el" href="box_8h_source.html#l00093">ns3::Box::xMin</a>, <a class="el" href="box_8h_source.html#l00099">ns3::Box::yMax</a>, <a class="el" href="box_8h_source.html#l00097">ns3::Box::yMin</a>, <a class="el" href="box_8h_source.html#l00103">ns3::Box::zMax</a>, and <a class="el" href="box_8h_source.html#l00101">ns3::Box::zMin</a>.</p>
+<p class="reference">References <a class="el" href="building-list_8cc_source.html#l00173">ns3::BuildingList::Begin()</a>, and <a class="el" href="building-list_8cc_source.html#l00178">ns3::BuildingList::End()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="buildings-channel-condition-model_8cc_source.html#l00055">GetChannelCondition()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -652,9 +647,9 @@ Frequency Spectrum above 6 GHz". In Proceedings of the Workshop on ns-3 (WNS3 '1
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classns3_1_1_buildings_channel_condition_model_a4fd08585f74c4712c3865c0f48f2ab8c_cgraph.png" border="0" usemap="#classns3_1_1_buildings_channel_condition_model_a4fd08585f74c4712c3865c0f48f2ab8c_cgraph" alt=""/></div>
-<map name="classns3_1_1_buildings_channel_condition_model_a4fd08585f74c4712c3865c0f48f2ab8c_cgraph" id="classns3_1_1_buildings_channel_condition_model_a4fd08585f74c4712c3865c0f48f2ab8c_cgraph">
-<area shape="rect" title="Checks if the is a building in between position L1 and position L2." alt="" coords="5,39,233,80"/>
+<div class="center"><img src="classns3_1_1_buildings_channel_condition_model_a3b97a7666596f013e8e59e42ca93d756_cgraph.png" border="0" usemap="#classns3_1_1_buildings_channel_condition_model_a3b97a7666596f013e8e59e42ca93d756_cgraph" alt=""/></div>
+<map name="classns3_1_1_buildings_channel_condition_model_a3b97a7666596f013e8e59e42ca93d756_cgraph" id="classns3_1_1_buildings_channel_condition_model_a3b97a7666596f013e8e59e42ca93d756_cgraph">
+<area shape="rect" title="Checks if the line of sight between position l1 and position l2 is blocked by a building." alt="" coords="5,39,233,80"/>
 <area shape="rect" href="classns3_1_1_building_list.html#adbb122872e11541e930f0a3afa70a479" title=" " alt="" coords="293,9,431,51"/>
 <area shape="rect" href="classns3_1_1_building_list.html#abc6b941dbb194efb9f00352cc6b3db65" title=" " alt="" coords="281,75,443,102"/>
 <area shape="rect" href="classns3_1_1_building_list_priv.html#aab33058ff56f83a387161cd50839227d" title=" " alt="" coords="491,46,676,73"/>
@@ -673,9 +668,9 @@ Frequency Spectrum above 6 GHz". In Proceedings of the Workshop on ns-3 (WNS3 '1
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classns3_1_1_buildings_channel_condition_model_a4fd08585f74c4712c3865c0f48f2ab8c_icgraph.png" border="0" usemap="#classns3_1_1_buildings_channel_condition_model_a4fd08585f74c4712c3865c0f48f2ab8c_icgraph" alt=""/></div>
-<map name="classns3_1_1_buildings_channel_condition_model_a4fd08585f74c4712c3865c0f48f2ab8c_icgraph" id="classns3_1_1_buildings_channel_condition_model_a4fd08585f74c4712c3865c0f48f2ab8c_icgraph">
-<area shape="rect" title="Checks if the is a building in between position L1 and position L2." alt="" coords="527,5,755,47"/>
+<div class="center"><img src="classns3_1_1_buildings_channel_condition_model_a3b97a7666596f013e8e59e42ca93d756_icgraph.png" border="0" usemap="#classns3_1_1_buildings_channel_condition_model_a3b97a7666596f013e8e59e42ca93d756_icgraph" alt=""/></div>
+<map name="classns3_1_1_buildings_channel_condition_model_a3b97a7666596f013e8e59e42ca93d756_icgraph" id="classns3_1_1_buildings_channel_condition_model_a3b97a7666596f013e8e59e42ca93d756_icgraph">
+<area shape="rect" title="Checks if the line of sight between position l1 and position l2 is blocked by a building." alt="" coords="527,5,755,47"/>
 <area shape="rect" href="classns3_1_1_buildings_channel_condition_model.html#a33a93a848acc2fb6ba1c09648c12bc50" title="Computes the condition of the channel between a and b." alt="" coords="251,5,479,47"/>
 <area shape="rect" href="class_buildings_channel_condition_model_test_case.html#a6703a8ea3db02cf81f8be7caef44a631" title="Builds the simulation scenario and perform the tests." alt="" coords="5,5,203,47"/>
 </map>
@@ -697,7 +692,7 @@ Frequency Spectrum above 6 GHz". In Proceedings of the Workshop on ns-3 (WNS3 '1
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_buildings_channel_condition_model.html">BuildingsChannelConditionModel</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:21 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:27 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

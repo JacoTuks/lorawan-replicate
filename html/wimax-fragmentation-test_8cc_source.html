@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -224,16 +221,16 @@ $(document).ready(function(){initNavTree('wimax-fragmentation-test_8cc_source.ht
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="comment">// A Packet of 1000 bytes has been created.</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="comment">// It will be fragmentated into 4 fragments and then defragmentated into fullPacket.</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Packet&gt;</a> <a class="code" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a> = Create&lt;Packet&gt; (1000);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Packet&gt;</a> packet = Create&lt;Packet&gt; (1000);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Packet&gt;</a> fragment;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Packet&gt;</a> fullPacket = Create&lt;Packet&gt; ();</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="comment">// Enqueued packet</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  hdr.<a class="code" href="classns3_1_1_generic_mac_header.html#ad0b87b780d222778c78b783f7f4e5237">SetLen</a> (<a class="code" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>-&gt;<a class="code" href="classns3_1_1_packet.html#afff7cb1ff518ee6dc0d424e10a5ad6ec">GetSize</a> () + hdr.<a class="code" href="classns3_1_1_generic_mac_header.html#af3cd0b45c5f36f1049c2a9cb72f01a81">GetSerializedSize</a> ());</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  hdr.<a class="code" href="classns3_1_1_generic_mac_header.html#ad0b87b780d222778c78b783f7f4e5237">SetLen</a> (packet-&gt;<a class="code" href="classns3_1_1_packet.html#afff7cb1ff518ee6dc0d424e10a5ad6ec">GetSize</a> () + hdr.<a class="code" href="classns3_1_1_generic_mac_header.html#af3cd0b45c5f36f1049c2a9cb72f01a81">GetSerializedSize</a> ());</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  hdr.<a class="code" href="classns3_1_1_generic_mac_header.html#adb74c3c234787de22682103cba562d83">SetCid</a> (connectionTx-&gt;<a class="code" href="classns3_1_1_wimax_connection.html#ae1ba5d1374f5d1a2356beb33cee4fc82">GetCid</a> ());</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <a class="code" href="classns3_1_1_mac_header_type.html#a54d8fc8bc93a2b7865627965cdd31c20">MacHeaderType::HeaderType</a> packetType = MacHeaderType::HEADER_TYPE_GENERIC;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  connectionTx-&gt;<a class="code" href="classns3_1_1_wimax_connection.html#a2f7f3bf452c58c3390a096e1b354a86f">Enqueue</a> (<a class="code" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>, packetType, hdr);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  connectionTx-&gt;<a class="code" href="classns3_1_1_wimax_connection.html#a2f7f3bf452c58c3390a096e1b354a86f">Enqueue</a> (packet, packetType, hdr);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  uint32_t availableByteForFragment = 280;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 4; i++)</div>
@@ -319,7 +316,6 @@ $(document).ready(function(){initNavTree('wimax-fragmentation-test_8cc_source.ht
 <div class="ttc" id="anamespacens3_html"><div class="ttname"><a href="namespacens3.html">ns3</a></div><div class="ttdoc">Every class exported by the ns3 library is enclosed in the ns3 namespace.</div></div>
 <div class="ttc" id="aclassns3_1_1_management_message_type_html"><div class="ttname"><a href="classns3_1_1_management_message_type.html">ns3::ManagementMessageType</a></div><div class="ttdef"><b>Definition:</b> <a href="mac-messages_8h_source.html#l00043">mac-messages.h:44</a></div></div>
 <div class="ttc" id="aclassns3_1_1_fragmentation_subheader_html_aabd0e9ebb74af49a006478c8d3ebfba0"><div class="ttname"><a href="classns3_1_1_fragmentation_subheader.html#aabd0e9ebb74af49a006478c8d3ebfba0">ns3::FragmentationSubheader::GetFc</a></div><div class="ttdeci">uint8_t GetFc(void) const</div><div class="ttdoc">Get FC field.</div><div class="ttdef"><b>Definition:</b> <a href="wimax-mac-header_8cc_source.html#l00611">wimax-mac-header.cc:611</a></div></div>
-<div class="ttc" id="alora-mac-test_8cc_html_a084e879e2a4e6b1e078575d3693a0c3a"><div class="ttname"><a href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a></div><div class="ttdeci">Ptr&lt; Packet &gt; packet</div><div class="ttdef"><b>Definition:</b> <a href="lora-mac-test_8cc_source.html#l00021">lora-mac-test.cc:21</a></div></div>
 <div class="ttc" id="aclassns3_1_1_generic_mac_header_html_af3cd0b45c5f36f1049c2a9cb72f01a81"><div class="ttname"><a href="classns3_1_1_generic_mac_header.html#af3cd0b45c5f36f1049c2a9cb72f01a81">ns3::GenericMacHeader::GetSerializedSize</a></div><div class="ttdeci">uint32_t GetSerializedSize(void) const</div><div class="ttdef"><b>Definition:</b> <a href="wimax-mac-header_8cc_source.html#l00227">wimax-mac-header.cc:227</a></div></div>
 <div class="ttc" id="aclass_ns3_wimax_fragmentation_test_case_html"><div class="ttname"><a href="class_ns3_wimax_fragmentation_test_case.html">Ns3WimaxFragmentationTestCase</a></div><div class="ttdoc">Test the wimax packet fragmentation.</div><div class="ttdef"><b>Definition:</b> <a href="wimax-fragmentation-test_8cc_source.html#l00039">wimax-fragmentation-test.cc:40</a></div></div>
 <div class="ttc" id="aclassns3_1_1_wimax_connection_html"><div class="ttname"><a href="classns3_1_1_wimax_connection.html">ns3::WimaxConnection</a></div><div class="ttdef"><b>Definition:</b> <a href="wimax-connection_8h_source.html#l00042">wimax-connection.h:43</a></div></div>
@@ -341,7 +337,7 @@ $(document).ready(function(){initNavTree('wimax-fragmentation-test_8cc_source.ht
 <div class="ttc" id="aclass_ns3_wimax_fragmentation_test_case_html_a8985d99e17ab81053c37b85348b1bb2a"><div class="ttname"><a href="class_ns3_wimax_fragmentation_test_case.html#a8985d99e17ab81053c37b85348b1bb2a">Ns3WimaxFragmentationTestCase::~Ns3WimaxFragmentationTestCase</a></div><div class="ttdeci">virtual ~Ns3WimaxFragmentationTestCase()</div><div class="ttdef"><b>Definition:</b> <a href="wimax-fragmentation-test_8cc_source.html#l00055">wimax-fragmentation-test.cc:55</a></div></div>
 <div class="ttc" id="aopenflow-interface_8h_html_afd9bcfa176617760671b67580f536fa7"><div class="ttname"><a href="openflow-interface_8h.html#afd9bcfa176617760671b67580f536fa7">list</a></div><div class="ttdeci">#define list</div><div class="ttdef"><b>Definition:</b> <a href="openflow-interface_8h_source.html#l00048">openflow-interface.h:47</a></div></div>
 <div class="ttc" id="aclassns3_1_1_generic_mac_header_html"><div class="ttname"><a href="classns3_1_1_generic_mac_header.html">ns3::GenericMacHeader</a></div><div class="ttdef"><b>Definition:</b> <a href="wimax-mac-header_8h_source.html#l00108">wimax-mac-header.h:109</a></div></div>
-<div class="ttc" id="aclassns3_1_1_test_suite_html"><div class="ttname"><a href="classns3_1_1_test_suite.html">ns3::TestSuite</a></div><div class="ttdoc">A suite of tests to run.</div><div class="ttdef"><b>Definition:</b> <a href="test_8h_source.html#l01341">test.h:1342</a></div></div>
+<div class="ttc" id="aclassns3_1_1_test_suite_html"><div class="ttname"><a href="classns3_1_1_test_suite.html">ns3::TestSuite</a></div><div class="ttdoc">A suite of tests to run.</div><div class="ttdef"><b>Definition:</b> <a href="test_8h_source.html#l01343">test.h:1344</a></div></div>
 <div class="ttc" id="aclassns3_1_1_packet_html_a14ec3d4250b425468764de58f5837b6b"><div class="ttname"><a href="classns3_1_1_packet.html#a14ec3d4250b425468764de58f5837b6b">ns3::Packet::AddAtEnd</a></div><div class="ttdeci">void AddAtEnd(Ptr&lt; const Packet &gt; packet)</div><div class="ttdoc">Concatenate the input packet at the end of the current packet.</div><div class="ttdef"><b>Definition:</b> <a href="packet_8cc_source.html#l00335">packet.cc:335</a></div></div>
 <div class="ttc" id="aclassns3_1_1_wimax_connection_html_a3fc7d3ac399bf93ef713ed2c5b321579"><div class="ttname"><a href="classns3_1_1_wimax_connection.html#a3fc7d3ac399bf93ef713ed2c5b321579">ns3::WimaxConnection::GetQueue</a></div><div class="ttdeci">Ptr&lt; WimaxMacQueue &gt; GetQueue(void) const</div><div class="ttdef"><b>Definition:</b> <a href="wimax-connection_8cc_source.html#l00099">wimax-connection.cc:99</a></div></div>
 <div class="ttc" id="aclass_ns3_wimax_fragmentation_test_case_html_a101615ede7f90f86c8ee5b469b0a2883"><div class="ttname"><a href="class_ns3_wimax_fragmentation_test_case.html#a101615ede7f90f86c8ee5b469b0a2883">Ns3WimaxFragmentationTestCase::Ns3WimaxFragmentationTestCase</a></div><div class="ttdeci">Ns3WimaxFragmentationTestCase()</div><div class="ttdef"><b>Definition:</b> <a href="wimax-fragmentation-test_8cc_source.html#l00050">wimax-fragmentation-test.cc:50</a></div></div>
@@ -356,7 +352,7 @@ $(document).ready(function(){initNavTree('wimax-fragmentation-test_8cc_source.ht
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_81cc003b30758dae13caa0a9a27e4771.html">wimax</a></li><li class="navelem"><a class="el" href="dir_ac7ba44f04f70f5240403b7d98b215bb.html">test</a></li><li class="navelem"><a class="el" href="wimax-fragmentation-test_8cc.html">wimax-fragmentation-test.cc</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:09 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:16 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

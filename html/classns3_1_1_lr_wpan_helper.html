@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -261,7 +258,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7863b7b79168f747197faf479e4951fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classns3_1_1_net_device_container.html">NetDeviceContainer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lr_wpan_helper.html#a7863b7b79168f747197faf479e4951fe">Install</a> (<a class="el" href="classns3_1_1_node_container.html">NodeContainer</a> c)</td></tr>
 <tr class="memdesc:a7863b7b79168f747197faf479e4951fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Install a <a class="el" href="classns3_1_1_lr_wpan_net_device.html" title="Network layer to device interface.">LrWpanNetDevice</a> and the associated structures (e.g., channel) in the nodes.  <a href="classns3_1_1_lr_wpan_helper.html#a7863b7b79168f747197faf479e4951fe">More...</a><br /></td></tr>
 <tr class="separator:a7863b7b79168f747197faf479e4951fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c444c56b7d0c994118d0989fa9b9f5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lr_wpan_helper.html#a1c444c56b7d0c994118d0989fa9b9f5f">SetChannel</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_spectrum_channel.html">SpectrumChannel</a> &gt; <a class="el" href="phy-communication-test_8cc.html#ac764e37b6204cf317ba7d54ae65a04d0">channel</a>)</td></tr>
+<tr class="memitem:a1c444c56b7d0c994118d0989fa9b9f5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lr_wpan_helper.html#a1c444c56b7d0c994118d0989fa9b9f5f">SetChannel</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_spectrum_channel.html">SpectrumChannel</a> &gt; channel)</td></tr>
 <tr class="memdesc:a1c444c56b7d0c994118d0989fa9b9f5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the channel associated to this helper.  <a href="classns3_1_1_lr_wpan_helper.html#a1c444c56b7d0c994118d0989fa9b9f5f">More...</a><br /></td></tr>
 <tr class="separator:a1c444c56b7d0c994118d0989fa9b9f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab53d24f611fcb726eb401aa046913fde"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_lr_wpan_helper.html#ab53d24f611fcb726eb401aa046913fde">SetChannel</a> (std::string channelName)</td></tr>
@@ -643,7 +640,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="lr-wpan-helper_8cc_source.html#l00258">258</a> of file <a class="el" href="lr-wpan-helper_8cc_source.html">lr-wpan-helper.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="first_8py_source.html#l00044">first::address</a>, <a class="el" href="net-device-container_8cc_source.html#l00046">ns3::NetDeviceContainer::Begin()</a>, <a class="el" href="first_8py_source.html#l00039">first::devices</a>, <a class="el" href="net-device-container_8cc_source.html#l00051">ns3::NetDeviceContainer::End()</a>, <a class="el" href="classns3_1_1_random_variable_stream.html#a66cd94e6305ce7f000f1a9ff0fcb9aef">ns3::RandomVariableStream::GetInteger()</a>, <a class="el" href="lr-wpan-mac_8h_source.html#l00306">ns3::MlmeStartRequestParams::m_bcnOrd</a>, <a class="el" href="lr-wpan-mac_8h_source.html#l00308">ns3::MlmeStartRequestParams::m_panCoor</a>, <a class="el" href="lr-wpan-mac_8h_source.html#l00302">ns3::MlmeStartRequestParams::m_PanId</a>, <a class="el" href="lr-wpan-mac_8h_source.html#l00307">ns3::MlmeStartRequestParams::m_sfrmOrd</a>, <a class="el" href="nstime_8h_source.html#l01072">ns3::MilliSeconds()</a>, <a class="el" href="lr-wpan-mac_8cc_source.html#l00496">ns3::LrWpanMac::MlmeStartRequest()</a>, <a class="el" href="log_8h_source.html#l00273">NS_LOG_DEBUG</a>, and <a class="el" href="simulator_8h_source.html#l01392">ns3::Simulator::Schedule()</a>.</p>
+<p class="reference">References <a class="el" href="first_8py_source.html#l00044">first::address</a>, <a class="el" href="net-device-container_8cc_source.html#l00046">ns3::NetDeviceContainer::Begin()</a>, <a class="el" href="first_8py_source.html#l00039">first::devices</a>, <a class="el" href="net-device-container_8cc_source.html#l00051">ns3::NetDeviceContainer::End()</a>, <a class="el" href="random-variable-stream_8cc_source.html#l00192">ns3::UniformRandomVariable::GetInteger()</a>, <a class="el" href="nstime_8h_source.html#l01078">ns3::MilliSeconds()</a>, <a class="el" href="lr-wpan-mac_8cc_source.html#l00496">ns3::LrWpanMac::MlmeStartRequest()</a>, <a class="el" href="log_8h_source.html#l00273">NS_LOG_DEBUG</a>, <a class="el" href="aloha_8py_source.html#l00013">aloha::params</a>, and <a class="el" href="simulator_8h_source.html#l01392">ns3::Simulator::Schedule()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -651,56 +648,56 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_lr_wpan_helper_a6fcd2919db415f1910521279f7859efa_cgraph.png" border="0" usemap="#classns3_1_1_lr_wpan_helper_a6fcd2919db415f1910521279f7859efa_cgraph" alt=""/></div>
 <map name="classns3_1_1_lr_wpan_helper_a6fcd2919db415f1910521279f7859efa_cgraph" id="classns3_1_1_lr_wpan_helper_a6fcd2919db415f1910521279f7859efa_cgraph">
-<area shape="rect" title="Associate the nodes to the same PAN and initiate beacon enabled mode." alt="" coords="5,939,176,980"/>
-<area shape="rect" href="classns3_1_1_net_device_container.html#a4ddc336af319061f5b61c515f0453242" title="Get an iterator which refers to the first NetDevice in the container." alt="" coords="240,788,424,830"/>
-<area shape="rect" href="classns3_1_1_net_device_container.html#a436d9df206570861f96c3f278eaccb92" title="Get an iterator which indicates past&#45;the&#45;last NetDevice in the container." alt="" coords="224,854,440,881"/>
-<area shape="rect" href="classns3_1_1_random_variable_stream.html#a66cd94e6305ce7f000f1a9ff0fcb9aef" title="Get the next random value as an integer drawn from the distribution." alt="" coords="228,906,436,947"/>
-<area shape="rect" href="group__timecivil.html#gaf26127cf4571146b83a92ee18679c7a9" title=" " alt="" coords="518,2102,653,2129"/>
-<area shape="rect" href="classns3_1_1_lr_wpan_mac.html#a3b31c2f44927a19d0bc74fd8236decaa" title="IEEE 802.15.4&#45;2006, section 7.1.14.1 MLME&#45;START.request Request to allow a PAN coordinator to initiat..." alt="" coords="229,971,435,1012"/>
-<area shape="rect" href="classns3_1_1_simulator.html#a671882c894a08af4a5e91181bf1eec13" title="Schedule an event to expire after delay." alt="" coords="1321,1950,1503,1977"/>
-<area shape="rect" href="classns3_1_1_time.html#a3e742c67b2764e75ff95f9b754d43fe9" title="Create a Time equal to value in unit unit." alt="" coords="1567,1849,1739,1876"/>
-<area shape="rect" href="classns3_1_1_time.html#a8a39dc1b8cbbd7fe6d940e492d1b925e" title="Default constructor, with value 0." alt="" coords="1825,1849,1950,1876"/>
-<area shape="rect" href="classns3_1_1_time.html#a0b023c55c20582aa7c1781aacf128034" title="Get the Information record for timeUnit for the current Resolution." alt="" coords="1787,1798,1988,1825"/>
-<area shape="rect" href="classns3_1_1_time.html#aa7eef2a1119c1c4855d99f1e83d44c54" title="Record a Time instance with the MarkedTimes." alt="" coords="2070,1849,2197,1876"/>
-<area shape="rect" href="classns3_1_1_time.html#addd8e672203391b3ae98ee475ce05272" title=" " alt="" coords="2279,1849,2489,1876"/>
-<area shape="rect" href="global-router-interface_8cc.html#af2f17e24d29f39f6804d0d10d8cedc71" title=" " alt="" coords="2323,1744,2445,1770"/>
-<area shape="rect" href="classns3_1_1_time.html#a963e53522278fcbdf1ab9f7adbd0f5d6" title="Get the current Resolution." alt="" coords="2036,1798,2231,1825"/>
-<area shape="rect" href="classns3_1_1_lr_wpan_mac.html#a095fa434b0cebab3255d48bbda7136a3" title="Get the short address of this MAC." alt="" coords="1042,224,1237,266"/>
-<area shape="rect" href="classns3_1_1_callback.html#a42eb007ca42c35b96daa497d6d42d5f2" title="Check for null implementation." alt="" coords="1335,34,1489,61"/>
-<area shape="rect" href="classns3_1_1_simulator.html#a2219ee02c0647adc83d1c918c3256266" title="Schedule an event to expire Now." alt="" coords="1033,173,1245,200"/>
-<area shape="rect" href="classns3_1_1_lr_wpan_mac.html#aeebea15cd94673614f71e5bf3b4f87a4" title="Called to begin the Contention Access Period (CAP) in a beacon&#45;enabled mode." alt="" coords="488,1681,683,1708"/>
-<area shape="rect" href="classns3_1_1_lr_wpan_mac.html#a316c3cc9f84eeadb0b2ca249a6d0caba" title="Check the transmission queue." alt="" coords="743,122,961,149"/>
-<area shape="rect" href="group__timecivil.html#ga17465a639c8d1464e76538afdd78a9f0" title=" " alt="" coords="1341,1849,1483,1876"/>
-<area shape="rect" href="group__timecivil.html#ga33c34b816f8ff6628e33d5c8e9713b9e" title=" " alt="" coords="1359,1740,1465,1766"/>
-<area shape="rect" href="classns3_1_1_lr_wpan_mac.html#a1e33a2a8f1614f73cfa1ef2632a69bc3" title="Called to send a single beacon frame." alt="" coords="731,932,973,958"/>
-<area shape="rect" href="classns3_1_1_lr_wpan_mac.html#a791ae36b8635b395e91bd6a9e915dcd7" title="Called to begin the Contention Free Period (CFP) in a beacon&#45;enabled mode." alt="" coords="755,1798,949,1825"/>
-<area shape="rect" href="classns3_1_1_event_id.html#a8b41e6f8c54db6bede8a7dcaf917074a" title="This method is syntactic sugar for !IsExpired()." alt="" coords="1052,122,1227,149"/>
-<area shape="rect" href="classns3_1_1_lr_wpan_mac.html#a6749a353feb70bbb851b03477f56dc69" title="CSMA&#45;CA algorithm calls back the MAC after executing channel assessment." alt="" coords="1036,56,1243,98"/>
-<area shape="rect" href="classns3_1_1_lr_wpan_mac.html#a9218b72b6b4326ae606de4a74a82ab6d" title="Change the current MAC state to the given new state." alt="" coords="1305,283,1519,324"/>
-<area shape="rect" href="classns3_1_1_time.html#a60e845f4a74e62495b86356afe604cb4" title="Create a Time equal to value in unit unit." alt="" coords="1567,1740,1739,1766"/>
-<area shape="rect" href="classns3_1_1_packet.html#a465108c595a0bc592095cbcab1832ed8" title="Add header to this packet." alt="" coords="1051,1630,1227,1657"/>
-<area shape="rect" href="classns3_1_1_packet.html#ae26b490c30ae5bc98be5181ec6e06db8" title="Add trailer to this packet." alt="" coords="1054,341,1225,368"/>
-<area shape="rect" href="classns3_1_1_node.html#a0515bfe9a3aeb6605d657ba855699815" title=" " alt="" coords="1032,392,1247,418"/>
-<area shape="rect" href="classns3_1_1_lr_wpan_mac_trailer.html#ade854ac8fcf338673c01c205b693ecfc" title="Enable or disable FCS calculation for this trailer." alt="" coords="1054,443,1225,484"/>
-<area shape="rect" href="classns3_1_1_lr_wpan_mac.html#ab7e7a600235f6e3f9a809ef5d558e590" title="Get the extended address of this MAC." alt="" coords="1029,508,1250,550"/>
-<area shape="rect" href="classns3_1_1_lr_wpan_mac.html#aa0250c8911bf2bf87dbd4563eb75880f" title="Constructs the Guaranteed Time Slots (GTS) Fields from local information The GTS Fields are part of t..." alt="" coords="1030,574,1249,601"/>
-<area shape="rect" href="classns3_1_1_lr_wpan_mac.html#a3b5e9f1fe39ff8899f110818441b8823" title="Get the PAN id used by this MAC." alt="" coords="1041,625,1237,652"/>
-<area shape="rect" href="classns3_1_1_lr_wpan_mac.html#afa8a5ed3eeb3f24c181b6857e6b34e2c" title="Constructs Pending Address Fields from the local information, the Pending Address Fields are part of ..." alt="" coords="1033,676,1245,718"/>
-<area shape="rect" href="classns3_1_1_time.html#a27cb7c22324e0447740929b024dbeb66" title="Get an approximation of the time stored in this instance in the indicated unit." alt="" coords="1327,1216,1497,1242"/>
-<area shape="rect" href="classns3_1_1_lr_wpan_mac.html#a7378562eda67a36b7ae932e539bda5e3" title="Constructs a Superframe specification field from the local information, the superframe Specification ..." alt="" coords="1021,1120,1257,1162"/>
-<area shape="rect" href="classns3_1_1_sequence_number.html#ac16a0b2c43ad7e157edb610e858b309f" title="Extracts the numeric value of the sequence number." alt="" coords="1055,1186,1223,1227"/>
-<area shape="rect" href="classns3_1_1_simulator.html#ac3178fa975b419f7875e7105be122800" title="Return the current simulation virtual time." alt="" coords="1063,1252,1216,1278"/>
-<area shape="rect" href="classns3_1_1_lr_wpan_mac_header.html#a7e24381d259bd877cf8f44fc10524272" title="Set Destination address fields." alt="" coords="1051,1303,1227,1344"/>
-<area shape="rect" href="classns3_1_1_lr_wpan_mac_header.html#a8513915d98840c7e2dae25c7f69b71ad" title="Set the Destination address mode." alt="" coords="1051,1368,1227,1410"/>
-<area shape="rect" href="classns3_1_1_lr_wpan_mac_trailer.html#aac760c67e24c886640dd552fa5b92d4e" title="Calculate and set the FCS value based on the given packet." alt="" coords="1054,1434,1225,1475"/>
-<area shape="rect" href="classns3_1_1_beacon_payload_header.html#aaa7ea8a2310e9c134eff076608670e3e" title="Set the superframe Guaranteed Time Slot (GTS) fields to the beacon payload header." alt="" coords="1039,1499,1239,1540"/>
-<area shape="rect" href="classns3_1_1_lr_wpan_mac_header.html#a00a595a39fa838159d1b49732d5d5e13" title="Set the Frame Control field &quot;Ack. Request&quot; bit to false." alt="" coords="1051,1564,1227,1606"/>
-<area shape="rect" href="classns3_1_1_beacon_payload_header.html#ac2541198c8c1b12014241b45b68a10de" title="Set the superframe Pending Address fields to the beacon payload header." alt="" coords="1039,794,1239,835"/>
-<area shape="rect" href="classns3_1_1_lr_wpan_mac_header.html#acc5e51156ce28e540d2def4ef0d108f4" title="Set the Frame Control field &quot;Security Enabled&quot; bit to false." alt="" coords="1051,859,1227,900"/>
-<area shape="rect" href="classns3_1_1_lr_wpan_mac_header.html#a5539aecd5c677aabf7e8040596dcbbc4" title="Set Source address fields." alt="" coords="1051,924,1227,966"/>
-<area shape="rect" href="classns3_1_1_lr_wpan_mac_header.html#a3e0400af0ee70cf00d6d1373d9b02bc9" title="Set the Source address mode." alt="" coords="1051,990,1227,1031"/>
-<area shape="rect" href="classns3_1_1_beacon_payload_header.html#a981076920805b1b8d97667677982ab75" title="Set the superframe specification field to the beacon payload header." alt="" coords="1039,1055,1239,1096"/>
-<area shape="rect" href="classns3_1_1_lr_wpan_mac.html#a3fd053f59ce783b24414369e1077dff4" title="Start the Inactive Period in a beacon&#45;enabled mode." alt="" coords="1029,1732,1249,1774"/>
+<area shape="rect" title="Associate the nodes to the same PAN and initiate beacon enabled mode." alt="" coords="5,152,176,193"/>
+<area shape="rect" href="classns3_1_1_net_device_container.html#a4ddc336af319061f5b61c515f0453242" title="Get an iterator which refers to the first NetDevice in the container." alt="" coords="240,5,424,47"/>
+<area shape="rect" href="classns3_1_1_net_device_container.html#a436d9df206570861f96c3f278eaccb92" title="Get an iterator which indicates past&#45;the&#45;last NetDevice in the container." alt="" coords="224,71,440,98"/>
+<area shape="rect" href="classns3_1_1_uniform_random_variable.html#ab7c7dedc88cb97e74418df2edc28a787" title="Get the next random value, as an unsigned integer in the specified range ." alt="" coords="225,123,439,164"/>
+<area shape="rect" href="group__timecivil.html#gaf26127cf4571146b83a92ee18679c7a9" title=" " alt="" coords="805,189,939,215"/>
+<area shape="rect" href="classns3_1_1_lr_wpan_mac.html#a3b31c2f44927a19d0bc74fd8236decaa" title="IEEE 802.15.4&#45;2006, section 7.1.14.1 MLME&#45;START.request Request to allow a PAN coordinator to initiat..." alt="" coords="229,1783,435,1824"/>
+<area shape="rect" href="classns3_1_1_simulator.html#a671882c894a08af4a5e91181bf1eec13" title="Schedule an event to expire after delay." alt="" coords="1068,239,1251,266"/>
+<area shape="rect" href="classns3_1_1_uniform_random_variable.html#a94ee6d8ac3da40b14ac7cc64e75c55df" title="Get the next random value as a double drawn from the distribution." alt="" coords="488,21,703,63"/>
+<area shape="rect" href="namespacens3.html#a548291fa9e4e7d6a57814dfcbbebce9b" title=" " alt="" coords="554,87,637,114"/>
+<area shape="rect" href="namespacens3.html#a66840605409c3caeff0d2a728b68dc6d" title=" " alt="" coords="556,138,635,165"/>
+<area shape="rect" href="classns3_1_1_time.html#a3e742c67b2764e75ff95f9b754d43fe9" title="Create a Time equal to value in unit unit." alt="" coords="1346,239,1518,266"/>
+<area shape="rect" href="classns3_1_1_time.html#a8a39dc1b8cbbd7fe6d940e492d1b925e" title="Default constructor, with value 0." alt="" coords="1625,214,1750,241"/>
+<area shape="rect" href="classns3_1_1_time.html#a0b023c55c20582aa7c1781aacf128034" title="Get the Information record for timeUnit for the current Resolution." alt="" coords="1587,265,1788,291"/>
+<area shape="rect" href="classns3_1_1_time.html#aa7eef2a1119c1c4855d99f1e83d44c54" title="Record a Time instance with the MarkedTimes." alt="" coords="1870,214,1997,241"/>
+<area shape="rect" href="classns3_1_1_time.html#a963e53522278fcbdf1ab9f7adbd0f5d6" title="Get the current Resolution." alt="" coords="1836,265,2031,291"/>
+<area shape="rect" href="classns3_1_1_lr_wpan_mac.html#a095fa434b0cebab3255d48bbda7136a3" title="Get the short address of this MAC." alt="" coords="1062,1783,1257,1824"/>
+<area shape="rect" href="classns3_1_1_callback.html#a42eb007ca42c35b96daa497d6d42d5f2" title="Check for null implementation." alt="" coords="1355,1987,1509,2014"/>
+<area shape="rect" href="classns3_1_1_simulator.html#a2219ee02c0647adc83d1c918c3256266" title="Schedule an event to expire Now." alt="" coords="1053,1849,1265,1875"/>
+<area shape="rect" href="classns3_1_1_lr_wpan_mac.html#aeebea15cd94673614f71e5bf3b4f87a4" title="Called to begin the Contention Access Period (CAP) in a beacon&#45;enabled mode." alt="" coords="498,910,693,937"/>
+<area shape="rect" href="classns3_1_1_lr_wpan_mac.html#a316c3cc9f84eeadb0b2ca249a6d0caba" title="Check the transmission queue." alt="" coords="763,1899,981,1926"/>
+<area shape="rect" href="group__timecivil.html#ga17465a639c8d1464e76538afdd78a9f0" title=" " alt="" coords="1088,290,1231,317"/>
+<area shape="rect" href="group__timecivil.html#ga33c34b816f8ff6628e33d5c8e9713b9e" title=" " alt="" coords="1106,341,1213,367"/>
+<area shape="rect" href="classns3_1_1_lr_wpan_mac.html#a1e33a2a8f1614f73cfa1ef2632a69bc3" title="Called to send a single beacon frame." alt="" coords="751,1082,993,1109"/>
+<area shape="rect" href="classns3_1_1_lr_wpan_mac.html#a791ae36b8635b395e91bd6a9e915dcd7" title="Called to begin the Contention Free Period (CFP) in a beacon&#45;enabled mode." alt="" coords="775,391,969,418"/>
+<area shape="rect" href="classns3_1_1_event_id.html#a8b41e6f8c54db6bede8a7dcaf917074a" title="This method is syntactic sugar for !IsExpired()." alt="" coords="1072,1899,1247,1926"/>
+<area shape="rect" href="classns3_1_1_lr_wpan_mac.html#a6749a353feb70bbb851b03477f56dc69" title="CSMA&#45;CA algorithm calls back the MAC after executing channel assessment." alt="" coords="1056,1951,1263,1992"/>
+<area shape="rect" href="classns3_1_1_lr_wpan_mac.html#a9218b72b6b4326ae606de4a74a82ab6d" title="Change the current MAC state to the given new state." alt="" coords="1325,1447,1539,1488"/>
+<area shape="rect" href="classns3_1_1_time.html#a60e845f4a74e62495b86356afe604cb4" title="Create a Time equal to value in unit unit." alt="" coords="1346,341,1518,367"/>
+<area shape="rect" href="classns3_1_1_packet.html#a465108c595a0bc592095cbcab1832ed8" title="Add header to this packet." alt="" coords="1071,1031,1247,1058"/>
+<area shape="rect" href="classns3_1_1_packet.html#ae26b490c30ae5bc98be5181ec6e06db8" title="Add trailer to this packet." alt="" coords="1074,1082,1245,1109"/>
+<area shape="rect" href="classns3_1_1_node.html#a0515bfe9a3aeb6605d657ba855699815" title=" " alt="" coords="1052,1133,1267,1159"/>
+<area shape="rect" href="classns3_1_1_lr_wpan_mac_trailer.html#ade854ac8fcf338673c01c205b693ecfc" title="Enable or disable FCS calculation for this trailer." alt="" coords="1074,1184,1245,1225"/>
+<area shape="rect" href="classns3_1_1_lr_wpan_mac.html#ab7e7a600235f6e3f9a809ef5d558e590" title="Get the extended address of this MAC." alt="" coords="1049,1249,1270,1291"/>
+<area shape="rect" href="classns3_1_1_lr_wpan_mac.html#aa0250c8911bf2bf87dbd4563eb75880f" title="Constructs the Guaranteed Time Slots (GTS) Fields from local information The GTS Fields are part of t..." alt="" coords="1050,1315,1269,1342"/>
+<area shape="rect" href="classns3_1_1_lr_wpan_mac.html#a3b5e9f1fe39ff8899f110818441b8823" title="Get the PAN id used by this MAC." alt="" coords="1061,1366,1257,1393"/>
+<area shape="rect" href="classns3_1_1_lr_wpan_mac.html#afa8a5ed3eeb3f24c181b6857e6b34e2c" title="Constructs Pending Address Fields from the local information, the Pending Address Fields are part of ..." alt="" coords="1053,1417,1265,1459"/>
+<area shape="rect" href="classns3_1_1_time.html#a27cb7c22324e0447740929b024dbeb66" title="Get an approximation of the time stored in this instance in the indicated unit." alt="" coords="1074,1483,1245,1510"/>
+<area shape="rect" href="classns3_1_1_lr_wpan_mac.html#a7378562eda67a36b7ae932e539bda5e3" title="Constructs a Superframe specification field from the local information, the superframe Specification ..." alt="" coords="1041,1535,1277,1576"/>
+<area shape="rect" href="classns3_1_1_sequence_number.html#ac16a0b2c43ad7e157edb610e858b309f" title="Extracts the numeric value of the sequence number." alt="" coords="1075,1600,1243,1641"/>
+<area shape="rect" href="classns3_1_1_simulator.html#ac3178fa975b419f7875e7105be122800" title="Return the current simulation virtual time." alt="" coords="1083,1666,1236,1693"/>
+<area shape="rect" href="classns3_1_1_lr_wpan_mac_header.html#a7e24381d259bd877cf8f44fc10524272" title="Set Destination address fields." alt="" coords="1071,1717,1247,1759"/>
+<area shape="rect" href="classns3_1_1_lr_wpan_mac_header.html#a8513915d98840c7e2dae25c7f69b71ad" title="Set the Destination address mode." alt="" coords="1071,392,1247,433"/>
+<area shape="rect" href="classns3_1_1_lr_wpan_mac_trailer.html#aac760c67e24c886640dd552fa5b92d4e" title="Calculate and set the FCS value based on the given packet." alt="" coords="1074,457,1245,499"/>
+<area shape="rect" href="classns3_1_1_beacon_payload_header.html#aaa7ea8a2310e9c134eff076608670e3e" title="Set the superframe Guaranteed Time Slot (GTS) fields to the beacon payload header." alt="" coords="1059,523,1259,564"/>
+<area shape="rect" href="classns3_1_1_lr_wpan_mac_header.html#a00a595a39fa838159d1b49732d5d5e13" title="Set the Frame Control field &quot;Ack. Request&quot; bit to false." alt="" coords="1071,588,1247,629"/>
+<area shape="rect" href="classns3_1_1_beacon_payload_header.html#ac2541198c8c1b12014241b45b68a10de" title="Set the superframe Pending Address fields to the beacon payload header." alt="" coords="1059,653,1259,695"/>
+<area shape="rect" href="classns3_1_1_lr_wpan_mac_header.html#acc5e51156ce28e540d2def4ef0d108f4" title="Set the Frame Control field &quot;Security Enabled&quot; bit to false." alt="" coords="1071,719,1247,760"/>
+<area shape="rect" href="classns3_1_1_lr_wpan_mac_header.html#a5539aecd5c677aabf7e8040596dcbbc4" title="Set Source address fields." alt="" coords="1071,784,1247,825"/>
+<area shape="rect" href="classns3_1_1_lr_wpan_mac_header.html#a3e0400af0ee70cf00d6d1373d9b02bc9" title="Set the Source address mode." alt="" coords="1071,849,1247,891"/>
+<area shape="rect" href="classns3_1_1_beacon_payload_header.html#a981076920805b1b8d97667677982ab75" title="Set the superframe specification field to the beacon payload header." alt="" coords="1059,915,1259,956"/>
 </map>
 </div>
 
@@ -904,7 +901,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="lr-wpan-helper_8cc_source.html#l00101">101</a> of file <a class="el" href="lr-wpan-helper_8cc_source.html">lr-wpan-helper.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="log_8h_source.html#l00116">ns3::LOG_LEVEL_ALL</a>, <a class="el" href="log_8h_source.html#l00118">ns3::LOG_PREFIX_FUNC</a>, <a class="el" href="log_8h_source.html#l00119">ns3::LOG_PREFIX_TIME</a>, <a class="el" href="log_8cc_source.html#l00370">ns3::LogComponentEnable()</a>, and <a class="el" href="log_8cc_source.html#l00394">ns3::LogComponentEnableAll()</a>.</p>
+<p class="reference">References <a class="el" href="log_8h_source.html#l00116">ns3::LOG_LEVEL_ALL</a>, <a class="el" href="log_8h_source.html#l00118">ns3::LOG_PREFIX_FUNC</a>, <a class="el" href="log_8h_source.html#l00119">ns3::LOG_PREFIX_TIME</a>, <a class="el" href="log_8cc_source.html#l00361">ns3::LogComponentEnable()</a>, and <a class="el" href="log_8cc_source.html#l00385">ns3::LogComponentEnableAll()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -1099,7 +1096,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="lr-wpan-helper_8cc_source.html#l00176">176</a> of file <a class="el" href="lr-wpan-helper_8cc_source.html">lr-wpan-helper.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="node_8cc_source.html#l00128">ns3::Node::AddDevice()</a>, <a class="el" href="node-container_8cc_source.html#l00072">ns3::NodeContainer::Begin()</a>, <a class="el" href="first_8py_source.html#l00039">first::devices</a>, <a class="el" href="node-container_8cc_source.html#l00077">ns3::NodeContainer::End()</a>, and <a class="el" href="lr-wpan-helper_8h_source.html#l00201">m_channel</a>.</p>
+<p class="reference">References <a class="el" href="node_8cc_source.html#l00130">ns3::Node::AddDevice()</a>, <a class="el" href="node-container_8cc_source.html#l00077">ns3::NodeContainer::Begin()</a>, <a class="el" href="first_8py_source.html#l00039">first::devices</a>, <a class="el" href="node-container_8cc_source.html#l00082">ns3::NodeContainer::End()</a>, and <a class="el" href="lr-wpan-helper_8h_source.html#l00201">m_channel</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -1107,56 +1104,56 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_lr_wpan_helper_a7863b7b79168f747197faf479e4951fe_cgraph.png" border="0" usemap="#classns3_1_1_lr_wpan_helper_a7863b7b79168f747197faf479e4951fe_cgraph" alt=""/></div>
 <map name="classns3_1_1_lr_wpan_helper_a7863b7b79168f747197faf479e4951fe_cgraph" id="classns3_1_1_lr_wpan_helper_a7863b7b79168f747197faf479e4951fe_cgraph">
-<area shape="rect" title="Install a LrWpanNetDevice and the associated structures (e.g., channel) in the nodes." alt="" coords="5,753,159,794"/>
-<area shape="rect" href="classns3_1_1_node.html#a42ff83ee1d5d1649c770d3f5b62375de" title="Associate a NetDevice to this node." alt="" coords="215,701,381,728"/>
-<area shape="rect" href="classns3_1_1_node_container.html#a2bfe1f50688c96e0888b1907e1e2f324" title="Get an iterator which refers to the first Node in the container." alt="" coords="223,753,373,794"/>
-<area shape="rect" href="classns3_1_1_node_container.html#a4904853b5d3e86f622a2ef8b4e959e08" title="Get an iterator which indicates past&#45;the&#45;last Node in the container." alt="" coords="207,819,389,845"/>
-<area shape="rect" href="classns3_1_1_node.html#a2ed8663077afcb8db519296b0ada6355" title=" " alt="" coords="1018,499,1149,525"/>
-<area shape="rect" href="classns3_1_1_object.html#a900bb91b733c232cb18e44782cebcdc6" title="Invoke DoInitialize on all Objects aggregated to this one." alt="" coords="471,701,629,728"/>
-<area shape="rect" href="group__makecallbackmemptr.html#ga9376283685aa99d204048d6a4b7610a4" title=" " alt="" coords="478,752,622,779"/>
-<area shape="rect" href="classns3_1_1_node.html#a72ebf5bdc911879511f1e249d471f7e5" title="Receive a packet from a device in non&#45;promiscuous mode." alt="" coords="437,585,663,626"/>
-<area shape="rect" href="classns3_1_1_node.html#ae85e535c650941f4f8ca6845a9f61e42" title="Notifies all the DeviceAdditionListener about the new device added." alt="" coords="439,803,661,829"/>
-<area shape="rect" href="classns3_1_1_simulator.html#a86dbaef45a15a42365d7d2ae550449f6" title="Schedule an event with the given context." alt="" coords="459,854,641,895"/>
-<area shape="rect" href="group__timecivil.html#ga33c34b816f8ff6628e33d5c8e9713b9e" title=" " alt="" coords="770,651,877,677"/>
-<area shape="rect" href="classns3_1_1_object.html#a822491fe32070f6bf703454ccab9f18a" title="Initialize() implementation." alt="" coords="735,701,912,728"/>
-<area shape="rect" href="classns3_1_1_node.html#a6cbe61c071c85bb3ba5d4843132cd119" title="Receive a packet from a device." alt="" coords="711,592,936,619"/>
-<area shape="rect" href="classns3_1_1_simulator.html#a8514b74ee2c42916b351b33c4a963bb0" title="Get the current simulation context." alt="" coords="984,549,1183,576"/>
-<area shape="rect" href="ipv4-address-generator_8cc.html#aaf5aa23b804d2e5e334106f207e8a6cc" title=" " alt="" coords="2019,436,2154,463"/>
-<area shape="rect" href="classns3_1_1_packet.html#ab9f0b7e9cf21b7271eda0094e6ff2792" title="Returns the packet&#39;s Uid." alt="" coords="1009,604,1158,631"/>
-<area shape="rect" href="classns3_1_1_simulator_impl.html#a8b66270c97766c0adb997e2535648557" title="Get the current simulation context." alt="" coords="1237,345,1383,386"/>
-<area shape="rect" href="group__simulator.html#ga42eb4eddad41528d4d99794a3dae3fd0" title="Get the SimulatorImpl singleton." alt="" coords="1257,411,1363,437"/>
-<area shape="rect" href="classns3_1_1_object_factory.html#a52eda277f4aaab54266134ba48102ad7" title="Create an Object instance of the configured TypeId." alt="" coords="1466,121,1609,162"/>
-<area shape="rect" href="group__logging.html#gac4c06cbbed12229d85991ced145f6be2" title="Default Node printer." alt="" coords="1448,613,1627,640"/>
-<area shape="rect" href="namespacens3.html#ae01c3c7786b644dfb8a0bb8f1201b269" title="Default Time printer." alt="" coords="1449,360,1625,387"/>
-<area shape="rect" href="classns3_1_1_string_value.html#a6f208c2778fe1c7882e5cb429b8326ae" title=" " alt="" coords="1458,411,1617,437"/>
-<area shape="rect" href="namespacens3.html#ab4e173cdfd43d17c1a40d5348510a670" title=" " alt="" coords="1476,461,1599,488"/>
-<area shape="rect" href="classns3_1_1_global_value.html#a48a99242193fb69609a17332733e8600" title="Get the value." alt="" coords="1437,512,1637,539"/>
-<area shape="rect" href="namespacens3.html#aebac73305345f2e2803fdeb102a7705e" title="Set the LogNodePrinter function to be used to prepend log messages with the node id." alt="" coords="1450,563,1625,589"/>
-<area shape="rect" href="namespacens3.html#a46cd76678f7da29799d1b41994e12ec1" title="Set the TimePrinter function to be used to prepend log messages with the simulation time." alt="" coords="1451,48,1623,75"/>
-<area shape="rect" href="group__simulator.html#ga233c5c38de117e4e4a5a9cd168694792" title="Get the static SimulatorImpl instance." alt="" coords="1480,259,1595,285"/>
-<area shape="rect" href="classns3_1_1_object_factory.html#a77dcd099064038a1eb7a6b8251229ec3" title="Set the TypeId of the Objects to be created by this factory." alt="" coords="2015,209,2158,250"/>
-<area shape="rect" href="classns3_1_1_object.html#a3183f228d0d4cd56f1b17cff0b841d83" title="Initialize all member variables registered as Attributes of this TypeId." alt="" coords="1721,107,1887,133"/>
-<area shape="rect" href="classns3_1_1_type_id.html#a66b2628edf921fc88945ec8a8f3a1683" title="Get the constructor callback." alt="" coords="1703,56,1905,83"/>
-<area shape="rect" href="classns3_1_1_object.html#aa6ed5d48f17e3d0fd28714777239e6c4" title="Set the TypeId of this Object." alt="" coords="1721,157,1887,184"/>
-<area shape="rect" href="classns3_1_1_object_base.html#a5cda18dec6d0744cb652a3ed60056958" title="Complete construction of ObjectBase; invoked by derived classes." alt="" coords="1975,107,2198,133"/>
-<area shape="rect" href="classns3_1_1_type_id.html#abc4965475a579c2afdc668d7a7d58374" title="Get the name." alt="" coords="2251,107,2416,133"/>
-<area shape="rect" href="classns3_1_1_singleton.html#a80a2cd3c25a27ea72add7a9f7a141ffa" title="Get a pointer to the singleton instance." alt="" coords="2464,74,2667,115"/>
-<area shape="rect" href="classns3_1_1_iid_manager.html#a5222ca2d43248c46812b39b993eb2e08" title="Get the constructor Callback of a type id." alt="" coords="1971,5,2203,32"/>
-<area shape="rect" href="classns3_1_1_object.html#a7dc4a16a2f85427034a0102c0f6adaf9" title="Verify that this Object is still live, by checking it&#39;s reference count." alt="" coords="2015,157,2158,184"/>
-<area shape="rect" href="classns3_1_1_time.html#a48c9bb8d93fea6a8d8cac216967219f4" title="Attach a unit to a Time, to facilitate output in a specific unit." alt="" coords="1749,411,1859,437"/>
-<area shape="rect" href="classns3_1_1_time.html#a1444f0f08b5e19f031157609e32fcf98" title=" " alt="" coords="1711,360,1897,387"/>
-<area shape="rect" href="classns3_1_1_simulator.html#ac3178fa975b419f7875e7105be122800" title="Return the current simulation virtual time." alt="" coords="1727,309,1881,336"/>
-<area shape="rect" href="classns3_1_1_time.html#addd8e672203391b3ae98ee475ce05272" title=" " alt="" coords="1981,537,2192,564"/>
-<area shape="rect" href="global-router-interface_8cc.html#af2f17e24d29f39f6804d0d10d8cedc71" title=" " alt="" coords="2026,689,2147,716"/>
-<area shape="rect" href="classns3_1_1_time.html#a4bd2d3c8a919e4b57e60692b53db4a61" title="Get the Time value expressed in a particular unit." alt="" coords="2010,360,2163,387"/>
-<area shape="rect" href="classns3_1_1_ptr.html#adb507425388a3cdc4312362dc2ed2151" title="Mark this as a a reference by incrementing the reference count." alt="" coords="1740,461,1868,488"/>
-<area shape="rect" href="classns3_1_1_string_value.html#a17693012c6f2c52875e0d631fbf40155" title=" " alt="" coords="1725,512,1883,539"/>
-<area shape="rect" href="group__logging.html#gacdc0bdeb2d8a90089d4fb09c4b8569ff" title=" " alt="" coords="1685,5,1923,32"/>
-<area shape="rect" href="classns3_1_1_packet_metadata.html#aff25afa4a4e4304185feaeda79d0415f" title="Get the packet Uid." alt="" coords="1231,598,1389,639"/>
-<area shape="rect" href="classns3_1_1_time.html#a60e845f4a74e62495b86356afe604cb4" title="Create a Time equal to value in unit unit." alt="" coords="997,715,1169,741"/>
-<area shape="rect" href="classns3_1_1_time.html#a34e4acc13d0e08cc8cb9cd3b838b9baf" title="Create a Time in the current unit." alt="" coords="1247,715,1373,741"/>
-<area shape="rect" href="classns3_1_1_time.html#a8a39dc1b8cbbd7fe6d940e492d1b925e" title="Default constructor, with value 0." alt="" coords="1475,715,1600,741"/>
-<area shape="rect" href="classns3_1_1_time.html#aa7eef2a1119c1c4855d99f1e83d44c54" title="Record a Time instance with the MarkedTimes." alt="" coords="1741,715,1867,741"/>
+<area shape="rect" title="Install a LrWpanNetDevice and the associated structures (e.g., channel) in the nodes." alt="" coords="5,697,159,738"/>
+<area shape="rect" href="classns3_1_1_node.html#a42ff83ee1d5d1649c770d3f5b62375de" title="Associate a NetDevice to this node." alt="" coords="215,645,381,672"/>
+<area shape="rect" href="classns3_1_1_node_container.html#a2bfe1f50688c96e0888b1907e1e2f324" title="Get an iterator which refers to the first Node in the container." alt="" coords="223,697,373,738"/>
+<area shape="rect" href="classns3_1_1_node_container.html#a4904853b5d3e86f622a2ef8b4e959e08" title="Get an iterator which indicates past&#45;the&#45;last Node in the container." alt="" coords="207,763,389,789"/>
+<area shape="rect" href="classns3_1_1_node.html#a2ed8663077afcb8db519296b0ada6355" title=" " alt="" coords="1018,477,1149,504"/>
+<area shape="rect" href="classns3_1_1_object.html#a900bb91b733c232cb18e44782cebcdc6" title="Invoke DoInitialize on all Objects aggregated to this one." alt="" coords="471,645,629,672"/>
+<area shape="rect" href="group__makecallbackmemptr.html#ga9376283685aa99d204048d6a4b7610a4" title=" " alt="" coords="478,696,622,723"/>
+<area shape="rect" href="classns3_1_1_node.html#a72ebf5bdc911879511f1e249d471f7e5" title="Receive a packet from a device in non&#45;promiscuous mode." alt="" coords="437,529,663,570"/>
+<area shape="rect" href="classns3_1_1_node.html#ae85e535c650941f4f8ca6845a9f61e42" title="Notifies all the DeviceAdditionListener about the new device added." alt="" coords="439,747,661,773"/>
+<area shape="rect" href="classns3_1_1_simulator.html#a86dbaef45a15a42365d7d2ae550449f6" title="Schedule an event with the given context." alt="" coords="459,798,641,839"/>
+<area shape="rect" href="group__timecivil.html#ga33c34b816f8ff6628e33d5c8e9713b9e" title=" " alt="" coords="770,595,877,621"/>
+<area shape="rect" href="classns3_1_1_object.html#a822491fe32070f6bf703454ccab9f18a" title="Initialize() implementation." alt="" coords="735,645,912,672"/>
+<area shape="rect" href="classns3_1_1_node.html#a6cbe61c071c85bb3ba5d4843132cd119" title="Receive a packet from a device." alt="" coords="711,532,936,559"/>
+<area shape="rect" href="classns3_1_1_simulator.html#a8514b74ee2c42916b351b33c4a963bb0" title="Get the current simulation context." alt="" coords="984,528,1183,555"/>
+<area shape="rect" href="ipv4-address-generator_8cc.html#aaf5aa23b804d2e5e334106f207e8a6cc" title=" " alt="" coords="2006,579,2141,605"/>
+<area shape="rect" href="classns3_1_1_simulator_impl.html#a8b66270c97766c0adb997e2535648557" title="Get the current simulation context." alt="" coords="1231,462,1376,503"/>
+<area shape="rect" href="group__simulator.html#ga42eb4eddad41528d4d99794a3dae3fd0" title="Get the SimulatorImpl singleton." alt="" coords="1251,288,1356,315"/>
+<area shape="rect" href="classns3_1_1_object_factory.html#a52eda277f4aaab54266134ba48102ad7" title="Create an Object instance of the configured TypeId." alt="" coords="1453,310,1595,351"/>
+<area shape="rect" href="group__logging.html#gac4c06cbbed12229d85991ced145f6be2" title="Default Node printer." alt="" coords="1435,528,1613,555"/>
+<area shape="rect" href="namespacens3.html#ae01c3c7786b644dfb8a0bb8f1201b269" title="Default Time printer." alt="" coords="1436,477,1612,504"/>
+<area shape="rect" href="classns3_1_1_string_value.html#a6f208c2778fe1c7882e5cb429b8326ae" title=" " alt="" coords="1445,5,1603,32"/>
+<area shape="rect" href="namespacens3.html#ab4e173cdfd43d17c1a40d5348510a670" title=" " alt="" coords="1463,56,1585,83"/>
+<area shape="rect" href="classns3_1_1_global_value.html#a48a99242193fb69609a17332733e8600" title="Get the value." alt="" coords="1424,107,1624,133"/>
+<area shape="rect" href="namespacens3.html#aebac73305345f2e2803fdeb102a7705e" title="Set the LogNodePrinter function to be used to prepend log messages with the node id." alt="" coords="1437,157,1611,184"/>
+<area shape="rect" href="namespacens3.html#a46cd76678f7da29799d1b41994e12ec1" title="Set the TimePrinter function to be used to prepend log messages with the simulation time." alt="" coords="1438,208,1610,235"/>
+<area shape="rect" href="group__simulator.html#ga233c5c38de117e4e4a5a9cd168694792" title="Get the static SimulatorImpl instance." alt="" coords="1467,259,1581,285"/>
+<area shape="rect" href="classns3_1_1_object_factory.html#a77dcd099064038a1eb7a6b8251229ec3" title="Set the TypeId of the Objects to be created by this factory." alt="" coords="2002,373,2145,414"/>
+<area shape="rect" href="classns3_1_1_object.html#a3183f228d0d4cd56f1b17cff0b841d83" title="Initialize all member variables registered as Attributes of this TypeId." alt="" coords="1708,321,1873,348"/>
+<area shape="rect" href="classns3_1_1_type_id.html#a66b2628edf921fc88945ec8a8f3a1683" title="Get the constructor callback." alt="" coords="1690,220,1891,247"/>
+<area shape="rect" href="classns3_1_1_object.html#aa6ed5d48f17e3d0fd28714777239e6c4" title="Set the TypeId of this Object." alt="" coords="1707,271,1874,297"/>
+<area shape="rect" href="classns3_1_1_object_base.html#a5cda18dec6d0744cb652a3ed60056958" title="Complete construction of ObjectBase; invoked by derived classes." alt="" coords="1962,321,2185,348"/>
+<area shape="rect" href="classns3_1_1_type_id.html#abc4965475a579c2afdc668d7a7d58374" title="Get the name." alt="" coords="2237,321,2403,348"/>
+<area shape="rect" href="classns3_1_1_singleton.html#a80a2cd3c25a27ea72add7a9f7a141ffa" title="Get a pointer to the singleton instance." alt="" coords="2451,238,2653,279"/>
+<area shape="rect" href="classns3_1_1_iid_manager.html#a5222ca2d43248c46812b39b993eb2e08" title="Get the constructor Callback of a type id." alt="" coords="1957,220,2189,247"/>
+<area shape="rect" href="classns3_1_1_object.html#a7dc4a16a2f85427034a0102c0f6adaf9" title="Verify that this Object is still live, by checking it&#39;s reference count." alt="" coords="2002,271,2145,297"/>
+<area shape="rect" href="classns3_1_1_time.html#a48c9bb8d93fea6a8d8cac216967219f4" title="Attach a unit to a Time, to facilitate output in a specific unit." alt="" coords="1736,483,1845,509"/>
+<area shape="rect" href="classns3_1_1_time.html#a1444f0f08b5e19f031157609e32fcf98" title=" " alt="" coords="1698,629,1883,656"/>
+<area shape="rect" href="classns3_1_1_simulator.html#ac3178fa975b419f7875e7105be122800" title="Return the current simulation virtual time." alt="" coords="1714,432,1867,459"/>
+<area shape="rect" href="classns3_1_1_time.html#addd8e672203391b3ae98ee475ce05272" title=" " alt="" coords="1968,731,2179,757"/>
+<area shape="rect" href="global-router-interface_8cc.html#af2f17e24d29f39f6804d0d10d8cedc71" title=" " alt="" coords="2013,680,2134,707"/>
+<area shape="rect" href="classns3_1_1_time.html#a4bd2d3c8a919e4b57e60692b53db4a61" title="Get the Time value expressed in a particular unit." alt="" coords="1997,629,2150,656"/>
+<area shape="rect" href="classns3_1_1_simulator_impl.html#aa516c50060846adc6fd316e83ef0797c" title="Return the current simulation virtual time." alt="" coords="1982,439,2165,465"/>
+<area shape="rect" href="classns3_1_1_ptr.html#adb507425388a3cdc4312362dc2ed2151" title="Mark this as a a reference by incrementing the reference count." alt="" coords="1727,56,1855,83"/>
+<area shape="rect" href="classns3_1_1_string_value.html#a17693012c6f2c52875e0d631fbf40155" title=" " alt="" coords="1712,107,1869,133"/>
+<area shape="rect" href="group__logging.html#gacdc0bdeb2d8a90089d4fb09c4b8569ff" title=" " alt="" coords="1672,163,1909,189"/>
+<area shape="rect" href="group__logging.html#gaadcc698770aae684c54dbd1ef4e4b37a" title=" " alt="" coords="1990,119,2157,145"/>
+<area shape="rect" href="classns3_1_1_time.html#a60e845f4a74e62495b86356afe604cb4" title="Create a Time equal to value in unit unit." alt="" coords="997,636,1169,663"/>
+<area shape="rect" href="classns3_1_1_time.html#a34e4acc13d0e08cc8cb9cd3b838b9baf" title="Create a Time in the current unit." alt="" coords="1240,661,1367,688"/>
+<area shape="rect" href="classns3_1_1_time.html#a8a39dc1b8cbbd7fe6d940e492d1b925e" title="Default constructor, with value 0." alt="" coords="1461,673,1587,700"/>
+<area shape="rect" href="classns3_1_1_time.html#aa7eef2a1119c1c4855d99f1e83d44c54" title="Record a Time instance with the MarkedTimes." alt="" coords="1727,680,1854,707"/>
 </map>
 </div>
 
@@ -1308,7 +1305,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="lr-wpan-helper_8cc_source.html#l00202">202</a> of file <a class="el" href="lr-wpan-helper_8cc_source.html">lr-wpan-helper.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="phy-communication-test_8cc_source.html#l00010">channel</a>, and <a class="el" href="lr-wpan-helper_8h_source.html#l00201">m_channel</a>.</p>
+<p class="reference">References <a class="el" href="third_8py_source.html#l00092">third::channel</a>, and <a class="el" href="lr-wpan-helper_8h_source.html#l00201">m_channel</a>.</p>
 
 </div>
 </div>
@@ -1338,7 +1335,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="lr-wpan-helper_8cc_source.html#l00208">208</a> of file <a class="el" href="lr-wpan-helper_8cc_source.html">lr-wpan-helper.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="phy-communication-test_8cc_source.html#l00010">channel</a>, and <a class="el" href="lr-wpan-helper_8h_source.html#l00201">m_channel</a>.</p>
+<p class="reference">References <a class="el" href="third_8py_source.html#l00092">third::channel</a>, and <a class="el" href="lr-wpan-helper_8h_source.html#l00201">m_channel</a>.</p>
 
 </div>
 </div>
@@ -1385,7 +1382,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_lr_wpan_helper.html">LrWpanHelper</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:29 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:33 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

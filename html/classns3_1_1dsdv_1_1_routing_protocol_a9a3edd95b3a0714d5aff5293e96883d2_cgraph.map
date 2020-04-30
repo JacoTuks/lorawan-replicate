@@ -31,7 +31,7 @@
 <area shape="rect" id="node27" href="$classns3_1_1dsdv_1_1_dsdv_header.html#a6f77399805540e36248d189300b2f927" title="Get destination sequence number." alt="" coords="563,996,735,1037"/>
 <area shape="rect" id="node28" href="$classns3_1_1dsdv_1_1_routing_table_entry.html#ad99e0daf9268002120744a0f372a05ad" title="Get hop." alt="" coords="824,856,1035,897"/>
 <area shape="rect" id="node29" href="$classns3_1_1dsdv_1_1_dsdv_header.html#a57aea77cc55cdf1147eb57c7fb598959" title="Get hop count." alt="" coords="563,1113,735,1155"/>
-<area shape="rect" id="node30" href="$classns3_1_1_random_variable_stream.html#a66cd94e6305ce7f000f1a9ff0fcb9aef" title="Get the next random value as an integer drawn from the distribution." alt="" coords="545,1179,753,1220"/>
+<area shape="rect" id="node30" href="$classns3_1_1_uniform_random_variable.html#ab7c7dedc88cb97e74418df2edc28a787" title="Get the next random value, as an unsigned integer in the specified range ." alt="" coords="542,1179,757,1220"/>
 <area shape="rect" id="node31" href="$classns3_1_1_inet_socket_address.html#a84e0f56d0747abd33413b3ce4a3c725d" title=" " alt="" coords="563,1244,736,1285"/>
 <area shape="rect" id="node32" href="$classns3_1_1dsdv_1_1_routing_table.html#af980697df819d8a00ee8782c705e3dac" title="Lookup list of all addresses in the routing table." alt="" coords="841,988,1017,1029"/>
 <area shape="rect" id="node33" href="$classns3_1_1dsdv_1_1_routing_table.html#a7efb980be4e4f556b73905038483c154" title="Lookup list of addresses for which nxtHp is the next Hop address." alt="" coords="523,1309,776,1351"/>

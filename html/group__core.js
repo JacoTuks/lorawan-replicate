@@ -1,6 +1,6 @@
 var group__core =
 [
-    [ "Attributes", "group__attribute.html", "group__attribute" ],
+    [ "Attributes", "group__attributes.html", "group__attributes" ],
     [ "Callbacks", "group__callback.html", "group__callback" ],
     [ "Command Line Parsing", "group__commandline.html", "group__commandline" ],
     [ "Configuration", "group__config.html", "group__config" ],
@@ -62,6 +62,7 @@ var group__core =
       [ "operator=", "classns3_1_1_simulation_singleton.html#ae1321bbc20baa52e14652a2ca5268672", null ]
     ] ],
     [ "NS_DEPRECATED", "group__core.html#ga771fbc06c05c32655c757f56492d98c5", null ],
+    [ "NS_DEPRECATED_3_31", "group__core.html#gad24cf759b8485f9a43e739e3c6ea6fa8", null ],
     [ "NS_UNUSED", "group__core.html#ga3ba03ad859378e9f01285afb60f0e3ab", null ],
     [ "NS_UNUSED_GLOBAL", "group__core.html#ga6b7ccc59547bbbd7e3d6692b04c9a2dd", null ]
 ];

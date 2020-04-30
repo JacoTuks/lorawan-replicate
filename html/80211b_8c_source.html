@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -215,10 +212,10 @@ $(document).ready(function(){initNavTree('80211b_8c_source.html',''); initResiza
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordflow">return</span> 0.5 * erfc (<a class="code" href="namespacesample-rng-plot.html#a5b903688ba4a0e9d00ef4d0aa174b44f">x</a> / sqrt (2.0));</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="80211b_8c.html#ae7ffc1a8f84fa47a0812b2f2b9627132">   70</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="80211b_8c.html#ae7ffc1a8f84fa47a0812b2f2b9627132">f</a> (<span class="keywordtype">double</span> <a class="code" href="namespacesample-rng-plot.html#a5b903688ba4a0e9d00ef4d0aa174b44f">x</a>, <span class="keywordtype">void</span> * params)</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="80211b_8c.html#ae7ffc1a8f84fa47a0812b2f2b9627132">   70</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="80211b_8c.html#ae7ffc1a8f84fa47a0812b2f2b9627132">f</a> (<span class="keywordtype">double</span> <a class="code" href="namespacesample-rng-plot.html#a5b903688ba4a0e9d00ef4d0aa174b44f">x</a>, <span class="keywordtype">void</span> * <a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>)</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">double</span> beta = ((<a class="code" href="structfn__parameters.html">fn_parameters</a> *) params)-&gt;beta;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="namespacesample-rng-plot.html#aeb5ee5c431e338ef39b7ac5431242e1d">n</a> = ((<a class="code" href="structfn__parameters.html">fn_parameters</a> *) params)-&gt;n;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">double</span> beta = ((<a class="code" href="structfn__parameters.html">fn_parameters</a> *) <a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>)-&gt;beta;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="namespacesample-rng-plot.html#aeb5ee5c431e338ef39b7ac5431242e1d">n</a> = ((<a class="code" href="structfn__parameters.html">fn_parameters</a> *) <a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>)-&gt;n;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="80211b_8c.html#ae7ffc1a8f84fa47a0812b2f2b9627132">f</a> = pow ( 2 * gsl_cdf_ugaussian_P (<a class="code" href="namespacesample-rng-plot.html#a5b903688ba4a0e9d00ef4d0aa174b44f">x</a> + beta) - 1, <a class="code" href="namespacesample-rng-plot.html#aeb5ee5c431e338ef39b7ac5431242e1d">n</a> - 1) * exp (-<a class="code" href="namespacesample-rng-plot.html#a5b903688ba4a0e9d00ef4d0aa174b44f">x</a> * <a class="code" href="namespacesample-rng-plot.html#a5b903688ba4a0e9d00ef4d0aa174b44f">x</a> / 2.0) / sqrt (2.0 * M_PI);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="80211b_8c.html#ae7ffc1a8f84fa47a0812b2f2b9627132">f</a>;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
@@ -227,14 +224,14 @@ $(document).ready(function(){initNavTree('80211b_8c_source.html',''); initResiza
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordtype">double</span> sep;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">double</span> error;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <a class="code" href="structfn__parameters.html">fn_parameters</a> params;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  params.<a class="code" href="structfn__parameters.html#a081c7d766345d4e43e77249329785498">beta</a> = sqrt (2.0 * e2);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  params.<a class="code" href="structfn__parameters.html#ae122f118b80ac5899a1cf10178d200bf">n</a> = 8.0;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <a class="code" href="structfn__parameters.html">fn_parameters</a> <a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>.beta = sqrt (2.0 * e2);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>.n = 8.0;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  gsl_integration_workspace* w = gsl_integration_workspace_alloc (1000);</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  gsl_function F;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  F.function = &amp;<a class="code" href="80211b_8c.html#ae7ffc1a8f84fa47a0812b2f2b9627132">f</a>;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  F.params = &amp;params;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  gsl_integration_qagiu (&amp;F, -params.<a class="code" href="structfn__parameters.html#a081c7d766345d4e43e77249329785498">beta</a>, 0, 1e-7, 1000, w, &amp;sep, &amp;error);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  F.params = &amp;<a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  gsl_integration_qagiu (&amp;F, -<a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>.beta, 0, 1e-7, 1000, w, &amp;sep, &amp;error);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  gsl_integration_workspace_free (w);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordflow">if</span> (error == 0.0)</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    {</div>
@@ -415,6 +412,7 @@ $(document).ready(function(){initNavTree('80211b_8c_source.html',''); initResiza
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="a80211b_8c_html_a26da6411cb2f07aa5c535c70c181e658"><div class="ttname"><a href="80211b_8c.html#a26da6411cb2f07aa5c535c70c181e658">Get80211bDsssDqpskCCK11BerIeee</a></div><div class="ttdeci">double Get80211bDsssDqpskCCK11BerIeee(double EcNc)</div><div class="ttdef"><b>Definition:</b> <a href="80211b_8c_source.html#l00190">80211b.c:190</a></div></div>
+<div class="ttc" id="anamespacealoha_html_aff1381c591fdaf9d3af2b19080c9eed7"><div class="ttname"><a href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">aloha.params</a></div><div class="ttdeci">dictionary params</div><div class="ttdef"><b>Definition:</b> <a href="aloha_8py_source.html#l00013">aloha.py:13</a></div></div>
 <div class="ttc" id="a80211b_8c_html_ac6afabdc09a49a433ee19d8a9486056d"><div class="ttname"><a href="80211b_8c.html#ac6afabdc09a49a433ee19d8a9486056d">min</a></div><div class="ttdeci">#define min(a, b)</div><div class="ttdef"><b>Definition:</b> <a href="80211b_8c_source.html#l00043">80211b.c:42</a></div></div>
 <div class="ttc" id="a80211b_8c_html_adb67c75ed31233b879bad93884a87aed"><div class="ttname"><a href="80211b_8c.html#adb67c75ed31233b879bad93884a87aed">DQPSKFunction</a></div><div class="ttdeci">double DQPSKFunction(double x)</div><div class="ttdef"><b>Definition:</b> <a href="80211b_8c_source.html#l00113">80211b.c:113</a></div></div>
 <div class="ttc" id="a80211b_8c_html_adba1ee1e3adf97e751232cf42cea58c8"><div class="ttname"><a href="80211b_8c.html#adba1ee1e3adf97e751232cf42cea58c8">QFunction</a></div><div class="ttdeci">double QFunction(double x)</div><div class="ttdef"><b>Definition:</b> <a href="80211b_8c_source.html#l00065">80211b.c:65</a></div></div>
@@ -444,7 +442,7 @@ $(document).ready(function(){initNavTree('80211b_8c_source.html',''); initResiza
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_9bb89822448514d94fe3e213d3ac83be.html">wifi</a></li><li class="navelem"><a class="el" href="dir_914bbd979aaa0b0008ccaac608a28d3b.html">test</a></li><li class="navelem"><a class="el" href="80211b_8c.html">80211b.c</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:08 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:15 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

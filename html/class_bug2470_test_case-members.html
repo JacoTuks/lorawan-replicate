@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -182,8 +179,8 @@ $(document).ready(function(){initNavTree('class_bug2470_test_case.html',''); ini
   <tr class="even"><td class="entry"><a class="el" href="class_bug2470_test_case.html#a3f19f943c847273faaf4544eb8ec145e">m_addbaResetCount</a></td><td class="entry"><a class="el" href="class_bug2470_test_case.html">Bug2470TestCase</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="classns3_1_1_test_case.html#a69a286c12a0d13ba6ea0968d4ffb7058">m_children</a></td><td class="entry"><a class="el" href="classns3_1_1_test_case.html">ns3::TestCase</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classns3_1_1_test_case.html#a204d14ebe231588cf07d0dae9b56015a">m_dataDir</a></td><td class="entry"><a class="el" href="classns3_1_1_test_case.html">ns3::TestCase</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_bug2470_test_case.html#a77de878136e12042cc0c639985dfc3be">m_droppedActionCount</a></td><td class="entry"><a class="el" href="class_bug2470_test_case.html">Bug2470TestCase</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classns3_1_1_test_case.html#a1437486460786c4bcb6ec5c45e067d9e">m_duration</a></td><td class="entry"><a class="el" href="classns3_1_1_test_case.html">ns3::TestCase</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classns3_1_1_test_case.html#a1437486460786c4bcb6ec5c45e067d9e">m_duration</a></td><td class="entry"><a class="el" href="classns3_1_1_test_case.html">ns3::TestCase</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_bug2470_test_case.html#a97558ac5a03b3d5efd0a71be2a679306">m_failedActionCount</a></td><td class="entry"><a class="el" href="class_bug2470_test_case.html">Bug2470TestCase</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="classns3_1_1_test_case.html#a0f7ecafa1c9cc538059169767453e4a4">m_name</a></td><td class="entry"><a class="el" href="classns3_1_1_test_case.html">ns3::TestCase</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classns3_1_1_test_case.html#a4b95b61d64e754a7e5720d1271e26b54">m_parent</a></td><td class="entry"><a class="el" href="classns3_1_1_test_case.html">ns3::TestCase</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_bug2470_test_case.html#aef332476376f8e37a13012475b3c481f">m_receivedAmpduCount</a></td><td class="entry"><a class="el" href="class_bug2470_test_case.html">Bug2470TestCase</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
@@ -200,7 +197,7 @@ $(document).ready(function(){initNavTree('class_bug2470_test_case.html',''); ini
   <tr class="even"><td class="entry"><a class="el" href="classns3_1_1_test_case.html#abd20623e3e8fcb6bd4ec69e93f32f621">Run</a>(TestRunnerImpl *runner)</td><td class="entry"><a class="el" href="classns3_1_1_test_case.html">ns3::TestCase</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_bug2470_test_case.html#a84bc33b7203f45b9821714a4c654c17c">RunSubtest</a>(PointerValue apErrorModel, PointerValue staErrorModel)</td><td class="entry"><a class="el" href="class_bug2470_test_case.html">Bug2470TestCase</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_bug2470_test_case.html#aece82e66803706c43cae6e23c367208b">RxCallback</a>(std::string context, Ptr&lt; const Packet &gt; p, uint16_t channelFreqMhz, WifiTxVector txVector, MpduInfo aMpdu, SignalNoiseDbm signalNoise)</td><td class="entry"><a class="el" href="class_bug2470_test_case.html">Bug2470TestCase</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_bug2470_test_case.html#a7ffc28b52b1d9754c3a7744ba2256596">RxDropCallback</a>(std::string context, Ptr&lt; const Packet &gt; p, WifiPhyRxfailureReason reason)</td><td class="entry"><a class="el" href="class_bug2470_test_case.html">Bug2470TestCase</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_bug2470_test_case.html#a07ca947dff412fdb002ae7c375ced1e2">RxErrorCallback</a>(std::string context, Ptr&lt; const Packet &gt; p, double snr)</td><td class="entry"><a class="el" href="class_bug2470_test_case.html">Bug2470TestCase</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_bug2470_test_case.html#ae4cc9d638b99f42a3a44ea1213c9a49b">SendPacketBurst</a>(uint32_t numPackets, Ptr&lt; NetDevice &gt; sourceDevice, Address &amp;destination) const</td><td class="entry"><a class="el" href="class_bug2470_test_case.html">Bug2470TestCase</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="classns3_1_1_test_case.html#ab002fb0e5071fcde71a92ca9e8224b23">SetDataDir</a>(std::string directory)</td><td class="entry"><a class="el" href="classns3_1_1_test_case.html">ns3::TestCase</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classns3_1_1_test_case.html#a11f6f57c21a0d32e605d192a89550f91a88f5459fbc31d63d7cadbbf69e604898">TAKES_FOREVER</a> enum value</td><td class="entry"><a class="el" href="classns3_1_1_test_case.html">ns3::TestCase</a></td><td class="entry"></td></tr>
@@ -218,7 +215,7 @@ $(document).ready(function(){initNavTree('class_bug2470_test_case.html',''); ini
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:13 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:20 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

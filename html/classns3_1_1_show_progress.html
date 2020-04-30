@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -403,7 +400,7 @@ Private Attributes</h2></td></tr>
 <dl class="section user"><dt><b>Internal</b>: Update algorithm</dt><dd></dd></dl>
 <p>We steer <code>m_vtime</code> to obtain updates approximately every <code>m_interval</code> in wall clock time. To smooth things out a little we impose a hysteresis band around <code>m_interval</code> where we don't change <code>m_vtime</code>. To avoid too rapid movements chasing spikes or dips in execution rate, we bound the change in <code>m_vtime</code> to a maximum factor.</p>
 <p>In mathematical terms, we compute the ratio of elapsed wall clock time compared to the target reporting interval: </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ ratio = \frac{elapsed}{target interval)} \]" src="form_82.png" width="0" height="30"/>
+<img class="formulaDsp" alt="\[ ratio = \frac{elapsed}{target interval)} \]" src="form_82.png" width="130" height="30"/>
 </p>
 <p>Graphically, the windows in ratio value and the corresponding updates to <code>m_vtime</code> are sketched in this figure: </p><pre class="fragment">                 ^
                  |
@@ -436,7 +433,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="show-progress_8cc_source.html#l00100">100</a> of file <a class="el" href="show-progress_8cc_source.html">show-progress.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="time_8cc_source.html#l00389">ns3::Time::As()</a>, <a class="el" href="unix-system-wall-clock-ms_8cc_source.html#l00167">ns3::SystemWallClockMs::End()</a>, <a class="el" href="int64x64-128_8h_source.html#l00206">ns3::int64x64_t::GetDouble()</a>, <a class="el" href="simulator_8cc_source.html#l00328">ns3::Simulator::GetEventCount()</a>, <a class="el" href="show-progress_8h_source.html#l00120">HYSTERESIS</a>, <a class="el" href="show-progress_8h_source.html#l00131">m_eventCount</a>, <a class="el" href="show-progress_8h_source.html#l00128">m_interval</a>, <a class="el" href="show-progress_8h_source.html#l00134">m_os</a>, <a class="el" href="show-progress_8h_source.html#l00136">m_repCount</a>, <a class="el" href="show-progress_8h_source.html#l00127">m_timer</a>, <a class="el" href="show-progress_8h_source.html#l00135">m_verbose</a>, <a class="el" href="show-progress_8h_source.html#l00129">m_vtime</a>, <a class="el" href="80211b_8c_source.html#l00043">max</a>, <a class="el" href="show-progress_8h_source.html#l00125">MAXGAIN</a>, <a class="el" href="nstime_8h_source.html#l01072">ns3::MilliSeconds()</a>, <a class="el" href="80211b_8c_source.html#l00042">min</a>, <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>, <a class="el" href="nstime_8h_source.html#l00114">ns3::Time::S</a>, and <a class="el" href="show-progress_8cc_source.html#l00091">Start()</a>.</p>
+<p class="reference">References <a class="el" href="time_8cc_source.html#l00389">ns3::Time::As()</a>, <a class="el" href="unix-system-wall-clock-ms_8cc_source.html#l00167">ns3::SystemWallClockMs::End()</a>, <a class="el" href="int64x64-128_8h_source.html#l00206">ns3::int64x64_t::GetDouble()</a>, <a class="el" href="simulator_8cc_source.html#l00330">ns3::Simulator::GetEventCount()</a>, <a class="el" href="show-progress_8h_source.html#l00120">HYSTERESIS</a>, <a class="el" href="show-progress_8h_source.html#l00131">m_eventCount</a>, <a class="el" href="show-progress_8h_source.html#l00128">m_interval</a>, <a class="el" href="show-progress_8h_source.html#l00134">m_os</a>, <a class="el" href="show-progress_8h_source.html#l00136">m_repCount</a>, <a class="el" href="show-progress_8h_source.html#l00127">m_timer</a>, <a class="el" href="show-progress_8h_source.html#l00135">m_verbose</a>, <a class="el" href="show-progress_8h_source.html#l00129">m_vtime</a>, <a class="el" href="80211b_8c_source.html#l00043">max</a>, <a class="el" href="show-progress_8h_source.html#l00125">MAXGAIN</a>, <a class="el" href="nstime_8h_source.html#l01078">ns3::MilliSeconds()</a>, <a class="el" href="80211b_8c_source.html#l00042">min</a>, <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>, <a class="el" href="nstime_8h_source.html#l00114">ns3::Time::S</a>, and <a class="el" href="show-progress_8cc_source.html#l00091">Start()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="show-progress_8cc_source.html#l00091">Start()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -540,7 +537,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="show-progress_8cc_source.html#l00059">59</a> of file <a class="el" href="show-progress_8cc_source.html">show-progress.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="simulator_8cc_source.html#l00290">ns3::Simulator::Cancel()</a>, <a class="el" href="show-progress_8h_source.html#l00130">m_event</a>, <a class="el" href="show-progress_8h_source.html#l00128">m_interval</a>, <a class="el" href="show-progress_8h_source.html#l00129">m_vtime</a>, <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>, and <a class="el" href="show-progress_8cc_source.html#l00091">Start()</a>.</p>
+<p class="reference">References <a class="el" href="simulator_8cc_source.html#l00292">ns3::Simulator::Cancel()</a>, <a class="el" href="show-progress_8h_source.html#l00130">m_event</a>, <a class="el" href="show-progress_8h_source.html#l00128">m_interval</a>, <a class="el" href="show-progress_8h_source.html#l00129">m_vtime</a>, <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>, and <a class="el" href="show-progress_8cc_source.html#l00091">Start()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -1109,9 +1106,9 @@ Private Attributes</h2></td></tr>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassns3_1_1_simulator_html_a84be982e6d03b62c3dc3303c75a9b909"><div class="ttname"><a href="classns3_1_1_simulator.html#a84be982e6d03b62c3dc3303c75a9b909">ns3::Simulator::Run</a></div><div class="ttdeci">static void Run(void)</div><div class="ttdoc">Run the simulation.</div><div class="ttdef"><b>Definition:</b> <a href="simulator_8cc_source.html#l00170">simulator.cc:170</a></div></div>
-<div class="ttc" id="agroup__timecivil_html_ga33c34b816f8ff6628e33d5c8e9713b9e"><div class="ttname"><a href="group__timecivil.html#ga33c34b816f8ff6628e33d5c8e9713b9e">ns3::Seconds</a></div><div class="ttdeci">Time Seconds(double value)</div><div class="ttdef"><b>Definition:</b> <a href="nstime_8h_source.html#l01064">nstime.h:1064</a></div></div>
-<div class="ttc" id="aclassns3_1_1_simulator_html_a2a056e59a6623225df0957eda0ee8252"><div class="ttname"><a href="classns3_1_1_simulator.html#a2a056e59a6623225df0957eda0ee8252">ns3::Simulator::Destroy</a></div><div class="ttdeci">static void Destroy(void)</div><div class="ttdoc">Execute the events scheduled with ScheduleDestroy().</div><div class="ttdef"><b>Definition:</b> <a href="simulator_8cc_source.html#l00134">simulator.cc:134</a></div></div>
+<div class="ttc" id="aclassns3_1_1_simulator_html_a84be982e6d03b62c3dc3303c75a9b909"><div class="ttname"><a href="classns3_1_1_simulator.html#a84be982e6d03b62c3dc3303c75a9b909">ns3::Simulator::Run</a></div><div class="ttdeci">static void Run(void)</div><div class="ttdoc">Run the simulation.</div><div class="ttdef"><b>Definition:</b> <a href="simulator_8cc_source.html#l00172">simulator.cc:172</a></div></div>
+<div class="ttc" id="agroup__timecivil_html_ga33c34b816f8ff6628e33d5c8e9713b9e"><div class="ttname"><a href="group__timecivil.html#ga33c34b816f8ff6628e33d5c8e9713b9e">ns3::Seconds</a></div><div class="ttdeci">Time Seconds(double value)</div><div class="ttdef"><b>Definition:</b> <a href="nstime_8h_source.html#l01070">nstime.h:1070</a></div></div>
+<div class="ttc" id="aclassns3_1_1_simulator_html_a2a056e59a6623225df0957eda0ee8252"><div class="ttname"><a href="classns3_1_1_simulator.html#a2a056e59a6623225df0957eda0ee8252">ns3::Simulator::Destroy</a></div><div class="ttdeci">static void Destroy(void)</div><div class="ttdoc">Execute the events scheduled with ScheduleDestroy().</div><div class="ttdef"><b>Definition:</b> <a href="simulator_8cc_source.html#l00136">simulator.cc:136</a></div></div>
 <div class="ttc" id="aclassns3_1_1_show_progress_html_a4519023c0e05223634c852e97543ca2f"><div class="ttname"><a href="classns3_1_1_show_progress.html#a4519023c0e05223634c852e97543ca2f">ns3::ShowProgress::ShowProgress</a></div><div class="ttdeci">ShowProgress(const Time interval=Seconds(1.0), std::ostream &amp;os=std::cout)</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition:</b> <a href="show-progress_8cc_source.html#l00042">show-progress.cc:42</a></div></div>
 <!-- ns-3 doxygen header, based on
      HTML header for doxygen 1.8.3.1
@@ -1121,7 +1118,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_show_progress.html">ShowProgress</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:39 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:41 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

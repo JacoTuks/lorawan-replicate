@@ -1,5 +1,5 @@
 <map id="ns3::ChannelAccessManager::RemovePhyListener" name="ns3::ChannelAccessManager::RemovePhyListener">
-<area shape="rect" id="node1" title="Remove current registered listener for Phy events." alt="" coords="1009,129,1217,171"/>
+<area shape="rect" id="node1" title="Remove current registered listener for PHY events." alt="" coords="1009,129,1217,171"/>
 <area shape="rect" id="node2" href="$classns3_1_1_regular_wifi_mac.html#a27dba298192a0dc28ce0eef7812c0b04" title="Remove currently attached WifiPhy device from this MAC." alt="" coords="805,129,961,171"/>
 <area shape="rect" id="node3" href="$classns3_1_1_default_channel_scheduler.html#a661fb5bfff90527fa4be59820ccf8bdf" title=" " alt="" coords="539,129,757,171"/>
 <area shape="rect" id="node4" href="$classns3_1_1_default_channel_scheduler.html#a8de51ae89df5a36d8a71f921d87b39ca" title=" " alt="" coords="272,5,491,47"/>

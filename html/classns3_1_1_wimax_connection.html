@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -264,7 +261,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a54b822cae000f9acd50c63f59219ab6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_wimax_connection.html#a54b822cae000f9acd50c63f59219ab6a">Dequeue</a> (<a class="el" href="classns3_1_1_mac_header_type.html#a54d8fc8bc93a2b7865627965cdd31c20">MacHeaderType::HeaderType</a> packetType=<a class="el" href="classns3_1_1_mac_header_type.html#a54d8fc8bc93a2b7865627965cdd31c20a48fe5b2f20cadf78008c71469b518403">MacHeaderType::HEADER_TYPE_GENERIC</a>)</td></tr>
 <tr class="memdesc:a54b822cae000f9acd50c63f59219ab6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">dequeue a packet from the queue of the connection  <a href="classns3_1_1_wimax_connection.html#a54b822cae000f9acd50c63f59219ab6a">More...</a><br /></td></tr>
 <tr class="separator:a54b822cae000f9acd50c63f59219ab6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f7f3bf452c58c3390a096e1b354a86f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_wimax_connection.html#a2f7f3bf452c58c3390a096e1b354a86f">Enqueue</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; <a class="el" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>, const <a class="el" href="classns3_1_1_mac_header_type.html">MacHeaderType</a> &amp;hdrType, const <a class="el" href="classns3_1_1_generic_mac_header.html">GenericMacHeader</a> &amp;hdr)</td></tr>
+<tr class="memitem:a2f7f3bf452c58c3390a096e1b354a86f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_wimax_connection.html#a2f7f3bf452c58c3390a096e1b354a86f">Enqueue</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; packet, const <a class="el" href="classns3_1_1_mac_header_type.html">MacHeaderType</a> &amp;hdrType, const <a class="el" href="classns3_1_1_generic_mac_header.html">GenericMacHeader</a> &amp;hdr)</td></tr>
 <tr class="memdesc:a2f7f3bf452c58c3390a096e1b354a86f"><td class="mdescLeft">&#160;</td><td class="mdescRight">enqueue a packet in the queue of the connection  <a href="classns3_1_1_wimax_connection.html#a2f7f3bf452c58c3390a096e1b354a86f">More...</a><br /></td></tr>
 <tr class="separator:a2f7f3bf452c58c3390a096e1b354a86f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7d985915012a837359aa62413457045"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_wimax_connection.html#ae7d985915012a837359aa62413457045">FragmentEnqueue</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; const <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; fragment)</td></tr>
@@ -727,7 +724,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="wimax-connection_8cc_source.html#l00123">123</a> of file <a class="el" href="wimax-connection_8cc_source.html">wimax-connection.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="wimax-connection_8h_source.html#l00153">m_queue</a>, and <a class="el" href="lora-mac-test_8cc_source.html#l00021">packet</a>.</p>
+<p class="reference">References <a class="el" href="wimax-connection_8h_source.html#l00153">m_queue</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="wimax-fragmentation-test_8cc_source.html#l00060">Ns3WimaxFragmentationTestCase::DoRun()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1022,7 +1019,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="wimax-connection_8cc_source.html#l00032">32</a> of file <a class="el" href="wimax-connection_8cc_source.html">wimax-connection.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cid_8h_source.html#l00045">ns3::Cid::BASIC</a>, <a class="el" href="cid_8h_source.html#l00043">ns3::Cid::BROADCAST</a>, <a class="el" href="wimax-connection_8cc_source.html#l00099">GetQueue()</a>, <a class="el" href="wimax-connection_8cc_source.html#l00093">GetType()</a>, <a class="el" href="cid_8h_source.html#l00044">ns3::Cid::INITIAL_RANGING</a>, <a class="el" href="enum_8h_source.html#l00209">ns3::MakeEnumAccessor()</a>, <a class="el" href="enum_8cc_source.html#l00184">ns3::MakeEnumChecker()</a>, <a class="el" href="pointer_8h_source.html#l00229">ns3::MakePointerAccessor()</a>, <a class="el" href="cid_8h_source.html#l00048">ns3::Cid::MULTICAST</a>, <a class="el" href="cid_8h_source.html#l00049">ns3::Cid::PADDING</a>, <a class="el" href="cid_8h_source.html#l00046">ns3::Cid::PRIMARY</a>, <a class="el" href="type-id_8cc_source.html#l00922">ns3::TypeId::SetParent()</a>, and <a class="el" href="cid_8h_source.html#l00047">ns3::Cid::TRANSPORT</a>.</p>
+<p class="reference">References <a class="el" href="cid_8h_source.html#l00045">ns3::Cid::BASIC</a>, <a class="el" href="cid_8h_source.html#l00043">ns3::Cid::BROADCAST</a>, <a class="el" href="wimax-connection_8cc_source.html#l00099">GetQueue()</a>, <a class="el" href="wimax-connection_8cc_source.html#l00093">GetType()</a>, <a class="el" href="cid_8h_source.html#l00044">ns3::Cid::INITIAL_RANGING</a>, <a class="el" href="enum_8h_source.html#l00225">ns3::MakeEnumAccessor()</a>, <a class="el" href="enum_8cc_source.html#l00180">ns3::MakeEnumChecker()</a>, <a class="el" href="pointer_8h_source.html#l00229">ns3::MakePointerAccessor()</a>, <a class="el" href="cid_8h_source.html#l00048">ns3::Cid::MULTICAST</a>, <a class="el" href="cid_8h_source.html#l00049">ns3::Cid::PADDING</a>, <a class="el" href="cid_8h_source.html#l00046">ns3::Cid::PRIMARY</a>, <a class="el" href="type-id_8cc_source.html#l00923">ns3::TypeId::SetParent()</a>, and <a class="el" href="cid_8h_source.html#l00047">ns3::Cid::TRANSPORT</a>.</p>
 <div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-11-summary" class="dynsummary" style="display:block;">
@@ -1310,7 +1307,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_wimax_connection.html">WimaxConnection</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:47 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:48 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

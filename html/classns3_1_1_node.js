@@ -30,6 +30,7 @@ var classns3_1_1_node =
     [ "RegisterProtocolHandler", "classns3_1_1_node.html#af713f0e7ea5c49b4fa0b3613405c45fa", null ],
     [ "UnregisterDeviceAdditionListener", "classns3_1_1_node.html#aed074cab79113369693f1712b956bf84", null ],
     [ "UnregisterProtocolHandler", "classns3_1_1_node.html#a059495453e24a8fc768daea91732984b", null ],
+    [ "g_checksumEnabled", "classns3_1_1_node.html#a1fec3183c3f969edac6a54a6fd7aca5e", null ],
     [ "m_applications", "classns3_1_1_node.html#a3984bdbc05cc8a6d2eda6c41963f16f6", null ],
     [ "m_deviceAdditionListeners", "classns3_1_1_node.html#a2069747966a2e0192d47fbc25e6b5d7f", null ],
     [ "m_devices", "classns3_1_1_node.html#af0ba0670e62825e6953317a7a028aa40", null ],

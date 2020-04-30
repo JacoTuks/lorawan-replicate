@@ -13,6 +13,7 @@ var classns3_1_1_box =
     [ "CalculateIntersection", "classns3_1_1_box.html#a89912e6315f57872e21d5c7f9ac90e49", null ],
     [ "GetClosestSide", "classns3_1_1_box.html#abe3ae6e99ee4203a2b5b1bc92e824f2d", null ],
     [ "IsInside", "classns3_1_1_box.html#a1a67446b6da5eaba91652d1387461564", null ],
+    [ "IsIntersect", "classns3_1_1_box.html#a9f1d0fb7e03da61916c46ec2c6bc2aa8", null ],
     [ "xMax", "classns3_1_1_box.html#a50021049c756e770329145b25d9533a2", null ],
     [ "xMin", "classns3_1_1_box.html#a1fd6a43d53258323331d34da600ff1c5", null ],
     [ "yMax", "classns3_1_1_box.html#a001fd430a14b19efe925c818a332e392", null ],

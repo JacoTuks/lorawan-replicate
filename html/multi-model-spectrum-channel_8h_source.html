@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -230,7 +227,7 @@ $(document).ready(function(){initNavTree('multi-model-spectrum-channel_8h_source
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="comment">// inherited from SpectrumChannel</span></div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_multi_model_spectrum_channel.html#af365f7a37625876a9e476e6eb6376f7e">AddRx</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;SpectrumPhy&gt;</a> <a class="code" href="namespacethird.html#afd1150b3dae0722a64278ec9f040f321">phy</a>);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_multi_model_spectrum_channel.html#ab5b8cfe54c081f858014b133d026ed26">StartTx</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;SpectrumSignalParameters&gt;</a> params);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_multi_model_spectrum_channel.html#ab5b8cfe54c081f858014b133d026ed26">StartTx</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;SpectrumSignalParameters&gt;</a> <a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>);</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="comment">// inherited from Channel</span></div>
@@ -244,7 +241,7 @@ $(document).ready(function(){initNavTree('multi-model-spectrum-channel_8h_source
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  TxSpectrumModelInfoMap_t::const_iterator <a class="code" href="classns3_1_1_multi_model_spectrum_channel.html#a6056692c09015bd3d81df0d536a804c5">FindAndEventuallyAddTxSpectrumModel</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;const SpectrumModel&gt;</a> txSpectrumModel);</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_multi_model_spectrum_channel.html#a9d8671b1d127dd0838b7efff971cacce">StartRx</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;SpectrumSignalParameters&gt;</a> params, <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;SpectrumPhy&gt;</a> receiver);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_multi_model_spectrum_channel.html#a9d8671b1d127dd0838b7efff971cacce">StartRx</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;SpectrumSignalParameters&gt;</a> <a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>, <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;SpectrumPhy&gt;</a> receiver);</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
 <div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="classns3_1_1_multi_model_spectrum_channel.html#a401a74579865429a5008431e9000a8be">  158</a></span>&#160;  <a class="code" href="group__spectrum.html#ga3b72b7d13697ed8fe482072a7096c289">TxSpectrumModelInfoMap_t</a> <a class="code" href="classns3_1_1_multi_model_spectrum_channel.html#a401a74579865429a5008431e9000a8be">m_txSpectrumModelInfoMap</a>;</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
@@ -268,6 +265,7 @@ $(document).ready(function(){initNavTree('multi-model-spectrum-channel_8h_source
 <div class="ttc" id="agroup__spectrum_html_ga3b72b7d13697ed8fe482072a7096c289"><div class="ttname"><a href="group__spectrum.html#ga3b72b7d13697ed8fe482072a7096c289">ns3::TxSpectrumModelInfoMap_t</a></div><div class="ttdeci">std::map&lt; SpectrumModelUid_t, TxSpectrumModelInfo &gt; TxSpectrumModelInfoMap_t</div><div class="ttdef"><b>Definition:</b> <a href="multi-model-spectrum-channel_8h_source.html#l00065">multi-model-spectrum-channel.h:65</a></div></div>
 <div class="ttc" id="aclassns3_1_1_tx_spectrum_model_info_html_ab17eef3b720aef8510d6e90759c8c409"><div class="ttname"><a href="classns3_1_1_tx_spectrum_model_info.html#ab17eef3b720aef8510d6e90759c8c409">ns3::TxSpectrumModelInfo::m_spectrumConverterMap</a></div><div class="ttdeci">SpectrumConverterMap_t m_spectrumConverterMap</div><div class="ttdoc">Spectrum converter.</div><div class="ttdef"><b>Definition:</b> <a href="multi-model-spectrum-channel_8h_source.html#l00057">multi-model-spectrum-channel.h:57</a></div></div>
 <div class="ttc" id="agroup__spectrum_html_ga47089dbfa7f7955f2b2082c1da395450"><div class="ttname"><a href="group__spectrum.html#ga47089dbfa7f7955f2b2082c1da395450">ns3::SpectrumConverterMap_t</a></div><div class="ttdeci">std::map&lt; SpectrumModelUid_t, SpectrumConverter &gt; SpectrumConverterMap_t</div><div class="ttdef"><b>Definition:</b> <a href="multi-model-spectrum-channel_8h_source.html#l00040">multi-model-spectrum-channel.h:40</a></div></div>
+<div class="ttc" id="anamespacealoha_html_aff1381c591fdaf9d3af2b19080c9eed7"><div class="ttname"><a href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">aloha.params</a></div><div class="ttdeci">dictionary params</div><div class="ttdef"><b>Definition:</b> <a href="aloha_8py_source.html#l00013">aloha.py:13</a></div></div>
 <div class="ttc" id="aclassns3_1_1_tx_spectrum_model_info_html_aebed44c25e9aabd4e5ce703855bbeed1"><div class="ttname"><a href="classns3_1_1_tx_spectrum_model_info.html#aebed44c25e9aabd4e5ce703855bbeed1">ns3::TxSpectrumModelInfo::TxSpectrumModelInfo</a></div><div class="ttdeci">TxSpectrumModelInfo(Ptr&lt; const SpectrumModel &gt; txSpectrumModel)</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition:</b> <a href="multi-model-spectrum-channel_8cc_source.html#l00071">multi-model-spectrum-channel.cc:71</a></div></div>
 <div class="ttc" id="aclassns3_1_1_spectrum_channel_html"><div class="ttname"><a href="classns3_1_1_spectrum_channel.html">ns3::SpectrumChannel</a></div><div class="ttdef"><b>Definition:</b> <a href="spectrum-channel_8h_source.html#l00048">spectrum-channel.h:49</a></div></div>
 <div class="ttc" id="anamespacens3_html"><div class="ttname"><a href="namespacens3.html">ns3</a></div><div class="ttdoc">Every class exported by the ns3 library is enclosed in the ns3 namespace.</div></div>
@@ -301,7 +299,7 @@ $(document).ready(function(){initNavTree('multi-model-spectrum-channel_8h_source
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_10d0328e2266480c720033fb91de3081.html">spectrum</a></li><li class="navelem"><a class="el" href="dir_f25b46aff9dd2800f353f0cc2534eabd.html">model</a></li><li class="navelem"><a class="el" href="multi-model-spectrum-channel_8h.html">multi-model-spectrum-channel.h</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:04 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:12 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

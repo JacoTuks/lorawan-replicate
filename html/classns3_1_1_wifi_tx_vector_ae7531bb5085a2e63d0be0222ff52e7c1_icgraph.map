@@ -1,7 +1,7 @@
 <map id="ns3::WifiTxVector::IsStbc" name="ns3::WifiTxVector::IsStbc">
 <area shape="rect" id="node1" title="Check if STBC is used or not." alt="" coords="668,71,813,112"/>
 <area shape="rect" id="node2" href="$classns3_1_1_wifi_phy.html#a0854b8251b610b505fec7790bfce07ac" title=" " alt="" coords="435,5,620,47"/>
-<area shape="rect" id="node3" href="$classns3_1_1_wifi_phy_helper.html#af1baefd0a50daeff72c8075f2eef7eda" title="Get the radiotap header." alt="" coords="448,71,607,112"/>
+<area shape="rect" id="node3" href="$classns3_1_1_wifi_phy_helper.html#af1baefd0a50daeff72c8075f2eef7eda" title="Get the Radiotap header." alt="" coords="448,71,607,112"/>
 <area shape="rect" id="node8" href="$namespacens3.html#a3a8fb206e33137628bb0105dac8bbf33" title="Serialize WifiTxVector to the given ostream." alt="" coords="462,137,593,163"/>
 <area shape="rect" id="node4" href="$classns3_1_1_wifi_phy_helper.html#ac5da2b1210868b0ae050e3adc54a9d2f" title=" " alt="" coords="240,37,387,79"/>
 <area shape="rect" id="node7" href="$classns3_1_1_wifi_phy_helper.html#a24e075fa55e473c81f76a4178c0fcb25" title=" " alt="" coords="240,103,387,144"/>

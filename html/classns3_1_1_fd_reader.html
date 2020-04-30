@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -296,7 +293,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class that asynchronously reads from a file descriptor. </p>
-<p>This class can be used to start a system thread that reads from a given file descriptor and invokes a given callback when data is received. This class handles thread management automatically but the <code><a class="el" href="classns3_1_1_fd_reader.html#a5d622d726859828ba7bc557b57689b1b" title="The read implementation.">DoRead()</a></code> method must be implemented by a subclass. </p>
+<p>This class can be used to start a system thread that reads from a given file descriptor and invokes a given callback when data is received. This class handles thread management automatically but the <span class="params"><span class="paramname"><a class="el" href="classns3_1_1_fd_reader.html#a5d622d726859828ba7bc557b57689b1b" title="The read implementation.">DoRead()</a></span></span> method must be implemented by a subclass. </p>
 
 <p class="definition">Definition at line <a class="el" href="unix-fd-reader_8h_source.html#l00047">47</a> of file <a class="el" href="unix-fd-reader_8h_source.html">unix-fd-reader.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -450,8 +447,8 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The read implementation. </p>
-<p>The value of <code>m_len</code> returned controls further processing. The callback function is only invoked when <code>m_len</code> is positive; any data read is not processed when <code>m_len</code> is negative; reading stops when <code>m_len</code> is zero.</p>
-<p>The management of memory associated with <code>m_buf</code> must be compatible with the read callback.</p>
+<p>The value of <span class="params"><span class="paramname">m_len</span></span> returned controls further processing. The callback function is only invoked when <span class="params"><span class="paramname">m_len</span></span> is positive; any data read is not processed when <span class="params"><span class="paramname">m_len</span></span> is negative; reading stops when <span class="params"><span class="paramname">m_len</span></span> is zero.</p>
+<p>The management of memory associated with <span class="params"><span class="paramname">m_buf</span></span> must be compatible with the read callback.</p>
 <dl class="section return"><dt>Returns</dt><dd>A structure representing what was read. </dd></dl>
 
 <p>Implemented in <a class="el" href="classns3_1_1_tap_bridge_fd_reader.html#a15e2178765f12e4f8d043205e02fb9d0">ns3::TapBridgeFdReader</a>, and <a class="el" href="classns3_1_1_fd_net_device_fd_reader.html#accdcf64286ebf82623e99c0073c933df">ns3::FdNetDeviceFdReader</a>.</p>
@@ -862,7 +859,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_fd_reader.html">FdReader</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:24 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:29 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

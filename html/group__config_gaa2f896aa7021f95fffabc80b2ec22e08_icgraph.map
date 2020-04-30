@@ -26,7 +26,7 @@
 <area shape="rect" id="node28" href="$class_ns3_tcp_loss_test_case.html#aa6494c8b5df42627efd9625374b2eeeb" title="Implementation to actually run this TestCase." alt="" coords="539,1455,693,1496"/>
 <area shape="rect" id="node29" href="$classns3_1_1_mobility_helper.html#af5b410b07e9d77b782714c39e3506a9e" title=" " alt="" coords="541,1520,691,1561"/>
 <area shape="rect" id="node32" href="$classns3_1_1_yans_wave_phy_helper.html#ad015eeeabbdf7522d52de94d22fcc207" title="Enable ascii trace output on the indicated net device." alt="" coords="523,1585,709,1627"/>
-<area shape="rect" id="node33" href="$classns3_1_1_wifi_phy_helper.html#a930fe270c6c08af23d5333b87ed5997b" title="Enable ascii trace output on the indicated net device." alt="" coords="539,1651,693,1692"/>
+<area shape="rect" id="node33" href="$classns3_1_1_wifi_phy_helper.html#a930fe270c6c08af23d5333b87ed5997b" title="Enable ASCII trace output on the indicated net device." alt="" coords="539,1651,693,1692"/>
 <area shape="rect" id="node34" href="$classns3_1_1_spectrum_analyzer_helper.html#a32d0b627f609f9c61f7d7043f1d779af" title=" " alt="" coords="509,1716,723,1757"/>
 <area shape="rect" id="node36" href="$tcp-variants-comparison_8cc.html#aec5789386c647effcc6f177c8aa1684c" title=" " alt="" coords="569,1782,663,1809"/>
 <area shape="rect" id="node37" href="$codel-vs-pfifo-asymmetric_8cc.html#a20d7d9452b7e5c42ebc464a728682614" title=" " alt="" coords="541,1833,691,1859"/>

@@ -16,7 +16,7 @@
 <area shape="rect" id="node14" href="$class_packet_metadata_test.html#a5157cf5ecf0e631ad2a70c61375ebfc3" title="Implementation to actually run this TestCase." alt="" coords="322,879,475,920"/>
 <area shape="rect" id="node15" href="$class_packet_test.html#a2f4d69aa1b21616ea14efd54fee55da2" title="Implementation to actually run this TestCase." alt="" coords="327,945,470,971"/>
 <area shape="rect" id="node16" href="$classns3_1_1_ipv6_extension_fragment.html#a60bc0fdd5a5d1bcb2223c98909eef44e" title="Fragment a packet." alt="" coords="295,136,502,177"/>
-<area shape="rect" id="node17" href="$classns3_1_1_wifi_phy_helper.html#af1baefd0a50daeff72c8075f2eef7eda" title="Get the radiotap header." alt="" coords="319,201,478,243"/>
+<area shape="rect" id="node17" href="$classns3_1_1_wifi_phy_helper.html#af1baefd0a50daeff72c8075f2eef7eda" title="Get the Radiotap header." alt="" coords="319,201,478,243"/>
 <area shape="rect" id="node18" href="$classns3_1_1_packet_sink.html#af1b771e838a0596a019bdc12cadf7521" title="Packet received: calculation of the e2e statistics." alt="" coords="281,995,516,1022"/>
 <area shape="rect" id="node19" href="$classns3_1_1_lte_rlc_am.html#ada1201339d0a54e50adc27b09d3c5c1e" title="Reassemble and deliver." alt="" coords="297,1047,500,1088"/>
 <area shape="rect" id="node20" href="$classns3_1_1_lte_rlc_um.html#a103ba1e3d14eb2604a44d1bef7fe7cb7" title="Reassemble and deliver function." alt="" coords="297,1112,501,1153"/>

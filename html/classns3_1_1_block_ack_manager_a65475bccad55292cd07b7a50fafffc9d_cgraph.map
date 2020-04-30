@@ -1,5 +1,5 @@
 <map id="ns3::BlockAckManager::NotifyMissedAck" name="ns3::BlockAckManager::NotifyMissedAck">
-<area shape="rect" id="node1" title="Invoked upon missed reception of an ack frame after the transmission of a QoS data frame sent under a..." alt="" coords="5,188,176,229"/>
+<area shape="rect" id="node1" title="Invoked upon missed reception of an Ack frame after the transmission of a QoS data frame sent under a..." alt="" coords="5,188,176,229"/>
 <area shape="rect" id="node2" href="$classns3_1_1_block_ack_manager.html#ac9035d264058c48aa9f84eea71aa0541" title=" " alt="" coords="224,5,411,47"/>
 <area shape="rect" id="node3" href="$classns3_1_1_wifi_mac_header.html#aa1c4acbda4ace9f7a920c97d71bdd097" title="Return the address in the Address 1 field." alt="" coords="471,123,625,164"/>
 <area shape="rect" id="node4" href="$classns3_1_1_wifi_mac_queue_item.html#aeb59c1e3b526361838d5d3a6f3035039" title="Get the header stored in this item." alt="" coords="459,188,637,229"/>

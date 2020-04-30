@@ -1,5 +1,5 @@
 <map id="ns3::YansWifiChannelHelper" name="ns3::YansWifiChannelHelper">
-<area shape="rect" id="node1" title="manage and create wifi channel objects for the yans model." alt="" coords="3184,167,3388,194"/>
+<area shape="rect" id="node1" title="manage and create wifi channel objects for the YANS model." alt="" coords="3184,167,3388,194"/>
 <area shape="rect" id="node2" href="$classns3_1_1_object_factory.html" title="Instantiate subclasses of ns3::Object." alt="" coords="2569,135,2712,162"/>
 <area shape="rect" id="node20" title=" " alt="" coords="2825,195,3004,236"/>
 <area shape="rect" id="node3" href="$classns3_1_1_type_id.html" title="a unique identifier for an interface." alt="" coords="2267,93,2361,119"/>

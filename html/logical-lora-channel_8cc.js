@@ -1,5 +1,5 @@
 var logical_lora_channel_8cc =
 [
-    [ "operator!=", "logical-lora-channel_8cc.html#a9b39d7861a6c00497affed6a8fba8e81", null ],
-    [ "operator==", "logical-lora-channel_8cc.html#a29b832174d34d29383026f72142749ba", null ]
+    [ "operator!=", "logical-lora-channel_8cc.html#a7d8aebb5daefab3a211a3c684d7a50e8", null ],
+    [ "operator==", "logical-lora-channel_8cc.html#aae95cddfe572dc130fe97f6142ff8cb8", null ]
 ];

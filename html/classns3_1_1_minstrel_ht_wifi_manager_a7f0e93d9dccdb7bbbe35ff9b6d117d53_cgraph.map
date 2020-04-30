@@ -13,7 +13,7 @@
 <area shape="rect" id="node4" href="$classns3_1_1_wifi_phy.html#adf2fa40dcba4e52e9bc67c6ffc819170" title="Return the device this PHY is associated with." alt="" coords="1364,103,1543,129"/>
 <area shape="rect" id="node5" href="$classns3_1_1_wifi_net_device.html#a20c98121e79afae35d03d9f5a3fa4ce8" title=" " alt="" coords="1375,7,1531,49"/>
 <area shape="rect" id="node7" href="$classns3_1_1_wifi_remote_station_manager.html#a6a5c20f231324799e383594b546ca733" title="Return the state of the station associated with the given address." alt="" coords="1621,326,1855,367"/>
-<area shape="rect" id="node9" href="$classns3_1_1_random_variable_stream.html#a66cd94e6305ce7f000f1a9ff0fcb9aef" title="Get the next random value as an integer drawn from the distribution." alt="" coords="779,949,987,990"/>
+<area shape="rect" id="node9" href="$classns3_1_1_uniform_random_variable.html#ab7c7dedc88cb97e74418df2edc28a787" title="Get the next random value, as an unsigned integer in the specified range ." alt="" coords="775,949,990,990"/>
 <area shape="rect" id="node11" href="$classns3_1_1_minstrel_ht_wifi_manager.html#a8a5fa60f2ebd2df3d8b52022161e1f5e" title="Calculate the number of retransmissions to set for the index rate." alt="" coords="1067,755,1271,797"/>
 <area shape="rect" id="node17" href="$classns3_1_1_minstrel_ht_wifi_manager.html#a2c3213dddeb9e0917073482f732127ed" title="Set the next sample from Sample Table." alt="" coords="1351,607,1555,649"/>
 <area shape="rect" id="node18" href="$classns3_1_1_wifi_remote_station_manager.html#a2b5787163f54eb6edadf431c8f432545" title="Return the channel width supported by the station." alt="" coords="766,351,999,393"/>

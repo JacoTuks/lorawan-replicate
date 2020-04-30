@@ -1,5 +1,5 @@
 <map id="ns3::CtrlBAckResponseHeader::SetType" name="ns3::CtrlBAckResponseHeader::SetType">
-<area shape="rect" id="node1" title="Set the block ACK type." alt="" coords="1991,299,2209,340"/>
+<area shape="rect" id="node1" title="Set the block ack type." alt="" coords="1991,299,2209,340"/>
 <area shape="rect" id="node2" href="$class_ctrl_b_ack_response_header_test.html#a19cf1ac31281254d487041e4c5dcdc50" title="Implementation to actually run this TestCase." alt="" coords="1728,215,1943,256"/>
 <area shape="rect" id="node3" href="$namespacens3.html#a9c30b51d3ef2d1e671ae4c8d57d44321" title="Return the total BlockAck size (including FCS trailer)." alt="" coords="1754,335,1917,362"/>
 <area shape="rect" id="node19" href="$classns3_1_1_mac_low.html#af6e2acc771d188c0959871f142912296" title="Invoked after an A&#45;MPDU has been received." alt="" coords="957,391,1164,432"/>

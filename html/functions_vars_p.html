@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -163,18 +160,20 @@ $(document).ready(function(){initNavTree('functions_vars_p.html',''); initResiza
 , <a class="el" href="structns3_1_1_lte_mac_sap_user_1_1_receive_pdu_parameters.html#a111994de9bb26a921207f5aee4a90f58">ns3::LteMacSapUser::ReceivePduParameters</a>
 </li>
 <li>p2pHelper
-: <a class="el" href="classns3_1_1_network_server_helper.html#a4e8401924c19f5e4fbf01a825f59ef2c">ns3::NetworkServerHelper</a>
+: <a class="el" href="classns3_1_1lorawan_1_1_network_server_helper.html#af6a0d8aa640f0e5985550ce0eb5b591c">ns3::lorawan::NetworkServerHelper</a>
 </li>
 <li>pa
 : <a class="el" href="structns3_1_1_lte_rrc_sap_1_1_pdsch_config_dedicated.html#aa9b1574a63fb83c53649305ca95aeb31">ns3::LteRrcSap::PdschConfigDedicated</a>
 </li>
 <li>packet
-: <a class="el" href="structns3_1_1_device_status_1_1_reply.html#a24e994bd473d55da8a1aa5ae02055cb4">ns3::DeviceStatus::Reply</a>
-, <a class="el" href="structns3_1_1_ipv4_raw_socket_impl_1_1_data.html#afbbbc75b177a582c5f3ecaddc6245ba3">ns3::Ipv4RawSocketImpl::Data</a>
+: <a class="el" href="structns3_1_1_ipv4_raw_socket_impl_1_1_data.html#afbbbc75b177a582c5f3ecaddc6245ba3">ns3::Ipv4RawSocketImpl::Data</a>
 , <a class="el" href="structns3_1_1_ipv6_raw_socket_impl_1_1_data.html#a854e11b87ad90adab5b6b7928278803f">ns3::Ipv6RawSocketImpl::Data</a>
+, <a class="el" href="structns3_1_1lorawan_1_1_end_device_lorawan_mac_1_1_lora_retx_parameters.html#ae11e021f7a83e895ef4b15cd1572afd1">ns3::lorawan::EndDeviceLorawanMac::LoraRetxParameters</a>
+, <a class="el" href="structns3_1_1lorawan_1_1_end_device_status_1_1_received_packet_info.html#aaf0f603c9a6e62f5a4868d995db6545d">ns3::lorawan::EndDeviceStatus::ReceivedPacketInfo</a>
+, <a class="el" href="structns3_1_1lorawan_1_1_mac_packet_status.html#a9582fc1e82fc174305b9adb9ca57db0b">ns3::lorawan::MacPacketStatus</a>
+, <a class="el" href="structns3_1_1lorawan_1_1_packet_status.html#a824bd8e7ef0f8a852737b99e63782aa6">ns3::lorawan::PacketStatus</a>
 , <a class="el" href="structns3_1_1ofi_1_1_switch_packet_metadata.html#af65b736eec9acce5f07f3913e2aa1e5d">ns3::ofi::SwitchPacketMetadata</a>
 , <a class="el" href="structns3_1_1_py_viz_1_1_packet_sample.html#ac22e75ce168860f42f8279cac4a3d676">ns3::PyViz::PacketSample</a>
-, <a class="el" href="struct_packet_status.html#abfc4fe440f134720b99736e70954bafc">PacketStatus</a>
 , <a class="el" href="class_rrc_header_test_case.html#a6f0748c0e845f797497fbda1ca781803">RrcHeaderTestCase</a>
 </li>
 <li>packet_capture_options
@@ -239,6 +238,9 @@ $(document).ready(function(){initNavTree('functions_vars_p.html',''); initResiza
 </li>
 <li>pause_messages
 : <a class="el" href="classvisualizer_1_1core_1_1_simulation_thread.html#a0645b6d9f8cadce5ab77e3cd4bc5d99b">visualizer.core.SimulationThread</a>
+</li>
+<li>payload
+: <a class="el" href="structns3_1_1lorawan_1_1_end_device_status_1_1_reply.html#aba65e6bc7e34636187606a8931770f2b">ns3::lorawan::EndDeviceStatus::Reply</a>
 </li>
 <li>payloadSize
 : <a class="el" href="struct_parameters.html#ae3f53b6e8b01143efc44570e9d5963b4">Parameters</a>
@@ -357,6 +359,9 @@ $(document).ready(function(){initNavTree('functions_vars_p.html',''); initResiza
 </li>
 <li>phytx_time
 : <a class="el" href="class_ocb_wifi_mac_test_case.html#a0a14009e9033e7b904415e5f9bb6781f">OcbWifiMacTestCase</a>
+</li>
+<li>pi
+: <a class="el" href="classns3_1_1_hex_grid_position_allocator.html#a7d052203a8f26d4a0e6a351fd20b1977">ns3::HexGridPositionAllocator</a>
 </li>
 <li>pkt
 : <a class="el" href="structns3_1_1dot11s_1_1_hwmp_protocol_1_1_queued_packet.html#ad313ffb587733d3750ba16f9a2a09713">ns3::dot11s::HwmpProtocol::QueuedPacket</a>
@@ -556,7 +561,7 @@ $(document).ready(function(){initNavTree('functions_vars_p.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:51 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:53 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

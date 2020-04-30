@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -164,7 +161,7 @@ $(document).ready(function(){initNavTree('classns3_1_1_yans_wifi_channel_helper.
 </div><!--header-->
 <div class="contents">
 
-<p>manage and create wifi channel objects for the yans model.  
+<p>manage and create wifi channel objects for the YANS model.  
  <a href="classns3_1_1_yans_wifi_channel_helper.html#details">More...</a></p>
 
 <p><code>#include &quot;<a class="el" href="yans-wifi-helper_8h_source.html">yans-wifi-helper.h</a>&quot;</code></p>
@@ -175,7 +172,7 @@ $(document).ready(function(){initNavTree('classns3_1_1_yans_wifi_channel_helper.
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_yans_wifi_channel_helper__coll__graph.png" border="0" usemap="#ns3_1_1_yans_wifi_channel_helper_coll__map" alt="Collaboration graph"/></div>
 <map name="ns3_1_1_yans_wifi_channel_helper_coll__map" id="ns3_1_1_yans_wifi_channel_helper_coll__map">
-<area shape="rect" title="manage and create wifi channel objects for the yans model." alt="" coords="3184,167,3388,194"/>
+<area shape="rect" title="manage and create wifi channel objects for the YANS model." alt="" coords="3184,167,3388,194"/>
 <area shape="rect" href="classns3_1_1_object_factory.html" title="Instantiate subclasses of ns3::Object." alt="" coords="2569,135,2712,162"/>
 <area shape="rect" title=" " alt="" coords="2825,195,3004,236"/>
 <area shape="rect" href="classns3_1_1_type_id.html" title="a unique identifier for an interface." alt="" coords="2267,93,2361,119"/>
@@ -230,8 +227,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ae900d194a15cb8608999b18a906b4b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>manage and create wifi channel objects for the yans model. </p>
-<p>The intent of this class is to make it easy to create a channel object which implements the yans channel model. The yans channel model is described in "Yet Another Network Simulator", <a href="http://cutebugs.net/files/wns2-yans.pdf">http://cutebugs.net/files/wns2-yans.pdf</a> </p>
+<div class="textblock"><p>manage and create wifi channel objects for the YANS model. </p>
+<p>The intent of this class is to make it easy to create a channel object which implements the YANS channel model. The YANS channel model is described in "Yet Another Network Simulator", <a href="http://cutebugs.net/files/wns2-yans.pdf">http://cutebugs.net/files/wns2-yans.pdf</a> </p>
 
 <p class="definition">Definition at line <a class="el" href="yans-wifi-helper_8h_source.html#l00036">36</a> of file <a class="el" href="yans-wifi-helper_8h_source.html">yans-wifi-helper.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -395,8 +392,8 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>Add a propagation loss model to the set of currently-configured loss models. This method is additive to allow you to construct complex propagation loss models such as a log distance + jakes model, etc.</p>
-<p>The order in which PropagationLossModels are added may be significant. Some propagation models are dependent of the "txPower" (eg. Nakagami model), and are therefore not commutative. The final receive power (excluding receiver gains) are calculated in the order the models are added. </p>
+<p>Add a propagation loss model to the set of currently-configured loss models. This method is additive to allow you to construct complex propagation loss models such as a log distance + Jakes model, etc.</p>
+<p>The order in which PropagationLossModels are added may be significant. Some propagation models are dependent of the "txPower" (e.g. Nakagami model), and are therefore not commutative. The final receive power (excluding receiver gains) are calculated in the order the models are added. </p>
 
 <p class="definition">Definition at line <a class="el" href="yans-wifi-helper_8cc_source.html#l00050">50</a> of file <a class="el" href="yans-wifi-helper_8cc_source.html">yans-wifi-helper.cc</a>.</p>
 
@@ -540,7 +537,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="yans-wifi-helper_8cc_source.html#l00098">98</a> of file <a class="el" href="yans-wifi-helper_8cc_source.html">yans-wifi-helper.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="phy-communication-test_8cc_source.html#l00010">channel</a>, <a class="el" href="object-factory_8cc_source.html#l00104">ns3::ObjectFactory::Create()</a>, <a class="el" href="yans-wifi-helper_8h_source.html#l00146">m_propagationDelay</a>, <a class="el" href="yans-wifi-helper_8h_source.html#l00145">m_propagationLoss</a>, and <a class="el" href="propagation-loss-model_8cc_source.html#l00061">ns3::PropagationLossModel::SetNext()</a>.</p>
+<p class="reference">References <a class="el" href="third_8py_source.html#l00092">third::channel</a>, <a class="el" href="object-factory_8cc_source.html#l00104">ns3::ObjectFactory::Create()</a>, <a class="el" href="yans-wifi-helper_8h_source.html#l00146">m_propagationDelay</a>, <a class="el" href="yans-wifi-helper_8h_source.html#l00145">m_propagationLoss</a>, and <a class="el" href="propagation-loss-model_8cc_source.html#l00061">ns3::PropagationLossModel::SetNext()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ocb-test-suite_8cc_source.html#l00271">OcbWifiMacTestCase::ConfigureAdhocMode()</a>, <a class="el" href="ocb-test-suite_8cc_source.html#l00249">OcbWifiMacTestCase::ConfigureApStaMode()</a>, <a class="el" href="ocb-test-suite_8cc_source.html#l00290">OcbWifiMacTestCase::ConfigureOcbMode()</a>, <a class="el" href="rv-battery-model-test_8cc_source.html#l00715">BatteryLifetimeTest::ConstantLoadTest()</a>, <a class="el" href="aodv_8cc_source.html#l00191">AodvExample::CreateDevices()</a>, <a class="el" href="aodv-regression_8cc_source.html#l00161">ChainRegressionTest::CreateDevices()</a>, <a class="el" href="bug-772_8cc_source.html#l00123">Bug772ChainTest::CreateDevices()</a>, <a class="el" href="traceroute-example_8cc_source.html#l00195">TracerouteExample::CreateDevices()</a>, <a class="el" href="hwmp-proactive-regression_8cc_source.html#l00106">HwmpProactiveRegressionTest::CreateDevices()</a>, <a class="el" href="hwmp-reactive-regression_8cc_source.html#l00107">HwmpReactiveRegressionTest::CreateDevices()</a>, <a class="el" href="hwmp-simplest-regression_8cc_source.html#l00117">HwmpSimplestRegressionTest::CreateDevices()</a>, <a class="el" href="hwmp-target-flags-regression_8cc_source.html#l00133">HwmpDoRfRegressionTest::CreateDevices()</a>, <a class="el" href="pmp-regression_8cc_source.html#l00088">PeerManagementProtocolRegressionTest::CreateDevices()</a>, <a class="el" href="flame-regression_8cc_source.html#l00092">FlameRegressionTest::CreateDevices()</a>, <a class="el" href="dsdv-manet_8cc_source.html#l00310">DsdvManetExample::CreateDevices()</a>, <a class="el" href="mesh_8cc_source.html#l00159">MeshTest::CreateNodes()</a>, <a class="el" href="wave-simple-device_8cc_source.html#l00088">WaveNetDeviceExample::CreateWaveNodes()</a>, <a class="el" href="mac-extension-test-suite_8cc_source.html#l00279">TestCaseHelper::CreatWaveDevice()</a>, <a class="el" href="basic-energy-model-test_8cc_source.html#l00337">BasicEnergyDepletionTest::DepletionTestCase()</a>, <a class="el" href="loopback_8cc_source.html#l00123">ns3::aodv::LoopbackTestCase::DoRun()</a>, <a class="el" href="wifi-ac-mapping-test-suite_8cc_source.html#l00102">WifiAcMappingTest::DoRun()</a>, <a class="el" href="wifi-msdu-aggregator-test-suite_8cc_source.html#l00054">WifiMsduAggregatorThroughputTest::DoRun()</a>, <a class="el" href="wifi-adhoc_8cc_source.html#l00119">Experiment::Run()</a>, <a class="el" href="manet-routing-compare_8cc_source.html#l00222">RoutingExperiment::Run()</a>, <a class="el" href="vanet-routing-compare_8cc_source.html#l02179">VanetRoutingExperiment::SetupAdhocDevices()</a>, <a class="el" href="rv-battery-model-test_8cc_source.html#l00798">BatteryLifetimeTest::VariableLoadTest()</a>, and <a class="el" href="wifi-interference-test-suite_8cc_source.html#l00106">WifiInterferenceTestCase::WifiSimpleInterference()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -666,7 +663,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a channel helper in a default working state. </p>
-<p>By default, we create a channel model with a propagation delay equal to a constant, the speed of light, and a propagation loss based on a log distance model with a reference loss of 46.6777 dB at reference distance of 1m. </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="classns3_1_1_yans_wifi_channel_helper.html" title="manage and create wifi channel objects for the yans model.">YansWifiChannelHelper</a> </dd></dl>
+<p>By default, we create a channel model with a propagation delay equal to a constant, the speed of light, and a propagation loss based on a log distance model with a reference loss of 46.6777 dB at reference distance of 1m. </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="classns3_1_1_yans_wifi_channel_helper.html" title="manage and create wifi channel objects for the YANS model.">YansWifiChannelHelper</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="yans-wifi-helper_8cc_source.html#l00041">41</a> of file <a class="el" href="yans-wifi-helper_8cc_source.html">yans-wifi-helper.cc</a>.</p>
 
@@ -981,7 +978,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_yans_wifi_channel_helper.html">YansWifiChannelHelper</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:47 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:48 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -237,7 +234,7 @@ $(document).ready(function(){initNavTree('wifi-mac-queue_8h_source.html',''); in
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  ConstIterator PeekFirstAvailable (<span class="keyword">const</span> <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;QosBlockedDestinations&gt;</a> blockedPackets = <span class="keyword">nullptr</span>,</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                                    ConstIterator pos = EMPTY) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;WifiMacQueueItem&gt;</a> Remove (<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  <span class="keywordtype">bool</span> Remove (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;const Packet&gt;</a> <a class="code" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  <span class="keywordtype">bool</span> Remove (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;const Packet&gt;</a> packet);</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  ConstIterator Remove (ConstIterator pos, <span class="keywordtype">bool</span> removeExpired = <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  uint32_t GetNPacketsByAddress (<a class="code" href="classns3_1_1_mac48_address.html">Mac48Address</a> dest);</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  uint32_t GetNPacketsByTidAndAddress (uint8_t tid, <a class="code" href="classns3_1_1_mac48_address.html">Mac48Address</a> dest);</div>
@@ -273,7 +270,6 @@ $(document).ready(function(){initNavTree('wifi-mac-queue_8h_source.html',''); in
 <div class="ttc" id="aclassns3_1_1_wifi_mac_queue_html"><div class="ttname"><a href="classns3_1_1_wifi_mac_queue.html">ns3::WifiMacQueue</a></div><div class="ttdef"><b>Definition:</b> <a href="wifi-mac-queue_8h_source.html#l00057">wifi-mac-queue.h:58</a></div></div>
 <div class="ttc" id="anamespacens3_html"><div class="ttname"><a href="namespacens3.html">ns3</a></div><div class="ttdoc">Every class exported by the ns3 library is enclosed in the ns3 namespace.</div></div>
 <div class="ttc" id="aclassns3_1_1_queue_html_af108d00696b556f3b3addd8816413119"><div class="ttname"><a href="classns3_1_1_queue.html#af108d00696b556f3b3addd8816413119">ns3::Queue&lt; WifiMacQueueItem &gt;::ConstIterator</a></div><div class="ttdeci">std::list&lt; Ptr&lt; WifiMacQueueItem &gt; &gt;::const_iterator ConstIterator</div><div class="ttdoc">Const iterator.</div><div class="ttdef"><b>Definition:</b> <a href="queue_8h_source.html#l00304">queue.h:304</a></div></div>
-<div class="ttc" id="alora-mac-test_8cc_html_a084e879e2a4e6b1e078575d3693a0c3a"><div class="ttname"><a href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a></div><div class="ttdeci">Ptr&lt; Packet &gt; packet</div><div class="ttdef"><b>Definition:</b> <a href="lora-mac-test_8cc_source.html#l00021">lora-mac-test.cc:21</a></div></div>
 <div class="ttc" id="aclassns3_1_1_mac48_address_html"><div class="ttname"><a href="classns3_1_1_mac48_address.html">ns3::Mac48Address</a></div><div class="ttdoc">an EUI-48 address</div><div class="ttdef"><b>Definition:</b> <a href="mac48-address_8h_source.html#l00043">mac48-address.h:44</a></div></div>
 <div class="ttc" id="awifi-mac-queue-item_8h_html"><div class="ttname"><a href="wifi-mac-queue-item_8h.html">wifi-mac-queue-item.h</a></div></div>
 <div class="ttc" id="aclassns3_1_1_wifi_mac_queue_html_a34998d1099e51f7c27e0814a28091f97"><div class="ttname"><a href="classns3_1_1_wifi_mac_queue.html#a34998d1099e51f7c27e0814a28091f97">ns3::WifiMacQueue::NS_LOG_TEMPLATE_DECLARE</a></div><div class="ttdeci">NS_LOG_TEMPLATE_DECLARE</div><div class="ttdoc">redefinition of the log component</div><div class="ttdef"><b>Definition:</b> <a href="wifi-mac-queue_8h_source.html#l00323">wifi-mac-queue.h:323</a></div></div>
@@ -296,7 +292,7 @@ $(document).ready(function(){initNavTree('wifi-mac-queue_8h_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_9bb89822448514d94fe3e213d3ac83be.html">wifi</a></li><li class="navelem"><a class="el" href="dir_a444d77082d8b776da6eccf888b54154.html">model</a></li><li class="navelem"><a class="el" href="wifi-mac-queue_8h.html">wifi-mac-queue.h</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:07 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:15 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

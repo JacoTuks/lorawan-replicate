@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structns3_1_1_mac_low_1_1_cf_ack_info.html" title="A struct that holds information about Ack piggybacking (CF&#45;Ack)." alt="" coords="5,5,183,32"/>
+<area shape="rect" id="node1" href="$classns3_1_1_lte_ue_phy_sap_user.html" title="Service Access Point (SAP) offered by the PHY to the MAC." alt="" coords="5,5,175,32"/>
+<area shape="rect" id="node2" href="$classns3_1_1_ue_member_lte_ue_phy_sap_user.html" title="UeMemberLteUePhySapUser." alt="" coords="223,5,464,32"/>
 </map>

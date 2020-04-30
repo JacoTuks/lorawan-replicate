@@ -28,7 +28,7 @@ var classns3_1_1_ctrl_b_ack_response_header =
     [ "ResetBitmap", "classns3_1_1_ctrl_b_ack_response_header.html#a1a6e3c7e058332376d738f70bc0cb855", null ],
     [ "Serialize", "classns3_1_1_ctrl_b_ack_response_header.html#a33bb3ab83e7ffcb1a1d2fddce2a923e2", null ],
     [ "SerializeBitmap", "classns3_1_1_ctrl_b_ack_response_header.html#a3f309e047f2ee472611487dbf7ebd3ae", null ],
-    [ "SetBaControl", "classns3_1_1_ctrl_b_ack_response_header.html#aa4f4463bdd487c4afd27bec1a52c8d14", null ],
+    [ "SetBaControl", "classns3_1_1_ctrl_b_ack_response_header.html#a00a28e23de06ca048bc590fa0e500e24", null ],
     [ "SetHtImmediateAck", "classns3_1_1_ctrl_b_ack_response_header.html#ad9ea3fa3653974a759d58a82cb8b61fc", null ],
     [ "SetReceivedFragment", "classns3_1_1_ctrl_b_ack_response_header.html#abe81d476283659885ff98a3f44d184e6", null ],
     [ "SetReceivedPacket", "classns3_1_1_ctrl_b_ack_response_header.html#af4aa188d4fe6bb69fe1e9ca24733e5a5", null ],

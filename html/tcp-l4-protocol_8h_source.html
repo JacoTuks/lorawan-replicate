@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -276,7 +273,7 @@ $(document).ready(function(){initNavTree('tcp-l4-protocol_8h_source.html',''); i
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_tcp_l4_protocol.html#ace34214dade5d0c0c2220ad01866111c">NotifyNewAggregate</a> ();</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160; </div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  <span class="keyword">enum</span> <a class="code" href="classns3_1_1_ip_l4_protocol.html#afd3744c89902fff232e2fd45f558c80e">IpL4Protocol::RxStatus</a></div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  <a class="code" href="classns3_1_1_tcp_l4_protocol.html#a3ff49ecbf02516282f7b8158819f432b">PacketReceived</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Packet&gt;</a> <a class="code" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>, <a class="code" href="classns3_1_1_tcp_header.html">TcpHeader</a> &amp;incomingTcpHeader,</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  <a class="code" href="classns3_1_1_tcp_l4_protocol.html#a3ff49ecbf02516282f7b8158819f432b">PacketReceived</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Packet&gt;</a> packet, <a class="code" href="classns3_1_1_tcp_header.html">TcpHeader</a> &amp;incomingTcpHeader,</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                  <span class="keyword">const</span> <a class="code" href="classns3_1_1_address.html">Address</a> &amp;source, <span class="keyword">const</span> <a class="code" href="classns3_1_1_address.html">Address</a> &amp;destination);</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_tcp_l4_protocol.html#a16c65189190c60da860bc60681c01324">NoEndPointsFound</a> (<span class="keyword">const</span> <a class="code" href="classns3_1_1_tcp_header.html">TcpHeader</a> &amp;incomingHeader, <span class="keyword">const</span> <a class="code" href="classns3_1_1_address.html">Address</a> &amp;incomingSAddr,</div>
@@ -323,7 +320,6 @@ $(document).ready(function(){initNavTree('tcp-l4-protocol_8h_source.html',''); i
 <div class="ttc" id="aclassns3_1_1_tcp_l4_protocol_html_a56aa36e10a43fbdc7b0765562498fa10"><div class="ttname"><a href="classns3_1_1_tcp_l4_protocol.html#a56aa36e10a43fbdc7b0765562498fa10">ns3::TcpL4Protocol::TcpL4Protocol</a></div><div class="ttdeci">TcpL4Protocol()</div><div class="ttdef"><b>Definition:</b> <a href="tcp-l4-protocol_8cc_source.html#l00097">tcp-l4-protocol.cc:97</a></div></div>
 <div class="ttc" id="aclassns3_1_1_tcp_l4_protocol_html_ace34214dade5d0c0c2220ad01866111c"><div class="ttname"><a href="classns3_1_1_tcp_l4_protocol.html#ace34214dade5d0c0c2220ad01866111c">ns3::TcpL4Protocol::NotifyNewAggregate</a></div><div class="ttdeci">virtual void NotifyNewAggregate()</div><div class="ttdoc">Setup socket factory and callbacks when aggregated to a node.</div><div class="ttdef"><b>Definition:</b> <a href="tcp-l4-protocol_8cc_source.html#l00117">tcp-l4-protocol.cc:117</a></div></div>
 <div class="ttc" id="aclassns3_1_1_tcp_l4_protocol_html_a2c724fd042748420d8a8df49e7ef28d7"><div class="ttname"><a href="classns3_1_1_tcp_l4_protocol.html#a2c724fd042748420d8a8df49e7ef28d7">ns3::TcpL4Protocol::m_congestionTypeId</a></div><div class="ttdeci">TypeId m_congestionTypeId</div><div class="ttdoc">The socket TypeId.</div><div class="ttdef"><b>Definition:</b> <a href="tcp-l4-protocol_8h_source.html#l00321">tcp-l4-protocol.h:321</a></div></div>
-<div class="ttc" id="alora-mac-test_8cc_html_a084e879e2a4e6b1e078575d3693a0c3a"><div class="ttname"><a href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a></div><div class="ttdeci">Ptr&lt; Packet &gt; packet</div><div class="ttdef"><b>Definition:</b> <a href="lora-mac-test_8cc_source.html#l00021">lora-mac-test.cc:21</a></div></div>
 <div class="ttc" id="aclassns3_1_1_ipv4_address_html"><div class="ttname"><a href="classns3_1_1_ipv4_address.html">ns3::Ipv4Address</a></div><div class="ttdoc">Ipv4 addresses are stored in host order in this class.</div><div class="ttdef"><b>Definition:</b> <a href="ipv4-address_8h_source.html#l00041">ipv4-address.h:41</a></div></div>
 <div class="ttc" id="aclassns3_1_1_ipv6_address_html"><div class="ttname"><a href="classns3_1_1_ipv6_address.html">ns3::Ipv6Address</a></div><div class="ttdoc">Describes an IPv6 address.</div><div class="ttdef"><b>Definition:</b> <a href="ipv6-address_8h_source.html#l00049">ipv6-address.h:50</a></div></div>
 <div class="ttc" id="aclassns3_1_1_tcp_l4_protocol_html_ac749bdd409707291ab1ca5252537fabb"><div class="ttname"><a href="classns3_1_1_tcp_l4_protocol.html#ac749bdd409707291ab1ca5252537fabb">ns3::TcpL4Protocol::GetDownTarget6</a></div><div class="ttdeci">virtual IpL4Protocol::DownTargetCallback6 GetDownTarget6(void) const</div><div class="ttdoc">This method allows a caller to get the current down target callback set for this L4 protocol (IPv6 ca...</div><div class="ttdef"><b>Definition:</b> <a href="tcp-l4-protocol_8cc_source.html#l00763">tcp-l4-protocol.cc:763</a></div></div>
@@ -375,7 +371,7 @@ $(document).ready(function(){initNavTree('tcp-l4-protocol_8h_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_9875a27782e85dfc0c1135b3f36246db.html">internet</a></li><li class="navelem"><a class="el" href="dir_31cca4ee57c734e0871d5231fa404ed5.html">model</a></li><li class="navelem"><a class="el" href="tcp-l4-protocol_8h.html">tcp-l4-protocol.h</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:34:56 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:04 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

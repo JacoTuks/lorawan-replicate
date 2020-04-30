@@ -119,9 +119,6 @@ var group__time =
       [ "m_unit", "classns3_1_1_time_with_unit.html#afa2cf9b8cbc6c6b3e951981d6fa3643b", null ]
     ] ],
     [ "Abs", "group__time.html#gab0f0594683e0e9ede88c2a234bc21b7f", null ],
-    [ "MakeTimeChecker", "group__time.html#ga23093575d816379c08eb5955461531d4", null ],
-    [ "MakeTimeChecker", "group__time.html#ga7032965bd4afa578691d88c09e4481c1", null ],
-    [ "MakeTimeChecker", "group__time.html#ga07f8cce9b9e4f52d0f0b16da276b55c2", null ],
     [ "Max", "group__time.html#gaeb6364b17727fa48719c6f1eff1f9d98", null ],
     [ "Min", "group__time.html#gae5b8251ededcb72f87d1fa31ec47acae", null ],
     [ "operator!=", "group__time.html#ga10b0f66bb239bafda5bda1cf83869646", null ],

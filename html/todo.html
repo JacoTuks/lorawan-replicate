@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -253,11 +250,11 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 <dt>Member <a class="el" href="classns3_1_1_wifi_phy.html#ab11e6362f76c35f9a4c467c6c7765861">ns3::WifiPhy::m_phyMonitorSniffTxTrace</a>  </dt>
 <dd><a class="anchor" id="_todo000170"></a><a class="el" href="classns3_1_1_wifi_tx_vector.html" title="This class mimics the TXVECTOR which is to be passed to the PHY in order to define the parameters whi...">WifiTxVector</a> should be passed by const reference because of its size.  </dd>
 <dt>Member <a class="el" href="classns3_1_1_aarfcd_wifi_manager.html#a4c4e397e54ae8ff36a90a1e044825586">ns3::AarfcdWifiManager::DoGetRtsTxVector</a>  (<a class="el" href="structns3_1_1_wifi_remote_station.html" title="hold per-remote-station state.">WifiRemoteStation</a> *station)</dt>
-<dd><a class="anchor" id="_todo000159"></a>we could/should implement the Aarf algorithm for RTS only by picking a single rate within the BasicRateSet.  </dd>
+<dd><a class="anchor" id="_todo000159"></a>we could/should implement the AARF algorithm for RTS only by picking a single rate within the BasicRateSet.  </dd>
 <dt>Member <a class="el" href="classns3_1_1_aparf_wifi_manager.html#a091b6da1ff7d3d0ae61ca96dc4ee256b">ns3::AparfWifiManager::DoGetRtsTxVector</a>  (<a class="el" href="structns3_1_1_wifi_remote_station.html" title="hold per-remote-station state.">WifiRemoteStation</a> *station)</dt>
-<dd><a class="anchor" id="_todo000160"></a>we could/should implement the Arf algorithm for RTS only by picking a single rate within the BasicRateSet.  </dd>
+<dd><a class="anchor" id="_todo000160"></a>we could/should implement the ARF algorithm for RTS only by picking a single rate within the BasicRateSet.  </dd>
 <dt>Member <a class="el" href="classns3_1_1_arf_wifi_manager.html#a56217b6af0b44febda8b48266562e284">ns3::ArfWifiManager::DoGetRtsTxVector</a>  (<a class="el" href="structns3_1_1_wifi_remote_station.html" title="hold per-remote-station state.">WifiRemoteStation</a> *station)</dt>
-<dd><a class="anchor" id="_todo000161"></a>we could/should implement the Arf algorithm for RTS only by picking a single rate within the BasicRateSet.  </dd>
+<dd><a class="anchor" id="_todo000161"></a>we could/should implement the ARF algorithm for RTS only by picking a single rate within the BasicRateSet.  </dd>
 <dt>Member <a class="el" href="classns3_1_1_cara_wifi_manager.html#a2361885b5679a859cb55c0b29da0c1ad">ns3::CaraWifiManager::DoGetRtsTxVector</a>  (<a class="el" href="structns3_1_1_wifi_remote_station.html" title="hold per-remote-station state.">WifiRemoteStation</a> *station)</dt>
 <dd><a class="anchor" id="_todo000162"></a>we could/should implement the Arf algorithm for RTS only by picking a single rate within the BasicRateSet.  </dd>
 <dt>Member <a class="el" href="classns3_1_1_mac_low.html#aebd46ed9f77a2e2cc6a10d5832046f11">ns3::MacLow::GetControlAnswerMode</a>  (<a class="el" href="classns3_1_1_wifi_mode.html" title="represent a single transmission mode">WifiMode</a> reqMode) const</dt>
@@ -275,7 +272,7 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 <dt>Member <a class="el" href="classns3_1_1_wifi_phy.html#ae1bb9ca40837a43219f2be0aadbdc02b">ns3::WifiPhy::m_phyMonitorSniffRxTrace</a>  </dt>
 <dd><a class="anchor" id="_todo000169"></a><a class="el" href="classns3_1_1_wifi_tx_vector.html" title="This class mimics the TXVECTOR which is to be passed to the PHY in order to define the parameters whi...">WifiTxVector</a> and signalNoiseDbm should be be passed as const references because of their sizes.  </dd>
 <dt>Member <a class="el" href="classns3_1_1_aarf_wifi_manager.html#a4c2d4fbb34d152c3c4fe4530681da512">ns3::AarfWifiManager::DoGetRtsTxVector</a>  (<a class="el" href="structns3_1_1_wifi_remote_station.html" title="hold per-remote-station state.">WifiRemoteStation</a> *station)</dt>
-<dd><a class="anchor" id="_todo000158"></a>we could/should implement the Aarf algorithm for RTS only by picking a single rate within the BasicRateSet.  </dd>
+<dd><a class="anchor" id="_todo000158"></a>we could/should implement the AARF algorithm for RTS only by picking a single rate within the BasicRateSet.  </dd>
 <dt>Class <a class="el" href="class_sta_wifi_mac_scanning_test_case.html">StaWifiMacScanningTestCase</a>  </dt>
 <dd><a class="anchor" id="_todo000171"></a>Add explicit association refusal test if ns-3 implemented it.  </dd>
 <dt>Member <a class="el" href="classns3_1_1_b_s_scheduler_simple.html#ab0ef72a5223a70761910bcda7004f510">ns3::BSSchedulerSimple::Schedule</a>  (void)</dt>
@@ -528,7 +525,7 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:12 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:19 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

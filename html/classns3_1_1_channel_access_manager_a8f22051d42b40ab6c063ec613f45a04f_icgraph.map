@@ -1,5 +1,5 @@
 <map id="ns3::ChannelAccessManager::SetupPhyListener" name="ns3::ChannelAccessManager::SetupPhyListener">
-<area shape="rect" id="node1" title="Set up listener for Phy events." alt="" coords="1009,104,1217,145"/>
+<area shape="rect" id="node1" title="Set up listener for PHY events." alt="" coords="1009,104,1217,145"/>
 <area shape="rect" id="node2" href="$classns3_1_1_regular_wifi_mac.html#afac2ce0fb1181ff8f87a4972c41fe2df" title=" " alt="" coords="805,104,961,145"/>
 <area shape="rect" id="node3" href="$classns3_1_1_default_channel_scheduler.html#a04e74683a8fce5f193b3c1f948c73bb9" title="This method will assign default CCH access for CCH." alt="" coords="539,45,757,87"/>
 <area shape="rect" id="node4" href="$classns3_1_1_sta_wifi_mac.html#a260031171ef7fb30b9fa9163b6aec455" title=" " alt="" coords="545,111,751,138"/>

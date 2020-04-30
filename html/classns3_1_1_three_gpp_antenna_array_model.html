@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -166,7 +163,7 @@ $(document).ready(function(){initNavTree('classns3_1_1_three_gpp_antenna_array_m
 </div><!--header-->
 <div class="contents">
 
-<p>Class implementing the antenna model defined in 3GPP TR 38.901.  
+<p>Class implementing the antenna model defined in 3GPP TR 38.901 V15.0.0.  
  <a href="classns3_1_1_three_gpp_antenna_array_model.html#details">More...</a></p>
 
 <p><code>#include &quot;<a class="el" href="three-gpp-antenna-array-model_8h_source.html">three-gpp-antenna-array-model.h</a>&quot;</code></p>
@@ -177,7 +174,7 @@ $(document).ready(function(){initNavTree('classns3_1_1_three_gpp_antenna_array_m
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_three_gpp_antenna_array_model__inherit__graph.png" border="0" usemap="#ns3_1_1_three_gpp_antenna_array_model_inherit__map" alt="Inheritance graph"/></div>
 <map name="ns3_1_1_three_gpp_antenna_array_model_inherit__map" id="ns3_1_1_three_gpp_antenna_array_model_inherit__map">
-<area shape="rect" title="Class implementing the antenna model defined in 3GPP TR 38.901." alt="" coords="5,381,211,423"/>
+<area shape="rect" title="Class implementing the antenna model defined in 3GPP TR 38.901 V15.0.0." alt="" coords="5,381,211,423"/>
 <area shape="rect" href="classns3_1_1_object.html" title="A base class which provides memory management and object aggregation." alt="" coords="61,305,155,332"/>
 <area shape="rect" href="classns3_1_1_simple_ref_count.html" title=" " alt="" coords="25,200,191,256"/>
 <area shape="rect" href="classns3_1_1_object_base.html" title="Anchor the ns&#45;3 type and attribute system." alt="" coords="23,89,150,115"/>
@@ -192,7 +189,7 @@ $(document).ready(function(){initNavTree('classns3_1_1_three_gpp_antenna_array_m
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_three_gpp_antenna_array_model__coll__graph.png" border="0" usemap="#ns3_1_1_three_gpp_antenna_array_model_coll__map" alt="Collaboration graph"/></div>
 <map name="ns3_1_1_three_gpp_antenna_array_model_coll__map" id="ns3_1_1_three_gpp_antenna_array_model_coll__map">
-<area shape="rect" title="Class implementing the antenna model defined in 3GPP TR 38.901." alt="" coords="1347,126,1552,167"/>
+<area shape="rect" title="Class implementing the antenna model defined in 3GPP TR 38.901 V15.0.0." alt="" coords="1347,126,1552,167"/>
 <area shape="rect" href="classns3_1_1_object.html" title="A base class which provides memory management and object aggregation." alt="" coords="1001,77,1096,104"/>
 <area shape="rect" href="structns3_1_1_object_1_1_aggregates.html" title="The list of Objects aggregated to this one." alt="" coords="1361,65,1538,92"/>
 <area shape="rect" href="classns3_1_1_simple_ref_count.html" title=" " alt="" coords="539,5,705,61"/>
@@ -232,7 +229,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a2f658ead10fe49c9d9890d904cd411da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the horizontal and vertical components of the antenna element field pattern at the specified direction.  <a href="classns3_1_1_three_gpp_antenna_array_model.html#a2f658ead10fe49c9d9890d904cd411da">More...</a><br /></td></tr>
 <tr class="separator:a2f658ead10fe49c9d9890d904cd411da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ff8bbbe1673c1a940d46e18af868264"><td class="memItemLeft" align="right" valign="top">virtual Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_three_gpp_antenna_array_model.html#a5ff8bbbe1673c1a940d46e18af868264">GetElementLocation</a> (uint64_t index) const</td></tr>
-<tr class="memdesc:a5ff8bbbe1673c1a940d46e18af868264"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the normalized location of the antenna element with specified index assuming the left bottom corner is (0,0,0).  <a href="classns3_1_1_three_gpp_antenna_array_model.html#a5ff8bbbe1673c1a940d46e18af868264">More...</a><br /></td></tr>
+<tr class="memdesc:a5ff8bbbe1673c1a940d46e18af868264"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the location of the antenna element with the specified index assuming the left bottom corner is (0,0,0), normalized with respect to the wavelength.  <a href="classns3_1_1_three_gpp_antenna_array_model.html#a5ff8bbbe1673c1a940d46e18af868264">More...</a><br /></td></tr>
 <tr class="separator:a5ff8bbbe1673c1a940d46e18af868264"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad69111b092cfd159e2edeeed5e05b256"><td class="memItemLeft" align="right" valign="top">virtual uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_three_gpp_antenna_array_model.html#ad69111b092cfd159e2edeeed5e05b256">GetNumberOfElements</a> (void) const</td></tr>
 <tr class="memdesc:ad69111b092cfd159e2edeeed5e05b256"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of antenna elements.  <a href="classns3_1_1_three_gpp_antenna_array_model.html#ad69111b092cfd159e2edeeed5e05b256">More...</a><br /></td></tr>
@@ -404,9 +401,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a4fcfd18844c60f163c5dce52456d111b inherit related_classns3_1_1_object_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Class implementing the antenna model defined in 3GPP TR 38.901. </p>
+<div class="textblock"><p>Class implementing the antenna model defined in 3GPP TR 38.901 V15.0.0. </p>
+<dl class="section note"><dt>Note</dt><dd>the current implementation supports the modeling of antenna arrays composed of a single panel and with single (vertical) polarization. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00034">34</a> of file <a class="el" href="three-gpp-antenna-array-model_8h_source.html">three-gpp-antenna-array-model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00037">37</a> of file <a class="el" href="three-gpp-antenna-array-model_8h_source.html">three-gpp-antenna-array-model.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aa6af3644cec86d8248d8ab5454d6b2c1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa6af3644cec86d8248d8ab5454d6b2c1">&#9670;&nbsp;</a></span>ComplexVector</h2>
@@ -422,7 +420,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>type definition for complex vectors </p>
 
-<p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00051">51</a> of file <a class="el" href="three-gpp-antenna-array-model_8h_source.html">three-gpp-antenna-array-model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00054">54</a> of file <a class="el" href="three-gpp-antenna-array-model_8h_source.html">three-gpp-antenna-array-model.h</a>.</p>
 
 </div>
 </div>
@@ -447,7 +445,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00033">33</a> of file <a class="el" href="three-gpp-antenna-array-model_8cc_source.html">three-gpp-antenna-array-model.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00110">m_isOmniTx</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
+<p class="reference">References <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00121">m_isOmniTx</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
 
 </div>
 </div>
@@ -504,7 +502,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00102">102</a> of file <a class="el" href="three-gpp-antenna-array-model_8cc_source.html">three-gpp-antenna-array-model.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00110">m_isOmniTx</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
+<p class="reference">References <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00121">m_isOmniTx</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
 
 </div>
 </div>
@@ -529,7 +527,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00117">117</a> of file <a class="el" href="three-gpp-antenna-array-model_8cc_source.html">three-gpp-antenna-array-model.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00111">m_beamformingVector</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
+<p class="reference">References <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00122">m_beamformingVector</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="three-gpp-channel-test-suite_8cc_source.html#l00467">ThreeGppSpectrumPropagationLossModelTest::DoRun()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -563,7 +561,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the horizontal and vertical components of the antenna element field pattern at the specified direction. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Only vertical polarization is considered. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">a</td><td>the angle indicating the interested direction </td></tr>
   </table>
@@ -573,7 +571,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00124">124</a> of file <a class="el" href="three-gpp-antenna-array-model_8cc_source.html">three-gpp-antenna-array-model.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00170">GetRadiationPattern()</a>, <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00116">m_alpha</a>, <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00117">m_beta</a>, <a class="el" href="ipv4-address-generator_8cc.html#aaf5aa23b804d2e5e334106f207e8a6cc">NS_ASSERT_MSG()</a>, <a class="el" href="log_8h_source.html#l00273">NS_LOG_DEBUG</a>, <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>, <a class="el" href="angles_8h_source.html#l00111">ns3::Angles::phi</a>, and <a class="el" href="angles_8h_source.html#l00117">ns3::Angles::theta</a>.</p>
+<p class="reference">References <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00168">GetRadiationPattern()</a>, <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00127">m_alpha</a>, <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00128">m_beta</a>, <a class="el" href="ipv4-address-generator_8cc.html#aaf5aa23b804d2e5e334106f207e8a6cc">NS_ASSERT_MSG()</a>, <a class="el" href="log_8h_source.html#l00273">NS_LOG_DEBUG</a>, <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>, <a class="el" href="angles_8h_source.html#l00111">ns3::Angles::phi</a>, and <a class="el" href="angles_8h_source.html#l00117">ns3::Angles::theta</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -613,7 +611,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the normalized location of the antenna element with specified index assuming the left bottom corner is (0,0,0). </p>
+<p>Returns the location of the antenna element with the specified index assuming the left bottom corner is (0,0,0), normalized with respect to the wavelength. </p>
+<p>Antenna elements are scanned row by row, left to right and bottom to top. For example, an antenna with 2 rows and 3 columns will be ordered as follows: ^ z | 3 4 5 | 0 1 2 -------&mdash;&gt; y</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">index</td><td>index of the antenna element </td></tr>
@@ -622,9 +621,9 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the 3D vector that represents the position of the element </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00197">197</a> of file <a class="el" href="three-gpp-antenna-array-model_8cc_source.html">three-gpp-antenna-array-model.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00195">195</a> of file <a class="el" href="three-gpp-antenna-array-model_8cc_source.html">three-gpp-antenna-array-model.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00116">m_alpha</a>, <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00117">m_beta</a>, <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00115">m_disH</a>, <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00114">m_disV</a>, <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00112">m_numColumns</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
+<p class="reference">References <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00127">m_alpha</a>, <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00128">m_beta</a>, <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00126">m_disH</a>, <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00125">m_disV</a>, <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00123">m_numColumns</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="three-gpp-channel-example_8cc_source.html#l00060">DoBeamforming()</a>, and <a class="el" href="three-gpp-channel-test-suite_8cc_source.html#l00404">ThreeGppSpectrumPropagationLossModelTest::DoBeamforming()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -634,7 +633,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_three_gpp_antenna_array_model_a5ff8bbbe1673c1a940d46e18af868264_icgraph.png" border="0" usemap="#classns3_1_1_three_gpp_antenna_array_model_a5ff8bbbe1673c1a940d46e18af868264_icgraph" alt=""/></div>
 <map name="classns3_1_1_three_gpp_antenna_array_model_a5ff8bbbe1673c1a940d46e18af868264_icgraph" id="classns3_1_1_three_gpp_antenna_array_model_a5ff8bbbe1673c1a940d46e18af868264_icgraph">
-<area shape="rect" title="Returns the normalized location of the antenna element with specified index assuming the left bottom ..." alt="" coords="559,27,764,69"/>
+<area shape="rect" title="Returns the location of the antenna element with the specified index assuming the left bottom corner ..." alt="" coords="559,27,764,69"/>
 <area shape="rect" href="three-gpp-channel-example_8cc.html#a6c3fead2a5b07b90a1ad7cd83b24dc4b" title="Perform the beamforming using the DFT beamforming method." alt="" coords="330,5,459,32"/>
 <area shape="rect" href="class_three_gpp_spectrum_propagation_loss_model_test.html#adca8880345b8742615750be25b547f3f" title="Points the beam of thisDevice towards otherDevice." alt="" coords="279,57,511,98"/>
 <area shape="rect" href="class_three_gpp_spectrum_propagation_loss_model_test.html#ab450da09766147dacd0d209d5e7d9044" title="Build the test scenario." alt="" coords="5,57,231,98"/>
@@ -670,9 +669,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Returns the number of antenna elements. </p>
 <dl class="section return"><dt>Returns</dt><dd>the number of antenna elements </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00217">217</a> of file <a class="el" href="three-gpp-antenna-array-model_8cc_source.html">three-gpp-antenna-array-model.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00215">215</a> of file <a class="el" href="three-gpp-antenna-array-model_8cc_source.html">three-gpp-antenna-array-model.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00112">m_numColumns</a>, <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00113">m_numRows</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
+<p class="reference">References <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00123">m_numColumns</a>, <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00124">m_numRows</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="three-gpp-channel-example_8cc_source.html#l00060">DoBeamforming()</a>, <a class="el" href="three-gpp-channel-test-suite_8cc_source.html#l00404">ThreeGppSpectrumPropagationLossModelTest::DoBeamforming()</a>, and <a class="el" href="three-gpp-channel-test-suite_8cc_source.html#l00090">ThreeGppChannelMatrixComputationTest::DoComputeNorm()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -737,9 +736,9 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the radiation power pattern in dB </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00170">170</a> of file <a class="el" href="three-gpp-antenna-array-model_8cc_source.html">three-gpp-antenna-array-model.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00168">168</a> of file <a class="el" href="three-gpp-antenna-array-model_8cc_source.html">three-gpp-antenna-array-model.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00118">m_gE</a>, <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00119">m_isIsotropic</a>, <a class="el" href="80211b_8c_source.html#l00042">min</a>, and <a class="el" href="ipv4-address-generator_8cc.html#aaf5aa23b804d2e5e334106f207e8a6cc">NS_ASSERT_MSG()</a>.</p>
+<p class="reference">References <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00129">m_gE</a>, <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00130">m_isIsotropic</a>, <a class="el" href="80211b_8c_source.html#l00042">min</a>, and <a class="el" href="ipv4-address-generator_8cc.html#aaf5aa23b804d2e5e334106f207e8a6cc">NS_ASSERT_MSG()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00124">GetElementFieldPattern()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -793,7 +792,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00045">45</a> of file <a class="el" href="three-gpp-antenna-array-model_8cc_source.html">three-gpp-antenna-array-model.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00116">m_alpha</a>, <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00117">m_beta</a>, <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00115">m_disH</a>, <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00114">m_disV</a>, <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00118">m_gE</a>, <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00119">m_isIsotropic</a>, <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00112">m_numColumns</a>, <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00113">m_numRows</a>, <a class="el" href="boolean_8h_source.html#l00085">ns3::MakeBooleanAccessor()</a>, <a class="el" href="boolean_8cc_source.html#l00121">ns3::MakeBooleanChecker()</a>, <a class="el" href="double_8h_source.html#l00042">ns3::MakeDoubleAccessor()</a>, <a class="el" href="uinteger_8h_source.html#l00045">ns3::MakeUintegerAccessor()</a>, and <a class="el" href="type-id_8cc_source.html#l00922">ns3::TypeId::SetParent()</a>.</p>
+<p class="reference">References <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00127">m_alpha</a>, <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00128">m_beta</a>, <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00126">m_disH</a>, <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00125">m_disV</a>, <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00129">m_gE</a>, <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00130">m_isIsotropic</a>, <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00123">m_numColumns</a>, <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00124">m_numRows</a>, <a class="el" href="boolean_8h_source.html#l00085">ns3::MakeBooleanAccessor()</a>, <a class="el" href="boolean_8cc_source.html#l00121">ns3::MakeBooleanChecker()</a>, <a class="el" href="double_8h_source.html#l00042">ns3::MakeDoubleAccessor()</a>, <a class="el" href="uinteger_8h_source.html#l00045">ns3::MakeUintegerAccessor()</a>, and <a class="el" href="type-id_8cc_source.html#l00923">ns3::TypeId::SetParent()</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -836,7 +835,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00095">95</a> of file <a class="el" href="three-gpp-antenna-array-model_8cc_source.html">three-gpp-antenna-array-model.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00110">m_isOmniTx</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
+<p class="reference">References <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00121">m_isOmniTx</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
 
 </div>
 </div>
@@ -866,7 +865,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00109">109</a> of file <a class="el" href="three-gpp-antenna-array-model_8cc_source.html">three-gpp-antenna-array-model.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00111">m_beamformingVector</a>, <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00110">m_isOmniTx</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
+<p class="reference">References <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00122">m_beamformingVector</a>, <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00121">m_isOmniTx</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="three-gpp-channel-example_8cc_source.html#l00060">DoBeamforming()</a>, <a class="el" href="three-gpp-channel-test-suite_8cc_source.html#l00404">ThreeGppSpectrumPropagationLossModelTest::DoBeamforming()</a>, and <a class="el" href="three-gpp-channel-test-suite_8cc_source.html#l00467">ThreeGppSpectrumPropagationLossModelTest::DoRun()</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -908,9 +907,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>the bearing angle in radians </p>
 
-<p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00116">116</a> of file <a class="el" href="three-gpp-antenna-array-model_8h_source.html">three-gpp-antenna-array-model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00127">127</a> of file <a class="el" href="three-gpp-antenna-array-model_8h_source.html">three-gpp-antenna-array-model.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00124">GetElementFieldPattern()</a>, <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00197">GetElementLocation()</a>, and <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00045">GetTypeId()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00124">GetElementFieldPattern()</a>, <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00195">GetElementLocation()</a>, and <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00045">GetTypeId()</a>.</p>
 
 </div>
 </div>
@@ -936,7 +935,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>the beamforming vector in use </p>
 
-<p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00111">111</a> of file <a class="el" href="three-gpp-antenna-array-model_8h_source.html">three-gpp-antenna-array-model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00122">122</a> of file <a class="el" href="three-gpp-antenna-array-model_8h_source.html">three-gpp-antenna-array-model.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00117">GetBeamformingVector()</a>, and <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00109">SetBeamformingVector()</a>.</p>
 
@@ -964,9 +963,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>the downtilt angle in radians </p>
 
-<p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00117">117</a> of file <a class="el" href="three-gpp-antenna-array-model_8h_source.html">three-gpp-antenna-array-model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00128">128</a> of file <a class="el" href="three-gpp-antenna-array-model_8h_source.html">three-gpp-antenna-array-model.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00124">GetElementFieldPattern()</a>, <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00197">GetElementLocation()</a>, and <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00045">GetTypeId()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00124">GetElementFieldPattern()</a>, <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00195">GetElementLocation()</a>, and <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00045">GetTypeId()</a>.</p>
 
 </div>
 </div>
@@ -992,9 +991,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>antenna spacing in the horizontal direction in multiples of wave length </p>
 
-<p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00115">115</a> of file <a class="el" href="three-gpp-antenna-array-model_8h_source.html">three-gpp-antenna-array-model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00126">126</a> of file <a class="el" href="three-gpp-antenna-array-model_8h_source.html">three-gpp-antenna-array-model.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00197">GetElementLocation()</a>, and <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00045">GetTypeId()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00195">GetElementLocation()</a>, and <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00045">GetTypeId()</a>.</p>
 
 </div>
 </div>
@@ -1020,9 +1019,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>antenna spacing in the vertical direction in multiples of wave length </p>
 
-<p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00114">114</a> of file <a class="el" href="three-gpp-antenna-array-model_8h_source.html">three-gpp-antenna-array-model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00125">125</a> of file <a class="el" href="three-gpp-antenna-array-model_8h_source.html">three-gpp-antenna-array-model.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00197">GetElementLocation()</a>, and <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00045">GetTypeId()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00195">GetElementLocation()</a>, and <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00045">GetTypeId()</a>.</p>
 
 </div>
 </div>
@@ -1048,9 +1047,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>directional gain of a single antenna element (dBi) </p>
 
-<p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00118">118</a> of file <a class="el" href="three-gpp-antenna-array-model_8h_source.html">three-gpp-antenna-array-model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00129">129</a> of file <a class="el" href="three-gpp-antenna-array-model_8h_source.html">three-gpp-antenna-array-model.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00170">GetRadiationPattern()</a>, and <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00045">GetTypeId()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00168">GetRadiationPattern()</a>, and <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00045">GetTypeId()</a>.</p>
 
 </div>
 </div>
@@ -1076,9 +1075,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>if true, antenna elements are isotropic </p>
 
-<p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00119">119</a> of file <a class="el" href="three-gpp-antenna-array-model_8h_source.html">three-gpp-antenna-array-model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00130">130</a> of file <a class="el" href="three-gpp-antenna-array-model_8h_source.html">three-gpp-antenna-array-model.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00170">GetRadiationPattern()</a>, and <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00045">GetTypeId()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00168">GetRadiationPattern()</a>, and <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00045">GetTypeId()</a>.</p>
 
 </div>
 </div>
@@ -1104,7 +1103,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>true if the antenna is configured for omni transmissions </p>
 
-<p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00110">110</a> of file <a class="el" href="three-gpp-antenna-array-model_8h_source.html">three-gpp-antenna-array-model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00121">121</a> of file <a class="el" href="three-gpp-antenna-array-model_8h_source.html">three-gpp-antenna-array-model.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00033">ThreeGppAntennaArrayModel()</a>, <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00102">ChangeToOmniTx()</a>, <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00095">IsOmniTx()</a>, and <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00109">SetBeamformingVector()</a>.</p>
 
@@ -1132,9 +1131,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>number of columns </p>
 
-<p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00112">112</a> of file <a class="el" href="three-gpp-antenna-array-model_8h_source.html">three-gpp-antenna-array-model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00123">123</a> of file <a class="el" href="three-gpp-antenna-array-model_8h_source.html">three-gpp-antenna-array-model.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00197">GetElementLocation()</a>, <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00217">GetNumberOfElements()</a>, and <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00045">GetTypeId()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00195">GetElementLocation()</a>, <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00215">GetNumberOfElements()</a>, and <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00045">GetTypeId()</a>.</p>
 
 </div>
 </div>
@@ -1160,9 +1159,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>number of rows </p>
 
-<p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00113">113</a> of file <a class="el" href="three-gpp-antenna-array-model_8h_source.html">three-gpp-antenna-array-model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="three-gpp-antenna-array-model_8h_source.html#l00124">124</a> of file <a class="el" href="three-gpp-antenna-array-model_8h_source.html">three-gpp-antenna-array-model.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00217">GetNumberOfElements()</a>, and <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00045">GetTypeId()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00215">GetNumberOfElements()</a>, and <a class="el" href="three-gpp-antenna-array-model_8cc_source.html#l00045">GetTypeId()</a>.</p>
 
 </div>
 </div>
@@ -1180,7 +1179,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_three_gpp_antenna_array_model.html">ThreeGppAntennaArrayModel</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:42 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:44 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

@@ -20,6 +20,7 @@ var classns3_1_1_ideal_wifi_manager =
     [ "GetSnrThreshold", "classns3_1_1_ideal_wifi_manager.html#a54dbe87febb24476928b3ad7806bb00b", null ],
     [ "GetTypeId", "classns3_1_1_ideal_wifi_manager.html#a98bda34492dd38b9dddeee56113a068d", null ],
     [ "IsLowLatency", "classns3_1_1_ideal_wifi_manager.html#a34e6d6e51740309e22ac28f1a69655e8", null ],
+    [ "Reset", "classns3_1_1_ideal_wifi_manager.html#a052a3d3e3ea99b1068de57124a17b50e", null ],
     [ "SetupPhy", "classns3_1_1_ideal_wifi_manager.html#ae05781ebf4eaf1d86f4c85d63d4dc894", null ],
     [ "m_ber", "classns3_1_1_ideal_wifi_manager.html#a470ced4d78876560eaffb1d96cb2a1d9", null ],
     [ "m_currentRate", "classns3_1_1_ideal_wifi_manager.html#ace233bd5a507e354ee1eac6c77b3944b", null ],

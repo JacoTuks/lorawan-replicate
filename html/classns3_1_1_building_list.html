@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -303,7 +300,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="building-list_8cc_source.html#l00077">ns3::BuildingListPriv::Get()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="building-container_8cc_source.html#l00092">ns3::BuildingContainer::GetGlobal()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00070">ns3::RandomBuildingPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00165">ns3::OutdoorPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00244">ns3::RandomRoomPositionAllocator::GetNext()</a>, <a class="el" href="buildings-channel-condition-model_8cc_source.html#l00106">ns3::BuildingsChannelConditionModel::IsWithinLineOfSight()</a>, <a class="el" href="buildings-helper_8cc_source.html#l00080">ns3::BuildingsHelper::MakeConsistent()</a>, and <a class="el" href="mobility-building-info_8cc_source.html#l00178">ns3::MobilityBuildingInfo::MakeConsistent()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="building-container_8cc_source.html#l00092">ns3::BuildingContainer::GetGlobal()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00070">ns3::RandomBuildingPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00165">ns3::OutdoorPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00244">ns3::RandomRoomPositionAllocator::GetNext()</a>, <a class="el" href="buildings-channel-condition-model_8cc_source.html#l00107">ns3::BuildingsChannelConditionModel::IsLineOfSightBlocked()</a>, <a class="el" href="buildings-helper_8cc_source.html#l00080">ns3::BuildingsHelper::MakeConsistent()</a>, and <a class="el" href="mobility-building-info_8cc_source.html#l00178">ns3::MobilityBuildingInfo::MakeConsistent()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -335,7 +332,7 @@ Static Public Member Functions</h2></td></tr>
 <area shape="rect" href="classns3_1_1_random_building_position_allocator.html#acc13be0f1574919de88528c1189aea0e" title=" " alt="" coords="575,71,787,112"/>
 <area shape="rect" href="classns3_1_1_outdoor_position_allocator.html#a4689f0a076879c165213b5747eb666de" title=" " alt="" coords="573,136,788,177"/>
 <area shape="rect" href="classns3_1_1_random_room_position_allocator.html#afb06193f6fb4d4e1c9febd1f8c884294" title=" " alt="" coords="553,201,808,243"/>
-<area shape="rect" href="classns3_1_1_buildings_channel_condition_model.html#a4fd08585f74c4712c3865c0f48f2ab8c" title="Checks if the is a building in between position L1 and position L2." alt="" coords="567,267,795,308"/>
+<area shape="rect" href="classns3_1_1_buildings_channel_condition_model.html#a3b97a7666596f013e8e59e42ca93d756" title="Checks if the line of sight between position l1 and position l2 is blocked by a building." alt="" coords="567,267,795,308"/>
 <area shape="rect" href="classns3_1_1_buildings_helper.html#a08f7a5049843eb192e11a17a48c3bc1c" title="Make the given mobility model consistent, by determining whether its position falls inside any of the..." alt="" coords="603,332,759,373"/>
 <area shape="rect" href="classns3_1_1_mobility_building_info.html#ad6d5725d5ed16f0d4d611cb8acf0ee42" title="Make the given mobility model consistent, by determining whether its position falls inside any of the..." alt="" coords="589,411,773,452"/>
 <area shape="rect" href="classns3_1_1_buildings_channel_condition_model.html#a33a93a848acc2fb6ba1c09648c12bc50" title="Computes the condition of the channel between a and b." alt="" coords="277,253,505,295"/>
@@ -384,7 +381,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="building-list_8cc_source.html#l00077">ns3::BuildingListPriv::Get()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="building-container_8cc_source.html#l00092">ns3::BuildingContainer::GetGlobal()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00070">ns3::RandomBuildingPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00165">ns3::OutdoorPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00244">ns3::RandomRoomPositionAllocator::GetNext()</a>, <a class="el" href="buildings-channel-condition-model_8cc_source.html#l00106">ns3::BuildingsChannelConditionModel::IsWithinLineOfSight()</a>, <a class="el" href="buildings-helper_8cc_source.html#l00080">ns3::BuildingsHelper::MakeConsistent()</a>, and <a class="el" href="mobility-building-info_8cc_source.html#l00178">ns3::MobilityBuildingInfo::MakeConsistent()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="building-container_8cc_source.html#l00092">ns3::BuildingContainer::GetGlobal()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00070">ns3::RandomBuildingPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00165">ns3::OutdoorPositionAllocator::GetNext()</a>, <a class="el" href="building-position-allocator_8cc_source.html#l00244">ns3::RandomRoomPositionAllocator::GetNext()</a>, <a class="el" href="buildings-channel-condition-model_8cc_source.html#l00107">ns3::BuildingsChannelConditionModel::IsLineOfSightBlocked()</a>, <a class="el" href="buildings-helper_8cc_source.html#l00080">ns3::BuildingsHelper::MakeConsistent()</a>, and <a class="el" href="mobility-building-info_8cc_source.html#l00178">ns3::MobilityBuildingInfo::MakeConsistent()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -416,7 +413,7 @@ Static Public Member Functions</h2></td></tr>
 <area shape="rect" href="classns3_1_1_random_building_position_allocator.html#acc13be0f1574919de88528c1189aea0e" title=" " alt="" coords="575,71,787,112"/>
 <area shape="rect" href="classns3_1_1_outdoor_position_allocator.html#a4689f0a076879c165213b5747eb666de" title=" " alt="" coords="573,136,788,177"/>
 <area shape="rect" href="classns3_1_1_random_room_position_allocator.html#afb06193f6fb4d4e1c9febd1f8c884294" title=" " alt="" coords="553,201,808,243"/>
-<area shape="rect" href="classns3_1_1_buildings_channel_condition_model.html#a4fd08585f74c4712c3865c0f48f2ab8c" title="Checks if the is a building in between position L1 and position L2." alt="" coords="567,267,795,308"/>
+<area shape="rect" href="classns3_1_1_buildings_channel_condition_model.html#a3b97a7666596f013e8e59e42ca93d756" title="Checks if the line of sight between position l1 and position l2 is blocked by a building." alt="" coords="567,267,795,308"/>
 <area shape="rect" href="classns3_1_1_buildings_helper.html#a08f7a5049843eb192e11a17a48c3bc1c" title="Make the given mobility model consistent, by determining whether its position falls inside any of the..." alt="" coords="603,332,759,373"/>
 <area shape="rect" href="classns3_1_1_mobility_building_info.html#ad6d5725d5ed16f0d4d611cb8acf0ee42" title="Make the given mobility model consistent, by determining whether its position falls inside any of the..." alt="" coords="589,411,773,452"/>
 <area shape="rect" href="classns3_1_1_buildings_channel_condition_model.html#a33a93a848acc2fb6ba1c09648c12bc50" title="Computes the condition of the channel between a and b." alt="" coords="277,253,505,295"/>
@@ -584,7 +581,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_building_list.html">BuildingList</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:21 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:27 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

@@ -43,10 +43,10 @@
 <area shape="rect" id="node35" href="$classns3_1_1_txop.html#ae211c699c905b2186281923353ba0a26" title="Generate a new backoff now." alt="" coords="551,921,754,948"/>
 <area shape="rect" id="node39" href="$classns3_1_1_wifi_mac_header.html#aa1c4acbda4ace9f7a920c97d71bdd097" title="Return the address in the Address 1 field." alt="" coords="576,973,729,1014"/>
 <area shape="rect" id="node40" href="$classns3_1_1_channel_access_manager.html#ad7a1a64ddd5206865b5989d9401b70ee" title="Determine if a new backoff needs to be generated when a packet is queued for transmission." alt="" coords="549,1038,757,1079"/>
-<area shape="rect" id="node41" href="$classns3_1_1_wifi_remote_station_manager.html#a4812b9abae368de05cbd1393b7053f90" title=" " alt="" coords="536,1103,769,1145"/>
+<area shape="rect" id="node41" href="$classns3_1_1_wifi_remote_station_manager.html#a38a2549c86091c3ca7eba3841f0060d3" title=" " alt="" coords="536,1103,769,1145"/>
 <area shape="rect" id="node42" href="$classns3_1_1_packet.html#a078fe922d976a417ab25ba2f3c2fd667" title="Remove a packet tag." alt="" coords="541,871,764,897"/>
 <area shape="rect" id="node43" href="$classns3_1_1_txop.html#afd99f40351a5b67181f14008d0751075" title="Request access from Txop if needed." alt="" coords="563,1169,742,1210"/>
 <area shape="rect" id="node36" href="$classns3_1_1_txop.html#a3b733c5a31045a10b5074f4ff8026a81" title=" " alt="" coords="861,921,997,948"/>
-<area shape="rect" id="node37" href="$classns3_1_1_random_variable_stream.html#a66cd94e6305ce7f000f1a9ff0fcb9aef" title="Get the next random value as an integer drawn from the distribution." alt="" coords="825,973,1033,1014"/>
+<area shape="rect" id="node37" href="$classns3_1_1_uniform_random_variable.html#ab7c7dedc88cb97e74418df2edc28a787" title="Get the next random value, as an unsigned integer in the specified range ." alt="" coords="821,973,1036,1014"/>
 <area shape="rect" id="node38" href="$classns3_1_1_txop.html#ad63eb9d04c01d5a3b7568cbb182fdf1d" title=" " alt="" coords="827,1039,1030,1065"/>
 </map>

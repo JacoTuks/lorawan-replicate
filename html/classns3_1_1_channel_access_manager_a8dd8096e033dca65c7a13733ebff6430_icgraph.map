@@ -1,5 +1,5 @@
 <map id="ns3::ChannelAccessManager::NotifySleepNow" name="ns3::ChannelAccessManager::NotifySleepNow">
-<area shape="rect" id="node1" title="Notify the DCF that the device has been put in sleep mode." alt="" coords="1048,100,1256,141"/>
+<area shape="rect" id="node1" title="Notify the Txop that the device has been put in sleep mode." alt="" coords="1048,100,1256,141"/>
 <area shape="rect" id="node2" href="$classns3_1_1_phy_listener.html#ac7e04a3d674ddd32c95a4ae8b6343f9b" title="Notify listeners that we went to sleep." alt="" coords="814,71,991,112"/>
 <area shape="rect" id="node3" href="$classns3_1_1_ocb_wifi_mac.html#aa225044c84d3a80b2f7e2d721d13b481" title="To support MAC extension for multiple channel operation, Suspend the activity in current MAC entity." alt="" coords="805,137,1000,163"/>
 <area shape="rect" id="node4" href="$classns3_1_1_default_channel_scheduler.html#a661fb5bfff90527fa4be59820ccf8bdf" title=" " alt="" coords="539,129,757,171"/>

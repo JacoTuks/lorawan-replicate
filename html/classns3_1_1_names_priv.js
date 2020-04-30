@@ -16,7 +16,6 @@ var classns3_1_1_names_priv =
     [ "Rename", "classns3_1_1_names_priv.html#aa8e3600d5c9144e472ddf263040e2f6b", null ],
     [ "Rename", "classns3_1_1_names_priv.html#a51f6ec455739940fa02c6b46d1ea273a", null ],
     [ "Rename", "classns3_1_1_names_priv.html#a6f0e7c4335aac3b5ed4abe0b7cc43ebc", null ],
-    [ "Names", "classns3_1_1_names_priv.html#a8e6dace6fb74ee2b530528e4ecd0f22c", null ],
     [ "m_objectMap", "classns3_1_1_names_priv.html#a19b615be3c0c142fe0ec7539db8598cf", null ],
     [ "m_root", "classns3_1_1_names_priv.html#a24851b2ca8230416228472b2e4e1b587", null ]
 ];

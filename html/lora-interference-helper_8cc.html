@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -156,13 +153,15 @@ $(document).ready(function(){initNavTree('lora-interference-helper_8cc.html','')
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">lora-interference-helper.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;ns3/lora-interference-helper.h&quot;</code><br />
 <code>#include &quot;ns3/log.h&quot;</code><br />
+<code>#include &quot;ns3/enum.h&quot;</code><br />
 <code>#include &lt;limits&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for lora-interference-helper.cc:</div>
@@ -171,10 +170,11 @@ $(document).ready(function(){initNavTree('lora-interference-helper_8cc.html','')
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="lora-interference-helper_8cc__incl.png" border="0" usemap="#src_2lorawan_2model_2lora-interference-helper_8cc" alt=""/></div>
 <map name="src_2lorawan_2model_2lora-interference-helper_8cc" id="src_2lorawan_2model_2lora-interference-helper_8cc">
-<area shape="rect" title=" " alt="" coords="143,5,314,47"/>
+<area shape="rect" title=" " alt="" coords="201,5,371,47"/>
 <area shape="rect" title=" " alt="" coords="5,95,164,136"/>
 <area shape="rect" title=" " alt="" coords="188,102,269,129"/>
-<area shape="rect" title=" " alt="" coords="294,102,353,129"/>
+<area shape="rect" title=" " alt="" coords="294,102,393,129"/>
+<area shape="rect" title=" " alt="" coords="417,102,475,129"/>
 </map>
 </div>
 </div>
@@ -185,12 +185,21 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacens3"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacens3.html">ns3</a></td></tr>
 <tr class="memdesc:namespacens3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Every class exported by the <a class="el" href="namespacens3.html" title="Every class exported by the ns3 library is enclosed in the ns3 namespace.">ns3</a> library is enclosed in the <a class="el" href="namespacens3.html" title="Every class exported by the ns3 library is enclosed in the ns3 namespace.">ns3</a> namespace. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacens3_1_1lorawan"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacens3_1_1lorawan.html">ns3::lorawan</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af41a0d9fcc89b4d4e38cb2e17dcb94aa"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacens3.html#af41a0d9fcc89b4d4e38cb2e17dcb94aa">ns3::operator&lt;&lt;</a> (std::ostream &amp;os, const LoraInterferenceHelper::Event &amp;event)</td></tr>
-<tr class="memdesc:af41a0d9fcc89b4d4e38cb2e17dcb94aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow easy logging of <a class="el" href="classns3_1_1_lora_interference_helper.html" title="Helper for LoraPhy that manages interference calculations.">LoraInterferenceHelper</a> Events.  <a href="namespacens3.html#af41a0d9fcc89b4d4e38cb2e17dcb94aa">More...</a><br /></td></tr>
-<tr class="separator:af41a0d9fcc89b4d4e38cb2e17dcb94aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaed24aec23e4696d1b326a5f3b235de"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacens3_1_1lorawan.html#aaaed24aec23e4696d1b326a5f3b235de">ns3::lorawan::operator&lt;&lt;</a> (std::ostream &amp;os, const LoraInterferenceHelper::Event &amp;event)</td></tr>
+<tr class="memdesc:aaaed24aec23e4696d1b326a5f3b235de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow easy logging of <a class="el" href="classns3_1_1lorawan_1_1_lora_interference_helper.html" title="Helper for LoraPhy that manages interference calculations.">LoraInterferenceHelper</a> Events.  <a href="namespacens3_1_1lorawan.html#aaaed24aec23e4696d1b326a5f3b235de">More...</a><br /></td></tr>
+<tr class="separator:aaaed24aec23e4696d1b326a5f3b235de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a9aa6b8fcb94d89a0070519a22265404d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacens3_1_1lorawan.html#a9aa6b8fcb94d89a0070519a22265404d">ns3::lorawan::inf</a> = std::numeric_limits&lt;double&gt;::<a class="el" href="80211b_8c.html#affe776513b24d84b39af8ab0930fef7f">max</a> ()</td></tr>
+<tr class="separator:a9aa6b8fcb94d89a0070519a22265404d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5b15297e539993f4cb3d2cc1dd2d5a9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacens3_1_1lorawan.html#ad5b15297e539993f4cb3d2cc1dd2d5a9">ns3::lorawan::minf</a> = std::numeric_limits&lt;double&gt;::<a class="el" href="80211b_8c.html#ac6afabdc09a49a433ee19d8a9486056d">min</a> ()</td></tr>
+<tr class="separator:ad5b15297e539993f4cb3d2cc1dd2d5a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -202,7 +211,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_1fa77e9b4d98a3b702d3db2d326dbbf0.html">lorawan</a></li><li class="navelem"><a class="el" href="dir_520749a130b759ad04942dfd271ec008.html">model</a></li><li class="navelem"><a class="el" href="lora-interference-helper_8cc.html">lora-interference-helper.cc</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:10 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:17 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

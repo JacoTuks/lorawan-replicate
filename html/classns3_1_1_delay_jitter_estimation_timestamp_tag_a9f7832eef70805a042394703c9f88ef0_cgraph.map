@@ -3,7 +3,7 @@
 <area shape="rect" id="node2" href="$classns3_1_1_delay_jitter_estimation_timestamp_tag.html#a274334ddbccb4170e2f81eb867d42233" title="Get the type ID." alt="" coords="299,125,491,166"/>
 <area shape="rect" id="node3" href="$classns3_1_1_delay_jitter_estimation_timestamp_tag.html#a0e65cf559006b374f234093e54e06118" title="Get the Transmission time stored in the tag." alt="" coords="539,19,735,61"/>
 <area shape="rect" id="node5" href="$namespacens3.html#a14613e89827b8d95bcfcbe23a763d4b6" title=" " alt="" coords="547,107,726,133"/>
-<area shape="rect" id="node6" href="$group__time.html#ga7032965bd4afa578691d88c09e4481c1" title="Helper to make a Time checker with bounded range. Both limits are inclusive." alt="" coords="551,157,723,184"/>
+<area shape="rect" id="node6" href="$namespacens3.html#a7032965bd4afa578691d88c09e4481c1" title="Helper to make a Time checker with bounded range. Both limits are inclusive." alt="" coords="551,157,723,184"/>
 <area shape="rect" id="node13" href="$classns3_1_1_type_id.html#abaaca67ab7d2471067e7c275df0f7309" title="Set the parent TypeId." alt="" coords="553,347,720,373"/>
 <area shape="rect" id="node4" href="$group__time.html#ga464a3c1cbb458c6c3ed3bd5ce9506758" title=" " alt="" coords="827,5,941,32"/>
 <area shape="rect" id="node7" href="$namespacens3.html#a952d99f6d759fee74dda19f308451bc1" title="Return a deep copy of a Ptr." alt="" coords="841,56,927,83"/>

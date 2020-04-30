@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -227,7 +224,7 @@ $(document).ready(function(){initNavTree('lte-net-device_8h_source.html',''); in
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classns3_1_1_address.html">Address</a> <a class="code" href="classns3_1_1_lte_net_device.html#a34c54cd08cc30115c39b5e4861605877">GetMulticast</a> (<a class="code" href="classns3_1_1_ipv4_address.html">Ipv4Address</a> addr) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classns3_1_1_address.html">Address</a> <a class="code" href="classns3_1_1_lte_net_device.html#a34c54cd08cc30115c39b5e4861605877">GetMulticast</a> (<a class="code" href="classns3_1_1_ipv6_address.html">Ipv6Address</a> addr) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_lte_net_device.html#aebcccb4e0b3cf13758c1d71a68b50c5e">SetPromiscReceiveCallback</a> (<a class="code" href="classns3_1_1_callback.html">PromiscReceiveCallback</a> cb); </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classns3_1_1_lte_net_device.html#a5db1286052905f80b9df65b6af5f3c5e">SendFrom</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Packet&gt;</a> <a class="code" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>, <span class="keyword">const</span> <a class="code" href="classns3_1_1_address.html">Address</a>&amp; source, <span class="keyword">const</span> <a class="code" href="classns3_1_1_address.html">Address</a>&amp; dest, uint16_t protocolNumber);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classns3_1_1_lte_net_device.html#a5db1286052905f80b9df65b6af5f3c5e">SendFrom</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Packet&gt;</a> packet, <span class="keyword">const</span> <a class="code" href="classns3_1_1_address.html">Address</a>&amp; source, <span class="keyword">const</span> <a class="code" href="classns3_1_1_address.html">Address</a>&amp; dest, uint16_t protocolNumber);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classns3_1_1_lte_net_device.html#af36a5159f62b10009da5564396824870">SupportsSendFrom</a> (<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_lte_net_device.html#a52302e688e6fdf9abba088b2b26e5408">Receive</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Packet&gt;</a> p);</div>
@@ -267,7 +264,6 @@ $(document).ready(function(){initNavTree('lte-net-device_8h_source.html',''); in
 <div class="ttc" id="aclassns3_1_1_lte_net_device_html_ae64a898c975d637ede14ef196286169b"><div class="ttname"><a href="classns3_1_1_lte_net_device.html#ae64a898c975d637ede14ef196286169b">ns3::LteNetDevice::IsLinkUp</a></div><div class="ttdeci">virtual bool IsLinkUp(void) const</div><div class="ttdef"><b>Definition:</b> <a href="lte-net-device_8cc_source.html#l00184">lte-net-device.cc:184</a></div></div>
 <div class="ttc" id="aclassns3_1_1_lte_net_device_html_a57cac501c5c7a49206f2bd8d4c8bf7fe"><div class="ttname"><a href="classns3_1_1_lte_net_device.html#a57cac501c5c7a49206f2bd8d4c8bf7fe">ns3::LteNetDevice::DoDispose</a></div><div class="ttdeci">virtual void DoDispose(void)</div><div class="ttdoc">Destructor implementation.</div><div class="ttdef"><b>Definition:</b> <a href="lte-net-device_8cc_source.html#l00078">lte-net-device.cc:78</a></div></div>
 <div class="ttc" id="aclassns3_1_1_lte_net_device_html_a164e52b05cdbc626ddddb4f4ff4aa7b1"><div class="ttname"><a href="classns3_1_1_lte_net_device.html#a164e52b05cdbc626ddddb4f4ff4aa7b1">ns3::LteNetDevice::SetMtu</a></div><div class="ttdeci">virtual bool SetMtu(const uint16_t mtu)</div><div class="ttdef"><b>Definition:</b> <a href="lte-net-device_8cc_source.html#l00153">lte-net-device.cc:153</a></div></div>
-<div class="ttc" id="alora-mac-test_8cc_html_a084e879e2a4e6b1e078575d3693a0c3a"><div class="ttname"><a href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a></div><div class="ttdeci">Ptr&lt; Packet &gt; packet</div><div class="ttdef"><b>Definition:</b> <a href="lora-mac-test_8cc_source.html#l00021">lora-mac-test.cc:21</a></div></div>
 <div class="ttc" id="aclassns3_1_1_ipv4_address_html"><div class="ttname"><a href="classns3_1_1_ipv4_address.html">ns3::Ipv4Address</a></div><div class="ttdoc">Ipv4 addresses are stored in host order in this class.</div><div class="ttdef"><b>Definition:</b> <a href="ipv4-address_8h_source.html#l00041">ipv4-address.h:41</a></div></div>
 <div class="ttc" id="aclassns3_1_1_ipv6_address_html"><div class="ttname"><a href="classns3_1_1_ipv6_address.html">ns3::Ipv6Address</a></div><div class="ttdoc">Describes an IPv6 address.</div><div class="ttdef"><b>Definition:</b> <a href="ipv6-address_8h_source.html#l00049">ipv6-address.h:50</a></div></div>
 <div class="ttc" id="aclassns3_1_1_mac64_address_html"><div class="ttname"><a href="classns3_1_1_mac64_address.html">ns3::Mac64Address</a></div><div class="ttdoc">an EUI-64 address</div><div class="ttdef"><b>Definition:</b> <a href="mac64-address_8h_source.html#l00043">mac64-address.h:44</a></div></div>
@@ -314,7 +310,7 @@ $(document).ready(function(){initNavTree('lte-net-device_8h_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ef1775b0ff4284164f823a882317d681.html">lte</a></li><li class="navelem"><a class="el" href="dir_d84c0a9c9435ae3a7e1022dda3bc062b.html">model</a></li><li class="navelem"><a class="el" href="lte-net-device_8h.html">lte-net-device.h</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:34:59 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:07 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

@@ -13,8 +13,8 @@
 <area shape="rect" id="node43" href="$classns3_1_1_simulator.html#a671882c894a08af4a5e91181bf1eec13" title="Schedule an event to expire after delay." alt="" coords="258,630,441,657"/>
 <area shape="rect" id="node44" href="$classns3_1_1_block_ack_agreement.html#a8597f6b15616bc0faac1e35966cda24f" title="Enable or disable A&#45;MSDU support." alt="" coords="257,681,442,723"/>
 <area shape="rect" id="node45" href="$classns3_1_1_block_ack_agreement.html#a78071664adb9207a45124d882b1860c8" title="Set buffer size." alt="" coords="257,747,442,788"/>
-<area shape="rect" id="node46" href="$classns3_1_1_block_ack_agreement.html#a306b340b9e9f05cbd5fedd3a412aa6ca" title="Set Block ACK policy to delayed ACK." alt="" coords="257,812,442,853"/>
-<area shape="rect" id="node47" href="$classns3_1_1_block_ack_agreement.html#a10cc1c1547def33759fd958ff5cfe8b2" title="Set Block ACK policy to immediate ACK." alt="" coords="257,877,442,919"/>
+<area shape="rect" id="node46" href="$classns3_1_1_block_ack_agreement.html#a306b340b9e9f05cbd5fedd3a412aa6ca" title="Set block ack policy to delayed Ack." alt="" coords="257,812,442,853"/>
+<area shape="rect" id="node47" href="$classns3_1_1_block_ack_agreement.html#a10cc1c1547def33759fd958ff5cfe8b2" title="Set block ack policy to immediate Ack." alt="" coords="257,877,442,919"/>
 <area shape="rect" id="node48" href="$classns3_1_1_block_ack_agreement.html#a2845733071e12a0f049bb7a90e174d61" title="Set starting sequence number." alt="" coords="257,943,442,984"/>
 <area shape="rect" id="node49" href="$classns3_1_1_originator_block_ack_agreement.html#a9e4332cfb716770ff96992145cc07f2b" title="Set the current state." alt="" coords="224,1008,475,1049"/>
 <area shape="rect" id="node50" href="$classns3_1_1_block_ack_agreement.html#aad0a85e49e6e939a2d23094acf871c7b" title="Set timeout." alt="" coords="257,1073,442,1115"/>

@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -228,7 +225,7 @@ $(document).ready(function(){initNavTree('wifi-psdu_8h_source.html',''); initRes
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <a class="code" href="classns3_1_1_time.html">Time</a> <a class="code" href="classns3_1_1_wifi_psdu.html#a0a0698deca91fcb76cf3f40fe804b0b0">GetDuration</a> (<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_wifi_psdu.html#abec5f5d47b41c44a74eba7f84a2bd669">SetDuration</a> (<a class="code" href="classns3_1_1_time.html">Time</a> duration);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_wifi_psdu.html#abec5f5d47b41c44a74eba7f84a2bd669">SetDuration</a> (<a class="code" href="classns3_1_1_time.html">Time</a> <a class="code" href="namespacealoha.html#a2e783efd48c6e7010b99887a6daa8ac3">duration</a>);</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  std::set&lt;uint8_t&gt; <a class="code" href="classns3_1_1_wifi_psdu.html#ae7d4fdd4e80340f7fac4acea3f311bb3">GetTids</a> (<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
@@ -270,6 +267,7 @@ $(document).ready(function(){initNavTree('wifi-psdu_8h_source.html',''); initRes
 <div class="ttc" id="aclassns3_1_1_wifi_psdu_html_a6fdb7269c0ca5632ff4b5ede2297dc52"><div class="ttname"><a href="classns3_1_1_wifi_psdu.html#a6fdb7269c0ca5632ff4b5ede2297dc52">ns3::WifiPsdu::WifiPsdu</a></div><div class="ttdeci">WifiPsdu(Ptr&lt; const Packet &gt; p, const WifiMacHeader &amp;header)</div><div class="ttdoc">Create a PSDU storing an MPDU.</div><div class="ttdef"><b>Definition:</b> <a href="wifi-psdu_8cc_source.html#l00033">wifi-psdu.cc:33</a></div></div>
 <div class="ttc" id="aclassns3_1_1_wifi_psdu_html_a0a0698deca91fcb76cf3f40fe804b0b0"><div class="ttname"><a href="classns3_1_1_wifi_psdu.html#a0a0698deca91fcb76cf3f40fe804b0b0">ns3::WifiPsdu::GetDuration</a></div><div class="ttdeci">Time GetDuration(void) const</div><div class="ttdoc">Get the duration from the Duration/ID field, which is common to all the MPDUs.</div><div class="ttdef"><b>Definition:</b> <a href="wifi-psdu_8cc_source.html#l00141">wifi-psdu.cc:141</a></div></div>
 <div class="ttc" id="aclassns3_1_1_wifi_psdu_html_a83a756ffbbacd4d64fe0eeb41fcbedf8"><div class="ttname"><a href="classns3_1_1_wifi_psdu.html#a83a756ffbbacd4d64fe0eeb41fcbedf8">ns3::WifiPsdu::GetPayload</a></div><div class="ttdeci">Ptr&lt; const Packet &gt; GetPayload(std::size_t i) const</div><div class="ttdoc">Get the payload of the i-th MPDU.</div><div class="ttdef"><b>Definition:</b> <a href="wifi-psdu_8cc_source.html#l00278">wifi-psdu.cc:278</a></div></div>
+<div class="ttc" id="anamespacealoha_html_a2e783efd48c6e7010b99887a6daa8ac3"><div class="ttname"><a href="namespacealoha.html#a2e783efd48c6e7010b99887a6daa8ac3">aloha.duration</a></div><div class="ttdeci">float duration</div><div class="ttdef"><b>Definition:</b> <a href="aloha_8py_source.html#l00037">aloha.py:37</a></div></div>
 <div class="ttc" id="anamespacens3_html"><div class="ttname"><a href="namespacens3.html">ns3</a></div><div class="ttdoc">Every class exported by the ns3 library is enclosed in the ns3 namespace.</div></div>
 <div class="ttc" id="aclassns3_1_1_wifi_psdu_html_a795243e3ba9994aa76591a6a7724c39b"><div class="ttname"><a href="classns3_1_1_wifi_psdu.html#a795243e3ba9994aa76591a6a7724c39b">ns3::WifiPsdu::end</a></div><div class="ttdeci">std::vector&lt; Ptr&lt; WifiMacQueueItem &gt; &gt;::const_iterator end(void) const</div><div class="ttdoc">Return a const iterator to past-the-last MPDU.</div><div class="ttdef"><b>Definition:</b> <a href="wifi-psdu_8cc_source.html#l00337">wifi-psdu.cc:337</a></div></div>
 <div class="ttc" id="aclassns3_1_1_wifi_psdu_html_aebf11238a5d15f6f6eab41bc8382c8e8"><div class="ttname"><a href="classns3_1_1_wifi_psdu.html#aebf11238a5d15f6f6eab41bc8382c8e8">ns3::WifiPsdu::GetAckPolicyForTid</a></div><div class="ttdeci">WifiMacHeader::QosAckPolicy GetAckPolicyForTid(uint8_t tid) const</div><div class="ttdoc">Get the QoS Ack Policy of the QoS Data frames included in the PSDU that have the given TID.</div><div class="ttdef"><b>Definition:</b> <a href="wifi-psdu_8cc_source.html#l00180">wifi-psdu.cc:180</a></div></div>
@@ -312,7 +310,7 @@ $(document).ready(function(){initNavTree('wifi-psdu_8h_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_9bb89822448514d94fe3e213d3ac83be.html">wifi</a></li><li class="navelem"><a class="el" href="dir_a444d77082d8b776da6eccf888b54154.html">model</a></li><li class="navelem"><a class="el" href="wifi-psdu_8h.html">wifi-psdu.h</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:08 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:15 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

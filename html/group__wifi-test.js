@@ -58,7 +58,6 @@ var group__wifi_test =
       [ "AddAccessRequestWithSuccessfullAck", "class_channel_access_manager_test.html#aa94312637e16f0dc96e66fb2054707d3", null ],
       [ "AddAckTimeoutReset", "class_channel_access_manager_test.html#a04548ff433026de63babe1700ea8ae8b", null ],
       [ "AddCcaBusyEvt", "class_channel_access_manager_test.html#ac6a83fde9f852471ae67580df5635a37", null ],
-      [ "AddDcfState", "class_channel_access_manager_test.html#af77a86bcf20a1731af25b76f8fb31d90", null ],
       [ "AddNavReset", "class_channel_access_manager_test.html#ae8a604feffb9eab702d246db5d9aa4b5", null ],
       [ "AddNavStart", "class_channel_access_manager_test.html#accbb95a947cbf87143b94e7605bf23c8", null ],
       [ "AddRxErrorEvt", "class_channel_access_manager_test.html#a9ea82a070c9c7c29222315ccd87d38af", null ],
@@ -68,6 +67,7 @@ var group__wifi_test =
       [ "AddRxStartEvt", "class_channel_access_manager_test.html#a091466685990a146229821575f2dcef2", null ],
       [ "AddSwitchingEvt", "class_channel_access_manager_test.html#a93cd682d0bb3061cca59efcca8039fb1", null ],
       [ "AddTxEvt", "class_channel_access_manager_test.html#aeb2cfa23341ce4ef21e1b5dbe613e5d7", null ],
+      [ "AddTxop", "class_channel_access_manager_test.html#a7f8ee06a1ef7b7c5e3ed05cf708af26b", null ],
       [ "DoAccessRequest", "class_channel_access_manager_test.html#a9481835729fb679edaa69f5742bc46d1", null ],
       [ "DoCheckBusy", "class_channel_access_manager_test.html#adfe46fb2bdabb9bb31f13043f280e966", null ],
       [ "DoRun", "class_channel_access_manager_test.html#a15c21c2ad29ebd2e42b4f4bbfeb3ec4f", null ],
@@ -91,12 +91,6 @@ var group__wifi_test =
       [ "CtrlBAckResponseHeaderTest", "class_ctrl_b_ack_response_header_test.html#a8855c2a1a596d1f8fa63497fb603df01", null ],
       [ "DoRun", "class_ctrl_b_ack_response_header_test.html#a19cf1ac31281254d487041e4c5dcdc50", null ],
       [ "m_blockAckHdr", "class_ctrl_b_ack_response_header_test.html#a1319fff4c2f7b2dcb378f52026174c84", null ]
-    ] ],
-    [ "DcfTestSuite", "class_dcf_test_suite.html", [
-      [ "DcfTestSuite", "class_dcf_test_suite.html#af10b6b78a18abe2b3e052b491a2514f2", null ]
-    ] ],
-    [ "EdcaTestSuite", "class_edca_test_suite.html", [
-      [ "EdcaTestSuite", "class_edca_test_suite.html#a104825874d8815241c529b801f6014e4", null ]
     ] ],
     [ "fn_parameters", "structfn__parameters.html", [
       [ "beta", "structfn__parameters.html#a081c7d766345d4e43e77249329785498", null ],
@@ -157,6 +151,9 @@ var group__wifi_test =
       [ "m_nMpdus", "class_preserve_packets_in_ampdus.html#a77412f10cb41ff8dc454564684ff0121", null ],
       [ "m_nMsdus", "class_preserve_packets_in_ampdus.html#a638715d99a0498bdf1a713172e0940ac", null ],
       [ "m_packetList", "class_preserve_packets_in_ampdus.html#a579931c50fd25f45349d4c66b1230abe", null ]
+    ] ],
+    [ "QosTxopTestSuite", "class_qos_txop_test_suite.html", [
+      [ "QosTxopTestSuite", "class_qos_txop_test_suite.html#a893759ff872102610354f80774223623", null ]
     ] ],
     [ "QosUtilsIsOldPacketTest", "class_qos_utils_is_old_packet_test.html", [
       [ "QosUtilsIsOldPacketTest", "class_qos_utils_is_old_packet_test.html#adf6f736c0007e810f2778e46004719bb", null ],
@@ -377,6 +374,9 @@ var group__wifi_test =
       [ "m_expectedInternalCollision", "class_txop_test.html#a00876da3911d6c4e58a9dae04596a408", null ],
       [ "m_i", "class_txop_test.html#a24563bf7c6eef5ec04bb0ccb07b56f93", null ],
       [ "m_test", "class_txop_test.html#a8c8e8b5f10a83557cb1559b6dbebba97", null ]
+    ] ],
+    [ "TxopTestSuite", "class_txop_test_suite.html", [
+      [ "TxopTestSuite", "class_txop_test_suite.html#a424daff23b19e7a0b787b002d2866ef0", null ]
     ] ],
     [ "WifiAggregationTestSuite", "class_wifi_aggregation_test_suite.html", [
       [ "WifiAggregationTestSuite", "class_wifi_aggregation_test_suite.html#ac9874f1042b0e6c9f6699b5ae074e40a", null ]

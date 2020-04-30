@@ -10,10 +10,10 @@
 <area shape="rect" id="node49" href="$classns3_1_1aodv_1_1_routing_protocol.html#a34df0b3e287abea45d48ab7c8162e183" title=" " alt="" coords="1185,1331,1381,1373"/>
 <area shape="rect" id="node50" href="$classns3_1_1dsdv_1_1_routing_protocol.html#aab88c62fbd0567cf31d185cb58b23a44" title=" " alt="" coords="1186,1397,1381,1438"/>
 <area shape="rect" id="node3" href="$classns3_1_1_channel_access_manager.html#a0b155956cb94bba762d15d54cc1fe7ca" title="Called when access timeout should occur (e.g." alt="" coords="899,753,1107,794"/>
-<area shape="rect" id="node4" href="$classns3_1_1_channel_access_manager.html#ad6ada9e298f4ba088d5761960dad307b" title="Notify that ACK timer has reset." alt="" coords="896,818,1109,859"/>
+<area shape="rect" id="node4" href="$classns3_1_1_channel_access_manager.html#ad6ada9e298f4ba088d5761960dad307b" title="Notify that ack timer has reset." alt="" coords="896,818,1109,859"/>
 <area shape="rect" id="node5" href="$classns3_1_1_channel_access_manager.html#a34d6b5afc6410e08275fa93817d00f25" title="Notify that CTS timer has reset." alt="" coords="897,883,1108,925"/>
 <area shape="rect" id="node6" href="$classns3_1_1_channel_access_manager.html#ad718d29686e51027419769b3735e5dd4" title=" " alt="" coords="899,394,1107,435"/>
-<area shape="rect" id="node8" href="$classns3_1_1_channel_access_manager.html#af5da1581cec5dbf79c2780c0821391a8" title=" " alt="" coords="899,687,1107,729"/>
+<area shape="rect" id="node8" href="$classns3_1_1_channel_access_manager.html#abb772d23a9ee81e9b6ce46b3aefc67a8" title=" " alt="" coords="899,687,1107,729"/>
 <area shape="rect" id="node7" href="$classns3_1_1_mesh_wifi_interface_mac.html#a2d850463970dd7f6d477dd0ecf615e2b" title="Switch frequency channel." alt="" coords="610,191,809,233"/>
 <area shape="rect" id="node9" href="$classns3_1_1_qos_txop.html#a3d5d94d486873862978c1fde6e295422" title="Restart access request if needed." alt="" coords="604,257,815,298"/>
 <area shape="rect" id="node22" href="$classns3_1_1_txop.html#a734dc1c8f48818cb6896f9d7cbe90160" title="Restart access request if needed." alt="" coords="617,687,802,729"/>

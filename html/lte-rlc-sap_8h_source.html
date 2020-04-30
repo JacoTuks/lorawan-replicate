@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -197,7 +194,7 @@ $(document).ready(function(){initNavTree('lte-rlc-sap_8h_source.html',''); initR
 <div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="structns3_1_1_lte_rlc_sap_provider_1_1_transmit_pdcp_pdu_parameters.html#a1520cf6e30e8a17f56f2433ba1b0ea0f">   47</a></span>&#160;    uint8_t     <a class="code" href="structns3_1_1_lte_rlc_sap_provider_1_1_transmit_pdcp_pdu_parameters.html#a1520cf6e30e8a17f56f2433ba1b0ea0f">lcid</a>; </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  };</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classns3_1_1_lte_rlc_sap_provider.html#ad2bdc756a034aa21c163da2deb705a50">   56</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_lte_rlc_sap_provider.html#ad2bdc756a034aa21c163da2deb705a50">TransmitPdcpPdu</a> (<a class="code" href="structns3_1_1_lte_rlc_sap_provider_1_1_transmit_pdcp_pdu_parameters.html">TransmitPdcpPduParameters</a> params) = 0;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classns3_1_1_lte_rlc_sap_provider.html#ad2bdc756a034aa21c163da2deb705a50">   56</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_lte_rlc_sap_provider.html#ad2bdc756a034aa21c163da2deb705a50">TransmitPdcpPdu</a> (<a class="code" href="structns3_1_1_lte_rlc_sap_provider_1_1_transmit_pdcp_pdu_parameters.html">TransmitPdcpPduParameters</a> <a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>) = 0;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
@@ -216,7 +213,7 @@ $(document).ready(function(){initNavTree('lte-rlc-sap_8h_source.html',''); initR
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <a class="code" href="classns3_1_1_lte_rlc_specific_lte_rlc_sap_provider.html#ac746bd8b286ace74975533088569dd6e">LteRlcSpecificLteRlcSapProvider</a> (C* rlc);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_lte_rlc_specific_lte_rlc_sap_provider.html#a2d09dc7a881d9ebb5a5b12aba8fdf420">TransmitPdcpPdu</a> (<a class="code" href="structns3_1_1_lte_rlc_sap_provider_1_1_transmit_pdcp_pdu_parameters.html">TransmitPdcpPduParameters</a> params);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_lte_rlc_specific_lte_rlc_sap_provider.html#a2d09dc7a881d9ebb5a5b12aba8fdf420">TransmitPdcpPdu</a> (<a class="code" href="structns3_1_1_lte_rlc_sap_provider_1_1_transmit_pdcp_pdu_parameters.html">TransmitPdcpPduParameters</a> <a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>);</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <a class="code" href="classns3_1_1_lte_rlc_specific_lte_rlc_sap_provider.html#ac746bd8b286ace74975533088569dd6e">LteRlcSpecificLteRlcSapProvider</a> ();</div>
@@ -235,9 +232,9 @@ $(document).ready(function(){initNavTree('lte-rlc-sap_8h_source.html',''); initR
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> C&gt;</div>
-<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classns3_1_1_lte_rlc_specific_lte_rlc_sap_provider.html#a2d09dc7a881d9ebb5a5b12aba8fdf420">  116</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classns3_1_1_lte_rlc_specific_lte_rlc_sap_provider.html#a2d09dc7a881d9ebb5a5b12aba8fdf420">LteRlcSpecificLteRlcSapProvider&lt;C&gt;::TransmitPdcpPdu</a> (<a class="code" href="structns3_1_1_lte_rlc_sap_provider_1_1_transmit_pdcp_pdu_parameters.html">TransmitPdcpPduParameters</a> params)</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classns3_1_1_lte_rlc_specific_lte_rlc_sap_provider.html#a2d09dc7a881d9ebb5a5b12aba8fdf420">  116</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classns3_1_1_lte_rlc_specific_lte_rlc_sap_provider.html#a2d09dc7a881d9ebb5a5b12aba8fdf420">LteRlcSpecificLteRlcSapProvider&lt;C&gt;::TransmitPdcpPdu</a> (<a class="code" href="structns3_1_1_lte_rlc_sap_provider_1_1_transmit_pdcp_pdu_parameters.html">TransmitPdcpPduParameters</a> <a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>)</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;{</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  m_rlc-&gt;DoTransmitPdcpPdu (params.<a class="code" href="structns3_1_1_lte_rlc_sap_provider_1_1_transmit_pdcp_pdu_parameters.html#ad9922f1c050ba920952f2462bd7f5b35">pdcpPdu</a>);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  m_rlc-&gt;DoTransmitPdcpPdu (<a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>.pdcpPdu);</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
@@ -279,6 +276,7 @@ $(document).ready(function(){initNavTree('lte-rlc-sap_8h_source.html',''); initR
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassns3_1_1_lte_rlc_specific_lte_rlc_sap_provider_html_ac746bd8b286ace74975533088569dd6e"><div class="ttname"><a href="classns3_1_1_lte_rlc_specific_lte_rlc_sap_provider.html#ac746bd8b286ace74975533088569dd6e">ns3::LteRlcSpecificLteRlcSapProvider::LteRlcSpecificLteRlcSapProvider</a></div><div class="ttdeci">LteRlcSpecificLteRlcSapProvider()</div><div class="ttdef"><b>Definition:</b> <a href="lte-rlc-sap_8h_source.html#l00111">lte-rlc-sap.h:111</a></div></div>
+<div class="ttc" id="anamespacealoha_html_aff1381c591fdaf9d3af2b19080c9eed7"><div class="ttname"><a href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">aloha.params</a></div><div class="ttdeci">dictionary params</div><div class="ttdef"><b>Definition:</b> <a href="aloha_8py_source.html#l00013">aloha.py:13</a></div></div>
 <div class="ttc" id="aclassns3_1_1_lte_rlc_sap_user_html_aaadbd52044f4bf26453b6eb2e26df9c8"><div class="ttname"><a href="classns3_1_1_lte_rlc_sap_user.html#aaadbd52044f4bf26453b6eb2e26df9c8">ns3::LteRlcSapUser::ReceivePdcpPdu</a></div><div class="ttdeci">virtual void ReceivePdcpPdu(Ptr&lt; Packet &gt; p)=0</div><div class="ttdoc">Called by the RLC entity to notify the PDCP entity of the reception of a new PDCP PDU.</div></div>
 <div class="ttc" id="anamespacens3_html"><div class="ttname"><a href="namespacens3.html">ns3</a></div><div class="ttdoc">Every class exported by the ns3 library is enclosed in the ns3 namespace.</div></div>
 <div class="ttc" id="aclassns3_1_1_lte_rlc_specific_lte_rlc_sap_provider_html_af7d99e562fa45aa3cbd5501236ccf919"><div class="ttname"><a href="classns3_1_1_lte_rlc_specific_lte_rlc_sap_provider.html#af7d99e562fa45aa3cbd5501236ccf919">ns3::LteRlcSpecificLteRlcSapProvider::m_rlc</a></div><div class="ttdeci">C * m_rlc</div><div class="ttdoc">the RLC</div><div class="ttdef"><b>Definition:</b> <a href="lte-rlc-sap_8h_source.html#l00101">lte-rlc-sap.h:101</a></div></div>
@@ -306,7 +304,7 @@ $(document).ready(function(){initNavTree('lte-rlc-sap_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ef1775b0ff4284164f823a882317d681.html">lte</a></li><li class="navelem"><a class="el" href="dir_d84c0a9c9435ae3a7e1022dda3bc062b.html">model</a></li><li class="navelem"><a class="el" href="lte-rlc-sap_8h.html">lte-rlc-sap.h</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:34:59 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:07 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

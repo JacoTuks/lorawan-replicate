@@ -1,7 +1,7 @@
 <map id="ns3::WifiRemoteStationManager::DoGetCtsToSelfTxVector" name="ns3::WifiRemoteStationManager::DoGetCtsToSelfTxVector">
 <area shape="rect" id="node1" title="Since CTS&#45;to&#45;self parameters are not dependent on the station, it is implemented in wifi remote stati..." alt="" coords="2376,324,2609,365"/>
 <area shape="rect" id="node2" href="$classns3_1_1_wifi_remote_station_manager.html#a927bcc3d3c01646eed7a5e9d741c243b" title=" " alt="" coords="2095,291,2328,332"/>
-<area shape="rect" id="node3" href="$classns3_1_1_wifi_remote_station_manager.html#a4812b9abae368de05cbd1393b7053f90" title=" " alt="" coords="2095,356,2328,397"/>
+<area shape="rect" id="node3" href="$classns3_1_1_wifi_remote_station_manager.html#a38a2549c86091c3ca7eba3841f0060d3" title=" " alt="" coords="2095,356,2328,397"/>
 <area shape="rect" id="node4" href="$classns3_1_1_qos_txop.html#a9fc6dae18ae52d714c301e586afa1220" title=" " alt="" coords="1864,209,2047,235"/>
 <area shape="rect" id="node14" href="$classns3_1_1_txop.html#ae0a0bbafaed367559bce8c10c184666f" title=" " alt="" coords="1888,389,2023,415"/>
 <area shape="rect" id="node5" href="$classns3_1_1_qos_txop.html#aa05a8b97a1b5f7bb4589ad12ac2c08c5" title="Sends DELBA frame to cancel a block ack agreement with STA addressed by addr for TID tid." alt="" coords="1580,78,1809,105"/>

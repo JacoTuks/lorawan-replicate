@@ -1,5 +1,5 @@
 <map id="ns3::HtCapabilities::DeserializeInformationField" name="ns3::HtCapabilities::DeserializeInformationField">
-<area shape="rect" id="node1" title="Return the information field." alt="" coords="5,365,215,407"/>
+<area shape="rect" id="node1" title="Deserialize information (i.e., the body of the IE, not including the Element ID and length octets)" alt="" coords="5,365,215,407"/>
 <area shape="rect" id="node2" href="$classns3_1_1_buffer_1_1_iterator.html#a987b700afdfba28b1b7d7bd2e885775d" title=" " alt="" coords="309,5,459,47"/>
 <area shape="rect" id="node3" href="$classns3_1_1_buffer_1_1_iterator.html#ab0da551e888b6ab0b285d28db0367d74" title=" " alt="" coords="309,71,459,112"/>
 <area shape="rect" id="node4" href="$classns3_1_1_buffer_1_1_iterator.html#a73b0df87d8f3ca52c6c87898d420da13" title=" " alt="" coords="309,136,459,177"/>

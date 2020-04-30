@@ -42,11 +42,11 @@
 <area shape="rect" id="node40" href="$class_sixlowpan_iphc_impl_test.html#a9fb0641fca5f024ac67c07510f418c02" title="Implementation to actually run this TestCase." alt="" coords="267,2207,437,2248"/>
 <area shape="rect" id="node41" href="$class_dcf_immediate_access_broadcast_test_case.html#a60a5b36d456c0c144d85a9be722c1663" title="Implementation to actually run this TestCase." alt="" coords="239,2272,465,2313"/>
 <area shape="rect" id="node42" href="$class_bug2831_test_case.html#a1e757e45f4ad6bcbe78350e85e6ff5c7" title="Implementation to actually run this TestCase." alt="" coords="258,2338,446,2365"/>
-<area shape="rect" id="node43" href="$classns3_1_1_lora_helper.html#ae246c7ecb63e0498128cbab9bfc3423f" title="Install LoraNetDevices on a list of nodes." alt="" coords="266,2389,438,2415"/>
-<area shape="rect" id="node44" href="$classns3_1_1_wave_helper.html#a31155675aae4cc3ca5320664f15a967d" title=" " alt="" coords="261,2439,443,2466"/>
-<area shape="rect" id="node45" href="$classns3_1_1_wifi_helper.html#acf88c2d3f0721a1023794fb60502a9d6" title=" " alt="" coords="267,2490,437,2517"/>
-<area shape="rect" id="node46" href="$classns3_1_1_six_low_pan_helper.html#a638d855fa28d59736b59446aefccf7b3" title="Install the SixLoWPAN stack on top of an existing NetDevice." alt="" coords="269,2541,435,2583"/>
-<area shape="rect" id="node47" href="$classns3_1_1_lr_wpan_helper.html#a7863b7b79168f747197faf479e4951fe" title="Install a LrWpanNetDevice and the associated structures (e.g., channel) in the nodes." alt="" coords="275,2607,429,2648"/>
-<area shape="rect" id="node48" href="$classns3_1_1_adhoc_aloha_noack_ideal_phy_helper.html#af934d66802b42e6594fe4fad8920fbc1" title=" " alt="" coords="251,2672,453,2713"/>
+<area shape="rect" id="node43" href="$classns3_1_1lorawan_1_1_lora_helper.html#adeced2ddf7e1004ff7932b6e48a589a7" title="Install LoraNetDevices on a list of nodes." alt="" coords="260,2389,444,2431"/>
+<area shape="rect" id="node44" href="$classns3_1_1_wave_helper.html#a31155675aae4cc3ca5320664f15a967d" title=" " alt="" coords="261,2455,443,2482"/>
+<area shape="rect" id="node45" href="$classns3_1_1_wifi_helper.html#acf88c2d3f0721a1023794fb60502a9d6" title=" " alt="" coords="267,2506,437,2533"/>
+<area shape="rect" id="node46" href="$classns3_1_1_six_low_pan_helper.html#a638d855fa28d59736b59446aefccf7b3" title="Install the SixLoWPAN stack on top of an existing NetDevice." alt="" coords="269,2557,435,2599"/>
+<area shape="rect" id="node47" href="$classns3_1_1_lr_wpan_helper.html#a7863b7b79168f747197faf479e4951fe" title="Install a LrWpanNetDevice and the associated structures (e.g., channel) in the nodes." alt="" coords="275,2623,429,2664"/>
+<area shape="rect" id="node48" href="$classns3_1_1_adhoc_aloha_noack_ideal_phy_helper.html#af934d66802b42e6594fe4fad8920fbc1" title=" " alt="" coords="251,2688,453,2729"/>
 <area shape="rect" id="node50" href="$classns3_1_1_node.html#af713f0e7ea5c49b4fa0b3613405c45fa" title=" " alt="" coords="520,1397,723,1439"/>
 </map>

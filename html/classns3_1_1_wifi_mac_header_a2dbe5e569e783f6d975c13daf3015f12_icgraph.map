@@ -19,10 +19,10 @@
 <area shape="rect" id="node5" href="$classns3_1_1_mac_low.html#aa477261c5209c13c66af9e2ae78b07e5" title=" " alt="" coords="592,850,823,877"/>
 <area shape="rect" id="node6" href="$classns3_1_1_wave_mac_low.html#abf4a90e9984a73b24197706fb79118b1" title=" " alt="" coords="276,850,544,877"/>
 <area shape="rect" id="node9" href="$class_he_aggregation_test.html#a064486621a42555204608de0af51006c" title="Implementation to actually run this TestCase." alt="" coords="1187,146,1341,187"/>
-<area shape="rect" id="node11" href="$classns3_1_1_channel_access_manager.html#ab456b95950fd1381ed14c4f7289b997e" title="Grant access to DCF." alt="" coords="1160,319,1368,360"/>
-<area shape="rect" id="node31" href="$classns3_1_1_channel_access_manager.html#a4e7c0bf86371710015f236ca8616e82d" title="Grant access to PCF." alt="" coords="1160,384,1368,426"/>
+<area shape="rect" id="node11" href="$classns3_1_1_channel_access_manager.html#ab456b95950fd1381ed14c4f7289b997e" title="Grant access to Txop using DCF/EDCF contention rules." alt="" coords="1160,319,1368,360"/>
+<area shape="rect" id="node31" href="$classns3_1_1_channel_access_manager.html#a1b41fbd994b39f8514c4ecfd479c3340" title="Grant access to Txop using PCF preemption." alt="" coords="1160,384,1368,426"/>
 <area shape="rect" id="node12" href="$classns3_1_1_channel_access_manager.html#a0b155956cb94bba762d15d54cc1fe7ca" title="Called when access timeout should occur (e.g." alt="" coords="882,319,1090,360"/>
-<area shape="rect" id="node13" href="$classns3_1_1_channel_access_manager.html#af5da1581cec5dbf79c2780c0821391a8" title=" " alt="" coords="882,384,1090,426"/>
+<area shape="rect" id="node13" href="$classns3_1_1_channel_access_manager.html#abb772d23a9ee81e9b6ce46b3aefc67a8" title=" " alt="" coords="882,384,1090,426"/>
 <area shape="rect" id="node14" href="$classns3_1_1_qos_txop.html#a3d5d94d486873862978c1fde6e295422" title="Restart access request if needed." alt="" coords="602,450,813,491"/>
 <area shape="rect" id="node29" href="$classns3_1_1_qos_txop.html#a31afaa3f2374697d39987905d5127868" title="Request access from Txop if needed." alt="" coords="610,384,805,426"/>
 <area shape="rect" id="node15" href="$classns3_1_1_qos_txop.html#a30f5c2af1b50e6ee48771de46cd8033f" title="Callback when ADDBA response is not received after timeout." alt="" coords="299,516,521,558"/>

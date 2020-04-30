@@ -1,20 +1,19 @@
 <map id="ns3::WToDbm" name="ns3::WToDbm">
-<area shape="rect" id="node1" title="Convert from Watts to dBm." alt="" coords="2589,322,2700,349"/>
+<area shape="rect" id="node1" title="Convert from Watts to dBm." alt="" coords="2589,293,2700,319"/>
 <area shape="rect" id="node2" href="$classns3_1_1_simple_frame_capture_model.html#a049e45346528e233307be0b406dcfae0" title="This method returns whether the reception should be switched to a new incoming frame." alt="" coords="2305,60,2535,101"/>
 <area shape="rect" id="node3" href="$classns3_1_1_wifi_phy.html#acc2c03406327704ecabb82d7772378e3" title="Return the CCA threshold (dBm)." alt="" coords="2301,191,2539,218"/>
 <area shape="rect" id="node5" href="$classns3_1_1_wifi_phy.html#aeab17cf7c22fe11dfe82d164404e9e07" title="Get the reception status for the provided MPDU and notify." alt="" coords="2321,125,2519,167"/>
 <area shape="rect" id="node12" href="$classns3_1_1_spectrum_wifi_phy.html#aead1ebdbaf59361928cd6ffa7abc3161" title="Input method for delivering a signal from the spectrum channel and low&#45;level PHY interface to this Sp..." alt="" coords="587,235,752,276"/>
 <area shape="rect" id="node32" href="$classns3_1_1_wifi_phy.html#acc8eba804fc3b0118fc483954f665e22" title="Return the receive sensitivity threshold (dBm)." alt="" coords="2311,242,2529,269"/>
 <area shape="rect" id="node33" href="$classns3_1_1_threshold_preamble_detection_model.html#ab0956e7bc7eb0ab2384fd0e2c419f654" title="This method returns whether the preamble detection was successful." alt="" coords="2299,344,2541,385"/>
-<area shape="rect" id="node34" href="$class_test_inter_bss_constant_obss_pd_algo.html#a3b825fb84ce7277888b07529c3a7a3fd" title="Notify Phy transmit begin." alt="" coords="2324,409,2516,451"/>
-<area shape="rect" id="node37" href="$classns3_1_1_constant_obss_pd_algorithm.html#aa1f4f2b2b3a3103fd4921d713ea7bf95" title=" " alt="" coords="2028,500,2251,541"/>
-<area shape="rect" id="node39" href="$classns3_1_1_obss_pd_algorithm.html#aafbbfff7cb82663d1181073a88dcc777" title="Reset PHY to IDLE." alt="" coords="2337,527,2503,568"/>
-<area shape="rect" id="node40" href="$classns3_1_1_spectrum_wifi_phy.html#a2506b7651bed80b5db10843389bab297" title=" " alt="" coords="2337,592,2503,633"/>
+<area shape="rect" id="node34" href="$classns3_1_1_constant_obss_pd_algorithm.html#aa1f4f2b2b3a3103fd4921d713ea7bf95" title=" " alt="" coords="2028,439,2251,480"/>
+<area shape="rect" id="node36" href="$classns3_1_1_obss_pd_algorithm.html#aafbbfff7cb82663d1181073a88dcc777" title="Reset PHY to IDLE." alt="" coords="2337,409,2503,451"/>
+<area shape="rect" id="node37" href="$classns3_1_1_spectrum_wifi_phy.html#a2506b7651bed80b5db10843389bab297" title=" " alt="" coords="2337,527,2503,568"/>
 <area shape="rect" id="node4" href="$classns3_1_1_wifi_phy.html#a6ac379a25b68f6a8d72da740b58e0271" title="Get the type ID." alt="" coords="2052,191,2227,218"/>
 <area shape="rect" id="node6" href="$classns3_1_1_wifi_phy.html#a0528e5f0ded822ff3df47b5146cb0484" title="The last symbol of the PPDU has arrived." alt="" coords="2046,133,2233,159"/>
 <area shape="rect" id="node7" href="$classns3_1_1_wifi_phy.html#a613c3092a7f6f1dc2d815a4d2de989fa" title="Start receiving the PSDU (i.e." alt="" coords="1772,125,1965,167"/>
 <area shape="rect" id="node8" href="$classns3_1_1_wifi_phy.html#ac5c2d333cf5e8c1f33604ef1584486fe" title="Continue receiving the PHY header of a PPDU (i.e." alt="" coords="1489,121,1709,163"/>
-<area shape="rect" id="node9" href="$classns3_1_1_wifi_phy.html#ad67948715df0fbb05a2c3fa1d2ecd21d" title="Start receiving the PHY header of a PPDU (i.e." alt="" coords="1248,176,1441,217"/>
+<area shape="rect" id="node9" href="$classns3_1_1_wifi_phy.html#aa7bcb29f6ad8b8280792fc83a25f8eac" title="Start receiving the PHY header of a PPDU (i.e." alt="" coords="1248,176,1441,217"/>
 <area shape="rect" id="node10" href="$classns3_1_1_wifi_phy.html#a5f3a1ad2baa44bd044d7855b0de83fa7" title="Starting receiving the PPDU after having detected the medium is idle or after a reception switch." alt="" coords="1041,183,1200,210"/>
 <area shape="rect" id="node11" href="$classns3_1_1_wifi_phy.html#abf2f88a74d34bd4a92ab8e19e8ef4b1e" title="Start receiving the PHY preamble of a PPDU (i.e." alt="" coords="800,176,993,217"/>
 <area shape="rect" id="node13" href="$class_test_ampdu_reception.html#a78da8669fb854461af9b5b26362d65f2" title="Send A&#45;MPDU with 3 MPDUs of different size (i&#45;th MSDU will have 100 bytes more than (i&#45;1)&#45;th)." alt="" coords="305,5,524,47"/>
@@ -36,7 +35,5 @@
 <area shape="rect" id="node28" href="$class_wifi_phy_thresholds_weak_foreign_signal_test.html#aad1875ee85a04d40060777e01b63a724" title="Implementation to actually run this TestCase." alt="" coords="10,463,238,504"/>
 <area shape="rect" id="node29" href="$class_wifi_phy_thresholds_strong_wifi_signal_test.html#aa5aaeb6bbcebe65d8c3558bfbdb20c31" title="Implementation to actually run this TestCase." alt="" coords="19,528,229,569"/>
 <area shape="rect" id="node30" href="$class_wifi_phy_thresholds_strong_foreign_signal_test.html#a38f75ac215fb95f0e367cb54373bedcd" title="Implementation to actually run this TestCase." alt="" coords="7,593,241,635"/>
-<area shape="rect" id="node35" href="$class_test_inter_bss_constant_obss_pd_algo.html#a1d52c1dd60b72b32b4a87f6933d81992" title="Run one function." alt="" coords="2044,409,2235,451"/>
-<area shape="rect" id="node36" href="$class_test_inter_bss_constant_obss_pd_algo.html#afa56c796f4bf1e721232f43b672ba259" title="Implementation to actually run this TestCase." alt="" coords="1773,409,1964,451"/>
-<area shape="rect" id="node38" href="$classns3_1_1_constant_obss_pd_algorithm.html#ac3359d5c45980262b19fd69c5812bce5" title="Connect the WifiNetDevice and setup eventual callbacks." alt="" coords="1757,500,1980,541"/>
+<area shape="rect" id="node35" href="$classns3_1_1_constant_obss_pd_algorithm.html#ac3359d5c45980262b19fd69c5812bce5" title="Connect the WifiNetDevice and setup eventual callbacks." alt="" coords="1757,439,1980,480"/>
 </map>

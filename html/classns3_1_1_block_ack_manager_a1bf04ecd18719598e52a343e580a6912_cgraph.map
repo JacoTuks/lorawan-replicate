@@ -1,5 +1,5 @@
 <map id="ns3::BlockAckManager::GetBar" name="ns3::BlockAckManager::GetBar">
-<area shape="rect" id="node1" title="Returns the next Block Ack Request to send, if any." alt="" coords="5,1122,176,1163"/>
+<area shape="rect" id="node1" title="Returns the next BlockAckRequest to send, if any." alt="" coords="5,1122,176,1163"/>
 <area shape="rect" id="node2" href="$classns3_1_1_packet.html#a465108c595a0bc592095cbcab1832ed8" title="Add header to this packet." alt="" coords="241,652,417,679"/>
 <area shape="rect" id="node36" href="$classns3_1_1_ctrl_b_ack_request_header.html#a8ca10bacb9cc50ae0f849044769ca88d" title="Return the starting sequence number." alt="" coords="224,1151,433,1193"/>
 <area shape="rect" id="node37" href="$classns3_1_1_simulator.html#ac3178fa975b419f7875e7105be122800" title="Return the current simulation virtual time." alt="" coords="252,1100,405,1127"/>

@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -201,14 +198,19 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 : <a class="el" href="unionns3_1_1_wifi_action_header_1_1_action_value.html#a5ed6e759e6f6c4a6d1494f852a12231d">ns3::WifiActionHeader::ActionValue</a>
 </li>
 <li>senderId
-: <a class="el" href="struct_packet_status.html#a4f4244a0ae1e610baf0ce1887ef12b59">PacketStatus</a>
+: <a class="el" href="structns3_1_1lorawan_1_1_mac_packet_status.html#ad3f5baa76021a598e4b30f6c7c833afd">ns3::lorawan::MacPacketStatus</a>
+, <a class="el" href="structns3_1_1lorawan_1_1_packet_status.html#a09cb955c0a6a8bd03d4eb204412efa2e">ns3::lorawan::PacketStatus</a>
 </li>
 <li>sendInterval
 : <a class="el" href="structns3_1_1_vsa_info.html#a75c7e3b19d0b496e882f55d6829085cb">ns3::VsaInfo</a>
 </li>
+<li>sendTime
+: <a class="el" href="structns3_1_1lorawan_1_1_mac_packet_status.html#aa446f0ed22336b9d29c1f3fe541cf9c6">ns3::lorawan::MacPacketStatus</a>
+, <a class="el" href="structns3_1_1lorawan_1_1_packet_status.html#a13c57cc2c30df1ca8ba076c113769302">ns3::lorawan::PacketStatus</a>
+</li>
 <li>sensitivity
-: <a class="el" href="classns3_1_1_end_device_lora_phy.html#aea24d751a726a80cf2f43d414903a4fc">ns3::EndDeviceLoraPhy</a>
-, <a class="el" href="classns3_1_1_gateway_lora_phy.html#ae2098494f48f7bc89b8bcac84a0f8868">ns3::GatewayLoraPhy</a>
+: <a class="el" href="classns3_1_1lorawan_1_1_end_device_lora_phy.html#a5fdf969286bc2cd6b357daf10122c759">ns3::lorawan::EndDeviceLoraPhy</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_gateway_lora_phy.html#a5e087b8d88cf37e3c81d189876cb3b67">ns3::lorawan::GatewayLoraPhy</a>
 </li>
 <li>sentBytes
 : <a class="el" href="structns3_1_1_mesh_wifi_interface_mac_1_1_statistics.html#a3355f31cf6a746c97c0fedba7bfdba43">ns3::MeshWifiInterfaceMac::Statistics</a>
@@ -282,8 +284,9 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 , <a class="el" href="structns3_1_1_lte_rrc_sap_1_1_meas_result_scell.html#afedb787409a09c93d106b4b28604d987">ns3::LteRrcSap::MeasResultScell</a>
 </li>
 <li>sf
-: <a class="el" href="structns3_1_1_lora_channel_parameters.html#a826e0f557084bdc1d9d9b35cf588ed87">ns3::LoraChannelParameters</a>
-, <a class="el" href="structns3_1_1_lora_tx_parameters.html#a81acad3dff4a67ed42077e58139af343">ns3::LoraTxParameters</a>
+: <a class="el" href="structns3_1_1lorawan_1_1_end_device_status_1_1_received_packet_info.html#a54e38a3ad9eb22c7bd895b92364bca88">ns3::lorawan::EndDeviceStatus::ReceivedPacketInfo</a>
+, <a class="el" href="structns3_1_1lorawan_1_1_lora_channel_parameters.html#a29cf034507b8d3699f15f9378854fa9f">ns3::lorawan::LoraChannelParameters</a>
+, <a class="el" href="structns3_1_1lorawan_1_1_lora_tx_parameters.html#a90d90b2f793ee67201c4f633adc6283e">ns3::lorawan::LoraTxParameters</a>
 </li>
 <li>sfHigh
 : <a class="el" href="structns3_1_1_lte_rrc_sap_1_1_speed_state_scale_factors.html#a7e6c0a37f3457171fb41024109c5e271">ns3::LteRrcSap::SpeedStateScaleFactors</a>
@@ -529,6 +532,9 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 <li>subtype
 : <a class="el" href="structns3_1_1dot11s_1_1_peer_management_protocol_mac_1_1_plink_frame_start.html#a43bfe58939704c3c247b6f5dd070e1f9">ns3::dot11s::PeerManagementProtocolMac::PlinkFrameStart</a>
 </li>
+<li>successful
+: <a class="el" href="structns3_1_1lorawan_1_1_retransmission_status.html#a294791419879b01a2024533803006747">ns3::lorawan::RetransmissionStatus</a>
+</li>
 <li>successHist
 : <a class="el" href="structns3_1_1_ht_rate_info.html#a2e307f392bdaa10602a375cdb9525063">ns3::HtRateInfo</a>
 , <a class="el" href="structns3_1_1_rate_info.html#ac5b5bd34d0f4f11dd0a82210bb15005f">ns3::RateInfo</a>
@@ -586,7 +592,7 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:51 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:53 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

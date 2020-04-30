@@ -47,6 +47,6 @@
 <area shape="rect" id="node48" href="$classns3_1_1_regular_wifi_mac.html#afac2ce0fb1181ff8f87a4972c41fe2df" title=" " alt="" coords="852,733,1008,775"/>
 <area shape="rect" id="node49" href="$classns3_1_1_ocb_wifi_mac.html#aa225044c84d3a80b2f7e2d721d13b481" title="To support MAC extension for multiple channel operation, Suspend the activity in current MAC entity." alt="" coords="833,799,1027,826"/>
 <area shape="rect" id="node42" href="$classns3_1_1_channel_access_manager.html#a77abe92dc446eeb4e0ff44a00c107045" title=" " alt="" coords="1103,885,1333,927"/>
-<area shape="rect" id="node44" href="$classns3_1_1_channel_access_manager.html#a7d4b8f6e0e26865afe02bbe8aeb231dc" title="Remove current registered listener for Phy events." alt="" coords="1114,551,1322,592"/>
-<area shape="rect" id="node46" href="$classns3_1_1_channel_access_manager.html#a9d04948216a84575c4a717fe991e47f9" title="Notify the DCF that the device has been resumed from sleep mode." alt="" coords="1114,616,1322,657"/>
+<area shape="rect" id="node44" href="$classns3_1_1_channel_access_manager.html#a7d4b8f6e0e26865afe02bbe8aeb231dc" title="Remove current registered listener for PHY events." alt="" coords="1114,551,1322,592"/>
+<area shape="rect" id="node46" href="$classns3_1_1_channel_access_manager.html#a9d04948216a84575c4a717fe991e47f9" title="Notify the Txop that the device has been resumed from sleep mode." alt="" coords="1114,616,1322,657"/>
 </map>

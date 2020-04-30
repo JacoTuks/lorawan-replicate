@@ -1,5 +1,5 @@
 <map id="ns3::WifiPhyHelper::EnableAsciiInternal" name="ns3::WifiPhyHelper::EnableAsciiInternal">
-<area shape="rect" id="node1" title="Enable ascii trace output on the indicated net device." alt="" coords="5,658,160,699"/>
+<area shape="rect" id="node1" title="Enable ASCII trace output on the indicated net device." alt="" coords="5,658,160,699"/>
 <area shape="rect" id="node2" href="$namespacens3.html#a040ca8ac0d1c0a56f4e431307cb3058c" title="ASCII Phy receive sink with context." alt="" coords="217,569,405,610"/>
 <area shape="rect" id="node24" href="$namespacens3.html#a7ca07e06f80459c9c62e3b4e9eb6ff40" title="ASCII Phy receive sink without context." alt="" coords="217,373,405,414"/>
 <area shape="rect" id="node25" href="$namespacens3.html#ae217606eb9244d9c833b9dddbe1a964a" title="ASCII Phy transmit sink with context." alt="" coords="215,438,408,479"/>

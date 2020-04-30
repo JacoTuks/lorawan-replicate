@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -219,7 +216,7 @@ $(document).ready(function(){initNavTree('lte-enb-net-device_8h_source.html','')
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_lte_enb_net_device.html#a69c13266978b9ba78ec4882de3625a5b">DoDispose</a> (<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="comment">// inherited from NetDevice</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classns3_1_1_lte_enb_net_device.html#a8e8081b535d06cf90a63144c0792564b">Send</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Packet&gt;</a> <a class="code" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>, <span class="keyword">const</span> <a class="code" href="classns3_1_1_address.html">Address</a>&amp; dest, uint16_t protocolNumber);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classns3_1_1_lte_enb_net_device.html#a8e8081b535d06cf90a63144c0792564b">Send</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Packet&gt;</a> packet, <span class="keyword">const</span> <a class="code" href="classns3_1_1_address.html">Address</a>&amp; dest, uint16_t protocolNumber);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;LteEnbMac&gt;</a> <a class="code" href="classns3_1_1_lte_enb_net_device.html#a839327c34d0bfdf902841eef1fccf9c3">GetMac</a> (<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
@@ -312,7 +309,6 @@ $(document).ready(function(){initNavTree('lte-enb-net-device_8h_source.html','')
 <div class="ttc" id="aclassns3_1_1_lte_enb_net_device_html_a8151f16ad371bd4c2276d99ef80c6f5d"><div class="ttname"><a href="classns3_1_1_lte_enb_net_device.html#a8151f16ad371bd4c2276d99ef80c6f5d">ns3::LteEnbNetDevice::SetCsgIndication</a></div><div class="ttdeci">void SetCsgIndication(bool csgIndication)</div><div class="ttdoc">Enable or disable the CSG indication flag.</div><div class="ttdef"><b>Definition:</b> <a href="lte-enb-net-device_8cc_source.html#l00343">lte-enb-net-device.cc:343</a></div></div>
 <div class="ttc" id="aclassns3_1_1_lte_enb_net_device_html_a5a17444284da7566eadfc242ba013371"><div class="ttname"><a href="classns3_1_1_lte_enb_net_device.html#a5a17444284da7566eadfc242ba013371">ns3::LteEnbNetDevice::GetTypeId</a></div><div class="ttdeci">static TypeId GetTypeId(void)</div><div class="ttdoc">Get the type ID.</div><div class="ttdef"><b>Definition:</b> <a href="lte-enb-net-device_8cc_source.html#l00059">lte-enb-net-device.cc:59</a></div></div>
 <div class="ttc" id="aclassns3_1_1_lte_enb_net_device_html_aedd1bf9791950a67ab937dbc48f7ff64"><div class="ttname"><a href="classns3_1_1_lte_enb_net_device.html#aedd1bf9791950a67ab937dbc48f7ff64">ns3::LteEnbNetDevice::m_ccMap</a></div><div class="ttdeci">std::map&lt; uint8_t, Ptr&lt; ComponentCarrierBaseStation &gt; &gt; m_ccMap</div><div class="ttdoc">ComponentCarrier map.</div><div class="ttdef"><b>Definition:</b> <a href="lte-enb-net-device_8h_source.html#l00256">lte-enb-net-device.h:256</a></div></div>
-<div class="ttc" id="alora-mac-test_8cc_html_a084e879e2a4e6b1e078575d3693a0c3a"><div class="ttname"><a href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a></div><div class="ttdeci">Ptr&lt; Packet &gt; packet</div><div class="ttdef"><b>Definition:</b> <a href="lora-mac-test_8cc_source.html#l00021">lora-mac-test.cc:21</a></div></div>
 <div class="ttc" id="aclassns3_1_1_lte_enb_net_device_html_a839327c34d0bfdf902841eef1fccf9c3"><div class="ttname"><a href="classns3_1_1_lte_enb_net_device.html#a839327c34d0bfdf902841eef1fccf9c3">ns3::LteEnbNetDevice::GetMac</a></div><div class="ttdeci">Ptr&lt; LteEnbMac &gt; GetMac(void) const</div><div class="ttdef"><b>Definition:</b> <a href="lte-enb-net-device_8cc_source.html#l00188">lte-enb-net-device.cc:188</a></div></div>
 <div class="ttc" id="aclassns3_1_1_lte_enb_net_device_html_a56b4a06e2c3ed138812a3c4a6591bbfe"><div class="ttname"><a href="classns3_1_1_lte_enb_net_device.html#a56b4a06e2c3ed138812a3c4a6591bbfe">ns3::LteEnbNetDevice::m_dlBandwidth</a></div><div class="ttdeci">uint16_t m_dlBandwidth</div><div class="ttdoc">DEPRECATE - It is maintained for backward compatibility after adding CA feature- downlink bandwidth i...</div><div class="ttdef"><b>Definition:</b> <a href="lte-enb-net-device_8h_source.html#l00247">lte-enb-net-device.h:247</a></div></div>
 <div class="ttc" id="aclassns3_1_1_lte_enb_net_device_html_af8dc5c27d0507dac9ded69d8d022a4e3"><div class="ttname"><a href="classns3_1_1_lte_enb_net_device.html#af8dc5c27d0507dac9ded69d8d022a4e3">ns3::LteEnbNetDevice::GetCcMap</a></div><div class="ttdeci">std::map&lt; uint8_t, Ptr&lt; ComponentCarrierBaseStation &gt; &gt; GetCcMap(void) const</div><div class="ttdef"><b>Definition:</b> <a href="lte-enb-net-device_8cc_source.html#l00351">lte-enb-net-device.cc:351</a></div></div>
@@ -358,7 +354,7 @@ $(document).ready(function(){initNavTree('lte-enb-net-device_8h_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ef1775b0ff4284164f823a882317d681.html">lte</a></li><li class="navelem"><a class="el" href="dir_d84c0a9c9435ae3a7e1022dda3bc062b.html">model</a></li><li class="navelem"><a class="el" href="lte-enb-net-device_8h.html">lte-enb-net-device.h</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:34:59 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:07 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

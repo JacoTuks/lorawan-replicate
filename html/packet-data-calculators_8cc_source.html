@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -222,7 +219,7 @@ $(document).ready(function(){initNavTree('packet-data-calculators_8cc_source.htm
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keywordtype">void</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classns3_1_1_packet_counter_calculator.html#aae3acf8583084b48cbd9791322d7c59d">   64</a></span>&#160;<a class="code" href="classns3_1_1_packet_counter_calculator.html#aae3acf8583084b48cbd9791322d7c59d">PacketCounterCalculator::PacketUpdate</a> (std::string path,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                       <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;const Packet&gt;</a> <a class="code" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                       <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;const Packet&gt;</a> packet)</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="group__logging.html#ga8f7e4afc291c9d29a65c18ac1f79197b">NS_LOG_FUNCTION_NOARGS</a> ();</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
@@ -232,7 +229,7 @@ $(document).ready(function(){initNavTree('packet-data-calculators_8cc_source.htm
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keywordtype">void</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classns3_1_1_packet_counter_calculator.html#a7ae51b37f0cd073da50a45b4de4c6dd4">   74</a></span>&#160;<a class="code" href="classns3_1_1_packet_counter_calculator.html#a7ae51b37f0cd073da50a45b4de4c6dd4">PacketCounterCalculator::FrameUpdate</a> (std::string path,</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                      <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;const Packet&gt;</a> <a class="code" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>,</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                      <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;const Packet&gt;</a> packet,</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                      <a class="code" href="classns3_1_1_mac48_address.html">Mac48Address</a> realto)</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="group__logging.html#ga8f7e4afc291c9d29a65c18ac1f79197b">NS_LOG_FUNCTION_NOARGS</a> ();</div>
@@ -278,22 +275,22 @@ $(document).ready(function(){initNavTree('packet-data-calculators_8cc_source.htm
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keywordtype">void</span></div>
 <div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="classns3_1_1_packet_size_min_max_avg_total_calculator.html#af13660c85c0a619e05012f84b81db612">  120</a></span>&#160;<a class="code" href="classns3_1_1_packet_size_min_max_avg_total_calculator.html#af13660c85c0a619e05012f84b81db612">PacketSizeMinMaxAvgTotalCalculator::PacketUpdate</a> (std::string path,</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                                                  <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;const Packet&gt;</a> <a class="code" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>)</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                                                  <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;const Packet&gt;</a> packet)</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;{</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <a class="code" href="group__logging.html#ga8f7e4afc291c9d29a65c18ac1f79197b">NS_LOG_FUNCTION_NOARGS</a> ();</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <a class="code" href="classns3_1_1_min_max_avg_total_calculator.html#acad1745a8441535648ae95c7037a96e1">MinMaxAvgTotalCalculator&lt;uint32_t&gt;::Update</a> (<a class="code" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>-&gt;<a class="code" href="classns3_1_1_packet.html#afff7cb1ff518ee6dc0d424e10a5ad6ec">GetSize</a> ());</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <a class="code" href="classns3_1_1_min_max_avg_total_calculator.html#acad1745a8441535648ae95c7037a96e1">MinMaxAvgTotalCalculator&lt;uint32_t&gt;::Update</a> (packet-&gt;<a class="code" href="classns3_1_1_packet.html#afff7cb1ff518ee6dc0d424e10a5ad6ec">GetSize</a> ());</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="comment">// end PacketSizeMinMaxAvgTotalCalculator::Update</span></div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keywordtype">void</span></div>
 <div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="classns3_1_1_packet_size_min_max_avg_total_calculator.html#a2e96ea817aa81f80dc96bff8c9a42342">  130</a></span>&#160;<a class="code" href="classns3_1_1_packet_size_min_max_avg_total_calculator.html#a2e96ea817aa81f80dc96bff8c9a42342">PacketSizeMinMaxAvgTotalCalculator::FrameUpdate</a> (std::string path,</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                                                 <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;const Packet&gt;</a> <a class="code" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>,</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                                                 <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;const Packet&gt;</a> packet,</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                                                 <a class="code" href="classns3_1_1_mac48_address.html">Mac48Address</a> realto)</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;{</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <a class="code" href="group__logging.html#ga8f7e4afc291c9d29a65c18ac1f79197b">NS_LOG_FUNCTION_NOARGS</a> ();</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <a class="code" href="classns3_1_1_min_max_avg_total_calculator.html#acad1745a8441535648ae95c7037a96e1">MinMaxAvgTotalCalculator&lt;uint32_t&gt;::Update</a> (<a class="code" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>-&gt;<a class="code" href="classns3_1_1_packet.html#afff7cb1ff518ee6dc0d424e10a5ad6ec">GetSize</a> ());</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <a class="code" href="classns3_1_1_min_max_avg_total_calculator.html#acad1745a8441535648ae95c7037a96e1">MinMaxAvgTotalCalculator&lt;uint32_t&gt;::Update</a> (packet-&gt;<a class="code" href="classns3_1_1_packet.html#afff7cb1ff518ee6dc0d424e10a5ad6ec">GetSize</a> ());</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  <span class="comment">// end PacketSizeMinMaxAvgTotalCalculator::Update</span></div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}</div>
@@ -303,9 +300,8 @@ $(document).ready(function(){initNavTree('packet-data-calculators_8cc_source.htm
 <div class="ttc" id="agroup__logging_html_ga225a95395fa117b7309aa3c43518d02e"><div class="ttname"><a href="group__logging.html#ga225a95395fa117b7309aa3c43518d02e">NS_LOG_COMPONENT_DEFINE</a></div><div class="ttdeci">#define NS_LOG_COMPONENT_DEFINE(name)</div><div class="ttdoc">Define a Log component with a specific name.</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00206">log.h:205</a></div></div>
 <div class="ttc" id="aclassns3_1_1_packet_html_afff7cb1ff518ee6dc0d424e10a5ad6ec"><div class="ttname"><a href="classns3_1_1_packet.html#afff7cb1ff518ee6dc0d424e10a5ad6ec">ns3::Packet::GetSize</a></div><div class="ttdeci">uint32_t GetSize(void) const</div><div class="ttdoc">Returns the the size in bytes of the packet (including the zero-filled initial payload).</div><div class="ttdef"><b>Definition:</b> <a href="packet_8h_source.html#l00854">packet.h:854</a></div></div>
 <div class="ttc" id="anamespacens3_html"><div class="ttname"><a href="namespacens3.html">ns3</a></div><div class="ttdoc">Every class exported by the ns3 library is enclosed in the ns3 namespace.</div></div>
-<div class="ttc" id="alora-mac-test_8cc_html_a084e879e2a4e6b1e078575d3693a0c3a"><div class="ttname"><a href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a></div><div class="ttdeci">Ptr&lt; Packet &gt; packet</div><div class="ttdef"><b>Definition:</b> <a href="lora-mac-test_8cc_source.html#l00021">lora-mac-test.cc:21</a></div></div>
 <div class="ttc" id="aclassns3_1_1_mac48_address_html"><div class="ttname"><a href="classns3_1_1_mac48_address.html">ns3::Mac48Address</a></div><div class="ttdoc">an EUI-48 address</div><div class="ttdef"><b>Definition:</b> <a href="mac48-address_8h_source.html#l00043">mac48-address.h:44</a></div></div>
-<div class="ttc" id="aclassns3_1_1_type_id_html_abaaca67ab7d2471067e7c275df0f7309"><div class="ttname"><a href="classns3_1_1_type_id.html#abaaca67ab7d2471067e7c275df0f7309">ns3::TypeId::SetParent</a></div><div class="ttdeci">TypeId SetParent(TypeId tid)</div><div class="ttdoc">Set the parent TypeId.</div><div class="ttdef"><b>Definition:</b> <a href="type-id_8cc_source.html#l00922">type-id.cc:922</a></div></div>
+<div class="ttc" id="aclassns3_1_1_type_id_html_abaaca67ab7d2471067e7c275df0f7309"><div class="ttname"><a href="classns3_1_1_type_id.html#abaaca67ab7d2471067e7c275df0f7309">ns3::TypeId::SetParent</a></div><div class="ttdeci">TypeId SetParent(TypeId tid)</div><div class="ttdoc">Set the parent TypeId.</div><div class="ttdef"><b>Definition:</b> <a href="type-id_8cc_source.html#l00923">type-id.cc:923</a></div></div>
 <div class="ttc" id="aclassns3_1_1_ptr_html"><div class="ttname"><a href="classns3_1_1_ptr.html">ns3::Ptr</a></div><div class="ttdoc">Smart pointer class similar to boost::intrusive_ptr.</div><div class="ttdef"><b>Definition:</b> <a href="ptr_8h_source.html#l00073">ptr.h:74</a></div></div>
 <div class="ttc" id="aclassns3_1_1_packet_size_min_max_avg_total_calculator_html"><div class="ttname"><a href="classns3_1_1_packet_size_min_max_avg_total_calculator.html">ns3::PacketSizeMinMaxAvgTotalCalculator</a></div><div class="ttdef"><b>Definition:</b> <a href="packet-data-calculators_8h_source.html#l00080">packet-data-calculators.h:82</a></div></div>
 <div class="ttc" id="aclassns3_1_1_packet_size_min_max_avg_total_calculator_html_af13660c85c0a619e05012f84b81db612"><div class="ttname"><a href="classns3_1_1_packet_size_min_max_avg_total_calculator.html#af13660c85c0a619e05012f84b81db612">ns3::PacketSizeMinMaxAvgTotalCalculator::PacketUpdate</a></div><div class="ttdeci">void PacketUpdate(std::string path, Ptr&lt; const Packet &gt; packet)</div><div class="ttdoc">Increments the packet stats by the size of the packet.</div><div class="ttdef"><b>Definition:</b> <a href="packet-data-calculators_8cc_source.html#l00120">packet-data-calculators.cc:120</a></div></div>
@@ -337,7 +333,7 @@ $(document).ready(function(){initNavTree('packet-data-calculators_8cc_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_fc4c7f03e1a69a98c370fae55a743828.html">network</a></li><li class="navelem"><a class="el" href="dir_65ca25425164aedb02a1587d1a07f5e8.html">utils</a></li><li class="navelem"><a class="el" href="packet-data-calculators_8cc.html">packet-data-calculators.cc</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:03 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:10 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -269,7 +266,7 @@ $(document).ready(function(){initNavTree('ipv6_8h_source.html',''); initResizabl
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160; </div>
 <div class="line"><a name="l00363"></a><span class="lineno"><a class="line" href="classns3_1_1_ipv6.html#a8fa557713b63afce0b11b720d6e639d4">  363</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;IpL4Protocol&gt;</a> <a class="code" href="classns3_1_1_ipv6.html#a8fa557713b63afce0b11b720d6e639d4">GetProtocol</a> (<span class="keywordtype">int</span> protocolNumber, int32_t interfaceIndex) <span class="keyword">const</span> = 0;</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160; </div>
-<div class="line"><a name="l00375"></a><span class="lineno"><a class="line" href="classns3_1_1_ipv6.html#a2aad308983b20eb54334bb0d3db31004">  375</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_ipv6.html#a2aad308983b20eb54334bb0d3db31004">Send</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Packet&gt;</a> <a class="code" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>, <a class="code" href="classns3_1_1_ipv6_address.html">Ipv6Address</a> source, <a class="code" href="classns3_1_1_ipv6_address.html">Ipv6Address</a> destination, uint8_t protocol, <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Ipv6Route&gt;</a> route) = 0;</div>
+<div class="line"><a name="l00375"></a><span class="lineno"><a class="line" href="classns3_1_1_ipv6.html#a2aad308983b20eb54334bb0d3db31004">  375</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_ipv6.html#a2aad308983b20eb54334bb0d3db31004">Send</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Packet&gt;</a> packet, <a class="code" href="classns3_1_1_ipv6_address.html">Ipv6Address</a> source, <a class="code" href="classns3_1_1_ipv6_address.html">Ipv6Address</a> destination, uint8_t protocol, <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Ipv6Route&gt;</a> route) = 0;</div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160; </div>
 <div class="line"><a name="l00380"></a><span class="lineno"><a class="line" href="classns3_1_1_ipv6.html#a57bd0dd1c4b1b9bb63b748124a548fe5">  380</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_ipv6.html#a57bd0dd1c4b1b9bb63b748124a548fe5">RegisterExtensions</a> () = 0;</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160; </div>
@@ -306,7 +303,6 @@ $(document).ready(function(){initNavTree('ipv6_8h_source.html',''); initResizabl
 <div class="ttc" id="aclassns3_1_1_ipv6_html_a3204b23a92a2495b428bd882a988369a"><div class="ttname"><a href="classns3_1_1_ipv6.html#a3204b23a92a2495b428bd882a988369a">ns3::Ipv6::SetMtuDiscover</a></div><div class="ttdeci">virtual void SetMtuDiscover(bool mtuDiscover)=0</div><div class="ttdoc">Set IPv6 MTU discover state.</div></div>
 <div class="ttc" id="aclassns3_1_1_ipv6_html_af14dc67ff4c251776e5d0fca16c5cc7c"><div class="ttname"><a href="classns3_1_1_ipv6.html#af14dc67ff4c251776e5d0fca16c5cc7c">ns3::Ipv6::GetRoutingProtocol</a></div><div class="ttdeci">virtual Ptr&lt; Ipv6RoutingProtocol &gt; GetRoutingProtocol(void) const =0</div><div class="ttdoc">Get the routing protocol to be used by this IPv6 stack.</div></div>
 <div class="ttc" id="aclassns3_1_1_ipv6_html_a3337dc6ce66612b0fa9b57f7f0338745"><div class="ttname"><a href="classns3_1_1_ipv6.html#a3337dc6ce66612b0fa9b57f7f0338745">ns3::Ipv6::GetInterfaceForDevice</a></div><div class="ttdeci">virtual int32_t GetInterfaceForDevice(Ptr&lt; const NetDevice &gt; device) const =0</div><div class="ttdoc">Get the interface index of the specified NetDevice.</div></div>
-<div class="ttc" id="alora-mac-test_8cc_html_a084e879e2a4e6b1e078575d3693a0c3a"><div class="ttname"><a href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a></div><div class="ttdeci">Ptr&lt; Packet &gt; packet</div><div class="ttdef"><b>Definition:</b> <a href="lora-mac-test_8cc_source.html#l00021">lora-mac-test.cc:21</a></div></div>
 <div class="ttc" id="aclassns3_1_1_ipv6_html_a6bae4637f2a7f1e566a53c3270b891d4"><div class="ttname"><a href="classns3_1_1_ipv6.html#a6bae4637f2a7f1e566a53c3270b891d4">ns3::Ipv6::GetMetric</a></div><div class="ttdeci">virtual uint16_t GetMetric(uint32_t interface) const =0</div><div class="ttdoc">Get metric for the specified IPv6 interface.</div></div>
 <div class="ttc" id="aclassns3_1_1_ipv6_html_ad1e1c4d33ad96a76683ce8cea9d01780"><div class="ttname"><a href="classns3_1_1_ipv6.html#ad1e1c4d33ad96a76683ce8cea9d01780">ns3::Ipv6::RemoveAddress</a></div><div class="ttdeci">virtual bool RemoveAddress(uint32_t interface, uint32_t addressIndex)=0</div><div class="ttdoc">Remove an address on specified IPv6 interface.</div></div>
 <div class="ttc" id="aclassns3_1_1_ipv6_address_html"><div class="ttname"><a href="classns3_1_1_ipv6_address.html">ns3::Ipv6Address</a></div><div class="ttdoc">Describes an IPv6 address.</div><div class="ttdef"><b>Definition:</b> <a href="ipv6-address_8h_source.html#l00049">ipv6-address.h:50</a></div></div>
@@ -353,7 +349,7 @@ $(document).ready(function(){initNavTree('ipv6_8h_source.html',''); initResizabl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_9875a27782e85dfc0c1135b3f36246db.html">internet</a></li><li class="navelem"><a class="el" href="dir_31cca4ee57c734e0871d5231fa404ed5.html">model</a></li><li class="navelem"><a class="el" href="ipv6_8h.html">ipv6.h</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:34:56 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:03 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

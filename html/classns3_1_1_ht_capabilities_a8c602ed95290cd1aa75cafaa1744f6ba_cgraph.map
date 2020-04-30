@@ -1,5 +1,5 @@
 <map id="ns3::HtCapabilities::Serialize" name="ns3::HtCapabilities::Serialize">
-<area shape="rect" id="node1" title="This information element is a bit special in that it is only included if the STA is an HT STA." alt="" coords="5,169,151,211"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,169,151,211"/>
 <area shape="rect" id="node2" href="$classns3_1_1_wifi_information_element.html#a8662b6056d624747d927e9c041e24ab0" title="Serialize entire IE including Element ID and length fields." alt="" coords="199,169,408,211"/>
 <area shape="rect" id="node3" href="$classns3_1_1_wifi_information_element.html#a0c16b85dc0c63baf7fc437ddbc13ada6" title=" " alt="" coords="456,5,665,47"/>
 <area shape="rect" id="node4" href="$classns3_1_1_wifi_information_element.html#ae24bfd29837cfb426a44dadd56d72f4b" title=" " alt="" coords="456,71,665,112"/>

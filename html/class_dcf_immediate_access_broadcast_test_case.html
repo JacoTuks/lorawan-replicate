@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -326,7 +323,7 @@ Additional Inherited Members</h2></td></tr>
 <p>The buggy behavior observed in prior versions was shown by picking RngSeedManager::SetRun (17); which generated a 0 slot backoff for frame 2. Then, frame 2 experiences a virtual collision and re-selects the backoff again. As a result, the <em>actual</em> backoff experience by frame 2 is less likely to be 0 since that would require two successions of 0 backoff (one that generates the virtual collision and one after the virtual collision).</p>
 <p>See <a href="http://www.nsnam.org/bugzilla/show_bug.cgi?id=555">Bug 555</a> for past behavior. </p>
 
-<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l00422">422</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l00424">424</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8546a12478615efc1f8fad33ead2c054"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8546a12478615efc1f8fad33ead2c054">&#9670;&nbsp;</a></span>DcfImmediateAccessBroadcastTestCase()</h2>
@@ -343,7 +340,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l00453">453</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l00455">455</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
 
 </div>
 </div>
@@ -377,9 +374,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classns3_1_1_test_case.html#a8ff74680cf017ed42011e4be51917a24">ns3::TestCase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l00480">480</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l00482">482</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="node_8cc_source.html#l00128">ns3::Node::AddDevice()</a>, <a class="el" href="object_8cc_source.html#l00252">ns3::Object::AggregateObject()</a>, <a class="el" href="wifi-test_8cc_source.html#l00055">AssignWifiRandomStreams()</a>, <a class="el" href="phy-communication-test_8cc_source.html#l00010">channel</a>, <a class="el" href="wifi-mac_8cc_source.html#l00270">ns3::WifiMac::ConfigureStandard()</a>, <a class="el" href="wifi-phy_8cc_source.html#l01248">ns3::WifiPhy::ConfigureStandard()</a>, <a class="el" href="object-factory_8cc_source.html#l00104">ns3::ObjectFactory::Create()</a>, <a class="el" href="wifi-test_8cc_source.html#l00441">m_firstTransmissionTime</a>, <a class="el" href="wifi-test_8cc_source.html#l00438">m_mac</a>, <a class="el" href="wifi-test_8cc_source.html#l00437">m_manager</a>, <a class="el" href="wifi-test_8cc_source.html#l00443">m_numSentPackets</a>, <a class="el" href="wifi-test_8cc_source.html#l00439">m_propDelay</a>, <a class="el" href="wifi-test_8cc_source.html#l00442">m_secondTransmissionTime</a>, <a class="el" href="callback_8h_source.html#l01610">ns3::MakeCallback()</a>, <a class="el" href="nstime_8h_source.html#l01080">ns3::MicroSeconds()</a>, <a class="el" href="wifi-test_8cc_source.html#l00459">NotifyPhyTxBegin()</a>, <a class="el" href="test_8h_source.html#l00166">NS_TEST_ASSERT_MSG_EQ</a>, <a class="el" href="nstime_8h_source.html#l01064">ns3::Seconds()</a>, <a class="el" href="wifi-test_8cc_source.html#l00473">SendOnePacket()</a>, <a class="el" href="classns3_1_1_wifi_mac.html#acb910dff0196a6ddc27efd106efa1f3a">ns3::WifiMac::SetAddress()</a>, <a class="el" href="yans-wifi-phy_8cc_source.html#l00070">ns3::YansWifiPhy::SetChannel()</a>, <a class="el" href="wifi-mac_8cc_source.html#l00221">ns3::WifiMac::SetDevice()</a>, <a class="el" href="wifi-phy_8cc_source.html#l00724">ns3::WifiPhy::SetDevice()</a>, <a class="el" href="wifi-phy_8cc_source.html#l00767">ns3::WifiPhy::SetErrorRateModel()</a>, <a class="el" href="wifi-net-device_8cc_source.html#l00180">ns3::WifiNetDevice::SetMac()</a>, <a class="el" href="wifi-phy_8cc_source.html#l00748">ns3::WifiPhy::SetMobility()</a>, <a class="el" href="wifi-net-device_8cc_source.html#l00187">ns3::WifiNetDevice::SetPhy()</a>, <a class="el" href="mobility-model_8cc_source.html#l00075">ns3::MobilityModel::SetPosition()</a>, <a class="el" href="wifi-net-device_8cc_source.html#l00194">ns3::WifiNetDevice::SetRemoteStationManager()</a>, <a class="el" href="object-factory_8cc_source.html#l00046">ns3::ObjectFactory::SetTypeId()</a>, <a class="el" href="object-base_8cc_source.html#l00295">ns3::ObjectBase::TraceConnectWithoutContext()</a>, and <a class="el" href="wifi-phy-standard_8h_source.html#l00033">ns3::WIFI_PHY_STANDARD_80211a</a>.</p>
+<p class="reference">References <a class="el" href="node_8cc_source.html#l00130">ns3::Node::AddDevice()</a>, <a class="el" href="object_8cc_source.html#l00252">ns3::Object::AggregateObject()</a>, <a class="el" href="wifi-test_8cc_source.html#l00057">AssignWifiRandomStreams()</a>, <a class="el" href="third_8py_source.html#l00092">third::channel</a>, <a class="el" href="wifi-mac_8cc_source.html#l00265">ns3::WifiMac::ConfigureStandard()</a>, <a class="el" href="wifi-phy_8cc_source.html#l01252">ns3::WifiPhy::ConfigureStandard()</a>, <a class="el" href="object-factory_8cc_source.html#l00104">ns3::ObjectFactory::Create()</a>, <a class="el" href="wifi-test_8cc_source.html#l00443">m_firstTransmissionTime</a>, <a class="el" href="wifi-test_8cc_source.html#l00440">m_mac</a>, <a class="el" href="wifi-test_8cc_source.html#l00439">m_manager</a>, <a class="el" href="wifi-test_8cc_source.html#l00445">m_numSentPackets</a>, <a class="el" href="wifi-test_8cc_source.html#l00441">m_propDelay</a>, <a class="el" href="wifi-test_8cc_source.html#l00444">m_secondTransmissionTime</a>, <a class="el" href="callback_8h_source.html#l01610">ns3::MakeCallback()</a>, <a class="el" href="nstime_8h_source.html#l01086">ns3::MicroSeconds()</a>, <a class="el" href="wifi-test_8cc_source.html#l00461">NotifyPhyTxBegin()</a>, <a class="el" href="test_8h_source.html#l00166">NS_TEST_ASSERT_MSG_EQ</a>, <a class="el" href="nstime_8h_source.html#l01070">ns3::Seconds()</a>, <a class="el" href="wifi-test_8cc_source.html#l00475">SendOnePacket()</a>, <a class="el" href="classns3_1_1_wifi_mac.html#acb910dff0196a6ddc27efd106efa1f3a">ns3::WifiMac::SetAddress()</a>, <a class="el" href="yans-wifi-phy_8cc_source.html#l00070">ns3::YansWifiPhy::SetChannel()</a>, <a class="el" href="wifi-mac_8cc_source.html#l00216">ns3::WifiMac::SetDevice()</a>, <a class="el" href="wifi-phy_8cc_source.html#l00728">ns3::WifiPhy::SetDevice()</a>, <a class="el" href="wifi-phy_8cc_source.html#l00771">ns3::WifiPhy::SetErrorRateModel()</a>, <a class="el" href="wifi-net-device_8cc_source.html#l00180">ns3::WifiNetDevice::SetMac()</a>, <a class="el" href="wifi-phy_8cc_source.html#l00752">ns3::WifiPhy::SetMobility()</a>, <a class="el" href="wifi-net-device_8cc_source.html#l00187">ns3::WifiNetDevice::SetPhy()</a>, <a class="el" href="mobility-model_8cc_source.html#l00075">ns3::MobilityModel::SetPosition()</a>, <a class="el" href="wifi-net-device_8cc_source.html#l00194">ns3::WifiNetDevice::SetRemoteStationManager()</a>, <a class="el" href="object-factory_8cc_source.html#l00046">ns3::ObjectFactory::SetTypeId()</a>, <a class="el" href="object-base_8cc_source.html#l00293">ns3::ObjectBase::TraceConnectWithoutContext()</a>, and <a class="el" href="wifi-phy-standard_8h_source.html#l00033">ns3::WIFI_PHY_STANDARD_80211a</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -485,11 +482,11 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l00459">459</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l00461">461</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="wifi-test_8cc_source.html#l00441">m_firstTransmissionTime</a>, <a class="el" href="wifi-test_8cc_source.html#l00443">m_numSentPackets</a>, <a class="el" href="wifi-test_8cc_source.html#l00442">m_secondTransmissionTime</a>, and <a class="el" href="simulator_8cc_source.html#l00309">ns3::Now()</a>.</p>
+<p class="reference">References <a class="el" href="wifi-test_8cc_source.html#l00443">m_firstTransmissionTime</a>, <a class="el" href="wifi-test_8cc_source.html#l00445">m_numSentPackets</a>, <a class="el" href="wifi-test_8cc_source.html#l00444">m_secondTransmissionTime</a>, and <a class="el" href="simulator_8cc_source.html#l00311">ns3::Now()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l00480">DoRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l00482">DoRun()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -595,11 +592,11 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l00473">473</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l00475">475</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
 
 <p class="reference">References <a class="el" href="wifi-net-device_8cc_source.html#l00284">ns3::WifiNetDevice::GetBroadcast()</a>, and <a class="el" href="wifi-net-device_8cc_source.html#l00319">ns3::WifiNetDevice::Send()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l00480">DoRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l00482">DoRun()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -696,9 +693,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>first transmission time </p>
 
-<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l00441">441</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l00443">443</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l00480">DoRun()</a>, and <a class="el" href="wifi-test_8cc_source.html#l00459">NotifyPhyTxBegin()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l00482">DoRun()</a>, and <a class="el" href="wifi-test_8cc_source.html#l00461">NotifyPhyTxBegin()</a>.</p>
 
 </div>
 </div>
@@ -724,9 +721,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>MAC. </p>
 
-<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l00438">438</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l00440">440</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l00480">DoRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l00482">DoRun()</a>.</p>
 
 </div>
 </div>
@@ -752,9 +749,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>manager </p>
 
-<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l00437">437</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l00439">439</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l00480">DoRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l00482">DoRun()</a>.</p>
 
 </div>
 </div>
@@ -780,9 +777,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>number of sent packets </p>
 
-<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l00443">443</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l00445">445</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l00480">DoRun()</a>, and <a class="el" href="wifi-test_8cc_source.html#l00459">NotifyPhyTxBegin()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l00482">DoRun()</a>, and <a class="el" href="wifi-test_8cc_source.html#l00461">NotifyPhyTxBegin()</a>.</p>
 
 </div>
 </div>
@@ -808,9 +805,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>propagation delay </p>
 
-<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l00439">439</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l00441">441</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l00480">DoRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l00482">DoRun()</a>.</p>
 
 </div>
 </div>
@@ -836,9 +833,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>second transmission time </p>
 
-<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l00442">442</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wifi-test_8cc_source.html#l00444">444</a> of file <a class="el" href="wifi-test_8cc_source.html">wifi-test.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l00480">DoRun()</a>, and <a class="el" href="wifi-test_8cc_source.html#l00459">NotifyPhyTxBegin()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="wifi-test_8cc_source.html#l00482">DoRun()</a>, and <a class="el" href="wifi-test_8cc_source.html#l00461">NotifyPhyTxBegin()</a>.</p>
 
 </div>
 </div>
@@ -855,7 +852,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_dcf_immediate_access_broadcast_test_case.html">DcfImmediateAccessBroadcastTestCase</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:13 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:20 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

@@ -2,7 +2,7 @@
 <area shape="rect" id="node1" title="Get the type ID." alt="" coords="5,221,212,248"/>
 <area shape="rect" id="node2" href="$namespacens3.html#a9698b9d45b5b800d0a691a458a8a1bcf" title=" " alt="" coords="260,69,452,96"/>
 <area shape="rect" id="node3" href="$namespacens3.html#a14613e89827b8d95bcfcbe23a763d4b6" title=" " alt="" coords="267,120,445,147"/>
-<area shape="rect" id="node4" href="$group__time.html#ga7032965bd4afa578691d88c09e4481c1" title="Helper to make a Time checker with bounded range. Both limits are inclusive." alt="" coords="270,171,442,197"/>
+<area shape="rect" id="node4" href="$namespacens3.html#a7032965bd4afa578691d88c09e4481c1" title="Helper to make a Time checker with bounded range. Both limits are inclusive." alt="" coords="270,171,442,197"/>
 <area shape="rect" id="node11" href="$group__timecivil.html#ga33c34b816f8ff6628e33d5c8e9713b9e" title=" " alt="" coords="303,247,409,273"/>
 <area shape="rect" id="node16" href="$classns3_1_1_type_id.html#abaaca67ab7d2471067e7c275df0f7309" title="Set the parent TypeId." alt="" coords="273,335,439,361"/>
 <area shape="rect" id="node20" href="$classns3_1_1_flow_monitor.html#a32cb7ddc6d0956518a59f7ed91de7f6d" title="Set the time, counting from the current time, from which to start monitoring flows." alt="" coords="269,569,443,596"/>

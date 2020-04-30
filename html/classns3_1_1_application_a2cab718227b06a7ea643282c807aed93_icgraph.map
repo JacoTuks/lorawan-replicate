@@ -23,7 +23,7 @@
 <area shape="rect" id="node33" href="$classns3_1_1_radvd_helper.html#ac0d0b33362b5bf0b852f01623f952ab1" title="Install the application in a Node." alt="" coords="523,1193,709,1219"/>
 <area shape="rect" id="node34" href="$classns3_1_1_dhcp_helper.html#ad83a0ea1ecce718ee352435f112c5570" title="Function to install DHCP client on a node." alt="" coords="527,1244,705,1285"/>
 <area shape="rect" id="node35" href="$classns3_1_1_dhcp_helper.html#a66f1b2a4405b7dc4af0cff05af14edea" title="Install DHCP server of a node / NetDevice." alt="" coords="527,1309,705,1351"/>
-<area shape="rect" id="node36" href="$classns3_1_1_network_server_helper.html#ac729285355c2897ead70b4fce30addd8" title=" " alt="" coords="519,1375,713,1416"/>
+<area shape="rect" id="node36" href="$classns3_1_1lorawan_1_1_network_server_helper.html#a5cee81b9fef7bab361fad1c7b154b5c1" title=" " alt="" coords="511,1375,721,1416"/>
 <area shape="rect" id="node37" href="$classns3_1_1_bulk_send_helper.html#ad1adf232f72e6db960340ad8d3d31be5" title="Install an ns3::BulkSendApplication on the node configured with all the attributes set with SetAttrib..." alt="" coords="537,1440,695,1481"/>
 <area shape="rect" id="node38" href="$classns3_1_1_on_off_helper.html#ac06b1d705c5024e022b4fd48025db25f" title="Install an ns3::OnOffApplication on the node configured with all the attributes set with SetAttribute..." alt="" coords="513,1506,719,1533"/>
 <area shape="rect" id="node39" href="$classns3_1_1_packet_sink_helper.html#af0c261c1001d87730581926bbd25e6b8" title="Install an ns3::PacketSink on the node configured with all the attributes set with SetAttribute." alt="" coords="533,1557,699,1599"/>
@@ -33,9 +33,9 @@
 <area shape="rect" id="node43" href="$classns3_1_1_udp_echo_client_helper.html#aa288e1615fdcf51bc240bbe8296d73cc" title="Install an ns3::UdpEchoClient on the node configured with all the attributes set with SetAttribute." alt="" coords="521,1819,711,1860"/>
 <area shape="rect" id="node44" href="$classns3_1_1_v4_ping_helper.html#af5d2405bc1e2d710c26a0bdac2652b14" title="Do the actual application installation in the node." alt="" coords="541,1884,691,1925"/>
 <area shape="rect" id="node45" href="$classns3_1_1_v4_trace_route_helper.html#a9bd252b55aef548ed9d9b6d9fe67bfad" title="Do the actual application installation in the node." alt="" coords="523,1949,709,1991"/>
-<area shape="rect" id="node46" href="$classns3_1_1_forwarder_helper.html#a9d420de0f4be4d252a1df120abe4db27" title=" " alt="" coords="535,2015,697,2056"/>
-<area shape="rect" id="node47" href="$classns3_1_1_one_shot_sender_helper.html#a71c94914e6a38dadedbd259c53e2cada" title=" " alt="" coords="518,2080,714,2121"/>
-<area shape="rect" id="node48" href="$classns3_1_1_periodic_sender_helper.html#a3ef34cd901a418043ef61610639d1c81" title=" " alt="" coords="519,2145,713,2187"/>
+<area shape="rect" id="node46" href="$classns3_1_1lorawan_1_1_forwarder_helper.html#ad62c2a4a15e40e1dff0cbf2144fde1c5" title=" " alt="" coords="505,2015,727,2056"/>
+<area shape="rect" id="node47" href="$classns3_1_1lorawan_1_1_one_shot_sender_helper.html#ad98b1925e3fb30d1e41ee9d98c780a22" title=" " alt="" coords="509,2080,723,2121"/>
+<area shape="rect" id="node48" href="$classns3_1_1lorawan_1_1_periodic_sender_helper.html#aa3e5114c618ee265b43e08cbcc16e091" title=" " alt="" coords="511,2145,721,2187"/>
 <area shape="rect" id="node49" href="$classns3_1_1_wave_bsm_helper.html#a2b3898af26d5de3633083ce5c0ac1d52" title="Install an ns3::BsmApplication on the node." alt="" coords="535,2211,697,2252"/>
 <area shape="rect" id="node50" href="$class_ocb_wifi_mac_test_case.html#a6b536e2fc476ebf85d4cd0ae7490987c" title="Post device configuration function." alt="" coords="521,2276,711,2317"/>
 <area shape="rect" id="node5" href="$classns3_1_1_emu_epc_helper.html#abaff0cf3ed70c034b5e0fd22dc89a7ba" title="Add an eNB to the EPC." alt="" coords="271,5,427,47"/>

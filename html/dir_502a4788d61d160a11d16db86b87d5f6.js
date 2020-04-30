@@ -1,12 +1,10 @@
 var dir_502a4788d61d160a11d16db86b87d5f6 =
 [
-    [ "channel-test.cc", "channel-test_8cc.html", null ],
-    [ "complete-lorawan-network-example.cc", "complete-lorawan-network-example_8cc.html", "complete-lorawan-network-example_8cc" ],
-    [ "header-test.cc", "header-test_8cc.html", "header-test_8cc" ],
-    [ "lora-mac-test.cc", "lora-mac-test_8cc.html", "lora-mac-test_8cc" ],
+    [ "adr-example.cc", "adr-example_8cc.html", "adr-example_8cc" ],
+    [ "aloha-throughput.cc", "aloha-throughput_8cc.html", "aloha-throughput_8cc" ],
+    [ "aloha.py", "aloha_8py.html", "aloha_8py" ],
+    [ "complete-network-example.cc", "complete-network-example_8cc.html", "complete-network-example_8cc" ],
+    [ "energy-model-example.cc", "src_2lorawan_2examples_2energy-model-example_8cc.html", null ],
     [ "network-server-example.cc", "network-server-example_8cc.html", null ],
-    [ "phy-communication-test.cc", "phy-communication-test_8cc.html", "phy-communication-test_8cc" ],
-    [ "receive-path-test.cc", "receive-path-test_8cc.html", "receive-path-test_8cc" ],
-    [ "simple-lorawan-network-example.cc", "simple-lorawan-network-example_8cc.html", null ],
-    [ "time-on-air-test.cc", "time-on-air-test_8cc.html", null ]
+    [ "simple-network-example.cc", "simple-network-example_8cc.html", null ]
 ];

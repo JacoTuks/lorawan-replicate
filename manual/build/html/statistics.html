@@ -62,9 +62,6 @@
 		      <a id="ns3_tut"
 			 href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-		      <a id="ns3_ptbr"
-			 href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 	        </li>
 	        <li><span
 		      onmouseover="mopen('mDocs')" 
@@ -224,7 +221,7 @@ statistical framework for ns-3.</p>
 <span class="n">string</span> <span class="nf">strategy</span> <span class="p">(</span><span class="s">&quot;wifi-default&quot;</span><span class="p">);</span>
 <span class="n">string</span> <span class="n">runID</span><span class="p">;</span>
 
-<span class="n">CommandLine</span> <span class="n">cmd</span><span class="p">;</span>
+<span class="n">COMMANDLINE</span> <span class="p">(</span><span class="n">cmd</span><span class="p">);</span>
 <span class="n">cmd</span><span class="p">.</span><span class="n">AddValue</span><span class="p">(</span><span class="s">&quot;distance&quot;</span><span class="p">,</span>   <span class="s">&quot;Distance apart to place nodes (in meters).&quot;</span><span class="p">,</span> <span class="n">distance</span><span class="p">);</span>
 <span class="n">cmd</span><span class="p">.</span><span class="n">AddValue</span><span class="p">(</span><span class="s">&quot;format&quot;</span><span class="p">,</span>     <span class="s">&quot;Format to use for data output.&quot;</span><span class="p">,</span>             <span class="n">format</span><span class="p">);</span>
 <span class="n">cmd</span><span class="p">.</span><span class="n">AddValue</span><span class="p">(</span><span class="s">&quot;experiment&quot;</span><span class="p">,</span> <span class="s">&quot;Identifier for experiment.&quot;</span><span class="p">,</span>                 <span class="n">experiment</span><span class="p">);</span>
@@ -530,7 +527,7 @@ plot <span class="s2">&quot;wifi-default.data&quot;</span> with lines title <spa
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2006-2019.
-      Last updated on Apr 23, 2020 07:55.
+      Last updated on Apr 29, 2020 17:36.
       Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.2.
     </div>
   </body>

@@ -46,7 +46,7 @@
 <area shape="rect" id="node30" href="$classns3_1_1_iid_manager.html#a6658aaa8120efd885e98addb76a6f1d4" title="Get the name of a type id." alt="" coords="738,821,934,848"/>
 <area shape="rect" id="node35" href="$classns3_1_1_ctrl_b_ack_request_header.html#aa96ccb301ad5897945d80fefce324a00" title="Set the starting sequence number from the given raw sequence control field." alt="" coords="465,839,675,881"/>
 <area shape="rect" id="node36" href="$classns3_1_1_ctrl_b_ack_request_header.html#aaaf130ca02fc6005d69a5592ea7f9ab3" title="Set Traffic ID (TID)." alt="" coords="465,905,675,946"/>
-<area shape="rect" id="node37" href="$classns3_1_1_ctrl_b_ack_request_header.html#a2de2783f9b09f03bbb16a0270ed8340f" title="Set the block ACK type." alt="" coords="465,970,675,1011"/>
+<area shape="rect" id="node37" href="$classns3_1_1_ctrl_b_ack_request_header.html#a2de2783f9b09f03bbb16a0270ed8340f" title="Set the block ack type." alt="" coords="465,970,675,1011"/>
 <area shape="rect" id="node40" href="$classns3_1_1_block_ack_manager.html#aa7fc7ecdb5e0171b0e84bb39554f75e2" title="Remove an item from retransmission queue." alt="" coords="473,1035,667,1077"/>
 <area shape="rect" id="node42" href="$classns3_1_1_ctrl_b_ack_request_header.html#a884fbe9f6ba028fb3dde88fe31ba6bab" title="Return the Traffic ID (TID)." alt="" coords="465,1101,675,1142"/>
 </map>

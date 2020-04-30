@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -1618,6 +1615,9 @@ $(document).ready(function(){initNavTree('functions_t.html',''); initResizable()
 , <a class="el" href="classns3_1_1_ipcs_classifier_record.html#a5d962ebfd92095139b335b17b9161985">ns3::IpcsClassifierRecord</a>
 , <a class="el" href="classns3_1_1_service_flow.html#ada122a2a997eb906bf9643707d3eae4b">ns3::ServiceFlow</a>
 </li>
+<li>tpAveraging
+: <a class="el" href="classns3_1_1lorawan_1_1_adr_component.html#a889dc11c7d040ce589dabe002e71d836">ns3::lorawan::AdrComponent</a>
+</li>
 <li>Trace()
 : <a class="el" href="struct_block_ack_aggregation_disabled_test_1_1_txop_duration_tracer.html#acb1a9e850169b697eadc753252d4f820">BlockAckAggregationDisabledTest::TxopDurationTracer</a>
 , <a class="el" href="classns3_1_1_des_metrics.html#ab7c6c097412d0398affbc9f8d2643160">ns3::DesMetrics</a>
@@ -1824,6 +1824,9 @@ $(document).ready(function(){initNavTree('functions_t.html',''); initResizable()
 <li>TransitNetwork
 : <a class="el" href="classns3_1_1_global_routing_link_record.html#a9380bcce9bca03943c4761b166a694f4ad3d00014c9ba50539a53b55fce117856">ns3::GlobalRoutingLinkRecord</a>
 </li>
+<li>TransmissionCallback()
+: <a class="el" href="classns3_1_1lorawan_1_1_lora_packet_tracker.html#a64fa185d16773af842b2a2c25c6bbc13">ns3::lorawan::LoraPacketTracker</a>
+</li>
 <li>TransmissionFailure()
 : <a class="el" href="classns3_1_1dot11s_1_1_peer_link.html#a311a9748947db5753d6631bacb9e0895">ns3::dot11s::PeerLink</a>
 , <a class="el" href="classns3_1_1dot11s_1_1_peer_management_protocol.html#a2326130b236a064d21d9f481d499aae3">ns3::dot11s::PeerManagementProtocol</a>
@@ -1921,6 +1924,9 @@ $(document).ready(function(){initNavTree('functions_t.html',''); initResizable()
 , <a class="el" href="structns3_1_1_epc_s1ap_sap_enb_1_1_erab_switched_in_uplink_item.html#ac7631a9fe9e3bb788c082713083e2040">ns3::EpcS1apSapEnb::ErabSwitchedInUplinkItem</a>
 , <a class="el" href="structns3_1_1_epc_s1ap_sap_enb_1_1_erab_to_be_setup_item.html#a5d339fdeda04110711e54040e9b77b59">ns3::EpcS1apSapEnb::ErabToBeSetupItem</a>
 , <a class="el" href="structns3_1_1_epc_x2_sap_1_1_erab_to_be_setup_item.html#aa50ff6a3143234c9b2e22bbbd7d5b7a9">ns3::EpcX2Sap::ErabToBeSetupItem</a>
+</li>
+<li>treshold
+: <a class="el" href="classns3_1_1lorawan_1_1_adr_component.html#ade335aa4cb3b13ab07f0fea5aa645066">ns3::lorawan::AdrComponent</a>
 </li>
 <li>TriangularRandomVariable()
 : <a class="el" href="classns3_1_1_triangular_random_variable.html#abd0eecaac528becbde41e7b8d3ba764d">ns3::TriangularRandomVariable</a>
@@ -2057,7 +2063,7 @@ $(document).ready(function(){initNavTree('functions_t.html',''); initResizable()
 : <a class="el" href="class_two_link_test.html#ab90d57568126c5fa72e094dd6cb43844">TwoLinkTest</a>
 </li>
 <li>TwoRayGroundPropagationLossModel()
-: <a class="el" href="classns3_1_1_two_ray_ground_propagation_loss_model.html#a30bd13c6ac0fa406431580e82f5584fe">ns3::TwoRayGroundPropagationLossModel</a>
+: <a class="el" href="classns3_1_1_two_ray_ground_propagation_loss_model.html#a3f81edd7dca7de8a299d61c6582989bb">ns3::TwoRayGroundPropagationLossModel</a>
 </li>
 <li>TwoRayGroundPropagationLossModelTestCase()
 : <a class="el" href="class_two_ray_ground_propagation_loss_model_test_case.html#a302c675daa97f94efd182a21b3e44340">TwoRayGroundPropagationLossModelTestCase</a>
@@ -2067,8 +2073,8 @@ $(document).ready(function(){initNavTree('functions_t.html',''); initResizable()
 </li>
 <li>TX
 : <a class="el" href="classns3_1_1_aloha_noack_net_device.html#adfe39ae2ca03685fc3dd2a78f9659b60a7e08d5f8fde8f86791f7fd01a71efb94">ns3::AlohaNoackNetDevice</a>
-, <a class="el" href="classns3_1_1_end_device_lora_phy.html#a2e5524bfba32635993eec67f3cdc0682a0bdc2fedb0bb7c0b7ff4ca82f0f0e9d7">ns3::EndDeviceLoraPhy</a>
 , <a class="el" href="classns3_1_1_half_duplex_ideal_phy.html#acc684e2a6ce03ae8ff429ce480f61c3aa6e02b7c513143f623f71938508be304e">ns3::HalfDuplexIdealPhy</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_end_device_lora_phy.html#adc84e4ce7796e19f19f077df9592af15a35909838f2f9bf50690fefcd45628415">ns3::lorawan::EndDeviceLoraPhy</a>
 </li>
 <li>Tx()
 : <a class="el" href="classns3_1_1_tcp_close_with_loss_test_case.html#a64a2a277f21cacbd370040ad0a63475f">ns3::TcpCloseWithLossTestCase</a>
@@ -2136,6 +2142,9 @@ $(document).ready(function(){initNavTree('functions_t.html',''); initResizable()
 , <a class="el" href="structns3_1_1flame_1_1_flame_protocol_mac_1_1_statistics.html#a66c4802b2e3e3f367de9b842e36d9536">ns3::flame::FlameProtocolMac::Statistics</a>
 , <a class="el" href="structns3_1_1_flow_monitor_1_1_flow_stats.html#ad2cfc997073dcd4a723b54c26e4ca2c8">ns3::FlowMonitor::FlowStats</a>
 </li>
+<li>TxCallback()
+: <a class="el" href="class_issue169_test_case.html#a9c462ba06cbd92c14545ba4998970946">Issue169TestCase</a>
+</li>
 <li>txClose
 : <a class="el" href="structns3_1_1dot11s_1_1_peer_management_protocol_mac_1_1_statistics.html#a7f74d573fa1dd232091d43a96294b188">ns3::dot11s::PeerManagementProtocolMac::Statistics</a>
 </li>
@@ -2149,7 +2158,7 @@ $(document).ready(function(){initNavTree('functions_t.html',''); initResizable()
 : <a class="el" href="structns3_1_1dot11s_1_1_hwmp_protocol_mac_1_1_statistics.html#a50db26efb7b9d224d4c803000a31ae39">ns3::dot11s::HwmpProtocolMac::Statistics</a>
 </li>
 <li>TxDataFailedTrace()
-: <a class="el" href="class_bug2222_test_case.html#a6ccf3e7c5a9de570c50ad848d86f3f9d">Bug2222TestCase</a>
+: <a class="el" href="class_bug2222_test_case.html#ab759ba7dcc3953f27db6a3ee977876a3">Bug2222TestCase</a>
 , <a class="el" href="classns3_1_1_athstats_wifi_trace_sink.html#abc308a4d8b65afc5775cf4001515909c">ns3::AthstatsWifiTraceSink</a>
 </li>
 <li>TxDropped
@@ -2179,6 +2188,9 @@ $(document).ready(function(){initNavTree('functions_t.html',''); initResizable()
 <li>txFailParam
 : <a class="el" href="structns3_1_1_lte_rrc_sap_1_1_rach_config_common.html#a494d71bead57377c7dcd8e5928116aff">ns3::LteRrcSap::RachConfigCommon</a>
 </li>
+<li>TxFinalDataFailedCallback()
+: <a class="el" href="class_issue40_test_case.html#a8d874b3076b1ed4c54b64f9c66cce293">Issue40TestCase</a>
+</li>
 <li>TxFinalDataFailedTrace()
 : <a class="el" href="classns3_1_1_athstats_wifi_trace_sink.html#a29e9dddeb7bd821037a2ff8edeba1353">ns3::AthstatsWifiTraceSink</a>
 </li>
@@ -2186,16 +2198,17 @@ $(document).ready(function(){initNavTree('functions_t.html',''); initResizable()
 : <a class="el" href="classns3_1_1_athstats_wifi_trace_sink.html#a029bc1c199f7331467a57d3e304e0981">ns3::AthstatsWifiTraceSink</a>
 </li>
 <li>TxFinished()
-: <a class="el" href="classns3_1_1_end_device_lora_mac.html#a852df4cdb256f47bd67918196ba94500">ns3::EndDeviceLoraMac</a>
-, <a class="el" href="classns3_1_1_gateway_lora_mac.html#afa652554d948680488505a749727ec6b">ns3::GatewayLoraMac</a>
-, <a class="el" href="classns3_1_1_gateway_lora_phy.html#a3ef6e83f3360dae02bf1d0e852224fc6">ns3::GatewayLoraPhy</a>
-, <a class="el" href="classns3_1_1_lora_mac.html#aea8f399db364009bdebf9f4ba4b12609">ns3::LoraMac</a>
+: <a class="el" href="classns3_1_1lorawan_1_1_class_a_end_device_lorawan_mac.html#ada2556b5391481d4a4b1da6f53785a0b">ns3::lorawan::ClassAEndDeviceLorawanMac</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_end_device_lorawan_mac.html#a89f30389682b426f1aabf8fd0b5ffd43">ns3::lorawan::EndDeviceLorawanMac</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_gateway_lora_phy.html#a0676e7b725abab9fab81c69ad0c361f5">ns3::lorawan::GatewayLoraPhy</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_gateway_lorawan_mac.html#a2d76fc5f293e72465f24ff8e8a024889">ns3::lorawan::GatewayLorawanMac</a>
+, <a class="el" href="classns3_1_1lorawan_1_1_lorawan_mac.html#ab3b85aed7cab7220fe5aaf050169197e">ns3::lorawan::LorawanMac</a>
 </li>
 <li>TxFinishedCallback
-: <a class="el" href="classns3_1_1_lora_phy.html#a20f698a313b61b6c39baa4f713b88caa">ns3::LoraPhy</a>
+: <a class="el" href="classns3_1_1lorawan_1_1_lora_phy.html#a3dd8f8ea5717fc775dde00ad54f5402c">ns3::lorawan::LoraPhy</a>
 </li>
 <li>TxInfo()
-: <a class="el" href="structns3_1_1_tx_info.html#aa7e4f6a7b580cd08641b3f89eaf3b69a">ns3::TxInfo</a>
+: <a class="el" href="structns3_1_1_tx_info.html#a41cbba129abf3a975ad024cbf6dd0f95">ns3::TxInfo</a>
 </li>
 <li>txMac
 : <a class="el" href="class_lte_rlc_am_transmitter_test_case.html#aef4a21987514cf7f0b7a71794022f096">LteRlcAmTransmitterTestCase</a>
@@ -2246,11 +2259,17 @@ $(document).ready(function(){initNavTree('functions_t.html',''); initResizable()
 <li>TxOpportunityParameters()
 : <a class="el" href="structns3_1_1_lte_mac_sap_user_1_1_tx_opportunity_parameters.html#ab66b3e4345d7f69713abfc7d34f73246">ns3::LteMacSapUser::TxOpportunityParameters</a>
 </li>
+<li>Txops
+: <a class="el" href="classns3_1_1_channel_access_manager.html#aaf5a290bc75fe30892610988e4cac87d">ns3::ChannelAccessManager</a>
+</li>
 <li>TxopTest()
 : <a class="el" href="class_txop_test.html#ae9056ba8c11c303ce706fd3183e90577">TxopTest&lt; TxopType &gt;</a>
 </li>
 <li>TxopTests
 : <a class="el" href="class_channel_access_manager_test.html#a66dedabc6dd41b7b9aa48b2b82ed52d9">ChannelAccessManagerTest&lt; TxopType &gt;</a>
+</li>
+<li>TxopTestSuite()
+: <a class="el" href="class_txop_test_suite.html#a424daff23b19e7a0b787b002d2866ef0">TxopTestSuite</a>
 </li>
 <li>TxPacket()
 : <a class="el" href="classns3_1_1_uan_channel.html#aaf9ea1b58b62a99e1c05c4732dcb5b55">ns3::UanChannel</a>
@@ -2262,10 +2281,10 @@ $(document).ready(function(){initNavTree('functions_t.html',''); initResizable()
 : <a class="el" href="structns3_1_1_flow_monitor_1_1_flow_stats.html#ad2692665c1bb2e79be11bf704c3cc2be">ns3::FlowMonitor::FlowStats</a>
 </li>
 <li>TxParamSetupAns()
-: <a class="el" href="classns3_1_1_tx_param_setup_ans.html#a6f7157fc903de1001ee9487da56b5108">ns3::TxParamSetupAns</a>
+: <a class="el" href="classns3_1_1lorawan_1_1_tx_param_setup_ans.html#adc703adcbfd69c84cf02824664f6420e">ns3::lorawan::TxParamSetupAns</a>
 </li>
 <li>TxParamSetupReq()
-: <a class="el" href="classns3_1_1_tx_param_setup_req.html#a098ccd268f7be899372d3879fb6586ce">ns3::TxParamSetupReq</a>
+: <a class="el" href="classns3_1_1lorawan_1_1_tx_param_setup_req.html#a0830ff31cf5280873190aff090699a10">ns3::lorawan::TxParamSetupReq</a>
 </li>
 <li>txPdcp
 : <a class="el" href="class_lte_rlc_am_transmitter_test_case.html#a05f1f1654108d96efa96f08f3cfa9157">LteRlcAmTransmitterTestCase</a>
@@ -2274,7 +2293,7 @@ $(document).ready(function(){initNavTree('functions_t.html',''); initResizable()
 <li>TxPdu()
 : <a class="el" href="structns3_1_1_lte_rlc_am_1_1_tx_pdu.html#a18c2c2241449baf1252e8b9be7ab7176">ns3::LteRlcAm::TxPdu</a>
 , <a class="el" href="structns3_1_1_lte_rlc_tm_1_1_tx_pdu.html#a9d9c98ae0415c0ff79cdc100745a6755">ns3::LteRlcTm::TxPdu</a>
-, <a class="el" href="structns3_1_1_lte_rlc_um_1_1_tx_pdu.html#ab4f0ad6f9ef3ff6fd127b18e695021f9">ns3::LteRlcUm::TxPdu</a>
+, <a class="el" href="structns3_1_1_lte_rlc_um_1_1_tx_pdu.html#a578a353905073924d98b918f3687fb6e">ns3::LteRlcUm::TxPdu</a>
 </li>
 <li>txPerr
 : <a class="el" href="structns3_1_1dot11s_1_1_hwmp_protocol_mac_1_1_statistics.html#ae4c6f524d625756de6c93b57fa89dfcd">ns3::dot11s::HwmpProtocolMac::Statistics</a>
@@ -2345,9 +2364,6 @@ $(document).ready(function(){initNavTree('functions_t.html',''); initResizable()
 </li>
 <li>TxSpectrumModelInfo()
 : <a class="el" href="classns3_1_1_tx_spectrum_model_info.html#aebed44c25e9aabd4e5ce703855bbeed1">ns3::TxSpectrumModelInfo</a>
-</li>
-<li>TxTime
-: <a class="el" href="class_node_statistics.html#a8a26c55cffa85f1e178a72faab3143ef">NodeStatistics</a>
 </li>
 <li>txTime
 : <a class="el" href="class_node_statistics.html#a333690114730e7a6564c7c29c443a141">NodeStatistics</a>
@@ -2432,7 +2448,7 @@ $(document).ready(function(){initNavTree('functions_t.html',''); initResizable()
 : <a class="el" href="structns3_1_1aodv_1_1_type_header_test.html#a4c74d5328bab112afa002a0f94ae1269">ns3::aodv::TypeHeaderTest</a>
 </li>
 <li>TypeId()
-: <a class="el" href="classns3_1_1_type_id.html#aa40fcff015c898c7987df0453cbbdf69">ns3::TypeId</a>
+: <a class="el" href="classns3_1_1_type_id.html#ab76e26690f1af4f1cffa6a72245e8928">ns3::TypeId</a>
 </li>
 <li>TypeIdPerformanceSuite()
 : <a class="el" href="class_type_id_performance_suite.html#a74ccf390b1bc24d54ff2ab15779e2c15">TypeIdPerformanceSuite</a>
@@ -2471,7 +2487,7 @@ $(document).ready(function(){initNavTree('functions_t.html',''); initResizable()
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:51 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:53 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

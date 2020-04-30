@@ -1,5 +1,5 @@
 <map id="ns3::AdhocWifiMac" name="ns3::AdhocWifiMac">
-<area shape="rect" id="node1" title=" " alt="" coords="17,533,163,560"/>
+<area shape="rect" id="node1" title="Wifi MAC high model for an ad&#45;hoc Wifi MAC." alt="" coords="17,533,163,560"/>
 <area shape="rect" id="node2" href="$classns3_1_1_regular_wifi_mac.html" title="base class for all MAC&#45;level wifi objects." alt="" coords="12,457,168,484"/>
 <area shape="rect" id="node3" href="$classns3_1_1_wifi_mac.html" title="base class for all MAC&#45;level wifi objects." alt="" coords="37,381,143,408"/>
 <area shape="rect" id="node4" href="$classns3_1_1_object.html" title="A base class which provides memory management and object aggregation." alt="" coords="43,305,137,332"/>

@@ -12,7 +12,7 @@ var class_receive_path_test =
     [ "frequency2", "class_receive_path_test.html#a40c81a5201d444661e927d8fcd9ee12f", null ],
     [ "frequency3", "class_receive_path_test.html#a3477806b8922019a36a323971af3b006", null ],
     [ "frequency4", "class_receive_path_test.html#adc9250e04e05c4f1ab164abebbd5fd3c", null ],
-    [ "gatewayPhy", "class_receive_path_test.html#a88ae027119de69f2f6b2c2f67627bc34", null ],
+    [ "gatewayPhy", "class_receive_path_test.html#a934c9fe1c2a3e5f851f7e753a0d42737", null ],
     [ "m_interferenceCalls", "class_receive_path_test.html#aea0316cfe003da7a52197f120cb91185", null ],
     [ "m_maxOccupiedReceptionPaths", "class_receive_path_test.html#afc32cc3ab0c75d1c881d8bb2e99c3046", null ],
     [ "m_noMoreDemodulatorsCalls", "class_receive_path_test.html#acd7f13deed992e7a7cff5e6057d3648e", null ],

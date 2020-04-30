@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -395,25 +392,25 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A log distance path loss propagation model with three distance fields. This model is the same as <a class="el" href="classns3_1_1_log_distance_propagation_loss_model.html" title="a log distance propagation model.">ns3::LogDistancePropagationLossModel</a> except that it has three distance fields: near, middle and far with different exponents. </p>
 <p>Within each field the reception power is calculated using the log-distance propagation equation: </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ L = L_0 + 10 \cdot n_0 log_{10}(\frac{d}{d_0})\]" src="form_135.png" width="0" height="29"/>
+<img class="formulaDsp" alt="\[ L = L_0 + 10 \cdot n_0 log_{10}(\frac{d}{d_0})\]" src="form_135.png" width="140" height="29"/>
 </p>
 <p> Each field begins where the previous ends and all together form a continuous function.</p>
 <p>There are three valid distance fields: near, middle, far. Actually four: the first from 0 to the reference distance is invalid and returns txPowerDbm.</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \underbrace{0 \cdots\cdots}_{=0} \underbrace{d_0 \cdots\cdots}_{n_0} \underbrace{d_1 \cdots\cdots}_{n_1} \underbrace{d_2 \cdots\cdots}_{n_2} \infty \]" src="form_136.png" width="0" height="30"/>
+<img class="formulaDsp" alt="\[ \underbrace{0 \cdots\cdots}_{=0} \underbrace{d_0 \cdots\cdots}_{n_0} \underbrace{d_1 \cdots\cdots}_{n_1} \underbrace{d_2 \cdots\cdots}_{n_2} \infty \]" src="form_136.png" width="198" height="30"/>
 </p>
 <p>Complete formula for the path loss in dB:</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[\displaystyle L = \begin{cases} 0 &amp; d &lt; d_0 \\ L_0 + 10 \cdot n_0 \log_{10}(\frac{d}{d_0}) &amp; d_0 \leq d &lt; d_1 \\ L_0 + 10 \cdot n_0 \log_{10}(\frac{d_1}{d_0}) + 10 \cdot n_1 \log_{10}(\frac{d}{d_1}) &amp; d_1 \leq d &lt; d_2 \\ L_0 + 10 \cdot n_0 \log_{10}(\frac{d_1}{d_0}) + 10 \cdot n_1 \log_{10}(\frac{d_2}{d_1}) + 10 \cdot n_2 \log_{10}(\frac{d}{d_2})&amp; d_2 \leq d \end{cases}\]" src="form_137.png" width="0" height="71"/>
+<img class="formulaDsp" alt="\[\displaystyle L = \begin{cases} 0 &amp; d &lt; d_0 \\ L_0 + 10 \cdot n_0 \log_{10}(\frac{d}{d_0}) &amp; d_0 \leq d &lt; d_1 \\ L_0 + 10 \cdot n_0 \log_{10}(\frac{d_1}{d_0}) + 10 \cdot n_1 \log_{10}(\frac{d}{d_1}) &amp; d_1 \leq d &lt; d_2 \\ L_0 + 10 \cdot n_0 \log_{10}(\frac{d_1}{d_0}) + 10 \cdot n_1 \log_{10}(\frac{d_2}{d_1}) + 10 \cdot n_2 \log_{10}(\frac{d}{d_2})&amp; d_2 \leq d \end{cases}\]" src="form_137.png" width="429" height="71"/>
 </p>
 <p>where:</p><ul>
-<li><img class="formulaInl" alt="$ L $" src="form_116.png" width="0" height="10"/> : resulting path loss (dB)</li>
-<li><img class="formulaInl" alt="$ d $" src="form_115.png" width="0" height="10"/> : distance (m)</li>
-<li><img class="formulaInl" alt="$ d_0, d_1, d_2 $" src="form_138.png" width="0" height="13"/> : three distance fields (m)</li>
-<li><img class="formulaInl" alt="$ n_0, n_1, n_2 $" src="form_139.png" width="0" height="9"/> : path loss distance exponent for each field (unitless)</li>
-<li><img class="formulaInl" alt="$ L_0 $" src="form_134.png" width="0" height="13"/> : path loss at reference distance (dB)</li>
+<li><img class="formulaInl" alt="$ L $" src="form_116.png" width="9" height="10"/> : resulting path loss (dB)</li>
+<li><img class="formulaInl" alt="$ d $" src="form_115.png" width="6" height="10"/> : distance (m)</li>
+<li><img class="formulaInl" alt="$ d_0, d_1, d_2 $" src="form_138.png" width="46" height="13"/> : three distance fields (m)</li>
+<li><img class="formulaInl" alt="$ n_0, n_1, n_2 $" src="form_139.png" width="50" height="9"/> : path loss distance exponent for each field (unitless)</li>
+<li><img class="formulaInl" alt="$ L_0 $" src="form_134.png" width="14" height="13"/> : path loss at reference distance (dB)</li>
 </ul>
-<p>When the path loss is requested at a distance smaller than the reference distance <img class="formulaInl" alt="$ d_0 $" src="form_133.png" width="0" height="13"/>, the tx power (with no path loss) is returned. The reference distance defaults to 1m and reference loss defaults to <a class="el" href="classns3_1_1_friis_propagation_loss_model.html" title="a Friis propagation loss model">ns3::FriisPropagationLossModel</a> with 5.15 GHz and is thus <img class="formulaInl" alt="$ L_0 $" src="form_134.png" width="0" height="13"/> = 46.67 dB. </p>
+<p>When the path loss is requested at a distance smaller than the reference distance <img class="formulaInl" alt="$ d_0 $" src="form_133.png" width="11" height="13"/>, the tx power (with no path loss) is returned. The reference distance defaults to 1m and reference loss defaults to <a class="el" href="classns3_1_1_friis_propagation_loss_model.html" title="a Friis propagation loss model">ns3::FriisPropagationLossModel</a> with 5.15 GHz and is thus <img class="formulaInl" alt="$ L_0 $" src="form_134.png" width="14" height="13"/> = 46.67 dB. </p>
 
 <p class="definition">Definition at line <a class="el" href="propagation-loss-model_8h_source.html#l00585">585</a> of file <a class="el" href="propagation-loss-model_8h_source.html">propagation-loss-model.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -599,7 +596,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="propagation-loss-model_8cc_source.html#l00548">548</a> of file <a class="el" href="propagation-loss-model_8cc_source.html">propagation-loss-model.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="propagation-loss-model_8h_source.html#l00617">m_distance0</a>, <a class="el" href="propagation-loss-model_8h_source.html#l00618">m_distance1</a>, <a class="el" href="propagation-loss-model_8h_source.html#l00619">m_distance2</a>, <a class="el" href="propagation-loss-model_8h_source.html#l00621">m_exponent0</a>, <a class="el" href="propagation-loss-model_8h_source.html#l00622">m_exponent1</a>, <a class="el" href="propagation-loss-model_8h_source.html#l00623">m_exponent2</a>, <a class="el" href="propagation-loss-model_8h_source.html#l00625">m_referenceLoss</a>, <a class="el" href="double_8h_source.html#l00042">ns3::MakeDoubleAccessor()</a>, and <a class="el" href="type-id_8cc_source.html#l00922">ns3::TypeId::SetParent()</a>.</p>
+<p class="reference">References <a class="el" href="propagation-loss-model_8h_source.html#l00617">m_distance0</a>, <a class="el" href="propagation-loss-model_8h_source.html#l00618">m_distance1</a>, <a class="el" href="propagation-loss-model_8h_source.html#l00619">m_distance2</a>, <a class="el" href="propagation-loss-model_8h_source.html#l00621">m_exponent0</a>, <a class="el" href="propagation-loss-model_8h_source.html#l00622">m_exponent1</a>, <a class="el" href="propagation-loss-model_8h_source.html#l00623">m_exponent2</a>, <a class="el" href="propagation-loss-model_8h_source.html#l00625">m_referenceLoss</a>, <a class="el" href="double_8h_source.html#l00042">ns3::MakeDoubleAccessor()</a>, and <a class="el" href="type-id_8cc_source.html#l00923">ns3::TypeId::SetParent()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -858,7 +855,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_three_log_distance_propagation_loss_model.html">ThreeLogDistancePropagationLossModel</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:42 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:44 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

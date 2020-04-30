@@ -4,14 +4,14 @@
 <area shape="rect" id="node26" href="$classns3_1_1_wifi_information_element.html#a8662b6056d624747d927e9c041e24ab0" title="Serialize entire IE including Element ID and length fields." alt="" coords="544,862,753,903"/>
 <area shape="rect" id="node33" href="$classns3_1_1_capability_information.html#a7acbca7c6c6ad27f600cba33cce06b7d" title="Serialize capability information to the given buffer." alt="" coords="290,366,485,407"/>
 <area shape="rect" id="node34" href="$namespacevisualizer_1_1core.html#a2a35e5d8a34af358b508dac8635754e0" title=" " alt="" coords="573,461,724,488"/>
-<area shape="rect" id="node37" href="$classns3_1_1_cf_parameter_set.html#a9173d89bf209197aab6da4a9df444c67" title="This information element is a bit special in that it is only included if the STA is a QoS STA." alt="" coords="309,601,465,642"/>
-<area shape="rect" id="node38" href="$classns3_1_1_dsss_parameter_set.html#a311c8b7f70d49cfebdd4c62cd7662808" title="This information element is a bit special in that it is only included if the STA does support DSSS." alt="" coords="301,666,474,707"/>
-<area shape="rect" id="node39" href="$classns3_1_1_edca_parameter_set.html#a1e9211bf5bb8f74857ed61e8003a51bf" title="This information element is a bit special in that it is only included if the STA is a QoS STA." alt="" coords="301,731,474,773"/>
-<area shape="rect" id="node40" href="$classns3_1_1_erp_information.html#a647ca63253a099f4e9a03ab14f6f347e" title="This information element is a bit special in that it is only included if the STA is an ERP STA." alt="" coords="312,797,463,838"/>
-<area shape="rect" id="node41" href="$classns3_1_1_extended_capabilities.html#a6bfc9e52ad54ecee9f11bc6a7e9dea7d" title="This information element is a bit special in that it is only included if the STA is a HT STA." alt="" coords="292,862,483,903"/>
-<area shape="rect" id="node42" href="$classns3_1_1_he_capabilities.html#a2539a6048077d3f1c333a060943fcce3" title="Serialize function." alt="" coords="313,927,461,969"/>
-<area shape="rect" id="node43" href="$classns3_1_1_he_operation.html#ad60be854ad8ae9aee9841a811f463a67" title="This information element is a bit special in that it is only included if the STA is a HE STA." alt="" coords="288,993,487,1020"/>
-<area shape="rect" id="node44" href="$classns3_1_1_ht_capabilities.html#a8c602ed95290cd1aa75cafaa1744f6ba" title="This information element is a bit special in that it is only included if the STA is an HT STA." alt="" coords="315,1045,460,1086"/>
+<area shape="rect" id="node37" href="$classns3_1_1_cf_parameter_set.html#a9173d89bf209197aab6da4a9df444c67" title=" " alt="" coords="309,601,465,642"/>
+<area shape="rect" id="node38" href="$classns3_1_1_dsss_parameter_set.html#a311c8b7f70d49cfebdd4c62cd7662808" title=" " alt="" coords="301,666,474,707"/>
+<area shape="rect" id="node39" href="$classns3_1_1_edca_parameter_set.html#a1e9211bf5bb8f74857ed61e8003a51bf" title=" " alt="" coords="301,731,474,773"/>
+<area shape="rect" id="node40" href="$classns3_1_1_erp_information.html#a647ca63253a099f4e9a03ab14f6f347e" title=" " alt="" coords="312,797,463,838"/>
+<area shape="rect" id="node41" href="$classns3_1_1_extended_capabilities.html#a6bfc9e52ad54ecee9f11bc6a7e9dea7d" title=" " alt="" coords="292,862,483,903"/>
+<area shape="rect" id="node42" href="$classns3_1_1_he_capabilities.html#a2539a6048077d3f1c333a060943fcce3" title=" " alt="" coords="313,927,461,969"/>
+<area shape="rect" id="node43" href="$classns3_1_1_he_operation.html#ad60be854ad8ae9aee9841a811f463a67" title=" " alt="" coords="288,993,487,1020"/>
+<area shape="rect" id="node44" href="$classns3_1_1_ht_capabilities.html#a8c602ed95290cd1aa75cafaa1744f6ba" title=" " alt="" coords="315,1045,460,1086"/>
 <area shape="rect" id="node45" href="$classns3_1_1_ht_operation.html#a417fa79492660ee92a87483324584414" title=" " alt="" coords="289,1111,485,1137"/>
 <area shape="rect" id="node46" href="$classns3_1_1_extended_supported_rates_i_e.html#aa9c2e690fce4f090645460828d041e3a" title=" " alt="" coords="279,483,496,525"/>
 <area shape="rect" id="node47" href="$classns3_1_1_vht_capabilities.html#a13178aba277c65e0bb1734e542726952" title=" " alt="" coords="311,1162,463,1203"/>

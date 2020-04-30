@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -282,26 +279,26 @@ $(document).ready(function(){initNavTree('rem-spectrum-phy_8cc_source.html','');
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="classns3_1_1_rem_spectrum_phy.html#a9ddd325516aae88f04bd688c08a27e0d">  125</a></span>&#160;<a class="code" href="classns3_1_1_rem_spectrum_phy.html#a9ddd325516aae88f04bd688c08a27e0d">RemSpectrumPhy::StartRx</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;SpectrumSignalParameters&gt;</a> params)</div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="classns3_1_1_rem_spectrum_phy.html#a9ddd325516aae88f04bd688c08a27e0d">  125</a></span>&#160;<a class="code" href="classns3_1_1_rem_spectrum_phy.html#a9ddd325516aae88f04bd688c08a27e0d">RemSpectrumPhy::StartRx</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;SpectrumSignalParameters&gt;</a> <a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>)</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;{</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <a class="code" href="group__logging.html#ga90b90d5bad1f39cb1b64923ea94c0761">NS_LOG_FUNCTION</a> ( <span class="keyword">this</span> &lt;&lt; params);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <a class="code" href="group__logging.html#ga90b90d5bad1f39cb1b64923ea94c0761">NS_LOG_FUNCTION</a> ( <span class="keyword">this</span> &lt;&lt; <a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>);</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classns3_1_1_rem_spectrum_phy.html#aaf04013201d8b634bdd992d6982f4415">m_active</a>)</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    {</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="classns3_1_1_rem_spectrum_phy.html#af2cc6a40b67d0d47bbddfee708479779">m_useDataChannel</a>)</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        {</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;          <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;LteSpectrumSignalParametersDataFrame&gt;</a> lteDlDataRxParams = DynamicCast&lt;LteSpectrumSignalParametersDataFrame&gt; (params);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;          <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;LteSpectrumSignalParametersDataFrame&gt;</a> lteDlDataRxParams = DynamicCast&lt;LteSpectrumSignalParametersDataFrame&gt; (<a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>);</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;          <span class="keywordflow">if</span> (lteDlDataRxParams != 0)</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            {</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;              <a class="code" href="group__logging.html#ga413f1886406d49f59a6a0a89b77b4d0a">NS_LOG_DEBUG</a> (<span class="stringliteral">&quot;StartRx data&quot;</span>);</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;              <span class="keywordtype">double</span> power = 0;</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;              <span class="keywordflow">if</span> (<a class="code" href="classns3_1_1_rem_spectrum_phy.html#a24612833420c9d757f2c83f3ce5d50b3">m_rbId</a> &gt;= 0)</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                {</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                  power = (*(params-&gt;psd))[<a class="code" href="classns3_1_1_rem_spectrum_phy.html#a24612833420c9d757f2c83f3ce5d50b3">m_rbId</a>] * 180000;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                  power = (*(<a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>-&gt;psd))[<a class="code" href="classns3_1_1_rem_spectrum_phy.html#a24612833420c9d757f2c83f3ce5d50b3">m_rbId</a>] * 180000;</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                }</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;              <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                {</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                  power = <a class="code" href="namespacens3.html#a3dd3817567502f8bc77b04e47134c070">Integral</a> (*(params-&gt;psd));</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                  power = <a class="code" href="namespacens3.html#a3dd3817567502f8bc77b04e47134c070">Integral</a> (*(<a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>-&gt;psd));</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                }</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;              <a class="code" href="classns3_1_1_rem_spectrum_phy.html#aa04c880a3c709f7125e1817845818517">m_sumPower</a> += power;</div>
@@ -313,18 +310,18 @@ $(document).ready(function(){initNavTree('rem-spectrum-phy_8cc_source.html','');
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        }</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;      <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        {</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;          <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;LteSpectrumSignalParametersDlCtrlFrame&gt;</a> lteDlCtrlRxParams = DynamicCast&lt;LteSpectrumSignalParametersDlCtrlFrame&gt; (params);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;          <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;LteSpectrumSignalParametersDlCtrlFrame&gt;</a> lteDlCtrlRxParams = DynamicCast&lt;LteSpectrumSignalParametersDlCtrlFrame&gt; (<a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>);</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;          <span class="keywordflow">if</span> (lteDlCtrlRxParams != 0)</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            {</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;              <a class="code" href="group__logging.html#ga413f1886406d49f59a6a0a89b77b4d0a">NS_LOG_DEBUG</a> (<span class="stringliteral">&quot;StartRx control&quot;</span>);</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;              <span class="keywordtype">double</span> power = 0;</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;              <span class="keywordflow">if</span> (<a class="code" href="classns3_1_1_rem_spectrum_phy.html#a24612833420c9d757f2c83f3ce5d50b3">m_rbId</a> &gt;= 0)</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                {</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                  power = (*(params-&gt;psd))[<a class="code" href="classns3_1_1_rem_spectrum_phy.html#a24612833420c9d757f2c83f3ce5d50b3">m_rbId</a>] * 180000;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                  power = (*(<a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>-&gt;psd))[<a class="code" href="classns3_1_1_rem_spectrum_phy.html#a24612833420c9d757f2c83f3ce5d50b3">m_rbId</a>] * 180000;</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                }</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;              <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                {</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                  power = <a class="code" href="namespacens3.html#a3dd3817567502f8bc77b04e47134c070">Integral</a> (*(params-&gt;psd));</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                  power = <a class="code" href="namespacens3.html#a3dd3817567502f8bc77b04e47134c070">Integral</a> (*(<a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>-&gt;psd));</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                }</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;              <a class="code" href="classns3_1_1_rem_spectrum_phy.html#aa04c880a3c709f7125e1817845818517">m_sumPower</a> += power;</div>
@@ -389,13 +386,14 @@ $(document).ready(function(){initNavTree('rem-spectrum-phy_8cc_source.html','');
 <div class="ttc" id="agroup__logging_html_ga225a95395fa117b7309aa3c43518d02e"><div class="ttname"><a href="group__logging.html#ga225a95395fa117b7309aa3c43518d02e">NS_LOG_COMPONENT_DEFINE</a></div><div class="ttdeci">#define NS_LOG_COMPONENT_DEFINE(name)</div><div class="ttdoc">Define a Log component with a specific name.</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00206">log.h:205</a></div></div>
 <div class="ttc" id="anamespacens3_html_a3dd3817567502f8bc77b04e47134c070"><div class="ttname"><a href="namespacens3.html#a3dd3817567502f8bc77b04e47134c070">ns3::Integral</a></div><div class="ttdeci">double Integral(const SpectrumValue &amp;arg)</div><div class="ttdef"><b>Definition:</b> <a href="spectrum-value_8cc_source.html#l00390">spectrum-value.cc:390</a></div></div>
 <div class="ttc" id="agroup__object_html_gada1b0bfc04abdba718621b5095c87678"><div class="ttname"><a href="group__object.html#gada1b0bfc04abdba718621b5095c87678">NS_OBJECT_ENSURE_REGISTERED</a></div><div class="ttdeci">#define NS_OBJECT_ENSURE_REGISTERED(type)</div><div class="ttdoc">Register an Object subclass with the TypeId system.</div><div class="ttdef"><b>Definition:</b> <a href="object-base_8h_source.html#l00046">object-base.h:45</a></div></div>
+<div class="ttc" id="anamespacealoha_html_aff1381c591fdaf9d3af2b19080c9eed7"><div class="ttname"><a href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">aloha.params</a></div><div class="ttdeci">dictionary params</div><div class="ttdef"><b>Definition:</b> <a href="aloha_8py_source.html#l00013">aloha.py:13</a></div></div>
 <div class="ttc" id="anamespacens3_html"><div class="ttname"><a href="namespacens3.html">ns3</a></div><div class="ttdoc">Every class exported by the ns3 library is enclosed in the ns3 namespace.</div></div>
 <div class="ttc" id="aclassns3_1_1_rem_spectrum_phy_html_a100e387daa9172640b7813876e377bf5"><div class="ttname"><a href="classns3_1_1_rem_spectrum_phy.html#a100e387daa9172640b7813876e377bf5">ns3::RemSpectrumPhy::RemSpectrumPhy</a></div><div class="ttdeci">RemSpectrumPhy()</div><div class="ttdef"><b>Definition:</b> <a href="rem-spectrum-phy_8cc_source.html#l00040">rem-spectrum-phy.cc:40</a></div></div>
 <div class="ttc" id="aclassns3_1_1_rem_spectrum_phy_html_ab5d3920e9d10c669a9b679c634d85454"><div class="ttname"><a href="classns3_1_1_rem_spectrum_phy.html#ab5d3920e9d10c669a9b679c634d85454">ns3::RemSpectrumPhy::SetChannel</a></div><div class="ttdeci">void SetChannel(Ptr&lt; SpectrumChannel &gt; c)</div><div class="ttdoc">Set the channel attached to this device.</div><div class="ttdef"><b>Definition:</b> <a href="rem-spectrum-phy_8cc_source.html#l00080">rem-spectrum-phy.cc:80</a></div></div>
 <div class="ttc" id="aclassns3_1_1_rem_spectrum_phy_html"><div class="ttname"><a href="classns3_1_1_rem_spectrum_phy.html">ns3::RemSpectrumPhy</a></div><div class="ttdoc">This minimal SpectrumPhy implementation calculates the SINR with respect to the strongest signal for ...</div><div class="ttdef"><b>Definition:</b> <a href="rem-spectrum-phy_8h_source.html#l00051">rem-spectrum-phy.h:52</a></div></div>
 <div class="ttc" id="aclassns3_1_1_rem_spectrum_phy_html_aa04c880a3c709f7125e1817845818517"><div class="ttname"><a href="classns3_1_1_rem_spectrum_phy.html#aa04c880a3c709f7125e1817845818517">ns3::RemSpectrumPhy::m_sumPower</a></div><div class="ttdeci">double m_sumPower</div><div class="ttdoc">sum power</div><div class="ttdef"><b>Definition:</b> <a href="rem-spectrum-phy_8h_source.html#l00127">rem-spectrum-phy.h:127</a></div></div>
 <div class="ttc" id="aclassns3_1_1_rem_spectrum_phy_html_a59371fcd0bd108e2d730b9dbc8c9f25f"><div class="ttname"><a href="classns3_1_1_rem_spectrum_phy.html#a59371fcd0bd108e2d730b9dbc8c9f25f">ns3::RemSpectrumPhy::m_rxSpectrumModel</a></div><div class="ttdeci">Ptr&lt; const SpectrumModel &gt; m_rxSpectrumModel</div><div class="ttdoc">receive spectrum model</div><div class="ttdef"><b>Definition:</b> <a href="rem-spectrum-phy_8h_source.html#l00124">rem-spectrum-phy.h:124</a></div></div>
-<div class="ttc" id="aclassns3_1_1_type_id_html_abaaca67ab7d2471067e7c275df0f7309"><div class="ttname"><a href="classns3_1_1_type_id.html#abaaca67ab7d2471067e7c275df0f7309">ns3::TypeId::SetParent</a></div><div class="ttdeci">TypeId SetParent(TypeId tid)</div><div class="ttdoc">Set the parent TypeId.</div><div class="ttdef"><b>Definition:</b> <a href="type-id_8cc_source.html#l00922">type-id.cc:922</a></div></div>
+<div class="ttc" id="aclassns3_1_1_type_id_html_abaaca67ab7d2471067e7c275df0f7309"><div class="ttname"><a href="classns3_1_1_type_id.html#abaaca67ab7d2471067e7c275df0f7309">ns3::TypeId::SetParent</a></div><div class="ttdeci">TypeId SetParent(TypeId tid)</div><div class="ttdoc">Set the parent TypeId.</div><div class="ttdef"><b>Definition:</b> <a href="type-id_8cc_source.html#l00923">type-id.cc:923</a></div></div>
 <div class="ttc" id="aclassns3_1_1_rem_spectrum_phy_html_a122a4b069be17e97c1df646a9d4f4506"><div class="ttname"><a href="classns3_1_1_rem_spectrum_phy.html#a122a4b069be17e97c1df646a9d4f4506">ns3::RemSpectrumPhy::m_referenceSignalPower</a></div><div class="ttdeci">double m_referenceSignalPower</div><div class="ttdoc">reference signal power</div><div class="ttdef"><b>Definition:</b> <a href="rem-spectrum-phy_8h_source.html#l00126">rem-spectrum-phy.h:126</a></div></div>
 <div class="ttc" id="aclassns3_1_1_rem_spectrum_phy_html_a4880d01719192d6c8392ad6ab1e4732d"><div class="ttname"><a href="classns3_1_1_rem_spectrum_phy.html#a4880d01719192d6c8392ad6ab1e4732d">ns3::RemSpectrumPhy::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">Reset the SINR calculator.</div><div class="ttdef"><b>Definition:</b> <a href="rem-spectrum-phy_8cc_source.html#l00206">rem-spectrum-phy.cc:206</a></div></div>
 <div class="ttc" id="aclassns3_1_1_rem_spectrum_phy_html_a24f74606d67b49246c70ee32a2ecf1bf"><div class="ttname"><a href="classns3_1_1_rem_spectrum_phy.html#a24f74606d67b49246c70ee32a2ecf1bf">ns3::RemSpectrumPhy::IsActive</a></div><div class="ttdeci">bool IsActive()</div><div class="ttdef"><b>Definition:</b> <a href="rem-spectrum-phy_8cc_source.html#l00200">rem-spectrum-phy.cc:200</a></div></div>
@@ -432,7 +430,7 @@ $(document).ready(function(){initNavTree('rem-spectrum-phy_8cc_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ef1775b0ff4284164f823a882317d681.html">lte</a></li><li class="navelem"><a class="el" href="dir_d84c0a9c9435ae3a7e1022dda3bc062b.html">model</a></li><li class="navelem"><a class="el" href="rem-spectrum-phy_8cc.html">rem-spectrum-phy.cc</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:00 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:08 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

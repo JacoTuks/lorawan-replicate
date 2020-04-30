@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -402,12 +399,12 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>Nakagami-m fast fading propagation loss model. </p>
 <p>This propagation loss model implements the Nakagami-m fast fading model, which accounts for the variations in signal strength due to multipath fading. The model does not account for the path loss due to the distance traveled by the signal, hence for typical simulation usage it is recommended to consider using it in combination with other models that take into account this aspect.</p>
 <p>The Nakagami-m distribution is applied to the power level. The probability density function is defined as </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ p(x; m, \omega) = \frac{2 m^m}{\Gamma(m) \omega^m} x^{2m - 1} e^{-\frac{m}{\omega} x^2} \]" src="form_140.png" width="0" height="30"/>
+<img class="formulaDsp" alt="\[ p(x; m, \omega) = \frac{2 m^m}{\Gamma(m) \omega^m} x^{2m - 1} e^{-\frac{m}{\omega} x^2} \]" src="form_140.png" width="189" height="30"/>
 </p>
-<p> with <img class="formulaInl" alt="$ m $" src="form_141.png" width="0" height="6"/> the fading depth parameter and <img class="formulaInl" alt="$ \omega $" src="form_142.png" width="0" height="6"/> the average received power.</p>
+<p> with <img class="formulaInl" alt="$ m $" src="form_141.png" width="13" height="6"/> the fading depth parameter and <img class="formulaInl" alt="$ \omega $" src="form_142.png" width="9" height="6"/> the average received power.</p>
 <p>It is implemented by either a <a class="el" href="classns3_1_1_gamma_random_variable.html" title="The gamma distribution Random Number Generator (RNG) that allows stream numbers to be set determinist...">ns3::GammaRandomVariable</a> or a <a class="el" href="classns3_1_1_erlang_random_variable.html" title="The Erlang distribution Random Number Generator (RNG) that allows stream numbers to be set determinis...">ns3::ErlangRandomVariable</a> random variable.</p>
 <p>The implementation of the model allows to specify different values of the m parameter (and hence different fading profiles) for three different distance ranges: </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \underbrace{0 \cdots\cdots}_{m_0} \underbrace{d_1 \cdots\cdots}_{m_1} \underbrace{d_2 \cdots\cdots}_{m_2} \infty \]" src="form_143.png" width="0" height="30"/>
+<img class="formulaDsp" alt="\[ \underbrace{0 \cdots\cdots}_{m_0} \underbrace{d_1 \cdots\cdots}_{m_1} \underbrace{d_2 \cdots\cdots}_{m_2} \infty \]" src="form_143.png" width="150" height="30"/>
 </p>
 <p>For m = 1 the Nakagami-m distribution equals the Rayleigh distribution. Thus this model also implements Rayleigh distribution based fast fading. </p>
 
@@ -597,7 +594,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="propagation-loss-model_8cc_source.html#l00650">650</a> of file <a class="el" href="propagation-loss-model_8cc_source.html">propagation-loss-model.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="propagation-loss-model_8h_source.html#l00688">m_distance1</a>, <a class="el" href="propagation-loss-model_8h_source.html#l00689">m_distance2</a>, <a class="el" href="propagation-loss-model_8h_source.html#l00695">m_erlangRandomVariable</a>, <a class="el" href="propagation-loss-model_8h_source.html#l00696">m_gammaRandomVariable</a>, <a class="el" href="propagation-loss-model_8h_source.html#l00691">m_m0</a>, <a class="el" href="propagation-loss-model_8h_source.html#l00692">m_m1</a>, <a class="el" href="propagation-loss-model_8h_source.html#l00693">m_m2</a>, <a class="el" href="double_8h_source.html#l00042">ns3::MakeDoubleAccessor()</a>, <a class="el" href="pointer_8h_source.html#l00229">ns3::MakePointerAccessor()</a>, and <a class="el" href="type-id_8cc_source.html#l00922">ns3::TypeId::SetParent()</a>.</p>
+<p class="reference">References <a class="el" href="propagation-loss-model_8h_source.html#l00688">m_distance1</a>, <a class="el" href="propagation-loss-model_8h_source.html#l00689">m_distance2</a>, <a class="el" href="propagation-loss-model_8h_source.html#l00695">m_erlangRandomVariable</a>, <a class="el" href="propagation-loss-model_8h_source.html#l00696">m_gammaRandomVariable</a>, <a class="el" href="propagation-loss-model_8h_source.html#l00691">m_m0</a>, <a class="el" href="propagation-loss-model_8h_source.html#l00692">m_m1</a>, <a class="el" href="propagation-loss-model_8h_source.html#l00693">m_m2</a>, <a class="el" href="double_8h_source.html#l00042">ns3::MakeDoubleAccessor()</a>, <a class="el" href="pointer_8h_source.html#l00229">ns3::MakePointerAccessor()</a>, and <a class="el" href="type-id_8cc_source.html#l00923">ns3::TypeId::SetParent()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -857,7 +854,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_nakagami_propagation_loss_model.html">NakagamiPropagationLossModel</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:32 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:36 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

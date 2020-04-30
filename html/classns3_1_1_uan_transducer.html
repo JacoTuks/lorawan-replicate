@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -245,7 +242,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a01638a0917d5b7a6979a89d9ec6abb01"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_uan_transducer.html#a01638a0917d5b7a6979a89d9ec6abb01">IsTx</a> (void) const =0</td></tr>
 <tr class="memdesc:a01638a0917d5b7a6979a89d9ec6abb01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the state transmitting?  <a href="classns3_1_1_uan_transducer.html#a01638a0917d5b7a6979a89d9ec6abb01">More...</a><br /></td></tr>
 <tr class="separator:a01638a0917d5b7a6979a89d9ec6abb01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6682b6778b11d03ce6e3ab504046c0d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_uan_transducer.html#aa6682b6778b11d03ce6e3ab504046c0d">Receive</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; <a class="el" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>, double rxPowerDb, <a class="el" href="classns3_1_1_uan_tx_mode.html">UanTxMode</a> txMode, <a class="el" href="classns3_1_1_uan_pdp.html">UanPdp</a> pdp)=0</td></tr>
+<tr class="memitem:aa6682b6778b11d03ce6e3ab504046c0d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_uan_transducer.html#aa6682b6778b11d03ce6e3ab504046c0d">Receive</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; packet, double rxPowerDb, <a class="el" href="classns3_1_1_uan_tx_mode.html">UanTxMode</a> txMode, <a class="el" href="classns3_1_1_uan_pdp.html">UanPdp</a> pdp)=0</td></tr>
 <tr class="memdesc:aa6682b6778b11d03ce6e3ab504046c0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify this object that a new packet has arrived at this nodes location.  <a href="classns3_1_1_uan_transducer.html#aa6682b6778b11d03ce6e3ab504046c0d">More...</a><br /></td></tr>
 <tr class="separator:aa6682b6778b11d03ce6e3ab504046c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf9abb0587f6a19294dec03946b84d49"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_uan_transducer.html#acf9abb0587f6a19294dec03946b84d49">SetChannel</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_uan_channel.html">UanChannel</a> &gt; chan)=0</td></tr>
@@ -254,7 +251,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aea56ef0021169545b0f5e984b8eb03b6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_uan_transducer.html#aea56ef0021169545b0f5e984b8eb03b6">SetRxGainDb</a> (double gainDb)=0</td></tr>
 <tr class="memdesc:aea56ef0021169545b0f5e984b8eb03b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the receiver gain.  <a href="classns3_1_1_uan_transducer.html#aea56ef0021169545b0f5e984b8eb03b6">More...</a><br /></td></tr>
 <tr class="separator:aea56ef0021169545b0f5e984b8eb03b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0b3226e7a0ed3127c1dda3ffab6d6ee"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_uan_transducer.html#ab0b3226e7a0ed3127c1dda3ffab6d6ee">Transmit</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_uan_phy.html">UanPhy</a> &gt; src, <a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; <a class="el" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>, double txPowerDb, <a class="el" href="classns3_1_1_uan_tx_mode.html">UanTxMode</a> txMode)=0</td></tr>
+<tr class="memitem:ab0b3226e7a0ed3127c1dda3ffab6d6ee"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_uan_transducer.html#ab0b3226e7a0ed3127c1dda3ffab6d6ee">Transmit</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_uan_phy.html">UanPhy</a> &gt; src, <a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; packet, double txPowerDb, <a class="el" href="classns3_1_1_uan_tx_mode.html">UanTxMode</a> txMode)=0</td></tr>
 <tr class="memdesc:ab0b3226e7a0ed3127c1dda3ffab6d6ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmit a packet from this transducer.  <a href="classns3_1_1_uan_transducer.html#ab0b3226e7a0ed3127c1dda3ffab6d6ee">More...</a><br /></td></tr>
 <tr class="separator:ab0b3226e7a0ed3127c1dda3ffab6d6ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classns3_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classns3_1_1_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classns3_1_1_object.html">ns3::Object</a></td></tr>
@@ -746,7 +743,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="uan-transducer_8cc_source.html#l00027">27</a> of file <a class="el" href="uan-transducer_8cc_source.html">uan-transducer.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="type-id_8cc_source.html#l00922">ns3::TypeId::SetParent()</a>.</p>
+<p class="reference">References <a class="el" href="type-id_8cc_source.html#l00923">ns3::TypeId::SetParent()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -1034,7 +1031,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_uan_transducer.html">UanTransducer</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:44 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:46 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

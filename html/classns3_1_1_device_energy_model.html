@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -176,15 +173,16 @@ $(document).ready(function(){initNavTree('classns3_1_1_device_energy_model.html'
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_device_energy_model__inherit__graph.png" border="0" usemap="#ns3_1_1_device_energy_model_inherit__map" alt="Inheritance graph"/></div>
 <map name="ns3_1_1_device_energy_model_inherit__map" id="ns3_1_1_device_energy_model_inherit__map">
-<area shape="rect" title="Base class for device energy models." alt="" coords="891,71,1073,98"/>
+<area shape="rect" title="Base class for device energy models." alt="" coords="891,107,1073,134"/>
 <area shape="rect" href="classns3_1_1_acoustic_modem_energy_model.html" title=" " alt="" coords="1135,5,1338,47"/>
-<area shape="rect" href="classns3_1_1_simple_device_energy_model.html" title=" " alt="" coords="1123,71,1351,98"/>
-<area shape="rect" href="classns3_1_1_wifi_radio_energy_model.html" title="A WiFi radio energy model." alt="" coords="1136,122,1337,149"/>
-<area shape="rect" href="classns3_1_1_object.html" title="A base class which provides memory management and object aggregation." alt="" coords="747,71,841,98"/>
-<area shape="rect" href="classns3_1_1_simple_ref_count.html" title=" " alt="" coords="532,57,697,113"/>
-<area shape="rect" href="classns3_1_1_object_base.html" title="Anchor the ns&#45;3 type and attribute system." alt="" coords="179,42,306,69"/>
-<area shape="rect" href="classns3_1_1_simple_ref_count.html" title="A template&#45;based reference counting class." alt="" coords="149,93,336,135"/>
-<area shape="rect" href="classns3_1_1empty.html" title="make Callback use a separate empty type" alt="" coords="5,101,100,127"/>
+<area shape="rect" href="classns3_1_1lorawan_1_1_lora_radio_energy_model.html" title="A WiFi radio energy model." alt="" coords="1125,71,1348,112"/>
+<area shape="rect" href="classns3_1_1_simple_device_energy_model.html" title=" " alt="" coords="1123,137,1351,163"/>
+<area shape="rect" href="classns3_1_1_wifi_radio_energy_model.html" title="A WiFi radio energy model." alt="" coords="1136,187,1337,214"/>
+<area shape="rect" href="classns3_1_1_object.html" title="A base class which provides memory management and object aggregation." alt="" coords="747,107,841,134"/>
+<area shape="rect" href="classns3_1_1_simple_ref_count.html" title=" " alt="" coords="532,93,697,149"/>
+<area shape="rect" href="classns3_1_1_object_base.html" title="Anchor the ns&#45;3 type and attribute system." alt="" coords="179,78,306,105"/>
+<area shape="rect" href="classns3_1_1_simple_ref_count.html" title="A template&#45;based reference counting class." alt="" coords="149,129,336,171"/>
+<area shape="rect" href="classns3_1_1empty.html" title="make Callback use a separate empty type" alt="" coords="5,137,100,163"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -468,9 +466,9 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <p><a class="el" href="classns3_1_1_device_energy_model.html" title="Base class for device energy models.">DeviceEnergyModel</a> is a state based model. This function is implemented by all child of <a class="el" href="classns3_1_1_device_energy_model.html" title="Base class for device energy models.">DeviceEnergyModel</a> to change the model's state. States are to be defined by each child using an enum (int). </p>
 
-<p>Implemented in <a class="el" href="classns3_1_1_wifi_radio_energy_model.html#a329d64a275e2e09c49c7752528d68033">ns3::WifiRadioEnergyModel</a>, <a class="el" href="classns3_1_1_acoustic_modem_energy_model.html#abc8069f9d62851c055d740274a1b5bac">ns3::AcousticModemEnergyModel</a>, and <a class="el" href="classns3_1_1_simple_device_energy_model.html#af3b60004cb2780123ae6245403e4c91b">ns3::SimpleDeviceEnergyModel</a>.</p>
+<p>Implemented in <a class="el" href="classns3_1_1_wifi_radio_energy_model.html#a329d64a275e2e09c49c7752528d68033">ns3::WifiRadioEnergyModel</a>, <a class="el" href="classns3_1_1_acoustic_modem_energy_model.html#abc8069f9d62851c055d740274a1b5bac">ns3::AcousticModemEnergyModel</a>, <a class="el" href="classns3_1_1lorawan_1_1_lora_radio_energy_model.html#a6be2e24f42f160bb2cf738baa852ead0">ns3::lorawan::LoraRadioEnergyModel</a>, and <a class="el" href="classns3_1_1_simple_device_energy_model.html#af3b60004cb2780123ae6245403e4c91b">ns3::SimpleDeviceEnergyModel</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="wifi-radio-energy-model_8cc_source.html#l00089">ns3::WifiRadioEnergyModel::WifiRadioEnergyModel()</a>, and <a class="el" href="acoustic-modem-energy-model-helper_8cc_source.html#l00058">ns3::AcousticModemEnergyModelHelper::DoInstall()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lora-radio-energy-model_8cc_source.html#l00074">ns3::lorawan::LoraRadioEnergyModel::LoraRadioEnergyModel()</a>, <a class="el" href="wifi-radio-energy-model_8cc_source.html#l00089">ns3::WifiRadioEnergyModel::WifiRadioEnergyModel()</a>, and <a class="el" href="acoustic-modem-energy-model-helper_8cc_source.html#l00058">ns3::AcousticModemEnergyModelHelper::DoInstall()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -478,9 +476,10 @@ Additional Inherited Members</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_device_energy_model_a332be7863f3e8258743811077dde7f39_icgraph.png" border="0" usemap="#classns3_1_1_device_energy_model_a332be7863f3e8258743811077dde7f39_icgraph" alt=""/></div>
 <map name="classns3_1_1_device_energy_model_a332be7863f3e8258743811077dde7f39_icgraph" id="classns3_1_1_device_energy_model_a332be7863f3e8258743811077dde7f39_icgraph">
-<area shape="rect" title=" " alt="" coords="256,39,439,80"/>
-<area shape="rect" href="classns3_1_1_wifi_radio_energy_model.html#a6b0e21d95458627bd77d2dc7cbed349b" title=" " alt="" coords="6,5,207,47"/>
-<area shape="rect" href="classns3_1_1_acoustic_modem_energy_model_helper.html#a577df03965e1ad592108dfdb7e2bccbe" title="Implements DeviceEnergyModel::Install." alt="" coords="5,71,208,112"/>
+<area shape="rect" title=" " alt="" coords="276,71,459,112"/>
+<area shape="rect" href="classns3_1_1lorawan_1_1_lora_radio_energy_model.html#a4a7f688225b2f61d9ac5b509ae459e74" title=" " alt="" coords="5,5,228,47"/>
+<area shape="rect" href="classns3_1_1_wifi_radio_energy_model.html#a6b0e21d95458627bd77d2dc7cbed349b" title=" " alt="" coords="16,71,217,112"/>
+<area shape="rect" href="classns3_1_1_acoustic_modem_energy_model_helper.html#a577df03965e1ad592108dfdb7e2bccbe" title="Implements DeviceEnergyModel::Install." alt="" coords="15,136,218,177"/>
 </map>
 </div>
 
@@ -512,7 +511,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>0.0 as the current value, in Ampere.</dd></dl>
 <p>Child class does not have to implement this method if current draw for its states are not know. This default method will always return 0.0A. For the devices who does know the current draw of its states, this method must be overwritten. </p>
 
-<p>Reimplemented in <a class="el" href="classns3_1_1_wifi_radio_energy_model.html#ae23d2171ef2cf0db53ede4ace9c61b96">ns3::WifiRadioEnergyModel</a>, <a class="el" href="classns3_1_1_acoustic_modem_energy_model.html#a715ddca4d7159208aecaffaaee8ecf1e">ns3::AcousticModemEnergyModel</a>, and <a class="el" href="classns3_1_1_simple_device_energy_model.html#a1bba4b7bcff8e651fd7aef4f285c754b">ns3::SimpleDeviceEnergyModel</a>.</p>
+<p>Reimplemented in <a class="el" href="classns3_1_1_wifi_radio_energy_model.html#ae23d2171ef2cf0db53ede4ace9c61b96">ns3::WifiRadioEnergyModel</a>, <a class="el" href="classns3_1_1_acoustic_modem_energy_model.html#a715ddca4d7159208aecaffaaee8ecf1e">ns3::AcousticModemEnergyModel</a>, <a class="el" href="classns3_1_1lorawan_1_1_lora_radio_energy_model.html#a8986db2864cac83d0a35f37a7b5b4ea7">ns3::lorawan::LoraRadioEnergyModel</a>, and <a class="el" href="classns3_1_1_simple_device_energy_model.html#a1bba4b7bcff8e651fd7aef4f285c754b">ns3::SimpleDeviceEnergyModel</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="device-energy-model_8cc_source.html#l00062">62</a> of file <a class="el" href="device-energy-model_8cc_source.html">device-energy-model.cc</a>.</p>
 
@@ -594,7 +593,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Total energy consumption of the device.</dd></dl>
 <p><a class="el" href="classns3_1_1_device_energy_model.html" title="Base class for device energy models.">DeviceEnergyModel</a> records its own energy consumption during simulation. </p>
 
-<p>Implemented in <a class="el" href="classns3_1_1_wifi_radio_energy_model.html#a48a019085fee66b15d4e4115cd889af3">ns3::WifiRadioEnergyModel</a>, <a class="el" href="classns3_1_1_acoustic_modem_energy_model.html#a94ba9763ed99d78df49e78e2a1e3c878">ns3::AcousticModemEnergyModel</a>, and <a class="el" href="classns3_1_1_simple_device_energy_model.html#a817b7a1b7bed0c09bda95e1bf37a81c6">ns3::SimpleDeviceEnergyModel</a>.</p>
+<p>Implemented in <a class="el" href="classns3_1_1_wifi_radio_energy_model.html#a48a019085fee66b15d4e4115cd889af3">ns3::WifiRadioEnergyModel</a>, <a class="el" href="classns3_1_1_acoustic_modem_energy_model.html#a94ba9763ed99d78df49e78e2a1e3c878">ns3::AcousticModemEnergyModel</a>, <a class="el" href="classns3_1_1lorawan_1_1_lora_radio_energy_model.html#ad9ec43f91272ff72606281bca23c15ae">ns3::lorawan::LoraRadioEnergyModel</a>, and <a class="el" href="classns3_1_1_simple_device_energy_model.html#a817b7a1b7bed0c09bda95e1bf37a81c6">ns3::SimpleDeviceEnergyModel</a>.</p>
 
 </div>
 </div>
@@ -624,7 +623,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="device-energy-model_8cc_source.html#l00031">31</a> of file <a class="el" href="device-energy-model_8cc_source.html">device-energy-model.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="type-id_8cc_source.html#l00922">ns3::TypeId::SetParent()</a>.</p>
+<p class="reference">References <a class="el" href="type-id_8cc_source.html#l00923">ns3::TypeId::SetParent()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -669,7 +668,7 @@ Additional Inherited Members</h2></td></tr>
 <p>This function is called by the <a class="el" href="classns3_1_1_energy_source.html">EnergySource</a> object when energy stored in the energy source is changed. </p>
 <p>Should be implemented by child classes. </p>
 
-<p>Implemented in <a class="el" href="classns3_1_1_wifi_radio_energy_model.html#a7133964abb308e00ea7cab3daea10f81">ns3::WifiRadioEnergyModel</a>, <a class="el" href="classns3_1_1_acoustic_modem_energy_model.html#aed6575ddd43709b8a7281198ced3df67">ns3::AcousticModemEnergyModel</a>, and <a class="el" href="classns3_1_1_simple_device_energy_model.html#a8e0bcd9ac443872361d04f6c9f089361">ns3::SimpleDeviceEnergyModel</a>.</p>
+<p>Implemented in <a class="el" href="classns3_1_1_wifi_radio_energy_model.html#a7133964abb308e00ea7cab3daea10f81">ns3::WifiRadioEnergyModel</a>, <a class="el" href="classns3_1_1_acoustic_modem_energy_model.html#aed6575ddd43709b8a7281198ced3df67">ns3::AcousticModemEnergyModel</a>, <a class="el" href="classns3_1_1lorawan_1_1_lora_radio_energy_model.html#a273129f01f327c1201269703e5a45b08">ns3::lorawan::LoraRadioEnergyModel</a>, and <a class="el" href="classns3_1_1_simple_device_energy_model.html#a8e0bcd9ac443872361d04f6c9f089361">ns3::SimpleDeviceEnergyModel</a>.</p>
 
 </div>
 </div>
@@ -700,7 +699,7 @@ Additional Inherited Members</h2></td></tr>
 <p>This function is called by the <a class="el" href="classns3_1_1_energy_source.html">EnergySource</a> object when energy stored in the energy source is depleted. </p>
 <p>Should be implemented by child classes. </p>
 
-<p>Implemented in <a class="el" href="classns3_1_1_wifi_radio_energy_model.html#a599225366342af93f109bb4ef74269ac">ns3::WifiRadioEnergyModel</a>, <a class="el" href="classns3_1_1_acoustic_modem_energy_model.html#aa9af4358a1a528e7e77783e0195ebd93">ns3::AcousticModemEnergyModel</a>, and <a class="el" href="classns3_1_1_simple_device_energy_model.html#aac1f14576de2a1b9c7082b4e085e4639">ns3::SimpleDeviceEnergyModel</a>.</p>
+<p>Implemented in <a class="el" href="classns3_1_1_wifi_radio_energy_model.html#a599225366342af93f109bb4ef74269ac">ns3::WifiRadioEnergyModel</a>, <a class="el" href="classns3_1_1_acoustic_modem_energy_model.html#aa9af4358a1a528e7e77783e0195ebd93">ns3::AcousticModemEnergyModel</a>, <a class="el" href="classns3_1_1lorawan_1_1_lora_radio_energy_model.html#a71bb7a383f4c6b97a34f0185fb059996">ns3::lorawan::LoraRadioEnergyModel</a>, and <a class="el" href="classns3_1_1_simple_device_energy_model.html#aac1f14576de2a1b9c7082b4e085e4639">ns3::SimpleDeviceEnergyModel</a>.</p>
 
 </div>
 </div>
@@ -731,7 +730,7 @@ Additional Inherited Members</h2></td></tr>
 <p>This function is called by the <a class="el" href="classns3_1_1_energy_source.html">EnergySource</a> object when energy stored in the energy source is recharged. </p>
 <p>Should be implemented by child classes. </p>
 
-<p>Implemented in <a class="el" href="classns3_1_1_wifi_radio_energy_model.html#a196c41c7ee7f52c456a18272ec6227c5">ns3::WifiRadioEnergyModel</a>, <a class="el" href="classns3_1_1_acoustic_modem_energy_model.html#ab523ba8080020aa5f2aff449a8833190">ns3::AcousticModemEnergyModel</a>, and <a class="el" href="classns3_1_1_simple_device_energy_model.html#a7f7688698b6da2afbb2a2ba945cff41d">ns3::SimpleDeviceEnergyModel</a>.</p>
+<p>Implemented in <a class="el" href="classns3_1_1_wifi_radio_energy_model.html#a196c41c7ee7f52c456a18272ec6227c5">ns3::WifiRadioEnergyModel</a>, <a class="el" href="classns3_1_1_acoustic_modem_energy_model.html#ab523ba8080020aa5f2aff449a8833190">ns3::AcousticModemEnergyModel</a>, <a class="el" href="classns3_1_1lorawan_1_1_lora_radio_energy_model.html#a6aaebbbe9d57a1ed344ab16e9f0c9bb5">ns3::lorawan::LoraRadioEnergyModel</a>, and <a class="el" href="classns3_1_1_simple_device_energy_model.html#a7f7688698b6da2afbb2a2ba945cff41d">ns3::SimpleDeviceEnergyModel</a>.</p>
 
 </div>
 </div>
@@ -766,7 +765,7 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <p>This function sets the pointer to energy source installed on node. Should be called only by <a class="el" href="classns3_1_1_device_energy_model.html" title="Base class for device energy models.">DeviceEnergyModel</a> helper classes. </p>
 
-<p>Implemented in <a class="el" href="classns3_1_1_acoustic_modem_energy_model.html#ae8528d992ff06b11da750d064e0c9ce3">ns3::AcousticModemEnergyModel</a>, <a class="el" href="classns3_1_1_simple_device_energy_model.html#adccfb18951ab328e076662a2cedd2340">ns3::SimpleDeviceEnergyModel</a>, and <a class="el" href="classns3_1_1_wifi_radio_energy_model.html#a2721fe6046ad3e76aec3080e1eb77880">ns3::WifiRadioEnergyModel</a>.</p>
+<p>Implemented in <a class="el" href="classns3_1_1_acoustic_modem_energy_model.html#ae8528d992ff06b11da750d064e0c9ce3">ns3::AcousticModemEnergyModel</a>, <a class="el" href="classns3_1_1lorawan_1_1_lora_radio_energy_model.html#a871b6cd0b3c0505c2be884599e85929b">ns3::lorawan::LoraRadioEnergyModel</a>, <a class="el" href="classns3_1_1_simple_device_energy_model.html#adccfb18951ab328e076662a2cedd2340">ns3::SimpleDeviceEnergyModel</a>, and <a class="el" href="classns3_1_1_wifi_radio_energy_model.html#a2721fe6046ad3e76aec3080e1eb77880">ns3::WifiRadioEnergyModel</a>.</p>
 
 </div>
 </div>
@@ -784,7 +783,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_device_energy_model.html">DeviceEnergyModel</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:23 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:28 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

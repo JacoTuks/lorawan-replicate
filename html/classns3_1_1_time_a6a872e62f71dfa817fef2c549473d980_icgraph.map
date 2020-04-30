@@ -16,15 +16,15 @@
 <area shape="rect" id="node8" href="$classns3_1_1_wifi_phy.html#a0854b8251b610b505fec7790bfce07ac" title=" " alt="" coords="366,106,551,147"/>
 <area shape="rect" id="node10" href="$classns3_1_1_backoff.html#af39e9ddd21741927e45ff346b2fdb464" title=" " alt="" coords="379,324,538,351"/>
 <area shape="rect" id="node11" href="$class_ipv4_deduplication_test_suite.html#a6aa8666abcbc004f08009b7e9fc9963a" title=" " alt="" coords="355,375,562,417"/>
-<area shape="rect" id="node12" href="$class_channel_access_manager_test.html#a402941680f349b5d3eb39dc2c8e95ff9" title="Add access request with ack timeout." alt="" coords="329,441,589,482"/>
+<area shape="rect" id="node12" href="$class_channel_access_manager_test.html#a402941680f349b5d3eb39dc2c8e95ff9" title="Add access request with Ack timeout." alt="" coords="329,441,589,482"/>
 <area shape="rect" id="node13" href="$class_channel_access_manager_test.html#aa94312637e16f0dc96e66fb2054707d3" title="Add access request with successful ack." alt="" coords="319,506,599,547"/>
-<area shape="rect" id="node14" href="$class_channel_access_manager_test.html#a04548ff433026de63babe1700ea8ae8b" title="Add ack timeout reset function." alt="" coords="357,571,560,613"/>
+<area shape="rect" id="node14" href="$class_channel_access_manager_test.html#a04548ff433026de63babe1700ea8ae8b" title="Add Ack timeout reset function." alt="" coords="357,571,560,613"/>
 <area shape="rect" id="node15" href="$class_channel_access_manager_test.html#ac6a83fde9f852471ae67580df5635a37" title="Add CCA busy event function." alt="" coords="357,637,560,678"/>
 <area shape="rect" id="node16" href="$class_channel_access_manager_test.html#ae8a604feffb9eab702d246db5d9aa4b5" title="Add NAV reset function." alt="" coords="357,702,560,743"/>
 <area shape="rect" id="node17" href="$class_channel_access_manager_test.html#accbb95a947cbf87143b94e7605bf23c8" title="Add NAV start function." alt="" coords="357,767,560,809"/>
 <area shape="rect" id="node18" href="$class_channel_access_manager_test.html#a9ea82a070c9c7c29222315ccd87d38af" title="Add receive error event function for error at end of frame." alt="" coords="357,833,560,874"/>
 <area shape="rect" id="node19" href="$class_channel_access_manager_test.html#ad66cc8e441b4e910dd1fbbebb03a7200" title="Add receive inside SIFS event function." alt="" coords="357,898,560,939"/>
-<area shape="rect" id="node20" href="$class_channel_access_manager_test.html#a0822019536ced6b935c14eb4d8fdaef1" title="Add receive ok event function." alt="" coords="357,963,560,1005"/>
+<area shape="rect" id="node20" href="$class_channel_access_manager_test.html#a0822019536ced6b935c14eb4d8fdaef1" title="Add receive OK event function." alt="" coords="357,963,560,1005"/>
 <area shape="rect" id="node21" href="$class_channel_access_manager_test.html#a091466685990a146229821575f2dcef2" title="Add receive start event function." alt="" coords="357,1029,560,1070"/>
 <area shape="rect" id="node22" href="$class_channel_access_manager_test.html#a93cd682d0bb3061cca59efcca8039fb1" title="Add switching event function." alt="" coords="357,1094,560,1135"/>
 <area shape="rect" id="node23" href="$class_channel_access_manager_test.html#aeb2cfa23341ce4ef21e1b5dbe613e5d7" title="Add transmit event function." alt="" coords="357,1159,560,1201"/>

@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -247,7 +244,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aba3082cf4343e976eeabe018a5c6e39d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_icmpv6_option_redirected.html#aba3082cf4343e976eeabe018a5c6e39d">Serialize</a> (<a class="el" href="classns3_1_1_buffer_1_1_iterator.html">Buffer::Iterator</a> start) const</td></tr>
 <tr class="memdesc:aba3082cf4343e976eeabe018a5c6e39d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the packet.  <a href="classns3_1_1_icmpv6_option_redirected.html#aba3082cf4343e976eeabe018a5c6e39d">More...</a><br /></td></tr>
 <tr class="separator:aba3082cf4343e976eeabe018a5c6e39d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2097e9b9e6a39bca11e7189a9c4779c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_icmpv6_option_redirected.html#aa2097e9b9e6a39bca11e7189a9c4779c">SetPacket</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; <a class="el" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>)</td></tr>
+<tr class="memitem:aa2097e9b9e6a39bca11e7189a9c4779c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_icmpv6_option_redirected.html#aa2097e9b9e6a39bca11e7189a9c4779c">SetPacket</a> (<a class="el" href="classns3_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classns3_1_1_packet.html">Packet</a> &gt; packet)</td></tr>
 <tr class="memdesc:aa2097e9b9e6a39bca11e7189a9c4779c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the redirected packet.  <a href="classns3_1_1_icmpv6_option_redirected.html#aa2097e9b9e6a39bca11e7189a9c4779c">More...</a><br /></td></tr>
 <tr class="separator:aa2097e9b9e6a39bca11e7189a9c4779c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classns3_1_1_icmpv6_option_header"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classns3_1_1_icmpv6_option_header')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classns3_1_1_icmpv6_option_header.html">ns3::Icmpv6OptionHeader</a></td></tr>
@@ -646,7 +643,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="icmpv6-header_8cc_source.html#l01924">1924</a> of file <a class="el" href="icmpv6-header_8cc_source.html">icmpv6-header.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="type-id_8cc_source.html#l00922">ns3::TypeId::SetParent()</a>.</p>
+<p class="reference">References <a class="el" href="type-id_8cc_source.html#l00923">ns3::TypeId::SetParent()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="icmpv6-header_8cc_source.html#l01934">GetInstanceTypeId()</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -818,7 +815,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="icmpv6-header_8cc_source.html#l01959">1959</a> of file <a class="el" href="icmpv6-header_8cc_source.html">icmpv6-header.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="packet_8h_source.html#l00854">ns3::Packet::GetSize()</a>, <a class="el" href="icmpv6-header_8h_source.html#l01790">m_packet</a>, <a class="el" href="assert_8h_source.html#l00067">NS_ASSERT</a>, <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>, <a class="el" href="lora-mac-test_8cc_source.html#l00021">packet</a>, and <a class="el" href="icmpv6-header_8cc_source.html#l01513">ns3::Icmpv6OptionHeader::SetLength()</a>.</p>
+<p class="reference">References <a class="el" href="packet_8h_source.html#l00854">ns3::Packet::GetSize()</a>, <a class="el" href="icmpv6-header_8h_source.html#l01790">m_packet</a>, <a class="el" href="assert_8h_source.html#l00067">NS_ASSERT</a>, <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>, and <a class="el" href="icmpv6-header_8cc_source.html#l01513">ns3::Icmpv6OptionHeader::SetLength()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="icmpv6-l4-protocol_8cc_source.html#l01157">ns3::Icmpv6L4Protocol::SendRedirection()</a>.</p>
 <div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -890,7 +887,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_icmpv6_option_redirected.html">Icmpv6OptionRedirected</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:26 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:31 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

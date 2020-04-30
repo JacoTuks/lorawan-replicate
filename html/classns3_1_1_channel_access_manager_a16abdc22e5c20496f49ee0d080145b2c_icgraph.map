@@ -2,14 +2,14 @@
 <area shape="rect" id="node1" title="Update backoff slots for all Txops." alt="" coords="1695,758,1903,799"/>
 <area shape="rect" id="node2" href="$classns3_1_1_channel_access_manager.html#a0b155956cb94bba762d15d54cc1fe7ca" title="Called when access timeout should occur (e.g." alt="" coords="1427,551,1635,593"/>
 <area shape="rect" id="node6" href="$classns3_1_1_channel_access_manager.html#ad718d29686e51027419769b3735e5dd4" title=" " alt="" coords="855,551,1063,593"/>
-<area shape="rect" id="node8" href="$classns3_1_1_channel_access_manager.html#af5da1581cec5dbf79c2780c0821391a8" title=" " alt="" coords="855,617,1063,658"/>
+<area shape="rect" id="node8" href="$classns3_1_1_channel_access_manager.html#abb772d23a9ee81e9b6ce46b3aefc67a8" title=" " alt="" coords="855,617,1063,658"/>
 <area shape="rect" id="node40" href="$classns3_1_1_channel_access_manager.html#ad7a1a64ddd5206865b5989d9401b70ee" title="Determine if a new backoff needs to be generated when a packet is queued for transmission." alt="" coords="1138,731,1346,773"/>
 <area shape="rect" id="node41" href="$classns3_1_1_channel_access_manager.html#a77abe92dc446eeb4e0ff44a00c107045" title=" " alt="" coords="1416,787,1647,829"/>
 <area shape="rect" id="node46" href="$classns3_1_1_channel_access_manager.html#af9608e1d461240a1733b755bf1894aa6" title=" " alt="" coords="1427,853,1635,894"/>
 <area shape="rect" id="node47" href="$classns3_1_1_channel_access_manager.html#a160cbda504ab97595bc05487b537d788" title=" " alt="" coords="1427,918,1635,959"/>
 <area shape="rect" id="node49" href="$classns3_1_1_channel_access_manager.html#a3a498d23de39cd32c5c0fbf73e1839f2" title=" " alt="" coords="1427,983,1635,1025"/>
 <area shape="rect" id="node3" href="$classns3_1_1_channel_access_manager.html#a4197521f9ff8b1a70f837ed87e8737e3" title=" " alt="" coords="1116,551,1368,593"/>
-<area shape="rect" id="node4" href="$classns3_1_1_channel_access_manager.html#ad6ada9e298f4ba088d5761960dad307b" title="Notify that ACK timer has reset." alt="" coords="852,486,1065,527"/>
+<area shape="rect" id="node4" href="$classns3_1_1_channel_access_manager.html#ad6ada9e298f4ba088d5761960dad307b" title="Notify that ack timer has reset." alt="" coords="852,486,1065,527"/>
 <area shape="rect" id="node5" href="$classns3_1_1_channel_access_manager.html#a34d6b5afc6410e08275fa93817d00f25" title="Notify that CTS timer has reset." alt="" coords="853,421,1064,462"/>
 <area shape="rect" id="node7" href="$classns3_1_1_mesh_wifi_interface_mac.html#a2d850463970dd7f6d477dd0ecf615e2b" title="Switch frequency channel." alt="" coords="597,111,795,153"/>
 <area shape="rect" id="node9" href="$classns3_1_1_qos_txop.html#a3d5d94d486873862978c1fde6e295422" title="Restart access request if needed." alt="" coords="591,242,801,283"/>

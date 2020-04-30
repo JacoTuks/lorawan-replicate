@@ -1,17 +1,17 @@
 var classns3_1_1_channel_access_manager =
 [
-    [ "States", "classns3_1_1_channel_access_manager.html#a1c56ed8ee9c826496d6178ea26b02135", null ],
+    [ "Txops", "classns3_1_1_channel_access_manager.html#aaf5a290bc75fe30892610988e4cac87d", null ],
     [ "ChannelAccessManager", "classns3_1_1_channel_access_manager.html#a257687443c0bfb9a1d7d2bcbf2409b37", null ],
     [ "~ChannelAccessManager", "classns3_1_1_channel_access_manager.html#a130fd9e4a7f92c30452dde8890fa6ed1", null ],
     [ "AccessTimeout", "classns3_1_1_channel_access_manager.html#a0b155956cb94bba762d15d54cc1fe7ca", null ],
-    [ "Add", "classns3_1_1_channel_access_manager.html#a2f5f2e542c57be950d6c37e022d9caca", null ],
+    [ "Add", "classns3_1_1_channel_access_manager.html#addd3a289bd0d81aa412dbdbbf11b017e", null ],
     [ "DoDispose", "classns3_1_1_channel_access_manager.html#a97d88cce4ae1ac73e23384ca0d4fc4e6", null ],
     [ "DoGrantDcfAccess", "classns3_1_1_channel_access_manager.html#ab456b95950fd1381ed14c4f7289b997e", null ],
-    [ "DoGrantPcfAccess", "classns3_1_1_channel_access_manager.html#a4e7c0bf86371710015f236ca8616e82d", null ],
+    [ "DoGrantPcfAccess", "classns3_1_1_channel_access_manager.html#a1b41fbd994b39f8514c4ecfd479c3340", null ],
     [ "DoRestartAccessTimeoutIfNeeded", "classns3_1_1_channel_access_manager.html#a4197521f9ff8b1a70f837ed87e8737e3", null ],
     [ "GetAccessGrantStart", "classns3_1_1_channel_access_manager.html#ad740b71c85f10fe714dcd94b621f9ae8", null ],
-    [ "GetBackoffEndFor", "classns3_1_1_channel_access_manager.html#a4c16ce82405ae0a6e9348bb141c20eed", null ],
-    [ "GetBackoffStartFor", "classns3_1_1_channel_access_manager.html#ac6478233e5614262d947ae3eccd25a4f", null ],
+    [ "GetBackoffEndFor", "classns3_1_1_channel_access_manager.html#a1e38ecb70f2cbab09955d359fe642695", null ],
+    [ "GetBackoffStartFor", "classns3_1_1_channel_access_manager.html#ae0a0f234530510cafd165d338fe21a53", null ],
     [ "GetEifsNoDifs", "classns3_1_1_channel_access_manager.html#adb7a8220afba8db923dd9015d60eb409", null ],
     [ "IsBusy", "classns3_1_1_channel_access_manager.html#a72b37a838af8ce2f374e79ac5508bcad", null ],
     [ "MostRecent", "classns3_1_1_channel_access_manager.html#a0a12fc1acfbb7cf33a6304dbf53461d5", null ],
@@ -33,7 +33,7 @@ var classns3_1_1_channel_access_manager =
     [ "NotifyTxStartNow", "classns3_1_1_channel_access_manager.html#a3a498d23de39cd32c5c0fbf73e1839f2", null ],
     [ "NotifyWakeupNow", "classns3_1_1_channel_access_manager.html#a9d04948216a84575c4a717fe991e47f9", null ],
     [ "RemovePhyListener", "classns3_1_1_channel_access_manager.html#a7d4b8f6e0e26865afe02bbe8aeb231dc", null ],
-    [ "RequestAccess", "classns3_1_1_channel_access_manager.html#af5da1581cec5dbf79c2780c0821391a8", null ],
+    [ "RequestAccess", "classns3_1_1_channel_access_manager.html#abb772d23a9ee81e9b6ce46b3aefc67a8", null ],
     [ "SetEifsNoDifs", "classns3_1_1_channel_access_manager.html#af02878f5e4bd1f0b98f153f7b21b99e8", null ],
     [ "SetSifs", "classns3_1_1_channel_access_manager.html#ac1c31c1b21239805dd32c6d8162b987c", null ],
     [ "SetSlot", "classns3_1_1_channel_access_manager.html#a53fcea1c0ea9400540af6b7973154376", null ],
@@ -49,7 +49,6 @@ var classns3_1_1_channel_access_manager =
     [ "m_lastNavDuration", "classns3_1_1_channel_access_manager.html#aa5dd05c9756f840f0dac60bf9d5abd25", null ],
     [ "m_lastNavStart", "classns3_1_1_channel_access_manager.html#aed5ac8b1f5d36f45c8792cf31cb2afc4", null ],
     [ "m_lastRxDuration", "classns3_1_1_channel_access_manager.html#a4084a9314590776644b41624b5b704a9", null ],
-    [ "m_lastRxEnd", "classns3_1_1_channel_access_manager.html#a2ec3ec714684d459fb7359551cb0d7df", null ],
     [ "m_lastRxReceivedOk", "classns3_1_1_channel_access_manager.html#a33a9c1aa531cfab20b3883633b371b1d", null ],
     [ "m_lastRxStart", "classns3_1_1_channel_access_manager.html#a1bca1bbaa429793c7d5bd8ef8c1086ee", null ],
     [ "m_lastSwitchingDuration", "classns3_1_1_channel_access_manager.html#a4277568a496e5e3727933d61141a3504", null ],
@@ -62,5 +61,5 @@ var classns3_1_1_channel_access_manager =
     [ "m_sifs", "classns3_1_1_channel_access_manager.html#a03553e39791f717345e02317ea22f828", null ],
     [ "m_sleeping", "classns3_1_1_channel_access_manager.html#a65a704b39297b2b964065705548cf66c", null ],
     [ "m_slot", "classns3_1_1_channel_access_manager.html#a7cf930557c06f32fa6ad218024be9f5d", null ],
-    [ "m_states", "classns3_1_1_channel_access_manager.html#a0f504c5139454cc1273d5116acef60c4", null ]
+    [ "m_txops", "classns3_1_1_channel_access_manager.html#abb36424e3e9d69543f4b6fdacc21e00a", null ]
 ];

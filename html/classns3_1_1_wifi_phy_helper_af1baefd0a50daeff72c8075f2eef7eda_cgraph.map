@@ -1,5 +1,5 @@
 <map id="ns3::WifiPhyHelper::GetRadiotapHeader" name="ns3::WifiPhyHelper::GetRadiotapHeader">
-<area shape="rect" id="node1" title="Get the radiotap header." alt="" coords="5,1328,164,1370"/>
+<area shape="rect" id="node1" title="Get the Radiotap header." alt="" coords="5,1328,164,1370"/>
 <area shape="rect" id="node2" href="$classns3_1_1_packet.html#acdb23fec2c1dbebd9e6917895e9bcc65" title="Create a new packet which contains a fragment of the original packet." alt="" coords="223,242,432,269"/>
 <area shape="rect" id="node14" href="$classns3_1_1_wifi_tx_vector.html#ac56a35b49d9d77e09357adc171570d51" title=" " alt="" coords="255,750,400,791"/>
 <area shape="rect" id="node15" href="$classns3_1_1_wifi_mode.html#ad90f36e733ceaf8c5771cfbda437e14f" title=" " alt="" coords="224,866,431,893"/>

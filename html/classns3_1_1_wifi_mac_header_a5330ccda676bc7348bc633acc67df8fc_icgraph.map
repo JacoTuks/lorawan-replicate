@@ -15,7 +15,7 @@
 <area shape="rect" id="node42" href="$classns3_1_1_mac_rx_middle.html#ae595f60963be22a3e28975572f3e0707" title="Check if the received packet is a fragment and handle it appropriately." alt="" coords="933,1334,1127,1375"/>
 <area shape="rect" id="node44" href="$classns3_1_1_wifi_remote_station_manager.html#a42ff3d9a0bf8c3e612271a317aa052be" title=" " alt="" coords="913,1203,1147,1245"/>
 <area shape="rect" id="node46" href="$classns3_1_1_wifi_remote_station_manager.html#ac24b2a5ed13948487c8e11392e96432d" title=" " alt="" coords="913,1399,1147,1441"/>
-<area shape="rect" id="node47" href="$classns3_1_1_wifi_remote_station_manager.html#a1552c041e2344e355e9a28859054db27" title=" " alt="" coords="913,1465,1147,1506"/>
+<area shape="rect" id="node47" href="$classns3_1_1_wifi_remote_station_manager.html#acdbe45062ca4d281c3043e3860b20f43" title=" " alt="" coords="913,1465,1147,1506"/>
 <area shape="rect" id="node48" href="$classns3_1_1_wifi_remote_station_manager.html#a72e9ae49b100642768fb7fcfdb573fc9" title="Should be invoked whenever the AckTimeout associated to a transmission attempt expires." alt="" coords="913,1530,1147,1571"/>
 <area shape="rect" id="node49" href="$classns3_1_1_wifi_remote_station_manager.html#a6dd25291b44464baee92c2ef9ae739d6" title="Should be invoked whenever we receive the ACK associated to a data packet we just sent." alt="" coords="913,1595,1147,1637"/>
 <area shape="rect" id="node50" href="$classns3_1_1_wifi_remote_station_manager.html#a621a2da15b2214508d25112bac59e746" title="Should be invoked after calling ReportDataFailed if NeedRetransmission returns false." alt="" coords="913,1661,1147,1702"/>

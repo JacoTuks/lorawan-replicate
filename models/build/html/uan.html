@@ -62,9 +62,6 @@
 		      <a id="ns3_tut"
 			 href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-		      <a id="ns3_ptbr"
-			 href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 	        </li>
 	        <li><span
 		      onmouseover="mopen('mDocs')" 
@@ -138,8 +135,8 @@
 model a variety of underwater network scenarios.  The UAN model
 is broken into four main parts:  The channel, PHY, MAC and
 Autonomous Underwater Vehicle (AUV) models.</p>
-<p>The need for underwater wireless communications exists in applications such as remote control in offshore oil industry <a class="footnote-reference brackets" href="#id13" id="id1">1</a>, pollution monitoring in environmental systems, speech transmission between divers, mapping of the ocean floor, mine counter measures <a class="footnote-reference brackets" href="#id16" id="id2">4</a>, seismic monitoring of ocean faults as well as climate changes monitoring. Unfortunately, making on-field measurements is very expensive and there are no commonly accepted standard to base on. Hence, the priority to make research work going on, it is to realize a complete simulation framework that researchers can use to experiment, make tests and make performance evaluation and comparison.</p>
-<p>The NS-3 UAN module is a first step in this direction, trying to offer a reliable and realistic tool. In fact, the UAN module offers accurate modelling of the underwater acoustic channel, a model of the WHOI acoustic modem (one of the widely used acoustic modems)[6]_ and its communications performance, and some MAC protocols.</p>
+<p>The need for underwater wireless communications exists in applications such as remote control in offshore oil industry <a class="footnote-reference brackets" href="#id17" id="id1">1</a>, pollution monitoring in environmental systems, speech transmission between divers, mapping of the ocean floor, mine counter measures <a class="footnote-reference brackets" href="#id18" id="id2">2</a> <a class="footnote-reference brackets" href="#id20" id="id3">4</a>, seismic monitoring of ocean faults as well as climate changes monitoring. Unfortunately, making on-field measurements is very expensive and there are no commonly accepted standard to base on. Hence, the priority to make research work going on, it is to realize a complete simulation framework that researchers can use to experiment, make tests and make performance evaluation and comparison.</p>
+<p>The NS-3 UAN module is a first step in this direction, trying to offer a reliable and realistic tool. In fact, the UAN module offers accurate modelling of the underwater acoustic channel, a model of the WHOI acoustic modem (one of the widely used acoustic modems) <a class="footnote-reference brackets" href="#id22" id="id4">6</a> and its communications performance, and some MAC protocols.</p>
 <div class="section" id="model-description">
 <h2>Model Description<a class="headerlink" href="#model-description" title="Permalink to this headline">¶</a></h2>
 <p>The source code for the UAN Framework lives in the directory
@@ -147,10 +144,10 @@ Autonomous Underwater Vehicle (AUV) models.</p>
 the li-ion battery model.</p>
 <p>The UAN Framework is composed of two main parts:</p>
 <ul class="simple">
-<li><p>the AUV mobility models, including Electric motor propelled AUV (REMUS class <a class="footnote-reference brackets" href="#id15" id="id3">3</a> <a class="footnote-reference brackets" href="#id16" id="id4">4</a> ) and Seaglider <a class="footnote-reference brackets" href="#id17" id="id5">5</a> models</p></li>
+<li><p>the AUV mobility models, including Electric motor propelled AUV (REMUS class <a class="footnote-reference brackets" href="#id19" id="id5">3</a> <a class="footnote-reference brackets" href="#id20" id="id6">4</a> ) and Seaglider <a class="footnote-reference brackets" href="#id21" id="id7">5</a> models</p></li>
 <li><p>the energy models, including AUV energy models, AUV energy sources (batteries) and an acoustic modem energy model</p></li>
 </ul>
-<p>As enabling component for the energy models, a Li-Ion batteries energy source has been implemented basing on <a class="footnote-reference brackets" href="#id19" id="id6">7</a> <a class="footnote-reference brackets" href="#id20" id="id7">8</a>.</p>
+<p>As enabling component for the energy models, a Li-Ion batteries energy source has been implemented basing on <a class="footnote-reference brackets" href="#id23" id="id8">7</a> <a class="footnote-reference brackets" href="#id24" id="id9">8</a>.</p>
 <div class="section" id="design">
 <h3>Design<a class="headerlink" href="#design" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="uan-propagation-models">
@@ -305,13 +302,13 @@ allocation information.  At the end of a cycle ACK packets are transmitted for r
 </div>
 <div class="section" id="auv-mobility-models-design">
 <h5>AUV mobility models design<a class="headerlink" href="#auv-mobility-models-design" title="Permalink to this headline">¶</a></h5>
-<p>Implement a model of the navigation of AUV. This involves implementing two classes modelling the two major categories of AUVs: electric motor propelled (like REMUS class <a class="footnote-reference brackets" href="#id15" id="id8">3</a> <a class="footnote-reference brackets" href="#id16" id="id9">4</a>) and “sea gliders” <a class="footnote-reference brackets" href="#id17" id="id10">5</a>.
+<p>Implement a model of the navigation of AUV. This involves implementing two classes modelling the two major categories of AUVs: electric motor propelled (like REMUS class <a class="footnote-reference brackets" href="#id19" id="id10">3</a> <a class="footnote-reference brackets" href="#id20" id="id11">4</a>) and “sea gliders” <a class="footnote-reference brackets" href="#id21" id="id12">5</a>.
 The classic AUVs are submarine-like devices, propelled by an electric motor linked with a propeller. Instead, the “sea glider” class exploits small changes in its buoyancy that, in conjunction with wings, can convert vertical motion to horizontal. So, a glider will reach a point into the water by describing a “saw-tooth” movement.
 Modelling the AUV navigation, involves in considering a real-world AUV class thus, taking into account maximum speed, directional capabilities, emerging and submerging times.
 Regarding the sea gliders, it is modelled the characteristic saw-tooth movement, with AUV’s speed driven by buoyancy and glide angle.</p>
-<div class="figure align-default" id="id23">
+<div class="figure align-default" id="id27">
 <span id="auvmobilitymodel"></span><img alt="_images/auvmobility-classes.png" src="_images/auvmobility-classes.png" />
-<p class="caption"><span class="caption-text">AUV’s mobility model classes overview</span><a class="headerlink" href="#id23" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text">AUV’s mobility model classes overview</span><a class="headerlink" href="#id27" title="Permalink to this image">¶</a></p>
 </div>
 <p>An <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">ns3::AuvMobilityModel</span></code> interface has been designed to give users a generic interface to access AUV’s navigation functions.
 The AuvMobilityModel interface is implemented by the RemusMobilityModel and the GliderMobilityModel classes. The AUV’s mobility models organization it is shown in <a class="reference internal" href="#auvmobilitymodel"><span class="std std-ref">AUV’s mobility model classes overview</span></a>.
@@ -323,8 +320,8 @@ Has been modified the WaypointMobilityModel to let it use a generic underlying C
 <div class="section" id="energy-models">
 <h4>Energy models<a class="headerlink" href="#energy-models" title="Permalink to this headline">¶</a></h4>
 <p>The energy models have been designed as in the follows.</p>
-<div class="section" id="id11">
-<h5>Use cases<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h5>
+<div class="section" id="id13">
+<h5>Use cases<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h5>
 <p>The user will be able to:</p>
 <ul class="simple">
 <li><p>use a specific power profile for the acoustic modem</p></li>
@@ -339,7 +336,7 @@ We have implemented also an acoustic modem power profile, to keep trace of its p
 <h5>AUV energy models<a class="headerlink" href="#auv-energy-models" title="Permalink to this headline">¶</a></h5>
 <p>Basing on the Device Energy Model interface, it has been implemented a specific energy model for the two AUV classes (REMUS and Seaglider). This models reproduce the AUV’s specific power consumption to give users accurate information. This model can be naturally used to evaluates the AUV operating life, as well as mission-related power consumption, etc. Have been developed two AUV energy models:</p>
 <ul class="simple">
-<li><p>GliderEnergyModel, computes the power consumption of the vehicle based on the current buoyancy value and vertical speed <a class="footnote-reference brackets" href="#id17" id="id12">5</a></p></li>
+<li><p>GliderEnergyModel, computes the power consumption of the vehicle based on the current buoyancy value and vertical speed <a class="footnote-reference brackets" href="#id21" id="id14">5</a></p></li>
 <li><p>RemusEnergyModel, computes the power consumption of the vehicle based on the current speed, as it is propelled by a brush-less electric motor</p></li>
 </ul>
 <div class="admonition note">
@@ -357,7 +354,7 @@ We have implemented also an acoustic modem power profile, to keep trace of its p
 <div class="section" id="acoustic-modem-energy-model">
 <h5>Acoustic modem energy model<a class="headerlink" href="#acoustic-modem-energy-model" title="Permalink to this headline">¶</a></h5>
 <p>Basing on the Device Energy Model interface, has been implemented a generic energy model for acoustic modem. The model allows to trace four modem’s power-states: Sleep, Idle, Receiving, Transmitting. The default parameters for the energy model are set to fit those of the WHOI μmodem. The class follows pretty closely the RadioEnergyModel class as the transducer behaviour is pretty close to that of a Wi-Fi radio.</p>
-<p>The default power consumption values implemented into the model are as follows [6]:</p>
+<p>The default power consumption values implemented into the model are as follows <a class="footnote-reference brackets" href="#id22" id="id15">6</a>:</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 40%" />
@@ -392,7 +389,7 @@ We have implemented also an acoustic modem power profile, to keep trace of its p
 <p>A generic Li-Ion battery model has been implemented based on [7][8]. The model can be fitted to any type of Li-Ion battery simply changing the model’s parameters The default values are fitted for the Panasonic CGR18650DA Li-Ion Battery [9].
 [TODO insert figure]
 As shown in figure the model approximates very well the Li-Ion cells.
-Regarding Seagliders, the batteries used into the AUV are Electrochem 3B36 Lithium / Sulfuryl Chloride cells [10]. Also with this cell type, the model seems to approximates the different discharge curves pretty well, as shown in the figure.</p>
+Regarding Seagliders, the batteries used into the AUV are Electrochem 3B36 Lithium / Sulfuryl Chloride cells <a class="footnote-reference brackets" href="#id26" id="id16">10</a>. Also with this cell type, the model seems to approximates the different discharge curves pretty well, as shown in the figure.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>should I insert the li-ion model deatils here? I think it is better to put them into an Energy-related chapter..</p>
@@ -424,42 +421,42 @@ The communications stack, associated with the AUV, can be modified depending on 
 <div class="section" id="references">
 <h3>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h3>
 <dl class="footnote brackets">
-<dt class="label" id="id13"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dt class="label" id="id17"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
 <dd><p>BINGHAM, D.; DRAKE, T.; HILL, A.; LOTT, R.; The Application of Autonomous Underwater Vehicle (AUV) Technology in the Oil Industry – Vision and Experiences, URL: <a class="reference external" href="http://www.fig.net/pub/fig_2002/Ts4-4/TS4_4_bingham_etal.pdf">http://www.fig.net/pub/fig_2002/Ts4-4/TS4_4_bingham_etal.pdf</a></p>
 </dd>
-<dt class="label" id="id14"><span class="brackets">2</span></dt>
+<dt class="label" id="id18"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
 <dd><p>AUVfest2008: Underwater mines; URL: <a class="reference external" href="http://oceanexplorer.noaa.gov/explorations/08auvfest/background/mines/mines.html">http://oceanexplorer.noaa.gov/explorations/08auvfest/background/mines/mines.html</a></p>
 </dd>
-<dt class="label" id="id15"><span class="brackets">3</span><span class="fn-backref">(<a href="#id3">1</a>,<a href="#id8">2</a>)</span></dt>
+<dt class="label" id="id19"><span class="brackets">3</span><span class="fn-backref">(<a href="#id5">1</a>,<a href="#id10">2</a>)</span></dt>
 <dd><p>Hydroinc Products; URL: <a class="reference external" href="http://www.hydroidinc.com/products.html">http://www.hydroidinc.com/products.html</a></p>
 </dd>
-<dt class="label" id="id16"><span class="brackets">4</span><span class="fn-backref">(<a href="#id2">1</a>,<a href="#id4">2</a>,<a href="#id9">3</a>)</span></dt>
+<dt class="label" id="id20"><span class="brackets">4</span><span class="fn-backref">(<a href="#id3">1</a>,<a href="#id6">2</a>,<a href="#id11">3</a>)</span></dt>
 <dd><p>WHOI, Autonomous Underwater Vehicle, REMUS; URL: <a class="reference external" href="http://www.whoi.edu/page.do?pid=29856">http://www.whoi.edu/page.do?pid=29856</a></p>
 </dd>
-<dt class="label" id="id17"><span class="brackets">5</span><span class="fn-backref">(<a href="#id5">1</a>,<a href="#id10">2</a>,<a href="#id12">3</a>)</span></dt>
+<dt class="label" id="id21"><span class="brackets">5</span><span class="fn-backref">(<a href="#id7">1</a>,<a href="#id12">2</a>,<a href="#id14">3</a>)</span></dt>
 <dd><p>Eriksen, C.C., T.J. Osse, R.D. Light, T. Wen, T.W. Lehman, P.L. Sabin, J.W. Ballard, and A.M.
 Chiodi. Seaglider: A Long-Range Autonomous Underwater Vehicle for Oceanographic Research,
 IEEE Journal of Oceanic Engineering, 26, 4, October 2001.
 URL: <a class="reference external" href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=972073&amp;userType=inst">http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=972073&amp;userType=inst</a></p>
 </dd>
-<dt class="label" id="id18"><span class="brackets">6</span></dt>
+<dt class="label" id="id22"><span class="brackets">6</span><span class="fn-backref">(<a href="#id4">1</a>,<a href="#id15">2</a>)</span></dt>
 <dd><p>L. Freitag, M. Grund, I. Singh, J. Partan, P. Koski, K. Ball, and W. Hole, The whoi
 micro-modem: an acoustic communications and navigation system for multiple platforms,
 In Proc. IEEE OCEANS05 Conf, 2005. URL: <a class="reference external" href="http://ieeexplore.ieee.org/iel5/10918/34367/01639901.pdf">http://ieeexplore.ieee.org/iel5/10918/34367/01639901.pdf</a></p>
 </dd>
-<dt class="label" id="id19"><span class="brackets"><a class="fn-backref" href="#id6">7</a></span></dt>
+<dt class="label" id="id23"><span class="brackets"><a class="fn-backref" href="#id8">7</a></span></dt>
 <dd><p>C. M. Shepherd, “Design of Primary and Secondary Cells - Part 3.
 Battery discharge equation,” U.S. Naval Research Laboratory, 1963</p>
 </dd>
-<dt class="label" id="id20"><span class="brackets"><a class="fn-backref" href="#id7">8</a></span></dt>
+<dt class="label" id="id24"><span class="brackets"><a class="fn-backref" href="#id9">8</a></span></dt>
 <dd><p>Tremblay, O.; Dessaint, L.-A.; Dekkiche, A.-I., “A Generic Battery Model for the
 Dynamic Simulation of Hybrid Electric Vehicles,” Ecole de Technologie Superieure,
 Universite du Quebec, 2007 URL: <a class="reference external" href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=4544139">http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=4544139</a></p>
 </dd>
-<dt class="label" id="id21"><span class="brackets">9</span></dt>
+<dt class="label" id="id25"><span class="brackets">9</span></dt>
 <dd><p>Panasonic CGR18650DA Datasheet, URL: <a class="reference external" href="http://www.panasonic.com/industrial/includes/pdf/Panasonic_LiIon_CGR18650DA.pdf">http://www.panasonic.com/industrial/includes/pdf/Panasonic_LiIon_CGR18650DA.pdf</a></p>
 </dd>
-<dt class="label" id="id22"><span class="brackets">10</span></dt>
+<dt class="label" id="id26"><span class="brackets"><a class="fn-backref" href="#id16">10</a></span></dt>
 <dd><p>Electrochem 3B36 Datasheet, URL: <a class="reference external" href="http://www.electrochem.com.cn/products/Primary/HighRate/CSC/3B36.pdf">http://www.electrochem.com.cn/products/Primary/HighRate/CSC/3B36.pdf</a></p>
 </dd>
 </dl>
@@ -692,7 +689,7 @@ The unit test can be found in <code class="docutils literal notranslate"><span c
 </ul>
 </li>
 <li><a class="reference internal" href="#energy-models">Energy models</a><ul>
-<li><a class="reference internal" href="#id11">Use cases</a></li>
+<li><a class="reference internal" href="#id13">Use cases</a></li>
 <li><a class="reference internal" href="#auv-energy-models">AUV energy models</a></li>
 <li><a class="reference internal" href="#auv-energy-sources">AUV energy sources</a></li>
 <li><a class="reference internal" href="#acoustic-modem-energy-model">Acoustic modem energy model</a></li>
@@ -782,7 +779,7 @@ The unit test can be found in <code class="docutils literal notranslate"><span c
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2006-2019.
-      Last updated on Apr 23, 2020 07:52.
+      Last updated on Apr 29, 2020 17:37.
       Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.2.
     </div>
   </body>

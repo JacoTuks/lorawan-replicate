@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -441,11 +438,11 @@ $(document).ready(function(){initNavTree('ipython__view_8py_source.html',''); in
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="stringliteral">    @return none</span></div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    stat = 0</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keywordflow">if</span> verbose <span class="keywordflow">or</span> debug: print(header+cmd)</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keywordflow">if</span> verbose <span class="keywordflow">or</span> debug: <a class="code" href="complete-network-example_8cc.html#a1c9376cdc5e467bb714d0cf35d9bdc80">print</a>(header+cmd)</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="comment"># flush stdout so we don&#39;t mangle python&#39;s buffering</span></div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keywordflow">if</span> <span class="keywordflow">not</span> debug:</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;      input, output = os.popen4(cmd)</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      print(output.read())</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      <a class="code" href="complete-network-example_8cc.html#a1c9376cdc5e467bb714d0cf35d9bdc80">print</a>(output.read())</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;      output.close()</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;      input.close()</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160; </div>
@@ -805,6 +802,7 @@ $(document).ready(function(){initNavTree('ipython__view_8py_source.html',''); in
 <div class="ttc" id="aclassvisualizer_1_1ipython__view_1_1_i_python_view_html_a7862c74bd0d2e5f58ade1f6410ddca1d"><div class="ttname"><a href="classvisualizer_1_1ipython__view_1_1_i_python_view.html#a7862c74bd0d2e5f58ade1f6410ddca1d">visualizer.ipython_view.IPythonView.history_pos</a></div><div class="ttdeci">history_pos</div><div class="ttdef"><b>Definition:</b> <a href="ipython__view_8py_source.html#l00651">ipython_view.py:651</a></div></div>
 <div class="ttc" id="aclassvisualizer_1_1ipython__view_1_1_iterable_i_p_shell_html_aa1139a5f349b9383401ee68e379cad32"><div class="ttname"><a href="classvisualizer_1_1ipython__view_1_1_iterable_i_p_shell.html#aa1139a5f349b9383401ee68e379cad32">visualizer.ipython_view.IterableIPShell.history_level</a></div><div class="ttdeci">history_level</div><div class="ttdef"><b>Definition:</b> <a href="ipython__view_8py_source.html#l00139">ipython_view.py:139</a></div></div>
 <div class="ttc" id="aclassvisualizer_1_1ipython__view_1_1_iterable_i_p_shell_html_a4e94f18672c36814399fd609eece7ae4"><div class="ttname"><a href="classvisualizer_1_1ipython__view_1_1_iterable_i_p_shell.html#a4e94f18672c36814399fd609eece7ae4">visualizer.ipython_view.IterableIPShell._getHistory</a></div><div class="ttdeci">def _getHistory(self)</div><div class="ttdoc">Gets the command string of the current history level.</div><div class="ttdef"><b>Definition:</b> <a href="ipython__view_8py_source.html#l00254">ipython_view.py:254</a></div></div>
+<div class="ttc" id="acomplete-network-example_8cc_html_a1c9376cdc5e467bb714d0cf35d9bdc80"><div class="ttname"><a href="complete-network-example_8cc.html#a1c9376cdc5e467bb714d0cf35d9bdc80">print</a></div><div class="ttdeci">bool print</div><div class="ttdef"><b>Definition:</b> <a href="complete-network-example_8cc_source.html#l00049">complete-network-example.cc:49</a></div></div>
 <div class="ttc" id="aclassvisualizer_1_1ipython__view_1_1_iterable_i_p_shell_html_a4e0c392fedeb543d1db67e03ef40a4e9"><div class="ttname"><a href="classvisualizer_1_1ipython__view_1_1_iterable_i_p_shell.html#a4e0c392fedeb543d1db67e03ef40a4e9">visualizer.ipython_view.IterableIPShell.IP</a></div><div class="ttdeci">IP</div><div class="ttdef"><b>Definition:</b> <a href="ipython__view_8py_source.html#l00122">ipython_view.py:122</a></div></div>
 <div class="ttc" id="aclassvisualizer_1_1ipython__view_1_1_iterable_i_p_shell_html_a708ac9d5b786b5030e34c33f89c40b39"><div class="ttname"><a href="classvisualizer_1_1ipython__view_1_1_iterable_i_p_shell.html#a708ac9d5b786b5030e34c33f89c40b39">visualizer.ipython_view.IterableIPShell.historyBack</a></div><div class="ttdeci">def historyBack(self)</div><div class="ttdoc">Provides one history command back.</div><div class="ttdef"><b>Definition:</b> <a href="ipython__view_8py_source.html#l00231">ipython_view.py:231</a></div></div>
 <div class="ttc" id="aclassvisualizer_1_1ipython__view_1_1_iterable_i_p_shell_html_aa4eb9a1d96f0a8dacb065fddead145f9"><div class="ttname"><a href="classvisualizer_1_1ipython__view_1_1_iterable_i_p_shell.html#aa4eb9a1d96f0a8dacb065fddead145f9">visualizer.ipython_view.IterableIPShell.complete_sep</a></div><div class="ttdeci">complete_sep</div><div class="ttdef"><b>Definition:</b> <a href="ipython__view_8py_source.html#l00140">ipython_view.py:140</a></div></div>
@@ -817,7 +815,7 @@ $(document).ready(function(){initNavTree('ipython__view_8py_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ba77f8dab2f3b5b8a1cbb129ed9c63cb.html">visualizer</a></li><li class="navelem"><a class="el" href="dir_37738c098fb7bb201082a8a35f2b1fdc.html">visualizer</a></li><li class="navelem"><a class="el" href="ipython__view_8py.html">ipython_view.py</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:06 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:13 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

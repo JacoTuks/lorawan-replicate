@@ -1,7 +1,7 @@
 <map id="ns3::PointToPointChannel::GetTypeId" name="ns3::PointToPointChannel::GetTypeId">
 <area shape="rect" id="node1" title="Get the TypeId." alt="" coords="5,201,192,242"/>
 <area shape="rect" id="node2" href="$namespacens3.html#a14613e89827b8d95bcfcbe23a763d4b6" title=" " alt="" coords="263,107,442,133"/>
-<area shape="rect" id="node3" href="$group__time.html#ga7032965bd4afa578691d88c09e4481c1" title="Helper to make a Time checker with bounded range. Both limits are inclusive." alt="" coords="267,157,439,184"/>
+<area shape="rect" id="node3" href="$namespacens3.html#a7032965bd4afa578691d88c09e4481c1" title="Helper to make a Time checker with bounded range. Both limits are inclusive." alt="" coords="267,157,439,184"/>
 <area shape="rect" id="node10" href="$group__tracing.html#gab21a770b9855af4e8f69f7531ea4a6b0" title=" " alt="" coords="240,208,465,235"/>
 <area shape="rect" id="node11" href="$group__timecivil.html#ga33c34b816f8ff6628e33d5c8e9713b9e" title=" " alt="" coords="299,259,406,285"/>
 <area shape="rect" id="node18" href="$classns3_1_1_type_id.html#abaaca67ab7d2471067e7c275df0f7309" title="Set the parent TypeId." alt="" coords="269,347,436,373"/>

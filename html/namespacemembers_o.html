@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -185,7 +182,8 @@ $(document).ready(function(){initNavTree('namespacemembers_o.html',''); initResi
 : <a class="el" href="group__highprec.html#ga852246a30abd50bbe286906c2b9fe44d">ns3</a>
 </li>
 <li>operator!=()
-: <a class="el" href="group__ptr.html#ga0f21e525092c317519376b8eaefc5294">ns3</a>
+: <a class="el" href="namespacens3_1_1lorawan.html#a7d8aebb5daefab3a211a3c684d7a50e8">ns3::lorawan</a>
+, <a class="el" href="group__ptr.html#ga0f21e525092c317519376b8eaefc5294">ns3</a>
 </li>
 <li>operator%()
 : <a class="el" href="group__tracing.html#ga8a89fe7bafa7d98f616af55f1aa065b0">ns3</a>
@@ -233,8 +231,9 @@ $(document).ready(function(){initNavTree('namespacemembers_o.html',''); initResi
 , <a class="el" href="namespacens3_1_1dsdv.html#a24401288747c111b6394d728b020efe7">ns3::dsdv</a>
 , <a class="el" href="namespacens3_1_1dsr.html#a9dc67ae39788a83ff6e893c58e91d336">ns3::dsr</a>
 , <a class="el" href="namespacens3_1_1int64x64_1_1test.html#a9a3de58e74671ced4615b1dc76e4f4e5">ns3::int64x64::test</a>
+, <a class="el" href="namespacens3_1_1lorawan.html#ac9ffaff3a644193801c48cf07c4c7736">ns3::lorawan</a>
 , <a class="el" href="namespacens3_1_1olsr.html#afa34aff519277684925d5b636843b396">ns3::olsr</a>
-, <a class="el" href="namespacens3.html#a3a8fb206e33137628bb0105dac8bbf33">ns3</a>
+, <a class="el" href="namespacens3.html#a51b7b04350e104f90cd9d69a2e5bf1d2">ns3</a>
 </li>
 <li>operator&lt;&lt;=()
 : <a class="el" href="group__tracing.html#ga49b9e5adeb4dde56be6d0b263473df36">ns3</a>
@@ -243,27 +242,28 @@ $(document).ready(function(){initNavTree('namespacemembers_o.html',''); initResi
 : <a class="el" href="group__tracing.html#ga3391447d64b67baaedb34cd87e538487">ns3</a>
 </li>
 <li>operator==()
-: <a class="el" href="namespacens3_1_1dot11s.html#a61409b652bdbb029d73d8f91109cf72d">ns3::dot11s</a>
+: <a class="el" href="namespacens3_1_1dot11s.html#acadd63337d60944cc456d433eb374cbc">ns3::dot11s</a>
 , <a class="el" href="namespacens3_1_1flame.html#a3b57e289b5f1e5ab8babfe2484ea5af8">ns3::flame</a>
+, <a class="el" href="namespacens3_1_1lorawan.html#aae95cddfe572dc130fe97f6142ff8cb8">ns3::lorawan</a>
 , <a class="el" href="namespacens3_1_1olsr.html#a27c065b59dabb85e4b3428c1ce9005d7">ns3::olsr</a>
-, <a class="el" href="namespacens3.html#a159404cb0d5434816143bcc0319c1c32">ns3</a>
+, <a class="el" href="group__tracing.html#gaa872fc7a29aa663abe83d9b2ee544e68">ns3</a>
 </li>
 <li>operator&gt;()
 : <a class="el" href="namespacens3_1_1dot11s.html#a3b004e1f897b553adb22c45f5e3ea45a">ns3::dot11s</a>
 , <a class="el" href="group__tracing.html#ga3f02ac6f8a32bcca7fb2300d363862bd">ns3</a>
 </li>
 <li>operator&gt;=()
-: <a class="el" href="group__time.html#gafd20c071438550ffb2c32fda9cb497e6">ns3</a>
+: <a class="el" href="namespacens3.html#a564ebd3007ee0651c8fb72ee1502bc3a">ns3</a>
 </li>
 <li>operator&gt;&gt;()
 : <a class="el" href="namespacens3_1_1dot11s.html#a3cddae596a4a40875df7df27ed1e1f71">ns3::dot11s</a>
-, <a class="el" href="namespacens3.html#a63bb3586b7d2f668b0ebf0abad4774c7">ns3</a>
+, <a class="el" href="group__uan.html#ga50bd32eed5adab8e06873e2be6380525">ns3</a>
 </li>
 <li>operator&gt;&gt;=()
 : <a class="el" href="group__tracing.html#ga0cf4268a4b7e7eb82cff101a589a0f4a">ns3</a>
 </li>
 <li>operator^()
-: <a class="el" href="group__tracing.html#ga5c8775c0fb971e3a8f728358360609ca">ns3</a>
+: <a class="el" href="group__tracing.html#ga92d92010bfd547a721749a071e3f40ab">ns3</a>
 </li>
 <li>operator^=()
 : <a class="el" href="group__tracing.html#ga1664e28fd027d3ea11ba08c901cd6233">ns3</a>
@@ -299,7 +299,7 @@ $(document).ready(function(){initNavTree('namespacemembers_o.html',''); initResi
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:50 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:52 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

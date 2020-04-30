@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -378,7 +375,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Allocate the positions uniformely (with constant density) randomly within a disc. </p>
-<p><a class="el" href="classns3_1_1_uniform_disc_position_allocator.html" title="Allocate the positions uniformely (with constant density) randomly within a disc.">UniformDiscPositionAllocator</a> allocates the positions randomly within a disc <img class="formulaInl" alt="$ D $" src="form_86.png" width="0" height="10"/> lying on the plane <img class="formulaInl" alt="$ z$" src="form_87.png" width="0" height="6"/> and having center at coordinates <img class="formulaInl" alt="$ (x,y,z) $" src="form_88.png" width="0" height="14"/> and radius <img class="formulaInl" alt="$ \rho $" src="form_89.png" width="0" height="9"/>. The random positions are chosen such that, for any subset <img class="formulaInl" alt="$ S \subset D $" src="form_90.png" width="0" height="11"/>, the expected value of the fraction of points which fall into <img class="formulaInl" alt="$ S \subset D $" src="form_90.png" width="0" height="11"/> corresponds to <img class="formulaInl" alt="$ \frac{|S|}{|D|} $" src="form_91.png" width="0" height="20"/>, i.e., to the ratio of the area of the subset to the area of the whole disc.</p>
+<p><a class="el" href="classns3_1_1_uniform_disc_position_allocator.html" title="Allocate the positions uniformely (with constant density) randomly within a disc.">UniformDiscPositionAllocator</a> allocates the positions randomly within a disc <img class="formulaInl" alt="$ D $" src="form_86.png" width="10" height="10"/> lying on the plane <img class="formulaInl" alt="$ z$" src="form_87.png" width="6" height="6"/> and having center at coordinates <img class="formulaInl" alt="$ (x,y,z) $" src="form_88.png" width="40" height="14"/> and radius <img class="formulaInl" alt="$ \rho $" src="form_89.png" width="8" height="9"/>. The random positions are chosen such that, for any subset <img class="formulaInl" alt="$ S \subset D $" src="form_90.png" width="35" height="11"/>, the expected value of the fraction of points which fall into <img class="formulaInl" alt="$ S \subset D $" src="form_90.png" width="35" height="11"/> corresponds to <img class="formulaInl" alt="$ \frac{|S|}{|D|} $" src="form_91.png" width="16" height="20"/>, i.e., to the ratio of the area of the subset to the area of the whole disc.</p>
 <dl class="section note"><dt>Note</dt><dd>using <a class="el" href="classns3_1_1_uniform_disc_position_allocator.html" title="Allocate the positions uniformely (with constant density) randomly within a disc.">UniformDiscPositionAllocator</a> is not equivalent to using a <a class="el" href="classns3_1_1_random_disc_position_allocator.html" title="Allocate random positions within a disc according to a given distribution for the polar coordinates o...">RandomDiscPositionAllocator</a> with a uniformly-distributed radius, since doing that would results in a point distribution which is more dense towards the center of the disc. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="position-allocator_8h_source.html#l00347">347</a> of file <a class="el" href="position-allocator_8h_source.html">position-allocator.h</a>.</p>
@@ -571,7 +568,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="position-allocator_8cc_source.html#l00463">463</a> of file <a class="el" href="position-allocator_8cc_source.html">position-allocator.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="position-allocator_8h_source.html#l00382">m_rho</a>, <a class="el" href="position-allocator_8h_source.html#l00383">m_x</a>, <a class="el" href="position-allocator_8h_source.html#l00384">m_y</a>, <a class="el" href="position-allocator_8h_source.html#l00385">m_z</a>, <a class="el" href="double_8h_source.html#l00042">ns3::MakeDoubleAccessor()</a>, and <a class="el" href="type-id_8cc_source.html#l00922">ns3::TypeId::SetParent()</a>.</p>
+<p class="reference">References <a class="el" href="position-allocator_8h_source.html#l00382">m_rho</a>, <a class="el" href="position-allocator_8h_source.html#l00383">m_x</a>, <a class="el" href="position-allocator_8h_source.html#l00384">m_y</a>, <a class="el" href="position-allocator_8h_source.html#l00385">m_z</a>, <a class="el" href="double_8h_source.html#l00042">ns3::MakeDoubleAccessor()</a>, and <a class="el" href="type-id_8cc_source.html#l00923">ns3::TypeId::SetParent()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -857,7 +854,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_uniform_disc_position_allocator.html">UniformDiscPositionAllocator</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:45 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:46 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

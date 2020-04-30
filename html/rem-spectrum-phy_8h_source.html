@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -214,7 +211,7 @@ $(document).ready(function(){initNavTree('rem-spectrum-phy_8h_source.html',''); 
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;NetDevice&gt;</a> <a class="code" href="classns3_1_1_rem_spectrum_phy.html#a53c9d743a8ba8c02fca4cd9cb6667550">GetDevice</a> () <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;const SpectrumModel&gt;</a> <a class="code" href="classns3_1_1_rem_spectrum_phy.html#aa9a0a1e5f0243b97b957b301590d9592">GetRxSpectrumModel</a> () <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;AntennaModel&gt;</a> <a class="code" href="classns3_1_1_rem_spectrum_phy.html#a6580a4fc57f0d1e6f56fb72db5f92aae">GetRxAntenna</a> ();</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_rem_spectrum_phy.html#a9ddd325516aae88f04bd688c08a27e0d">StartRx</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;SpectrumSignalParameters&gt;</a> params);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_rem_spectrum_phy.html#a9ddd325516aae88f04bd688c08a27e0d">StartRx</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;SpectrumSignalParameters&gt;</a> <a class="code" href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">params</a>);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_rem_spectrum_phy.html#aa5f69cafa4dbbea74b66d552a2dfdd82">SetRxSpectrumModel</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;const SpectrumModel&gt;</a> m);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
@@ -259,6 +256,7 @@ $(document).ready(function(){initNavTree('rem-spectrum-phy_8h_source.html',''); 
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassns3_1_1_type_id_html"><div class="ttname"><a href="classns3_1_1_type_id.html">ns3::TypeId</a></div><div class="ttdoc">a unique identifier for an interface.</div><div class="ttdef"><b>Definition:</b> <a href="type-id_8h_source.html#l00058">type-id.h:59</a></div></div>
+<div class="ttc" id="anamespacealoha_html_aff1381c591fdaf9d3af2b19080c9eed7"><div class="ttname"><a href="namespacealoha.html#aff1381c591fdaf9d3af2b19080c9eed7">aloha.params</a></div><div class="ttdeci">dictionary params</div><div class="ttdef"><b>Definition:</b> <a href="aloha_8py_source.html#l00013">aloha.py:13</a></div></div>
 <div class="ttc" id="anamespacens3_html"><div class="ttname"><a href="namespacens3.html">ns3</a></div><div class="ttdoc">Every class exported by the ns3 library is enclosed in the ns3 namespace.</div></div>
 <div class="ttc" id="aclassns3_1_1_rem_spectrum_phy_html_a100e387daa9172640b7813876e377bf5"><div class="ttname"><a href="classns3_1_1_rem_spectrum_phy.html#a100e387daa9172640b7813876e377bf5">ns3::RemSpectrumPhy::RemSpectrumPhy</a></div><div class="ttdeci">RemSpectrumPhy()</div><div class="ttdef"><b>Definition:</b> <a href="rem-spectrum-phy_8cc_source.html#l00040">rem-spectrum-phy.cc:40</a></div></div>
 <div class="ttc" id="aclassns3_1_1_rem_spectrum_phy_html_ab5d3920e9d10c669a9b679c634d85454"><div class="ttname"><a href="classns3_1_1_rem_spectrum_phy.html#ab5d3920e9d10c669a9b679c634d85454">ns3::RemSpectrumPhy::SetChannel</a></div><div class="ttdeci">void SetChannel(Ptr&lt; SpectrumChannel &gt; c)</div><div class="ttdoc">Set the channel attached to this device.</div><div class="ttdef"><b>Definition:</b> <a href="rem-spectrum-phy_8cc_source.html#l00080">rem-spectrum-phy.cc:80</a></div></div>
@@ -297,7 +295,7 @@ $(document).ready(function(){initNavTree('rem-spectrum-phy_8h_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ef1775b0ff4284164f823a882317d681.html">lte</a></li><li class="navelem"><a class="el" href="dir_d84c0a9c9435ae3a7e1022dda3bc062b.html">model</a></li><li class="navelem"><a class="el" href="rem-spectrum-phy_8h.html">rem-spectrum-phy.h</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:00 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:08 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

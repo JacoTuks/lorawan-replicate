@@ -1,7 +1,7 @@
 <map id="ns3::LteRlcUm::GetTypeId" name="ns3::LteRlcUm::GetTypeId">
 <area shape="rect" id="node1" title="Get the type ID." alt="" coords="5,208,195,235"/>
 <area shape="rect" id="node2" href="$namespacens3.html#a14613e89827b8d95bcfcbe23a763d4b6" title=" " alt="" coords="255,107,433,133"/>
-<area shape="rect" id="node3" href="$group__time.html#ga7032965bd4afa578691d88c09e4481c1" title="Helper to make a Time checker with bounded range. Both limits are inclusive." alt="" coords="258,157,430,184"/>
+<area shape="rect" id="node3" href="$namespacens3.html#a7032965bd4afa578691d88c09e4481c1" title="Helper to make a Time checker with bounded range. Both limits are inclusive." alt="" coords="258,157,430,184"/>
 <area shape="rect" id="node10" href="$namespacens3.html#aa91214d5303e6c4e877f49f05a28c983" title=" " alt="" coords="243,208,445,235"/>
 <area shape="rect" id="node11" href="$group__timecivil.html#gaf26127cf4571146b83a92ee18679c7a9" title=" " alt="" coords="277,259,411,285"/>
 <area shape="rect" id="node20" href="$classns3_1_1_type_id.html#abaaca67ab7d2471067e7c275df0f7309" title="Set the parent TypeId." alt="" coords="261,347,427,373"/>

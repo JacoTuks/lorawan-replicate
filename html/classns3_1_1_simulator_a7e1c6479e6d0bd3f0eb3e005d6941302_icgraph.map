@@ -17,7 +17,7 @@
 <area shape="rect" id="node9" href="$classns3_1_1_random_building_position_allocator.html#acc13be0f1574919de88528c1189aea0e" title=" " alt="" coords="27,121,239,163"/>
 <area shape="rect" id="node10" href="$classns3_1_1_outdoor_position_allocator.html#a4689f0a076879c165213b5747eb666de" title=" " alt="" coords="25,252,240,293"/>
 <area shape="rect" id="node11" href="$classns3_1_1_random_room_position_allocator.html#afb06193f6fb4d4e1c9febd1f8c884294" title=" " alt="" coords="5,187,260,228"/>
-<area shape="rect" id="node12" href="$classns3_1_1_buildings_channel_condition_model.html#a4fd08585f74c4712c3865c0f48f2ab8c" title="Checks if the is a building in between position L1 and position L2." alt="" coords="19,317,247,359"/>
+<area shape="rect" id="node12" href="$classns3_1_1_buildings_channel_condition_model.html#a3b97a7666596f013e8e59e42ca93d756" title="Checks if the line of sight between position l1 and position l2 is blocked by a building." alt="" coords="19,317,247,359"/>
 <area shape="rect" id="node13" href="$classns3_1_1_buildings_helper.html#a08f7a5049843eb192e11a17a48c3bc1c" title="Make the given mobility model consistent, by determining whether its position falls inside any of the..." alt="" coords="55,383,211,424"/>
 <area shape="rect" id="node14" href="$classns3_1_1_mobility_building_info.html#ad6d5725d5ed16f0d4d611cb8acf0ee42" title="Make the given mobility model consistent, by determining whether its position falls inside any of the..." alt="" coords="41,448,225,489"/>
 <area shape="rect" id="node19" href="$classns3_1_1_channel_list_priv.html#abf75496312beaf8b6377298039ca4289" title="Delete the channel list object." alt="" coords="346,409,501,451"/>

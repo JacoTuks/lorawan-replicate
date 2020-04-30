@@ -316,7 +316,6 @@ var group__tests =
       [ "AddAccessRequestWithSuccessfullAck", "class_channel_access_manager_test.html#aa94312637e16f0dc96e66fb2054707d3", null ],
       [ "AddAckTimeoutReset", "class_channel_access_manager_test.html#a04548ff433026de63babe1700ea8ae8b", null ],
       [ "AddCcaBusyEvt", "class_channel_access_manager_test.html#ac6a83fde9f852471ae67580df5635a37", null ],
-      [ "AddDcfState", "class_channel_access_manager_test.html#af77a86bcf20a1731af25b76f8fb31d90", null ],
       [ "AddNavReset", "class_channel_access_manager_test.html#ae8a604feffb9eab702d246db5d9aa4b5", null ],
       [ "AddNavStart", "class_channel_access_manager_test.html#accbb95a947cbf87143b94e7605bf23c8", null ],
       [ "AddRxErrorEvt", "class_channel_access_manager_test.html#a9ea82a070c9c7c29222315ccd87d38af", null ],
@@ -326,6 +325,7 @@ var group__tests =
       [ "AddRxStartEvt", "class_channel_access_manager_test.html#a091466685990a146229821575f2dcef2", null ],
       [ "AddSwitchingEvt", "class_channel_access_manager_test.html#a93cd682d0bb3061cca59efcca8039fb1", null ],
       [ "AddTxEvt", "class_channel_access_manager_test.html#aeb2cfa23341ce4ef21e1b5dbe613e5d7", null ],
+      [ "AddTxop", "class_channel_access_manager_test.html#a7f8ee06a1ef7b7c5e3ed05cf708af26b", null ],
       [ "DoAccessRequest", "class_channel_access_manager_test.html#a9481835729fb679edaa69f5742bc46d1", null ],
       [ "DoCheckBusy", "class_channel_access_manager_test.html#adfe46fb2bdabb9bb31f13043f280e966", null ],
       [ "DoRun", "class_channel_access_manager_test.html#a15c21c2ad29ebd2e42b4f4bbfeb3ec4f", null ],
@@ -441,9 +441,6 @@ var group__tests =
       [ "CtrlBAckResponseHeaderTest", "class_ctrl_b_ack_response_header_test.html#a8855c2a1a596d1f8fa63497fb603df01", null ],
       [ "DoRun", "class_ctrl_b_ack_response_header_test.html#a19cf1ac31281254d487041e4c5dcdc50", null ],
       [ "m_blockAckHdr", "class_ctrl_b_ack_response_header_test.html#a1319fff4c2f7b2dcb378f52026174c84", null ]
-    ] ],
-    [ "DcfTestSuite", "class_dcf_test_suite.html", [
-      [ "DcfTestSuite", "class_dcf_test_suite.html#af10b6b78a18abe2b3e052b491a2514f2", null ]
     ] ],
     [ "DhcpTestCase", "class_dhcp_test_case.html", [
       [ "DhcpTestCase", "class_dhcp_test_case.html#aef3cb4e0379e2dadbfa3513a366580a5", null ],
@@ -576,9 +573,6 @@ var group__tests =
       [ "PktsAcked", "class_dummy_cong_control.html#a13a0fafdaf34d3f77e69d747e4469acc", null ],
       [ "SetCallback", "class_dummy_cong_control.html#a8d64b26513447ac58711ff9a5ccf1c52", null ],
       [ "m_test", "class_dummy_cong_control.html#a49d166e2939e240bd6de5d778871e067", null ]
-    ] ],
-    [ "EdcaTestSuite", "class_edca_test_suite.html", [
-      [ "EdcaTestSuite", "class_edca_test_suite.html#a104825874d8815241c529b801f6014e4", null ]
     ] ],
     [ "EnbDlTestData", "struct_enb_dl_test_data.html", [
       [ "ues", "struct_enb_dl_test_data.html#a919da2f180c68423fc47ba8e1b088b13", null ]
@@ -3126,6 +3120,9 @@ var group__tests =
       [ "AddHeader", "classqd_test_item.html#acb1688c75f9b362101ef9d1d1d129201", null ],
       [ "Mark", "classqd_test_item.html#a13afd6ebd197f7cba67984adb7e6f792", null ]
     ] ],
+    [ "QosTxopTestSuite", "class_qos_txop_test_suite.html", [
+      [ "QosTxopTestSuite", "class_qos_txop_test_suite.html#a893759ff872102610354f80774223623", null ]
+    ] ],
     [ "QosUtilsIsOldPacketTest", "class_qos_utils_is_old_packet_test.html", [
       [ "QosUtilsIsOldPacketTest", "class_qos_utils_is_old_packet_test.html#adf6f736c0007e810f2778e46004719bb", null ],
       [ "DoRun", "class_qos_utils_is_old_packet_test.html#a2ec05f8492069248e887b19818581d1f", null ]
@@ -4673,6 +4670,9 @@ var group__tests =
       [ "m_expectedInternalCollision", "class_txop_test.html#a00876da3911d6c4e58a9dae04596a408", null ],
       [ "m_i", "class_txop_test.html#a24563bf7c6eef5ec04bb0ccb07b56f93", null ],
       [ "m_test", "class_txop_test.html#a8c8e8b5f10a83557cb1559b6dbebba97", null ]
+    ] ],
+    [ "TxopTestSuite", "class_txop_test_suite.html", [
+      [ "TxopTestSuite", "class_txop_test_suite.html#a424daff23b19e7a0b787b002d2866ef0", null ]
     ] ],
     [ "TypeHeaderTest", "structns3_1_1aodv_1_1_type_header_test.html", [
       [ "TypeHeaderTest", "structns3_1_1aodv_1_1_type_header_test.html#a4c74d5328bab112afa002a0f94ae1269", null ],

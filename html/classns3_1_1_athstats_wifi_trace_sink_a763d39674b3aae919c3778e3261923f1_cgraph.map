@@ -1,7 +1,7 @@
 <map id="ns3::AthstatsWifiTraceSink::GetTypeId" name="ns3::AthstatsWifiTraceSink::GetTypeId">
 <area shape="rect" id="node1" title="Get the type ID." alt="" coords="5,175,201,217"/>
 <area shape="rect" id="node2" href="$namespacens3.html#a14613e89827b8d95bcfcbe23a763d4b6" title=" " alt="" coords="249,107,428,133"/>
-<area shape="rect" id="node3" href="$group__time.html#ga7032965bd4afa578691d88c09e4481c1" title="Helper to make a Time checker with bounded range. Both limits are inclusive." alt="" coords="253,157,425,184"/>
+<area shape="rect" id="node3" href="$namespacens3.html#a7032965bd4afa578691d88c09e4481c1" title="Helper to make a Time checker with bounded range. Both limits are inclusive." alt="" coords="253,157,425,184"/>
 <area shape="rect" id="node10" href="$group__timecivil.html#ga33c34b816f8ff6628e33d5c8e9713b9e" title=" " alt="" coords="285,233,392,260"/>
 <area shape="rect" id="node17" href="$classns3_1_1_type_id.html#abaaca67ab7d2471067e7c275df0f7309" title="Set the parent TypeId." alt="" coords="255,347,422,373"/>
 <area shape="rect" id="node4" href="$namespacens3.html#a952d99f6d759fee74dda19f308451bc1" title="Return a deep copy of a Ptr." alt="" coords="534,5,621,32"/>

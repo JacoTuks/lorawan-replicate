@@ -1,9 +1,5 @@
 <map id="ns3::MacLowTransmissionParameters::MustSendRts" name="ns3::MacLowTransmissionParameters::MustSendRts">
-<area shape="rect" id="node1" title=" " alt="" coords="1228,64,1495,105"/>
-<area shape="rect" id="node2" href="$classns3_1_1_mac_low.html#aa2d5acb9a87a417cfa46a4e8b4a8ed01" title=" " alt="" coords="941,5,1180,47"/>
-<area shape="rect" id="node6" href="$classns3_1_1_mac_low.html#aa477261c5209c13c66af9e2ae78b07e5" title=" " alt="" coords="663,71,893,98"/>
-<area shape="rect" id="node7" href="$classns3_1_1_constant_wifi_ack_policy_selector.html#aa574b54fd2b55f2f0934c0153c18c422" title="Update the transmission parameters related to the acknowledgment policy for the given PSDU." alt="" coords="961,123,1161,164"/>
-<area shape="rect" id="node3" href="$classns3_1_1_mac_low.html#a77295a7a4b2e8787e8217f1e58b1746f" title=" " alt="" coords="667,5,889,47"/>
-<area shape="rect" id="node4" href="$classns3_1_1_mac_low.html#a753fdeae4fb18b9b4d3b48c61f721686" title=" " alt="" coords="321,15,615,42"/>
-<area shape="rect" id="node5" href="$classns3_1_1_wave_mac_low.html#abf4a90e9984a73b24197706fb79118b1" title=" " alt="" coords="5,42,273,69"/>
+<area shape="rect" id="node1" title=" " alt="" coords="600,5,867,47"/>
+<area shape="rect" id="node2" href="$classns3_1_1_mac_low.html#aa477261c5209c13c66af9e2ae78b07e5" title=" " alt="" coords="321,13,552,39"/>
+<area shape="rect" id="node3" href="$classns3_1_1_wave_mac_low.html#abf4a90e9984a73b24197706fb79118b1" title=" " alt="" coords="5,13,273,39"/>
 </map>

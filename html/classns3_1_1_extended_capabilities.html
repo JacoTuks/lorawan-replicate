@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -201,10 +198,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6c6b828da4ef00535090960ce6e93ec5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_extended_capabilities.html#a6c6b828da4ef00535090960ce6e93ec5">ExtendedCapabilities</a> ()</td></tr>
 <tr class="separator:a6c6b828da4ef00535090960ce6e93ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3de4b55cf654ff52a62bb4557c49490d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_extended_capabilities.html#a3de4b55cf654ff52a62bb4557c49490d">DeserializeInformationField</a> (<a class="el" href="classns3_1_1_buffer_1_1_iterator.html">Buffer::Iterator</a> start, uint8_t length)</td></tr>
-<tr class="memdesc:a3de4b55cf654ff52a62bb4557c49490d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the information field.  <a href="classns3_1_1_extended_capabilities.html#a3de4b55cf654ff52a62bb4557c49490d">More...</a><br /></td></tr>
+<tr class="memdesc:a3de4b55cf654ff52a62bb4557c49490d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserialize information (i.e., the body of the IE, not including the Element ID and length octets)  <a href="classns3_1_1_extended_capabilities.html#a3de4b55cf654ff52a62bb4557c49490d">More...</a><br /></td></tr>
 <tr class="separator:a3de4b55cf654ff52a62bb4557c49490d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61d806cb9425be28c9f839dee1daff30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacens3.html#aeb185e0c8a60816016bca079f1420478">WifiInformationElementId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_extended_capabilities.html#a61d806cb9425be28c9f839dee1daff30">ElementId</a> () const</td></tr>
-<tr class="memdesc:a61d806cb9425be28c9f839dee1daff30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the element ID.  <a href="classns3_1_1_extended_capabilities.html#a61d806cb9425be28c9f839dee1daff30">More...</a><br /></td></tr>
 <tr class="separator:a61d806cb9425be28c9f839dee1daff30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac02ff612bd03ad886f37976d135fc0c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_extended_capabilities.html#aac02ff612bd03ad886f37976d135fc0c">GetExtendedCapabilitiesByte1</a> (void) const</td></tr>
 <tr class="memdesc:aac02ff612bd03ad886f37976d135fc0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the first byte in the Extended Capabilities information element.  <a href="classns3_1_1_extended_capabilities.html#aac02ff612bd03ad886f37976d135fc0c">More...</a><br /></td></tr>
@@ -231,16 +227,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a41a724966f4bec647e7edd8e925ecce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the eighth byte in the Extended Capabilities information element.  <a href="classns3_1_1_extended_capabilities.html#a41a724966f4bec647e7edd8e925ecce1">More...</a><br /></td></tr>
 <tr class="separator:a41a724966f4bec647e7edd8e925ecce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64a29341d9dcff91ab89140d106adb91"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_extended_capabilities.html#a64a29341d9dcff91ab89140d106adb91">GetInformationFieldSize</a> () const</td></tr>
-<tr class="memdesc:a64a29341d9dcff91ab89140d106adb91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the information field size.  <a href="classns3_1_1_extended_capabilities.html#a64a29341d9dcff91ab89140d106adb91">More...</a><br /></td></tr>
+<tr class="memdesc:a64a29341d9dcff91ab89140d106adb91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of serialized information (i.e., the length of the body of the IE, not including the Element ID and length octets.  <a href="classns3_1_1_extended_capabilities.html#a64a29341d9dcff91ab89140d106adb91">More...</a><br /></td></tr>
 <tr class="separator:a64a29341d9dcff91ab89140d106adb91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a835d4f4e0409877dbda84362f89e945d"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_extended_capabilities.html#a835d4f4e0409877dbda84362f89e945d">GetSerializedSize</a> () const</td></tr>
-<tr class="memdesc:a835d4f4e0409877dbda84362f89e945d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the serialized size of this extended capabilities information element.  <a href="classns3_1_1_extended_capabilities.html#a835d4f4e0409877dbda84362f89e945d">More...</a><br /></td></tr>
 <tr class="separator:a835d4f4e0409877dbda84362f89e945d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bfc9e52ad54ecee9f11bc6a7e9dea7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classns3_1_1_buffer_1_1_iterator.html">Buffer::Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_extended_capabilities.html#a6bfc9e52ad54ecee9f11bc6a7e9dea7d">Serialize</a> (<a class="el" href="classns3_1_1_buffer_1_1_iterator.html">Buffer::Iterator</a> start) const</td></tr>
-<tr class="memdesc:a6bfc9e52ad54ecee9f11bc6a7e9dea7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This information element is a bit special in that it is only included if the STA is a HT STA.  <a href="classns3_1_1_extended_capabilities.html#a6bfc9e52ad54ecee9f11bc6a7e9dea7d">More...</a><br /></td></tr>
 <tr class="separator:a6bfc9e52ad54ecee9f11bc6a7e9dea7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31b0166faef2b9b69438c77f728e0aee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_extended_capabilities.html#a31b0166faef2b9b69438c77f728e0aee">SerializeInformationField</a> (<a class="el" href="classns3_1_1_buffer_1_1_iterator.html">Buffer::Iterator</a> start) const</td></tr>
-<tr class="memdesc:a31b0166faef2b9b69438c77f728e0aee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the information field.  <a href="classns3_1_1_extended_capabilities.html#a31b0166faef2b9b69438c77f728e0aee">More...</a><br /></td></tr>
+<tr class="memdesc:a31b0166faef2b9b69438c77f728e0aee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize information (i.e., the body of the IE, not including the Element ID and length octets)  <a href="classns3_1_1_extended_capabilities.html#a31b0166faef2b9b69438c77f728e0aee">More...</a><br /></td></tr>
 <tr class="separator:a31b0166faef2b9b69438c77f728e0aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6aa32c1e62bd376fa2fde03775e40c36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_extended_capabilities.html#a6aa32c1e62bd376fa2fde03775e40c36">SetExtendedCapabilitiesByte1</a> (uint8_t ctrl)</td></tr>
 <tr class="memdesc:a6aa32c1e62bd376fa2fde03775e40c36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the first byte in the Extended Capabilities information element.  <a href="classns3_1_1_extended_capabilities.html#a6aa32c1e62bd376fa2fde03775e40c36">More...</a><br /></td></tr>
@@ -266,12 +260,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a62008006ada4907d87b9484d94dcb844"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_extended_capabilities.html#a62008006ada4907d87b9484d94dcb844">SetExtendedCapabilitiesByte8</a> (uint8_t ctrl)</td></tr>
 <tr class="memdesc:a62008006ada4907d87b9484d94dcb844"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the eighth byte in the Extended Capabilities information element.  <a href="classns3_1_1_extended_capabilities.html#a62008006ada4907d87b9484d94dcb844">More...</a><br /></td></tr>
 <tr class="separator:a62008006ada4907d87b9484d94dcb844"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f21ad4727d3e25bb9a3825e81f11693"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_extended_capabilities.html#a7f21ad4727d3e25bb9a3825e81f11693">SetHtSupported</a> (uint8_t htsupported)</td></tr>
-<tr class="memdesc:a7f21ad4727d3e25bb9a3825e81f11693"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the HT Supported flag.  <a href="classns3_1_1_extended_capabilities.html#a7f21ad4727d3e25bb9a3825e81f11693">More...</a><br /></td></tr>
-<tr class="separator:a7f21ad4727d3e25bb9a3825e81f11693"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc6ff0be6bf0a202713b1e9dc2a91823"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_extended_capabilities.html#acc6ff0be6bf0a202713b1e9dc2a91823">SetVhtSupported</a> (uint8_t vhtsupported)</td></tr>
-<tr class="memdesc:acc6ff0be6bf0a202713b1e9dc2a91823"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the VHT Supported flag.  <a href="classns3_1_1_extended_capabilities.html#acc6ff0be6bf0a202713b1e9dc2a91823">More...</a><br /></td></tr>
-<tr class="separator:acc6ff0be6bf0a202713b1e9dc2a91823"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bdf57c92aff8bbe549f05f5ada67caa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_extended_capabilities.html#a2bdf57c92aff8bbe549f05f5ada67caa">SetHtSupported</a> (uint8_t htSupported)</td></tr>
+<tr class="memdesc:a2bdf57c92aff8bbe549f05f5ada67caa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the HT Supported flag.  <a href="classns3_1_1_extended_capabilities.html#a2bdf57c92aff8bbe549f05f5ada67caa">More...</a><br /></td></tr>
+<tr class="separator:a2bdf57c92aff8bbe549f05f5ada67caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bb47d5a8aeea1940decce815c14ee68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_extended_capabilities.html#a3bb47d5a8aeea1940decce815c14ee68">SetVhtSupported</a> (uint8_t vhtSupported)</td></tr>
+<tr class="memdesc:a3bb47d5a8aeea1940decce815c14ee68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the VHT Supported flag.  <a href="classns3_1_1_extended_capabilities.html#a3bb47d5a8aeea1940decce815c14ee68">More...</a><br /></td></tr>
+<tr class="separator:a3bb47d5a8aeea1940decce815c14ee68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classns3_1_1_wifi_information_element"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classns3_1_1_wifi_information_element')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classns3_1_1_wifi_information_element.html">ns3::WifiInformationElement</a></td></tr>
 <tr class="memitem:ae93bd0b081b3d1666a8846e2b0158cf2 inherit pub_methods_classns3_1_1_wifi_information_element"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_wifi_information_element.html#ae93bd0b081b3d1666a8846e2b0158cf2">~WifiInformationElement</a> ()</td></tr>
 <tr class="separator:ae93bd0b081b3d1666a8846e2b0158cf2 inherit pub_methods_classns3_1_1_wifi_information_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -497,10 +491,9 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The Extended Capabilities Information Element. </p>
-<p>This class knows how to serialise and deserialise the Extended Capabilities Information Element</p>
-<dl class="section see"><dt>See also</dt><dd>attribute_ExtendedCapabilities </dd></dl>
+<p>This class knows how to serialise and deserialise the Extended Capabilities Information Element </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00036">36</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00034">34</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6c6b828da4ef00535090960ce6e93ec5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6c6b828da4ef00535090960ce6e93ec5">&#9670;&nbsp;</a></span>ExtendedCapabilities()</h2>
@@ -556,21 +549,21 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Return the information field. </p>
+<p>Deserialize information (i.e., the body of the IE, not including the Element ID and length octets) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">start</td><td>field </td></tr>
-    <tr><td class="paramname">length</td><td>field length</td></tr>
+    <tr><td class="paramname">start</td><td>an iterator which points to where the information should be written. </td></tr>
+    <tr><td class="paramname">length</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the information field </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of bytes read </dd></dl>
 
 <p>Implements <a class="el" href="classns3_1_1_wifi_information_element.html#a92135cae0f188d7d8f6c30d9f4becd82">ns3::WifiInformationElement</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="extended-capabilities_8cc_source.html#l00371">371</a> of file <a class="el" href="extended-capabilities_8cc_source.html">extended-capabilities.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00267">m_vhtSupported</a>, <a class="el" href="buffer_8h_source.html#l01021">ns3::Buffer::Iterator::ReadU8()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00139">SetExtendedCapabilitiesByte1()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00161">SetExtendedCapabilitiesByte2()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00189">SetExtendedCapabilitiesByte3()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00217">SetExtendedCapabilitiesByte4()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00245">SetExtendedCapabilitiesByte5()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00271">SetExtendedCapabilitiesByte6()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00295">SetExtendedCapabilitiesByte7()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00323">SetExtendedCapabilitiesByte8()</a>, and <a class="el" href="core_8py_source.html#l01855">visualizer.core::start()</a>.</p>
+<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00233">m_vhtSupported</a>, <a class="el" href="buffer_8h_source.html#l01021">ns3::Buffer::Iterator::ReadU8()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00139">SetExtendedCapabilitiesByte1()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00161">SetExtendedCapabilitiesByte2()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00189">SetExtendedCapabilitiesByte3()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00217">SetExtendedCapabilitiesByte4()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00245">SetExtendedCapabilitiesByte5()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00271">SetExtendedCapabilitiesByte6()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00295">SetExtendedCapabilitiesByte7()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00323">SetExtendedCapabilitiesByte8()</a>, and <a class="el" href="core_8py_source.html#l01855">visualizer.core::start()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -578,7 +571,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_extended_capabilities_a3de4b55cf654ff52a62bb4557c49490d_cgraph.png" border="0" usemap="#classns3_1_1_extended_capabilities_a3de4b55cf654ff52a62bb4557c49490d_cgraph" alt=""/></div>
 <map name="classns3_1_1_extended_capabilities_a3de4b55cf654ff52a62bb4557c49490d_cgraph" id="classns3_1_1_extended_capabilities_a3de4b55cf654ff52a62bb4557c49490d_cgraph">
-<area shape="rect" title="Return the information field." alt="" coords="5,300,215,341"/>
+<area shape="rect" title="Deserialize information (i.e., the body of the IE, not including the Element ID and length octets)" alt="" coords="5,300,215,341"/>
 <area shape="rect" href="classns3_1_1_buffer_1_1_iterator.html#a7d7d5299e27ecf41aef37e315984ad5a" title=" " alt="" coords="301,5,451,47"/>
 <area shape="rect" href="classns3_1_1_extended_capabilities.html#a6aa32c1e62bd376fa2fde03775e40c36" title="Set the first byte in the Extended Capabilities information element." alt="" coords="263,71,489,112"/>
 <area shape="rect" href="classns3_1_1_extended_capabilities.html#a7d04f4c52c804ce368d8ff46f3cc077e" title="Set the second byte in the Extended Capabilities information element." alt="" coords="263,136,489,177"/>
@@ -618,9 +611,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Return the element ID. </p>
-<dl class="section return"><dt>Returns</dt><dd>the element ID </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Own unique Element ID </dd></dl>
 
 <p>Implements <a class="el" href="classns3_1_1_wifi_information_element.html#a0c16b85dc0c63baf7fc437ddbc13ada6">ns3::WifiInformationElement</a>.</p>
 
@@ -651,9 +642,9 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="extended-capabilities_8cc_source.html#l00149">149</a> of file <a class="el" href="extended-capabilities_8cc_source.html">extended-capabilities.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00200">m_20_40_bssCoexistenceManagementSupport</a>, <a class="el" href="extended-capabilities_8h_source.html#l00206">m_event</a>, <a class="el" href="extended-capabilities_8h_source.html#l00201">m_extendedChannelSwitching</a>, <a class="el" href="extended-capabilities_8h_source.html#l00202">m_psmpCapability</a>, and <a class="el" href="extended-capabilities_8h_source.html#l00203">m_spsmpSupport</a>.</p>
+<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00166">m_20_40_bssCoexistenceManagementSupport</a>, <a class="el" href="extended-capabilities_8h_source.html#l00172">m_event</a>, <a class="el" href="extended-capabilities_8h_source.html#l00167">m_extendedChannelSwitching</a>, <a class="el" href="extended-capabilities_8h_source.html#l00168">m_psmpCapability</a>, and <a class="el" href="extended-capabilities_8h_source.html#l00169">m_spsmpSupport</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00405">ns3::operator&lt;&lt;()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00349">SerializeInformationField()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00397">ns3::operator&lt;&lt;()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00349">SerializeInformationField()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -662,8 +653,8 @@ Private Attributes</h2></td></tr>
 <div class="center"><img src="classns3_1_1_extended_capabilities_aac02ff612bd03ad886f37976d135fc0c_icgraph.png" border="0" usemap="#classns3_1_1_extended_capabilities_aac02ff612bd03ad886f37976d135fc0c_icgraph" alt=""/></div>
 <map name="classns3_1_1_extended_capabilities_aac02ff612bd03ad886f37976d135fc0c_icgraph" id="classns3_1_1_extended_capabilities_aac02ff612bd03ad886f37976d135fc0c_icgraph">
 <area shape="rect" title="Return the first byte in the Extended Capabilities information element." alt="" coords="245,27,475,69"/>
-<area shape="rect" href="namespacens3.html#a8f16f64b6b5776b97c68ce58e508b6da" title="output stream output operator" alt="" coords="36,5,167,32"/>
-<area shape="rect" href="classns3_1_1_extended_capabilities.html#a31b0166faef2b9b69438c77f728e0aee" title="Serialize the information field." alt="" coords="5,57,197,98"/>
+<area shape="rect" href="namespacens3.html#a52c992ccb43e144edf43519218f5558b" title="output stream output operator" alt="" coords="36,5,167,32"/>
+<area shape="rect" href="classns3_1_1_extended_capabilities.html#a31b0166faef2b9b69438c77f728e0aee" title="Serialize information (i.e., the body of the IE, not including the Element ID and length octets)" alt="" coords="5,57,197,98"/>
 </map>
 </div>
 
@@ -690,7 +681,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="extended-capabilities_8cc_source.html#l00174">174</a> of file <a class="el" href="extended-capabilities_8cc_source.html">extended-capabilities.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00213">m_civicLocation</a>, <a class="el" href="extended-capabilities_8h_source.html#l00212">m_collocatedInterferenceReporting</a>, <a class="el" href="extended-capabilities_8h_source.html#l00207">m_diagnostics</a>, <a class="el" href="extended-capabilities_8h_source.html#l00210">m_fms</a>, <a class="el" href="extended-capabilities_8h_source.html#l00214">m_geospatialLocation</a>, <a class="el" href="extended-capabilities_8h_source.html#l00209">m_locationTracking</a>, <a class="el" href="extended-capabilities_8h_source.html#l00208">m_multicastDiagnostics</a>, and <a class="el" href="extended-capabilities_8h_source.html#l00211">m_proxyArpService</a>.</p>
+<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00179">m_civicLocation</a>, <a class="el" href="extended-capabilities_8h_source.html#l00178">m_collocatedInterferenceReporting</a>, <a class="el" href="extended-capabilities_8h_source.html#l00173">m_diagnostics</a>, <a class="el" href="extended-capabilities_8h_source.html#l00176">m_fms</a>, <a class="el" href="extended-capabilities_8h_source.html#l00180">m_geospatialLocation</a>, <a class="el" href="extended-capabilities_8h_source.html#l00175">m_locationTracking</a>, <a class="el" href="extended-capabilities_8h_source.html#l00174">m_multicastDiagnostics</a>, and <a class="el" href="extended-capabilities_8h_source.html#l00177">m_proxyArpService</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00349">SerializeInformationField()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -701,7 +692,7 @@ Private Attributes</h2></td></tr>
 <div class="center"><img src="classns3_1_1_extended_capabilities_ae32756767fb64257571b492f214856a3_icgraph.png" border="0" usemap="#classns3_1_1_extended_capabilities_ae32756767fb64257571b492f214856a3_icgraph" alt=""/></div>
 <map name="classns3_1_1_extended_capabilities_ae32756767fb64257571b492f214856a3_icgraph" id="classns3_1_1_extended_capabilities_ae32756767fb64257571b492f214856a3_icgraph">
 <area shape="rect" title="Return the second byte in the Extended Capabilities information element." alt="" coords="245,5,475,47"/>
-<area shape="rect" href="classns3_1_1_extended_capabilities.html#a31b0166faef2b9b69438c77f728e0aee" title="Serialize the information field." alt="" coords="5,5,197,47"/>
+<area shape="rect" href="classns3_1_1_extended_capabilities.html#a31b0166faef2b9b69438c77f728e0aee" title="Serialize information (i.e., the body of the IE, not including the Element ID and length octets)" alt="" coords="5,5,197,47"/>
 </map>
 </div>
 
@@ -728,7 +719,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="extended-capabilities_8cc_source.html#l00202">202</a> of file <a class="el" href="extended-capabilities_8cc_source.html">extended-capabilities.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00221">m_acStationCount</a>, <a class="el" href="extended-capabilities_8h_source.html#l00219">m_bssTransition</a>, <a class="el" href="extended-capabilities_8h_source.html#l00222">m_multipleBssid</a>, <a class="el" href="extended-capabilities_8h_source.html#l00220">m_qosTrafficCapability</a>, <a class="el" href="extended-capabilities_8h_source.html#l00216">m_tfs</a>, <a class="el" href="extended-capabilities_8h_source.html#l00218">m_timBroadcast</a>, <a class="el" href="extended-capabilities_8h_source.html#l00223">m_timingMeasurement</a>, and <a class="el" href="extended-capabilities_8h_source.html#l00217">m_wnmSleepMode</a>.</p>
+<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00187">m_acStationCount</a>, <a class="el" href="extended-capabilities_8h_source.html#l00185">m_bssTransition</a>, <a class="el" href="extended-capabilities_8h_source.html#l00188">m_multipleBssid</a>, <a class="el" href="extended-capabilities_8h_source.html#l00186">m_qosTrafficCapability</a>, <a class="el" href="extended-capabilities_8h_source.html#l00182">m_tfs</a>, <a class="el" href="extended-capabilities_8h_source.html#l00184">m_timBroadcast</a>, <a class="el" href="extended-capabilities_8h_source.html#l00189">m_timingMeasurement</a>, and <a class="el" href="extended-capabilities_8h_source.html#l00183">m_wnmSleepMode</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00349">SerializeInformationField()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -739,7 +730,7 @@ Private Attributes</h2></td></tr>
 <div class="center"><img src="classns3_1_1_extended_capabilities_ad25cdfc38fa17fd7fde5930eb1f2b2c2_icgraph.png" border="0" usemap="#classns3_1_1_extended_capabilities_ad25cdfc38fa17fd7fde5930eb1f2b2c2_icgraph" alt=""/></div>
 <map name="classns3_1_1_extended_capabilities_ad25cdfc38fa17fd7fde5930eb1f2b2c2_icgraph" id="classns3_1_1_extended_capabilities_ad25cdfc38fa17fd7fde5930eb1f2b2c2_icgraph">
 <area shape="rect" title="Return the third byte in the Extended Capabilities information element." alt="" coords="245,5,475,47"/>
-<area shape="rect" href="classns3_1_1_extended_capabilities.html#a31b0166faef2b9b69438c77f728e0aee" title="Serialize the information field." alt="" coords="5,5,197,47"/>
+<area shape="rect" href="classns3_1_1_extended_capabilities.html#a31b0166faef2b9b69438c77f728e0aee" title="Serialize information (i.e., the body of the IE, not including the Element ID and length octets)" alt="" coords="5,5,197,47"/>
 </map>
 </div>
 
@@ -766,7 +757,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="extended-capabilities_8cc_source.html#l00230">230</a> of file <a class="el" href="extended-capabilities_8cc_source.html">extended-capabilities.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00225">m_channelUsage</a>, <a class="el" href="extended-capabilities_8h_source.html#l00227">m_dms</a>, <a class="el" href="extended-capabilities_8h_source.html#l00232">m_interworking</a>, <a class="el" href="extended-capabilities_8h_source.html#l00226">m_ssidList</a>, <a class="el" href="extended-capabilities_8h_source.html#l00231">m_tdlsChannelSwitching</a>, <a class="el" href="extended-capabilities_8h_source.html#l00230">m_tdlsPeerPsmSupport</a>, <a class="el" href="extended-capabilities_8h_source.html#l00229">m_tpuBufferStaSupport</a>, and <a class="el" href="extended-capabilities_8h_source.html#l00228">m_utcTsfOffset</a>.</p>
+<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00191">m_channelUsage</a>, <a class="el" href="extended-capabilities_8h_source.html#l00193">m_dms</a>, <a class="el" href="extended-capabilities_8h_source.html#l00198">m_interworking</a>, <a class="el" href="extended-capabilities_8h_source.html#l00192">m_ssidList</a>, <a class="el" href="extended-capabilities_8h_source.html#l00197">m_tdlsChannelSwitching</a>, <a class="el" href="extended-capabilities_8h_source.html#l00196">m_tdlsPeerPsmSupport</a>, <a class="el" href="extended-capabilities_8h_source.html#l00195">m_tpuBufferStaSupport</a>, and <a class="el" href="extended-capabilities_8h_source.html#l00194">m_utcTsfOffset</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00349">SerializeInformationField()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -777,7 +768,7 @@ Private Attributes</h2></td></tr>
 <div class="center"><img src="classns3_1_1_extended_capabilities_a07bce0273c335dfefc7cd9eeb145c22b_icgraph.png" border="0" usemap="#classns3_1_1_extended_capabilities_a07bce0273c335dfefc7cd9eeb145c22b_icgraph" alt=""/></div>
 <map name="classns3_1_1_extended_capabilities_a07bce0273c335dfefc7cd9eeb145c22b_icgraph" id="classns3_1_1_extended_capabilities_a07bce0273c335dfefc7cd9eeb145c22b_icgraph">
 <area shape="rect" title="Return the fourth byte in the Extended Capabilities information element." alt="" coords="245,5,475,47"/>
-<area shape="rect" href="classns3_1_1_extended_capabilities.html#a31b0166faef2b9b69438c77f728e0aee" title="Serialize the information field." alt="" coords="5,5,197,47"/>
+<area shape="rect" href="classns3_1_1_extended_capabilities.html#a31b0166faef2b9b69438c77f728e0aee" title="Serialize information (i.e., the body of the IE, not including the Element ID and length octets)" alt="" coords="5,5,197,47"/>
 </map>
 </div>
 
@@ -804,7 +795,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="extended-capabilities_8cc_source.html#l00257">257</a> of file <a class="el" href="extended-capabilities_8cc_source.html">extended-capabilities.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00235">m_ebr</a>, <a class="el" href="extended-capabilities_8h_source.html#l00237">m_msgcfCapability</a>, <a class="el" href="extended-capabilities_8h_source.html#l00234">m_qosMap</a>, <a class="el" href="extended-capabilities_8h_source.html#l00236">m_sspnInterface</a>, <a class="el" href="extended-capabilities_8h_source.html#l00240">m_tdlsChannelSwitchingProhibited</a>, <a class="el" href="extended-capabilities_8h_source.html#l00239">m_tdlsProhibited</a>, and <a class="el" href="extended-capabilities_8h_source.html#l00238">m_tdlsSupport</a>.</p>
+<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00201">m_ebr</a>, <a class="el" href="extended-capabilities_8h_source.html#l00203">m_msgcfCapability</a>, <a class="el" href="extended-capabilities_8h_source.html#l00200">m_qosMap</a>, <a class="el" href="extended-capabilities_8h_source.html#l00202">m_sspnInterface</a>, <a class="el" href="extended-capabilities_8h_source.html#l00206">m_tdlsChannelSwitchingProhibited</a>, <a class="el" href="extended-capabilities_8h_source.html#l00205">m_tdlsProhibited</a>, and <a class="el" href="extended-capabilities_8h_source.html#l00204">m_tdlsSupport</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00349">SerializeInformationField()</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -815,7 +806,7 @@ Private Attributes</h2></td></tr>
 <div class="center"><img src="classns3_1_1_extended_capabilities_ad17b5b74c9c78c396b1cc9b5832df20c_icgraph.png" border="0" usemap="#classns3_1_1_extended_capabilities_ad17b5b74c9c78c396b1cc9b5832df20c_icgraph" alt=""/></div>
 <map name="classns3_1_1_extended_capabilities_ad17b5b74c9c78c396b1cc9b5832df20c_icgraph" id="classns3_1_1_extended_capabilities_ad17b5b74c9c78c396b1cc9b5832df20c_icgraph">
 <area shape="rect" title="Return the fifth byte in the Extended Capabilities information element." alt="" coords="245,5,475,47"/>
-<area shape="rect" href="classns3_1_1_extended_capabilities.html#a31b0166faef2b9b69438c77f728e0aee" title="Serialize the information field." alt="" coords="5,5,197,47"/>
+<area shape="rect" href="classns3_1_1_extended_capabilities.html#a31b0166faef2b9b69438c77f728e0aee" title="Serialize information (i.e., the body of the IE, not including the Element ID and length octets)" alt="" coords="5,5,197,47"/>
 </map>
 </div>
 
@@ -842,7 +833,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="extended-capabilities_8cc_source.html#l00282">282</a> of file <a class="el" href="extended-capabilities_8cc_source.html">extended-capabilities.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00244">m_identifierLocation</a>, <a class="el" href="extended-capabilities_8h_source.html#l00247">m_qabCapability</a>, <a class="el" href="extended-capabilities_8h_source.html#l00242">m_rejectUnadmittedFrame</a>, <a class="el" href="extended-capabilities_8h_source.html#l00243">m_serviceIntervalGranularity</a>, <a class="el" href="extended-capabilities_8h_source.html#l00245">m_uapsdCoexistence</a>, and <a class="el" href="extended-capabilities_8h_source.html#l00246">m_wnmNotification</a>.</p>
+<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00210">m_identifierLocation</a>, <a class="el" href="extended-capabilities_8h_source.html#l00213">m_qabCapability</a>, <a class="el" href="extended-capabilities_8h_source.html#l00208">m_rejectUnadmittedFrame</a>, <a class="el" href="extended-capabilities_8h_source.html#l00209">m_serviceIntervalGranularity</a>, <a class="el" href="extended-capabilities_8h_source.html#l00211">m_uapsdCoexistence</a>, and <a class="el" href="extended-capabilities_8h_source.html#l00212">m_wnmNotification</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00349">SerializeInformationField()</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -853,7 +844,7 @@ Private Attributes</h2></td></tr>
 <div class="center"><img src="classns3_1_1_extended_capabilities_ae9a1ce5b31f55c55188293a28a9d6279_icgraph.png" border="0" usemap="#classns3_1_1_extended_capabilities_ae9a1ce5b31f55c55188293a28a9d6279_icgraph" alt=""/></div>
 <map name="classns3_1_1_extended_capabilities_ae9a1ce5b31f55c55188293a28a9d6279_icgraph" id="classns3_1_1_extended_capabilities_ae9a1ce5b31f55c55188293a28a9d6279_icgraph">
 <area shape="rect" title="Return the sixth byte in the Extended Capabilities information element." alt="" coords="245,5,475,47"/>
-<area shape="rect" href="classns3_1_1_extended_capabilities.html#a31b0166faef2b9b69438c77f728e0aee" title="Serialize the information field." alt="" coords="5,5,197,47"/>
+<area shape="rect" href="classns3_1_1_extended_capabilities.html#a31b0166faef2b9b69438c77f728e0aee" title="Serialize information (i.e., the body of the IE, not including the Element ID and length octets)" alt="" coords="5,5,197,47"/>
 </map>
 </div>
 
@@ -880,7 +871,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="extended-capabilities_8cc_source.html#l00308">308</a> of file <a class="el" href="extended-capabilities_8cc_source.html">extended-capabilities.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00253">m_advancedGcr</a>, <a class="el" href="extended-capabilities_8h_source.html#l00254">m_meshGcr</a>, <a class="el" href="extended-capabilities_8h_source.html#l00256">m_qloadReport</a>, <a class="el" href="extended-capabilities_8h_source.html#l00250">m_qmfActivated</a>, <a class="el" href="extended-capabilities_8h_source.html#l00251">m_qmfReconfigurationActivated</a>, <a class="el" href="extended-capabilities_8h_source.html#l00252">m_robustAvStreaming</a>, <a class="el" href="extended-capabilities_8h_source.html#l00255">m_scs</a>, and <a class="el" href="extended-capabilities_8h_source.html#l00249">m_utf8Ssid</a>.</p>
+<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00219">m_advancedGcr</a>, <a class="el" href="extended-capabilities_8h_source.html#l00220">m_meshGcr</a>, <a class="el" href="extended-capabilities_8h_source.html#l00222">m_qloadReport</a>, <a class="el" href="extended-capabilities_8h_source.html#l00216">m_qmfActivated</a>, <a class="el" href="extended-capabilities_8h_source.html#l00217">m_qmfReconfigurationActivated</a>, <a class="el" href="extended-capabilities_8h_source.html#l00218">m_robustAvStreaming</a>, <a class="el" href="extended-capabilities_8h_source.html#l00221">m_scs</a>, and <a class="el" href="extended-capabilities_8h_source.html#l00215">m_utf8Ssid</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00349">SerializeInformationField()</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -891,7 +882,7 @@ Private Attributes</h2></td></tr>
 <div class="center"><img src="classns3_1_1_extended_capabilities_aa2010bbcf8e0c91f92a364634f843b13_icgraph.png" border="0" usemap="#classns3_1_1_extended_capabilities_aa2010bbcf8e0c91f92a364634f843b13_icgraph" alt=""/></div>
 <map name="classns3_1_1_extended_capabilities_aa2010bbcf8e0c91f92a364634f843b13_icgraph" id="classns3_1_1_extended_capabilities_aa2010bbcf8e0c91f92a364634f843b13_icgraph">
 <area shape="rect" title="Return the seventh byte in the Extended Capabilities information element." alt="" coords="245,5,475,47"/>
-<area shape="rect" href="classns3_1_1_extended_capabilities.html#a31b0166faef2b9b69438c77f728e0aee" title="Serialize the information field." alt="" coords="5,5,197,47"/>
+<area shape="rect" href="classns3_1_1_extended_capabilities.html#a31b0166faef2b9b69438c77f728e0aee" title="Serialize information (i.e., the body of the IE, not including the Element ID and length octets)" alt="" coords="5,5,197,47"/>
 </map>
 </div>
 
@@ -918,7 +909,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="extended-capabilities_8cc_source.html#l00335">335</a> of file <a class="el" href="extended-capabilities_8cc_source.html">extended-capabilities.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00258">m_alternateEdca</a>, <a class="el" href="extended-capabilities_8h_source.html#l00264">m_maxNumberOfMsdusInAmsdu</a>, <a class="el" href="extended-capabilities_8h_source.html#l00263">m_operatingModeNotification</a>, <a class="el" href="extended-capabilities_8h_source.html#l00261">m_protectedQloadReport</a>, <a class="el" href="extended-capabilities_8h_source.html#l00260">m_protectedTxopNegotiation</a>, <a class="el" href="extended-capabilities_8h_source.html#l00262">m_tdlsWiderBandwidth</a>, and <a class="el" href="extended-capabilities_8h_source.html#l00259">m_unprotectedTxopNegotiation</a>.</p>
+<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00224">m_alternateEdca</a>, <a class="el" href="extended-capabilities_8h_source.html#l00230">m_maxNumberOfMsdusInAmsdu</a>, <a class="el" href="extended-capabilities_8h_source.html#l00229">m_operatingModeNotification</a>, <a class="el" href="extended-capabilities_8h_source.html#l00227">m_protectedQloadReport</a>, <a class="el" href="extended-capabilities_8h_source.html#l00226">m_protectedTxopNegotiation</a>, <a class="el" href="extended-capabilities_8h_source.html#l00228">m_tdlsWiderBandwidth</a>, and <a class="el" href="extended-capabilities_8h_source.html#l00225">m_unprotectedTxopNegotiation</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00349">SerializeInformationField()</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -929,7 +920,7 @@ Private Attributes</h2></td></tr>
 <div class="center"><img src="classns3_1_1_extended_capabilities_a41a724966f4bec647e7edd8e925ecce1_icgraph.png" border="0" usemap="#classns3_1_1_extended_capabilities_a41a724966f4bec647e7edd8e925ecce1_icgraph" alt=""/></div>
 <map name="classns3_1_1_extended_capabilities_a41a724966f4bec647e7edd8e925ecce1_icgraph" id="classns3_1_1_extended_capabilities_a41a724966f4bec647e7edd8e925ecce1_icgraph">
 <area shape="rect" title="Return the eighth byte in the Extended Capabilities information element." alt="" coords="245,5,475,47"/>
-<area shape="rect" href="classns3_1_1_extended_capabilities.html#a31b0166faef2b9b69438c77f728e0aee" title="Serialize the information field." alt="" coords="5,5,197,47"/>
+<area shape="rect" href="classns3_1_1_extended_capabilities.html#a31b0166faef2b9b69438c77f728e0aee" title="Serialize information (i.e., the body of the IE, not including the Element ID and length octets)" alt="" coords="5,5,197,47"/>
 </map>
 </div>
 
@@ -958,14 +949,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Return the information field size. </p>
-<dl class="section return"><dt>Returns</dt><dd>the information field size </dd></dl>
+<p>Length of serialized information (i.e., the length of the body of the IE, not including the Element ID and length octets. </p>
+<p>This is the value that will appear in the second octet of the entire IE - the length field)</p>
+<dl class="section return"><dt>Returns</dt><dd>the length of serialized information </dd></dl>
 
 <p>Implements <a class="el" href="classns3_1_1_wifi_information_element.html#a04af58633c58364e6b8d0ae2a7d777b2">ns3::WifiInformationElement</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="extended-capabilities_8cc_source.html#l00107">107</a> of file <a class="el" href="extended-capabilities_8cc_source.html">extended-capabilities.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00266">m_htSupported</a>, <a class="el" href="extended-capabilities_8h_source.html#l00267">m_vhtSupported</a>, and <a class="el" href="assert_8h_source.html#l00067">NS_ASSERT</a>.</p>
+<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00232">m_htSupported</a>, <a class="el" href="extended-capabilities_8h_source.html#l00233">m_vhtSupported</a>, and <a class="el" href="assert_8h_source.html#l00067">NS_ASSERT</a>.</p>
 
 </div>
 </div>
@@ -984,12 +976,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Return the serialized size of this extended capabilities information element. </p>
-<dl class="section return"><dt>Returns</dt><dd>the serialized size of this extended capabilities information element </dd></dl>
-
 <p class="definition">Definition at line <a class="el" href="extended-capabilities_8cc_source.html#l00129">129</a> of file <a class="el" href="extended-capabilities_8cc_source.html">extended-capabilities.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="wifi-information-element_8cc_source.html#l00035">ns3::WifiInformationElement::GetSerializedSize()</a>, <a class="el" href="extended-capabilities_8h_source.html#l00266">m_htSupported</a>, and <a class="el" href="extended-capabilities_8h_source.html#l00267">m_vhtSupported</a>.</p>
+<p class="reference">References <a class="el" href="wifi-information-element_8cc_source.html#l00035">ns3::WifiInformationElement::GetSerializedSize()</a>, <a class="el" href="extended-capabilities_8h_source.html#l00232">m_htSupported</a>, and <a class="el" href="extended-capabilities_8h_source.html#l00233">m_vhtSupported</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mgt-headers_8cc_source.html#l00643">ns3::MgtAssocRequestHeader::GetSerializedSize()</a>, <a class="el" href="mgt-headers_8cc_source.html#l00836">ns3::MgtReassocRequestHeader::GetSerializedSize()</a>, <a class="el" href="mgt-headers_8cc_source.html#l01087">ns3::MgtAssocResponseHeader::GetSerializedSize()</a>, <a class="el" href="mgt-headers_8cc_source.html#l00112">ns3::MgtProbeRequestHeader::GetSerializedSize()</a>, and <a class="el" href="mgt-headers_8cc_source.html#l00399">ns3::MgtProbeResponseHeader::GetSerializedSize()</a>.</p>
 <div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -999,7 +988,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_extended_capabilities_a835d4f4e0409877dbda84362f89e945d_cgraph.png" border="0" usemap="#classns3_1_1_extended_capabilities_a835d4f4e0409877dbda84362f89e945d_cgraph" alt=""/></div>
 <map name="classns3_1_1_extended_capabilities_a835d4f4e0409877dbda84362f89e945d_cgraph" id="classns3_1_1_extended_capabilities_a835d4f4e0409877dbda84362f89e945d_cgraph">
-<area shape="rect" title="Return the serialized size of this extended capabilities information element." alt="" coords="5,5,196,47"/>
+<area shape="rect" title=" " alt="" coords="5,5,196,47"/>
 <area shape="rect" href="classns3_1_1_wifi_information_element.html#a1e40d7d7a90f9c6d383223c26a977dc3" title="Get the size of the serialized IE including Element ID and length fields." alt="" coords="244,5,453,47"/>
 <area shape="rect" href="classns3_1_1_wifi_information_element.html#a04af58633c58364e6b8d0ae2a7d777b2" title="Length of serialized information (i.e., the length of the body of the IE, not including the Element I..." alt="" coords="501,5,711,47"/>
 </map>
@@ -1011,7 +1000,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_extended_capabilities_a835d4f4e0409877dbda84362f89e945d_icgraph.png" border="0" usemap="#classns3_1_1_extended_capabilities_a835d4f4e0409877dbda84362f89e945d_icgraph" alt=""/></div>
 <map name="classns3_1_1_extended_capabilities_a835d4f4e0409877dbda84362f89e945d_icgraph" id="classns3_1_1_extended_capabilities_a835d4f4e0409877dbda84362f89e945d_icgraph">
-<area shape="rect" title="Return the serialized size of this extended capabilities information element." alt="" coords="285,136,476,177"/>
+<area shape="rect" title=" " alt="" coords="285,136,476,177"/>
 <area shape="rect" href="classns3_1_1_mgt_assoc_request_header.html#a6b06002bf8962861fbe38f8e581ed0c2" title=" " alt="" coords="13,5,229,47"/>
 <area shape="rect" href="classns3_1_1_mgt_reassoc_request_header.html#af46e2f52e168e51aa04ae5b8b9406e16" title=" " alt="" coords="5,71,237,112"/>
 <area shape="rect" href="classns3_1_1_mgt_assoc_response_header.html#a5e89f2a2f4de5bf66291e26e882d5400" title=" " alt="" coords="8,136,235,177"/>
@@ -1038,19 +1027,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>This information element is a bit special in that it is only included if the STA is a HT STA. </p>
-<p>To support this we override the Serialize and GetSerializedSize methods of <a class="el" href="classns3_1_1_wifi_information_element.html" title="Information element, as defined in 802.11-2007 standard.">WifiInformationElement</a>.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">start</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>an iterator </dd></dl>
-
 <p class="definition">Definition at line <a class="el" href="extended-capabilities_8cc_source.html#l00119">119</a> of file <a class="el" href="extended-capabilities_8cc_source.html">extended-capabilities.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00266">m_htSupported</a>, <a class="el" href="extended-capabilities_8h_source.html#l00267">m_vhtSupported</a>, and <a class="el" href="wifi-information-element_8cc_source.html#l00047">ns3::WifiInformationElement::Serialize()</a>.</p>
+<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00232">m_htSupported</a>, <a class="el" href="extended-capabilities_8h_source.html#l00233">m_vhtSupported</a>, and <a class="el" href="wifi-information-element_8cc_source.html#l00047">ns3::WifiInformationElement::Serialize()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mgt-headers_8cc_source.html#l00670">ns3::MgtAssocRequestHeader::Serialize()</a>, <a class="el" href="mgt-headers_8cc_source.html#l00865">ns3::MgtReassocRequestHeader::Serialize()</a>, <a class="el" href="mgt-headers_8cc_source.html#l01124">ns3::MgtAssocResponseHeader::Serialize()</a>, <a class="el" href="mgt-headers_8cc_source.html#l00154">ns3::MgtProbeRequestHeader::Serialize()</a>, and <a class="el" href="mgt-headers_8cc_source.html#l00438">ns3::MgtProbeResponseHeader::Serialize()</a>.</p>
 <div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1060,7 +1039,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_extended_capabilities_a6bfc9e52ad54ecee9f11bc6a7e9dea7d_cgraph.png" border="0" usemap="#classns3_1_1_extended_capabilities_a6bfc9e52ad54ecee9f11bc6a7e9dea7d_cgraph" alt=""/></div>
 <map name="classns3_1_1_extended_capabilities_a6bfc9e52ad54ecee9f11bc6a7e9dea7d_cgraph" id="classns3_1_1_extended_capabilities_a6bfc9e52ad54ecee9f11bc6a7e9dea7d_cgraph">
-<area shape="rect" title="This information element is a bit special in that it is only included if the STA is a HT STA." alt="" coords="5,169,196,211"/>
+<area shape="rect" title=" " alt="" coords="5,169,196,211"/>
 <area shape="rect" href="classns3_1_1_wifi_information_element.html#a8662b6056d624747d927e9c041e24ab0" title="Serialize entire IE including Element ID and length fields." alt="" coords="244,169,453,211"/>
 <area shape="rect" href="classns3_1_1_wifi_information_element.html#a0c16b85dc0c63baf7fc437ddbc13ada6" title=" " alt="" coords="501,5,711,47"/>
 <area shape="rect" href="classns3_1_1_wifi_information_element.html#ae24bfd29837cfb426a44dadd56d72f4b" title=" " alt="" coords="501,71,711,112"/>
@@ -1078,7 +1057,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_extended_capabilities_a6bfc9e52ad54ecee9f11bc6a7e9dea7d_icgraph.png" border="0" usemap="#classns3_1_1_extended_capabilities_a6bfc9e52ad54ecee9f11bc6a7e9dea7d_icgraph" alt=""/></div>
 <map name="classns3_1_1_extended_capabilities_a6bfc9e52ad54ecee9f11bc6a7e9dea7d_icgraph" id="classns3_1_1_extended_capabilities_a6bfc9e52ad54ecee9f11bc6a7e9dea7d_icgraph">
-<area shape="rect" title="This information element is a bit special in that it is only included if the STA is a HT STA." alt="" coords="285,136,476,177"/>
+<area shape="rect" title=" " alt="" coords="285,136,476,177"/>
 <area shape="rect" href="classns3_1_1_mgt_assoc_request_header.html#a7cb51405dd8d72be95accc8969d65c96" title=" " alt="" coords="13,5,229,47"/>
 <area shape="rect" href="classns3_1_1_mgt_reassoc_request_header.html#a765bf32b0d25f3432af0ab61599dc0a4" title=" " alt="" coords="5,71,237,112"/>
 <area shape="rect" href="classns3_1_1_mgt_assoc_response_header.html#ac7eb0a62c467eb513d37dc095c896985" title=" " alt="" coords="8,136,235,177"/>
@@ -1113,10 +1092,10 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Serialize the information field. </p>
+<p>Serialize information (i.e., the body of the IE, not including the Element ID and length octets) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">start</td><td>the information field </td></tr>
+    <tr><td class="paramname">start</td><td>an iterator which points to where the information should be written. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1125,7 +1104,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="extended-capabilities_8cc_source.html#l00349">349</a> of file <a class="el" href="extended-capabilities_8cc_source.html">extended-capabilities.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="extended-capabilities_8cc_source.html#l00149">GetExtendedCapabilitiesByte1()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00174">GetExtendedCapabilitiesByte2()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00202">GetExtendedCapabilitiesByte3()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00230">GetExtendedCapabilitiesByte4()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00257">GetExtendedCapabilitiesByte5()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00282">GetExtendedCapabilitiesByte6()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00308">GetExtendedCapabilitiesByte7()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00335">GetExtendedCapabilitiesByte8()</a>, <a class="el" href="extended-capabilities_8h_source.html#l00266">m_htSupported</a>, <a class="el" href="extended-capabilities_8h_source.html#l00267">m_vhtSupported</a>, and <a class="el" href="core_8py_source.html#l01855">visualizer.core::start()</a>.</p>
+<p class="reference">References <a class="el" href="extended-capabilities_8cc_source.html#l00149">GetExtendedCapabilitiesByte1()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00174">GetExtendedCapabilitiesByte2()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00202">GetExtendedCapabilitiesByte3()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00230">GetExtendedCapabilitiesByte4()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00257">GetExtendedCapabilitiesByte5()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00282">GetExtendedCapabilitiesByte6()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00308">GetExtendedCapabilitiesByte7()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00335">GetExtendedCapabilitiesByte8()</a>, <a class="el" href="extended-capabilities_8h_source.html#l00232">m_htSupported</a>, <a class="el" href="extended-capabilities_8h_source.html#l00233">m_vhtSupported</a>, and <a class="el" href="core_8py_source.html#l01855">visualizer.core::start()</a>.</p>
 <div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-15-summary" class="dynsummary" style="display:block;">
@@ -1133,7 +1112,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_extended_capabilities_a31b0166faef2b9b69438c77f728e0aee_cgraph.png" border="0" usemap="#classns3_1_1_extended_capabilities_a31b0166faef2b9b69438c77f728e0aee_cgraph" alt=""/></div>
 <map name="classns3_1_1_extended_capabilities_a31b0166faef2b9b69438c77f728e0aee_cgraph" id="classns3_1_1_extended_capabilities_a31b0166faef2b9b69438c77f728e0aee_cgraph">
-<area shape="rect" title="Serialize the information field." alt="" coords="5,267,197,308"/>
+<area shape="rect" title="Serialize information (i.e., the body of the IE, not including the Element ID and length octets)" alt="" coords="5,267,197,308"/>
 <area shape="rect" href="classns3_1_1_extended_capabilities.html#aac02ff612bd03ad886f37976d135fc0c" title="Return the first byte in the Extended Capabilities information element." alt="" coords="245,5,475,47"/>
 <area shape="rect" href="classns3_1_1_extended_capabilities.html#ae32756767fb64257571b492f214856a3" title="Return the second byte in the Extended Capabilities information element." alt="" coords="245,71,475,112"/>
 <area shape="rect" href="classns3_1_1_extended_capabilities.html#ad25cdfc38fa17fd7fde5930eb1f2b2c2" title="Return the third byte in the Extended Capabilities information element." alt="" coords="245,136,475,177"/>
@@ -1176,7 +1155,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="extended-capabilities_8cc_source.html#l00139">139</a> of file <a class="el" href="extended-capabilities_8cc_source.html">extended-capabilities.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00200">m_20_40_bssCoexistenceManagementSupport</a>, <a class="el" href="extended-capabilities_8h_source.html#l00206">m_event</a>, <a class="el" href="extended-capabilities_8h_source.html#l00201">m_extendedChannelSwitching</a>, <a class="el" href="extended-capabilities_8h_source.html#l00202">m_psmpCapability</a>, and <a class="el" href="extended-capabilities_8h_source.html#l00203">m_spsmpSupport</a>.</p>
+<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00166">m_20_40_bssCoexistenceManagementSupport</a>, <a class="el" href="extended-capabilities_8h_source.html#l00172">m_event</a>, <a class="el" href="extended-capabilities_8h_source.html#l00167">m_extendedChannelSwitching</a>, <a class="el" href="extended-capabilities_8h_source.html#l00168">m_psmpCapability</a>, and <a class="el" href="extended-capabilities_8h_source.html#l00169">m_spsmpSupport</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00371">DeserializeInformationField()</a>.</p>
 <div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1187,7 +1166,7 @@ Private Attributes</h2></td></tr>
 <div class="center"><img src="classns3_1_1_extended_capabilities_a6aa32c1e62bd376fa2fde03775e40c36_icgraph.png" border="0" usemap="#classns3_1_1_extended_capabilities_a6aa32c1e62bd376fa2fde03775e40c36_icgraph" alt=""/></div>
 <map name="classns3_1_1_extended_capabilities_a6aa32c1e62bd376fa2fde03775e40c36_icgraph" id="classns3_1_1_extended_capabilities_a6aa32c1e62bd376fa2fde03775e40c36_icgraph">
 <area shape="rect" title="Set the first byte in the Extended Capabilities information element." alt="" coords="263,5,489,47"/>
-<area shape="rect" href="classns3_1_1_extended_capabilities.html#a3de4b55cf654ff52a62bb4557c49490d" title="Return the information field." alt="" coords="5,5,215,47"/>
+<area shape="rect" href="classns3_1_1_extended_capabilities.html#a3de4b55cf654ff52a62bb4557c49490d" title="Deserialize information (i.e., the body of the IE, not including the Element ID and length octets)" alt="" coords="5,5,215,47"/>
 </map>
 </div>
 
@@ -1219,7 +1198,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="extended-capabilities_8cc_source.html#l00161">161</a> of file <a class="el" href="extended-capabilities_8cc_source.html">extended-capabilities.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00213">m_civicLocation</a>, <a class="el" href="extended-capabilities_8h_source.html#l00212">m_collocatedInterferenceReporting</a>, <a class="el" href="extended-capabilities_8h_source.html#l00207">m_diagnostics</a>, <a class="el" href="extended-capabilities_8h_source.html#l00210">m_fms</a>, <a class="el" href="extended-capabilities_8h_source.html#l00214">m_geospatialLocation</a>, <a class="el" href="extended-capabilities_8h_source.html#l00209">m_locationTracking</a>, <a class="el" href="extended-capabilities_8h_source.html#l00208">m_multicastDiagnostics</a>, and <a class="el" href="extended-capabilities_8h_source.html#l00211">m_proxyArpService</a>.</p>
+<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00179">m_civicLocation</a>, <a class="el" href="extended-capabilities_8h_source.html#l00178">m_collocatedInterferenceReporting</a>, <a class="el" href="extended-capabilities_8h_source.html#l00173">m_diagnostics</a>, <a class="el" href="extended-capabilities_8h_source.html#l00176">m_fms</a>, <a class="el" href="extended-capabilities_8h_source.html#l00180">m_geospatialLocation</a>, <a class="el" href="extended-capabilities_8h_source.html#l00175">m_locationTracking</a>, <a class="el" href="extended-capabilities_8h_source.html#l00174">m_multicastDiagnostics</a>, and <a class="el" href="extended-capabilities_8h_source.html#l00177">m_proxyArpService</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00371">DeserializeInformationField()</a>.</p>
 <div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1230,7 +1209,7 @@ Private Attributes</h2></td></tr>
 <div class="center"><img src="classns3_1_1_extended_capabilities_a7d04f4c52c804ce368d8ff46f3cc077e_icgraph.png" border="0" usemap="#classns3_1_1_extended_capabilities_a7d04f4c52c804ce368d8ff46f3cc077e_icgraph" alt=""/></div>
 <map name="classns3_1_1_extended_capabilities_a7d04f4c52c804ce368d8ff46f3cc077e_icgraph" id="classns3_1_1_extended_capabilities_a7d04f4c52c804ce368d8ff46f3cc077e_icgraph">
 <area shape="rect" title="Set the second byte in the Extended Capabilities information element." alt="" coords="263,5,489,47"/>
-<area shape="rect" href="classns3_1_1_extended_capabilities.html#a3de4b55cf654ff52a62bb4557c49490d" title="Return the information field." alt="" coords="5,5,215,47"/>
+<area shape="rect" href="classns3_1_1_extended_capabilities.html#a3de4b55cf654ff52a62bb4557c49490d" title="Deserialize information (i.e., the body of the IE, not including the Element ID and length octets)" alt="" coords="5,5,215,47"/>
 </map>
 </div>
 
@@ -1262,7 +1241,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="extended-capabilities_8cc_source.html#l00189">189</a> of file <a class="el" href="extended-capabilities_8cc_source.html">extended-capabilities.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00221">m_acStationCount</a>, <a class="el" href="extended-capabilities_8h_source.html#l00219">m_bssTransition</a>, <a class="el" href="extended-capabilities_8h_source.html#l00222">m_multipleBssid</a>, <a class="el" href="extended-capabilities_8h_source.html#l00220">m_qosTrafficCapability</a>, <a class="el" href="extended-capabilities_8h_source.html#l00216">m_tfs</a>, <a class="el" href="extended-capabilities_8h_source.html#l00218">m_timBroadcast</a>, <a class="el" href="extended-capabilities_8h_source.html#l00223">m_timingMeasurement</a>, and <a class="el" href="extended-capabilities_8h_source.html#l00217">m_wnmSleepMode</a>.</p>
+<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00187">m_acStationCount</a>, <a class="el" href="extended-capabilities_8h_source.html#l00185">m_bssTransition</a>, <a class="el" href="extended-capabilities_8h_source.html#l00188">m_multipleBssid</a>, <a class="el" href="extended-capabilities_8h_source.html#l00186">m_qosTrafficCapability</a>, <a class="el" href="extended-capabilities_8h_source.html#l00182">m_tfs</a>, <a class="el" href="extended-capabilities_8h_source.html#l00184">m_timBroadcast</a>, <a class="el" href="extended-capabilities_8h_source.html#l00189">m_timingMeasurement</a>, and <a class="el" href="extended-capabilities_8h_source.html#l00183">m_wnmSleepMode</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00371">DeserializeInformationField()</a>.</p>
 <div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1273,7 +1252,7 @@ Private Attributes</h2></td></tr>
 <div class="center"><img src="classns3_1_1_extended_capabilities_a38fc65d052e56939c1239744240ce2c6_icgraph.png" border="0" usemap="#classns3_1_1_extended_capabilities_a38fc65d052e56939c1239744240ce2c6_icgraph" alt=""/></div>
 <map name="classns3_1_1_extended_capabilities_a38fc65d052e56939c1239744240ce2c6_icgraph" id="classns3_1_1_extended_capabilities_a38fc65d052e56939c1239744240ce2c6_icgraph">
 <area shape="rect" title="Set the third byte in the Extended Capabilities information element." alt="" coords="263,5,489,47"/>
-<area shape="rect" href="classns3_1_1_extended_capabilities.html#a3de4b55cf654ff52a62bb4557c49490d" title="Return the information field." alt="" coords="5,5,215,47"/>
+<area shape="rect" href="classns3_1_1_extended_capabilities.html#a3de4b55cf654ff52a62bb4557c49490d" title="Deserialize information (i.e., the body of the IE, not including the Element ID and length octets)" alt="" coords="5,5,215,47"/>
 </map>
 </div>
 
@@ -1305,7 +1284,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="extended-capabilities_8cc_source.html#l00217">217</a> of file <a class="el" href="extended-capabilities_8cc_source.html">extended-capabilities.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00225">m_channelUsage</a>, <a class="el" href="extended-capabilities_8h_source.html#l00227">m_dms</a>, <a class="el" href="extended-capabilities_8h_source.html#l00232">m_interworking</a>, <a class="el" href="extended-capabilities_8h_source.html#l00226">m_ssidList</a>, <a class="el" href="extended-capabilities_8h_source.html#l00231">m_tdlsChannelSwitching</a>, <a class="el" href="extended-capabilities_8h_source.html#l00230">m_tdlsPeerPsmSupport</a>, <a class="el" href="extended-capabilities_8h_source.html#l00229">m_tpuBufferStaSupport</a>, and <a class="el" href="extended-capabilities_8h_source.html#l00228">m_utcTsfOffset</a>.</p>
+<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00191">m_channelUsage</a>, <a class="el" href="extended-capabilities_8h_source.html#l00193">m_dms</a>, <a class="el" href="extended-capabilities_8h_source.html#l00198">m_interworking</a>, <a class="el" href="extended-capabilities_8h_source.html#l00192">m_ssidList</a>, <a class="el" href="extended-capabilities_8h_source.html#l00197">m_tdlsChannelSwitching</a>, <a class="el" href="extended-capabilities_8h_source.html#l00196">m_tdlsPeerPsmSupport</a>, <a class="el" href="extended-capabilities_8h_source.html#l00195">m_tpuBufferStaSupport</a>, and <a class="el" href="extended-capabilities_8h_source.html#l00194">m_utcTsfOffset</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00371">DeserializeInformationField()</a>.</p>
 <div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1316,7 +1295,7 @@ Private Attributes</h2></td></tr>
 <div class="center"><img src="classns3_1_1_extended_capabilities_ac591d94252b0869d92627f480817442d_icgraph.png" border="0" usemap="#classns3_1_1_extended_capabilities_ac591d94252b0869d92627f480817442d_icgraph" alt=""/></div>
 <map name="classns3_1_1_extended_capabilities_ac591d94252b0869d92627f480817442d_icgraph" id="classns3_1_1_extended_capabilities_ac591d94252b0869d92627f480817442d_icgraph">
 <area shape="rect" title="Set the fourth byte in the Extended Capabilities information element." alt="" coords="263,5,489,47"/>
-<area shape="rect" href="classns3_1_1_extended_capabilities.html#a3de4b55cf654ff52a62bb4557c49490d" title="Return the information field." alt="" coords="5,5,215,47"/>
+<area shape="rect" href="classns3_1_1_extended_capabilities.html#a3de4b55cf654ff52a62bb4557c49490d" title="Deserialize information (i.e., the body of the IE, not including the Element ID and length octets)" alt="" coords="5,5,215,47"/>
 </map>
 </div>
 
@@ -1348,7 +1327,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="extended-capabilities_8cc_source.html#l00245">245</a> of file <a class="el" href="extended-capabilities_8cc_source.html">extended-capabilities.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00235">m_ebr</a>, <a class="el" href="extended-capabilities_8h_source.html#l00237">m_msgcfCapability</a>, <a class="el" href="extended-capabilities_8h_source.html#l00234">m_qosMap</a>, <a class="el" href="extended-capabilities_8h_source.html#l00236">m_sspnInterface</a>, <a class="el" href="extended-capabilities_8h_source.html#l00240">m_tdlsChannelSwitchingProhibited</a>, <a class="el" href="extended-capabilities_8h_source.html#l00239">m_tdlsProhibited</a>, and <a class="el" href="extended-capabilities_8h_source.html#l00238">m_tdlsSupport</a>.</p>
+<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00201">m_ebr</a>, <a class="el" href="extended-capabilities_8h_source.html#l00203">m_msgcfCapability</a>, <a class="el" href="extended-capabilities_8h_source.html#l00200">m_qosMap</a>, <a class="el" href="extended-capabilities_8h_source.html#l00202">m_sspnInterface</a>, <a class="el" href="extended-capabilities_8h_source.html#l00206">m_tdlsChannelSwitchingProhibited</a>, <a class="el" href="extended-capabilities_8h_source.html#l00205">m_tdlsProhibited</a>, and <a class="el" href="extended-capabilities_8h_source.html#l00204">m_tdlsSupport</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00371">DeserializeInformationField()</a>.</p>
 <div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1359,7 +1338,7 @@ Private Attributes</h2></td></tr>
 <div class="center"><img src="classns3_1_1_extended_capabilities_ae20d9b2064df2a30ea315eba216f8ba6_icgraph.png" border="0" usemap="#classns3_1_1_extended_capabilities_ae20d9b2064df2a30ea315eba216f8ba6_icgraph" alt=""/></div>
 <map name="classns3_1_1_extended_capabilities_ae20d9b2064df2a30ea315eba216f8ba6_icgraph" id="classns3_1_1_extended_capabilities_ae20d9b2064df2a30ea315eba216f8ba6_icgraph">
 <area shape="rect" title="Set the fifth byte in the Extended Capabilities information element." alt="" coords="263,5,489,47"/>
-<area shape="rect" href="classns3_1_1_extended_capabilities.html#a3de4b55cf654ff52a62bb4557c49490d" title="Return the information field." alt="" coords="5,5,215,47"/>
+<area shape="rect" href="classns3_1_1_extended_capabilities.html#a3de4b55cf654ff52a62bb4557c49490d" title="Deserialize information (i.e., the body of the IE, not including the Element ID and length octets)" alt="" coords="5,5,215,47"/>
 </map>
 </div>
 
@@ -1391,7 +1370,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="extended-capabilities_8cc_source.html#l00271">271</a> of file <a class="el" href="extended-capabilities_8cc_source.html">extended-capabilities.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00244">m_identifierLocation</a>, <a class="el" href="extended-capabilities_8h_source.html#l00247">m_qabCapability</a>, <a class="el" href="extended-capabilities_8h_source.html#l00242">m_rejectUnadmittedFrame</a>, <a class="el" href="extended-capabilities_8h_source.html#l00243">m_serviceIntervalGranularity</a>, <a class="el" href="extended-capabilities_8h_source.html#l00245">m_uapsdCoexistence</a>, and <a class="el" href="extended-capabilities_8h_source.html#l00246">m_wnmNotification</a>.</p>
+<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00210">m_identifierLocation</a>, <a class="el" href="extended-capabilities_8h_source.html#l00213">m_qabCapability</a>, <a class="el" href="extended-capabilities_8h_source.html#l00208">m_rejectUnadmittedFrame</a>, <a class="el" href="extended-capabilities_8h_source.html#l00209">m_serviceIntervalGranularity</a>, <a class="el" href="extended-capabilities_8h_source.html#l00211">m_uapsdCoexistence</a>, and <a class="el" href="extended-capabilities_8h_source.html#l00212">m_wnmNotification</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00371">DeserializeInformationField()</a>.</p>
 <div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1402,7 +1381,7 @@ Private Attributes</h2></td></tr>
 <div class="center"><img src="classns3_1_1_extended_capabilities_abb9da31968e97c4e18b61e6416940665_icgraph.png" border="0" usemap="#classns3_1_1_extended_capabilities_abb9da31968e97c4e18b61e6416940665_icgraph" alt=""/></div>
 <map name="classns3_1_1_extended_capabilities_abb9da31968e97c4e18b61e6416940665_icgraph" id="classns3_1_1_extended_capabilities_abb9da31968e97c4e18b61e6416940665_icgraph">
 <area shape="rect" title="Set the sixth byte in the Extended Capabilities information element." alt="" coords="263,5,489,47"/>
-<area shape="rect" href="classns3_1_1_extended_capabilities.html#a3de4b55cf654ff52a62bb4557c49490d" title="Return the information field." alt="" coords="5,5,215,47"/>
+<area shape="rect" href="classns3_1_1_extended_capabilities.html#a3de4b55cf654ff52a62bb4557c49490d" title="Deserialize information (i.e., the body of the IE, not including the Element ID and length octets)" alt="" coords="5,5,215,47"/>
 </map>
 </div>
 
@@ -1434,7 +1413,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="extended-capabilities_8cc_source.html#l00295">295</a> of file <a class="el" href="extended-capabilities_8cc_source.html">extended-capabilities.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00253">m_advancedGcr</a>, <a class="el" href="extended-capabilities_8h_source.html#l00254">m_meshGcr</a>, <a class="el" href="extended-capabilities_8h_source.html#l00256">m_qloadReport</a>, <a class="el" href="extended-capabilities_8h_source.html#l00250">m_qmfActivated</a>, <a class="el" href="extended-capabilities_8h_source.html#l00251">m_qmfReconfigurationActivated</a>, <a class="el" href="extended-capabilities_8h_source.html#l00252">m_robustAvStreaming</a>, <a class="el" href="extended-capabilities_8h_source.html#l00255">m_scs</a>, and <a class="el" href="extended-capabilities_8h_source.html#l00249">m_utf8Ssid</a>.</p>
+<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00219">m_advancedGcr</a>, <a class="el" href="extended-capabilities_8h_source.html#l00220">m_meshGcr</a>, <a class="el" href="extended-capabilities_8h_source.html#l00222">m_qloadReport</a>, <a class="el" href="extended-capabilities_8h_source.html#l00216">m_qmfActivated</a>, <a class="el" href="extended-capabilities_8h_source.html#l00217">m_qmfReconfigurationActivated</a>, <a class="el" href="extended-capabilities_8h_source.html#l00218">m_robustAvStreaming</a>, <a class="el" href="extended-capabilities_8h_source.html#l00221">m_scs</a>, and <a class="el" href="extended-capabilities_8h_source.html#l00215">m_utf8Ssid</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00371">DeserializeInformationField()</a>.</p>
 <div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1445,7 +1424,7 @@ Private Attributes</h2></td></tr>
 <div class="center"><img src="classns3_1_1_extended_capabilities_acb045dad6998f2aa55c0e022ba77d754_icgraph.png" border="0" usemap="#classns3_1_1_extended_capabilities_acb045dad6998f2aa55c0e022ba77d754_icgraph" alt=""/></div>
 <map name="classns3_1_1_extended_capabilities_acb045dad6998f2aa55c0e022ba77d754_icgraph" id="classns3_1_1_extended_capabilities_acb045dad6998f2aa55c0e022ba77d754_icgraph">
 <area shape="rect" title="Set the seventh byte in the Extended Capabilities information element." alt="" coords="263,5,489,47"/>
-<area shape="rect" href="classns3_1_1_extended_capabilities.html#a3de4b55cf654ff52a62bb4557c49490d" title="Return the information field." alt="" coords="5,5,215,47"/>
+<area shape="rect" href="classns3_1_1_extended_capabilities.html#a3de4b55cf654ff52a62bb4557c49490d" title="Deserialize information (i.e., the body of the IE, not including the Element ID and length octets)" alt="" coords="5,5,215,47"/>
 </map>
 </div>
 
@@ -1477,7 +1456,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="extended-capabilities_8cc_source.html#l00323">323</a> of file <a class="el" href="extended-capabilities_8cc_source.html">extended-capabilities.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00258">m_alternateEdca</a>, <a class="el" href="extended-capabilities_8h_source.html#l00264">m_maxNumberOfMsdusInAmsdu</a>, <a class="el" href="extended-capabilities_8h_source.html#l00263">m_operatingModeNotification</a>, <a class="el" href="extended-capabilities_8h_source.html#l00261">m_protectedQloadReport</a>, <a class="el" href="extended-capabilities_8h_source.html#l00260">m_protectedTxopNegotiation</a>, <a class="el" href="extended-capabilities_8h_source.html#l00262">m_tdlsWiderBandwidth</a>, and <a class="el" href="extended-capabilities_8h_source.html#l00259">m_unprotectedTxopNegotiation</a>.</p>
+<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00224">m_alternateEdca</a>, <a class="el" href="extended-capabilities_8h_source.html#l00230">m_maxNumberOfMsdusInAmsdu</a>, <a class="el" href="extended-capabilities_8h_source.html#l00229">m_operatingModeNotification</a>, <a class="el" href="extended-capabilities_8h_source.html#l00227">m_protectedQloadReport</a>, <a class="el" href="extended-capabilities_8h_source.html#l00226">m_protectedTxopNegotiation</a>, <a class="el" href="extended-capabilities_8h_source.html#l00228">m_tdlsWiderBandwidth</a>, and <a class="el" href="extended-capabilities_8h_source.html#l00225">m_unprotectedTxopNegotiation</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00371">DeserializeInformationField()</a>.</p>
 <div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1488,14 +1467,14 @@ Private Attributes</h2></td></tr>
 <div class="center"><img src="classns3_1_1_extended_capabilities_a62008006ada4907d87b9484d94dcb844_icgraph.png" border="0" usemap="#classns3_1_1_extended_capabilities_a62008006ada4907d87b9484d94dcb844_icgraph" alt=""/></div>
 <map name="classns3_1_1_extended_capabilities_a62008006ada4907d87b9484d94dcb844_icgraph" id="classns3_1_1_extended_capabilities_a62008006ada4907d87b9484d94dcb844_icgraph">
 <area shape="rect" title="Set the eighth byte in the Extended Capabilities information element." alt="" coords="263,5,489,47"/>
-<area shape="rect" href="classns3_1_1_extended_capabilities.html#a3de4b55cf654ff52a62bb4557c49490d" title="Return the information field." alt="" coords="5,5,215,47"/>
+<area shape="rect" href="classns3_1_1_extended_capabilities.html#a3de4b55cf654ff52a62bb4557c49490d" title="Deserialize information (i.e., the body of the IE, not including the Element ID and length octets)" alt="" coords="5,5,215,47"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a7f21ad4727d3e25bb9a3825e81f11693"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f21ad4727d3e25bb9a3825e81f11693">&#9670;&nbsp;</a></span>SetHtSupported()</h2>
+<a id="a2bdf57c92aff8bbe549f05f5ada67caa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bdf57c92aff8bbe549f05f5ada67caa">&#9670;&nbsp;</a></span>SetHtSupported()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1504,7 +1483,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">void ns3::ExtendedCapabilities::SetHtSupported </td>
           <td>(</td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>htsupported</em></td><td>)</td>
+          <td class="paramname"><em>htSupported</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1513,14 +1492,14 @@ Private Attributes</h2></td></tr>
 <p>Set the HT Supported flag. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">htsupported</td><td>flag whether HT is supported </td></tr>
+    <tr><td class="paramname">htSupported</td><td>flag whether HT is supported </td></tr>
   </table>
   </dd>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="extended-capabilities_8cc_source.html#l00095">95</a> of file <a class="el" href="extended-capabilities_8cc_source.html">extended-capabilities.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00266">m_htSupported</a>.</p>
+<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00232">m_htSupported</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="regular-wifi-mac_8cc_source.html#l00148">ns3::RegularWifiMac::GetExtendedCapabilities()</a>.</p>
 <div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1528,8 +1507,8 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-24-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-24-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classns3_1_1_extended_capabilities_a7f21ad4727d3e25bb9a3825e81f11693_icgraph.png" border="0" usemap="#classns3_1_1_extended_capabilities_a7f21ad4727d3e25bb9a3825e81f11693_icgraph" alt=""/></div>
-<map name="classns3_1_1_extended_capabilities_a7f21ad4727d3e25bb9a3825e81f11693_icgraph" id="classns3_1_1_extended_capabilities_a7f21ad4727d3e25bb9a3825e81f11693_icgraph">
+<div class="center"><img src="classns3_1_1_extended_capabilities_a2bdf57c92aff8bbe549f05f5ada67caa_icgraph.png" border="0" usemap="#classns3_1_1_extended_capabilities_a2bdf57c92aff8bbe549f05f5ada67caa_icgraph" alt=""/></div>
+<map name="classns3_1_1_extended_capabilities_a2bdf57c92aff8bbe549f05f5ada67caa_icgraph" id="classns3_1_1_extended_capabilities_a2bdf57c92aff8bbe549f05f5ada67caa_icgraph">
 <area shape="rect" title="Set the HT Supported flag." alt="" coords="2103,303,2293,344"/>
 <area shape="rect" href="classns3_1_1_regular_wifi_mac.html#a243c2648b9d9b54cf6b056f1d4124171" title="Return the extended capabilities of the device." alt="" coords="1864,303,2055,344"/>
 <area shape="rect" href="classns3_1_1_sta_wifi_mac.html#af2ab6272caa11513770336a92cd714bc" title="Forward an association or reassociation request packet to the DCF." alt="" coords="1573,180,1816,221"/>
@@ -1563,8 +1542,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="acc6ff0be6bf0a202713b1e9dc2a91823"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc6ff0be6bf0a202713b1e9dc2a91823">&#9670;&nbsp;</a></span>SetVhtSupported()</h2>
+<a id="a3bb47d5a8aeea1940decce815c14ee68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bb47d5a8aeea1940decce815c14ee68">&#9670;&nbsp;</a></span>SetVhtSupported()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1573,7 +1552,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">void ns3::ExtendedCapabilities::SetVhtSupported </td>
           <td>(</td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>vhtsupported</em></td><td>)</td>
+          <td class="paramname"><em>vhtSupported</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1582,14 +1561,14 @@ Private Attributes</h2></td></tr>
 <p>Set the VHT Supported flag. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">vhtsupported</td><td>flag whether VHT is supported </td></tr>
+    <tr><td class="paramname">vhtSupported</td><td>flag whether VHT is supported </td></tr>
   </table>
   </dd>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="extended-capabilities_8cc_source.html#l00101">101</a> of file <a class="el" href="extended-capabilities_8cc_source.html">extended-capabilities.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00267">m_vhtSupported</a>.</p>
+<p class="reference">References <a class="el" href="extended-capabilities_8h_source.html#l00233">m_vhtSupported</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="regular-wifi-mac_8cc_source.html#l00148">ns3::RegularWifiMac::GetExtendedCapabilities()</a>.</p>
 <div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1597,8 +1576,8 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-25-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-25-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classns3_1_1_extended_capabilities_acc6ff0be6bf0a202713b1e9dc2a91823_icgraph.png" border="0" usemap="#classns3_1_1_extended_capabilities_acc6ff0be6bf0a202713b1e9dc2a91823_icgraph" alt=""/></div>
-<map name="classns3_1_1_extended_capabilities_acc6ff0be6bf0a202713b1e9dc2a91823_icgraph" id="classns3_1_1_extended_capabilities_acc6ff0be6bf0a202713b1e9dc2a91823_icgraph">
+<div class="center"><img src="classns3_1_1_extended_capabilities_a3bb47d5a8aeea1940decce815c14ee68_icgraph.png" border="0" usemap="#classns3_1_1_extended_capabilities_a3bb47d5a8aeea1940decce815c14ee68_icgraph" alt=""/></div>
+<map name="classns3_1_1_extended_capabilities_a3bb47d5a8aeea1940decce815c14ee68_icgraph" id="classns3_1_1_extended_capabilities_a3bb47d5a8aeea1940decce815c14ee68_icgraph">
 <area shape="rect" title="Set the VHT Supported flag." alt="" coords="2103,303,2293,344"/>
 <area shape="rect" href="classns3_1_1_regular_wifi_mac.html#a243c2648b9d9b54cf6b056f1d4124171" title="Return the extended capabilities of the device." alt="" coords="1864,303,2055,344"/>
 <area shape="rect" href="classns3_1_1_sta_wifi_mac.html#af2ab6272caa11513770336a92cd714bc" title="Forward an association or reassociation request packet to the DCF." alt="" coords="1573,180,1816,221"/>
@@ -1655,7 +1634,7 @@ Private Attributes</h2></td></tr>
 
 <p>20/40 BSS Coexistence Management Support </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00200">200</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00166">166</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00149">GetExtendedCapabilitiesByte1()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00139">SetExtendedCapabilitiesByte1()</a>.</p>
 
@@ -1683,7 +1662,7 @@ Private Attributes</h2></td></tr>
 
 <p>AC Station Count. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00221">221</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00187">187</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00202">GetExtendedCapabilitiesByte3()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00189">SetExtendedCapabilitiesByte3()</a>.</p>
 
@@ -1711,7 +1690,7 @@ Private Attributes</h2></td></tr>
 
 <p>Advanced GCR. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00253">253</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00219">219</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00308">GetExtendedCapabilitiesByte7()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00295">SetExtendedCapabilitiesByte7()</a>.</p>
 
@@ -1739,7 +1718,7 @@ Private Attributes</h2></td></tr>
 
 <p>Alternate EDCA. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00258">258</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00224">224</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00335">GetExtendedCapabilitiesByte8()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00323">SetExtendedCapabilitiesByte8()</a>.</p>
 
@@ -1767,7 +1746,7 @@ Private Attributes</h2></td></tr>
 
 <p>BSS Transition. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00219">219</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00185">185</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00202">GetExtendedCapabilitiesByte3()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00189">SetExtendedCapabilitiesByte3()</a>.</p>
 
@@ -1795,7 +1774,7 @@ Private Attributes</h2></td></tr>
 
 <p><a class="el" href="classns3_1_1_channel.html" title="Abstract Channel Base Class.">Channel</a> Usage. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00225">225</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00191">191</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00230">GetExtendedCapabilitiesByte4()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00217">SetExtendedCapabilitiesByte4()</a>.</p>
 
@@ -1823,7 +1802,7 @@ Private Attributes</h2></td></tr>
 
 <p>Civic Location. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00213">213</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00179">179</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00174">GetExtendedCapabilitiesByte2()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00161">SetExtendedCapabilitiesByte2()</a>.</p>
 
@@ -1851,7 +1830,7 @@ Private Attributes</h2></td></tr>
 
 <p>Collocated Interference Reporting. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00212">212</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00178">178</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00174">GetExtendedCapabilitiesByte2()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00161">SetExtendedCapabilitiesByte2()</a>.</p>
 
@@ -1879,7 +1858,7 @@ Private Attributes</h2></td></tr>
 
 <p>Diagnostics. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00207">207</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00173">173</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00174">GetExtendedCapabilitiesByte2()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00161">SetExtendedCapabilitiesByte2()</a>.</p>
 
@@ -1907,7 +1886,7 @@ Private Attributes</h2></td></tr>
 
 <p>DMS. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00227">227</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00193">193</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00230">GetExtendedCapabilitiesByte4()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00217">SetExtendedCapabilitiesByte4()</a>.</p>
 
@@ -1935,7 +1914,7 @@ Private Attributes</h2></td></tr>
 
 <p>EBR. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00235">235</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00201">201</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00257">GetExtendedCapabilitiesByte5()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00245">SetExtendedCapabilitiesByte5()</a>.</p>
 
@@ -1963,7 +1942,7 @@ Private Attributes</h2></td></tr>
 
 <p><a class="el" href="classns3_1_1_event.html" title="handles interference calculations">Event</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00206">206</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00172">172</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00149">GetExtendedCapabilitiesByte1()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00139">SetExtendedCapabilitiesByte1()</a>.</p>
 
@@ -1991,7 +1970,7 @@ Private Attributes</h2></td></tr>
 
 <p>Extended <a class="el" href="classns3_1_1_channel.html" title="Abstract Channel Base Class.">Channel</a> Switching. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00201">201</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00167">167</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00149">GetExtendedCapabilitiesByte1()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00139">SetExtendedCapabilitiesByte1()</a>.</p>
 
@@ -2019,7 +1998,7 @@ Private Attributes</h2></td></tr>
 
 <p>FMS. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00210">210</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00176">176</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00174">GetExtendedCapabilitiesByte2()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00161">SetExtendedCapabilitiesByte2()</a>.</p>
 
@@ -2047,7 +2026,7 @@ Private Attributes</h2></td></tr>
 
 <p>Geospatial Location. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00214">214</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00180">180</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00174">GetExtendedCapabilitiesByte2()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00161">SetExtendedCapabilitiesByte2()</a>.</p>
 
@@ -2075,7 +2054,7 @@ Private Attributes</h2></td></tr>
 
 <p>Flag to indicate HT is supported in order to decide whether this element should be added to the frame or not. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00266">266</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00232">232</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00107">GetInformationFieldSize()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00129">GetSerializedSize()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00119">Serialize()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00349">SerializeInformationField()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00095">SetHtSupported()</a>.</p>
 
@@ -2103,7 +2082,7 @@ Private Attributes</h2></td></tr>
 
 <p>Identifier Location. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00244">244</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00210">210</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00282">GetExtendedCapabilitiesByte6()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00271">SetExtendedCapabilitiesByte6()</a>.</p>
 
@@ -2131,7 +2110,7 @@ Private Attributes</h2></td></tr>
 
 <p>Interworking. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00232">232</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00198">198</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00230">GetExtendedCapabilitiesByte4()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00217">SetExtendedCapabilitiesByte4()</a>.</p>
 
@@ -2159,7 +2138,7 @@ Private Attributes</h2></td></tr>
 
 <p>Location Tracking. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00209">209</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00175">175</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00174">GetExtendedCapabilitiesByte2()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00161">SetExtendedCapabilitiesByte2()</a>.</p>
 
@@ -2187,7 +2166,7 @@ Private Attributes</h2></td></tr>
 
 <p>Max Number Of MSDUs In A-MSDU. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00264">264</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00230">230</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00335">GetExtendedCapabilitiesByte8()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00323">SetExtendedCapabilitiesByte8()</a>.</p>
 
@@ -2215,7 +2194,7 @@ Private Attributes</h2></td></tr>
 
 <p>Mesh GCR. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00254">254</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00220">220</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00308">GetExtendedCapabilitiesByte7()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00295">SetExtendedCapabilitiesByte7()</a>.</p>
 
@@ -2243,7 +2222,7 @@ Private Attributes</h2></td></tr>
 
 <p>MSGCF Capability. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00237">237</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00203">203</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00257">GetExtendedCapabilitiesByte5()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00245">SetExtendedCapabilitiesByte5()</a>.</p>
 
@@ -2271,7 +2250,7 @@ Private Attributes</h2></td></tr>
 
 <p>Multicast Diagnostics. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00208">208</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00174">174</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00174">GetExtendedCapabilitiesByte2()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00161">SetExtendedCapabilitiesByte2()</a>.</p>
 
@@ -2299,7 +2278,7 @@ Private Attributes</h2></td></tr>
 
 <p>Multiple BSSID. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00222">222</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00188">188</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00202">GetExtendedCapabilitiesByte3()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00189">SetExtendedCapabilitiesByte3()</a>.</p>
 
@@ -2327,7 +2306,7 @@ Private Attributes</h2></td></tr>
 
 <p>Operating Mode Notification. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00263">263</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00229">229</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00335">GetExtendedCapabilitiesByte8()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00323">SetExtendedCapabilitiesByte8()</a>.</p>
 
@@ -2355,7 +2334,7 @@ Private Attributes</h2></td></tr>
 
 <p>Protected QLoad Report. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00261">261</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00227">227</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00335">GetExtendedCapabilitiesByte8()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00323">SetExtendedCapabilitiesByte8()</a>.</p>
 
@@ -2383,7 +2362,7 @@ Private Attributes</h2></td></tr>
 
 <p>Protected TXOP Negotiation. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00260">260</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00226">226</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00335">GetExtendedCapabilitiesByte8()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00323">SetExtendedCapabilitiesByte8()</a>.</p>
 
@@ -2411,7 +2390,7 @@ Private Attributes</h2></td></tr>
 
 <p>Proxy ARP Service. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00211">211</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00177">177</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00174">GetExtendedCapabilitiesByte2()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00161">SetExtendedCapabilitiesByte2()</a>.</p>
 
@@ -2439,7 +2418,7 @@ Private Attributes</h2></td></tr>
 
 <p>PSMP Capability. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00202">202</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00168">168</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00149">GetExtendedCapabilitiesByte1()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00139">SetExtendedCapabilitiesByte1()</a>.</p>
 
@@ -2467,7 +2446,7 @@ Private Attributes</h2></td></tr>
 
 <p>QAB Capability. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00247">247</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00213">213</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00282">GetExtendedCapabilitiesByte6()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00271">SetExtendedCapabilitiesByte6()</a>.</p>
 
@@ -2495,7 +2474,7 @@ Private Attributes</h2></td></tr>
 
 <p>QLoad Report. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00256">256</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00222">222</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00308">GetExtendedCapabilitiesByte7()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00295">SetExtendedCapabilitiesByte7()</a>.</p>
 
@@ -2523,7 +2502,7 @@ Private Attributes</h2></td></tr>
 
 <p>QMFActivated. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00250">250</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00216">216</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00308">GetExtendedCapabilitiesByte7()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00295">SetExtendedCapabilitiesByte7()</a>.</p>
 
@@ -2551,7 +2530,7 @@ Private Attributes</h2></td></tr>
 
 <p>QMFReconfigurationActivated. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00251">251</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00217">217</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00308">GetExtendedCapabilitiesByte7()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00295">SetExtendedCapabilitiesByte7()</a>.</p>
 
@@ -2579,7 +2558,7 @@ Private Attributes</h2></td></tr>
 
 <p>QoS Map. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00234">234</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00200">200</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00257">GetExtendedCapabilitiesByte5()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00245">SetExtendedCapabilitiesByte5()</a>.</p>
 
@@ -2607,7 +2586,7 @@ Private Attributes</h2></td></tr>
 
 <p>QoS Traffic Capability. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00220">220</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00186">186</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00202">GetExtendedCapabilitiesByte3()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00189">SetExtendedCapabilitiesByte3()</a>.</p>
 
@@ -2635,7 +2614,7 @@ Private Attributes</h2></td></tr>
 
 <p>Reject Unadmitted Frame. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00242">242</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00208">208</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00282">GetExtendedCapabilitiesByte6()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00271">SetExtendedCapabilitiesByte6()</a>.</p>
 
@@ -2663,7 +2642,7 @@ Private Attributes</h2></td></tr>
 
 <p>Robust AV Streaming. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00252">252</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00218">218</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00308">GetExtendedCapabilitiesByte7()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00295">SetExtendedCapabilitiesByte7()</a>.</p>
 
@@ -2691,7 +2670,7 @@ Private Attributes</h2></td></tr>
 
 <p>SCS. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00255">255</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00221">221</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00308">GetExtendedCapabilitiesByte7()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00295">SetExtendedCapabilitiesByte7()</a>.</p>
 
@@ -2719,7 +2698,7 @@ Private Attributes</h2></td></tr>
 
 <p>Service Interval Granularity. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00243">243</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00209">209</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00282">GetExtendedCapabilitiesByte6()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00271">SetExtendedCapabilitiesByte6()</a>.</p>
 
@@ -2747,7 +2726,7 @@ Private Attributes</h2></td></tr>
 
 <p>S-PSMP Support. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00203">203</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00169">169</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00149">GetExtendedCapabilitiesByte1()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00139">SetExtendedCapabilitiesByte1()</a>.</p>
 
@@ -2775,7 +2754,7 @@ Private Attributes</h2></td></tr>
 
 <p>SSID List. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00226">226</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00192">192</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00230">GetExtendedCapabilitiesByte4()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00217">SetExtendedCapabilitiesByte4()</a>.</p>
 
@@ -2803,7 +2782,7 @@ Private Attributes</h2></td></tr>
 
 <p>SSPN Interface. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00236">236</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00202">202</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00257">GetExtendedCapabilitiesByte5()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00245">SetExtendedCapabilitiesByte5()</a>.</p>
 
@@ -2831,7 +2810,7 @@ Private Attributes</h2></td></tr>
 
 <p>TDLS <a class="el" href="classns3_1_1_channel.html" title="Abstract Channel Base Class.">Channel</a> Switching. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00231">231</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00197">197</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00230">GetExtendedCapabilitiesByte4()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00217">SetExtendedCapabilitiesByte4()</a>.</p>
 
@@ -2859,7 +2838,7 @@ Private Attributes</h2></td></tr>
 
 <p>TDLS <a class="el" href="classns3_1_1_channel.html" title="Abstract Channel Base Class.">Channel</a> Switching Prohibited. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00240">240</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00206">206</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00257">GetExtendedCapabilitiesByte5()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00245">SetExtendedCapabilitiesByte5()</a>.</p>
 
@@ -2887,7 +2866,7 @@ Private Attributes</h2></td></tr>
 
 <p>TDLS Peer PSM Support. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00230">230</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00196">196</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00230">GetExtendedCapabilitiesByte4()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00217">SetExtendedCapabilitiesByte4()</a>.</p>
 
@@ -2915,7 +2894,7 @@ Private Attributes</h2></td></tr>
 
 <p>TDLS Prohibited. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00239">239</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00205">205</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00257">GetExtendedCapabilitiesByte5()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00245">SetExtendedCapabilitiesByte5()</a>.</p>
 
@@ -2943,7 +2922,7 @@ Private Attributes</h2></td></tr>
 
 <p>TDLS Support. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00238">238</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00204">204</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00257">GetExtendedCapabilitiesByte5()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00245">SetExtendedCapabilitiesByte5()</a>.</p>
 
@@ -2971,7 +2950,7 @@ Private Attributes</h2></td></tr>
 
 <p>TDLS Wider Bandwidth. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00262">262</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00228">228</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00335">GetExtendedCapabilitiesByte8()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00323">SetExtendedCapabilitiesByte8()</a>.</p>
 
@@ -2999,7 +2978,7 @@ Private Attributes</h2></td></tr>
 
 <p>TFS. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00216">216</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00182">182</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00202">GetExtendedCapabilitiesByte3()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00189">SetExtendedCapabilitiesByte3()</a>.</p>
 
@@ -3027,7 +3006,7 @@ Private Attributes</h2></td></tr>
 
 <p>TIM Broadcast. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00218">218</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00184">184</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00202">GetExtendedCapabilitiesByte3()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00189">SetExtendedCapabilitiesByte3()</a>.</p>
 
@@ -3055,7 +3034,7 @@ Private Attributes</h2></td></tr>
 
 <p>Timing Measurement. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00223">223</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00189">189</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00202">GetExtendedCapabilitiesByte3()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00189">SetExtendedCapabilitiesByte3()</a>.</p>
 
@@ -3083,7 +3062,7 @@ Private Attributes</h2></td></tr>
 
 <p>TPU <a class="el" href="classns3_1_1_buffer.html" title="automatically resized byte buffer">Buffer</a> STA Support. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00229">229</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00195">195</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00230">GetExtendedCapabilitiesByte4()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00217">SetExtendedCapabilitiesByte4()</a>.</p>
 
@@ -3111,7 +3090,7 @@ Private Attributes</h2></td></tr>
 
 <p>U-APSD Coexistence. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00245">245</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00211">211</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00282">GetExtendedCapabilitiesByte6()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00271">SetExtendedCapabilitiesByte6()</a>.</p>
 
@@ -3139,7 +3118,7 @@ Private Attributes</h2></td></tr>
 
 <p>Unprotected TXOP Negotiation. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00259">259</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00225">225</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00335">GetExtendedCapabilitiesByte8()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00323">SetExtendedCapabilitiesByte8()</a>.</p>
 
@@ -3167,7 +3146,7 @@ Private Attributes</h2></td></tr>
 
 <p>UTC TSF Offset. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00228">228</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00194">194</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00230">GetExtendedCapabilitiesByte4()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00217">SetExtendedCapabilitiesByte4()</a>.</p>
 
@@ -3195,7 +3174,7 @@ Private Attributes</h2></td></tr>
 
 <p>UTF-8 SSID. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00249">249</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00215">215</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00308">GetExtendedCapabilitiesByte7()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00295">SetExtendedCapabilitiesByte7()</a>.</p>
 
@@ -3223,7 +3202,7 @@ Private Attributes</h2></td></tr>
 
 <p>Flag to indicate VHT is supported in order to decide whether this element should be added to the frame or not. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00267">267</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00233">233</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00371">DeserializeInformationField()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00107">GetInformationFieldSize()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00129">GetSerializedSize()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00119">Serialize()</a>, <a class="el" href="extended-capabilities_8cc_source.html#l00349">SerializeInformationField()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00101">SetVhtSupported()</a>.</p>
 
@@ -3251,7 +3230,7 @@ Private Attributes</h2></td></tr>
 
 <p>WNM Notification. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00246">246</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00212">212</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00282">GetExtendedCapabilitiesByte6()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00271">SetExtendedCapabilitiesByte6()</a>.</p>
 
@@ -3279,7 +3258,7 @@ Private Attributes</h2></td></tr>
 
 <p>WNM Sleep Mode. </p>
 
-<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00217">217</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extended-capabilities_8h_source.html#l00183">183</a> of file <a class="el" href="extended-capabilities_8h_source.html">extended-capabilities.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="extended-capabilities_8cc_source.html#l00202">GetExtendedCapabilitiesByte3()</a>, and <a class="el" href="extended-capabilities_8cc_source.html#l00189">SetExtendedCapabilitiesByte3()</a>.</p>
 
@@ -3299,7 +3278,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_extended_capabilities.html">ExtendedCapabilities</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:24 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:29 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

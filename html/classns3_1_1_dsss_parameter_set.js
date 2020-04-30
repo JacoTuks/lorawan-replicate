@@ -8,7 +8,7 @@ var classns3_1_1_dsss_parameter_set =
     [ "Serialize", "classns3_1_1_dsss_parameter_set.html#a311c8b7f70d49cfebdd4c62cd7662808", null ],
     [ "SerializeInformationField", "classns3_1_1_dsss_parameter_set.html#adcd3be7f276b7b42e0bb97ab1be2f8a4", null ],
     [ "SetCurrentChannel", "classns3_1_1_dsss_parameter_set.html#a52e56c7e20f9a889197920060d3b7a01", null ],
-    [ "SetDsssSupported", "classns3_1_1_dsss_parameter_set.html#aface43655b0b568581d507b04dace538", null ],
+    [ "SetDsssSupported", "classns3_1_1_dsss_parameter_set.html#a9d31be8d355560e831937c1c97c21379", null ],
     [ "m_currentChannel", "classns3_1_1_dsss_parameter_set.html#a0c31d5e1abfe0179cadd4bad56cee555", null ],
     [ "m_dsssSupported", "classns3_1_1_dsss_parameter_set.html#a3507c996fca93994388dda22fddc3ded", null ]
 ];

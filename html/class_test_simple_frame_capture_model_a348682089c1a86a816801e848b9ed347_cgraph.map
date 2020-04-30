@@ -1,7 +1,7 @@
 <map id="TestSimpleFrameCaptureModel::SendPacket" name="TestSimpleFrameCaptureModel::SendPacket">
 <area shape="rect" id="node1" title="Send packet function." alt="" coords="5,536,231,577"/>
 <area shape="rect" id="node2" href="$classns3_1_1_wifi_phy.html#aee98c7241bb4f0bb8e6d90f5771dacc7" title=" " alt="" coords="279,343,465,384"/>
-<area shape="rect" id="node13" href="$namespacens3.html#a5004264c5648328a038debee4aaddf0e" title="Convert from dBm to Watts." alt="" coords="317,442,427,469"/>
+<area shape="rect" id="node13" href="$namespacens3_1_1lorawan.html#a6d14252aaccaf79e2535bfa2284ba529" title="Convert from dBm to Watts." alt="" coords="287,442,457,469"/>
 <area shape="rect" id="node14" href="$classns3_1_1_wifi_phy.html#afca470e272ec5c3126da63c0a6102f4c" title=" " alt="" coords="524,543,724,570"/>
 <area shape="rect" id="node15" href="$classns3_1_1_wifi_psdu.html#a0fbb2977085daf82b50f106ae41088b2" title="Return the size of the PSDU in bytes." alt="" coords="288,917,456,943"/>
 <area shape="rect" id="node16" href="$classns3_1_1_wifi_mac_header.html#a84a98932f5b66cca86bdfaa9cb1bcf7b" title="Set the TID for the QoS header." alt="" coords="295,968,449,1009"/>

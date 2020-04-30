@@ -10,6 +10,6 @@
 <area shape="rect" id="node5" href="$classns3_1_1_planet_lab_fd_net_device_helper.html" title="build a set of FdNetDevice objects attached to a virtual TAP network interface" alt="" coords="731,19,933,61"/>
 <area shape="rect" id="node6" href="$classns3_1_1_tap_fd_net_device_helper.html" title="build a set of FdNetDevice objects attached to a virtual TAP network interface" alt="" coords="731,85,933,112"/>
 <area shape="rect" id="node10" href="$classns3_1_1_spectrum_wifi_phy_helper.html" title="Make it easy to create and manage PHY objects for the spectrum model." alt="" coords="474,183,682,209"/>
-<area shape="rect" id="node11" href="$classns3_1_1_yans_wifi_phy_helper.html" title="Make it easy to create and manage PHY objects for the yans model." alt="" coords="491,233,665,260"/>
+<area shape="rect" id="node11" href="$classns3_1_1_yans_wifi_phy_helper.html" title="Make it easy to create and manage PHY objects for the YANS model." alt="" coords="491,233,665,260"/>
 <area shape="rect" id="node12" href="$classns3_1_1_yans_wave_phy_helper.html" title=" " alt="" coords="739,233,925,260"/>
 </map>

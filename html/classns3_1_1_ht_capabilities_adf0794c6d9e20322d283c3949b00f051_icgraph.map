@@ -1,5 +1,5 @@
 <map id="ns3::HtCapabilities::SetGreenfield" name="ns3::HtCapabilities::SetGreenfield">
-<area shape="rect" id="node1" title="Set the green field." alt="" coords="2068,239,2213,281"/>
+<area shape="rect" id="node1" title="Set the Greenfield field." alt="" coords="2068,239,2213,281"/>
 <area shape="rect" id="node2" href="$classns3_1_1_regular_wifi_mac.html#ad51001e4ea7ef05fb584002b158a4e3e" title="Return the HT capabilities of the device." alt="" coords="1864,239,2020,281"/>
 <area shape="rect" id="node3" href="$classns3_1_1_ocb_wifi_mac.html#a8bff620142abd07f3a1f7410f26502b7" title=" " alt="" coords="1597,5,1792,32"/>
 <area shape="rect" id="node4" href="$classns3_1_1_adhoc_wifi_mac.html#a476b75b5ca672a00be5234c507787968" title=" " alt="" coords="1617,57,1772,98"/>

@@ -25,8 +25,8 @@
 <area shape="rect" id="node35" href="$classns3_1_1_wifi_net_device.html#a2f08e359eb50ff8be69d611ad3b84605" title=" " alt="" coords="280,1749,435,1791"/>
 <area shape="rect" id="node36" href="$classns3_1_1_mgt_add_ba_request_header.html#a6c500c2af17b44cead2c9449ed35bc5f" title="Enable immediate BlockAck." alt="" coords="247,1815,467,1856"/>
 <area shape="rect" id="node37" href="$classns3_1_1_wifi_net_device.html#a0a9b545ba9a5a8538b0c4165ab1dc93f" title=" " alt="" coords="284,1880,431,1921"/>
-<area shape="rect" id="node38" href="$classns3_1_1_ht_capabilities.html#a4ba40bf6a99dadf2b5cbac209cbd9d00" title="Set the maximum AMPDU length." alt="" coords="273,1945,442,1987"/>
-<area shape="rect" id="node39" href="$classns3_1_1_ht_capabilities.html#a27b4d6f92b85b353a7af5798f2a54ca7" title="Set the maximum AMSDU length." alt="" coords="273,2011,441,2052"/>
+<area shape="rect" id="node38" href="$classns3_1_1_ht_capabilities.html#aecbe859f067fede7a68196eb5bdfc049" title="Set the maximum AMPDU length." alt="" coords="273,1945,442,1987"/>
+<area shape="rect" id="node39" href="$classns3_1_1_ht_capabilities.html#a1b38bfa2272f415f3555f26be3eab92c" title="Set the maximum AMSDU length." alt="" coords="273,2011,441,2052"/>
 <area shape="rect" id="node40" href="$classns3_1_1_wifi_net_device.html#ad5c4079445cf469d2626cf10db239edb" title=" " alt="" coords="284,2076,431,2117"/>
 <area shape="rect" id="node41" href="$classns3_1_1_wifi_mac_header.html#a84a98932f5b66cca86bdfaa9cb1bcf7b" title="Set the TID for the QoS header." alt="" coords="281,2141,434,2183"/>
 <area shape="rect" id="node42" href="$classns3_1_1_wifi_net_device.html#a8f05a43a0042f97c19c65bbaa33dc7e7" title=" " alt="" coords="255,2207,460,2248"/>

@@ -15,7 +15,7 @@
 <area shape="rect" id="node32" href="$classns3_1_1_ap_wifi_mac.html#a4fefa01556b990b9995ff1a5577060d3" title="Return the HT operation of the current AP." alt="" coords="853,733,1087,759"/>
 <area shape="rect" id="node33" href="$classns3_1_1_wifi_phy.html#a5a2439b34d55739c47d3c13cb412d38c" title="Get the WifiMode object corresponding to the given MCS of the given modulation class." alt="" coords="605,1023,763,1050"/>
 <area shape="rect" id="node34" href="$classns3_1_1_wifi_phy.html#a0854b8251b610b505fec7790bfce07ac" title=" " alt="" coords="877,1133,1063,1175"/>
-<area shape="rect" id="node35" href="$classns3_1_1_wifi_phy_helper.html#af1baefd0a50daeff72c8075f2eef7eda" title="Get the radiotap header." alt="" coords="891,1199,1049,1240"/>
+<area shape="rect" id="node35" href="$classns3_1_1_wifi_phy_helper.html#af1baefd0a50daeff72c8075f2eef7eda" title="Get the Radiotap header." alt="" coords="891,1199,1049,1240"/>
 <area shape="rect" id="node40" href="$classns3_1_1_regular_wifi_mac.html#a016a83d8f0d89790ac9c177fa2d6751e" title="Return the VHT capabilities of the device." alt="" coords="892,601,1048,643"/>
 <area shape="rect" id="node41" href="$classns3_1_1_wifi_phy.html#ace15a5e48e92eadceffbfb8ef3eb332c" title="Check if the given WifiMode is supported by the PHY." alt="" coords="863,1082,1077,1109"/>
 <area shape="rect" id="node45" href="$classns3_1_1_wifi_phy.html#a5b0583bebfdb7faf36ccaa53fad39c39" title="Add the given MCS to the device MCS set." alt="" coords="887,1297,1053,1323"/>
@@ -44,7 +44,7 @@
 <area shape="rect" id="node38" href="$classns3_1_1_wifi_phy_helper.html#a1d0dc819ef2e257409b6b84924d07085" title="Enable pcap output the indicated net device." alt="" coords="319,1205,474,1247"/>
 <area shape="rect" id="node42" href="$classns3_1_1_wifi_phy.html#a613c3092a7f6f1dc2d815a4d2de989fa" title="Start receiving the PSDU (i.e." alt="" coords="587,1075,781,1116"/>
 <area shape="rect" id="node43" href="$classns3_1_1_wifi_phy.html#ac5c2d333cf5e8c1f33604ef1584486fe" title="Continue receiving the PHY header of a PPDU (i.e." alt="" coords="287,1075,507,1116"/>
-<area shape="rect" id="node44" href="$classns3_1_1_wifi_phy.html#ad67948715df0fbb05a2c3fa1d2ecd21d" title="Start receiving the PHY header of a PPDU (i.e." alt="" coords="21,1045,215,1087"/>
+<area shape="rect" id="node44" href="$classns3_1_1_wifi_phy.html#aa7bcb29f6ad8b8280792fc83a25f8eac" title="Start receiving the PHY header of a PPDU (i.e." alt="" coords="21,1045,215,1087"/>
 <area shape="rect" id="node46" href="$classns3_1_1_wifi_phy.html#a9023b105175409e6dde1281cc6584cf3" title="Configure WifiPhy with appropriate channel frequency and supported rates for 802.11ac standard." alt="" coords="570,1322,798,1349"/>
 <area shape="rect" id="node47" href="$classns3_1_1_wifi_phy.html#adcda370490dc230a5c737c7a83de9bcd" title="Configure WifiPhy with appropriate channel frequency and supported rates for 802.11ax standard." alt="" coords="282,1297,511,1323"/>
 <area shape="rect" id="node48" href="$classns3_1_1_wifi_phy.html#a7cd2773f895166ffcfa811efe120e1f0" title="Configure the device MCS set with the appropriate HtMcs modes for the number of available transmit sp..." alt="" coords="590,1373,778,1415"/>

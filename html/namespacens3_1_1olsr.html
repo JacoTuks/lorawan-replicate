@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -263,7 +260,7 @@ Functions</h2></td></tr>
 <tr class="separator:a952f55340bd0ab5ae0cd5f462cf91fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c3b1f93f73d25fe1fdc3f19553a0026"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacens3_1_1olsr.html#a9c3b1f93f73d25fe1fdc3f19553a0026">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="structns3_1_1olsr_1_1_neighbor_tuple.html">NeighborTuple</a> &amp;tuple)</td></tr>
 <tr class="separator:a9c3b1f93f73d25fe1fdc3f19553a0026"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa34aff519277684925d5b636843b396"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacens3_1_1olsr.html#afa34aff519277684925d5b636843b396">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="classns3_1_1olsr_1_1_packet_header.html">PacketHeader</a> &amp;<a class="el" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>)</td></tr>
+<tr class="memitem:afa34aff519277684925d5b636843b396"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacens3_1_1olsr.html#afa34aff519277684925d5b636843b396">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="classns3_1_1olsr_1_1_packet_header.html">PacketHeader</a> &amp;packet)</td></tr>
 <tr class="separator:afa34aff519277684925d5b636843b396"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a1ac819b1ff2e5f2df91b9dc561befa"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacens3_1_1olsr.html#a0a1ac819b1ff2e5f2df91b9dc561befa">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="structns3_1_1olsr_1_1_topology_tuple.html">TopologyTuple</a> &amp;tuple)</td></tr>
 <tr class="separator:a0a1ac819b1ff2e5f2df91b9dc561befa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -870,7 +867,18 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="olsr-header_8h_source.html#l00683">683</a> of file <a class="el" href="olsr-header_8h_source.html">olsr-header.h</a>.</p>
 
-<p class="reference">References <a class="el" href="lora-mac-test_8cc_source.html#l00021">packet</a>.</p>
+<p class="reference">References <a class="el" href="olsr-header_8cc_source.html#l00136">ns3::olsr::PacketHeader::Print()</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="namespacens3_1_1olsr_afa34aff519277684925d5b636843b396_cgraph.png" border="0" usemap="#namespacens3_1_1olsr_afa34aff519277684925d5b636843b396_cgraph" alt=""/></div>
+<map name="namespacens3_1_1olsr_afa34aff519277684925d5b636843b396_cgraph" id="namespacens3_1_1olsr_afa34aff519277684925d5b636843b396_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,168,39"/>
+<area shape="rect" href="classns3_1_1olsr_1_1_packet_header.html#ab4bb5e51981275c99b2b539af7bdf351" title=" " alt="" coords="216,5,391,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -1344,22 +1352,22 @@ Functions</h2></td></tr>
 <p class="reference">References <a class="el" href="assert_8h_source.html#l00067">NS_ASSERT</a>, <a class="el" href="ipv4-address-generator_8cc.html#aaf5aa23b804d2e5e334106f207e8a6cc">NS_ASSERT_MSG()</a>, and <a class="el" href="olsr-header_8cc_source.html#l00040">OLSR_C</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="olsr-header-test-suite_8cc_source.html#l00046">OlsrEmfTestCase::DoRun()</a>, <a class="el" href="olsr-header_8h_source.html#l00393">ns3::olsr::MessageHeader::Hello::SetHTime()</a>, and <a class="el" href="olsr-header_8h_source.html#l00195">ns3::olsr::MessageHeader::SetVTime()</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="namespacens3_1_1olsr_aa544b806b38a4a63280ce21a9b706628_cgraph.png" border="0" usemap="#namespacens3_1_1olsr_aa544b806b38a4a63280ce21a9b706628_cgraph" alt=""/></div>
 <map name="namespacens3_1_1olsr_aa544b806b38a4a63280ce21a9b706628_cgraph" id="namespacens3_1_1olsr_aa544b806b38a4a63280ce21a9b706628_cgraph">
 <area shape="rect" title="Converts a decimal number of seconds to the mantissa/exponent format." alt="" coords="5,5,184,32"/>
 <area shape="rect" href="ipv4-address-generator_8cc.html#aaf5aa23b804d2e5e334106f207e8a6cc" title=" " alt="" coords="232,5,367,32"/>
 </map>
 </div>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="namespacens3_1_1olsr_aa544b806b38a4a63280ce21a9b706628_icgraph.png" border="0" usemap="#namespacens3_1_1olsr_aa544b806b38a4a63280ce21a9b706628_icgraph" alt=""/></div>
 <map name="namespacens3_1_1olsr_aa544b806b38a4a63280ce21a9b706628_icgraph" id="namespacens3_1_1olsr_aa544b806b38a4a63280ce21a9b706628_icgraph">
 <area shape="rect" title="Converts a decimal number of seconds to the mantissa/exponent format." alt="" coords="952,78,1131,105"/>
@@ -1392,7 +1400,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="namespacens3_1_1olsr.html">olsr</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:49 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:51 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

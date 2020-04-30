@@ -9,14 +9,18 @@ var wifi_phy_8h =
     [ "WifiPhyRxfailureReason", "wifi-phy_8h.html#a31d20111afabdc05bd83999d2af0aef6", [
       [ "UNKNOWN", "wifi-phy_8h.html#a31d20111afabdc05bd83999d2af0aef6a8d372c0cf3b4b9608527f34f4a5e95d6", null ],
       [ "UNSUPPORTED_SETTINGS", "wifi-phy_8h.html#a31d20111afabdc05bd83999d2af0aef6a46bcd349a9ec0c1e06a7847294533b95", null ],
-      [ "NOT_ALLOWED", "wifi-phy_8h.html#a31d20111afabdc05bd83999d2af0aef6aec986f675a6e8acead0e49192b57f1bb", null ],
-      [ "ERRONEOUS_FRAME", "wifi-phy_8h.html#a31d20111afabdc05bd83999d2af0aef6a6f74674aac9ca1d841adf5b51802c6d5", null ],
-      [ "MPDU_WITHOUT_PHY_HEADER", "wifi-phy_8h.html#a31d20111afabdc05bd83999d2af0aef6a66b9474cad265c8be2002ae3bfa8d1a0", null ],
+      [ "CHANNEL_SWITCHING", "wifi-phy_8h.html#a31d20111afabdc05bd83999d2af0aef6a7fa6c9a59ccf28aad3f5d99febf62011", null ],
+      [ "RXING", "wifi-phy_8h.html#a31d20111afabdc05bd83999d2af0aef6aaabffc7e6c2126f98a91db30d5a35bc2", null ],
+      [ "TXING", "wifi-phy_8h.html#a31d20111afabdc05bd83999d2af0aef6afb739526f981715895c394978f369595", null ],
+      [ "SLEEPING", "wifi-phy_8h.html#a31d20111afabdc05bd83999d2af0aef6a8fc2d4155c6d7fcaebcfdf290d0d7052", null ],
+      [ "BUSY_DECODING_PREAMBLE", "wifi-phy_8h.html#a31d20111afabdc05bd83999d2af0aef6a8fe6d0ceadd25c6c2d541ee9238d803a", null ],
       [ "PREAMBLE_DETECT_FAILURE", "wifi-phy_8h.html#a31d20111afabdc05bd83999d2af0aef6a28c7754068584e00051be114330d6ab9", null ],
+      [ "RECEPTION_ABORTED_BY_TX", "wifi-phy_8h.html#a31d20111afabdc05bd83999d2af0aef6a624928546fa93195ee6929b5777600f7", null ],
       [ "L_SIG_FAILURE", "wifi-phy_8h.html#a31d20111afabdc05bd83999d2af0aef6a4fe9edf2253e6fa23a02f835dd389281", null ],
       [ "SIG_A_FAILURE", "wifi-phy_8h.html#a31d20111afabdc05bd83999d2af0aef6a6e45b28f2e2fe98bdd4c7a6ce36f2d8e", null ],
       [ "PREAMBLE_DETECTION_PACKET_SWITCH", "wifi-phy_8h.html#a31d20111afabdc05bd83999d2af0aef6af1928b2f135bedd11b3b953228675243", null ],
       [ "FRAME_CAPTURE_PACKET_SWITCH", "wifi-phy_8h.html#a31d20111afabdc05bd83999d2af0aef6a2e6da830403dbfcf2b7bd3d28312b802", null ],
       [ "OBSS_PD_CCA_RESET", "wifi-phy_8h.html#a31d20111afabdc05bd83999d2af0aef6a02fd866be5d78393c83086a0f18f1f64", null ]
-    ] ]
+    ] ],
+    [ "operator<<", "wifi-phy_8h.html#a5ded7c92a4b6ce279e1750b76366326a", null ]
 ];

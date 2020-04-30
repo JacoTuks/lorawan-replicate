@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -223,11 +220,11 @@ $(document).ready(function(){initNavTree('mac-messages-test_8cc_source.html','')
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  sf.<a class="code" href="classns3_1_1_service_flow.html#a9fd37b11439e3b6ca601c76e54d6273c">SetTrafficPriority</a> (1);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="classns3_1_1_dsa_req.html">DsaReq</a> dsaReq (sf);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Packet&gt;</a> <a class="code" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a> = Create&lt;Packet&gt; ();</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <a class="code" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>-&gt;<a class="code" href="classns3_1_1_packet.html#a465108c595a0bc592095cbcab1832ed8">AddHeader</a> (dsaReq);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="classns3_1_1_ptr.html">Ptr&lt;Packet&gt;</a> packet = Create&lt;Packet&gt; ();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  packet-&gt;<a class="code" href="classns3_1_1_packet.html#a465108c595a0bc592095cbcab1832ed8">AddHeader</a> (dsaReq);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <a class="code" href="classns3_1_1_dsa_req.html">DsaReq</a> dsaReqRecv;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <a class="code" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>-&gt;<a class="code" href="classns3_1_1_packet.html#a0961eccf975d75f902d40956c93ba63e">RemoveHeader</a> (dsaReqRecv);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  packet-&gt;<a class="code" href="classns3_1_1_packet.html#a0961eccf975d75f902d40956c93ba63e">RemoveHeader</a> (dsaReqRecv);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <a class="code" href="classns3_1_1_service_flow.html">ServiceFlow</a> sfRecv = dsaReqRecv.<a class="code" href="classns3_1_1_dsa_req.html#a7f831f8455cd2e4dd444f69e9d38d4b9">GetServiceFlow</a> ();</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
@@ -264,7 +261,6 @@ $(document).ready(function(){initNavTree('mac-messages-test_8cc_source.html','')
 <div class="ttc" id="anamespacens3_html"><div class="ttname"><a href="namespacens3.html">ns3</a></div><div class="ttdoc">Every class exported by the ns3 library is enclosed in the ns3 namespace.</div></div>
 <div class="ttc" id="aclassns3_1_1_service_flow_html_a709a1682e3dc3e4f8205cc181763ec21"><div class="ttname"><a href="classns3_1_1_service_flow.html#a709a1682e3dc3e4f8205cc181763ec21">ns3::ServiceFlow::GetMaxTrafficBurst</a></div><div class="ttdeci">uint32_t GetMaxTrafficBurst(void) const</div><div class="ttdoc">Get max traffic burst.</div><div class="ttdef"><b>Definition:</b> <a href="service-flow_8cc_source.html#l00354">service-flow.cc:354</a></div></div>
 <div class="ttc" id="aclassns3_1_1_service_flow_html_acdef049af2eda0d1ac80047208ce7571"><div class="ttname"><a href="classns3_1_1_service_flow.html#acdef049af2eda0d1ac80047208ce7571">ns3::ServiceFlow::SetServiceSchedulingType</a></div><div class="ttdeci">void SetServiceSchedulingType(enum ServiceFlow::SchedulingType schedType)</div><div class="ttdoc">Set service scheduling type.</div><div class="ttdef"><b>Definition:</b> <a href="service-flow_8cc_source.html#l00525">service-flow.cc:525</a></div></div>
-<div class="ttc" id="alora-mac-test_8cc_html_a084e879e2a4e6b1e078575d3693a0c3a"><div class="ttname"><a href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a></div><div class="ttdeci">Ptr&lt; Packet &gt; packet</div><div class="ttdef"><b>Definition:</b> <a href="lora-mac-test_8cc_source.html#l00021">lora-mac-test.cc:21</a></div></div>
 <div class="ttc" id="aclassns3_1_1_service_flow_html_aef578837096b1a316696a88ecd550e7c"><div class="ttname"><a href="classns3_1_1_service_flow.html#aef578837096b1a316696a88ecd550e7c">ns3::ServiceFlow::SetMaxSustainedTrafficRate</a></div><div class="ttdeci">void SetMaxSustainedTrafficRate(uint32_t maxSustainedRate)</div><div class="ttdoc">Set max sustained traffic rate.</div><div class="ttdef"><b>Definition:</b> <a href="service-flow_8cc_source.html#l00505">service-flow.cc:505</a></div></div>
 <div class="ttc" id="aclassns3_1_1_service_flow_html_a61781dc767b833dfc34ed86e9efbc62d"><div class="ttname"><a href="classns3_1_1_service_flow.html#a61781dc767b833dfc34ed86e9efbc62d">ns3::ServiceFlow::SetMaximumLatency</a></div><div class="ttdeci">void SetMaximumLatency(uint32_t MaximumLatency)</div><div class="ttdoc">Set maximum latency.</div><div class="ttdef"><b>Definition:</b> <a href="service-flow_8cc_source.html#l00540">service-flow.cc:540</a></div></div>
 <div class="ttc" id="aclassns3_1_1_cs_parameters_html"><div class="ttname"><a href="classns3_1_1_cs_parameters.html">ns3::CsParameters</a></div><div class="ttdoc">CsParameters class.</div><div class="ttdef"><b>Definition:</b> <a href="cs-parameters_8h_source.html#l00035">cs-parameters.h:36</a></div></div>
@@ -283,7 +279,7 @@ $(document).ready(function(){initNavTree('mac-messages-test_8cc_source.html','')
 <div class="ttc" id="aclassns3_1_1_service_flow_html_ad49e9a793508d2d476de1e08897ecbf6"><div class="ttname"><a href="classns3_1_1_service_flow.html#ad49e9a793508d2d476de1e08897ecbf6">ns3::ServiceFlow::SetMinReservedTrafficRate</a></div><div class="ttdeci">void SetMinReservedTrafficRate(uint32_t minResvRate)</div><div class="ttdoc">Set minimum reserved traffic rate.</div><div class="ttdef"><b>Definition:</b> <a href="service-flow_8cc_source.html#l00515">service-flow.cc:515</a></div></div>
 <div class="ttc" id="aclass_dsa_request_test_case_html"><div class="ttname"><a href="class_dsa_request_test_case.html">DsaRequestTestCase</a></div><div class="ttdoc">Test the DSA request message.</div><div class="ttdef"><b>Definition:</b> <a href="mac-messages-test_8cc_source.html#l00039">mac-messages-test.cc:40</a></div></div>
 <div class="ttc" id="aclassns3_1_1_service_flow_html_a61db0b7deb382b8d30e8634a59c0fe73"><div class="ttname"><a href="classns3_1_1_service_flow.html#a61db0b7deb382b8d30e8634a59c0fe73">ns3::ServiceFlow::GetDirection</a></div><div class="ttdeci">enum Direction GetDirection(void) const</div><div class="ttdoc">Get direction.</div><div class="ttdef"><b>Definition:</b> <a href="service-flow_8cc_source.html#l00197">service-flow.cc:197</a></div></div>
-<div class="ttc" id="aclassns3_1_1_test_suite_html"><div class="ttname"><a href="classns3_1_1_test_suite.html">ns3::TestSuite</a></div><div class="ttdoc">A suite of tests to run.</div><div class="ttdef"><b>Definition:</b> <a href="test_8h_source.html#l01341">test.h:1342</a></div></div>
+<div class="ttc" id="aclassns3_1_1_test_suite_html"><div class="ttname"><a href="classns3_1_1_test_suite.html">ns3::TestSuite</a></div><div class="ttdoc">A suite of tests to run.</div><div class="ttdef"><b>Definition:</b> <a href="test_8h_source.html#l01343">test.h:1344</a></div></div>
 <div class="ttc" id="aclassns3_1_1_service_flow_html_a1708510e6b5769fd3086097dc657571f"><div class="ttname"><a href="classns3_1_1_service_flow.html#a1708510e6b5769fd3086097dc657571f">ns3::ServiceFlow::SetSfid</a></div><div class="ttdeci">void SetSfid(uint32_t sfid)</div><div class="ttdoc">Set SFID.</div><div class="ttdef"><b>Definition:</b> <a href="service-flow_8cc_source.html#l00485">service-flow.cc:485</a></div></div>
 <div class="ttc" id="agroup__testing_html_ga2a9d78cffb3db8e867c35fff0b698cf5"><div class="ttname"><a href="group__testing.html#ga2a9d78cffb3db8e867c35fff0b698cf5">NS_TEST_ASSERT_MSG_EQ</a></div><div class="ttdeci">#define NS_TEST_ASSERT_MSG_EQ(actual, limit, msg)</div><div class="ttdoc">Test that an actual and expected (limit) value are equal and report and abort if not.</div><div class="ttdef"><b>Definition:</b> <a href="test_8h_source.html#l00167">test.h:166</a></div></div>
 <div class="ttc" id="aclass_dsa_request_test_case_html_a03d674bc8be475390afde9769e45199c"><div class="ttname"><a href="class_dsa_request_test_case.html#a03d674bc8be475390afde9769e45199c">DsaRequestTestCase::DoRun</a></div><div class="ttdeci">virtual void DoRun(void)</div><div class="ttdoc">Implementation to actually run this TestCase.</div><div class="ttdef"><b>Definition:</b> <a href="mac-messages-test_8cc_source.html#l00060">mac-messages-test.cc:60</a></div></div>
@@ -308,7 +304,7 @@ $(document).ready(function(){initNavTree('mac-messages-test_8cc_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_81cc003b30758dae13caa0a9a27e4771.html">wimax</a></li><li class="navelem"><a class="el" href="dir_ac7ba44f04f70f5240403b7d98b215bb.html">test</a></li><li class="navelem"><a class="el" href="mac-messages-test_8cc.html">mac-messages-test.cc</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:09 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:16 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

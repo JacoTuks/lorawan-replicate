@@ -49,7 +49,6 @@ var group__traffic_control =
       [ "m_increment", "classns3_1_1_cobalt_queue_disc.html#a5163dc97312341df0fff520436148a06", null ],
       [ "m_interval", "classns3_1_1_cobalt_queue_disc.html#a56f351d0edc1514614652236ff179fc0", null ],
       [ "m_lastUpdateTimeBlue", "classns3_1_1_cobalt_queue_disc.html#ab3fa592b2f31ef2c8736ba4ebc938c79", null ],
-      [ "m_minBytes", "classns3_1_1_cobalt_queue_disc.html#ae08775ffac46dd1ea839b3049d52a122", null ],
       [ "m_Pdrop", "classns3_1_1_cobalt_queue_disc.html#a4299d0c45eebc7e3f20b6ea7fe3a3c69", null ],
       [ "m_recInvSqrt", "classns3_1_1_cobalt_queue_disc.html#aa47d3a820d25558bdb9ccc06762f3d12", null ],
       [ "m_recInvSqrtCache", "classns3_1_1_cobalt_queue_disc.html#a09622e9b40da59f1705a8542bc37b637", null ],

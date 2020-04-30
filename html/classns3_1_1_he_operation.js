@@ -13,7 +13,7 @@ var classns3_1_1_he_operation =
     [ "SerializeInformationField", "classns3_1_1_he_operation.html#a608ec0620e24e2df3fb8204b41c0b093", null ],
     [ "SetBssColor", "classns3_1_1_he_operation.html#a0e4b65c89fde0d73e382bd4d6b674266", null ],
     [ "SetHeOperationParameters", "classns3_1_1_he_operation.html#ab70f2072f6c1b00dba9951d07a671004", null ],
-    [ "SetHeSupported", "classns3_1_1_he_operation.html#af11b3a8c03d6390f58870ef59ba08ca3", null ],
+    [ "SetHeSupported", "classns3_1_1_he_operation.html#aff5b4e207742ef6a5680e083a4a636ac", null ],
     [ "SetMaxHeMcsPerNss", "classns3_1_1_he_operation.html#a34c08080f80517feac1acf5b1e7d6512", null ],
     [ "m_basicHeMcsAndNssSet", "classns3_1_1_he_operation.html#abab0fad6fca45288f8153459f84eec32", null ],
     [ "m_bssColor", "classns3_1_1_he_operation.html#a9ca85fa107c15967fde7fe1818234e63", null ],

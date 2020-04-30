@@ -2,7 +2,7 @@
 <area shape="rect" id="node1" title="Assign a fixed random variable stream number to the random variables used by this model." alt="" coords="913,295,1104,322"/>
 <area shape="rect" id="node2" href="$classns3_1_1_mesh_helper.html#a93e9c88a375a86c621a494aafe68882e" title="Assign a fixed random variable stream number to the random variables used by this model." alt="" coords="628,209,864,235"/>
 <area shape="rect" id="node15" href="$classns3_1_1_wave_helper.html#a0dfb77567421c264b7f227eb6b306dee" title="Assign a fixed random variable stream number to the random variables used by the Phy and Mac aspects ..." alt="" coords="627,270,865,297"/>
-<area shape="rect" id="node16" href="$classns3_1_1_wifi_helper.html#ab29bf13f8726c2e0807a583bfea79777" title="Assign a fixed random variable stream number to the random variables used by the Phy and Mac aspects ..." alt="" coords="633,321,859,347"/>
+<area shape="rect" id="node16" href="$classns3_1_1_wifi_helper.html#ab29bf13f8726c2e0807a583bfea79777" title="Assign a fixed random variable stream number to the random variables used by the PHY and MAC aspects ..." alt="" coords="633,321,859,347"/>
 <area shape="rect" id="node17" href="$ocb-test-suite_8cc.html#a27e1dfc9840ff9d220527fa04cbd65de" title=" " alt="" coords="647,393,845,419"/>
 <area shape="rect" id="node3" href="$class_hwmp_proactive_regression_test.html#a98c6ff2361a7a5065ebf14089edc5bad" title="Create devices function." alt="" coords="336,5,559,47"/>
 <area shape="rect" id="node5" href="$class_hwmp_reactive_regression_test.html#a8b288a6801baae1e65f87de7eb0352a4" title="Create devices function." alt="" coords="338,71,557,112"/>

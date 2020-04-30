@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -190,8 +187,8 @@ $(document).ready(function(){initNavTree('delay-jitter-estimation_8h_source.html
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="classns3_1_1_delay_jitter_estimation.html#a30dc40f5f81bcc3f8a8f49ff44f22cbc">DelayJitterEstimation</a> ();</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_delay_jitter_estimation.html#a38cbbdbfcdcc81cc9e08e3a9e2d10e75">PrepareTx</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;const Packet&gt;</a> <a class="code" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_delay_jitter_estimation.html#a2ed3a248d9cee91c92690793378b5797">RecordRx</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;const Packet&gt;</a> <a class="code" href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_delay_jitter_estimation.html#a38cbbdbfcdcc81cc9e08e3a9e2d10e75">PrepareTx</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;const Packet&gt;</a> packet);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classns3_1_1_delay_jitter_estimation.html#a2ed3a248d9cee91c92690793378b5797">RecordRx</a> (<a class="code" href="classns3_1_1_ptr.html">Ptr&lt;const Packet&gt;</a> packet);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="classns3_1_1_time.html">Time</a> <a class="code" href="classns3_1_1_delay_jitter_estimation.html#a365443a13a9e3eb590ef6536e697254e">GetLastDelay</a> (<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  uint64_t <a class="code" href="classns3_1_1_delay_jitter_estimation.html#abf65e9f813f99896f6552744d60c5503">GetLastJitter</a> (<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
@@ -210,7 +207,6 @@ $(document).ready(function(){initNavTree('delay-jitter-estimation_8h_source.html
 </div><!-- doc-content -->
 <div class="ttc" id="anamespacens3_html"><div class="ttname"><a href="namespacens3.html">ns3</a></div><div class="ttdoc">Every class exported by the ns3 library is enclosed in the ns3 namespace.</div></div>
 <div class="ttc" id="aclassns3_1_1_delay_jitter_estimation_html_a7bcede70a5da4cab9a0571e649c8e80a"><div class="ttname"><a href="classns3_1_1_delay_jitter_estimation.html#a7bcede70a5da4cab9a0571e649c8e80a">ns3::DelayJitterEstimation::m_jitter</a></div><div class="ttdeci">int64x64_t m_jitter</div><div class="ttdoc">Jitter estimation.</div><div class="ttdef"><b>Definition:</b> <a href="delay-jitter-estimation_8h_source.html#l00074">delay-jitter-estimation.h:74</a></div></div>
-<div class="ttc" id="alora-mac-test_8cc_html_a084e879e2a4e6b1e078575d3693a0c3a"><div class="ttname"><a href="lora-mac-test_8cc.html#a084e879e2a4e6b1e078575d3693a0c3a">packet</a></div><div class="ttdeci">Ptr&lt; Packet &gt; packet</div><div class="ttdef"><b>Definition:</b> <a href="lora-mac-test_8cc_source.html#l00021">lora-mac-test.cc:21</a></div></div>
 <div class="ttc" id="aclassns3_1_1int64x64__t_html"><div class="ttname"><a href="classns3_1_1int64x64__t.html">ns3::int64x64_t</a></div><div class="ttdef"><b>Definition:</b> <a href="int64x64-128_8h_source.html#l00045">int64x64-128.h:46</a></div></div>
 <div class="ttc" id="aclassns3_1_1_ptr_html"><div class="ttname"><a href="classns3_1_1_ptr.html">ns3::Ptr</a></div><div class="ttdoc">Smart pointer class similar to boost::intrusive_ptr.</div><div class="ttdef"><b>Definition:</b> <a href="ptr_8h_source.html#l00073">ptr.h:74</a></div></div>
 <div class="ttc" id="aclassns3_1_1_time_html"><div class="ttname"><a href="classns3_1_1_time.html">ns3::Time</a></div><div class="ttdoc">Simulation virtual time values and global simulation resolution.</div><div class="ttdef"><b>Definition:</b> <a href="nstime_8h_source.html#l00102">nstime.h:103</a></div></div>
@@ -231,7 +227,7 @@ $(document).ready(function(){initNavTree('delay-jitter-estimation_8h_source.html
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_fc4c7f03e1a69a98c370fae55a743828.html">network</a></li><li class="navelem"><a class="el" href="dir_450ec3710cf76cb4c57639cbc4dc2f59.html">helper</a></li><li class="navelem"><a class="el" href="delay-jitter-estimation_8h.html">delay-jitter-estimation.h</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:02 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:10 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

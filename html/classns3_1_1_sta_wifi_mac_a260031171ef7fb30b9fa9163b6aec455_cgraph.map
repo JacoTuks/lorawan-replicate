@@ -48,5 +48,5 @@
 <area shape="rect" id="node45" href="$classns3_1_1_wifi_mac_header.html#a71172371f11f1cfcb3912bb03134c285" title="Set Type/Subtype values with the correct values depending on the given type." alt="" coords="875,2417,1029,2459"/>
 <area shape="rect" id="node46" href="$classns3_1_1_mgt_assoc_request_header.html#ab734df1683e19ea64f8fb4b7d3a8514d" title="Set the VHT capabilities." alt="" coords="844,2483,1060,2524"/>
 <area shape="rect" id="node47" href="$classns3_1_1_mgt_reassoc_request_header.html#ae0e9462088c8f03f4479cf4da03b112e" title="Set the VHT capabilities." alt="" coords="836,57,1068,99"/>
-<area shape="rect" id="node50" href="$classns3_1_1_channel_access_manager.html#a8f22051d42b40ab6c063ec613f45a04f" title="Set up listener for Phy events." alt="" coords="561,1244,769,1285"/>
+<area shape="rect" id="node50" href="$classns3_1_1_channel_access_manager.html#a8f22051d42b40ab6c063ec613f45a04f" title="Set up listener for PHY events." alt="" coords="561,1244,769,1285"/>
 </map>

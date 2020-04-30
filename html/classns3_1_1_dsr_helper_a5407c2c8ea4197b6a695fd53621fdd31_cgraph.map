@@ -29,7 +29,7 @@
 <area shape="rect" id="node27" href="$classns3_1_1dsr_1_1_dsr_send_buffer.html#aac846f6a38f6fc6431c8483103ed5121" title="Push entry in queue, if there is no entry with the same packet and destination address in queue." alt="" coords="697,575,872,617"/>
 <area shape="rect" id="node28" href="$classns3_1_1dsr_1_1_dsr_send_buffer.html#acf27d9e92a1d1960b9094c4108724a53" title="Check if a packet with destination dst exists in the queue." alt="" coords="697,3187,872,3229"/>
 <area shape="rect" id="node29" href="$classns3_1_1dsr_1_1_dsr_routing.html#a4593e50d5f36e9b9b013fe0422067c44" title="Get the node id from ip address." alt="" coords="976,813,1129,854"/>
-<area shape="rect" id="node30" href="$classns3_1_1_random_variable_stream.html#a66cd94e6305ce7f000f1a9ff0fcb9aef" title="Get the next random value as an integer drawn from the distribution." alt="" coords="681,3253,889,3294"/>
+<area shape="rect" id="node30" href="$classns3_1_1_uniform_random_variable.html#ab7c7dedc88cb97e74418df2edc28a787" title="Get the next random value, as an unsigned integer in the specified range ." alt="" coords="677,3253,892,3294"/>
 <area shape="rect" id="node31" href="$classns3_1_1dsr_1_1_dsr_option_header.html#acadd408c91079150f077f8e258738a5f" title="Get the option length." alt="" coords="956,1647,1149,1689"/>
 <area shape="rect" id="node32" href="$classns3_1_1dsr_1_1_dsr_send_buffer.html#a0ecf75786eef7193fa5a5d84b2b7a1f0" title="Number of entries." alt="" coords="697,3318,872,3359"/>
 <area shape="rect" id="node33" href="$classns3_1_1_packet.html#afff7cb1ff518ee6dc0d424e10a5ad6ec" title="Returns the the size in bytes of the packet (including the zero&#45;filled initial payload)." alt="" coords="975,3211,1130,3237"/>

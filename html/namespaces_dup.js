@@ -1,5 +1,6 @@
 var namespaces_dup =
 [
+    [ "aloha", "namespacealoha.html", null ],
     [ "anonymous_namespace{buffer.cc}", "namespaceanonymous__namespace_02buffer_8cc_03.html", null ],
     [ "anonymous_namespace{command-line-example.cc}", "namespaceanonymous__namespace_02command-line-example_8cc_03.html", null ],
     [ "anonymous_namespace{file-aggregator-example.cc}", "namespaceanonymous__namespace_02file-aggregator-example_8cc_03.html", null ],

@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -159,7 +156,7 @@ $(document).ready(function(){initNavTree('group__attributehelper.html',''); init
 <a href="#files">Files</a> &#124;
 <a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
-<div class="title">Attribute Helper<div class="ingroups"><a class="el" href="group__core.html">Core</a> &raquo; <a class="el" href="group__attribute.html">Attributes</a></div></div>  </div>
+<div class="title">Attribute Helper<div class="ingroups"><a class="el" href="group__core.html">Core</a> &raquo; <a class="el" href="group__attributes.html">Attributes</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -172,9 +169,9 @@ $(document).ready(function(){initNavTree('group__attributehelper.html',''); init
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__attributehelper.png" border="0" usemap="#group____attributehelper" alt=""/></div>
 <map name="group____attributehelper" id="group____attributehelper">
-<area shape="rect" href="group__attribute.html" title="The ns&#45;3 attribute system is the mechanism used in ns&#45;3 to organize, document, and modify the values ..." alt="" coords="5,5,92,31"/>
 <area shape="rect" title="All these macros can be used to generate automatically the code for subclasses of AttributeValue,..." alt="" coords="140,5,267,31"/>
 <area shape="rect" href="group__attributeimpl.html" title="These are the internal implementation functions for the Attribute system." alt="" coords="315,5,501,31"/>
+<area shape="rect" href="group__attributes.html" title="The ns&#45;3 attribute system is the mechanism used in ns&#45;3 to organize, document, and modify the values ..." alt="" coords="5,5,92,31"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -252,7 +249,7 @@ Macros</h2></td></tr>
 <div class="line">  {                                                                     \</div>
 <div class="line">    return MakeAccessorHelper&lt;type ## Value&gt; (a1, a2);                  \</div>
 <div class="line">  }</div>
-</div><!-- fragment --><p>Define the attribute accessor functions <code>MakeTypeAccessor</code> for class <code>type</code>.</p>
+</div><!-- fragment --><p>Define the attribute accessor functions <code>MakeTypeAccessor</code> for class <span class="params"><span class="paramname">type</span></span>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>The name of the class</td></tr>
@@ -282,15 +279,15 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keyword">class </span>type ## Checker : <span class="keyword">public</span> AttributeChecker {};                   \</div>
 <div class="line">  Ptr&lt;const AttributeChecker&gt; Make ## type ## Checker (<span class="keywordtype">void</span>)</div>
-</div><!-- fragment --><p>Declare the AttributeChecker class <code>typeChecker</code> and the <code>MaketypeChecker</code> function for class <code>type</code>.</p>
+</div><!-- fragment --><p>Declare the AttributeChecker class <span class="params"><span class="paramname">typeChecker</span></span> and the <code>MaketypeChecker</code> function for class <span class="params"><span class="paramname">type</span></span>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>The name of the class</td></tr>
   </table>
   </dd>
 </dl>
-<p>This macro declares the <code>typeChecker</code> class and the associated <code>MaketypeChecker</code> function.</p>
-<p>(Note that the <code>typeChecker</code> class needs no implementation since it just inherits all its implementation from AttributeChecker.)</p>
+<p>This macro declares the <span class="params"><span class="paramname">typeChecker</span></span> class and the associated <code>MaketypeChecker</code> function.</p>
+<p>(Note that the <span class="params"><span class="paramname">typeChecker</span></span> class needs no implementation since it just inherits all its implementation from AttributeChecker.)</p>
 <p>Typically invoked in the class header file. </p>
 
 <p class="definition">Definition at line <a class="el" href="attribute-helper_8h_source.html#l00263">263</a> of file <a class="el" href="attribute-helper_8h_source.html">attribute-helper.h</a>.</p>
@@ -316,7 +313,7 @@ Macros</h2></td></tr>
 <div class="line">    return MakeSimpleAttributeChecker&lt;type ## Value,type ## Checker&gt;    \</div>
 <div class="line">             (# type <span class="stringliteral">&quot;Value&quot;</span>, # type);                                  \</div>
 <div class="line">  }                                                                     \</div>
-</div><!-- fragment --><p>Define the <code>MaketypeChecker</code> function for class <code>type</code>.</p>
+</div><!-- fragment --><p>Define the <code>MaketypeChecker</code> function for class <span class="params"><span class="paramname">type</span></span>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>The name of the class</td></tr>
@@ -359,7 +356,7 @@ Macros</h2></td></tr>
 <div class="line">    return MakeSimpleAttributeChecker&lt;type ## Value,type ## Checker&gt;    \</div>
 <div class="line">             (# type <span class="stringliteral">&quot;Value&quot;</span>, name);                                    \</div>
 <div class="line">  }                                                                     \</div>
-</div><!-- fragment --><p>Define the <code>MaketypeChecker</code> function for class <code>type</code>.</p>
+</div><!-- fragment --><p>Define the <code>MaketypeChecker</code> function for class <span class="params"><span class="paramname">type</span></span>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>The name of the class. </td></tr>
@@ -367,7 +364,7 @@ Macros</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>This macro implements the <code>MaketypeChecker</code> function for class <code>type</code>.</p>
+<p>This macro implements the <code>MaketypeChecker</code> function for class <span class="params"><span class="paramname">type</span></span>.</p>
 <p>Typically invoked in the source file.. </p>
 
 <p class="definition">Definition at line <a class="el" href="attribute-helper_8h_source.html#l00364">364</a> of file <a class="el" href="attribute-helper_8h_source.html">attribute-helper.h</a>.</p>
@@ -389,7 +386,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Define the conversion operators class <code>type</code> and Attribute instances.</p>
+<p>Define the conversion operators class <span class="params"><span class="paramname">type</span></span> and Attribute instances.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>The name of the class</td></tr>
@@ -420,7 +417,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <a class="code" href="group__attributehelper.html#ga87c7604a9f872336f7d46b4a3666862d">ATTRIBUTE_CHECKER_IMPLEMENT</a> (type);                                   \</div>
 <div class="line">  ATTRIBUTE_VALUE_IMPLEMENT (type)</div>
-</div><!-- fragment --><p>Define the attribute value, accessor and checkers for class <code>type</code> </p>
+</div><!-- fragment --><p>Define the attribute value, accessor and checkers for class <span class="params"><span class="paramname">type</span></span></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>The name of the class</td></tr>
@@ -429,10 +426,10 @@ Macros</h2></td></tr>
 </dl>
 <p>This macro implements</p>
 <ul>
-<li>The <code>typeValue</code> class methods,</li>
+<li>The <span class="params"><span class="paramname">typeValue</span></span> class methods,</li>
 <li>The <code>MaketypeChecker</code> function,</li>
 </ul>
-<p>for class <code>type</code>.</p>
+<p>for class <span class="params"><span class="paramname">type</span></span>.</p>
 <p>This macro should be invoked from the class implementation file. </p>
 
 <p class="definition">Definition at line <a class="el" href="attribute-helper_8h_source.html#l00413">413</a> of file <a class="el" href="attribute-helper_8h_source.html">attribute-helper.h</a>.</p>
@@ -457,7 +454,7 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">  <a class="code" href="group__attributehelper.html#gaa968635865180782132b1c3358087613">ATTRIBUTE_VALUE_DEFINE</a> (type);                                        \</div>
 <div class="line">  ATTRIBUTE_ACCESSOR_DEFINE (type);                                     \</div>
 <div class="line">  ATTRIBUTE_CHECKER_DEFINE (type)</div>
-</div><!-- fragment --><p>Declare the attribute value, accessor and checkers for class <code>type</code> </p>
+</div><!-- fragment --><p>Declare the attribute value, accessor and checkers for class <span class="params"><span class="paramname">type</span></span></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>The name of the class</td></tr>
@@ -466,11 +463,11 @@ Macros</h2></td></tr>
 </dl>
 <p>This macro declares:</p>
 <ul>
-<li>The attribute value class <code>typeValue</code>,</li>
+<li>The attribute value class <span class="params"><span class="paramname">typeValue</span></span>,</li>
 <li>The attribute accessor functions <code>MaketypeAccessor</code>,</li>
-<li>The AttributeChecker class <code>typeChecker</code> and the <code>MaketypeChecker</code> function,</li>
+<li>The AttributeChecker class <span class="params"><span class="paramname">typeChecker</span></span>, and the <code>MaketypeChecker</code> function,</li>
 </ul>
-<p>for class <code>type</code>.</p>
+<p>for class <span class="params"><span class="paramname">type</span></span>.</p>
 <p>This macro should be invoked outside of the class declaration in its public header. </p>
 
 <p class="definition">Definition at line <a class="el" href="attribute-helper_8h_source.html#l00391">391</a> of file <a class="el" href="attribute-helper_8h_source.html">attribute-helper.h</a>.</p>
@@ -492,7 +489,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Declare the attribute value class <code>nameValue</code> for the class <code>name</code> </p>
+<p>Declare the attribute value class <span class="params"><span class="paramname">nameValue</span></span> for the class <span class="params"><span class="paramname">name</span></span></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The name of the class.</td></tr>
@@ -551,7 +548,7 @@ Macros</h2></td></tr>
 <div class="line">  private:                                                              \</div>
 <div class="line">    type m_value;                                                       \</div>
 <div class="line">  }</div>
-</div><!-- fragment --><p>Declare the attribute value class <code>nameValue</code> for underlying class <code>type</code>.</p>
+</div><!-- fragment --><p>Declare the attribute value class <span class="params"><span class="paramname">nameValue</span></span> for underlying class <span class="params"><span class="paramname">type</span></span>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>The underlying type name token </td></tr>
@@ -581,14 +578,14 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Define the class methods belonging to attribute value class <code>typeValue</code> for class <code>type</code>.</p>
+<p>Define the class methods belonging to attribute value class <span class="params"><span class="paramname">typeValue</span></span> for class <span class="params"><span class="paramname">type</span></span>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>The name of the class.</td></tr>
   </table>
   </dd>
 </dl>
-<p>This macro implements the <code>typeValue</code> class methods (including the <code>typeValue::SerializeToString</code> and <code>typeValue::DeserializeFromString</code> methods).</p>
+<p>This macro implements the <span class="params"><span class="paramname">typeValue</span></span> class methods (including the <span class="params"><span class="paramname">typeValue</span></span>%::SerializeToString and <span class="params"><span class="paramname">typeValue</span></span>%::DeserializeFromString methods).</p>
 <p>Typically invoked in the source file. </p>
 
 <p class="definition">Definition at line <a class="el" href="attribute-helper_8h_source.html#l00330">330</a> of file <a class="el" href="attribute-helper_8h_source.html">attribute-helper.h</a>.</p>
@@ -650,7 +647,7 @@ Macros</h2></td></tr>
 <div class="line">                         <span class="stringliteral">&quot; is not properly formatted&quot;</span>);                 \</div>
 <div class="line">    return !iss.bad () &amp;&amp; !iss.fail ();                                 \</div>
 <div class="line">  }</div>
-</div><!-- fragment --><p>Define the class methods belonging to the attribute value class <code>nameValue</code> of the underlying class <code>type</code>.</p>
+</div><!-- fragment --><p>Define the class methods belonging to the attribute value class <span class="params"><span class="paramname">nameValue</span></span> of the underlying class <span class="params"><span class="paramname">type</span></span>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>The underlying type name </td></tr>
@@ -658,7 +655,7 @@ Macros</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>This macro implements the <code>typeValue</code> class methods (including the <code>typeValue::SerializeToString</code> and <code>typeValue::DeserializeFromString</code> methods).</p>
+<p>This macro implements the <span class="params"><span class="paramname">typeValue</span></span> class methods (including the <span class="params"><span class="paramname">typeValue</span></span>%::SerializeToString and <span class="params"><span class="paramname">typeValue</span></span>%::DeserializeFromString methods).</p>
 <p>Typically invoked in the source file </p>
 
 <p class="definition">Definition at line <a class="el" href="attribute-helper_8h_source.html#l00284">284</a> of file <a class="el" href="attribute-helper_8h_source.html">attribute-helper.h</a>.</p>
@@ -678,7 +675,7 @@ Macros</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:12 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:19 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

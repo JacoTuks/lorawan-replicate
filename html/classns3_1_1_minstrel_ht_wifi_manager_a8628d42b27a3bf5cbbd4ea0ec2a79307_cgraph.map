@@ -29,7 +29,7 @@
 <area shape="rect" id="node9" href="$classns3_1_1_wifi_remote_station_manager.html#a2422db307a1cd07b938ec2d4b8442668" title="Return the default Modulation and Coding Scheme (MCS) index." alt="" coords="2037,619,2271,661"/>
 <area shape="rect" id="node10" href="$classns3_1_1_wifi_remote_station_manager.html#a0f76976a6d7a8761b1ae1b9b74f18fbf" title="Return the default transmission mode." alt="" coords="2037,489,2271,530"/>
 <area shape="rect" id="node11" href="$classns3_1_1_wifi_remote_station_manager.html#af042a3c6cc1e936255e794c4aa21e68c" title="Return the supported HE guard interval duration (in nanoseconds)." alt="" coords="2037,423,2271,465"/>
-<area shape="rect" id="node13" href="$classns3_1_1_random_variable_stream.html#a66cd94e6305ce7f000f1a9ff0fcb9aef" title="Get the next random value as an integer drawn from the distribution." alt="" coords="905,1029,1113,1070"/>
+<area shape="rect" id="node13" href="$classns3_1_1_uniform_random_variable.html#ab7c7dedc88cb97e74418df2edc28a787" title="Get the next random value, as an unsigned integer in the specified range ." alt="" coords="902,1029,1117,1070"/>
 <area shape="rect" id="node15" href="$classns3_1_1_minstrel_ht_wifi_manager.html#a8a5fa60f2ebd2df3d8b52022161e1f5e" title="Calculate the number of retransmissions to set for the index rate." alt="" coords="1205,161,1409,202"/>
 <area shape="rect" id="node18" href="$classns3_1_1_minstrel_ht_wifi_manager.html#ab18b51d0f2e2313dc166797e2082cfb9" title="Find a rate to use from Minstrel Table." alt="" coords="1205,43,1409,85"/>
 <area shape="rect" id="node20" href="$classns3_1_1_minstrel_ht_wifi_manager.html#a88255302b3e7c9b3f0dcc079e47b4a27" title="Obtain the TxTime saved in the group information." alt="" coords="907,379,1111,421"/>

@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -356,11 +353,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>a linear model of the Wifi transmit current </p>
-<p>This model assumes that the transmit current is a linear function of the nominal transmit power used to send the frame. In particular, the power absorbed during the transmission of a frame <img class="formulaInl" alt="$ W_{tx} $" src="form_163.png" width="0" height="13"/> is given by the power absorbed by the power amplifier <img class="formulaInl" alt="$ W_{pa} $" src="form_164.png" width="0" height="14"/> plus the power absorbed by the RF subsystem. The latter is assumed to be the same as the power absorbed in the IDLE state <img class="formulaInl" alt="$ W_{idle} $" src="form_165.png" width="0" height="13"/>.</p>
-<p>The efficiency <img class="formulaInl" alt="$ \eta $" src="form_166.png" width="0" height="9"/> of the power amplifier is given by <img class="formulaInl" alt="$ \eta = \frac{P_{tx}}{W_{pa}} $" src="form_167.png" width="0" height="20"/>, where <img class="formulaInl" alt="$ P_{tx} $" src="form_168.png" width="0" height="13"/> is the output power, i.e., the nominal transmit power. Hence, <img class="formulaInl" alt="$ W_{pa} = \frac{P_{tx}}{\eta} $" src="form_169.png" width="0" height="19"/></p>
-<p>It turns out that <img class="formulaInl" alt="$ W_{tx} = \frac{P_{tx}}{\eta} + W_{idle} $" src="form_170.png" width="0" height="19"/>. By dividing both sides by the supply voltage <img class="formulaInl" alt="$ V $" src="form_171.png" width="0" height="10"/>: <img class="formulaInl" alt="$ I_{tx} = \frac{P_{tx}}{V \cdot \eta} + I_{idle} $" src="form_172.png" width="0" height="19"/>, where <img class="formulaInl" alt="$ I_{tx} $" src="form_173.png" width="0" height="13"/> and <img class="formulaInl" alt="$ I_{idle} $" src="form_174.png" width="0" height="13"/> are, respectively, the transmit current and the idle current.</p>
+<p>This model assumes that the transmit current is a linear function of the nominal transmit power used to send the frame. In particular, the power absorbed during the transmission of a frame <img class="formulaInl" alt="$ W_{tx} $" src="form_163.png" width="21" height="13"/> is given by the power absorbed by the power amplifier <img class="formulaInl" alt="$ W_{pa} $" src="form_164.png" width="23" height="14"/> plus the power absorbed by the RF subsystem. The latter is assumed to be the same as the power absorbed in the IDLE state <img class="formulaInl" alt="$ W_{idle} $" src="form_165.png" width="28" height="13"/>.</p>
+<p>The efficiency <img class="formulaInl" alt="$ \eta $" src="form_166.png" width="8" height="9"/> of the power amplifier is given by <img class="formulaInl" alt="$ \eta = \frac{P_{tx}}{W_{pa}} $" src="form_167.png" width="46" height="20"/>, where <img class="formulaInl" alt="$ P_{tx} $" src="form_168.png" width="18" height="13"/> is the output power, i.e., the nominal transmit power. Hence, <img class="formulaInl" alt="$ W_{pa} = \frac{P_{tx}}{\eta} $" src="form_169.png" width="56" height="19"/></p>
+<p>It turns out that <img class="formulaInl" alt="$ W_{tx} = \frac{P_{tx}}{\eta} + W_{idle} $" src="form_170.png" width="100" height="19"/>. By dividing both sides by the supply voltage <img class="formulaInl" alt="$ V $" src="form_171.png" width="10" height="10"/>: <img class="formulaInl" alt="$ I_{tx} = \frac{P_{tx}}{V \cdot \eta} + I_{idle} $" src="form_172.png" width="90" height="19"/>, where <img class="formulaInl" alt="$ I_{tx} $" src="form_173.png" width="16" height="13"/> and <img class="formulaInl" alt="$ I_{idle} $" src="form_174.png" width="23" height="13"/> are, respectively, the transmit current and the idle current.</p>
 <p>For more information, refer to: Francesco Ivan Di Piazza, Stefano Mangione, and Ilenia Tinnirello. "On the Effects of Transmit Power Control on the Energy Consumption of WiFi Network Cards", Proceedings of ICST QShine 2009, pp. 463&ndash;475</p>
-<p>If the TX current corresponding to a given nominal transmit power is known, the efficiency of the power amplifier is given by the above formula: <img class="formulaInl" alt="$ \eta = \frac{P_{tx}}{(I_{tx}-I_{idle})\cdot V} $" src="form_175.png" width="0" height="19"/> </p>
+<p>If the TX current corresponding to a given nominal transmit power is known, the efficiency of the power amplifier is given by the above formula: <img class="formulaInl" alt="$ \eta = \frac{P_{tx}}{(I_{tx}-I_{idle})\cdot V} $" src="form_175.png" width="86" height="19"/> </p>
 
 <p class="definition">Definition at line <a class="el" href="wifi-tx-current-model_8h_source.html#l00084">84</a> of file <a class="el" href="wifi-tx-current-model_8h_source.html">wifi-tx-current-model.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -494,7 +491,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="wifi-tx-current-model_8cc_source.html#l00053">53</a> of file <a class="el" href="wifi-tx-current-model_8cc_source.html">wifi-tx-current-model.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="wifi-tx-current-model_8h_source.html#l00100">m_eta</a>, <a class="el" href="wifi-tx-current-model_8h_source.html#l00102">m_idleCurrent</a>, <a class="el" href="wifi-tx-current-model_8h_source.html#l00101">m_voltage</a>, <a class="el" href="double_8h_source.html#l00042">ns3::MakeDoubleAccessor()</a>, and <a class="el" href="type-id_8cc_source.html#l00922">ns3::TypeId::SetParent()</a>.</p>
+<p class="reference">References <a class="el" href="wifi-tx-current-model_8h_source.html#l00100">m_eta</a>, <a class="el" href="wifi-tx-current-model_8h_source.html#l00102">m_idleCurrent</a>, <a class="el" href="wifi-tx-current-model_8h_source.html#l00101">m_voltage</a>, <a class="el" href="double_8h_source.html#l00042">ns3::MakeDoubleAccessor()</a>, and <a class="el" href="type-id_8cc_source.html#l00923">ns3::TypeId::SetParent()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -612,7 +609,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_linear_wifi_tx_current_model.html">LinearWifiTxCurrentModel</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:28 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:33 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

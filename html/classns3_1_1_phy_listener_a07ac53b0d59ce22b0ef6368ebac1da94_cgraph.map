@@ -1,6 +1,6 @@
 <map id="ns3::PhyListener::NotifyRxEndError" name="ns3::PhyListener::NotifyRxEndError">
 <area shape="rect" id="node1" title="We have received the last bit of a packet for which NotifyRxStart was invoked first and,..." alt="" coords="5,814,183,855"/>
-<area shape="rect" id="node2" href="$classns3_1_1_channel_access_manager.html#afca7211bcead1cf8508e713df76fc91f" title="Notify the DCF that a packet reception was just completed unsuccessfully." alt="" coords="231,814,439,855"/>
+<area shape="rect" id="node2" href="$classns3_1_1_channel_access_manager.html#afca7211bcead1cf8508e713df76fc91f" title="Notify the Txop that a packet reception was just completed unsuccessfully." alt="" coords="231,814,439,855"/>
 <area shape="rect" id="node3" href="$classns3_1_1_simulator.html#ac3178fa975b419f7875e7105be122800" title="Return the current simulation virtual time." alt="" coords="487,821,640,848"/>
 <area shape="rect" id="node4" href="$group__simulator.html#ga42eb4eddad41528d4d99794a3dae3fd0" title="Get the SimulatorImpl singleton." alt="" coords="727,745,832,772"/>
 <area shape="rect" id="node50" href="$classns3_1_1_simulator_impl.html#aa516c50060846adc6fd316e83ef0797c" title="Return the current simulation virtual time." alt="" coords="688,821,871,848"/>

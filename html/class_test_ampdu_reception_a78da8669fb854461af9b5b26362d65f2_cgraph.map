@@ -1,7 +1,7 @@
 <map id="TestAmpduReception::SendAmpduWithThreeMpdus" name="TestAmpduReception::SendAmpduWithThreeMpdus">
 <area shape="rect" id="node1" title="Send A&#45;MPDU with 3 MPDUs of different size (i&#45;th MSDU will have 100 bytes more than (i&#45;1)&#45;th)." alt="" coords="5,536,224,577"/>
 <area shape="rect" id="node2" href="$classns3_1_1_wifi_phy.html#aee98c7241bb4f0bb8e6d90f5771dacc7" title=" " alt="" coords="272,343,459,384"/>
-<area shape="rect" id="node13" href="$namespacens3.html#a5004264c5648328a038debee4aaddf0e" title="Convert from dBm to Watts." alt="" coords="310,442,421,469"/>
+<area shape="rect" id="node13" href="$namespacens3_1_1lorawan.html#a6d14252aaccaf79e2535bfa2284ba529" title="Convert from dBm to Watts." alt="" coords="280,442,451,469"/>
 <area shape="rect" id="node14" href="$classns3_1_1_wifi_phy.html#afca470e272ec5c3126da63c0a6102f4c" title=" " alt="" coords="517,543,717,570"/>
 <area shape="rect" id="node15" href="$classns3_1_1_wifi_psdu.html#a0fbb2977085daf82b50f106ae41088b2" title="Return the size of the PSDU in bytes." alt="" coords="281,917,449,943"/>
 <area shape="rect" id="node16" href="$classns3_1_1_wifi_mac_header.html#a84a98932f5b66cca86bdfaa9cb1bcf7b" title="Set the TID for the QoS header." alt="" coords="289,968,442,1009"/>

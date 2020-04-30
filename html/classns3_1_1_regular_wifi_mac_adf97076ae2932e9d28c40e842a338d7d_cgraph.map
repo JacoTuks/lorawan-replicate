@@ -14,10 +14,10 @@
 <area shape="rect" id="node18" href="$group__timecivil.html#ga281d64bcb4dad96267d83c7688ec433f" title=" " alt="" coords="252,625,393,651"/>
 <area shape="rect" id="node27" href="$classns3_1_1_he_capabilities.html#ac9aad47e945ee626012531949c76b7dc" title="Set channel width set." alt="" coords="241,676,404,717"/>
 <area shape="rect" id="node28" href="$classns3_1_1_he_capabilities.html#acd7bb720989d9048a8a375464fc51845" title="Set HE LTF and GI for HE PDPUs." alt="" coords="221,741,424,783"/>
-<area shape="rect" id="node29" href="$classns3_1_1_he_capabilities.html#a27bea40f066d180bb70a5998583359c3" title="Set HE supported." alt="" coords="249,807,397,848"/>
+<area shape="rect" id="node29" href="$classns3_1_1_he_capabilities.html#a5b149434716269b9261808ed7d39a09a" title="Set HE supported." alt="" coords="249,807,397,848"/>
 <area shape="rect" id="node30" href="$classns3_1_1_he_capabilities.html#ae295efd88be1be35c6b324c02a7ebc2c" title="Set highest MCS supported." alt="" coords="226,872,419,913"/>
 <area shape="rect" id="node31" href="$classns3_1_1_he_capabilities.html#a7757bb2517113e7b8489af53ae1e7d72" title="Set highest NSS supported." alt="" coords="227,937,418,979"/>
-<area shape="rect" id="node32" href="$classns3_1_1_he_capabilities.html#a43b42f08ed795813aa30c1f6a4fa4afa" title="Set the maximum AMPDU length." alt="" coords="238,1003,407,1044"/>
+<area shape="rect" id="node32" href="$classns3_1_1_he_capabilities.html#aa6b757f411d2359e6329e8030119b007" title="Set the maximum AMPDU length." alt="" coords="238,1003,407,1044"/>
 <area shape="rect" id="node5" href="$classns3_1_1_wifi_mac.html#ad2f6868310980347c60bbfa08494dc4a" title="Return the device this PHY is associated with." alt="" coords="784,122,967,149"/>
 <area shape="rect" id="node6" href="$classns3_1_1_wifi_net_device.html#af4a86ccc320631308e9f1023baecdd6b" title=" " alt="" coords="796,173,955,215"/>
 <area shape="rect" id="node11" href="$classns3_1_1_wifi_mode_factory.html#a3086868810ff4347e31c63027726f544" title="Return a WifiModeItem at the given UID index." alt="" coords="779,414,972,441"/>

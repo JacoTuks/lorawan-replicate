@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -178,7 +175,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a7079cbeddf94e80cdea02555ce1926df"><td class="mdescLeft">&#160;</td><td class="mdescRight">When an A-MPDU is received, the window start may change to a new value depending on the sequence number of the received MPDU (standard11n page 134).  <a href="classns3_1_1_block_ack_cache.html#a7079cbeddf94e80cdea02555ce1926df">More...</a><br /></td></tr>
 <tr class="separator:a7079cbeddf94e80cdea02555ce1926df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38bbf9991bacc70374daf9b9f59731e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_block_ack_cache.html#a38bbf9991bacc70374daf9b9f59731e1">Init</a> (uint16_t winStart, uint16_t winSize)</td></tr>
-<tr class="memdesc:a38bbf9991bacc70374daf9b9f59731e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init function.  <a href="classns3_1_1_block_ack_cache.html#a38bbf9991bacc70374daf9b9f59731e1">More...</a><br /></td></tr>
+<tr class="memdesc:a38bbf9991bacc70374daf9b9f59731e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization function.  <a href="classns3_1_1_block_ack_cache.html#a38bbf9991bacc70374daf9b9f59731e1">More...</a><br /></td></tr>
 <tr class="separator:a38bbf9991bacc70374daf9b9f59731e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a269acd2840aa5d8eda4ae61ad6e9f441"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_block_ack_cache.html#a269acd2840aa5d8eda4ae61ad6e9f441">UpdateWithBlockAckReq</a> (uint16_t startingSeq)</td></tr>
 <tr class="memdesc:a269acd2840aa5d8eda4ae61ad6e9f441"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update with block ack request function.  <a href="classns3_1_1_block_ack_cache.html#a269acd2840aa5d8eda4ae61ad6e9f441">More...</a><br /></td></tr>
@@ -190,7 +187,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:abe2341db866f7f2f309912da4be34a65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_block_ack_cache.html#abe2341db866f7f2f309912da4be34a65">ResetPortionOfBitmap</a> (uint16_t start, uint16_t end)</td></tr>
-<tr class="memdesc:abe2341db866f7f2f309912da4be34a65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset portion of bitmap functiion.  <a href="classns3_1_1_block_ack_cache.html#abe2341db866f7f2f309912da4be34a65">More...</a><br /></td></tr>
+<tr class="memdesc:abe2341db866f7f2f309912da4be34a65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset portion of bitmap function.  <a href="classns3_1_1_block_ack_cache.html#abe2341db866f7f2f309912da4be34a65">More...</a><br /></td></tr>
 <tr class="separator:abe2341db866f7f2f309912da4be34a65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -249,10 +246,10 @@ Private Attributes</h2></td></tr>
 <map name="classns3_1_1_block_ack_cache_a53f2f4c162a246e6d3f5de4c32f69c01_cgraph" id="classns3_1_1_block_ack_cache_a53f2f4c162a246e6d3f5de4c32f69c01_cgraph">
 <area shape="rect" title="Fill block ack bitmap function." alt="" coords="5,169,160,211"/>
 <area shape="rect" href="classns3_1_1_ctrl_b_ack_response_header.html#af96fddd0138c4a402967c0a6d2ed3bd6" title="Return the starting sequence number." alt="" coords="208,5,427,47"/>
-<area shape="rect" href="classns3_1_1_ctrl_b_ack_response_header.html#a5d341ad4696582ffabde4295e87b857a" title="Check if the current BA policy is basic block ACK." alt="" coords="208,71,427,112"/>
-<area shape="rect" href="classns3_1_1_ctrl_b_ack_response_header.html#a251298f92a1f6a74fc2ba641eacdecbb" title="Check if the current BA policy is compressed block ACK." alt="" coords="208,136,427,177"/>
-<area shape="rect" href="classns3_1_1_ctrl_b_ack_response_header.html#ac62cbcc37d1a21fc7c27eb90aa38ffb3" title="Check if the current BA policy is extended compressed block ACK." alt="" coords="208,201,427,243"/>
-<area shape="rect" href="classns3_1_1_ctrl_b_ack_response_header.html#acbeb9e0f922fff5758b26c1a3e3ffabb" title="Check if the current BA policy is multi&#45;TID block ACK." alt="" coords="208,267,427,308"/>
+<area shape="rect" href="classns3_1_1_ctrl_b_ack_response_header.html#a5d341ad4696582ffabde4295e87b857a" title="Check if the current BA policy is Basic Block Ack." alt="" coords="208,71,427,112"/>
+<area shape="rect" href="classns3_1_1_ctrl_b_ack_response_header.html#a251298f92a1f6a74fc2ba641eacdecbb" title="Check if the current BA policy is Compressed Block Ack." alt="" coords="208,136,427,177"/>
+<area shape="rect" href="classns3_1_1_ctrl_b_ack_response_header.html#ac62cbcc37d1a21fc7c27eb90aa38ffb3" title="Check if the current BA policy is Extended Compressed Block Ack." alt="" coords="208,201,427,243"/>
+<area shape="rect" href="classns3_1_1_ctrl_b_ack_response_header.html#acbeb9e0f922fff5758b26c1a3e3ffabb" title="Check if the current BA policy is Multi&#45;TID Block Ack." alt="" coords="208,267,427,308"/>
 <area shape="rect" href="classns3_1_1_ctrl_b_ack_response_header.html#af4aa188d4fe6bb69fe1e9ca24733e5a5" title="Set the bitmap that the packet with the given sequence number was received." alt="" coords="208,332,427,373"/>
 <area shape="rect" href="classns3_1_1_ctrl_b_ack_response_header.html#a3433826e7515c839bec3209c61f1f6af" title="This function is used to correctly index in both bitmap and compressed bitmap, one bit or one block o..." alt="" coords="475,299,693,340"/>
 <area shape="rect" href="classns3_1_1_ctrl_b_ack_response_header.html#a43c3236a78f754ab7a29d2f5da11a6e8" title="Checks if sequence number seq can be acknowledged in the bitmap." alt="" coords="475,364,693,405"/>
@@ -312,7 +309,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Init function. </p>
+<p>Initialization function. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">winStart</td><td>the window start </td></tr>
@@ -325,7 +322,7 @@ Private Attributes</h2></td></tr>
 
 <p class="reference">References <a class="el" href="block-ack-cache_8h_source.html#l00083">m_bitmap</a>, <a class="el" href="block-ack-cache_8h_source.html#l00081">m_winEnd</a>, <a class="el" href="block-ack-cache_8h_source.html#l00080">m_winSize</a>, <a class="el" href="block-ack-cache_8h_source.html#l00079">m_winStart</a>, and <a class="el" href="log-macros-enabled_8h_source.html#l00209">NS_LOG_FUNCTION</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mac-low_8cc_source.html#l02231">ns3::MacLow::CreateBlockAckAgreement()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mac-low_8cc_source.html#l02259">ns3::MacLow::CreateBlockAckAgreement()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -333,7 +330,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_block_ack_cache_a38bbf9991bacc70374daf9b9f59731e1_icgraph.png" border="0" usemap="#classns3_1_1_block_ack_cache_a38bbf9991bacc70374daf9b9f59731e1_icgraph" alt=""/></div>
 <map name="classns3_1_1_block_ack_cache_a38bbf9991bacc70374daf9b9f59731e1_icgraph" id="classns3_1_1_block_ack_cache_a38bbf9991bacc70374daf9b9f59731e1_icgraph">
-<area shape="rect" title="Init function." alt="" coords="247,5,400,47"/>
+<area shape="rect" title="Initialization function." alt="" coords="247,5,400,47"/>
 <area shape="rect" href="classns3_1_1_mac_low.html#ab70f7f727b5f9e1e1357a73e29ba7f82" title=" " alt="" coords="5,5,199,47"/>
 </map>
 </div>
@@ -374,7 +371,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reset portion of bitmap functiion. </p>
+<p>Reset portion of bitmap function. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">start</td><td>the starting position </td></tr>
@@ -395,7 +392,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_block_ack_cache_abe2341db866f7f2f309912da4be34a65_cgraph.png" border="0" usemap="#classns3_1_1_block_ack_cache_abe2341db866f7f2f309912da4be34a65_cgraph" alt=""/></div>
 <map name="classns3_1_1_block_ack_cache_abe2341db866f7f2f309912da4be34a65_cgraph" id="classns3_1_1_block_ack_cache_abe2341db866f7f2f309912da4be34a65_cgraph">
-<area shape="rect" title="Reset portion of bitmap functiion." alt="" coords="5,5,180,47"/>
+<area shape="rect" title="Reset portion of bitmap function." alt="" coords="5,5,180,47"/>
 <area shape="rect" href="namespacevisualizer_1_1core.html#a2a35e5d8a34af358b508dac8635754e0" title=" " alt="" coords="228,13,379,39"/>
 <area shape="rect" href="namespacevisualizer_1_1base.html#ad171497a5ff1afe0a73bedaebf35448f" title=" " alt="" coords="427,5,579,47"/>
 <area shape="rect" href="namespacevisualizer_1_1base.html#a6b0ffcff1e17ec4027496f50177e5b9e" title=" " alt="" coords="627,5,801,47"/>
@@ -408,7 +405,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_block_ack_cache_abe2341db866f7f2f309912da4be34a65_icgraph.png" border="0" usemap="#classns3_1_1_block_ack_cache_abe2341db866f7f2f309912da4be34a65_icgraph" alt=""/></div>
 <map name="classns3_1_1_block_ack_cache_abe2341db866f7f2f309912da4be34a65_icgraph" id="classns3_1_1_block_ack_cache_abe2341db866f7f2f309912da4be34a65_icgraph">
-<area shape="rect" title="Reset portion of bitmap functiion." alt="" coords="245,39,420,80"/>
+<area shape="rect" title="Reset portion of bitmap function." alt="" coords="245,39,420,80"/>
 <area shape="rect" href="classns3_1_1_block_ack_cache.html#a269acd2840aa5d8eda4ae61ad6e9f441" title="Update with block ack request function." alt="" coords="5,5,197,47"/>
 <area shape="rect" href="classns3_1_1_block_ack_cache.html#ad53e955bbd3e58e1833a90894e67e6eb" title="Update with MPDU function." alt="" coords="25,71,178,112"/>
 </map>
@@ -453,7 +450,7 @@ Private Attributes</h2></td></tr>
 <area shape="rect" title="Update with block ack request function." alt="" coords="5,49,197,90"/>
 <area shape="rect" href="namespacens3.html#afba55479deec541244248815e1a33924" title=" " alt="" coords="273,5,401,32"/>
 <area shape="rect" href="group__wifi.html#ga5cb9ea723837c5a036e622612f2d0bb0" title=" " alt="" coords="245,56,429,83"/>
-<area shape="rect" href="classns3_1_1_block_ack_cache.html#abe2341db866f7f2f309912da4be34a65" title="Reset portion of bitmap functiion." alt="" coords="250,107,425,149"/>
+<area shape="rect" href="classns3_1_1_block_ack_cache.html#abe2341db866f7f2f309912da4be34a65" title="Reset portion of bitmap function." alt="" coords="250,107,425,149"/>
 <area shape="rect" href="namespacevisualizer_1_1core.html#a2a35e5d8a34af358b508dac8635754e0" title=" " alt="" coords="477,115,628,141"/>
 <area shape="rect" href="namespacevisualizer_1_1base.html#ad171497a5ff1afe0a73bedaebf35448f" title=" " alt="" coords="676,107,828,149"/>
 <area shape="rect" href="namespacevisualizer_1_1base.html#a6b0ffcff1e17ec4027496f50177e5b9e" title=" " alt="" coords="876,107,1051,149"/>
@@ -501,7 +498,7 @@ Private Attributes</h2></td></tr>
 <area shape="rect" href="classns3_1_1_wifi_mac_header.html#a3d393ad4f9cfaca5ce0ac239a27f2763" title="Return the sequence number of the header." alt="" coords="215,71,383,112"/>
 <area shape="rect" href="namespacens3.html#afba55479deec541244248815e1a33924" title=" " alt="" coords="235,137,363,163"/>
 <area shape="rect" href="group__wifi.html#ga5cb9ea723837c5a036e622612f2d0bb0" title=" " alt="" coords="207,187,391,214"/>
-<area shape="rect" href="classns3_1_1_block_ack_cache.html#abe2341db866f7f2f309912da4be34a65" title="Reset portion of bitmap functiion." alt="" coords="211,239,386,280"/>
+<area shape="rect" href="classns3_1_1_block_ack_cache.html#abe2341db866f7f2f309912da4be34a65" title="Reset portion of bitmap function." alt="" coords="211,239,386,280"/>
 <area shape="rect" href="namespacevisualizer_1_1core.html#a2a35e5d8a34af358b508dac8635754e0" title=" " alt="" coords="439,246,589,273"/>
 <area shape="rect" href="namespacevisualizer_1_1base.html#ad171497a5ff1afe0a73bedaebf35448f" title=" " alt="" coords="637,239,789,280"/>
 <area shape="rect" href="namespacevisualizer_1_1base.html#a6b0ffcff1e17ec4027496f50177e5b9e" title=" " alt="" coords="837,239,1012,280"/>
@@ -637,7 +634,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_block_ack_cache.html">BlockAckCache</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:21 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:26 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

@@ -24,7 +24,7 @@ var dir_004255f83d9e223baf9439334f3a79f3 =
     [ "nix-vector.h", "nix-vector_8h.html", null ],
     [ "node-list.cc", "node-list_8cc.html", null ],
     [ "node-list.h", "node-list_8h.html", null ],
-    [ "node.cc", "node_8cc.html", "node_8cc" ],
+    [ "node.cc", "node_8cc.html", null ],
     [ "node.h", "node_8h.html", [
       [ "ProtocolHandlerEntry", "structns3_1_1_node_1_1_protocol_handler_entry.html", "structns3_1_1_node_1_1_protocol_handler_entry" ]
     ] ],

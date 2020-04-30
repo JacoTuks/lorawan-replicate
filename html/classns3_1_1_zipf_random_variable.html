@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -392,7 +389,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>The Zipf distribution Random Number Generator (RNG) that allows stream numbers to be set deterministically. </p>
 <p>This class supports the creation of objects that return random numbers from a fixed Zipf distribution. It also supports the generation of single random numbers from various Zipf distributions.</p>
 <p>The Zipf's law states that given some corpus of natural language utterances, the frequency of any word is inversely proportional to its rank in the frequency table.</p>
-<p>Zipf's distribution has two parameters, alpha and N, where: <img class="formulaInl" alt="$ \alpha &gt; 0 $" src="form_50.png" width="0" height="10"/> (real) and <img class="formulaInl" alt="$ N \in \{1,2,3 \dots\}$" src="form_51.png" width="0" height="14"/> (integer). Probability Mass Function is <img class="formulaInl" alt="$ f(k; \alpha, N) = k^{-\alpha}/ H_{N,\alpha} $" src="form_52.png" width="0" height="14"/> where <img class="formulaInl" alt="$ H_{N,\alpha} = \sum_{m=1}^N m^{-\alpha} $" src="form_53.png" width="0" height="18"/></p>
+<p>Zipf's distribution has two parameters, alpha and N, where: <img class="formulaInl" alt="$ \alpha &gt; 0 $" src="form_50.png" width="30" height="10"/> (real) and <img class="formulaInl" alt="$ N \in \{1,2,3 \dots\}$" src="form_51.png" width="86" height="14"/> (integer). Probability Mass Function is <img class="formulaInl" alt="$ f(k; \alpha, N) = k^{-\alpha}/ H_{N,\alpha} $" src="form_52.png" width="128" height="14"/> where <img class="formulaInl" alt="$ H_{N,\alpha} = \sum_{m=1}^N m^{-\alpha} $" src="form_53.png" width="108" height="18"/></p>
 <p>Here is an example of how to use this class: </p><div class="fragment"><div class="line">uint32_t <a class="code" href="namespacesample-rng-plot.html#aeb5ee5c431e338ef39b7ac5431242e1d">n</a> = 1;</div>
 <div class="line"><span class="keywordtype">double</span> <a class="code" href="namespacesample-rng-plot.html#a2dbe7a25aeb215cb725a5f95b432e53d">alpha</a> = 2.0;</div>
 <div class="line"> </div>
@@ -516,7 +513,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A random unsigned integer value.</dd></dl>
-<p>Note that antithetic values are being generated if m_isAntithetic is equal to true. If <img class="formulaInl" alt="$u$" src="form_13.png" width="0" height="6"/> is a uniform variable over [0,1] and <img class="formulaInl" alt="$x$" src="form_5.png" width="0" height="6"/> is a value that would be returned normally, then <img class="formulaInl" alt="$(1 - u$" src="form_63.png" width="0" height="14"/>) is the distance that <img class="formulaInl" alt="$u$" src="form_13.png" width="0" height="6"/> would be from <img class="formulaInl" alt="$1$" src="form_64.png" width="0" height="9"/>. The value returned in the antithetic case, <img class="formulaInl" alt="$x'$" src="form_59.png" width="0" height="10"/>, uses (1-u), which is the distance <img class="formulaInl" alt="$u$" src="form_13.png" width="0" height="6"/> is from the 1. </p>
+<p>Note that antithetic values are being generated if m_isAntithetic is equal to true. If <img class="formulaInl" alt="$u$" src="form_13.png" width="9" height="6"/> is a uniform variable over [0,1] and <img class="formulaInl" alt="$x$" src="form_5.png" width="8" height="6"/> is a value that would be returned normally, then <img class="formulaInl" alt="$(1 - u$" src="form_63.png" width="34" height="14"/>) is the distance that <img class="formulaInl" alt="$u$" src="form_13.png" width="9" height="6"/> would be from <img class="formulaInl" alt="$1$" src="form_64.png" width="5" height="9"/>. The value returned in the antithetic case, <img class="formulaInl" alt="$x'$" src="form_59.png" width="11" height="10"/>, uses (1-u), which is the distance <img class="formulaInl" alt="$u$" src="form_13.png" width="9" height="6"/> is from the 1. </p>
 
 <p class="definition">Definition at line <a class="el" href="random-variable-stream_8cc_source.html#l01356">1356</a> of file <a class="el" href="random-variable-stream_8cc_source.html">random-variable-stream.cc</a>.</p>
 
@@ -561,7 +558,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns a random unsigned integer from a Zipf distribution with the current n and alpha. </p>
 <dl class="section return"><dt>Returns</dt><dd>A random unsigned integer value.</dd></dl>
-<p>Note that antithetic values are being generated if m_isAntithetic is equal to true. If <img class="formulaInl" alt="$u$" src="form_13.png" width="0" height="6"/> is a uniform variable over [0,1] and <img class="formulaInl" alt="$x$" src="form_5.png" width="0" height="6"/> is a value that would be returned normally, then <img class="formulaInl" alt="$(1 - u$" src="form_63.png" width="0" height="14"/>) is the distance that <img class="formulaInl" alt="$u$" src="form_13.png" width="0" height="6"/> would be from <img class="formulaInl" alt="$1$" src="form_64.png" width="0" height="9"/>. The value returned in the antithetic case, <img class="formulaInl" alt="$x'$" src="form_59.png" width="0" height="10"/>, uses (1-u), which is the distance <img class="formulaInl" alt="$u$" src="form_13.png" width="0" height="6"/> is from the 1. </p>
+<p>Note that antithetic values are being generated if m_isAntithetic is equal to true. If <img class="formulaInl" alt="$u$" src="form_13.png" width="9" height="6"/> is a uniform variable over [0,1] and <img class="formulaInl" alt="$x$" src="form_5.png" width="8" height="6"/> is a value that would be returned normally, then <img class="formulaInl" alt="$(1 - u$" src="form_63.png" width="34" height="14"/>) is the distance that <img class="formulaInl" alt="$u$" src="form_13.png" width="9" height="6"/> would be from <img class="formulaInl" alt="$1$" src="form_64.png" width="5" height="9"/>. The value returned in the antithetic case, <img class="formulaInl" alt="$x'$" src="form_59.png" width="11" height="10"/>, uses (1-u), which is the distance <img class="formulaInl" alt="$u$" src="form_13.png" width="9" height="6"/> is from the 1. </p>
 
 <p>Implements <a class="el" href="classns3_1_1_random_variable_stream.html#a66cd94e6305ce7f000f1a9ff0fcb9aef">ns3::RandomVariableStream</a>.</p>
 
@@ -636,7 +633,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="random-variable-stream_8cc_source.html#l01287">1287</a> of file <a class="el" href="random-variable-stream_8cc_source.html">random-variable-stream.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="random-variable-stream_8h_source.html#l02193">m_alpha</a>, <a class="el" href="random-variable-stream_8h_source.html#l02190">m_n</a>, <a class="el" href="double_8h_source.html#l00042">ns3::MakeDoubleAccessor()</a>, <a class="el" href="integer_8h_source.html#l00045">ns3::MakeIntegerAccessor()</a>, and <a class="el" href="type-id_8cc_source.html#l00922">ns3::TypeId::SetParent()</a>.</p>
+<p class="reference">References <a class="el" href="random-variable-stream_8h_source.html#l02193">m_alpha</a>, <a class="el" href="random-variable-stream_8h_source.html#l02190">m_n</a>, <a class="el" href="double_8h_source.html#l00042">ns3::MakeDoubleAccessor()</a>, <a class="el" href="integer_8h_source.html#l00045">ns3::MakeIntegerAccessor()</a>, and <a class="el" href="type-id_8cc_source.html#l00923">ns3::TypeId::SetParent()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -691,7 +688,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A floating point random value.</dd></dl>
-<p>Note that antithetic values are being generated if m_isAntithetic is equal to true. If <img class="formulaInl" alt="$u$" src="form_13.png" width="0" height="6"/> is a uniform variable over [0,1] and <img class="formulaInl" alt="$x$" src="form_5.png" width="0" height="6"/> is a value that would be returned normally, then <img class="formulaInl" alt="$(1 - u$" src="form_63.png" width="0" height="14"/>) is the distance that <img class="formulaInl" alt="$u$" src="form_13.png" width="0" height="6"/> would be from <img class="formulaInl" alt="$1$" src="form_64.png" width="0" height="9"/>. The value returned in the antithetic case, <img class="formulaInl" alt="$x'$" src="form_59.png" width="0" height="10"/>, uses (1-u), which is the distance <img class="formulaInl" alt="$u$" src="form_13.png" width="0" height="6"/> is from the 1. </p>
+<p>Note that antithetic values are being generated if m_isAntithetic is equal to true. If <img class="formulaInl" alt="$u$" src="form_13.png" width="9" height="6"/> is a uniform variable over [0,1] and <img class="formulaInl" alt="$x$" src="form_5.png" width="8" height="6"/> is a value that would be returned normally, then <img class="formulaInl" alt="$(1 - u$" src="form_63.png" width="34" height="14"/>) is the distance that <img class="formulaInl" alt="$u$" src="form_13.png" width="9" height="6"/> would be from <img class="formulaInl" alt="$1$" src="form_64.png" width="5" height="9"/>. The value returned in the antithetic case, <img class="formulaInl" alt="$x'$" src="form_59.png" width="11" height="10"/>, uses (1-u), which is the distance <img class="formulaInl" alt="$u$" src="form_13.png" width="9" height="6"/> is from the 1. </p>
 
 <p class="definition">Definition at line <a class="el" href="random-variable-stream_8cc_source.html#l01324">1324</a> of file <a class="el" href="random-variable-stream_8cc_source.html">random-variable-stream.cc</a>.</p>
 
@@ -738,7 +735,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns a random double from a Zipf distribution with the current n and alpha. </p>
 <dl class="section return"><dt>Returns</dt><dd>A floating point random value.</dd></dl>
-<p>Note that antithetic values are being generated if m_isAntithetic is equal to true. If <img class="formulaInl" alt="$u$" src="form_13.png" width="0" height="6"/> is a uniform variable over [0,1] and <img class="formulaInl" alt="$x$" src="form_5.png" width="0" height="6"/> is a value that would be returned normally, then <img class="formulaInl" alt="$(1 - u$" src="form_63.png" width="0" height="14"/>) is the distance that <img class="formulaInl" alt="$u$" src="form_13.png" width="0" height="6"/> would be from <img class="formulaInl" alt="$1$" src="form_64.png" width="0" height="9"/>. The value returned in the antithetic case, <img class="formulaInl" alt="$x'$" src="form_59.png" width="0" height="10"/>, uses (1-u), which is the distance <img class="formulaInl" alt="$u$" src="form_13.png" width="0" height="6"/> is from the 1.</p>
+<p>Note that antithetic values are being generated if m_isAntithetic is equal to true. If <img class="formulaInl" alt="$u$" src="form_13.png" width="9" height="6"/> is a uniform variable over [0,1] and <img class="formulaInl" alt="$x$" src="form_5.png" width="8" height="6"/> is a value that would be returned normally, then <img class="formulaInl" alt="$(1 - u$" src="form_63.png" width="34" height="14"/>) is the distance that <img class="formulaInl" alt="$u$" src="form_13.png" width="9" height="6"/> would be from <img class="formulaInl" alt="$1$" src="form_64.png" width="5" height="9"/>. The value returned in the antithetic case, <img class="formulaInl" alt="$x'$" src="form_59.png" width="11" height="10"/>, uses (1-u), which is the distance <img class="formulaInl" alt="$u$" src="form_13.png" width="9" height="6"/> is from the 1.</p>
 <p>Note that we have to re-implement this method here because the method is overloaded above for the two-argument variant and the c++ name resolution rules don't work well with overloads split between parent and child classes. </p>
 
 <p>Implements <a class="el" href="classns3_1_1_random_variable_stream.html#a4fa5944dc4cb11544e661ed23072b36c">ns3::RandomVariableStream</a>.</p>
@@ -864,7 +861,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_zipf_random_variable.html">ZipfRandomVariable</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:47 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:48 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

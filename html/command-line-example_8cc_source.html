@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -231,7 +228,7 @@ $(document).ready(function(){initNavTree('command-line-example_8cc_source.html',
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> nonOpt2Def = nonOpt2;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <a class="code" href="classns3_1_1_command_line.html">CommandLine</a> <a class="code" href="namespacesecond.html#ae84c87468c0e4398eab4dbb6cadc17d9">cmd</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <a class="code" href="group__commandline.html#ga6520780a7fe4f370c303f7a8a39fd077">COMMANDLINE</a> (<a class="code" href="namespacesecond.html#ae84c87468c0e4398eab4dbb6cadc17d9">cmd</a>);</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <a class="code" href="namespacesecond.html#ae84c87468c0e4398eab4dbb6cadc17d9">cmd</a>.Usage (<span class="stringliteral">&quot;CommandLine example program.\n&quot;</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;             <span class="stringliteral">&quot;\n&quot;</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;             <span class="stringliteral">&quot;This little program demonstrates how to use CommandLine.&quot;</span>);</div>
@@ -240,13 +237,13 @@ $(document).ready(function(){initNavTree('command-line-example_8cc_source.html',
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <a class="code" href="namespacesecond.html#ae84c87468c0e4398eab4dbb6cadc17d9">cmd</a>.AddValue (<span class="stringliteral">&quot;strArg&quot;</span>,  <span class="stringliteral">&quot;a string argument&quot;</span>,     strArg);</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <a class="code" href="namespacesecond.html#ae84c87468c0e4398eab4dbb6cadc17d9">cmd</a>.AddValue (<span class="stringliteral">&quot;anti&quot;</span>,    attrPath);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <a class="code" href="namespacesecond.html#ae84c87468c0e4398eab4dbb6cadc17d9">cmd</a>.AddValue (<span class="stringliteral">&quot;cbArg&quot;</span>,   <span class="stringliteral">&quot;a string via callback&quot;</span>, <a class="code" href="group__makecallbackmemptr.html#ga9376283685aa99d204048d6a4b7610a4">MakeCallback</a> (<a class="code" href="namespaceanonymous__namespace_02command-line-example_8cc_03.html#a94a5a29613a47b6557a3728055484c1f">SetCbArg</a>));</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <a class="code" href="namespacesecond.html#ae84c87468c0e4398eab4dbb6cadc17d9">cmd</a>.AddNonOption (<span class="stringliteral">&quot;nonOpt1&quot;</span>, <span class="stringliteral">&quot;first non-option&quot;</span>, nonOpt1);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <a class="code" href="namespacesecond.html#ae84c87468c0e4398eab4dbb6cadc17d9">cmd</a>.AddNonOption (<span class="stringliteral">&quot;nonOpt2&quot;</span>, <span class="stringliteral">&quot;first non-option&quot;</span>, nonOpt2);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <a class="code" href="namespacesecond.html#ae84c87468c0e4398eab4dbb6cadc17d9">cmd</a>.AddNonOption (<span class="stringliteral">&quot;nonOpt1&quot;</span>, <span class="stringliteral">&quot;first non-option&quot;</span>,  nonOpt1);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <a class="code" href="namespacesecond.html#ae84c87468c0e4398eab4dbb6cadc17d9">cmd</a>.AddNonOption (<span class="stringliteral">&quot;nonOpt2&quot;</span>, <span class="stringliteral">&quot;second non-option&quot;</span>, nonOpt2);</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <a class="code" href="namespacesecond.html#ae84c87468c0e4398eab4dbb6cadc17d9">cmd</a>.Parse (argc, argv);</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="comment">// Show initial values:</span></div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  std::cout &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  std::cout &lt;&lt; <a class="code" href="namespacesecond.html#ae84c87468c0e4398eab4dbb6cadc17d9">cmd</a>.GetName () &lt;&lt; <span class="stringliteral">&quot;:&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  std::cout &lt;&lt; <a class="code" href="namespacesecond.html#ae84c87468c0e4398eab4dbb6cadc17d9">cmd</a>.GetName () &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;Initial values:&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  std::cout &lt;&lt; std::left &lt;&lt; std::setw (10) &lt;&lt; <span class="stringliteral">&quot;intArg:&quot;</span></div>
@@ -324,15 +321,15 @@ $(document).ready(function(){initNavTree('command-line-example_8cc_source.html',
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassns3_1_1_type_id_html"><div class="ttname"><a href="classns3_1_1_type_id.html">ns3::TypeId</a></div><div class="ttdoc">a unique identifier for an interface.</div><div class="ttdef"><b>Definition:</b> <a href="type-id_8h_source.html#l00058">type-id.h:59</a></div></div>
-<div class="ttc" id="aclassns3_1_1_command_line_html"><div class="ttname"><a href="classns3_1_1_command_line.html">ns3::CommandLine</a></div><div class="ttdoc">Parse command-line arguments.</div><div class="ttdef"><b>Definition:</b> <a href="command-line_8h_source.html#l00212">command-line.h:213</a></div></div>
 <div class="ttc" id="anamespacens3_html"><div class="ttname"><a href="namespacens3.html">ns3</a></div><div class="ttdoc">Every class exported by the ns3 library is enclosed in the ns3 namespace.</div></div>
 <div class="ttc" id="agroup__makecallbackmemptr_html_ga9376283685aa99d204048d6a4b7610a4"><div class="ttname"><a href="group__makecallbackmemptr.html#ga9376283685aa99d204048d6a4b7610a4">ns3::MakeCallback</a></div><div class="ttdeci">Callback&lt; R &gt; MakeCallback(R(T::*memPtr)(void), OBJ objPtr)</div><div class="ttdef"><b>Definition:</b> <a href="callback_8h_source.html#l01610">callback.h:1610</a></div></div>
 <div class="ttc" id="anamespaceanonymous__namespace_02command-line-example_8cc_03_html_abbe96498d2d7309c032f62fd269d98fc"><div class="ttname"><a href="namespaceanonymous__namespace_02command-line-example_8cc_03.html#abbe96498d2d7309c032f62fd269d98fc">anonymous_namespace{command-line-example.cc}::g_cbArg</a></div><div class="ttdeci">std::string g_cbArg</div><div class="ttdoc">Global variable to illustrate command line arguments handled by a Callback function.</div><div class="ttdef"><b>Definition:</b> <a href="command-line-example_8cc_source.html#l00042">command-line-example.cc:42</a></div></div>
 <div class="ttc" id="astructns3_1_1_type_id_1_1_attribute_information_html"><div class="ttname"><a href="structns3_1_1_type_id_1_1_attribute_information.html">ns3::TypeId::AttributeInformation</a></div><div class="ttdoc">Attribute implementation.</div><div class="ttdef"><b>Definition:</b> <a href="type-id_8h_source.html#l00077">type-id.h:78</a></div></div>
+<div class="ttc" id="agroup__commandline_html_ga6520780a7fe4f370c303f7a8a39fd077"><div class="ttname"><a href="group__commandline.html#ga6520780a7fe4f370c303f7a8a39fd077">COMMANDLINE</a></div><div class="ttdeci">#define COMMANDLINE(var)</div><div class="ttdoc">Declare a CommandLine instance.</div><div class="ttdef"><b>Definition:</b> <a href="command-line_8h_source.html#l00057">command-line.h:56</a></div></div>
 <div class="ttc" id="anamespacesecond_html_ae84c87468c0e4398eab4dbb6cadc17d9"><div class="ttname"><a href="namespacesecond.html#ae84c87468c0e4398eab4dbb6cadc17d9">second.cmd</a></div><div class="ttdeci">cmd</div><div class="ttdef"><b>Definition:</b> <a href="second_8py_source.html#l00035">second.py:35</a></div></div>
 <div class="ttc" id="anamespaceanonymous__namespace_02command-line-example_8cc_03_html_a94a5a29613a47b6557a3728055484c1f"><div class="ttname"><a href="namespaceanonymous__namespace_02command-line-example_8cc_03.html#a94a5a29613a47b6557a3728055484c1f">anonymous_namespace{command-line-example.cc}::SetCbArg</a></div><div class="ttdeci">bool SetCbArg(std::string val)</div><div class="ttdoc">Function to illustrate command line arguments handled by a Callback function.</div><div class="ttdef"><b>Definition:</b> <a href="command-line-example_8cc_source.html#l00051">command-line-example.cc:51</a></div></div>
-<div class="ttc" id="aclassns3_1_1_type_id_html_ac93d12d22acdb179d34039511d6680e7"><div class="ttname"><a href="classns3_1_1_type_id.html#ac93d12d22acdb179d34039511d6680e7">ns3::TypeId::LookupAttributeByName</a></div><div class="ttdeci">bool LookupAttributeByName(std::string name, struct AttributeInformation *info) const</div><div class="ttdoc">Find an Attribute by name, retrieving the associated AttributeInformation.</div><div class="ttdef"><b>Definition:</b> <a href="type-id_8cc_source.html#l00882">type-id.cc:882</a></div></div>
-<div class="ttc" id="aclassns3_1_1_type_id_html_a119cf99c20931fdc294602cd360b180e"><div class="ttname"><a href="classns3_1_1_type_id.html#a119cf99c20931fdc294602cd360b180e">ns3::TypeId::LookupByName</a></div><div class="ttdeci">static TypeId LookupByName(std::string name)</div><div class="ttdoc">Get a TypeId by name.</div><div class="ttdef"><b>Definition:</b> <a href="type-id_8cc_source.html#l00829">type-id.cc:829</a></div></div>
+<div class="ttc" id="aclassns3_1_1_type_id_html_ac93d12d22acdb179d34039511d6680e7"><div class="ttname"><a href="classns3_1_1_type_id.html#ac93d12d22acdb179d34039511d6680e7">ns3::TypeId::LookupAttributeByName</a></div><div class="ttdeci">bool LookupAttributeByName(std::string name, struct AttributeInformation *info) const</div><div class="ttdoc">Find an Attribute by name, retrieving the associated AttributeInformation.</div><div class="ttdef"><b>Definition:</b> <a href="type-id_8cc_source.html#l00883">type-id.cc:883</a></div></div>
+<div class="ttc" id="aclassns3_1_1_type_id_html_a119cf99c20931fdc294602cd360b180e"><div class="ttname"><a href="classns3_1_1_type_id.html#a119cf99c20931fdc294602cd360b180e">ns3::TypeId::LookupByName</a></div><div class="ttdeci">static TypeId LookupByName(std::string name)</div><div class="ttdoc">Get a TypeId by name.</div><div class="ttdef"><b>Definition:</b> <a href="type-id_8cc_source.html#l00830">type-id.cc:830</a></div></div>
 <!-- ns-3 doxygen header, based on
      HTML header for doxygen 1.8.3.1
      Verified compatible with 1.8.6
@@ -341,7 +338,7 @@ $(document).ready(function(){initNavTree('command-line-example_8cc_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li><li class="navelem"><a class="el" href="dir_885eb8bfa2a2428b32ca0bb7bd8db8ab.html">examples</a></li><li class="navelem"><a class="el" href="command-line-example_8cc.html">command-line-example.cc</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:34:52 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:00 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

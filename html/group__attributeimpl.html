@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -159,7 +156,7 @@ $(document).ready(function(){initNavTree('group__attributeimpl.html',''); initRe
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Attribute Implementation<div class="ingroups"><a class="el" href="group__core.html">Core</a> &raquo; <a class="el" href="group__attribute.html">Attributes</a> &raquo; <a class="el" href="group__attributehelper.html">Attribute Helper</a></div></div>  </div>
+<div class="title">Attribute Implementation<div class="ingroups"><a class="el" href="group__core.html">Core</a> &raquo; <a class="el" href="group__attributes.html">Attributes</a> &raquo; <a class="el" href="group__attributehelper.html">Attribute Helper</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -449,7 +446,7 @@ template&lt;typename W , typename T , typename U , typename V &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>MakeAccessorHelper implementation with a class get functor method and a class set method returning <code>bool</code>.</p>
+<p>MakeAccessorHelper implementation with a class get functor method and a class set method returning <span class="params"><span class="paramname">bool</span></span>.</p>
 <p>The two versions of this function differ only in argument order.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -523,7 +520,7 @@ template&lt;typename W , typename T , typename U , typename V &gt; </div>
 </div><div class="memdoc">
 
 <p></p>
-<p>MakeAccessorHelper implementation with a class get functor method and a class set method returning <code>bool</code>.</p>
+<p>MakeAccessorHelper implementation with a class get functor method and a class set method returning <span class="params"><span class="paramname">bool</span></span>.</p>
 <p>The two versions of this function differ only in argument order.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -584,7 +581,7 @@ template&lt;typename W , typename T , typename U , typename V &gt; </div>
 </div><div class="memdoc">
 
 <p></p>
-<p>MakeAccessorHelper implementation with a class get functor method and a class set method returning <code>void</code>.</p>
+<p>MakeAccessorHelper implementation with a class get functor method and a class set method returning <span class="params"><span class="paramname">void</span></span>.</p>
 <p>The two versions of this function differ only in argument order.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -643,7 +640,7 @@ template&lt;typename W , typename T , typename U , typename V &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>MakeAccessorHelper implementation with a class get functor method and a class set method returning <code>void</code>.</p>
+<p>MakeAccessorHelper implementation with a class get functor method and a class set method returning <span class="params"><span class="paramname">void</span></span>.</p>
 <p>The two versions of this function differ only in argument order.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -707,13 +704,13 @@ template&lt;typename V , typename T1 &gt; </div>
 </div><div class="memdoc">
 <p>Create an <a class="el" href="classns3_1_1_attribute_accessor.html" title="allow setting and getting the value of an attribute.">AttributeAccessor</a> for a class data member, or a lone class get functor or set method.</p>
 <p>The get functor method should have a signature like </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> U (T::*getter)(void) const</div>
-</div><!-- fragment --><p> where <code>T</code> is the class and <code>U</code> is the type of the return value.</p>
+</div><!-- fragment --><p> where <span class="params"><span class="paramname">T</span></span> is the class and <span class="params"><span class="paramname">U</span></span> is the type of the return value.</p>
 <p>The set method should have one of these signatures: </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> void (T::*setter)(U)</div>
 <div class="line"><span class="keyword">typedef</span> <span class="keywordtype">bool</span> (T::*setter)(U)</div>
-</div><!-- fragment --><p> where <code>T</code> is the class and <code>U</code> is the type of the value to set the attribute to, which should be compatible with the specific <a class="el" href="classns3_1_1_attribute_value.html" title="Hold a value for an Attribute.">AttributeValue</a> type <code>V</code> which holds the value (or the type implied by the name <code>Make&lt;V&gt;Accessor</code> of this function.) In the case of a <code>setter</code> returning <code>bool</code>, the return value should be <code>true</code> if the value could be set successfully.</p>
+</div><!-- fragment --><p> where <span class="params"><span class="paramname">T</span></span> is the class and <span class="params"><span class="paramname">U</span></span> is the type of the value to set the attribute to, which should be compatible with the specific <a class="el" href="classns3_1_1_attribute_value.html" title="Hold a value for an Attribute.">AttributeValue</a> type <span class="params"><span class="paramname">V</span></span> which holds the value (or the type implied by the name <code>Make&lt;V&gt;Accessor</code> of this function.) In the case of a <span class="params"><span class="paramname">setter</span></span> returning <span class="params"><span class="paramname">bool,</span></span> the return value should be <code>true</code> if the value could be set successfully.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">V</td><td><span class="params"><span class="paramdir">[explicit]</span></span> (If present) The specific <a class="el" href="classns3_1_1_attribute_value.html" title="Hold a value for an Attribute.">AttributeValue</a> type to use to represent the Attribute. (If not present, the type <code>V</code> is implicit in the name of this function, as "Make&lt;V&gt;Accessor" </td></tr>
+    <tr><td class="paramname">V</td><td><span class="params"><span class="paramdir">[explicit]</span></span> (If present) The specific <a class="el" href="classns3_1_1_attribute_value.html" title="Hold a value for an Attribute.">AttributeValue</a> type to use to represent the Attribute. (If not present, the type <span class="params"><span class="paramname">V</span></span> is implicit in the name of this function, as "Make&lt;V&gt;Accessor" </td></tr>
     <tr><td class="paramname">T1</td><td><span class="params"><span class="paramdir">[deduced] </span></span> The type of the class data member, or the type of the class get functor or set method. </td></tr>
   </table>
   </dd>
@@ -767,14 +764,14 @@ template&lt;typename V , typename T1 , typename T2 &gt; </div>
 </div><div class="memdoc">
 <p>Create an <a class="el" href="classns3_1_1_attribute_accessor.html" title="allow setting and getting the value of an attribute.">AttributeAccessor</a> using a pair of get functor and set methods from a class.</p>
 <p>The get functor method should have a signature like </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> U (T::*getter)(void) const</div>
-</div><!-- fragment --><p> where <code>T</code> is the class and <code>U</code> is the type of the return value.</p>
+</div><!-- fragment --><p> where <span class="params"><span class="paramname">T</span></span> is the class and <span class="params"><span class="paramname">U</span></span> is the type of the return value.</p>
 <p>The set method should have one of these signatures: </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> void (T::*setter)(U)</div>
 <div class="line"><span class="keyword">typedef</span> <span class="keywordtype">bool</span> (T::*setter)(U)</div>
-</div><!-- fragment --><p> where <code>T</code> is the class and <code>U</code> is the type of the value to set the attribute to, which should be compatible with the specific <a class="el" href="classns3_1_1_attribute_value.html" title="Hold a value for an Attribute.">AttributeValue</a> type <code>V</code> which holds the value (or the type implied by the name <code>Make&lt;V&gt;Accessor</code> of this function.) In the case of a <code>setter</code> returning <code>bool</code>, the return value should be true if the value could be set successfully.</p>
+</div><!-- fragment --><p> where <span class="params"><span class="paramname">T</span></span> is the class and <span class="params"><span class="paramname">U</span></span> is the type of the value to set the attribute to, which should be compatible with the specific <a class="el" href="classns3_1_1_attribute_value.html" title="Hold a value for an Attribute.">AttributeValue</a> type <span class="params"><span class="paramname">V</span></span> which holds the value (or the type implied by the name <code>Make&lt;V&gt;Accessor</code> of this function.) In the case of a <span class="params"><span class="paramname">setter</span></span> returning <span class="params"><span class="paramname">bool,</span></span> the return value should be true if the value could be set successfully.</p>
 <p>In practice the setter and getter arguments can appear in either order, but setter first is preferred.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">V</td><td><span class="params"><span class="paramdir">[explicit]</span></span> (If present) The specific <a class="el" href="classns3_1_1_attribute_value.html" title="Hold a value for an Attribute.">AttributeValue</a> type to use to represent the Attribute. (If not present, the type <code>V</code> is implicit in the name of this function as "Make&lt;V&gt;Accessor" </td></tr>
+    <tr><td class="paramname">V</td><td><span class="params"><span class="paramdir">[explicit]</span></span> (If present) The specific <a class="el" href="classns3_1_1_attribute_value.html" title="Hold a value for an Attribute.">AttributeValue</a> type to use to represent the Attribute. (If not present, the type <span class="params"><span class="paramname">V</span></span> is implicit in the name of this function as "Make&lt;V&gt;Accessor" </td></tr>
     <tr><td class="paramname">T1</td><td><span class="params"><span class="paramdir">[deduced] </span></span> The type of the class data member, or the type of the class get functor or set method.</td></tr>
     <tr><td class="paramname">T2</td><td><span class="params"><span class="paramdir">[deduced] </span></span> The type of the getter class functor method. </td></tr>
   </table>
@@ -824,13 +821,13 @@ template&lt;typename T , typename BASE &gt; </div>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td><span class="params"><span class="paramdir">[explicit]</span></span> The specific <a class="el" href="classns3_1_1_attribute_value.html" title="Hold a value for an Attribute.">AttributeValue</a> type used to represent the Attribute. </td></tr>
-    <tr><td class="paramname">BASE</td><td><span class="params"><span class="paramdir">[explicit]</span></span> The <a class="el" href="classns3_1_1_attribute_checker.html" title="Represent the type of an attribute.">AttributeChecker</a> type corresponding to <code>T</code>. </td></tr>
+    <tr><td class="paramname">BASE</td><td><span class="params"><span class="paramdir">[explicit]</span></span> The <a class="el" href="classns3_1_1_attribute_checker.html" title="Represent the type of an attribute.">AttributeChecker</a> type corresponding to <span class="params"><span class="paramname">T</span></span>. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The name of the <a class="el" href="classns3_1_1_attribute_value.html" title="Hold a value for an Attribute.">AttributeValue</a> type, essentially the string form of <code>T</code>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The name of the <a class="el" href="classns3_1_1_attribute_value.html" title="Hold a value for an Attribute.">AttributeValue</a> type, essentially the string form of <span class="params"><span class="paramname">T</span></span>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">underlying</td><td>Underlying type name. </td></tr>
   </table>
   </dd>
@@ -1126,7 +1123,7 @@ template&lt;&gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:12 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:19 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

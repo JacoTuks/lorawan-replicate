@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -201,13 +198,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6ab89f6bb1231592ff3d376bf7c8b1f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_he_operation.html#a6ab89f6bb1231592ff3d376bf7c8b1f2">HeOperation</a> ()</td></tr>
 <tr class="separator:a6ab89f6bb1231592ff3d376bf7c8b1f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa65c5d06e02d1218e70bb3bf92d56f74"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_he_operation.html#aa65c5d06e02d1218e70bb3bf92d56f74">DeserializeInformationField</a> (<a class="el" href="classns3_1_1_buffer_1_1_iterator.html">Buffer::Iterator</a> start, uint8_t length)</td></tr>
-<tr class="memdesc:aa65c5d06e02d1218e70bb3bf92d56f74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserialize the information field.  <a href="classns3_1_1_he_operation.html#aa65c5d06e02d1218e70bb3bf92d56f74">More...</a><br /></td></tr>
+<tr class="memdesc:aa65c5d06e02d1218e70bb3bf92d56f74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserialize information (i.e., the body of the IE, not including the Element ID and length octets)  <a href="classns3_1_1_he_operation.html#aa65c5d06e02d1218e70bb3bf92d56f74">More...</a><br /></td></tr>
 <tr class="separator:aa65c5d06e02d1218e70bb3bf92d56f74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5217de21251558edea0682f001942398"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacens3.html#aeb185e0c8a60816016bca079f1420478">WifiInformationElementId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_he_operation.html#a5217de21251558edea0682f001942398">ElementId</a> () const</td></tr>
-<tr class="memdesc:a5217de21251558edea0682f001942398"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the element ID.  <a href="classns3_1_1_he_operation.html#a5217de21251558edea0682f001942398">More...</a><br /></td></tr>
 <tr class="separator:a5217de21251558edea0682f001942398"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14adad9739fa0e73597eb51952b4d18c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacens3.html#aeb185e0c8a60816016bca079f1420478">WifiInformationElementId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_he_operation.html#a14adad9739fa0e73597eb51952b4d18c">ElementIdExt</a> () const</td></tr>
-<tr class="memdesc:a14adad9739fa0e73597eb51952b4d18c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the wifi information element ID extension.  <a href="classns3_1_1_he_operation.html#a14adad9739fa0e73597eb51952b4d18c">More...</a><br /></td></tr>
 <tr class="separator:a14adad9739fa0e73597eb51952b4d18c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dd6e83d9d283abf3bdcb0be3df44fbe"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_he_operation.html#a7dd6e83d9d283abf3bdcb0be3df44fbe">GetBasicHeMcsAndNssSet</a> (void) const</td></tr>
 <tr class="memdesc:a7dd6e83d9d283abf3bdcb0be3df44fbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the Basic HE-MCS And Nss field in the HE Operation information element.  <a href="classns3_1_1_he_operation.html#a7dd6e83d9d283abf3bdcb0be3df44fbe">More...</a><br /></td></tr>
@@ -219,16 +214,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a2d11db8ed7573b97fad6df9159f6b82b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the HE Operation <a class="el" href="struct_parameters.html">Parameters</a> field in the HE Operation information element.  <a href="classns3_1_1_he_operation.html#a2d11db8ed7573b97fad6df9159f6b82b">More...</a><br /></td></tr>
 <tr class="separator:a2d11db8ed7573b97fad6df9159f6b82b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a189885ddd83150068be53b06a35d682a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_he_operation.html#a189885ddd83150068be53b06a35d682a">GetInformationFieldSize</a> () const</td></tr>
-<tr class="memdesc:a189885ddd83150068be53b06a35d682a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the information field size.  <a href="classns3_1_1_he_operation.html#a189885ddd83150068be53b06a35d682a">More...</a><br /></td></tr>
+<tr class="memdesc:a189885ddd83150068be53b06a35d682a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of serialized information (i.e., the length of the body of the IE, not including the Element ID and length octets.  <a href="classns3_1_1_he_operation.html#a189885ddd83150068be53b06a35d682a">More...</a><br /></td></tr>
 <tr class="separator:a189885ddd83150068be53b06a35d682a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62ee7db5c64122ce94151d0307c3ac4a"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_he_operation.html#a62ee7db5c64122ce94151d0307c3ac4a">GetSerializedSize</a> () const</td></tr>
-<tr class="memdesc:a62ee7db5c64122ce94151d0307c3ac4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the serialized size of this HE Operations IE.  <a href="classns3_1_1_he_operation.html#a62ee7db5c64122ce94151d0307c3ac4a">More...</a><br /></td></tr>
 <tr class="separator:a62ee7db5c64122ce94151d0307c3ac4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad60be854ad8ae9aee9841a811f463a67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classns3_1_1_buffer_1_1_iterator.html">Buffer::Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_he_operation.html#ad60be854ad8ae9aee9841a811f463a67">Serialize</a> (<a class="el" href="classns3_1_1_buffer_1_1_iterator.html">Buffer::Iterator</a> start) const</td></tr>
-<tr class="memdesc:ad60be854ad8ae9aee9841a811f463a67"><td class="mdescLeft">&#160;</td><td class="mdescRight">This information element is a bit special in that it is only included if the STA is a HE STA.  <a href="classns3_1_1_he_operation.html#ad60be854ad8ae9aee9841a811f463a67">More...</a><br /></td></tr>
 <tr class="separator:ad60be854ad8ae9aee9841a811f463a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a608ec0620e24e2df3fb8204b41c0b093"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_he_operation.html#a608ec0620e24e2df3fb8204b41c0b093">SerializeInformationField</a> (<a class="el" href="classns3_1_1_buffer_1_1_iterator.html">Buffer::Iterator</a> start) const</td></tr>
-<tr class="memdesc:a608ec0620e24e2df3fb8204b41c0b093"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the information field.  <a href="classns3_1_1_he_operation.html#a608ec0620e24e2df3fb8204b41c0b093">More...</a><br /></td></tr>
+<tr class="memdesc:a608ec0620e24e2df3fb8204b41c0b093"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize information (i.e., the body of the IE, not including the Element ID and length octets)  <a href="classns3_1_1_he_operation.html#a608ec0620e24e2df3fb8204b41c0b093">More...</a><br /></td></tr>
 <tr class="separator:a608ec0620e24e2df3fb8204b41c0b093"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e4b65c89fde0d73e382bd4d6b674266"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_he_operation.html#a0e4b65c89fde0d73e382bd4d6b674266">SetBssColor</a> (uint8_t bssColor)</td></tr>
 <tr class="memdesc:a0e4b65c89fde0d73e382bd4d6b674266"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the BSS color.  <a href="classns3_1_1_he_operation.html#a0e4b65c89fde0d73e382bd4d6b674266">More...</a><br /></td></tr>
@@ -236,11 +229,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab70f2072f6c1b00dba9951d07a671004"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_he_operation.html#ab70f2072f6c1b00dba9951d07a671004">SetHeOperationParameters</a> (uint32_t ctrl)</td></tr>
 <tr class="memdesc:ab70f2072f6c1b00dba9951d07a671004"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the HE Operation <a class="el" href="struct_parameters.html">Parameters</a> field in the HE Operation information element.  <a href="classns3_1_1_he_operation.html#ab70f2072f6c1b00dba9951d07a671004">More...</a><br /></td></tr>
 <tr class="separator:ab70f2072f6c1b00dba9951d07a671004"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af11b3a8c03d6390f58870ef59ba08ca3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_he_operation.html#af11b3a8c03d6390f58870ef59ba08ca3">SetHeSupported</a> (uint8_t hesupported)</td></tr>
-<tr class="memdesc:af11b3a8c03d6390f58870ef59ba08ca3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the HE supported information element.  <a href="classns3_1_1_he_operation.html#af11b3a8c03d6390f58870ef59ba08ca3">More...</a><br /></td></tr>
-<tr class="separator:af11b3a8c03d6390f58870ef59ba08ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff5b4e207742ef6a5680e083a4a636ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_he_operation.html#aff5b4e207742ef6a5680e083a4a636ac">SetHeSupported</a> (uint8_t heSupported)</td></tr>
+<tr class="memdesc:aff5b4e207742ef6a5680e083a4a636ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the HE supported information element.  <a href="classns3_1_1_he_operation.html#aff5b4e207742ef6a5680e083a4a636ac">More...</a><br /></td></tr>
+<tr class="separator:aff5b4e207742ef6a5680e083a4a636ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34c08080f80517feac1acf5b1e7d6512"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_he_operation.html#a34c08080f80517feac1acf5b1e7d6512">SetMaxHeMcsPerNss</a> (uint8_t nss, uint8_t maxHeMcs)</td></tr>
-<tr class="memdesc:a34c08080f80517feac1acf5b1e7d6512"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Basic HE-MCS and NSS field in the HE Operation information element by specifying the tuple (nss, maxMcs).  <a href="classns3_1_1_he_operation.html#a34c08080f80517feac1acf5b1e7d6512">More...</a><br /></td></tr>
+<tr class="memdesc:a34c08080f80517feac1acf5b1e7d6512"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Basic HE-MCS and NSS field in the HE Operation information element by specifying the tuple (<em>nss</em>, <em>maxMcs</em>).  <a href="classns3_1_1_he_operation.html#a34c08080f80517feac1acf5b1e7d6512">More...</a><br /></td></tr>
 <tr class="separator:a34c08080f80517feac1acf5b1e7d6512"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classns3_1_1_wifi_information_element"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classns3_1_1_wifi_information_element')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classns3_1_1_wifi_information_element.html">ns3::WifiInformationElement</a></td></tr>
 <tr class="memitem:ae93bd0b081b3d1666a8846e2b0158cf2 inherit pub_methods_classns3_1_1_wifi_information_element"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_wifi_information_element.html#ae93bd0b081b3d1666a8846e2b0158cf2">~WifiInformationElement</a> ()</td></tr>
@@ -321,10 +314,9 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The HE Operation Information Element. </p>
-<p>This class knows how to serialise and deserialise the HE Operation Information Element</p>
-<dl class="section see"><dt>See also</dt><dd>attribute_HeOperation </dd></dl>
+<p>This class knows how to serialise and deserialise the HE Operation Information Element </p>
 
-<p class="definition">Definition at line <a class="el" href="he-operation_8h_source.html#l00037">37</a> of file <a class="el" href="he-operation_8h_source.html">he-operation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="he-operation_8h_source.html#l00035">35</a> of file <a class="el" href="he-operation_8h_source.html">he-operation.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6ab89f6bb1231592ff3d376bf7c8b1f2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6ab89f6bb1231592ff3d376bf7c8b1f2">&#9670;&nbsp;</a></span>HeOperation()</h2>
@@ -380,21 +372,21 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Deserialize the information field. </p>
+<p>Deserialize information (i.e., the body of the IE, not including the Element ID and length octets) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">start</td><td>the iterator </td></tr>
-    <tr><td class="paramname">length</td><td>the length </td></tr>
+    <tr><td class="paramname">start</td><td>an iterator which points to where the information should be written. </td></tr>
+    <tr><td class="paramname">length</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the information field size </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of bytes read </dd></dl>
 
 <p>Implements <a class="el" href="classns3_1_1_wifi_information_element.html#a92135cae0f188d7d8f6c30d9f4becd82">ns3::WifiInformationElement</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="he-operation_8cc_source.html#l00169">169</a> of file <a class="el" href="he-operation_8cc_source.html">he-operation.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="he-operation_8h_source.html#l00149">m_basicHeMcsAndNssSet</a>, <a class="el" href="buffer_8cc_source.html#l01076">ns3::Buffer::Iterator::ReadLsbtohU32()</a>, <a class="el" href="buffer_8h_source.html#l01029">ns3::Buffer::Iterator::ReadU16()</a>, <a class="el" href="he-operation_8cc_source.html#l00067">SetHeOperationParameters()</a>, and <a class="el" href="core_8py_source.html#l01855">visualizer.core::start()</a>.</p>
+<p class="reference">References <a class="el" href="he-operation_8h_source.html#l00112">m_basicHeMcsAndNssSet</a>, <a class="el" href="buffer_8cc_source.html#l01076">ns3::Buffer::Iterator::ReadLsbtohU32()</a>, <a class="el" href="buffer_8h_source.html#l01029">ns3::Buffer::Iterator::ReadU16()</a>, <a class="el" href="he-operation_8cc_source.html#l00067">SetHeOperationParameters()</a>, and <a class="el" href="core_8py_source.html#l01855">visualizer.core::start()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -402,7 +394,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_he_operation_aa65c5d06e02d1218e70bb3bf92d56f74_cgraph.png" border="0" usemap="#classns3_1_1_he_operation_aa65c5d06e02d1218e70bb3bf92d56f74_cgraph" alt=""/></div>
 <map name="classns3_1_1_he_operation_aa65c5d06e02d1218e70bb3bf92d56f74_cgraph" id="classns3_1_1_he_operation_aa65c5d06e02d1218e70bb3bf92d56f74_cgraph">
-<area shape="rect" title="Deserialize the information field." alt="" coords="5,104,221,145"/>
+<area shape="rect" title="Deserialize information (i.e., the body of the IE, not including the Element ID and length octets)" alt="" coords="5,104,221,145"/>
 <area shape="rect" href="classns3_1_1_buffer_1_1_iterator.html#a393ecef0088e69e05b839dbdca2c6575" title=" " alt="" coords="318,5,467,47"/>
 <area shape="rect" href="classns3_1_1_buffer_1_1_iterator.html#a73b0df87d8f3ca52c6c87898d420da13" title=" " alt="" coords="318,71,467,112"/>
 <area shape="rect" href="classns3_1_1_he_operation.html#ab70f2072f6c1b00dba9951d07a671004" title="Set the HE Operation Parameters field in the HE Operation information element." alt="" coords="269,136,516,177"/>
@@ -436,9 +428,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Return the element ID. </p>
-<dl class="section return"><dt>Returns</dt><dd>the element ID </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Own unique Element ID </dd></dl>
 
 <p>Implements <a class="el" href="classns3_1_1_wifi_information_element.html#a0c16b85dc0c63baf7fc437ddbc13ada6">ns3::WifiInformationElement</a>.</p>
 
@@ -470,9 +460,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Get the wifi information element ID extension. </p>
-<dl class="section return"><dt>Returns</dt><dd>the wifi information element ID extension </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Own unique Element ID Extension </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classns3_1_1_wifi_information_element.html#ae24bfd29837cfb426a44dadd56d72f4b">ns3::WifiInformationElement</a>.</p>
 
@@ -503,9 +491,9 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="he-operation_8cc_source.html#l00117">117</a> of file <a class="el" href="he-operation_8cc_source.html">he-operation.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="he-operation_8h_source.html#l00149">m_basicHeMcsAndNssSet</a>.</p>
+<p class="reference">References <a class="el" href="he-operation_8h_source.html#l00112">m_basicHeMcsAndNssSet</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="he-operation_8cc_source.html#l00188">ns3::operator&lt;&lt;()</a>, and <a class="el" href="he-operation_8cc_source.html#l00157">SerializeInformationField()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="he-operation_8cc_source.html#l00180">ns3::operator&lt;&lt;()</a>, and <a class="el" href="he-operation_8cc_source.html#l00157">SerializeInformationField()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -515,7 +503,7 @@ Private Attributes</h2></td></tr>
 <map name="classns3_1_1_he_operation_a7dd6e83d9d283abf3bdcb0be3df44fbe_icgraph" id="classns3_1_1_he_operation_a7dd6e83d9d283abf3bdcb0be3df44fbe_icgraph">
 <area shape="rect" title="Return the Basic HE&#45;MCS And Nss field in the HE Operation information element." alt="" coords="252,27,453,69"/>
 <area shape="rect" href="namespacens3.html#a26c294ae53d30d0a5edf912030af4a7d" title="output stream output operator" alt="" coords="39,5,170,32"/>
-<area shape="rect" href="classns3_1_1_he_operation.html#a608ec0620e24e2df3fb8204b41c0b093" title="Serialize the information field." alt="" coords="5,57,204,98"/>
+<area shape="rect" href="classns3_1_1_he_operation.html#a608ec0620e24e2df3fb8204b41c0b093" title="Serialize information (i.e., the body of the IE, not including the Element ID and length octets)" alt="" coords="5,57,204,98"/>
 </map>
 </div>
 
@@ -542,7 +530,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="he-operation_8cc_source.html#l00131">131</a> of file <a class="el" href="he-operation_8cc_source.html">he-operation.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="he-operation_8h_source.html#l00138">m_bssColor</a>.</p>
+<p class="reference">References <a class="el" href="he-operation_8h_source.html#l00101">m_bssColor</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="sta-wifi-mac_8cc_source.html#l00945">ns3::StaWifiMac::UpdateApInfoFromAssocResp()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -581,9 +569,9 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="he-operation_8cc_source.html#l00081">81</a> of file <a class="el" href="he-operation_8cc_source.html">he-operation.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="he-operation_8h_source.html#l00138">m_bssColor</a>, <a class="el" href="he-operation_8h_source.html#l00145">m_bssColorDisabled</a>, <a class="el" href="he-operation_8h_source.html#l00139">m_defaultPEDuration</a>, <a class="el" href="he-operation_8h_source.html#l00146">m_dualBeacon</a>, <a class="el" href="he-operation_8h_source.html#l00141">m_heDurationBasedRtsThreshold</a>, <a class="el" href="he-operation_8h_source.html#l00143">m_maxBssidIndicator</a>, <a class="el" href="he-operation_8h_source.html#l00142">m_partialBssColor</a>, <a class="el" href="he-operation_8h_source.html#l00140">m_twtRequired</a>, and <a class="el" href="he-operation_8h_source.html#l00144">m_txBssidIndicator</a>.</p>
+<p class="reference">References <a class="el" href="he-operation_8h_source.html#l00101">m_bssColor</a>, <a class="el" href="he-operation_8h_source.html#l00108">m_bssColorDisabled</a>, <a class="el" href="he-operation_8h_source.html#l00102">m_defaultPEDuration</a>, <a class="el" href="he-operation_8h_source.html#l00109">m_dualBeacon</a>, <a class="el" href="he-operation_8h_source.html#l00104">m_heDurationBasedRtsThreshold</a>, <a class="el" href="he-operation_8h_source.html#l00106">m_maxBssidIndicator</a>, <a class="el" href="he-operation_8h_source.html#l00105">m_partialBssColor</a>, <a class="el" href="he-operation_8h_source.html#l00103">m_twtRequired</a>, and <a class="el" href="he-operation_8h_source.html#l00107">m_txBssidIndicator</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="he-operation_8cc_source.html#l00188">ns3::operator&lt;&lt;()</a>, and <a class="el" href="he-operation_8cc_source.html#l00157">SerializeInformationField()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="he-operation_8cc_source.html#l00180">ns3::operator&lt;&lt;()</a>, and <a class="el" href="he-operation_8cc_source.html#l00157">SerializeInformationField()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -593,7 +581,7 @@ Private Attributes</h2></td></tr>
 <map name="classns3_1_1_he_operation_a2d11db8ed7573b97fad6df9159f6b82b_icgraph" id="classns3_1_1_he_operation_a2d11db8ed7573b97fad6df9159f6b82b_icgraph">
 <area shape="rect" title="Return the HE Operation Parameters field in the HE Operation information element." alt="" coords="252,27,500,69"/>
 <area shape="rect" href="namespacens3.html#a26c294ae53d30d0a5edf912030af4a7d" title="output stream output operator" alt="" coords="39,5,170,32"/>
-<area shape="rect" href="classns3_1_1_he_operation.html#a608ec0620e24e2df3fb8204b41c0b093" title="Serialize the information field." alt="" coords="5,57,204,98"/>
+<area shape="rect" href="classns3_1_1_he_operation.html#a608ec0620e24e2df3fb8204b41c0b093" title="Serialize information (i.e., the body of the IE, not including the Element ID and length octets)" alt="" coords="5,57,204,98"/>
 </map>
 </div>
 
@@ -622,14 +610,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Return the information field size. </p>
-<dl class="section return"><dt>Returns</dt><dd>the information field size </dd></dl>
+<p>Length of serialized information (i.e., the length of the body of the IE, not including the Element ID and length octets. </p>
+<p>This is the value that will appear in the second octet of the entire IE - the length field)</p>
+<dl class="section return"><dt>Returns</dt><dd>the length of serialized information </dd></dl>
 
 <p>Implements <a class="el" href="classns3_1_1_wifi_information_element.html#a04af58633c58364e6b8d0ae2a7d777b2">ns3::WifiInformationElement</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="he-operation_8cc_source.html#l00059">59</a> of file <a class="el" href="he-operation_8cc_source.html">he-operation.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="he-operation_8h_source.html#l00154">m_heSupported</a>, and <a class="el" href="assert_8h_source.html#l00067">NS_ASSERT</a>.</p>
+<p class="reference">References <a class="el" href="he-operation_8h_source.html#l00117">m_heSupported</a>, and <a class="el" href="assert_8h_source.html#l00067">NS_ASSERT</a>.</p>
 
 </div>
 </div>
@@ -648,12 +637,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Return the serialized size of this HE Operations IE. </p>
-<dl class="section return"><dt>Returns</dt><dd>the serialized size of this HE Operations IE </dd></dl>
-
 <p class="definition">Definition at line <a class="el" href="he-operation_8cc_source.html#l00147">147</a> of file <a class="el" href="he-operation_8cc_source.html">he-operation.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="wifi-information-element_8cc_source.html#l00035">ns3::WifiInformationElement::GetSerializedSize()</a>, and <a class="el" href="he-operation_8h_source.html#l00154">m_heSupported</a>.</p>
+<p class="reference">References <a class="el" href="wifi-information-element_8cc_source.html#l00035">ns3::WifiInformationElement::GetSerializedSize()</a>, and <a class="el" href="he-operation_8h_source.html#l00117">m_heSupported</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mgt-headers_8cc_source.html#l01087">ns3::MgtAssocResponseHeader::GetSerializedSize()</a>, and <a class="el" href="mgt-headers_8cc_source.html#l00399">ns3::MgtProbeResponseHeader::GetSerializedSize()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -663,7 +649,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_he_operation_a62ee7db5c64122ce94151d0307c3ac4a_cgraph.png" border="0" usemap="#classns3_1_1_he_operation_a62ee7db5c64122ce94151d0307c3ac4a_cgraph" alt=""/></div>
 <map name="classns3_1_1_he_operation_a62ee7db5c64122ce94151d0307c3ac4a_cgraph" id="classns3_1_1_he_operation_a62ee7db5c64122ce94151d0307c3ac4a_cgraph">
-<area shape="rect" title="Return the serialized size of this HE Operations IE." alt="" coords="5,13,263,39"/>
+<area shape="rect" title=" " alt="" coords="5,13,263,39"/>
 <area shape="rect" href="classns3_1_1_wifi_information_element.html#a1e40d7d7a90f9c6d383223c26a977dc3" title="Get the size of the serialized IE including Element ID and length fields." alt="" coords="311,5,520,47"/>
 <area shape="rect" href="classns3_1_1_wifi_information_element.html#a04af58633c58364e6b8d0ae2a7d777b2" title="Length of serialized information (i.e., the length of the body of the IE, not including the Element I..." alt="" coords="568,5,777,47"/>
 </map>
@@ -675,7 +661,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_he_operation_a62ee7db5c64122ce94151d0307c3ac4a_icgraph.png" border="0" usemap="#classns3_1_1_he_operation_a62ee7db5c64122ce94151d0307c3ac4a_icgraph" alt=""/></div>
 <map name="classns3_1_1_he_operation_a62ee7db5c64122ce94151d0307c3ac4a_icgraph" id="classns3_1_1_he_operation_a62ee7db5c64122ce94151d0307c3ac4a_icgraph">
-<area shape="rect" title="Return the serialized size of this HE Operations IE." alt="" coords="280,46,537,73"/>
+<area shape="rect" title=" " alt="" coords="280,46,537,73"/>
 <area shape="rect" href="classns3_1_1_mgt_assoc_response_header.html#a5e89f2a2f4de5bf66291e26e882d5400" title=" " alt="" coords="5,5,232,47"/>
 <area shape="rect" href="classns3_1_1_mgt_probe_response_header.html#ab5e4c638c35be8e8d0670cfa03cd20ec" title=" " alt="" coords="6,71,231,112"/>
 </map>
@@ -699,19 +685,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>This information element is a bit special in that it is only included if the STA is a HE STA. </p>
-<p>To support this we override the Serialize and GetSerializedSize methods of <a class="el" href="classns3_1_1_wifi_information_element.html" title="Information element, as defined in 802.11-2007 standard.">WifiInformationElement</a>.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">start</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>an iterator </dd></dl>
-
 <p class="definition">Definition at line <a class="el" href="he-operation_8cc_source.html#l00137">137</a> of file <a class="el" href="he-operation_8cc_source.html">he-operation.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="he-operation_8h_source.html#l00154">m_heSupported</a>, and <a class="el" href="wifi-information-element_8cc_source.html#l00047">ns3::WifiInformationElement::Serialize()</a>.</p>
+<p class="reference">References <a class="el" href="he-operation_8h_source.html#l00117">m_heSupported</a>, and <a class="el" href="wifi-information-element_8cc_source.html#l00047">ns3::WifiInformationElement::Serialize()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mgt-headers_8cc_source.html#l01124">ns3::MgtAssocResponseHeader::Serialize()</a>, and <a class="el" href="mgt-headers_8cc_source.html#l00438">ns3::MgtProbeResponseHeader::Serialize()</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -721,7 +697,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_he_operation_ad60be854ad8ae9aee9841a811f463a67_cgraph.png" border="0" usemap="#classns3_1_1_he_operation_ad60be854ad8ae9aee9841a811f463a67_cgraph" alt=""/></div>
 <map name="classns3_1_1_he_operation_ad60be854ad8ae9aee9841a811f463a67_cgraph" id="classns3_1_1_he_operation_ad60be854ad8ae9aee9841a811f463a67_cgraph">
-<area shape="rect" title="This information element is a bit special in that it is only included if the STA is a HE STA." alt="" coords="5,177,204,203"/>
+<area shape="rect" title=" " alt="" coords="5,177,204,203"/>
 <area shape="rect" href="classns3_1_1_wifi_information_element.html#a8662b6056d624747d927e9c041e24ab0" title="Serialize entire IE including Element ID and length fields." alt="" coords="252,169,461,211"/>
 <area shape="rect" href="classns3_1_1_wifi_information_element.html#a0c16b85dc0c63baf7fc437ddbc13ada6" title=" " alt="" coords="509,5,719,47"/>
 <area shape="rect" href="classns3_1_1_wifi_information_element.html#ae24bfd29837cfb426a44dadd56d72f4b" title=" " alt="" coords="509,71,719,112"/>
@@ -739,7 +715,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_he_operation_ad60be854ad8ae9aee9841a811f463a67_icgraph.png" border="0" usemap="#classns3_1_1_he_operation_ad60be854ad8ae9aee9841a811f463a67_icgraph" alt=""/></div>
 <map name="classns3_1_1_he_operation_ad60be854ad8ae9aee9841a811f463a67_icgraph" id="classns3_1_1_he_operation_ad60be854ad8ae9aee9841a811f463a67_icgraph">
-<area shape="rect" title="This information element is a bit special in that it is only included if the STA is a HE STA." alt="" coords="280,46,479,73"/>
+<area shape="rect" title=" " alt="" coords="280,46,479,73"/>
 <area shape="rect" href="classns3_1_1_mgt_assoc_response_header.html#ac7eb0a62c467eb513d37dc095c896985" title=" " alt="" coords="5,5,232,47"/>
 <area shape="rect" href="classns3_1_1_mgt_probe_response_header.html#a1f83599e2f55616f48c23e5115749d93" title=" " alt="" coords="6,71,231,112"/>
 </map>
@@ -771,10 +747,10 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Serialize the information field. </p>
+<p>Serialize information (i.e., the body of the IE, not including the Element ID and length octets) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">start</td><td>the information field iterator </td></tr>
+    <tr><td class="paramname">start</td><td>an iterator which points to where the information should be written. </td></tr>
   </table>
   </dd>
 </dl>
@@ -783,7 +759,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="he-operation_8cc_source.html#l00157">157</a> of file <a class="el" href="he-operation_8cc_source.html">he-operation.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="he-operation_8cc_source.html#l00117">GetBasicHeMcsAndNssSet()</a>, <a class="el" href="he-operation_8cc_source.html#l00081">GetHeOperationParameters()</a>, <a class="el" href="he-operation_8h_source.html#l00154">m_heSupported</a>, and <a class="el" href="core_8py_source.html#l01855">visualizer.core::start()</a>.</p>
+<p class="reference">References <a class="el" href="he-operation_8cc_source.html#l00117">GetBasicHeMcsAndNssSet()</a>, <a class="el" href="he-operation_8cc_source.html#l00081">GetHeOperationParameters()</a>, <a class="el" href="he-operation_8h_source.html#l00117">m_heSupported</a>, and <a class="el" href="core_8py_source.html#l01855">visualizer.core::start()</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
@@ -791,7 +767,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_he_operation_a608ec0620e24e2df3fb8204b41c0b093_cgraph.png" border="0" usemap="#classns3_1_1_he_operation_a608ec0620e24e2df3fb8204b41c0b093_cgraph" alt=""/></div>
 <map name="classns3_1_1_he_operation_a608ec0620e24e2df3fb8204b41c0b093_cgraph" id="classns3_1_1_he_operation_a608ec0620e24e2df3fb8204b41c0b093_cgraph">
-<area shape="rect" title="Serialize the information field." alt="" coords="5,71,204,112"/>
+<area shape="rect" title="Serialize information (i.e., the body of the IE, not including the Element ID and length octets)" alt="" coords="5,71,204,112"/>
 <area shape="rect" href="classns3_1_1_he_operation.html#a7dd6e83d9d283abf3bdcb0be3df44fbe" title="Return the Basic HE&#45;MCS And Nss field in the HE Operation information element." alt="" coords="275,5,477,47"/>
 <area shape="rect" href="classns3_1_1_he_operation.html#a2d11db8ed7573b97fad6df9159f6b82b" title="Return the HE Operation Parameters field in the HE Operation information element." alt="" coords="252,71,500,112"/>
 <area shape="rect" href="namespacevisualizer_1_1core.html#a2a35e5d8a34af358b508dac8635754e0" title=" " alt="" coords="301,137,451,163"/>
@@ -828,7 +804,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="he-operation_8cc_source.html#l00123">123</a> of file <a class="el" href="he-operation_8cc_source.html">he-operation.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="he-operation_8h_source.html#l00138">m_bssColor</a>, <a class="el" href="he-operation_8h_source.html#l00145">m_bssColorDisabled</a>, and <a class="el" href="abort_8h_source.html#l00128">NS_ABORT_UNLESS</a>.</p>
+<p class="reference">References <a class="el" href="he-operation_8h_source.html#l00101">m_bssColor</a>, <a class="el" href="he-operation_8h_source.html#l00108">m_bssColorDisabled</a>, and <a class="el" href="abort_8h_source.html#l00128">NS_ABORT_UNLESS</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ap-wifi-mac_8cc_source.html#l00702">ns3::ApWifiMac::GetHeOperation()</a>.</p>
 <div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -878,7 +854,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="he-operation_8cc_source.html#l00067">67</a> of file <a class="el" href="he-operation_8cc_source.html">he-operation.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="he-operation_8h_source.html#l00138">m_bssColor</a>, <a class="el" href="he-operation_8h_source.html#l00145">m_bssColorDisabled</a>, <a class="el" href="he-operation_8h_source.html#l00139">m_defaultPEDuration</a>, <a class="el" href="he-operation_8h_source.html#l00146">m_dualBeacon</a>, <a class="el" href="he-operation_8h_source.html#l00141">m_heDurationBasedRtsThreshold</a>, <a class="el" href="he-operation_8h_source.html#l00143">m_maxBssidIndicator</a>, <a class="el" href="he-operation_8h_source.html#l00142">m_partialBssColor</a>, <a class="el" href="he-operation_8h_source.html#l00140">m_twtRequired</a>, and <a class="el" href="he-operation_8h_source.html#l00144">m_txBssidIndicator</a>.</p>
+<p class="reference">References <a class="el" href="he-operation_8h_source.html#l00101">m_bssColor</a>, <a class="el" href="he-operation_8h_source.html#l00108">m_bssColorDisabled</a>, <a class="el" href="he-operation_8h_source.html#l00102">m_defaultPEDuration</a>, <a class="el" href="he-operation_8h_source.html#l00109">m_dualBeacon</a>, <a class="el" href="he-operation_8h_source.html#l00104">m_heDurationBasedRtsThreshold</a>, <a class="el" href="he-operation_8h_source.html#l00106">m_maxBssidIndicator</a>, <a class="el" href="he-operation_8h_source.html#l00105">m_partialBssColor</a>, <a class="el" href="he-operation_8h_source.html#l00103">m_twtRequired</a>, and <a class="el" href="he-operation_8h_source.html#l00107">m_txBssidIndicator</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="he-operation_8cc_source.html#l00169">DeserializeInformationField()</a>.</p>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -889,14 +865,14 @@ Private Attributes</h2></td></tr>
 <div class="center"><img src="classns3_1_1_he_operation_ab70f2072f6c1b00dba9951d07a671004_icgraph.png" border="0" usemap="#classns3_1_1_he_operation_ab70f2072f6c1b00dba9951d07a671004_icgraph" alt=""/></div>
 <map name="classns3_1_1_he_operation_ab70f2072f6c1b00dba9951d07a671004_icgraph" id="classns3_1_1_he_operation_ab70f2072f6c1b00dba9951d07a671004_icgraph">
 <area shape="rect" title="Set the HE Operation Parameters field in the HE Operation information element." alt="" coords="269,5,516,47"/>
-<area shape="rect" href="classns3_1_1_he_operation.html#aa65c5d06e02d1218e70bb3bf92d56f74" title="Deserialize the information field." alt="" coords="5,5,221,47"/>
+<area shape="rect" href="classns3_1_1_he_operation.html#aa65c5d06e02d1218e70bb3bf92d56f74" title="Deserialize information (i.e., the body of the IE, not including the Element ID and length octets)" alt="" coords="5,5,221,47"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="af11b3a8c03d6390f58870ef59ba08ca3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af11b3a8c03d6390f58870ef59ba08ca3">&#9670;&nbsp;</a></span>SetHeSupported()</h2>
+<a id="aff5b4e207742ef6a5680e083a4a636ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff5b4e207742ef6a5680e083a4a636ac">&#9670;&nbsp;</a></span>SetHeSupported()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -905,7 +881,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">void ns3::HeOperation::SetHeSupported </td>
           <td>(</td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>hesupported</em></td><td>)</td>
+          <td class="paramname"><em>heSupported</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -914,14 +890,14 @@ Private Attributes</h2></td></tr>
 <p>Set the HE supported information element. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">hesupported</td><td>the HE supported information element </td></tr>
+    <tr><td class="paramname">heSupported</td><td>the HE supported information element </td></tr>
   </table>
   </dd>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="he-operation_8cc_source.html#l00053">53</a> of file <a class="el" href="he-operation_8cc_source.html">he-operation.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="he-operation_8h_source.html#l00154">m_heSupported</a>.</p>
+<p class="reference">References <a class="el" href="he-operation_8h_source.html#l00117">m_heSupported</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ap-wifi-mac_8cc_source.html#l00702">ns3::ApWifiMac::GetHeOperation()</a>.</p>
 <div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -929,8 +905,8 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classns3_1_1_he_operation_af11b3a8c03d6390f58870ef59ba08ca3_icgraph.png" border="0" usemap="#classns3_1_1_he_operation_af11b3a8c03d6390f58870ef59ba08ca3_icgraph" alt=""/></div>
-<map name="classns3_1_1_he_operation_af11b3a8c03d6390f58870ef59ba08ca3_icgraph" id="classns3_1_1_he_operation_af11b3a8c03d6390f58870ef59ba08ca3_icgraph">
+<div class="center"><img src="classns3_1_1_he_operation_aff5b4e207742ef6a5680e083a4a636ac_icgraph.png" border="0" usemap="#classns3_1_1_he_operation_aff5b4e207742ef6a5680e083a4a636ac_icgraph" alt=""/></div>
+<map name="classns3_1_1_he_operation_aff5b4e207742ef6a5680e083a4a636ac_icgraph" id="classns3_1_1_he_operation_aff5b4e207742ef6a5680e083a4a636ac_icgraph">
 <area shape="rect" title="Set the HE supported information element." alt="" coords="1072,56,1320,83"/>
 <area shape="rect" href="classns3_1_1_ap_wifi_mac.html#a2233fc475fba1af0bce238d3a89554f0" title="Return the HE operation of the current AP." alt="" coords="788,56,1024,83"/>
 <area shape="rect" href="classns3_1_1_ap_wifi_mac.html#ad7fef463a6076916fa1f5a989e56f13d" title="Forward an association or a reassociation response packet to the DCF." alt="" coords="505,5,738,32"/>
@@ -971,7 +947,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set the Basic HE-MCS and NSS field in the HE Operation information element by specifying the tuple (nss, maxMcs). </p>
+<p>Set the Basic HE-MCS and NSS field in the HE Operation information element by specifying the tuple (<em>nss</em>, <em>maxMcs</em>). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">nss</td><td>the NSS </td></tr>
@@ -982,7 +958,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="he-operation_8cc_source.html#l00097">97</a> of file <a class="el" href="he-operation_8cc_source.html">he-operation.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="he-operation_8h_source.html#l00149">m_basicHeMcsAndNssSet</a>, and <a class="el" href="assert_8h_source.html#l00067">NS_ASSERT</a>.</p>
+<p class="reference">References <a class="el" href="he-operation_8h_source.html#l00112">m_basicHeMcsAndNssSet</a>, and <a class="el" href="assert_8h_source.html#l00067">NS_ASSERT</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ap-wifi-mac_8cc_source.html#l00702">ns3::ApWifiMac::GetHeOperation()</a>.</p>
 <div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1029,7 +1005,7 @@ Private Attributes</h2></td></tr>
 
 <p>basic HE MCS NSS set </p>
 
-<p class="definition">Definition at line <a class="el" href="he-operation_8h_source.html#l00149">149</a> of file <a class="el" href="he-operation_8h_source.html">he-operation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="he-operation_8h_source.html#l00112">112</a> of file <a class="el" href="he-operation_8h_source.html">he-operation.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="he-operation_8cc_source.html#l00169">DeserializeInformationField()</a>, <a class="el" href="he-operation_8cc_source.html#l00117">GetBasicHeMcsAndNssSet()</a>, and <a class="el" href="he-operation_8cc_source.html#l00097">SetMaxHeMcsPerNss()</a>.</p>
 
@@ -1057,7 +1033,7 @@ Private Attributes</h2></td></tr>
 
 <p>BSS color. </p>
 
-<p class="definition">Definition at line <a class="el" href="he-operation_8h_source.html#l00138">138</a> of file <a class="el" href="he-operation_8h_source.html">he-operation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="he-operation_8h_source.html#l00101">101</a> of file <a class="el" href="he-operation_8h_source.html">he-operation.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="he-operation_8cc_source.html#l00131">GetBssColor()</a>, <a class="el" href="he-operation_8cc_source.html#l00081">GetHeOperationParameters()</a>, <a class="el" href="he-operation_8cc_source.html#l00123">SetBssColor()</a>, and <a class="el" href="he-operation_8cc_source.html#l00067">SetHeOperationParameters()</a>.</p>
 
@@ -1085,7 +1061,7 @@ Private Attributes</h2></td></tr>
 
 <p>BSS color disabled. </p>
 
-<p class="definition">Definition at line <a class="el" href="he-operation_8h_source.html#l00145">145</a> of file <a class="el" href="he-operation_8h_source.html">he-operation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="he-operation_8h_source.html#l00108">108</a> of file <a class="el" href="he-operation_8h_source.html">he-operation.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="he-operation_8cc_source.html#l00081">GetHeOperationParameters()</a>, <a class="el" href="he-operation_8cc_source.html#l00123">SetBssColor()</a>, and <a class="el" href="he-operation_8cc_source.html#l00067">SetHeOperationParameters()</a>.</p>
 
@@ -1113,7 +1089,7 @@ Private Attributes</h2></td></tr>
 
 <p>default PE duration </p>
 
-<p class="definition">Definition at line <a class="el" href="he-operation_8h_source.html#l00139">139</a> of file <a class="el" href="he-operation_8h_source.html">he-operation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="he-operation_8h_source.html#l00102">102</a> of file <a class="el" href="he-operation_8h_source.html">he-operation.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="he-operation_8cc_source.html#l00081">GetHeOperationParameters()</a>, and <a class="el" href="he-operation_8cc_source.html#l00067">SetHeOperationParameters()</a>.</p>
 
@@ -1141,7 +1117,7 @@ Private Attributes</h2></td></tr>
 
 <p>Dual Beacon. </p>
 
-<p class="definition">Definition at line <a class="el" href="he-operation_8h_source.html#l00146">146</a> of file <a class="el" href="he-operation_8h_source.html">he-operation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="he-operation_8h_source.html#l00109">109</a> of file <a class="el" href="he-operation_8h_source.html">he-operation.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="he-operation_8cc_source.html#l00081">GetHeOperationParameters()</a>, and <a class="el" href="he-operation_8cc_source.html#l00067">SetHeOperationParameters()</a>.</p>
 
@@ -1169,7 +1145,7 @@ Private Attributes</h2></td></tr>
 
 <p>HE duration based RTS threshold. </p>
 
-<p class="definition">Definition at line <a class="el" href="he-operation_8h_source.html#l00141">141</a> of file <a class="el" href="he-operation_8h_source.html">he-operation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="he-operation_8h_source.html#l00104">104</a> of file <a class="el" href="he-operation_8h_source.html">he-operation.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="he-operation_8cc_source.html#l00081">GetHeOperationParameters()</a>, and <a class="el" href="he-operation_8cc_source.html#l00067">SetHeOperationParameters()</a>.</p>
 
@@ -1197,7 +1173,7 @@ Private Attributes</h2></td></tr>
 
 <p>This is used to decide whether this element should be added to the frame or not. </p>
 
-<p class="definition">Definition at line <a class="el" href="he-operation_8h_source.html#l00154">154</a> of file <a class="el" href="he-operation_8h_source.html">he-operation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="he-operation_8h_source.html#l00117">117</a> of file <a class="el" href="he-operation_8h_source.html">he-operation.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="he-operation_8cc_source.html#l00059">GetInformationFieldSize()</a>, <a class="el" href="he-operation_8cc_source.html#l00147">GetSerializedSize()</a>, <a class="el" href="he-operation_8cc_source.html#l00137">Serialize()</a>, <a class="el" href="he-operation_8cc_source.html#l00157">SerializeInformationField()</a>, and <a class="el" href="he-operation_8cc_source.html#l00053">SetHeSupported()</a>.</p>
 
@@ -1225,7 +1201,7 @@ Private Attributes</h2></td></tr>
 
 <p>max BSSID indicator </p>
 
-<p class="definition">Definition at line <a class="el" href="he-operation_8h_source.html#l00143">143</a> of file <a class="el" href="he-operation_8h_source.html">he-operation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="he-operation_8h_source.html#l00106">106</a> of file <a class="el" href="he-operation_8h_source.html">he-operation.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="he-operation_8cc_source.html#l00081">GetHeOperationParameters()</a>, and <a class="el" href="he-operation_8cc_source.html#l00067">SetHeOperationParameters()</a>.</p>
 
@@ -1253,7 +1229,7 @@ Private Attributes</h2></td></tr>
 
 <p>partial BSS color </p>
 
-<p class="definition">Definition at line <a class="el" href="he-operation_8h_source.html#l00142">142</a> of file <a class="el" href="he-operation_8h_source.html">he-operation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="he-operation_8h_source.html#l00105">105</a> of file <a class="el" href="he-operation_8h_source.html">he-operation.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="he-operation_8cc_source.html#l00081">GetHeOperationParameters()</a>, and <a class="el" href="he-operation_8cc_source.html#l00067">SetHeOperationParameters()</a>.</p>
 
@@ -1281,7 +1257,7 @@ Private Attributes</h2></td></tr>
 
 <p>TWT required. </p>
 
-<p class="definition">Definition at line <a class="el" href="he-operation_8h_source.html#l00140">140</a> of file <a class="el" href="he-operation_8h_source.html">he-operation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="he-operation_8h_source.html#l00103">103</a> of file <a class="el" href="he-operation_8h_source.html">he-operation.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="he-operation_8cc_source.html#l00081">GetHeOperationParameters()</a>, and <a class="el" href="he-operation_8cc_source.html#l00067">SetHeOperationParameters()</a>.</p>
 
@@ -1309,7 +1285,7 @@ Private Attributes</h2></td></tr>
 
 <p>TX BSSID indicator. </p>
 
-<p class="definition">Definition at line <a class="el" href="he-operation_8h_source.html#l00144">144</a> of file <a class="el" href="he-operation_8h_source.html">he-operation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="he-operation_8h_source.html#l00107">107</a> of file <a class="el" href="he-operation_8h_source.html">he-operation.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="he-operation_8cc_source.html#l00081">GetHeOperationParameters()</a>, and <a class="el" href="he-operation_8cc_source.html#l00067">SetHeOperationParameters()</a>.</p>
 
@@ -1329,7 +1305,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_he_operation.html">HeOperation</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:25 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:30 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>

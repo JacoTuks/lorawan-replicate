@@ -1,9 +1,9 @@
 <map id="ns3::MgtProbeRequestHeader::Serialize" name="ns3::MgtProbeRequestHeader::Serialize">
 <area shape="rect" id="node1" title=" " alt="" coords="5,252,220,293"/>
 <area shape="rect" id="node2" href="$classns3_1_1_wifi_information_element.html#a8662b6056d624747d927e9c041e24ab0" title="Serialize entire IE including Element ID and length fields." alt="" coords="533,195,743,236"/>
-<area shape="rect" id="node10" href="$classns3_1_1_extended_capabilities.html#a6bfc9e52ad54ecee9f11bc6a7e9dea7d" title="This information element is a bit special in that it is only included if the STA is a HT STA." alt="" coords="281,121,472,163"/>
-<area shape="rect" id="node11" href="$classns3_1_1_he_capabilities.html#a2539a6048077d3f1c333a060943fcce3" title="Serialize function." alt="" coords="303,187,451,228"/>
-<area shape="rect" id="node12" href="$classns3_1_1_ht_capabilities.html#a8c602ed95290cd1aa75cafaa1744f6ba" title="This information element is a bit special in that it is only included if the STA is an HT STA." alt="" coords="304,252,449,293"/>
+<area shape="rect" id="node10" href="$classns3_1_1_extended_capabilities.html#a6bfc9e52ad54ecee9f11bc6a7e9dea7d" title=" " alt="" coords="281,121,472,163"/>
+<area shape="rect" id="node11" href="$classns3_1_1_he_capabilities.html#a2539a6048077d3f1c333a060943fcce3" title=" " alt="" coords="303,187,451,228"/>
+<area shape="rect" id="node12" href="$classns3_1_1_ht_capabilities.html#a8c602ed95290cd1aa75cafaa1744f6ba" title=" " alt="" coords="304,252,449,293"/>
 <area shape="rect" id="node13" href="$classns3_1_1_extended_supported_rates_i_e.html#aa9c2e690fce4f090645460828d041e3a" title=" " alt="" coords="268,383,485,424"/>
 <area shape="rect" id="node14" href="$namespacevisualizer_1_1core.html#a2a35e5d8a34af358b508dac8635754e0" title=" " alt="" coords="563,419,713,446"/>
 <area shape="rect" id="node17" href="$classns3_1_1_vht_capabilities.html#a13178aba277c65e0bb1734e542726952" title=" " alt="" coords="301,317,453,359"/>

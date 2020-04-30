@@ -24,7 +24,7 @@
 <area shape="rect" id="node25" href="$classns3_1_1_ipv4_packet_info_tag.html" title="This class implements Linux struct pktinfo in order to deliver ancillary information to the socket in..." alt="" coords="340,1191,511,1217"/>
 <area shape="rect" id="node26" href="$classns3_1_1_ipv6_flow_probe_tag.html" title="Tag used to allow a fast identification of the packet." alt="" coords="340,1241,511,1268"/>
 <area shape="rect" id="node27" href="$classns3_1_1_ipv6_packet_info_tag.html" title="This class implements a tag that carries socket ancillary data to the socket interface...." alt="" coords="340,1292,511,1319"/>
-<area shape="rect" id="node28" href="$classns3_1_1_lora_tag.html" title="Tag used to save various data about a packet, like its Spreading Factor and data about interference." alt="" coords="374,1343,477,1369"/>
+<area shape="rect" id="node28" href="$classns3_1_1lorawan_1_1_lora_tag.html" title="Tag used to save various data about a packet, like its Spreading Factor and data about interference." alt="" coords="344,1343,507,1369"/>
 <area shape="rect" id="node29" href="$classns3_1_1_lr_wpan_lqi_tag.html" title=" " alt="" coords="354,1393,497,1420"/>
 <area shape="rect" id="node30" href="$classns3_1_1_lte_phy_tag.html" title="Tag used to define PHY parameters." alt="" coords="366,1444,485,1471"/>
 <area shape="rect" id="node31" href="$classns3_1_1_lte_radio_bearer_tag.html" title="Tag used to define the RNTI and LC id for each MAC packet trasmitted." alt="" coords="338,1495,513,1521"/>

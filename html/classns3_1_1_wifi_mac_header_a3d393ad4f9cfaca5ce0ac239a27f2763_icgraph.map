@@ -7,7 +7,7 @@
 <area shape="rect" id="node7" href="$classns3_1_1_mac_rx_middle.html#ae595f60963be22a3e28975572f3e0707" title="Check if the received packet is a fragment and handle it appropriately." alt="" coords="1343,249,1538,290"/>
 <area shape="rect" id="node8" href="$classns3_1_1_mac_rx_middle.html#a816ef69ee0b13d326f3f10d4cf3f6603" title="Receive a packet." alt="" coords="1043,163,1244,190"/>
 <area shape="rect" id="node20" href="$classns3_1_1_block_ack_manager.html#a9d49bfabc11967a76ad99272310d2c79" title=" " alt="" coords="1355,366,1526,408"/>
-<area shape="rect" id="node22" href="$classns3_1_1_block_ack_manager.html#a65475bccad55292cd07b7a50fafffc9d" title="Invoked upon missed reception of an ack frame after the transmission of a QoS data frame sent under a..." alt="" coords="1058,432,1229,473"/>
+<area shape="rect" id="node22" href="$classns3_1_1_block_ack_manager.html#a65475bccad55292cd07b7a50fafffc9d" title="Invoked upon missed reception of an Ack frame after the transmission of a QoS data frame sent under a..." alt="" coords="1058,432,1229,473"/>
 <area shape="rect" id="node24" href="$classns3_1_1_wifi_mac_queue_item.html#a7f10d14f186f7e2c01eefee173a6ca37" title="Print the item contents." alt="" coords="1351,484,1530,525"/>
 <area shape="rect" id="node26" href="$classns3_1_1_mac_low.html#af3d3e6e892e33bfb97bf65199c3aafd6" title=" " alt="" coords="1339,315,1542,342"/>
 <area shape="rect" id="node28" href="$classns3_1_1_mac_low.html#aa477261c5209c13c66af9e2ae78b07e5" title=" " alt="" coords="1325,600,1556,627"/>

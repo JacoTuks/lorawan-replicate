@@ -60,9 +60,6 @@
 			<a id="ns3_tut"
 			  href="/docs/tutorial/html/index.html"
 			  >English</a><br/>
-			<a id="ns3_ptbr"
-			    href="/docs/tutorial-pt-br/html/index.html"
-			    >Portuguese</a><br/>
 		    </li>
 		    <li><span
 			onmouseover="mopen('mDocs')" 
@@ -223,7 +220,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a02d703f33683f416413646ef95117afe"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_wifi_helper.html#a02d703f33683f416413646ef95117afe">~WifiHelper</a> ()</td></tr>
 <tr class="separator:a02d703f33683f416413646ef95117afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab29bf13f8726c2e0807a583bfea79777"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_wifi_helper.html#ab29bf13f8726c2e0807a583bfea79777">AssignStreams</a> (<a class="el" href="classns3_1_1_net_device_container.html">NetDeviceContainer</a> c, int64_t stream)</td></tr>
-<tr class="memdesc:ab29bf13f8726c2e0807a583bfea79777"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign a fixed random variable stream number to the random variables used by the Phy and Mac aspects of the Wifi models.  <a href="classns3_1_1_wifi_helper.html#ab29bf13f8726c2e0807a583bfea79777">More...</a><br /></td></tr>
+<tr class="memdesc:ab29bf13f8726c2e0807a583bfea79777"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign a fixed random variable stream number to the random variables used by the PHY and MAC aspects of the Wifi models.  <a href="classns3_1_1_wifi_helper.html#ab29bf13f8726c2e0807a583bfea79777">More...</a><br /></td></tr>
 <tr class="separator:ab29bf13f8726c2e0807a583bfea79777"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3cf8b14724154f49e73e651ff00c0bc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classns3_1_1_net_device_container.html">NetDeviceContainer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_wifi_helper.html#ae3cf8b14724154f49e73e651ff00c0bc">Install</a> (const <a class="el" href="classns3_1_1_wifi_phy_helper.html">WifiPhyHelper</a> &amp;phy, const <a class="el" href="classns3_1_1_wifi_mac_helper.html">WifiMacHelper</a> &amp;mac, <a class="el" href="classns3_1_1_node_container.html">NodeContainer</a> c) const</td></tr>
 <tr class="separator:ae3cf8b14724154f49e73e651ff00c0bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -256,7 +253,7 @@ Protected Attributes</h2></td></tr>
 <tr class="memdesc:a520e40cb0ff3b9a5e27b369b26fcd79a"><td class="mdescLeft">&#160;</td><td class="mdescRight">ack policy selector for all ACs  <a href="classns3_1_1_wifi_helper.html#a520e40cb0ff3b9a5e27b369b26fcd79a">More...</a><br /></td></tr>
 <tr class="separator:a520e40cb0ff3b9a5e27b369b26fcd79a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a665e3385cf582c05d4163ee5bf25dfc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classns3_1_1_object_factory.html">ObjectFactory</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_wifi_helper.html#a665e3385cf582c05d4163ee5bf25dfc0">m_obssPdAlgorithm</a></td></tr>
-<tr class="memdesc:a665e3385cf582c05d4163ee5bf25dfc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">OBSS PD algorithm.  <a href="classns3_1_1_wifi_helper.html#a665e3385cf582c05d4163ee5bf25dfc0">More...</a><br /></td></tr>
+<tr class="memdesc:a665e3385cf582c05d4163ee5bf25dfc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">OBSS_PD algorithm.  <a href="classns3_1_1_wifi_helper.html#a665e3385cf582c05d4163ee5bf25dfc0">More...</a><br /></td></tr>
 <tr class="separator:a665e3385cf582c05d4163ee5bf25dfc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad777863b15a778dfaf90d90be99129b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classns3_1_1_wifi_helper.html#ae37933fb608e9082da04a29719ca0ee7">SelectQueueCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1_wifi_helper.html#ad777863b15a778dfaf90d90be99129b5">m_selectQueueCallback</a></td></tr>
 <tr class="memdesc:ad777863b15a778dfaf90d90be99129b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">select queue callback  <a href="classns3_1_1_wifi_helper.html#ad777863b15a778dfaf90d90be99129b5">More...</a><br /></td></tr>
@@ -397,7 +394,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Assign a fixed random variable stream number to the random variables used by the Phy and Mac aspects of the Wifi models. </p>
+<p>Assign a fixed random variable stream number to the random variables used by the PHY and MAC aspects of the Wifi models. </p>
 <p>Each device in container c has fixed stream numbers assigned to its random variables. The Wifi channel (e.g. propagation loss model) is excluded. Return the number of streams (possibly zero) that have been assigned. The <a class="el" href="classns3_1_1_wifi_helper.html#acf88c2d3f0721a1023794fb60502a9d6">Install()</a> method should have previously been called by the user.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -418,7 +415,7 @@ Protected Attributes</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classns3_1_1_wifi_helper_ab29bf13f8726c2e0807a583bfea79777_cgraph.png" border="0" usemap="#classns3_1_1_wifi_helper_ab29bf13f8726c2e0807a583bfea79777_cgraph" alt=""/></div>
 <map name="classns3_1_1_wifi_helper_ab29bf13f8726c2e0807a583bfea79777_cgraph" id="classns3_1_1_wifi_helper_ab29bf13f8726c2e0807a583bfea79777_cgraph">
-<area shape="rect" title="Assign a fixed random variable stream number to the random variables used by the Phy and Mac aspects ..." alt="" coords="5,166,232,193"/>
+<area shape="rect" title="Assign a fixed random variable stream number to the random variables used by the PHY and MAC aspects ..." alt="" coords="5,166,232,193"/>
 <area shape="rect" href="classns3_1_1_txop.html#a126f23a1b95b7e22840e1128f0457981" title="Assign a fixed random variable stream number to the random variables used by this model." alt="" coords="293,78,483,105"/>
 <area shape="rect" href="classns3_1_1_net_device_container.html#a4ddc336af319061f5b61c515f0453242" title="Get an iterator which refers to the first NetDevice in the container." alt="" coords="296,129,480,171"/>
 <area shape="rect" href="classns3_1_1_net_device_container.html#a436d9df206570861f96c3f278eaccb92" title="Get an iterator which indicates past&#45;the&#45;last NetDevice in the container." alt="" coords="280,195,496,222"/>
@@ -463,7 +460,7 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="wifi-helper_8cc_source.html#l00872">872</a> of file <a class="el" href="wifi-helper_8cc_source.html">wifi-helper.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="log_8h_source.html#l00116">ns3::LOG_LEVEL_ALL</a>, <a class="el" href="log_8h_source.html#l00120">ns3::LOG_PREFIX_NODE</a>, <a class="el" href="log_8h_source.html#l00119">ns3::LOG_PREFIX_TIME</a>, <a class="el" href="log_8cc_source.html#l00370">ns3::LogComponentEnable()</a>, and <a class="el" href="log_8cc_source.html#l00394">ns3::LogComponentEnableAll()</a>.</p>
+<p class="reference">References <a class="el" href="log_8h_source.html#l00116">ns3::LOG_LEVEL_ALL</a>, <a class="el" href="log_8h_source.html#l00120">ns3::LOG_PREFIX_NODE</a>, <a class="el" href="log_8h_source.html#l00119">ns3::LOG_PREFIX_TIME</a>, <a class="el" href="log_8cc_source.html#l00361">ns3::LogComponentEnable()</a>, and <a class="el" href="log_8cc_source.html#l00385">ns3::LogComponentEnableAll()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="wave-helper_8cc_source.html#l00482">ns3::WaveHelper::EnableLogComponents()</a>, and <a class="el" href="wifi-80211p-helper_8cc_source.html#l00068">ns3::Wifi80211pHelper::EnableLogComponents()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -550,7 +547,7 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="wifi-helper_8cc_source.html#l00850">850</a> of file <a class="el" href="wifi-helper_8cc_source.html">wifi-helper.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="node-container_8cc_source.html#l00072">ns3::NodeContainer::Begin()</a>, <a class="el" href="node-container_8cc_source.html#l00077">ns3::NodeContainer::End()</a>, and <a class="el" href="wifi-helper_8cc_source.html#l00747">Install()</a>.</p>
+<p class="reference">References <a class="el" href="node-container_8cc_source.html#l00077">ns3::NodeContainer::Begin()</a>, <a class="el" href="node-container_8cc_source.html#l00082">ns3::NodeContainer::End()</a>, and <a class="el" href="wifi-helper_8cc_source.html#l00747">Install()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -671,7 +668,7 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="wifi-helper_8cc_source.html#l00747">747</a> of file <a class="el" href="wifi-helper_8cc_source.html">wifi-helper.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="qos-utils_8h_source.html#l00041">ns3::AC_BE</a>, <a class="el" href="qos-utils_8h_source.html#l00043">ns3::AC_BK</a>, <a class="el" href="qos-utils_8h_source.html#l00045">ns3::AC_VI</a>, <a class="el" href="qos-utils_8h_source.html#l00047">ns3::AC_VO</a>, <a class="el" href="node_8cc_source.html#l00128">ns3::Node::AddDevice()</a>, <a class="el" href="object_8cc_source.html#l00252">ns3::Object::AggregateObject()</a>, <a class="el" href="mac48-address_8cc_source.html#l00135">ns3::Mac48Address::Allocate()</a>, <a class="el" href="wifi-mac-helper_8cc_source.html#l00068">ns3::WifiMacHelper::Create()</a>, <a class="el" href="classns3_1_1_wifi_phy_helper.html#a0f7f4ce41ebe74cbba4f89bc9a9fec8e">ns3::WifiPhyHelper::Create()</a>, <a class="el" href="object-factory_8cc_source.html#l00104">ns3::ObjectFactory::Create()</a>, <a class="el" href="first_8py_source.html#l00039">first::devices</a>, <a class="el" href="boolean_8cc_source.html#l00051">ns3::BooleanValue::Get()</a>, <a class="el" href="pointer_8h_source.html#l00203">ns3::PointerValue::Get()</a>, <a class="el" href="object_8h_source.html#l00461">ns3::Object::GetObject()</a>, <a class="el" href="object-factory_8cc_source.html#l00064">ns3::ObjectFactory::IsTypeIdSet()</a>, <a class="el" href="wifi-helper_8h_source.html#l00508">m_ackPolicySelector</a>, <a class="el" href="wifi-helper_8h_source.html#l00511">m_obssPdAlgorithm</a>, <a class="el" href="wifi-helper_8h_source.html#l00510">m_selectQueueCallback</a>, <a class="el" href="wifi-helper_8h_source.html#l00509">m_standard</a>, <a class="el" href="wifi-helper_8h_source.html#l00507">m_stationManager</a>, <a class="el" href="third_8py_source.html#l00099">third::mac</a>, <a class="el" href="log_8h_source.html#l00273">NS_LOG_DEBUG</a>, <a class="el" href="third_8py_source.html#l00093">third::phy</a>, <a class="el" href="wifi-net-device_8cc_source.html#l00474">ns3::WifiNetDevice::SetHeConfiguration()</a>, <a class="el" href="wifi-net-device_8cc_source.html#l00450">ns3::WifiNetDevice::SetHtConfiguration()</a>, <a class="el" href="wifi-net-device_8cc_source.html#l00180">ns3::WifiNetDevice::SetMac()</a>, <a class="el" href="wifi-net-device_8cc_source.html#l00187">ns3::WifiNetDevice::SetPhy()</a>, <a class="el" href="wifi-net-device_8cc_source.html#l00194">ns3::WifiNetDevice::SetRemoteStationManager()</a>, <a class="el" href="wifi-net-device_8cc_source.html#l00462">ns3::WifiNetDevice::SetVhtConfiguration()</a>, <a class="el" href="wifi-phy-standard_8h_source.html#l00053">ns3::WIFI_PHY_STANDARD_80211ac</a>, <a class="el" href="wifi-phy-standard_8h_source.html#l00055">ns3::WIFI_PHY_STANDARD_80211ax_2_4GHZ</a>, <a class="el" href="wifi-phy-standard_8h_source.html#l00057">ns3::WIFI_PHY_STANDARD_80211ax_5GHZ</a>, and <a class="el" href="wifi-phy-standard_8h_source.html#l00049">ns3::WIFI_PHY_STANDARD_80211n_2_4GHZ</a>.</p>
+<p class="reference">References <a class="el" href="qos-utils_8h_source.html#l00041">ns3::AC_BE</a>, <a class="el" href="qos-utils_8h_source.html#l00043">ns3::AC_BK</a>, <a class="el" href="qos-utils_8h_source.html#l00045">ns3::AC_VI</a>, <a class="el" href="qos-utils_8h_source.html#l00047">ns3::AC_VO</a>, <a class="el" href="node_8cc_source.html#l00130">ns3::Node::AddDevice()</a>, <a class="el" href="object_8cc_source.html#l00252">ns3::Object::AggregateObject()</a>, <a class="el" href="mac48-address_8cc_source.html#l00135">ns3::Mac48Address::Allocate()</a>, <a class="el" href="wifi-mac-helper_8cc_source.html#l00068">ns3::WifiMacHelper::Create()</a>, <a class="el" href="classns3_1_1_wifi_phy_helper.html#a0f7f4ce41ebe74cbba4f89bc9a9fec8e">ns3::WifiPhyHelper::Create()</a>, <a class="el" href="object-factory_8cc_source.html#l00104">ns3::ObjectFactory::Create()</a>, <a class="el" href="first_8py_source.html#l00039">first::devices</a>, <a class="el" href="boolean_8cc_source.html#l00051">ns3::BooleanValue::Get()</a>, <a class="el" href="pointer_8h_source.html#l00203">ns3::PointerValue::Get()</a>, <a class="el" href="object_8h_source.html#l00464">ns3::Object::GetObject()</a>, <a class="el" href="object-factory_8cc_source.html#l00064">ns3::ObjectFactory::IsTypeIdSet()</a>, <a class="el" href="wifi-helper_8h_source.html#l00508">m_ackPolicySelector</a>, <a class="el" href="wifi-helper_8h_source.html#l00511">m_obssPdAlgorithm</a>, <a class="el" href="wifi-helper_8h_source.html#l00510">m_selectQueueCallback</a>, <a class="el" href="wifi-helper_8h_source.html#l00509">m_standard</a>, <a class="el" href="wifi-helper_8h_source.html#l00507">m_stationManager</a>, <a class="el" href="third_8py_source.html#l00099">third::mac</a>, <a class="el" href="log_8h_source.html#l00273">NS_LOG_DEBUG</a>, <a class="el" href="third_8py_source.html#l00093">third::phy</a>, <a class="el" href="wifi-net-device_8cc_source.html#l00474">ns3::WifiNetDevice::SetHeConfiguration()</a>, <a class="el" href="wifi-net-device_8cc_source.html#l00450">ns3::WifiNetDevice::SetHtConfiguration()</a>, <a class="el" href="wifi-net-device_8cc_source.html#l00180">ns3::WifiNetDevice::SetMac()</a>, <a class="el" href="wifi-net-device_8cc_source.html#l00187">ns3::WifiNetDevice::SetPhy()</a>, <a class="el" href="wifi-net-device_8cc_source.html#l00194">ns3::WifiNetDevice::SetRemoteStationManager()</a>, <a class="el" href="wifi-net-device_8cc_source.html#l00462">ns3::WifiNetDevice::SetVhtConfiguration()</a>, <a class="el" href="wifi-phy-standard_8h_source.html#l00053">ns3::WIFI_PHY_STANDARD_80211ac</a>, <a class="el" href="wifi-phy-standard_8h_source.html#l00055">ns3::WIFI_PHY_STANDARD_80211ax_2_4GHZ</a>, <a class="el" href="wifi-phy-standard_8h_source.html#l00057">ns3::WIFI_PHY_STANDARD_80211ax_5GHZ</a>, and <a class="el" href="wifi-phy-standard_8h_source.html#l00049">ns3::WIFI_PHY_STANDARD_80211n_2_4GHZ</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="wifi-helper_8cc_source.html#l00850">Install()</a>, and <a class="el" href="wifi-80211p-helper_8cc_source.html#l00077">ns3::Wifi80211pHelper::Install()</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1546,7 +1543,7 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>Set the select queue callback to set on the netdevice queue interface aggregated to the <a class="el" href="classns3_1_1_wifi_net_device.html" title="Hold together all Wifi-related objects.">WifiNetDevice</a>, in case <a class="el" href="classns3_1_1_regular_wifi_mac.html" title="base class for all MAC-level wifi objects.">RegularWifiMac</a> with QoS enabled is used </p>
+<p>Set the select queue callback to set on the <a class="el" href="classns3_1_1_net_device.html" title="Network layer to device interface.">NetDevice</a> queue interface aggregated to the <a class="el" href="classns3_1_1_wifi_net_device.html" title="Hold together all Wifi-related objects.">WifiNetDevice</a>, in case <a class="el" href="classns3_1_1_regular_wifi_mac.html" title="base class for all MAC-level wifi objects.">RegularWifiMac</a> with QoS enabled is used </p>
 
 <p class="definition">Definition at line <a class="el" href="wifi-helper_8cc_source.html#l00741">741</a> of file <a class="el" href="wifi-helper_8cc_source.html">wifi-helper.cc</a>.</p>
 
@@ -1590,11 +1587,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">standard</td><td>the phy standard to configure during installation</td></tr>
+    <tr><td class="paramname">standard</td><td>the PHY standard to configure during installation</td></tr>
   </table>
   </dd>
 </dl>
-<p>This method sets standards-compliant defaults for <a class="el" href="classns3_1_1_wifi_mac.html" title="base class for all MAC-level wifi objects.">WifiMac</a> parameters such as sifs time, slot time, timeout values, etc., based on the standard selected. It results in WifiMac::ConfigureStandard(standard) being called on each installed mac object.</p>
+<p>This method sets standards-compliant defaults for <a class="el" href="classns3_1_1_wifi_mac.html" title="base class for all MAC-level wifi objects.">WifiMac</a> parameters such as SIFS time, slot time, timeout values, etc., based on the standard selected. It results in WifiMac::ConfigureStandard(standard) being called on each installed MAC object.</p>
 <p>The default standard of 802.11a will be applied if <a class="el" href="classns3_1_1_wifi_helper.html#a0e32e7504f8af0ea329cdbeefa47c21a">SetStandard()</a> is not called.</p>
 <p>Note that <a class="el" href="classns3_1_1_wifi_mac.html#a16ec5352c804df83e42159ab4e2e73d8">WifiMac::ConfigureStandard</a> () will overwrite certain defaults in the attribute system, so if a user wants to manipulate any default values affected by ConfigureStandard() while using this helper, the user should use a post-install configuration such as <a class="el" href="group__config.html#gadce03667ec621d64ce4aace85d9bcfd0">Config::Set()</a> on any objects that this helper creates, such as: </p><div class="fragment"><div class="line"><a class="code" href="group__config.html#gadce03667ec621d64ce4aace85d9bcfd0">Config::Set</a> (<span class="stringliteral">&quot;/NodeList/0/DeviceList/0/$ns3::WifiNetDevice/Mac/Slot&quot;</span>, TimeValue (<a class="code" href="group__timecivil.html#ga17465a639c8d1464e76538afdd78a9f0">MicroSeconds</a> (slot)));</div>
 </div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classns3_1_1_wifi_mac.html#a16ec5352c804df83e42159ab4e2e73d8">WifiMac::ConfigureStandard</a> </dd>
@@ -1672,7 +1669,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>OBSS PD algorithm. </p>
+<p>OBSS_PD algorithm. </p>
 
 <p class="definition">Definition at line <a class="el" href="wifi-helper_8h_source.html#l00511">511</a> of file <a class="el" href="wifi-helper_8h_source.html">wifi-helper.h</a>.</p>
 
@@ -1771,7 +1768,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="agroup__config_html_gadce03667ec621d64ce4aace85d9bcfd0"><div class="ttname"><a href="group__config.html#gadce03667ec621d64ce4aace85d9bcfd0">ns3::Config::Set</a></div><div class="ttdeci">void Set(std::string path, const AttributeValue &amp;value)</div><div class="ttdef"><b>Definition:</b> <a href="config_8cc_source.html#l00807">config.cc:807</a></div></div>
-<div class="ttc" id="agroup__timecivil_html_ga17465a639c8d1464e76538afdd78a9f0"><div class="ttname"><a href="group__timecivil.html#ga17465a639c8d1464e76538afdd78a9f0">ns3::MicroSeconds</a></div><div class="ttdeci">Time MicroSeconds(uint64_t value)</div><div class="ttdef"><b>Definition:</b> <a href="nstime_8h_source.html#l01080">nstime.h:1080</a></div></div>
+<div class="ttc" id="agroup__timecivil_html_ga17465a639c8d1464e76538afdd78a9f0"><div class="ttname"><a href="group__timecivil.html#ga17465a639c8d1464e76538afdd78a9f0">ns3::MicroSeconds</a></div><div class="ttdeci">Time MicroSeconds(uint64_t value)</div><div class="ttdef"><b>Definition:</b> <a href="nstime_8h_source.html#l01086">nstime.h:1086</a></div></div>
 <!-- ns-3 doxygen header, based on
      HTML header for doxygen 1.8.3.1
      Verified compatible with 1.8.6
@@ -1780,7 +1777,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacens3.html">ns3</a></li><li class="navelem"><a class="el" href="classns3_1_1_wifi_helper.html">WifiHelper</a></li>
-    <li class="footer">Generated on Wed Apr 29 2020 07:35:46 for ns-3 by
+    <li class="footer">Generated on Wed Apr 29 2020 17:43:47 for ns-3 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.19 </li>
   </ul>
