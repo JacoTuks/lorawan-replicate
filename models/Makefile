@@ -129,7 +129,7 @@ SOURCEFIGS = \
 	$(SRC)/wifi/doc/source/figures/nist-frame-success-rate-ac.eps \
 	$(SRC)/wifi/doc/source/figures/nist-frame-success-rate-ax.eps \
 	$(SRC)/wimax/doc/WimaxArchitecture.dia \
-	$(SRC)/lorawan/doc/figures/LoRaWANTopology.pd \
+	$(SRC)/lorawan/doc/figures/LoRaWANTopology.pdf \
 	$(SRC)/lte/doc/source/figures/epc-ctrl-arch.dia \
 	$(SRC)/lte/doc/source/figures/epc-data-flow-dl.dia \
 	$(SRC)/lte/doc/source/figures/epc-data-flow-dl-with-split.dia \
