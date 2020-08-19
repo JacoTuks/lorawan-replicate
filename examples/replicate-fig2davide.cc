@@ -68,7 +68,7 @@ int nDevices = 1200;
 int nGateways = 1;
 double radius = 6300;
 int appPeriodSeconds = 44; //Will be changed by sem script
-
+int confirmedPercentage = 100;
 double simulationTime = 3*appPeriodSeconds; //Will be overwritten below (line 96)
 bool confirmedTraffic = true;
 
@@ -90,7 +90,8 @@ main (int argc, char *argv[])
   cmd.AddValue ("appPeriod",
                 "The period in seconds to be used by periodically transmitting applications",
                 appPeriodSeconds);
-  cmd.AddValue ("confirmed", "Whether or not end devices require an ACK", confirmedTraffic);
+  cmd.AddValue("confirmedPercentage", "Which percentage of devices should employ confirmed packets", confirmedPercentage);
+  //cmd.AddValue ("confirmed", "Whether or not end devices require an ACK", confirmedTraffic);
   cmd.Parse (argc, argv);
 
   simulationTime = 3*appPeriodSeconds; //Update sim time with new value
@@ -119,7 +120,7 @@ main (int argc, char *argv[])
   // LogComponentEnable("NetworkServer", LOG_LEVEL_ALL);
   // LogComponentEnable("NetworkStatus", LOG_LEVEL_ALL);
   // LogComponentEnable("NetworkController", LOG_LEVEL_ALL);
-  LogComponentEnable("LoraPacketTracker", LOG_LEVEL_ALL);
+  //LogComponentEnable("LoraPacketTracker", LOG_LEVEL_ALL);
   
   LogComponentEnableAll (LOG_PREFIX_FUNC);
   LogComponentEnableAll (LOG_PREFIX_NODE);
@@ -144,7 +145,7 @@ main (int argc, char *argv[])
   // Create the lora channel object
   Ptr<LogDistancePropagationLossModel> loss = CreateObject<LogDistancePropagationLossModel> ();
   loss->SetPathLossExponent (3.76);
-  loss->SetReference (1, 7.7);
+  loss->SetReference (1, 8.1); //used to be 7.7. 8.1 comes from private lorawan repo's rawcompletenetwork example
 
   if (realisticChannelModel)
     {
@@ -224,22 +225,28 @@ main (int argc, char *argv[])
 
   // Make traffic confirmed if needed
 
-  if(confirmedTraffic)
-  {
+  // Figure out how many devices should employ confirmed traffic
+  int confirmedNumber = confirmedPercentage * endDevices.GetN () / 100;
+  int i = 0;
 
-    NS_LOG_DEBUG ("End devices will send confirmed traffic.");
-    for (NodeContainer::Iterator j = endDevices.Begin (); j != endDevices.End (); ++j)
+  for (NodeContainer::Iterator j = endDevices.Begin (); j != endDevices.End (); ++j)
+    {
+      Ptr<Node> node = *j;
+
+      // Set message type (default is unconfirmed)
+      Ptr<LorawanMac> edMac =node->GetDevice (0)->GetObject<LoraNetDevice> ()->GetMac ();
+      Ptr<ClassAEndDeviceLorawanMac> edLorawanMac = edMac->GetObject<ClassAEndDeviceLorawanMac> ();
+
+      // Set message type, otherwise the NS does not send ACKs
+      if (i < confirmedNumber)
       {
-        Ptr<Node> node = *j;
-
-        // Set message type (default is unconfirmed)
-        Ptr<LorawanMac> edMac =node->GetDevice (0)->GetObject<LoraNetDevice> ()->GetMac ();
-        Ptr<ClassAEndDeviceLorawanMac> edLorawanMac = edMac->GetObject<ClassAEndDeviceLorawanMac> ();
-        edLorawanMac->SetMType (LorawanMacHeader::CONFIRMED_DATA_UP);
-        edLorawanMac->SetMaxNumberOfTransmissions (numberOfTransmissions);
-
+       edLorawanMac->SetMType (LorawanMacHeader::CONFIRMED_DATA_UP);
       }
-  }
+
+      edLorawanMac->SetMaxNumberOfTransmissions (numberOfTransmissions);
+
+    }
+  
 
 
   /*********************
@@ -377,8 +384,9 @@ main (int argc, char *argv[])
   //PrintPhyPacketsPerGw can take a start and stop time
   LoraPacketTracker &tracker = helper.GetPacketTracker ();
 
-  std::cout << tracker.PrintPhyPacketsPerGw (Seconds (appPeriodSeconds), Seconds(2*appPeriodSeconds), nDevices) << std::endl;
-
+ 
+      std::cout << tracker.CountMacPacketsGlobally (Seconds (appPeriodSeconds), Seconds(2*appPeriodSeconds)) << std::endl;
+      std::cout << tracker.PrintPhyPacketsPerGw (Seconds (appPeriodSeconds), Seconds(2*appPeriodSeconds), nDevices) << std::endl;
     
   return 0;
 }

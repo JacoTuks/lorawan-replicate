@@ -32,8 +32,10 @@ import matplotlib.pyplot as plt
 
 # Create our SEM campaign
 script = 'replicate-fig2davide'
-results_dir = 'fig2davide-results'
+results_dir = 'newreference-results'
 
+#CountMacPacketsGloballyCpsr is saved under cspr
+#CountMacPacketsGlobally in saved under glob
 
 ns_3_dir = '../../../'
 
@@ -57,7 +59,7 @@ runs = 10
 arrival_rates = list(np.logspace(start= -2, stop=1, num=14))
 
 #Fig 2 only plots till 2 pkt/s, but I generated up till 10 pkt/s.
-arrival_rates = arrival_rates[:-3] #they only plot till 2, dropping last 3 generated rates.
+#arrival_rates = arrival_rates[:-3] #they only plot till 2, dropping last 3 generated rates.
 
 num_devices = 1200
 for arrival_rate in arrival_rates:
@@ -81,6 +83,8 @@ print(param_combinations)
 
 campaign.run_missing_simulations(param_combinations, runs)
 
+confirmed_flag = False
+
 def get_phy_receivedPackets(result):
     """
     Extract the probability of success from the simulation output.
@@ -90,22 +94,51 @@ def get_phy_receivedPackets(result):
     """
 
     outcomes = [float(a) for a in result['output']['stdout'].split()]
+    if(confirmed_flag == False):
+        return outcomes[1]/outcomes[0] #receivedPackets/totPacketsSent
 
-    return outcomes[1]/outcomes[0] #receivedPackets/totPacketsSent
+    if(confirmed_flag == True):
+        return outcomes[1]/1200 #outcomes[0] #interferedPackets/totPacketsSent
 
-results = campaign.get_results_as_xarray(param_combinations,
+
+#Plot unconfirmed 
+param_combinations = {
+    'appPeriod': appPeriod_values,
+    'confirmed' : [False],
+}
+
+results_unconfirmed = campaign.get_results_as_xarray(param_combinations,
                                             get_phy_receivedPackets, '', runs)
 
 print("\nResults for get_phy_receivedPackets \n")
-results_average = results.reduce(np.mean, 'runs')
-results_std = results.reduce(np.std, 'runs')
+results_average = results_unconfirmed.reduce(np.mean, 'runs')
+results_std = results_unconfirmed.reduce(np.std, 'runs')
 
-#Plot unconfirmed 
 avg = results_average.sel(confirmed = False)
 std = results_std.sel(confirmed = False)
+
+print("ULPDR Values for unconfirmed traffic")
+ULPDR = np.squeeze(avg).values
+for index,item in enumerate(arrival_rates):
+    print(np.round(item,3), " pkt/s: ",np.round(ULPDR[index],3))    
+      
+
 plt.plot(arrival_rates, np.squeeze(avg),  'ok-' )
 
 #Plot confirmed
+confirmed_flag = True
+
+param_combinations = {
+    'appPeriod': appPeriod_values,
+    'confirmed' : [True],
+}
+
+results_confirmed = campaign.get_results_as_xarray(param_combinations,
+                                            get_phy_receivedPackets, '', runs)
+
+results_average = results_confirmed.reduce(np.mean, 'runs')
+results_std = results_confirmed.reduce(np.std, 'runs')
+
 avg = results_average.sel(confirmed = True)
 std = results_std.sel(confirmed = True)
 plt.plot(arrival_rates, np.squeeze(avg),'xk-' )
@@ -118,9 +151,9 @@ for index,item in enumerate(arrival_rates):
 plt.xscale('log')
 plt.grid(True, 'both', axis = 'both') #log graph
 
-plt.ylim([0.5,1.01])
-plt.xlim([0.01,2.1])
-plt.yticks([0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1])
+plt.ylim([0.4,1.01])
+plt.xlim([0.01,10.1])
+plt.yticks([0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1])
 
 plt.legend(['Unconfirmed', 'Confirmed'], title = "Traffic type", loc=(1.01,0.5))
 plt.subplots_adjust(right=0.75) #add space to the right so that legend is neatly visible
