@@ -159,10 +159,38 @@ public:
    * of packets that generated a successful acknowledgment.
    */
   std::string CountMacPacketsGloballyCpsr (Time startTime, Time stopTime);
+
+  /**
+   * A large performance print looking at PHY and MAC for a time period.
+   */
+  void PrintPerformance (Time start, Time stop, int gwId);
+
+  std::string getPerformanceLegend();
+
+  /**
+   * CountRetransmissionsPorted() is a previous metric calculation approach used by Davide's team 
+   * and was ported to work with the latest version of lorawan. 
+   * Original code came out of the 2018 private version. 
+   * It gives more detail and metrics than the approach used by the latest version.
+   */
+  std::string CountRetransmissionsPorted (Time start, Time stop, int gwId, int returnString = 0);
+
+  /**
+   * Check's MAC header to see if MType is confirmed data up.
+   * Based off network-controller-component.c
+   *
+   */
+  bool CheckIfUnconfirmed(Ptr<const Packet> packet);
+
+  std::string PrintVector (std::vector<int> vector, int returnString = 0);
+  
+  std::string PrintSumRetransmissions (std::vector<int> reTxVector, int returnString = 0);
+
 private:
   PhyPacketData m_packetTracker;
   MacPacketData m_macPacketTracker;
   RetransmissionData m_reTransmissionTracker;
+  std::string performanceLegend;
 };
 }
 }
