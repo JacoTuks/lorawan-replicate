@@ -8,7 +8,7 @@
  *  *  How to run and save output in a file (run this from ns-3 directory)
  * ./waf configure --enable-tests --enable-examples
  * ./waf build
- * ./waf --run "congestion-tracking --confirmedPercentage=50 --appPeriod=4959 --simTimeRatio="middle" --RngRun=401" > output.c 2>&1
+ * ./waf --run "congestion-tracking-std --confirmedPercentage=50 --appPeriod=4959 --simTimeRatio="middle" --RngRun=401" > output.c 2>&1
  */
 
 
