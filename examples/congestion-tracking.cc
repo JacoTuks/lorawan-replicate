@@ -56,8 +56,9 @@ int confirmedPercentage = 50; // % of devices sending confirmed traffic
 std::string simTimeRatio = "all"; //by default run the sim for five periods and use middle 3 periods for calcs
 
 
-double simulationTime = 5*appPeriodSeconds;  // will be overwritten below to account for new appPeriod provided by sem
-                              
+int simulationAppPeriods = 5;
+double simulationTime = simulationAppPeriods*appPeriodSeconds;  // will be overwritten below to account for new appPeriod provided by sem
+                            
 
 // Channel model
 //Davide's paper only used the log-distance parts (no shadowing) except for specific sims
@@ -84,6 +85,7 @@ Packet::EnablePrinting ();
                 appPeriodSeconds);
   cmd.AddValue("confirmedPercentage", "Which percentage of devices should employ confirmed packets", confirmedPercentage);
   cmd.AddValue ("simTimeRatio", "Number of appPeriod multiples over which to calc final results for (string)", simTimeRatio);
+  cmd.AddValue ("simulationAppPeriods", "How many appPeriods multiples must be in the total sim", simulationAppPeriods);
   cmd.AddValue("basePacketSize", "Base size for application packets", basePacketSize);
   cmd.AddValue("randomPSizeMin", "Minimum size for randomly sized application packets", randomPSizeMin); 
   cmd.AddValue("randomPSizeMax", "Maximum size for randomly sized application packets", randomPSizeMax); 
