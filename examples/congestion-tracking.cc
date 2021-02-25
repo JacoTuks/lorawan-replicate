@@ -92,7 +92,7 @@ Packet::EnablePrinting ();
   cmd.Parse (argc, argv);
 
 
-  simulationTime = 5*appPeriodSeconds; //Updated sim time with new value from sem
+  simulationTime = simulationAppPeriods*appPeriodSeconds; //Updated sim time with new value from sem
 
   // Set up logging
   LogComponentEnable ("Congestion-Tracking", LOG_LEVEL_ALL);
@@ -376,8 +376,8 @@ Packet::EnablePrinting ();
 
   else  if(simTimeRatio == "all")
   {
-     NS_LOG_INFO ("Computing over the period "<< 1*appPeriodSeconds<< "s to "<< Seconds(4*appPeriodSeconds).GetSeconds() << "s");
-    tracker.PrintPerformance(Seconds(appPeriodSeconds), Seconds(4*appPeriodSeconds), nDevices); //option for all 3
+    NS_LOG_INFO ("Computing over the period "<< 1*appPeriodSeconds<< "s to "<< Seconds((simulationAppPeriods-1)*appPeriodSeconds).GetSeconds() << "s");
+    tracker.PrintPerformance(Seconds(appPeriodSeconds), Seconds((simulationAppPeriods-1)*appPeriodSeconds), nDevices); //option for all 3
   }
   else  if(simTimeRatio == "first")
   {
