@@ -56,7 +56,7 @@ int confirmedPercentage = 50; // % of devices sending confirmed traffic
 std::string simTimeRatio = "all"; //by default run the sim for five periods and use middle 3 periods for calcs
 
 
-int simulationAppPeriods = 5;
+int simulationAppPeriods = 11;
 double simulationTime = simulationAppPeriods*appPeriodSeconds;  // will be overwritten below to account for new appPeriod provided by sem
                             
 
@@ -83,6 +83,7 @@ Packet::EnablePrinting ();
   cmd.AddValue ("appPeriod",
                 "The period in seconds to be used by periodically transmitting applications",
                 appPeriodSeconds);
+  cmd.AddValue("nDevices", "Number of devices used in simulation", nDevices);
   cmd.AddValue("confirmedPercentage", "Which percentage of devices should employ confirmed packets", confirmedPercentage);
   cmd.AddValue ("simTimeRatio", "Number of appPeriod multiples over which to calc final results for (string)", simTimeRatio);
   cmd.AddValue ("simulationAppPeriods", "How many appPeriods multiples must be in the total sim", simulationAppPeriods);
@@ -368,36 +369,10 @@ Packet::EnablePrinting ();
   //nDevices is the id of the gw as 1200 devices would be 0-1199 with gw being device 1200
 
 
-  if(simTimeRatio == "middle")
-  {
-    NS_LOG_INFO ("Computing over the period "<< 1*appPeriodSeconds<< "s to "<< Seconds(2*appPeriodSeconds).GetSeconds() << "s");
-    tracker.PrintPerformance(Seconds (appPeriodSeconds), Seconds(2*appPeriodSeconds), nDevices); //option for middle
-  }
-
-  else  if(simTimeRatio == "all")
+  if(simTimeRatio == "all")
   {
     NS_LOG_INFO ("Computing over the period "<< 1*appPeriodSeconds<< "s to "<< Seconds((simulationAppPeriods-1)*appPeriodSeconds).GetSeconds() << "s");
     tracker.PrintPerformance(Seconds(appPeriodSeconds), Seconds((simulationAppPeriods-1)*appPeriodSeconds), nDevices); //option for all 3
-  }
-  else  if(simTimeRatio == "first")
-  {
-     NS_LOG_INFO ("Computing over the period "<< Seconds(0)<< "s to "<< Seconds(1*appPeriodSeconds).GetSeconds() << "s");
-    tracker.PrintPerformance(Seconds (Seconds(0)), Seconds(1*appPeriodSeconds), nDevices); //option for all 3
-  }
-  else  if(simTimeRatio == "last")
-  {
-     NS_LOG_INFO ("Computing over the period "<< Seconds(2*appPeriodSeconds).GetSeconds()<< "s to "<< Seconds(3*appPeriodSeconds).GetSeconds() << "s");
-    tracker.PrintPerformance(Seconds (Seconds(2*appPeriodSeconds).GetSeconds()), Seconds(3*appPeriodSeconds), nDevices); //option for all 3
-  }
-  else if(simTimeRatio == "1h")
-  {
-    NS_LOG_INFO ("Computing over the period 0s "<< "s to "<< Seconds(6*appPeriodSeconds).GetSeconds() << "s");
-    tracker.PrintPerformance(Seconds (0), Seconds(6*appPeriodSeconds), nDevices); //option for middle
-  }
-  else  if(simTimeRatio == "all10")
-  {
-     NS_LOG_INFO ("Computing over the period "<< 1*appPeriodSeconds<< "s to "<< Seconds(11*appPeriodSeconds).GetSeconds() << "s");
-    tracker.PrintPerformance(Seconds(appPeriodSeconds), Seconds(11*appPeriodSeconds), nDevices); //option for all 3
   }
   else
     {
