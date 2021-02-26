@@ -64,9 +64,9 @@ double simulationTime = simulationAppPeriods*appPeriodSeconds;  // will be overw
 //Davide's paper only used the log-distance parts (no shadowing) except for specific sims
 bool realisticChannelModel = false;
 
-uint8_t basePacketSize = 10;
-uint8_t randomPSizeMin = 0;
-uint8_t randomPSizeMax = 0;
+int basePacketSize = 10;
+int randomPSizeMin = 0;
+int randomPSizeMax = 0;
 
 uint8_t numberOfTransmissions = 8; // The maximum number of transmissions allowed
 
