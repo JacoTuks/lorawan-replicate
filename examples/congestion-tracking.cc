@@ -8,7 +8,7 @@
  *  *  How to run and save output in a file (run this from ns-3 directory)
  * ./waf configure --enable-tests --enable-examples
  * ./waf build
- * ./waf --run "congestion-tracking-std --confirmedPercentage=50 --appPeriod=4959 --simTimeRatio="middle" --RngRun=401" > output.c 2>&1
+ * ./waf --run "congestion-tracking-std --confirmedPercentage=50 --appPeriod=4959 --simTimeRatio="all" --RngRun=401" > output.c 2>&1
  */
 
 
@@ -68,6 +68,9 @@ int basePacketSize = 10;
 int randomPSizeMin = 0;
 int randomPSizeMax = 0;
 
+std::string congestionType = "ns3::CongestionComponent"; //Currently the only type available
+int desiredNumCongestionCalcs = simulationAppPeriods - 2; // how many periodic calcs there must over the entire simulationTime.
+
 uint8_t numberOfTransmissions = 8; // The maximum number of transmissions allowed
 
 // Output control
@@ -90,14 +93,20 @@ Packet::EnablePrinting ();
   cmd.AddValue("basePacketSize", "Base size for application packets", basePacketSize);
   cmd.AddValue("randomPSizeMin", "Minimum size for randomly sized application packets", randomPSizeMin); 
   cmd.AddValue("randomPSizeMax", "Maximum size for randomly sized application packets", randomPSizeMax); 
+  cmd.AddValue("desiredNumCongestionCalcs", "How many periodic congestion calculations must be in simulationTime", desiredNumCongestionCalcs);
   cmd.Parse (argc, argv);
 
 
   simulationTime = simulationAppPeriods*appPeriodSeconds; //Updated sim time with new value from sem
 
+  // This is the duration of the window for each congestion calc 
+  double congestionPeriod = floor((simulationTime-2*appPeriodSeconds)/desiredNumCongestionCalcs); // Updated sim time with new value from sem. First and final period is excluded from calculations.
+ 
+
   // Set up logging
   LogComponentEnable ("Congestion-Tracking", LOG_LEVEL_ALL);
-  LogComponentEnable ("PeriodicSender", LOG_LEVEL_ALL);
+  LogComponentEnable ("CongestionComponent", LOG_LEVEL_ALL); 
+  //LogComponentEnable ("PeriodicSender", LOG_LEVEL_ALL);
   // LogComponentEnable("LoraPacketTracker", LOG_LEVEL_ALL);
   
   LogComponentEnableAll (LOG_PREFIX_FUNC);
@@ -341,7 +350,12 @@ Packet::EnablePrinting ();
   // Create a NS for the network
   nsHelper.SetEndDevices (endDevices);
   nsHelper.SetGateways (gateways);
+  LoraPacketTracker &track = helper.GetPacketTracker();
+  nsHelper.setPacketTracker(track);
+  nsHelper.SetCongestion (congestionType);
+  nsHelper.SetCongestionTrackingPeriod(Seconds(congestionPeriod));
   nsHelper.Install (networkServer);
+
 
   //Create a forwarder for each gateway
   forHelper.Install (gateways);
@@ -351,6 +365,9 @@ Packet::EnablePrinting ();
   ////////////////
 
   Simulator::Stop (appStopTime + Seconds (1));
+
+  NS_LOG_INFO( "Congestion is calculated over " << congestionPeriod << " s intervals");
+
 
   NS_LOG_INFO ("Running simulation...");
   Simulator::Run ();
