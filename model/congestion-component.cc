@@ -139,17 +139,23 @@ CongestionComponent::DoPrintNetworkCongestionStatus (NodeContainer gateways,
   if( Simulator::Now () == 0)
   {
     NS_LOG_INFO("Skipping printing as this is the 0th interval (0s - 0s)");
+    m_lastNetworkCongestionUpdate = Simulator::Now();
     return;
   }
   else if((Simulator::Now()- m_congestionInterval) == Seconds(0))
   {
     NS_LOG_INFO("Skipping printing as this is the end of the 1st interval (0s - " << m_congestionInterval.GetSeconds() << "s)");
-    m_lastNetworkCongestionUpdate = Simulator::Now();
+    //m_lastNetworkCongestionUpdate = Simulator::Now();
     return;
   }
   else if((Simulator::Now()- 2*m_congestionInterval) == Seconds(0))
   {
     NS_LOG_INFO("Skipping printing as this is the end of the 2nd interval (" << m_lastNetworkCongestionUpdate.GetSeconds() <<  "s -  " << 2*m_congestionInterval.GetSeconds() << "s)");
+    return;
+  }
+  else if((Simulator::Now()- 3*m_congestionInterval) == Seconds(0))
+  {
+    NS_LOG_INFO("Skipping printing as this is the end of the 3rd interval (" << m_lastNetworkCongestionUpdate.GetSeconds() <<  "s -  " << 3*m_congestionInterval.GetSeconds() << "s)");
     return;
   }
     const char * c = filename.c_str ();
@@ -159,18 +165,18 @@ CongestionComponent::DoPrintNetworkCongestionStatus (NodeContainer gateways,
     outputFile.open (c, std::ofstream::out | std::ofstream::app);
     NS_LOG_INFO ("Congestion tracking the interval " 
                  << m_lastNetworkCongestionUpdate.GetSeconds() << 
-                   "s to " << ((Simulator::Now () - m_congestionInterval).GetSeconds())  << "s");
+                   "s to " << ((Simulator::Now () - 3*m_congestionInterval).GetSeconds())  << "s");
 
     std::string performanceStats;   //Will only take stats from last gateway (basically only supports 1 GW networks)                           
     for (auto it = gateways.Begin (); it != gateways.End (); ++it)
       {
          int gwId = (*it)->GetId ();
          performanceStats = m_packetTracker->CountRetransmissionsPorted(m_lastNetworkCongestionUpdate,
-                                                 (Simulator::Now () - m_congestionInterval),
+                                                 (Simulator::Now () - 3*m_congestionInterval),
                                                  gwId, 1);
            outputFile << performanceStats  << std::endl;            
       }
-    m_lastNetworkCongestionUpdate = Simulator::Now () - m_congestionInterval;
+    m_lastNetworkCongestionUpdate = Simulator::Now () - 3*m_congestionInterval;
 
     outputFile.close();
     CalculateCongestion(performanceStats);

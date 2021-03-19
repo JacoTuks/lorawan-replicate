@@ -56,7 +56,7 @@ int confirmedPercentage = 50; // % of devices sending confirmed traffic
 std::string simTimeRatio = "all"; //by default run the sim for five periods and use middle 3 periods for calcs
 
 
-int simulationAppPeriods = 11;
+int simulationAppPeriods = 40;
 double simulationTime = simulationAppPeriods*appPeriodSeconds;  // will be overwritten below to account for new appPeriod provided by sem
                             
 
@@ -69,7 +69,7 @@ int randomPSizeMin = 0;
 int randomPSizeMax = 0;
 
 std::string congestionType = "ns3::CongestionComponent"; //Currently the only type available
-int desiredNumCongestionCalcs = simulationAppPeriods - 2; // how many periodic calcs there must over the entire simulationTime.
+int desiredNumCongestionCalcs = simulationAppPeriods - 20; // how many periodic calcs there must over the entire simulationTime.
 
 uint8_t numberOfTransmissions = 8; // The maximum number of transmissions allowed
 
@@ -100,14 +100,14 @@ Packet::EnablePrinting ();
   simulationTime = simulationAppPeriods*appPeriodSeconds; //Updated sim time with new value from sem
 
   // This is the duration of the window for each congestion calc 
-  double congestionPeriod = floor((simulationTime-2*appPeriodSeconds)/desiredNumCongestionCalcs); // Updated sim time with new value from sem. First and final period is excluded from calculations.
+  double congestionPeriod = floor((simulationTime-20*appPeriodSeconds)/desiredNumCongestionCalcs); // Updated sim time with new value from sem. 20 periods are deleted as first 20 will be excluded
  
 
   // Set up logging
   LogComponentEnable ("Congestion-Tracking", LOG_LEVEL_ALL);
   LogComponentEnable ("CongestionComponent", LOG_LEVEL_ALL); 
-  //LogComponentEnable ("PeriodicSender", LOG_LEVEL_ALL);
-  // LogComponentEnable("LoraPacketTracker", LOG_LEVEL_ALL);
+  LogComponentEnable ("PeriodicSender", LOG_LEVEL_ALL);
+   LogComponentEnable("LoraPacketTracker", LOG_LEVEL_ALL);
   
   LogComponentEnableAll (LOG_PREFIX_FUNC);
   LogComponentEnableAll (LOG_PREFIX_NODE);
@@ -364,7 +364,7 @@ Packet::EnablePrinting ();
   // Simulation //
   ////////////////
 
-  Simulator::Stop (appStopTime + Seconds (1));
+  Simulator::Stop (appStopTime + 3*Seconds(appPeriodSeconds) + Seconds(10)); // adding more time so that tracker can calculate overall metric after 3 periods have passed from time frame of interest
 
   NS_LOG_INFO( "Congestion is calculated over " << congestionPeriod << " s intervals");
 
@@ -391,8 +391,13 @@ Packet::EnablePrinting ();
     NS_LOG_INFO ("Computing over the period "<< 1*appPeriodSeconds<< "s to "<< Seconds((simulationAppPeriods-1)*appPeriodSeconds).GetSeconds() << "s");
     tracker.PrintPerformance(Seconds(appPeriodSeconds), Seconds((simulationAppPeriods-1)*appPeriodSeconds), nDevices); //option for all 3
   }
+  if(simTimeRatio == "20")
+  {
+    NS_LOG_INFO( "Computing over the period "<< 20*appPeriodSeconds << "s to "<< Seconds(40*appPeriodSeconds).GetSeconds() << "s");
+    tracker.PrintPerformance(Seconds(20*appPeriodSeconds), Seconds(40*appPeriodSeconds), nDevices); 
+  }
   else
-    {
+  {
     NS_LOG_INFO ("Expand .cc file to handle your custom period");
   }
     
