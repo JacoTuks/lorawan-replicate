@@ -51,9 +51,9 @@ int nGateways = 1;
 double radius = 6300;
 
 //The next three will be changed by sem script as needed
-int appPeriodSeconds = 44; //Data packets will be sent at this interval
-int confirmedPercentage = 50; // % of devices sending confirmed traffic
-std::string simTimeRatio = "all"; //by default run the sim for five periods and use middle 3 periods for calcs
+int appPeriodSeconds = 591; //Data packets will be sent at this interval
+int confirmedPercentage = 15; // % of devices sending confirmed traffic
+std::string simTimeRatio = "20"; //by default run the sim for five periods and use middle 3 periods for calcs
 
 
 int simulationAppPeriods = 40;
@@ -323,7 +323,7 @@ Packet::EnablePrinting ();
    *  Install applications on the end devices  *
    *********************************************/
 
-  Time appStopTime = Seconds (simulationTime);
+  Time appStopTime = Seconds (simulationTime)  + 3*Seconds(appPeriodSeconds);;
   PeriodicSenderHelper appHelper = PeriodicSenderHelper ();
   appHelper.SetPeriod (Seconds (appPeriodSeconds));
 
@@ -364,7 +364,7 @@ Packet::EnablePrinting ();
   // Simulation //
   ////////////////
 
-  Simulator::Stop (appStopTime + 3*Seconds(appPeriodSeconds) + Seconds(10)); // adding more time so that tracker can calculate overall metric after 3 periods have passed from time frame of interest
+  Simulator::Stop (appStopTime + Seconds(10)); // adding more time so that tracker can calculate overall metric after 3 periods have passed from time frame of interest
 
   NS_LOG_INFO( "Congestion is calculated over " << congestionPeriod << " s intervals");
 
