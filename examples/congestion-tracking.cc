@@ -53,10 +53,10 @@ double radius = 6300;
 //The next three will be changed by sem script as needed
 int appPeriodSeconds = 591; //Data packets will be sent at this interval
 int confirmedPercentage = 15; // % of devices sending confirmed traffic
-std::string simTimeRatio = "20"; //by default run the sim for five periods and use middle 3 periods for calcs
+std::string simTimeRatio = "30"; //see bottom of file for legend
 
 
-int simulationAppPeriods = 40;
+int simulationAppPeriods = 50;
 double simulationTime = simulationAppPeriods*appPeriodSeconds;  // will be overwritten below to account for new appPeriod provided by sem
                             
 
@@ -65,8 +65,8 @@ double simulationTime = simulationAppPeriods*appPeriodSeconds;  // will be overw
 bool realisticChannelModel = false;
 
 int basePacketSize = 10;
-int randomPSizeMin = 0;
-int randomPSizeMax = 0;
+int randomPSizeMin = 2;
+int randomPSizeMax = 8;
 
 std::string congestionType = "ns3::CongestionComponent"; //Currently the only type available
 int desiredNumCongestionCalcs = simulationAppPeriods - 20; // how many periodic calcs there must over the entire simulationTime.
@@ -391,10 +391,15 @@ Packet::EnablePrinting ();
     NS_LOG_INFO ("Computing over the period "<< 1*appPeriodSeconds<< "s to "<< Seconds((simulationAppPeriods-1)*appPeriodSeconds).GetSeconds() << "s");
     tracker.PrintPerformance(Seconds(appPeriodSeconds), Seconds((simulationAppPeriods-1)*appPeriodSeconds), nDevices); //option for all 3
   }
-  if(simTimeRatio == "20")
+  else if(simTimeRatio == "20")
   {
     NS_LOG_INFO( "Computing over the period "<< 20*appPeriodSeconds << "s to "<< Seconds(40*appPeriodSeconds).GetSeconds() << "s");
     tracker.PrintPerformance(Seconds(20*appPeriodSeconds), Seconds(40*appPeriodSeconds), nDevices); 
+  }
+ else if(simTimeRatio == "30")
+  {
+    NS_LOG_INFO( "Computing over the period "<< 20*appPeriodSeconds << "s to "<< Seconds(50*appPeriodSeconds).GetSeconds() << "s");
+    tracker.PrintPerformance(Seconds(20*appPeriodSeconds), Seconds(50*appPeriodSeconds), nDevices); 
   }
   else
   {
