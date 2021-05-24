@@ -37,7 +37,7 @@ NS_LOG_COMPONENT_DEFINE ("ComplexLorawanNetworkExample");
 // Network settings
 int nDevices = 200;
 int nGateways = 1;
-double radius = 7500;
+double radius = 6400; //Note that due to model updates, 7500 m is no longer the maximum distance 
 double simulationTime = 600;
 
 // Channel model
@@ -93,6 +93,9 @@ main (int argc, char *argv[])
 
   // Create the time value from the period
   Time appPeriod = Seconds (appPeriodSeconds);
+
+  // 10 packets from devices
+  simulationTime = (10*appPeriodSeconds);
 
   // Mobility
   MobilityHelper mobility;
