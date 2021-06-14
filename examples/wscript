@@ -33,3 +33,6 @@ def build(bld):
 
     obj = bld.create_ns3_program('congestion-tracking-std', ['lorawan'])
     obj.source = 'congestion-tracking.cc'
+    
+    obj = bld.create_ns3_program('satnac', ['lorawan'])
+    obj.source = 'SATNAC.cc'

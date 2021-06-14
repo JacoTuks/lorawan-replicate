@@ -84,6 +84,26 @@ public:
    * Set the LoraPacketTracker object to give to congestion monitoring.
    */
 
+  /**
+   * Enable (true) or disable (false) the Application component in the Network
+   * Server created by this helper.
+   */
+  void EnableApplication (bool enableApplication);
+
+ /**
+   * Set the size of dowlink application packets
+   */
+  void SetDownlinkAppSize (int downlinkAppPSize);
+
+
+/** Downlink packet must be sent every <sendingInterval> num of received packets. **/
+
+  void SetDownlinkSendingInterval (int sendingInterval);
+
+   /**
+   * Set the LoraPacketTracker object to give to congestion monitoring.
+   */
+
   void setPacketTracker(LoraPacketTracker &tracker); 
 
   LoraPacketTracker* m_packetTracker = 0;
@@ -108,10 +128,14 @@ private:
 
   bool m_adrEnabled;
 
+  bool m_applicationEnabled;
+  
   Time m_congestionPeriod;
   
   ObjectFactory m_adrSupportFactory;
   ObjectFactory m_congestionSupportFactory;  
+  int m_downlinkAppPSize;
+  int m_sendingInterval;  
 };
 
 } // namespace ns3

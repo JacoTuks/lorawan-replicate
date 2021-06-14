@@ -19,6 +19,7 @@
  */
 
 #include "ns3/network-controller-components.h"
+#include <bitset>
 
 namespace ns3 {
 namespace lorawan {
@@ -195,5 +196,118 @@ LinkCheckComponent::OnFailedReply (Ptr<EndDeviceStatus> status,
 {
   NS_LOG_FUNCTION (this->GetTypeId () << networkStatus);
 }
+
+
+////////////////////////
+// ApplicationComponent //
+////////////////////////
+TypeId
+ApplicationComponent::GetTypeId (void)
+{
+  static TypeId tid = TypeId ("ns3::ApplicationComponent")
+    .SetParent<NetworkControllerComponent> ()
+    .AddConstructor<ApplicationComponent> ()
+    .SetGroupName ("lorawan");
+  return tid;
+}
+
+ApplicationComponent::ApplicationComponent ()
+{
+  m_downlinkAppPSize = 0; //by default do not send any downlink application data
+}
+ApplicationComponent::~ApplicationComponent ()
+{
+}
+
+void
+ApplicationComponent::SetAppSize(int downlinkAppPSize)
+{
+  NS_LOG_FUNCTION (this << downlinkAppPSize);
+  m_downlinkAppPSize = downlinkAppPSize;
+}
+
+void
+ApplicationComponent::SetSendingInterval(int sendingInterval)
+{
+  NS_LOG_FUNCTION (this << sendingInterval);
+  m_sendingInterval = sendingInterval;
+}
+
+
+
+void
+ApplicationComponent::OnReceivedPacket (Ptr<const Packet> packet,
+                                      Ptr<EndDeviceStatus> status,
+                                      Ptr<NetworkStatus> networkStatus)
+{
+  NS_LOG_FUNCTION (this->GetTypeId () << packet << networkStatus);
+
+  // We will only act just before reply, when all Gateways will have received
+  // the packet.
+}
+
+void
+ApplicationComponent::BeforeSendingReply (Ptr<EndDeviceStatus> status,
+                                        Ptr<NetworkStatus> networkStatus)
+{
+  NS_LOG_FUNCTION (this << status << networkStatus);
+  
+
+
+  //End-device address is give nby DevAddr (4 byte long)
+  // Format is AddrPrefix|NwkAddr
+  //size between these two are variable
+  //AddrPrefix identifies the Network server manageing the end-device during roaming
+  //NwkAddr is arbitrary and is assigned by network manager
+
+  Ptr<Packet> myPacket = status->GetLastPacketReceivedFromDevice ()->Copy ();
+  LorawanMacHeader mHdr;
+  LoraFrameHeader fHdr;
+  fHdr.SetAsUplink ();
+  myPacket->RemoveHeader (mHdr);
+  myPacket->RemoveHeader (fHdr);
+
+  LoraDeviceAddress address = fHdr.GetAddress();
+  uint32_t NwkAddr = address.GetNwkAddr();
+
+  std::string device_id = std::bitset<25>(NwkAddr).to_string ();
+  //NS_LOG_INFO("I am device " << device_id);
+
+    if (int(status->GetReceivedPacketList ().size ()) %  m_sendingInterval == 0 and m_downlinkAppPSize > 0)
+      {
+        NS_LOG_DEBUG("A total of " << int(status->GetReceivedPacketList ().size ()) << " packets have been received from " << device_id << " Sending downlink of " << m_downlinkAppPSize <<  " bytes");
+
+        std::vector<uint8_t> options = {76,79,82,65,87,65,78,50,48,50,49, 76,79,82,65,87,65,78,50,48,50,49,76,79,82,65,87
+                                        ,65,78,50,48,50,49,76,79,82,65,87,65,78,50,48,50,49,
+                                        76,79,82,65,87,65,78,50,48,50,49,76,79,82,65,87,65,78,50,48,50,49,}; //supports up to 66B and spells LORAWAN2021 over and over;
+
+        uint8_t payload[m_downlinkAppPSize];
+
+        NS_LOG_DEBUG("Size of options is " << options.size());
+        
+        for(int x=0; x < m_downlinkAppPSize; x++)
+        {
+          if(x < static_cast<int>(options.size()))
+          {
+            payload[x] = options[x];
+          }
+        }
+
+        status->m_reply.payload = Create<Packet> ((const uint8_t*) payload, m_downlinkAppPSize);
+        status->m_reply.frameHeader.SetAsDownlink ();
+        //status->m_reply.frameHeader.SetAddress (fHdr.GetAddress ());
+        status->m_reply.macHeader.SetMType (LorawanMacHeader::UNCONFIRMED_DATA_DOWN);      
+        status->m_reply.needsReply = true;
+      }
+
+}
+
+void
+ApplicationComponent::OnFailedReply (Ptr<EndDeviceStatus> status,
+                                   Ptr<NetworkStatus> networkStatus)
+{
+  NS_LOG_FUNCTION (this->GetTypeId () << networkStatus);
+}
+
 }
 }

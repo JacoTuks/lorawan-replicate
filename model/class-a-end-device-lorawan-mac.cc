@@ -182,7 +182,18 @@ ClassAEndDeviceLorawanMac::Receive (Ptr<Packet const> packet)
 
           // TODO Pass the packet up to the NetDevice
 
+          //Application data from NS can be spotted by testing if the size is > 0
+          if(packetCopy->GetSize() > 0)
+          {
 
+            uint8_t *buffer = new uint8_t[packetCopy->GetSize ()];
+            packetCopy->CopyData (buffer, packetCopy->GetSize ());
+
+            NS_LOG_INFO("Downlink app data of size " << packetCopy->GetSize() << " received. Data (may not print correctly)=" << buffer);
+
+            //Could read the contents and take some sort of action.
+          }
+          
           // Call the trace source
           m_receivedPacket (packet);
         }

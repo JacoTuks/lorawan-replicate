@@ -141,6 +141,47 @@ private:
   void UpdateLinkCheckAns (Ptr<Packet const> packet,
                            Ptr<EndDeviceStatus> status);
 };
+
+///////////////////////////////////
+// Application server management //
+///////////////////////////////////
+
+class ApplicationComponent : public NetworkControllerComponent
+{
+public:
+  static TypeId GetTypeId (void);
+
+  // Constructor and destructor
+  ApplicationComponent ();
+  virtual ~ApplicationComponent ();
+
+/** Size in byte of downlink packets to be sent to devices. **/
+  void SetAppSize(int downlinkAppPSize);
+
+/** Downlink packet must be sent every <sendingInterval> num of received packets. **/
+  void SetSendingInterval(int sendingInterval);
+  /**
+   * This method checks if a downlink application packet is required
+   * and sets up the appropriate reply in case it does.
+   *
+   * \param packet The newly received packet
+   * \param networkStatus A pointer to the NetworkStatus object
+   */
+  void OnReceivedPacket (Ptr<const Packet> packet,
+                         Ptr<EndDeviceStatus> status,
+                         Ptr<NetworkStatus> networkStatus);
+
+  void BeforeSendingReply (Ptr<EndDeviceStatus> status,
+                           Ptr<NetworkStatus> networkStatus);
+
+  void OnFailedReply (Ptr<EndDeviceStatus> status,
+                      Ptr<NetworkStatus> networkStatus);
+
+private:
+  int m_downlinkAppPSize;
+  int m_sendingInterval;
+};
+
 }
 
 }

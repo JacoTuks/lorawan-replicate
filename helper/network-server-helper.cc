@@ -149,6 +149,29 @@ NetworkServerHelper::SetCongestion (std::string type)
 }
 
 void
+NetworkServerHelper::EnableApplication (bool enableApplication)
+{
+  NS_LOG_FUNCTION (this << enableApplication);
+
+  m_applicationEnabled = enableApplication;
+}
+
+void
+NetworkServerHelper::SetDownlinkAppSize (int downlinkAppPSize)
+{
+  NS_LOG_FUNCTION (this << downlinkAppPSize);
+  m_downlinkAppPSize = downlinkAppPSize;
+}
+
+void
+NetworkServerHelper::SetDownlinkSendingInterval (int sendingInterval)
+{
+  NS_LOG_FUNCTION (this << sendingInterval);
+  m_sendingInterval = sendingInterval;
+}
+
+
+void
 NetworkServerHelper::setPacketTracker(LoraPacketTracker &tracker)
 {
 
@@ -190,6 +213,15 @@ NetworkServerHelper::InstallComponents (Ptr<NetworkServer> netServer)
   congestionComp->SetCongestionPeriod(m_congestionPeriod);
   congestionComp->EnablePeriodicNetworkCongestionStatusPrinting(m_gateways,"congestion.txt");
   netServer->AddComponent (congestionComp);
+
+  //Add downlink application traffic support
+  if(m_applicationEnabled)
+    {
+      Ptr<ApplicationComponent> applicationSupport = CreateObject<ApplicationComponent> ();
+      applicationSupport->SetAppSize(m_downlinkAppPSize);
+      applicationSupport->SetSendingInterval(m_sendingInterval);
+      netServer->AddComponent (applicationSupport);
+    }
 }
 }
 } // namespace ns3

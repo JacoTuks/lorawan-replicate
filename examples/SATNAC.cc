@@ -1,5 +1,8 @@
 /*
- * This script is the first attempt at having congestion monitoring in the NS and has the advanced metrics and tracking of private lorawan repo.
+
+ * This script contains the simulation setup for my SATNAC conference paper of 2021.
+ * It has the advanced tracking and metrics of the private lorawan repo
+ * It's based of congestion-tracking.cc
  * Based off advanced-tracking (for tracking) and adr-example for NS setup.
  * This version is for lorawan-replicate version which represents standard LoRaWAN
  * As a result, some features and parameters don't exist when compared to -extended version of this file.
@@ -8,7 +11,7 @@
  *  *  How to run and save output in a file (run this from ns-3 directory)
  * ./waf configure --enable-tests --enable-examples
  * ./waf build
- * ./waf --run "congestion-tracking-std --confirmedPercentage=50 --appPeriod=4959 --simTimeRatio="30" --RngRun=401" > output.c 2>&1
+ * ./waf --run "satnac --confirmedPercentage=50 --appPeriod=4959 --simTimeRatio="30" --RngRun=401" > output.c 2>&1
  */
 
 
@@ -43,10 +46,10 @@
 using namespace ns3;
 using namespace lorawan;
 
-NS_LOG_COMPONENT_DEFINE ("Congestion-Tracking");
+NS_LOG_COMPONENT_DEFINE ("satnac");
 
 // Network settings
-int nDevices = 2; 
+int nDevices = 1200; 
 int nGateways = 1;
 double radius = 6300;
 
@@ -56,9 +59,11 @@ int confirmedPercentage = 15; // % of devices sending confirmed traffic
 std::string simTimeRatio = "30"; //see bottom of file for legend
 
 
-int simulationAppPeriods = 50;
+
+int simulationAppPeriods = 31; //50
 double simulationTime = simulationAppPeriods*appPeriodSeconds;  // will be overwritten below to account for new appPeriod provided by sem
                             
+bool congestionEnabled = true; //Define if the congestion component must be enabled
 
 // Channel model
 //Davide's paper only used the log-distance parts (no shadowing) except for specific sims
@@ -69,9 +74,13 @@ int randomPSizeMin = 2;
 int randomPSizeMax = 8;
 
 std::string congestionType = "ns3::CongestionComponent"; //Currently the only type available
-int desiredNumCongestionCalcs = simulationAppPeriods - 20; // how many periodic calcs there must over the entire simulationTime.
+int desiredNumCongestionCalcs = simulationAppPeriods - 1; // how many periodic calcs there must over the entire simulationTime.
 
-uint8_t numberOfTransmissions = 8; // The maximum number of transmissions allowed
+uint8_t numberOfTransmissions = 1; // The maximum number of transmissions allowed
+
+bool enableApplication = true; //Enable downlink traffic from App server to devices.
+int downlinkAppPSize = 10;
+int downlinkSendingInterval = 5;
 
 // Output control
 bool print = true; // Save building locations to buildings.txt
@@ -88,27 +97,33 @@ Packet::EnablePrinting ();
                 appPeriodSeconds);
   cmd.AddValue("nDevices", "Number of devices used in simulation", nDevices);
   cmd.AddValue("confirmedPercentage", "Which percentage of devices should employ confirmed packets", confirmedPercentage);
-  cmd.AddValue ("simTimeRatio", "Number of appPeriod multiples over which to calc final results for (string)", simTimeRatio);
+  //cmd.AddValue ("simTimeRatio", "Number of appPeriod multiples over which to calc final results for (string)", simTimeRatio);
   cmd.AddValue ("simulationAppPeriods", "How many appPeriods multiples must be in the total sim", simulationAppPeriods);
-  cmd.AddValue("basePacketSize", "Base size for application packets", basePacketSize);
-  cmd.AddValue("randomPSizeMin", "Minimum size for randomly sized application packets", randomPSizeMin); 
-  cmd.AddValue("randomPSizeMax", "Maximum size for randomly sized application packets", randomPSizeMax); 
+  //cmd.AddValue("basePacketSize", "Base size for application packets", basePacketSize);
+  //cmd.AddValue("randomPSizeMin", "Minimum size for randomly sized application packets", randomPSizeMin); 
+  //cmd.AddValue("randomPSizeMax", "Maximum size for randomly sized application packets", randomPSizeMax); 
   cmd.AddValue("desiredNumCongestionCalcs", "How many periodic congestion calculations must be in simulationTime", desiredNumCongestionCalcs);
+  cmd.AddValue("enableApplication", "Should App server be sending packets to devices?", enableApplication);
+  cmd.AddValue("downlinkAppPSize", "Size of dowlink app packets?", downlinkAppPSize);
+  cmd.AddValue("downlinkSendingInterval", "How frequently App DL packets must be sent", downlinkSendingInterval);
   cmd.Parse (argc, argv);
 
 
   simulationTime = simulationAppPeriods*appPeriodSeconds; //Updated sim time with new value from sem
 
   // This is the duration of the window for each congestion calc 
-  double congestionPeriod = floor((simulationTime-20*appPeriodSeconds)/desiredNumCongestionCalcs); // Updated sim time with new value from sem. 20 periods are deleted as first 20 will be excluded
+  double congestionPeriod = floor((simulationTime-1*appPeriodSeconds)/desiredNumCongestionCalcs); // Updated sim time with new value from sem. 1 period is deleted as first will be excluded
  
 
   // Set up logging
-  LogComponentEnable ("Congestion-Tracking", LOG_LEVEL_ALL);
-  //LogComponentEnable ("CongestionComponent", LOG_LEVEL_ALL); 
-  LogComponentEnable ("EndDeviceLorawanMac", LOG_LEVEL_ALL);
-  //LogComponentEnable("LoraPacketTracker", LOG_LEVEL_ALL);
-  
+  LogComponentEnable ("satnac", LOG_LEVEL_ALL);
+  //LogComponentEnable ("NetworkScheduler", LOG_LEVEL_ALL); 
+  //LogComponentEnable ("GatewayLorawanMac", LOG_LEVEL_ALL);
+  //LogComponentEnable("ClassAEndDeviceLorawanMac", LOG_LEVEL_ALL);
+  //LogComponentEnable("NetworkControllerComponent", LOG_LEVEL_ALL);
+ // LogComponentEnable("GatewayStatus", LOG_LEVEL_ALL);  
+
+
   LogComponentEnableAll (LOG_PREFIX_FUNC);
   LogComponentEnableAll (LOG_PREFIX_NODE);
   LogComponentEnableAll (LOG_PREFIX_TIME);
@@ -350,6 +365,10 @@ Packet::EnablePrinting ();
   // Create a NS for the network
   nsHelper.SetEndDevices (endDevices);
   nsHelper.SetGateways (gateways);
+  nsHelper.EnableApplication(enableApplication);
+  nsHelper.SetDownlinkAppSize(downlinkAppPSize);
+  nsHelper.SetDownlinkSendingInterval(downlinkSendingInterval); //send every <>> packets
+
   LoraPacketTracker &track = helper.GetPacketTracker();
   nsHelper.setPacketTracker(track);
   nsHelper.SetCongestion (congestionType);
@@ -386,20 +405,10 @@ Packet::EnablePrinting ();
   //nDevices is the id of the gw as 1200 devices would be 0-1199 with gw being device 1200
 
 
-  if(simTimeRatio == "all")
+ if(simTimeRatio == "30")
   {
-    NS_LOG_INFO ("Computing over the period "<< 1*appPeriodSeconds<< "s to "<< Seconds((simulationAppPeriods-1)*appPeriodSeconds).GetSeconds() << "s");
-    tracker.PrintPerformance(Seconds(appPeriodSeconds), Seconds((simulationAppPeriods-1)*appPeriodSeconds), nDevices); //option for all 3
-  }
-  else if(simTimeRatio == "20")
-  {
-    NS_LOG_INFO( "Computing over the period "<< 20*appPeriodSeconds << "s to "<< Seconds(40*appPeriodSeconds).GetSeconds() << "s");
-    tracker.PrintPerformance(Seconds(20*appPeriodSeconds), Seconds(40*appPeriodSeconds), nDevices); 
-  }
- else if(simTimeRatio == "30")
-  {
-    NS_LOG_INFO( "Computing over the period "<< 20*appPeriodSeconds << "s to "<< Seconds(50*appPeriodSeconds).GetSeconds() << "s");
-    tracker.PrintPerformance(Seconds(20*appPeriodSeconds), Seconds(50*appPeriodSeconds), nDevices); 
+    NS_LOG_INFO( "Computing over the period "<< 1*appPeriodSeconds << "s to "<< Seconds(simulationAppPeriods*appPeriodSeconds).GetSeconds() << "s");
+    tracker.PrintPerformance(Seconds(1*appPeriodSeconds), Seconds(simulationAppPeriods*appPeriodSeconds), nDevices); 
   }
   else
   {
