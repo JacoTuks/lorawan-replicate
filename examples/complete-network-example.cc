@@ -35,7 +35,7 @@ using namespace lorawan;
 NS_LOG_COMPONENT_DEFINE ("ComplexLorawanNetworkExample");
 
 // Network settings
-int nDevices = 1;
+int nDevices = 5;
 int nGateways = 1;
 double radius = 6400; //Note that due to model updates, 7500 m is no longer the maximum distance 
 double simulationTime = 5*600;
@@ -66,9 +66,9 @@ main (int argc, char *argv[])
 
   // Set up logging
   LogComponentEnable ("ComplexLorawanNetworkExample", LOG_LEVEL_ALL);
-  LogComponentEnable("ClassAEndDeviceLorawanMac", LOG_LEVEL_ALL);
-  LogComponentEnable("LoraPacketTracker", LOG_LEVEL_ALL);
-  // LogComponentEnable("EndDeviceLoraPhy", LOG_LEVEL_ALL);
+  LogComponentEnable("LoraPacketTracker", LOG_LEVEL_INFO);
+  // LogComponentEnable("EndDeviceLorawanMac", LOG_LEVEL_ALL);
+  // LogComponentEnable("ClassAEndDeviceLorawanMac", LOG_LEVEL_ALL);
   // LogComponentEnable("GatewayLoraPhy", LOG_LEVEL_ALL);
   // LogComponentEnable("LoraInterferenceHelper", LOG_LEVEL_ALL);
   // LogComponentEnable("LorawanMac", LOG_LEVEL_ALL);
@@ -333,6 +333,8 @@ main (int argc, char *argv[])
   std::cout << tracker.CountMacPacketsGlobally (Seconds (0), appStopTime + Hours (1)) << std::endl;
   std::cout<<"CountMacPacketsGloballyCpsr" << std::endl;
   std::cout << tracker.CountMacPacketsGloballyCpsr (Seconds (0), appStopTime + Hours (1)) << std::endl;
+
+
 
   return 0;
 }

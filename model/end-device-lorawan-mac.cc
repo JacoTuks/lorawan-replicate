@@ -240,13 +240,19 @@ EndDeviceLorawanMac::DoSend (Ptr<Packet> packet)
       // Reset MAC command list
       m_macCommandList.clear ();
 
+      uint8_t txs = m_maxNumbTx - (m_retxParams.retxLeft);
       if (m_retxParams.waitingAck)
         {
           // Call the callback to notify about the failure
-          uint8_t txs = m_maxNumbTx - (m_retxParams.retxLeft);
           m_requiredTxCallback (txs, false, m_retxParams.firstAttempt, m_retxParams.packet);
-          NS_LOG_DEBUG (" Received new packet from the application layer: stopping retransmission procedure. Used " <<
+          NS_LOG_DEBUG (" Received new packet from the application layer: stopping retransmission procedure of confirmed packet. Used " <<
                         unsigned(txs) << " transmissions out of a maximum of " << unsigned(m_maxNumbTx) << ".");
+        }
+      else
+        {
+          NS_LOG_DEBUG (" Received new packet from the application layer: stopping retransmission procedure for unconfirmed packet. Used " <<
+                        unsigned(txs) << " transmissions out of a maximum of " << unsigned(m_maxNumbTx) << ".");
+          //TODO: call unconfirmed's callback is one was created
         }
 
       // Reset retransmission parameters
@@ -274,8 +280,30 @@ EndDeviceLorawanMac::DoSend (Ptr<Packet> packet)
           // static_cast<ClassAEndDeviceLorawanMac*>(this)->SendToPhy (m_retxParams.packet);
           SendToPhy (m_retxParams.packet);
         }
-      else
-        {
+      else if (m_maxNumbTx > 1) //Unconfirmed packet and NbTrans is configured to be more than 1
+      {
+          m_retxParams.packet = packet->Copy ();
+          m_retxParams.retxLeft = m_maxNumbTx;
+          m_retxParams.waitingAck = false;
+          m_retxParams.firstAttempt = Simulator::Now ();
+          m_retxParams.retxLeft = m_retxParams.retxLeft - 1;       // decreasing the number of retransmissions
+
+          NS_LOG_DEBUG ("Message type is " << m_mType);
+          NS_LOG_DEBUG ("It is a unconfirmed packet. Setting retransmission parameters and decreasing the number of transmissions left.");
+
+          NS_LOG_INFO ("Added MAC header of size " << macHdr.GetSerializedSize () <<
+                       " bytes.");
+
+          // Sent a new packet
+          NS_LOG_DEBUG ("Copied packet: " << m_retxParams.packet);
+          m_sentNewPacket (m_retxParams.packet);
+
+          // static_cast<ClassAEndDeviceLorawanMac*>(this)->SendToPhy (m_retxParams.packet);
+          SendToPhy (m_retxParams.packet);
+
+      }
+
+      else  {
           m_sentNewPacket (packet);
           // static_cast<ClassAEndDeviceLorawanMac*>(this)->SendToPhy (packet);
           SendToPhy (packet);
@@ -285,7 +313,7 @@ EndDeviceLorawanMac::DoSend (Ptr<Packet> packet)
   // this is a retransmission
   else
     {
-      if (m_retxParams.waitingAck)
+      if (m_retxParams.waitingAck or m_retxParams.retxLeft >= 1)
         {
 
           // Remove the headers
@@ -307,15 +335,17 @@ EndDeviceLorawanMac::DoSend (Ptr<Packet> packet)
           ApplyNecessaryOptions (macHdr);
           packet->AddHeader (macHdr);
           m_retxParams.retxLeft = m_retxParams.retxLeft - 1;           // decreasing the number of retransmissions
-          NS_LOG_DEBUG ("Retransmitting an old packet.");
+
+          if(m_retxParams.waitingAck)
+            NS_LOG_DEBUG ("Retransmitting an old confirmed packet.");
+          else
+            NS_LOG_DEBUG ("Retransmitting an old unconfirmed packet.");
 
           // static_cast<ClassAEndDeviceLorawanMac*>(this)->SendToPhy (m_retxParams.packet);
           SendToPhy (m_retxParams.packet);
         }
-      else if (m_mType == LorawanMacHeader::UNCONFIRMED_DATA_UP && m_retxParams.retxLeft > 1)
-      {
-           NS_LOG_DEBUG ("Retransmitting an old unconfirmed packet.");       
-      }
+
+  
     }
 
 }
@@ -361,6 +391,13 @@ EndDeviceLorawanMac::ParseCommands (LoraFrameHeader frameHeader)
         {
           NS_LOG_ERROR ("Received downlink message not containing an ACK while we were waiting for it!");
         }
+    }
+  else
+    {
+      
+      NS_LOG_DEBUG ("Reset retransmission variables to default values and cancel retransmission if already scheduled.");
+      // Reset retransmission parameters
+      resetRetransmissionParameters ();     
     }
 
   std::list<Ptr<MacCommand> > commands = frameHeader.GetCommands ();
