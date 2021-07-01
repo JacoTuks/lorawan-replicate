@@ -312,6 +312,10 @@ EndDeviceLorawanMac::DoSend (Ptr<Packet> packet)
           // static_cast<ClassAEndDeviceLorawanMac*>(this)->SendToPhy (m_retxParams.packet);
           SendToPhy (m_retxParams.packet);
         }
+      else if (m_mType == LorawanMacHeader::UNCONFIRMED_DATA_UP && m_retxParams.retxLeft > 1)
+      {
+           NS_LOG_DEBUG ("Retransmitting an old unconfirmed packet.");       
+      }
     }
 
 }

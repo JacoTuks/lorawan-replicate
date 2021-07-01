@@ -77,8 +77,12 @@ LoraPacketTracker::RequiredTransmissionsCallback (uint8_t reqTx, bool success,
   entry.reTxAttempts = reqTx;
   entry.successful = success;
 
-  m_reTransmissionTracker.insert (std::pair<Ptr<Packet>, RetransmissionStatus>
+  std::pair<std::map<Ptr<const Packet>, RetransmissionStatus>::iterator,bool> ret;
+  ret = m_reTransmissionTracker.insert (std::pair<Ptr<Packet>, RetransmissionStatus>
                                     (packet, entry));
+
+  if(ret.second==false)
+    NS_LOG_DEBUG ("Packet already exists in reTransmissionTracker");
 }
 
 void

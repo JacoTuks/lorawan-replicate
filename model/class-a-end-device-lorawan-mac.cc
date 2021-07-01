@@ -214,7 +214,8 @@ ClassAEndDeviceLorawanMac::Receive (Ptr<Packet const> packet)
             }
         }
     }
-  else if (m_retxParams.waitingAck && m_secondReceiveWindow.IsExpired ())
+//  else if (m_retxParams.waitingAck && m_secondReceiveWindow.IsExpired ())
+    else if (m_retxParams.retxLeft > 0 && m_secondReceiveWindow.IsExpired ())
     {
       NS_LOG_INFO ("The packet we are receiving is in uplink.");
       if (m_retxParams.retxLeft > 0)
@@ -225,8 +226,18 @@ ClassAEndDeviceLorawanMac::Receive (Ptr<Packet const> packet)
       else
         {
           uint8_t txs = m_maxNumbTx - (m_retxParams.retxLeft);
-          m_requiredTxCallback (txs, false, m_retxParams.firstAttempt, m_retxParams.packet);
-          NS_LOG_DEBUG ("Failure: no more retransmissions left. Used " << unsigned(txs) << " transmissions.");
+
+          if(m_retxParams.waitingAck)
+            {
+              m_requiredTxCallback (txs, false, m_retxParams.firstAttempt, m_retxParams.packet);
+              NS_LOG_DEBUG ("Failure: no more retransmissions left for confirmed packet. Used " << unsigned(txs) << " transmissions.");
+            }
+          else
+            {
+              NS_LOG_DEBUG ("Failure: no more retransmissions left for unconfirmed packet. Used " << unsigned(txs) << " transmissions.");
+            }
+
+
 
           // Reset retransmission parameters
           resetRetransmissionParameters ();
@@ -244,23 +255,34 @@ ClassAEndDeviceLorawanMac::FailedReception (Ptr<Packet const> packet)
   // Switch to sleep after a failed reception
   m_phy->GetObject<EndDeviceLoraPhy> ()->SwitchToSleep ();
 
-  if (m_secondReceiveWindow.IsExpired () && m_retxParams.waitingAck)
-    {
-      if (m_retxParams.retxLeft > 0)
-        {
-          this->Send (m_retxParams.packet);
-          NS_LOG_INFO ("We have " << unsigned(m_retxParams.retxLeft) << " retransmissions left: rescheduling transmission.");
-        }
-      else
-        {
-          uint8_t txs = m_maxNumbTx - (m_retxParams.retxLeft);
-          m_requiredTxCallback (txs, false, m_retxParams.firstAttempt, m_retxParams.packet);
-          NS_LOG_DEBUG ("Failure: no more retransmissions left. Used " << unsigned(txs) << " transmissions.");
+  if (m_retxParams.retxLeft > 0 && m_secondReceiveWindow.IsExpired ())
+  {
+    NS_LOG_INFO ("The packet we are receiving is in uplink.");
+    if (m_retxParams.retxLeft > 0)
+      {
+        this->Send (m_retxParams.packet);
+        NS_LOG_INFO ("We have " << unsigned(m_retxParams.retxLeft) << " retransmissions left: rescheduling transmission.");
+      }
+    else
+      {
+        uint8_t txs = m_maxNumbTx - (m_retxParams.retxLeft);
 
-          // Reset retransmission parameters
-          resetRetransmissionParameters ();
-        }
-    }
+        if(m_retxParams.waitingAck)
+          {
+            m_requiredTxCallback (txs, false, m_retxParams.firstAttempt, m_retxParams.packet);
+            NS_LOG_DEBUG ("Failure: no more retransmissions left for confirmed packet. Used " << unsigned(txs) << " transmissions.");
+          }
+        else
+          {
+            NS_LOG_DEBUG ("Failure: no more retransmissions left for unconfirmed packet. Used " << unsigned(txs) << " transmissions.");
+          }
+
+
+
+        // Reset retransmission parameters
+        resetRetransmissionParameters ();
+      }
+  }
 }
 
 void

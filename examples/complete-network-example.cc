@@ -35,15 +35,17 @@ using namespace lorawan;
 NS_LOG_COMPONENT_DEFINE ("ComplexLorawanNetworkExample");
 
 // Network settings
-int nDevices = 200;
+int nDevices = 1;
 int nGateways = 1;
 double radius = 6400; //Note that due to model updates, 7500 m is no longer the maximum distance 
-double simulationTime = 600;
+double simulationTime = 5*600;
 
 // Channel model
 bool realisticChannelModel = false;
 
 int appPeriodSeconds = 600;
+
+uint8_t numberOfTransmissions = 1; // The maximum number of transmissions allowed
 
 // Output control
 bool print = true;
@@ -64,8 +66,8 @@ main (int argc, char *argv[])
 
   // Set up logging
   LogComponentEnable ("ComplexLorawanNetworkExample", LOG_LEVEL_ALL);
-  // LogComponentEnable("LoraChannel", LOG_LEVEL_INFO);
-  // LogComponentEnable("LoraPhy", LOG_LEVEL_ALL);
+  LogComponentEnable("ClassAEndDeviceLorawanMac", LOG_LEVEL_ALL);
+  LogComponentEnable("LoraPacketTracker", LOG_LEVEL_ALL);
   // LogComponentEnable("EndDeviceLoraPhy", LOG_LEVEL_ALL);
   // LogComponentEnable("GatewayLoraPhy", LOG_LEVEL_ALL);
   // LogComponentEnable("LoraInterferenceHelper", LOG_LEVEL_ALL);
@@ -87,6 +89,11 @@ main (int argc, char *argv[])
   // LogComponentEnable("NetworkStatus", LOG_LEVEL_ALL);
   // LogComponentEnable("NetworkController", LOG_LEVEL_ALL);
 
+
+  LogComponentEnableAll (LOG_PREFIX_FUNC);
+  LogComponentEnableAll (LOG_PREFIX_NODE);
+  LogComponentEnableAll (LOG_PREFIX_TIME);
+  
   /***********
    *  Setup  *
    ***********/
@@ -190,6 +197,10 @@ main (int argc, char *argv[])
       Ptr<Node> node = *j;
       Ptr<LoraNetDevice> loraNetDevice = node->GetDevice (0)->GetObject<LoraNetDevice> ();
       Ptr<LoraPhy> phy = loraNetDevice->GetPhy ();
+
+      Ptr<LorawanMac> edMac =node->GetDevice (0)->GetObject<LoraNetDevice> ()->GetMac ();
+      Ptr<ClassAEndDeviceLorawanMac> edLorawanMac = edMac->GetObject<ClassAEndDeviceLorawanMac> ();
+      edLorawanMac->SetMaxNumberOfTransmissions (numberOfTransmissions);
     }
 
   /*********************
@@ -318,7 +329,10 @@ main (int argc, char *argv[])
   NS_LOG_INFO ("Computing performance metrics...");
 
   LoraPacketTracker &tracker = helper.GetPacketTracker ();
+  std::cout<<"CountMacPacketsGlobally" << std::endl;
   std::cout << tracker.CountMacPacketsGlobally (Seconds (0), appStopTime + Hours (1)) << std::endl;
+  std::cout<<"CountMacPacketsGloballyCpsr" << std::endl;
+  std::cout << tracker.CountMacPacketsGloballyCpsr (Seconds (0), appStopTime + Hours (1)) << std::endl;
 
   return 0;
 }
