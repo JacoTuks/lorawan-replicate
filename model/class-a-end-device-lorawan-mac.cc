@@ -423,37 +423,40 @@ ClassAEndDeviceLorawanMac::CloseSecondReceiveWindow (void)
       break;
     }
 
-  if (m_retxParams.waitingAck)
-    {
-      NS_LOG_DEBUG ("No reception initiated by PHY: rescheduling transmission of confirmed packet.");
-      if (m_retxParams.retxLeft > 0 )
-        {
-          NS_LOG_INFO ("We have " << unsigned(m_retxParams.retxLeft) << " retransmissions left: rescheduling transmission.");
-          this->Send (m_retxParams.packet);
-        }
 
-      else if (m_retxParams.retxLeft == 0 && m_phy->GetObject<EndDeviceLoraPhy> ()->GetState () != EndDeviceLoraPhy::RX)
-        {
-          
-          uint8_t txs = m_maxNumbTx - (m_retxParams.retxLeft);
-          if(m_retxParams.waitingAck)
-            {
 
-              m_requiredTxCallback (txs, false, m_retxParams.firstAttempt, m_retxParams.packet);
-              NS_LOG_DEBUG ("Failure: no more retransmissions left for confirmed packet. Used " << unsigned(txs) << " transmissions.");
-            }
-          else
-              NS_LOG_DEBUG ("Failure: no more retransmissions left for unconfirmed packet. Used " << unsigned(txs) << " transmissions.");
+    if (m_retxParams.retxLeft > 0 )
+      {
+        if(m_retxParams.waitingAck)
+           NS_LOG_DEBUG ("No reception initiated by PHY: rescheduling transmission of confirmed packet.");
+           
+        NS_LOG_INFO ("We have " << unsigned(m_retxParams.retxLeft) << " retransmissions left: rescheduling transmission.");
 
-          // Reset retransmission parameters
-          resetRetransmissionParameters ();
-        }
+        this->Send (m_retxParams.packet);
+      }
 
-      else
-        {
-          NS_ABORT_MSG ("The number of retransmissions left is negative ! ");
-        }
-    }
+    else if (m_retxParams.retxLeft == 0 && m_phy->GetObject<EndDeviceLoraPhy> ()->GetState () != EndDeviceLoraPhy::RX)
+      {
+        
+        uint8_t txs = m_maxNumbTx - (m_retxParams.retxLeft);
+        if(m_retxParams.waitingAck)
+          {
+
+            m_requiredTxCallback (txs, false, m_retxParams.firstAttempt, m_retxParams.packet);
+            NS_LOG_DEBUG ("Failure: no more retransmissions left for confirmed packet. Used " << unsigned(txs) << " transmissions.");
+          }
+        else
+            NS_LOG_DEBUG ("Failure: no more retransmissions left for unconfirmed packet. Used " << unsigned(txs) << " transmissions.");
+
+        // Reset retransmission parameters
+        resetRetransmissionParameters ();
+      }
+
+    else
+      {
+        NS_ABORT_MSG ("The number of retransmissions left is negative ! ");
+      }
+  
   // else
   //   {
 

@@ -77,6 +77,7 @@ LoraPacketTracker::RequiredTransmissionsCallback (uint8_t reqTx, bool success,
   entry.reTxAttempts = reqTx;
   entry.successful = success;
 
+
   std::pair<std::map<Ptr<const Packet>, RetransmissionStatus>::iterator,bool> ret;
   ret = m_reTransmissionTracker.insert (std::pair<Ptr<Packet>, RetransmissionStatus>
                                     (packet, entry));
@@ -141,10 +142,16 @@ LoraPacketTracker::PacketReceptionCallback (Ptr<Packet const> packet, uint32_t g
                                  << " was successfully received at gateway "
                                  << gwId);
 
+      std::pair<std::map<int, PhyPacketOutcome>::iterator,bool> ret;
       std::map<Ptr<Packet const>, PacketStatus>::iterator it = m_packetTracker.find (packet);
-      (*it).second.outcomes.insert (std::pair<int, enum PhyPacketOutcome> (gwId,
+      ret= (*it).second.outcomes.insert (std::pair<int, enum PhyPacketOutcome> (gwId,
                                                                            RECEIVED));
-    }
+
+
+
+    if(ret.second==false)
+      NS_LOG_DEBUG ("Packet already exists in m_packetTracker");                                                                           
+   }
 }
 
 void
