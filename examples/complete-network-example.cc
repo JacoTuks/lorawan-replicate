@@ -35,17 +35,19 @@ using namespace lorawan;
 NS_LOG_COMPONENT_DEFINE ("ComplexLorawanNetworkExample");
 
 // Network settings
-int nDevices = 1;
+int nDevices = 1200;
 int nGateways = 1;
 double radius = 6400; //Note that due to model updates, 7500 m is no longer the maximum distance 
-double simulationTime = 2*600;
+double simulationTime = 5*600; 
+
+bool send_conf = true;
 
 // Channel model
 bool realisticChannelModel = false;
 
-int appPeriodSeconds = 600;
+int appPeriodSeconds = 600; 
 
-uint8_t numberOfTransmissions = 3; // The maximum number of transmissions allowed
+uint8_t numberOfTransmissions = 2; // The maximum number of transmissions allowed
 
 // Output control
 bool print = true;
@@ -66,10 +68,10 @@ main (int argc, char *argv[])
 
   // Set up logging
   LogComponentEnable ("ComplexLorawanNetworkExample", LOG_LEVEL_ALL);
-  LogComponentEnable("LoraPacketTracker", LOG_LEVEL_INFO);
-  LogComponentEnable("EndDeviceLorawanMac", LOG_LEVEL_ALL);
-  LogComponentEnable("ClassAEndDeviceLorawanMac", LOG_LEVEL_ALL);
-  // LogComponentEnable("GatewayLoraPhy", LOG_LEVEL_ALL);
+  //LogComponentEnable("LoraPacketTracker", LOG_LEVEL_INFO);
+  //LogComponentEnable("EndDeviceLorawanMac", LOG_LEVEL_ALL);
+  //LogComponentEnable("ClassAEndDeviceLorawanMac", LOG_LEVEL_ALL);
+  //LogComponentEnable("PeriodicSender", LOG_LEVEL_ALL);
   // LogComponentEnable("LoraInterferenceHelper", LOG_LEVEL_ALL);
   // LogComponentEnable("LorawanMac", LOG_LEVEL_ALL);
   // LogComponentEnable("EndDeviceLorawanMac", LOG_LEVEL_ALL);
@@ -201,7 +203,8 @@ main (int argc, char *argv[])
       Ptr<LorawanMac> edMac =node->GetDevice (0)->GetObject<LoraNetDevice> ()->GetMac ();
       Ptr<ClassAEndDeviceLorawanMac> edLorawanMac = edMac->GetObject<ClassAEndDeviceLorawanMac> ();
       edLorawanMac->SetMaxNumberOfTransmissions (numberOfTransmissions);
-      edLorawanMac->SetMType (LorawanMacHeader::CONFIRMED_DATA_UP); 
+      if(send_conf)
+        edLorawanMac->SetMType (LorawanMacHeader::CONFIRMED_DATA_UP); 
     }
 
   /*********************
@@ -334,7 +337,8 @@ main (int argc, char *argv[])
   std::cout << tracker.CountMacPacketsGlobally (Seconds (0), appStopTime + Hours (1)) << std::endl;
   std::cout<<"CountMacPacketsGloballyCpsr" << std::endl;
   std::cout << tracker.CountMacPacketsGloballyCpsr (Seconds (0), appStopTime + Hours (1)) << std::endl;
-
+  std::cout<<"PrintPhyPacketsPerGw" << std::endl;
+  std::cout << tracker.PrintPhyPacketsPerGw (Seconds (0), appStopTime + Hours (1), nDevices) << std::endl;
 
 
   return 0;

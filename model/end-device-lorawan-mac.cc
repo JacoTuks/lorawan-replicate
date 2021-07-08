@@ -248,7 +248,7 @@ EndDeviceLorawanMac::DoSend (Ptr<Packet> packet)
           NS_LOG_DEBUG (" Received new packet from the application layer: stopping retransmission procedure of confirmed packet. Used " <<
                         unsigned(txs) << " transmissions out of a maximum of " << unsigned(m_maxNumbTx) << ".");
         }
-      else
+      else if (m_retxParams.sendingMultipleUnconfirmed)
         {
           NS_LOG_DEBUG (" Received new packet from the application layer: stopping retransmission procedure for unconfirmed packet. Used " <<
                         unsigned(txs) << " transmissions out of a maximum of " << unsigned(m_maxNumbTx) << ".");
@@ -264,6 +264,7 @@ EndDeviceLorawanMac::DoSend (Ptr<Packet> packet)
           m_retxParams.packet = packet->Copy ();
           m_retxParams.retxLeft = m_maxNumbTx;
           m_retxParams.waitingAck = true;
+          m_retxParams.sendingMultipleUnconfirmed = false;
           m_retxParams.firstAttempt = Simulator::Now ();
           m_retxParams.retxLeft = m_retxParams.retxLeft - 1;       // decreasing the number of retransmissions
 
@@ -285,6 +286,7 @@ EndDeviceLorawanMac::DoSend (Ptr<Packet> packet)
           m_retxParams.packet = packet->Copy ();
           m_retxParams.retxLeft = m_maxNumbTx;
           m_retxParams.waitingAck = false;
+          m_retxParams.sendingMultipleUnconfirmed = true;
           m_retxParams.firstAttempt = Simulator::Now ();
           m_retxParams.retxLeft = m_retxParams.retxLeft - 1;       // decreasing the number of retransmissions
 
@@ -313,7 +315,7 @@ EndDeviceLorawanMac::DoSend (Ptr<Packet> packet)
   // this is a retransmission
   else
     {
-      if (m_retxParams.waitingAck or m_retxParams.retxLeft >= 1)
+      if (m_retxParams.waitingAck or m_retxParams.sendingMultipleUnconfirmed)
         {
 
           // Remove the headers
@@ -338,7 +340,7 @@ EndDeviceLorawanMac::DoSend (Ptr<Packet> packet)
 
           if(m_retxParams.waitingAck)
             NS_LOG_DEBUG ("Retransmitting an old confirmed packet.");
-          else
+          else if(m_retxParams.sendingMultipleUnconfirmed)
             NS_LOG_DEBUG ("Retransmitting an old unconfirmed packet.");
 
           // static_cast<ClassAEndDeviceLorawanMac*>(this)->SendToPhy (m_retxParams.packet);
@@ -394,7 +396,9 @@ EndDeviceLorawanMac::ParseCommands (LoraFrameHeader frameHeader)
     }
   else
     {     
-      NS_LOG_DEBUG ("Reset retransmission variables to default values and any uplink retransmissions if already scheduled.");
+      NS_LOG_DEBUG ("Reset retransmission variables to default values.");
+      if(m_retxParams.sendingMultipleUnconfirmed)
+          NS_LOG_DEBUG ("Uplink retransmissions will now be cancelled.");     
       // Reset retransmission parameters
       resetRetransmissionParameters ();     
     }
@@ -662,6 +666,7 @@ EndDeviceLorawanMac::Shuffle (std::vector<Ptr<LogicalLoraChannel> > vector)
 void EndDeviceLorawanMac::resetRetransmissionParameters ()
 {
   m_retxParams.waitingAck = false;
+  m_retxParams.sendingMultipleUnconfirmed = false;
   m_retxParams.retxLeft = m_maxNumbTx;
   m_retxParams.packet = 0;
   m_retxParams.firstAttempt = Seconds (0);

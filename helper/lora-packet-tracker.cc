@@ -144,14 +144,22 @@ LoraPacketTracker::PacketReceptionCallback (Ptr<Packet const> packet, uint32_t g
 
       std::pair<std::map<int, PhyPacketOutcome>::iterator,bool> ret;
       std::map<Ptr<Packet const>, PacketStatus>::iterator it = m_packetTracker.find (packet);
+
       ret= (*it).second.outcomes.insert (std::pair<int, enum PhyPacketOutcome> (gwId,
                                                                            RECEIVED));
 
 
-
-    if(ret.second==false)
-      NS_LOG_DEBUG ("Packet already exists in m_packetTracker");                                                                           
-   }
+   //Packet already exists + the intial outcome was not received
+   //This happens when NbTrans > 1 and first attempt was lost
+    if(ret.second==false and (*it).second.outcomes.at(gwId) > 0)
+      {
+        NS_LOG_DEBUG ("Packet already exists in m_packetTracker"); 
+        NS_LOG_DEBUG ("This packet was first recorded at this gateway with outcome (PhyPacketOutcome): " 
+                      << (*it).second.outcomes.at(gwId));    
+        NS_LOG_DEBUG ("This packet will now be recorded as received");    
+        (*it).second.outcomes.at(gwId) = RECEIVED;                                     
+      }
+    }
 }
 
 void
@@ -311,6 +319,8 @@ LoraPacketTracker::PrintPhyPacketsPerGw (Time startTime, Time stopTime,
           NS_LOG_DEBUG ("Dealing with packet " << (*itPhy).second.packet);
           NS_LOG_DEBUG ("This packet was received by " <<
                         (*itPhy).second.outcomes.size () << " gateways");
+
+          NS_LOG_DEBUG ("Packet status:" << (*itPhy).second.outcomes.at(gwId));
 
           if ((*itPhy).second.outcomes.count (gwId) > 0)
             {
