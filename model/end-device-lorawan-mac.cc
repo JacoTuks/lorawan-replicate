@@ -393,9 +393,8 @@ EndDeviceLorawanMac::ParseCommands (LoraFrameHeader frameHeader)
         }
     }
   else
-    {
-      
-      NS_LOG_DEBUG ("Reset retransmission variables to default values and cancel retransmission if already scheduled.");
+    {     
+      NS_LOG_DEBUG ("Reset retransmission variables to default values and any uplink retransmissions if already scheduled.");
       // Reset retransmission parameters
       resetRetransmissionParameters ();     
     }
@@ -588,7 +587,7 @@ EndDeviceLorawanMac::GetNextTransmissionDelay (void)
 
       waitingTime = std::min (waitingTime, m_channelHelper.GetWaitingTime (logicalChannel));
 
-      NS_LOG_DEBUG ("Waiting time before the next transmission in channel with frequecy " <<
+      NS_LOG_DEBUG ("Waiting time before the next transmission in channel with frequency " <<
                     frequency << " is = " << waitingTime.GetSeconds () << ".");
     }
 
