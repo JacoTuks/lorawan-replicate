@@ -41,13 +41,13 @@ double radius = 6400; //Note that due to model updates, 7500 m is no longer the 
 double simulationTime = 5*600; 
 
 bool send_conf = true;
-
+int confirmedPercentage = 15;
 // Channel model
 bool realisticChannelModel = false;
 
 int appPeriodSeconds = 600; 
 
-uint8_t numberOfTransmissions = 2; // The maximum number of transmissions allowed
+uint8_t numberOfTransmissions = 5; // The maximum number of transmissions allowed
 
 // Output control
 bool print = true;
@@ -193,6 +193,11 @@ main (int argc, char *argv[])
 
   // Now end devices are connected to the channel
 
+
+  // Figure out how many devices should employ confirmed traffic
+  int confirmedNumber = confirmedPercentage * endDevices.GetN () / 100;
+  int i = 0;
+
   // Connect trace sources
   for (NodeContainer::Iterator j = endDevices.Begin (); j != endDevices.End (); ++j)
     {
@@ -203,8 +208,14 @@ main (int argc, char *argv[])
       Ptr<LorawanMac> edMac =node->GetDevice (0)->GetObject<LoraNetDevice> ()->GetMac ();
       Ptr<ClassAEndDeviceLorawanMac> edLorawanMac = edMac->GetObject<ClassAEndDeviceLorawanMac> ();
       edLorawanMac->SetMaxNumberOfTransmissions (numberOfTransmissions);
-      if(send_conf)
-        edLorawanMac->SetMType (LorawanMacHeader::CONFIRMED_DATA_UP); 
+
+        // Set message type, otherwise the NS does not send ACKs
+      if (i < confirmedNumber)
+      {
+       edLorawanMac->SetMType (LorawanMacHeader::CONFIRMED_DATA_UP);
+       i++;
+      }
+ 
     }
 
   /*********************
