@@ -252,7 +252,6 @@ EndDeviceLorawanMac::DoSend (Ptr<Packet> packet)
         {
           NS_LOG_DEBUG (" Received new packet from the application layer: stopping retransmission procedure for unconfirmed packet. Used " <<
                         unsigned(txs) << " transmissions out of a maximum of " << unsigned(m_maxNumbTx) << ".");
-          //TODO: call unconfirmed's callback is one was created
         }
 
       // Reset retransmission parameters
