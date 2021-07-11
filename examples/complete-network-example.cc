@@ -41,7 +41,7 @@ double radius = 6400; //Note that due to model updates, 7500 m is no longer the 
 double simulationTime = 5*600; 
 
 bool send_conf = true;
-int confirmedPercentage = 15;
+int confirmedPercentage = 0;
 // Channel model
 bool realisticChannelModel = false;
 

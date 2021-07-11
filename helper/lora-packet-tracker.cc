@@ -151,14 +151,14 @@ LoraPacketTracker::PacketReceptionCallback (Ptr<Packet const> packet, uint32_t g
 
    //Packet already exists + the intial outcome was not received
    //This happens when NbTrans > 1 and first attempt was lost
-    if(ret.second==false and (*it).second.outcomes.at(gwId) > 0)
-      {
-        NS_LOG_DEBUG ("Packet already exists in m_packetTracker"); 
-        NS_LOG_DEBUG ("This packet was first recorded at this gateway with outcome (PhyPacketOutcome): " 
-                      << (*it).second.outcomes.at(gwId));    
-        NS_LOG_DEBUG ("This packet will now be recorded as received");    
-        (*it).second.outcomes.at(gwId) = RECEIVED;                                     
-      }
+    // if(ret.second==false and (*it).second.outcomes.at(gwId) > 0)
+    //   {
+    //     NS_LOG_DEBUG ("Packet already exists in m_packetTracker"); 
+    //     NS_LOG_DEBUG ("This packet was first recorded at this gateway with outcome (PhyPacketOutcome): " 
+    //                   << (*it).second.outcomes.at(gwId));    
+    //     NS_LOG_DEBUG ("This packet will now be recorded as received");    
+    //     (*it).second.outcomes.at(gwId) = RECEIVED;                                     
+    //   }
     }
 }
 
