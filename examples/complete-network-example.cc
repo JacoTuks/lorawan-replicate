@@ -350,7 +350,7 @@ main (int argc, char *argv[])
   std::cout << tracker.CountMacPacketsGloballyCpsr (Seconds (0), appStopTime + Hours (1)) << std::endl;
   std::cout<<"PrintPhyPacketsPerGw" << std::endl;
   std::cout << tracker.PrintPhyPacketsPerGw (Seconds (0), appStopTime + Hours (1), nDevices) << std::endl;
-
+  //std::cout << tracker.PrintPhyPacketsPerGw (Seconds (0), appStopTime + Hours (1), nDevices+1) << std::endl;
 
   return 0;
 }
