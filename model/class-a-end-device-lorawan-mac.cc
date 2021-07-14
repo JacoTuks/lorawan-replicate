@@ -459,21 +459,6 @@ ClassAEndDeviceLorawanMac::CloseSecondReceiveWindow (void)
       {
         NS_ABORT_MSG ("The number of retransmissions left is negative ! ");
       }
-  
-  // else
-  //   {
-
-
-
-  //     //Old code, opened github issue on call to txcallback
-  //     // uint8_t txs = m_maxNumbTx - (m_retxParams.retxLeft );
-  //     // m_requiredTxCallback (txs, true, m_retxParams.firstAttempt, m_retxParams.packet);
-  //     // NS_LOG_INFO ("We have " << unsigned(m_retxParams.retxLeft) <<
-  //     //              " transmissions left. We were not transmitting confirmed messages.");
-
-  //     // Reset retransmission parameters
-  //     resetRetransmissionParameters ();
-  //   }
 }
 
 /////////////////////////

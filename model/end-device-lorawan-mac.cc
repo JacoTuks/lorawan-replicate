@@ -87,7 +87,7 @@ EndDeviceLorawanMac::GetTypeId (void)
                      "ns3::TracedValueCallback::Double")
     .AddAttribute ("MaxTransmissions",
                    "Maximum number of transmissions for a packet",
-                   IntegerValue (8),
+                   IntegerValue (1),
                    MakeIntegerAccessor (&EndDeviceLorawanMac::m_maxNumbTx),
                    MakeIntegerChecker<uint8_t> ())
     .AddAttribute ("EnableEDDataRateAdaptation",
@@ -110,7 +110,7 @@ EndDeviceLorawanMac::GetTypeId (void)
 
 EndDeviceLorawanMac::EndDeviceLorawanMac ()
     : m_enableDRAdapt (false),
-      m_maxNumbTx (8),
+      m_maxNumbTx (1),
       m_dataRate (0),
       m_txPower (14),
       m_codingRate (1),
@@ -345,10 +345,7 @@ EndDeviceLorawanMac::DoSend (Ptr<Packet> packet)
           // static_cast<ClassAEndDeviceLorawanMac*>(this)->SendToPhy (m_retxParams.packet);
           SendToPhy (m_retxParams.packet);
         }
-
-  
     }
-
 }
 
 void
@@ -825,6 +822,8 @@ EndDeviceLorawanMac::OnLinkAdrReq (uint8_t dataRate, uint8_t txPower,
                 "DataRateOk: " << dataRateOk << ", " <<
                 "txPowerOk: " << txPowerOk);
 
+  //TODO: check if repetitions are in valid range [1:15]
+
   // If all checks are successful, set parameters up
   //////////////////////////////////////////////////
   if (channelMaskOk && dataRateOk && txPowerOk)
@@ -849,7 +848,11 @@ EndDeviceLorawanMac::OnLinkAdrReq (uint8_t dataRate, uint8_t txPower,
 
       // Set the transmission power
       m_txPower = GetDbmForTxPower (txPower);
+
+      //TODO: also adjust NbTrans. A value of 0 indicates a device should use the default value (1 transmision)
     }
+
+
 
   // Craft a LinkAdrAns MAC command as a response
   ///////////////////////////////////////////////
