@@ -94,6 +94,7 @@ Packet::EnablePrinting ();
   cmd.AddValue("randomPSizeMin", "Minimum size for randomly sized application packets", randomPSizeMin); 
   cmd.AddValue("randomPSizeMax", "Maximum size for randomly sized application packets", randomPSizeMax); 
   cmd.AddValue("desiredNumCongestionCalcs", "How many periodic congestion calculations must be in simulationTime", desiredNumCongestionCalcs);
+  cmd.AddValue("numberOfTransmissions", "NbTrans parameter (number of transmission per packet).", numberOfTransmissions);
   cmd.Parse (argc, argv);
 
 
